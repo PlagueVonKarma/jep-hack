@@ -80,6 +80,8 @@ DEF NUM_SPRITEANIMDICT_ENTRIES EQU 10
 	const SPRITE_ANIM_INDEX_INTRO_UNOWN_F             ; 2a
 	const SPRITE_ANIM_INDEX_INTRO_SUICUNE_AWAY        ; 2b
 	const SPRITE_ANIM_INDEX_CELEBI                    ; 2c
+	const SPRITE_ANIM_INDEX_PURPLE_WALK               ; 2d
+	const SPRITE_ANIM_INDEX_MAGNET_TRAIN_PURPLE       ; 2e
 DEF NUM_SPRITE_ANIM_INDEXES EQU const_value
 
 ; DoAnimFrame.Jumptable indexes (see engine/gfx/sprite_anims.asm)
@@ -189,6 +191,8 @@ DEF NUM_SPRITE_ANIM_SEQS EQU const_value
 	const SPRITE_ANIM_FRAMESET_INTRO_UNOWN_F             ; 3f
 	const SPRITE_ANIM_FRAMESET_CELEBI_LEFT               ; 40
 	const SPRITE_ANIM_FRAMESET_CELEBI_RIGHT              ; 41
+	const SPRITE_ANIM_FRAMESET_PURPLE_WALK               ; 42
+	const SPRITE_ANIM_FRAMESET_MAGNET_TRAIN_PURPLE       ; 43
 DEF NUM_SPRITE_ANIM_FRAMESETS EQU const_value
 
 ; SpriteAnimOAMData indexes (see data/sprite_anims/oam.asm)
@@ -333,4 +337,8 @@ DEF NUM_SPRITE_ANIM_FRAMESETS EQU const_value
 	const SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_9            ; 89
 	const SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_10           ; 8a
 	const SPRITE_ANIM_OAMSET_GAMEFREAK_LOGO_11           ; 8b
+	const SPRITE_ANIM_OAMSET_PURPLE_WALK_1               ; 8c
+	const SPRITE_ANIM_OAMSET_PURPLE_WALK_2               ; 8d
+	const SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_1       ; 8e
+	const SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_2       ; 8f
 DEF NUM_SPRITE_ANIM_OAMSETS EQU const_value

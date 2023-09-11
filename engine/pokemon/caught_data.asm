@@ -192,9 +192,12 @@ SetBoxmonOrEggmonCaughtData:
 .NotPokecenter2F:
 	call GetWorldMapLocation
 	ld b, a
-	ld a, [wPlayerGender]
-	rrca ; shift bit 0 (PLAYERGENDER_FEMALE_F) to bit 7 (CAUGHT_GENDER_MASK)
-	or b
+	ld a, [wPlayerGender] ; Vestigial, get rid of this later.
+	dec a ; FEMALE
+	ld a, b
+	jr nz, .not_female
+	or CAUGHT_GENDER_MASK
+.not_female
 	ld [hl], a
 	ret
 

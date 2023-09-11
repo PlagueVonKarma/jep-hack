@@ -703,4 +703,5 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
 
+DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

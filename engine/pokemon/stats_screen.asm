@@ -801,20 +801,20 @@ LoadBluePage:
 	call CopyNickname
 	farcall CorrectNickErrors
 	hlcoord 2, 13
-	call PlaceString
-	ld a, [wTempMonCaughtGender]
-	and a
-	jr z, .done
-	cp $7f
-	jr z, .done
-	and CAUGHT_GENDER_MASK
-	ld a, "♂"
-	jr z, .got_gender
-	ld a, "♀"
-.got_gender
-	hlcoord 9, 13
-	ld [hl], a
-.done
+	call PlaceString				; Goodbye OT Gender display, you'd cause more of a problem than you're worth
+;	ld a, [wTempMonCaughtGender]
+;	and a
+;	jr z, .done
+;	cp $7f
+;	jr z, .done
+;	and CAUGHT_GENDER_MASK
+;	ld a, "♂"
+;	jr z, .got_gender
+;	ld a, "♀"
+;.got_gender
+;	hlcoord 9, 13
+;	ld [hl], a
+;.done
 	ret
 
 .OTNamePointers:

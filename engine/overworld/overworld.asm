@@ -59,9 +59,12 @@ GetPlayerSprite:
 	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
 	jr nz, .go
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE
 	jr z, .go
 	ld hl, KrisStateSprites
+	dec a ; FEMALE
+	jr z, .go
+	ld hl, EnbyStateSprites
 
 .go
 	ld a, [wPlayerState]

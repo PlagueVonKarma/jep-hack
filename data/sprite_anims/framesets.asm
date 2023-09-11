@@ -67,6 +67,8 @@ SpriteAnimFrameData:
 	dw .Frameset_IntroUnownF
 	dw .Frameset_CelebiLeft
 	dw .Frameset_CelebiRight
+	dw .Frameset_PurpleWalk
+	dw .Frameset_MagnetTrainPurple
 	assert_table_length NUM_SPRITE_ANIM_FRAMESETS
 
 .Frameset_00:
@@ -497,3 +499,17 @@ SpriteAnimFrameData:
 	oamframe SPRITE_ANIM_OAMSET_CELEBI_1,  8, OAM_X_FLIP
 	oamframe SPRITE_ANIM_OAMSET_CELEBI_2,  8, OAM_X_FLIP
 	oamend
+
+.Frameset_PurpleWalk:
+	oamframe SPRITE_ANIM_OAMSET_PURPLE_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_PURPLE_WALK_2,  8
+	oamframe SPRITE_ANIM_OAMSET_PURPLE_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_PURPLE_WALK_2,  8, OAM_X_FLIP
+	oamrestart
+
+.Frameset_MagnetTrainPurple:
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_1,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_2,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_1,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_PURPLE_2,  8, OAM_X_FLIP
+	oamrestart

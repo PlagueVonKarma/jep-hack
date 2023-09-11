@@ -12,6 +12,7 @@ KrisPalette: ; Kris shares Falkner's palette
 INCBIN "gfx/trainers/falkner.gbcpal", middle_colors
 INCBIN "gfx/trainers/whitney.gbcpal", middle_colors
 INCBIN "gfx/trainers/bugsy.gbcpal", middle_colors
+;EnbyPalette:
 INCBIN "gfx/trainers/morty.gbcpal", middle_colors
 INCBIN "gfx/trainers/pryce.gbcpal", middle_colors
 INCBIN "gfx/trainers/jasmine.gbcpal", middle_colors
@@ -77,4 +78,7 @@ INCBIN "gfx/trainers/officer.gbcpal", middle_colors
 INCBIN "gfx/trainers/grunt_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/mysticalman.gbcpal", middle_colors
 
-	assert_table_length NUM_TRAINER_CLASSES + 1
+EnbyPalette:
+INCLUDE "gfx/player/topaz.pal"
+
+	assert_table_length NUM_TRAINER_CLASSES + 2
