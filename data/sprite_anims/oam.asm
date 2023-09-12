@@ -1140,14 +1140,14 @@ SpriteAnimOAMData:
 
 .OAMData_PurpleWalk:
 	db 4
-	dbsprite -1,  0, -1,  0, $00, PAL_OW_PURPLE
-	dbsprite -1,  0,  0,  0, $01, PAL_OW_PURPLE
-	dbsprite  0,  0, -1,  0, $02, PAL_OW_PURPLE
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_PURPLE
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_PURPLE
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_PURPLE
 	dbsprite  0,  0,  0,  0, $03, PAL_OW_PURPLE
 
 .OAMData_MagnetTrainPurple:
 	db 4
-	dbsprite -1,  0, -1,  0, $00, PAL_OW_PURPLE | PRIORITY
-	dbsprite -1,  0,  0,  0, $01, PAL_OW_PURPLE | PRIORITY
-	dbsprite  0,  0, -1,  0, $02, PAL_OW_PURPLE | PRIORITY
+	dbsprite -1, -1,  0,  0, $00, PAL_OW_PURPLE | PRIORITY
+	dbsprite  0, -1,  0,  0, $01, PAL_OW_PURPLE | PRIORITY
+	dbsprite -1,  0,  0,  0, $02, PAL_OW_PURPLE | PRIORITY
 	dbsprite  0,  0,  0,  0, $03, PAL_OW_PURPLE | PRIORITY
