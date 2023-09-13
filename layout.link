@@ -343,6 +343,7 @@ WRAMX 1
 	"Party"
 WRAMX 2
 	"Pic Animations"
+	"Surrounding Data"
 	align 8
 	"16-bit WRAM tables"
 WRAMX 3
