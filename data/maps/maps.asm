@@ -541,4 +541,4 @@ MapGroup_Cherrygrove:
 MapGroup_SilentHills:
 	table_width MAP_LENGTH, MapGroup_SilentHills
 	map SilentHills, TILESET_JOHTO, TOWN, LANDMARK_SILENT_HILLS, MUSIC_NEW_BARK_TOWN, TRUE, PALETTE_AUTO, FISHGROUP_SHORE
-	assert_table_length NUM_SILENT_HILLS_MAP
+	assert_table_length NUM_SILENT_HILLS_MAPS

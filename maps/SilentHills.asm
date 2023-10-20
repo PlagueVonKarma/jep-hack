@@ -5,7 +5,7 @@ SilentHills_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, SilentHillFlypointCallback
+	callback MAPCALLBACK_NEWMAP, SilentHillsFlypointCallback
 
 SilentHillsFlypointCallback:
 	setflag ENGINE_FLYPOINT_SILENT_HILLS
