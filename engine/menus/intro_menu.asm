@@ -1195,35 +1195,38 @@ TitleScreenMain:
 	cp  D_UP + B_BUTTON + SELECT
 	jr z, .delete_save_data
 
-; To bring up the clock reset dialog:
+; Now uses the GS sequence, using Down + B
+; Used this tutorial: https://github.com/pret/pokecrystal/wiki/simplify-the-clock-reset-procedure
 
-; Hold Down + B + Select to initiate the sequence.
+; To bring up the clock reset dialog, press Down + B + Select.
 	ldh a, [hClockResetTrigger]
 	cp $34
-	jr z, .check_clock_reset
+	jr z, .reset_clock
 
 	ld a, [hl]
-	and D_DOWN + B_BUTTON + SELECT
-	cp  D_DOWN + B_BUTTON + SELECT
+	and D_DOWN + B_BUTTON
+	cp  D_DOWN + B_BUTTON
 	jr nz, .check_start
 
 	ld a, $34
 	ldh [hClockResetTrigger], a
 	jr .check_start
 
-; Keep Select pressed, and hold Left + Up.
-; Then let go of Select.
-.check_clock_reset
-	bit SELECT_F, [hl]
-	jr nz, .check_start
+; Removed for GS clock version 
 
-	xor a
-	ldh [hClockResetTrigger], a
+; X Keep Select pressed, and hold Left + Up.
+; X Then let go of Select.
+;.check_clock_reset
+;	bit SELECT_F, [hl]
+;	jr nz, .check_start
 
-	ld a, [hl]
-	and D_LEFT + D_UP
-	cp  D_LEFT + D_UP
-	jr z, .reset_clock
+;	xor a
+;	ldh [hClockResetTrigger], a
+
+;	ld a, [hl]
+;	and D_LEFT + D_UP
+;	cp  D_LEFT + D_UP
+;	jr z, .reset_clock
 
 ; Press Start or A to start the game.
 .check_start
