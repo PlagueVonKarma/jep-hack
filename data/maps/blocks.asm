@@ -212,6 +212,8 @@ Route40BattleTowerGate_Blocks:
 Route2Gate_Blocks:
 Route29Route46Gate_Blocks:
 Route5SaffronGate_Blocks:
+ViridianForestViridianGate_Blocks:
+ViridianForestPewterGate_Blocks:
 	INCBIN "maps/NorthSouthGate.ablk"
 
 BetaEcruteakCity_Blocks: ; unreferenced
@@ -1045,6 +1047,27 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.ablk"
+
+BellchimeTrail_Blocks
+        INCBIN "maps/BellchimeTrail.ablk"
+
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.ablk"
+
+PewterCityMuseumOfScience1F_Blocks:
+        INCBIN "maps/PewterCityMuseumOfScience1F.ablk"
+
+PewterCityMuseumOfScience2F_Blocks:
+        INCBIN "maps/PewterCityMuseumOfScience2F.ablk"
+
+CeruleanCave1F_Blocks:
+	INCBIN "maps/CeruleanCave1F.ablk"
+
+CeruleanCave2F_Blocks:
+	INCBIN "maps/CeruleanCave2F.ablk"
+
+CeruleanCaveB1F_Blocks:
+	INCBIN "maps/CeruleanCaveB1F.ablk"
 
 SilentHills_Blocks:
 	INCBIN "maps/SilentHills.ablk"
