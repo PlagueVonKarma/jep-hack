@@ -91,7 +91,7 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokecrystal_obj):         RGBASMFLAGS +=
+$(pokecrystal_obj):         RGBASMFLAGS += -D _DEBUG
 $(pokecrystal_vc_obj):      RGBASMFLAGS += -D _CRYSTAL_VC
 
 %.patch: vc/%.constants.sym %_vc.gbc %.gbc vc/%.patch.template

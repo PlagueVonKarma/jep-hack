@@ -38,7 +38,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; FIRE_STONE
 	dw EvoStoneEffect      ; THUNDERSTONE
 	dw EvoStoneEffect      ; WATER_STONE
-	dw NoEffect            ; ITEM_19
+	dw NoEffect			   ; FAIRY_FEATHER
 	dw VitaminEffect       ; HP_UP
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
@@ -193,21 +193,26 @@ ItemEffects:
 	dw PokeBallEffect      ; PARK_BALL
 	dw NoEffect            ; RAINBOW_WING
 	dw NoEffect            ; ITEM_B3
-	assert_table_length ITEM_B3
+	dw NoEffect			   ; BRICK_PIECE
+	dw NoEffect			   ; SURF_MAIL
+	dw NoEffect			   ; LITEBLUEMAIL
+	dw NoEffect			   ; PORTRAITMAIL
+	dw NoEffect			   ; LOVELY_MAIL
+	dw NoEffect			   ; EON_MAIL
+	dw NoEffect			   ; MORPH_MAIL
+	dw NoEffect			   ; BLUESKY_MAIL
+	dw NoEffect			   ; MUSIC_MAIL
+	dw NoEffect			   ; MIRAGE_MAIL
+	dw NoEffect			   ; ITEM_BE
+	dw NoEffect			   ; ITEM_DC
+	dw NoEffect			   ; ITEM_C3
+	dw NoEffect			   ; ITEM_FA
+	assert_table_length NUM_ITEMS
 ; The items past ITEM_B3 do not have effect entries:
-;	BRICK_PIECE
-;	SURF_MAIL
-;	LITEBLUEMAIL
-;	PORTRAITMAIL
-;	LOVELY_MAIL
-;	EON_MAIL
-;	MORPH_MAIL
-;	BLUESKY_MAIL
-;	MUSIC_MAIL
-;	MIRAGE_MAIL
-;	ITEM_BE
 ; They all have the ITEMMENU_NOUSE attribute so they can't be used anyway.
 ; NoEffect would be appropriate, with the table then being NUM_ITEMS long.
+
+; This has been amended for architectural purposes, and because we have a shitload of SW97 items to add.
 
 PokeBallEffect:
 ; BUG: The Dude's catching tutorial may crash if his Poké Ball can't be used (see docs/bugs_and_glitches.md)

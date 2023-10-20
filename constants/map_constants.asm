@@ -500,5 +500,9 @@ ENDM
 	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
-
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+	
+	newgroup SILENT_HILLS ; 27
+	map_const SILENT_HILLS,								10, 10 ; 1
+	endgroup
+	
+DEF NUM_MAP_GROUPS EQU const_value ; 27

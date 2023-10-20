@@ -102,6 +102,8 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 	const SPAWN_BLACKTHORN
 	const SPAWN_MT_SILVER
 	const SPAWN_FAST_SHIP
+; nihon
+	const SPAWN_SILENT_HILLS
 DEF NUM_SPAWNS EQU const_value
 
 DEF SPAWN_N_A EQU -1
@@ -136,6 +138,8 @@ DEF KANTO_FLYPOINT EQU const_value
 	const FLY_FUCHSIA
 	const FLY_CINNABAR
 	const FLY_INDIGO
+DEF NIHON_FLYPOINT EQU const_value
+	const FLY_SILENT_HILLS
 DEF NUM_FLYPOINTS EQU const_value
 
 DEF MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm

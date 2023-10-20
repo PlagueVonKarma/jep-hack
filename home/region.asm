@@ -20,6 +20,8 @@ IsInJohto::
 	call GetWorldMapLocation
 
 .CheckRegion:
+	cp NIHON_LANDMARK
+	jr z, .Nihon
 	cp KANTO_LANDMARK
 	jr nc, .Kanto
 
@@ -29,4 +31,8 @@ IsInJohto::
 
 .Kanto:
 	ld a, KANTO_REGION
+	ret
+
+.Nihon:
+	ld a, NIHON_REGION
 	ret
