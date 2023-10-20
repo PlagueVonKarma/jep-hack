@@ -540,12 +540,12 @@ Pokegear_UpdateClock:
 
 PokegearMap_CheckRegion:
 	ld a, [wPokegearMapPlayerIconLandmark]
-	cp NIHON_LANDMARK
-	jr z, .nihon
 	cp LANDMARK_FAST_SHIP
 	jr z, .johto
 	cp KANTO_LANDMARK
 	jr nc, .kanto
+	cp NIHON_LANDMARK
+	jr c, .nihon
 .johto
 	ld a, POKEGEARSTATE_JOHTOMAPINIT
 	jr .done
@@ -2059,8 +2059,15 @@ PokegearMap:
 	ret
 
 .kanto
+	cp NIHON_LANDMARK
+	jr c, .nihon
 	call LoadTownMapGFX
 	call FillKantoMap
+	ret
+
+.nihon
+	call LoadTownMapGFX
+	call FillNihonMap
 	ret
 
 _FlyMap:
@@ -2305,10 +2312,10 @@ FlyMap:
 	call GetWorldMapLocation
 .CheckRegion:
 ; The first 46 locations are part of Johto. The rest are in Kanto.
-	cp KANTO_LANDMARK
-	jr nc, .KantoFlyMap
 	cp NIHON_LANDMARK
 	jr nc, .NihonFlyMap
+	cp KANTO_LANDMARK
+	jr nc, .KantoFlyMap
 ; Johto fly map
 ; Note that .NoKanto should be modified in tandem with this branch
 	push af
@@ -2341,7 +2348,7 @@ FlyMap:
 ; Kanto's map is only loaded if we've visited Indigo Plateau
 	ld a, KANTO_FLYPOINT ; first Kanto flypoint
 	ld [wStartFlypoint], a
-	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
+	ld a, NIHON_FLYPOINT - 1 ; last Kanto flypoint
 	ld [wEndFlypoint], a
 	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
 ; Fill out the map
@@ -2366,9 +2373,9 @@ FlyMap:
 	and a
 	jr z, .NoKanto
 ; Kanto's map is only loaded if we've visited Indigo Plateau
-	ld a, NIHON_FLYPOINT ; first Kanto flypoint
+	ld a, NIHON_FLYPOINT ; first Nihon flypoint
 	ld [wStartFlypoint], a
-	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
+	ld a, NUM_FLYPOINTS - 1 ; last Nihon flypoint
 	ld [wEndFlypoint], a
 	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
 ; Fill out the map
@@ -2985,9 +2992,17 @@ EntireFlyMap: ; unreferenced
 	ld a, [wTownMapPlayerIconLandmark]
 	cp KANTO_FLYPOINT
 	jr c, .InJohto
+	cp NIHON_FLYPOINT
+	jr nc, .InNihon
 	call FillKantoMap
 	xor a
 	ld b, HIGH(vBGMap1)
+	jr .Finally
+
+.InNihon:
+	call FillNihonMap
+	ld a, SCREEN_HEIGHT_PX
+	ld b, HIGH(vBGMap0)
 	jr .Finally
 
 .InJohto:

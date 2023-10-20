@@ -25,7 +25,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw QuestionMarkDesc
+	dw FairyFeatherDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -915,3 +915,7 @@ MusicMailDesc:
 MirageMailDesc:
 	db   "MEW-print MAIL."
 	next "(HOLD)@"
+
+FairyFeatherDesc:
+	db   "Powers up fairy-"
+ 	next "type moves. (HOLD)@"
