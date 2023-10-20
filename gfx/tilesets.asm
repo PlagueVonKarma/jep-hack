@@ -336,6 +336,15 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 TilesetAerodactylWordRoomMeta::
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
 
+TilesetNihon1GFX::
+INCBIN "gfx/tilesets/nihon01.2bpp.lz"
+
+TilesetNihon1Meta::
+INCBIN "data/tilesets/nihon01_metatiles.bin"
+
+TilesetNihon1Coll::
+INCLUDE "data/tilesets/nihon01_collision.asm"
+
 
 SECTION "Tileset Data 9", ROMX
 
@@ -451,3 +460,6 @@ INCBIN "data/tilesets/omanyte_word_room_attributes.bin"
 
 TilesetAerodactylWordRoomAttr::
 INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
+
+TilesetNihon1Attr::
+INCBIN "data/tilesets/nihon01_attributes.bin"
