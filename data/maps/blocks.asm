@@ -1045,3 +1045,6 @@ BetaBlank_Blocks: ; unreferenced
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.ablk"
+
+SilentHills_Blocks:
+	INCBIN "maps/SilentHills.ablk"

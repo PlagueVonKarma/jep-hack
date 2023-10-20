@@ -67,6 +67,8 @@ RegionCheck:
 	call GetWorldMapLocation
 
 .checkagain
+	cp NIHON_LANDMARK
+	jr z, .nihon
 	cp KANTO_LANDMARK
 	jr c, .johto
 
@@ -79,4 +81,7 @@ RegionCheck:
 	ret
 .kanto
 	ld e, KANTO_REGION
+	ret
+.nihon
+	ld e, NIHON_REGION
 	ret

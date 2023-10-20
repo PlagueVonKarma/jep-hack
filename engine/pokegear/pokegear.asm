@@ -17,6 +17,8 @@ DEF PHONE_DISPLAY_HEIGHT EQU 4
 	const POKEGEARSTATE_JOHTOMAPJOYPAD  ; 4
 	const POKEGEARSTATE_KANTOMAPINIT    ; 5
 	const POKEGEARSTATE_KANTOMAPJOYPAD  ; 6
+	const POKEGEARSTATE_NIHONMAPINIT    ; 5
+	const POKEGEARSTATE_NIHONMAPJOYPAD  ; 6
 	const POKEGEARSTATE_PHONEINIT       ; 7
 	const POKEGEARSTATE_PHONEJOYPAD     ; 8
 	const POKEGEARSTATE_MAKEPHONECALL   ; 9
@@ -324,6 +326,8 @@ InitPokegearTilemap:
 
 .Map:
 	ld a, [wPokegearMapPlayerIconLandmark]
+	cp NIHON_LANDMARK
+	jr z, .nihon
 	cp LANDMARK_FAST_SHIP
 	jr z, .johto
 	cp KANTO_LANDMARK
@@ -334,6 +338,10 @@ InitPokegearTilemap:
 
 .kanto
 	ld e, 1
+	jr .ok
+
+.nihon
+	ld e, 2
 .ok
 	farcall PokegearMap
 	ld a, $07
@@ -443,6 +451,8 @@ PokegearJumptable:
 	dw PokegearMap_JohtoMap
 	dw PokegearMap_Init
 	dw PokegearMap_KantoMap
+	dw PokegearMap_Init
+	dw PokegearMap_NihonMap
 	dw PokegearPhone_Init
 	dw PokegearPhone_Joypad
 	dw PokegearPhone_MakePhoneCall
@@ -530,6 +540,8 @@ Pokegear_UpdateClock:
 
 PokegearMap_CheckRegion:
 	ld a, [wPokegearMapPlayerIconLandmark]
+	cp NIHON_LANDMARK
+	jr z, .nihon
 	cp LANDMARK_FAST_SHIP
 	jr z, .johto
 	cp KANTO_LANDMARK
@@ -541,6 +553,11 @@ PokegearMap_CheckRegion:
 
 .kanto
 	ld a, POKEGEARSTATE_KANTOMAPINIT
+	jr .done
+	ret
+
+.nihon
+	ld a, POKEGEARSTATE_NIHONMAPINIT
 .done
 	ld [wJumptableIndex], a
 	call ExitPokegearRadio_HandleMusic
@@ -562,6 +579,10 @@ PokegearMap_Init:
 
 PokegearMap_KantoMap:
 	call TownMap_GetKantoLandmarkLimits
+	jr PokegearMap_ContinueMap
+
+PokegearMap_NihonMap:
+	call TownMap_GetNihonLandmarkLimits
 	jr PokegearMap_ContinueMap
 
 PokegearMap_JohtoMap:
@@ -738,6 +759,12 @@ TownMap_GetKantoLandmarkLimits:
 .not_hof
 	ld d, LANDMARK_ROUTE_28
 	ld e, LANDMARK_VICTORY_ROAD
+	ret
+
+TownMap_GetNihonLandmarkLimits:
+	ld a, [wStatusFlags]
+	ld d, LANDMARK_SILENT_HILLS
+	ld e, LANDMARK_SILENT_HILLS ; Gonna need another map.
 	ret
 
 PokegearRadio_Init:
@@ -1547,7 +1574,7 @@ RadioChannels:
 	jr z, .johto
 	cp KANTO_LANDMARK
 	jr c, .johto
-; kanto
+; kanto or nihon
 	and a
 	ret
 
@@ -1809,6 +1836,8 @@ _TownMap:
 
 .dmg
 	ld a, [wTownMapPlayerIconLandmark]
+	cp NIHON_LANDMARK
+	jr nc, .nihon
 	cp KANTO_LANDMARK
 	jr nc, .kanto
 	ld d, KANTO_LANDMARK - 1
@@ -1818,6 +1847,10 @@ _TownMap:
 
 .kanto
 	call TownMap_GetKantoLandmarkLimits
+	call .loop
+
+.nihon
+	call TownMap_GetNihonLandmarkLimits
 	call .loop
 
 .resume
@@ -1892,6 +1925,8 @@ _TownMap:
 
 .InitTilemap:
 	ld a, [wTownMapPlayerIconLandmark]
+	cp NIHON_LANDMARK
+	jr nc, .nihon2
 	cp KANTO_LANDMARK
 	jr nc, .kanto2
 	ld e, JOHTO_REGION
@@ -1899,6 +1934,9 @@ _TownMap:
 
 .kanto2
 	ld e, KANTO_REGION
+	jr .okay_tilemap
+.nihon2
+	ld e, NIHON_REGION
 .okay_tilemap
 	farcall PokegearMap
 	ld a, $07
@@ -2269,6 +2307,8 @@ FlyMap:
 ; The first 46 locations are part of Johto. The rest are in Kanto.
 	cp KANTO_LANDMARK
 	jr nc, .KantoFlyMap
+	cp NIHON_LANDMARK
+	jr nc, .NihonFlyMap
 ; Johto fly map
 ; Note that .NoKanto should be modified in tandem with this branch
 	push af
@@ -2306,6 +2346,33 @@ FlyMap:
 	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
 ; Fill out the map
 	call FillKantoMap
+	call .MapHud
+	pop af
+	call TownMapPlayerIcon
+	ret
+
+.NihonFlyMap:
+; The event that there are no flypoints enabled in a map is not
+; accounted for. As a result, if you attempt to select a flypoint
+; when there are none enabled, the game will crash. Additionally,
+; the flypoint selection has a default starting point that
+; can be flown to even if none are enabled.
+; To prevent both of these things from happening when the player
+; enters Kanto, fly access is restricted until Indigo Plateau is
+; visited and its flypoint enabled.
+	push af
+	ld c, SPAWN_SILENT_HILLS
+	call HasVisitedSpawn
+	and a
+	jr z, .NoKanto
+; Kanto's map is only loaded if we've visited Indigo Plateau
+	ld a, NIHON_FLYPOINT ; first Kanto flypoint
+	ld [wStartFlypoint], a
+	ld a, NUM_FLYPOINTS - 1 ; last Kanto flypoint
+	ld [wEndFlypoint], a
+	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
+; Fill out the map
+	call FillNihonMap
 	call .MapHud
 	pop af
 	call TownMapPlayerIcon
@@ -2644,6 +2711,10 @@ FillJohtoMap:
 
 FillKantoMap:
 	ld de, KantoMap
+	jr FillTownMap
+
+FillNihonMap:
+	ld de, NihonMap
 FillTownMap:
 	hlcoord 0, 0
 .loop
@@ -2793,6 +2864,9 @@ INCBIN "gfx/pokegear/johto.bin"
 
 KantoMap:
 INCBIN "gfx/pokegear/kanto.bin"
+
+NihonMap:
+INCBIN "gfx/pokegear/nihon.bin"
 
 PokedexNestIconGFX:
 INCBIN "gfx/pokegear/dexmap_nest_icon.2bpp"
