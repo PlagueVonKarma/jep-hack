@@ -24,6 +24,7 @@
 	const LANDMARK_ROUTE_36          ; 14
 	const LANDMARK_ROUTE_37          ; 15
 	const LANDMARK_ECRUTEAK_CITY     ; 16
+        const LANDMARK_BELLCHIME_TRAIL
 	const LANDMARK_TIN_TOWER         ; 17
 	const LANDMARK_BURNED_TOWER      ; 18
 	const LANDMARK_ROUTE_38          ; 19
@@ -35,6 +36,9 @@
 	const LANDMARK_WHIRL_ISLANDS     ; 1f
 	const LANDMARK_ROUTE_41          ; 20
 	const LANDMARK_CIANWOOD_CITY     ; 21
+        const LANDMARK_ROUTE_47
+        const LANDMARK_ROUTE_48
+        const LANDMARK_SAFARI_ZONE
 	const LANDMARK_ROUTE_42          ; 22
 	const LANDMARK_MT_MORTAR         ; 23
 	const LANDMARK_MAHOGANY_TOWN     ; 24
@@ -53,27 +57,35 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_ROUTE_1           ; 30
 	const LANDMARK_VIRIDIAN_CITY     ; 31
 	const LANDMARK_ROUTE_2           ; 32
+        const LANDMARK_VIRIDIAN_FOREST
 	const LANDMARK_PEWTER_CITY       ; 33
 	const LANDMARK_ROUTE_3           ; 34
 	const LANDMARK_MT_MOON           ; 35
+        const LANDMARK_MT_MOON_CRATER
 	const LANDMARK_ROUTE_4           ; 36
 	const LANDMARK_CERULEAN_CITY     ; 37
+        const LANDMARK_CERULEAN_CAVE
 	const LANDMARK_ROUTE_24          ; 38
 	const LANDMARK_ROUTE_25          ; 39
+        const LANDMARK_BILLS_GARDEN
+        const LANDMARK_BILLS_LIGHTHOUSE
 	const LANDMARK_ROUTE_5           ; 3a
 	const LANDMARK_UNDERGROUND_PATH  ; 3b
 	const LANDMARK_ROUTE_6           ; 3c
 	const LANDMARK_VERMILION_CITY    ; 3d
+        const LANDMARK_SS_ANNE
 	const LANDMARK_DIGLETTS_CAVE     ; 3e
 	const LANDMARK_ROUTE_7           ; 3f
 	const LANDMARK_ROUTE_8           ; 40
 	const LANDMARK_ROUTE_9           ; 41
 	const LANDMARK_ROCK_TUNNEL       ; 42
+        const LANDMARK_UNDERWATER_TUNNEL
 	const LANDMARK_ROUTE_10          ; 43
 	const LANDMARK_POWER_PLANT       ; 44
 	const LANDMARK_LAVENDER_TOWN     ; 45
 	const LANDMARK_LAV_RADIO_TOWER   ; 46
 	const LANDMARK_CELADON_CITY      ; 47
+        const LANDMARK_CELADON_MANSION
 	const LANDMARK_SAFFRON_CITY      ; 48
 	const LANDMARK_ROUTE_11          ; 49
 	const LANDMARK_ROUTE_12          ; 4a
@@ -84,20 +96,29 @@ DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_ROUTE_17          ; 4f
 	const LANDMARK_ROUTE_18          ; 50
 	const LANDMARK_FUCHSIA_CITY      ; 51
+        const LANDMARK_SAFARI_ZONE
 	const LANDMARK_ROUTE_19          ; 52
 	const LANDMARK_ROUTE_20          ; 53
 	const LANDMARK_SEAFOAM_ISLANDS   ; 54
 	const LANDMARK_CINNABAR_ISLAND   ; 55
+        const LANDMARK_CINNABAR_VOLCANO
 	const LANDMARK_ROUTE_21          ; 56
 	const LANDMARK_ROUTE_22          ; 57
 	const LANDMARK_VICTORY_ROAD      ; 58
 	const LANDMARK_ROUTE_23          ; 59
 	const LANDMARK_INDIGO_PLATEAU    ; 5a
+        const LANDMARK_CITRINE_CITY
+        const LANDMARK_BRUNSWICK_TRAIL
+        const LANDMARK_BRUNSWICK_GROTTO
+        const LANDMARK_GARNET_CAVERN
+        const LANDMARK_CELESTE_HILL_CAVE
+        const LANDMARK_CELESTE_HILL
 	const LANDMARK_ROUTE_26          ; 5b
 	const LANDMARK_ROUTE_27          ; 5c
 	const LANDMARK_TOHJO_FALLS       ; 5d
 	const LANDMARK_ROUTE_28          ; 5e
 	const LANDMARK_FAST_SHIP         ; 5f
+        const LANDMARK_ONE_ISLAND
 DEF NIHON_LANDMARK EQU const_value
 	const LANDMARK_SILENT_HILLS
 DEF NUM_LANDMARKS EQU const_value
