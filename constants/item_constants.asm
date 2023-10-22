@@ -140,14 +140,14 @@
 	const STAR_PIECE   ; 84
 	const BASEMENT_KEY ; 85
 	const PASS         ; 86
-	const ITEM_87      ; 87
-	const ITEM_88      ; 88
-	const ITEM_89      ; 89
+	const HEART_STONE  ; 87
+	const POISON_STONE ; 88
+	const ICE_STONE    ; 89
 	const CHARCOAL     ; 8a
 	const BERRY_JUICE  ; 8b
 	const SCOPE_LENS   ; 8c
-	const ITEM_8D      ; 8d
-	const ITEM_8E      ; 8e
+	const DUSK_STONE   ; 8d
+	const SHINY_STONE  ; 8e
 	const METAL_COAT   ; 8f
 	const DRAGON_FANG  ; 90
 	const ITEM_91      ; 91
@@ -195,10 +195,10 @@
 	const BLUESKY_MAIL ; bb
 	const MUSIC_MAIL   ; bc
 	const MIRAGE_MAIL  ; bd
-	const ITEM_BE      ; be
-	const ITEM_DC      ; bf
-	const ITEM_C3      ; c0
-	const ITEM_FA      ; c1
+	const OLD_AMBER    ; be
+	const DOME_FOSSIL  ; bf
+	const HELIX_FOSSIL ; c0
+	const WING_FOSSIL  ; c1
 DEF NUM_ITEMS EQU const_value - 1
 
 DEF __tmhm_value__ = 1

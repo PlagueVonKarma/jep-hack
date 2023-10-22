@@ -135,14 +135,14 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw PassDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
+	dw HeartStoneDesc
+	dw PoisonStoneDesc
+	dw IceStoneDesc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
+	dw DuskStoneDesc
+	dw ShinyStoneDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
 	dw QuestionMarkDesc
@@ -190,10 +190,10 @@ ItemDescriptions:
 	dw BlueSkyMailDesc
 	dw MusicMailDesc
 	dw MirageMailDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
+	dw OldAmberDesc
+	dw DomeFossilDesc
+	dw HelixFossilDesc
+	dw WingFossilDesc
 	assert_table_length NUM_ITEMS
 	dw QuestionMarkDesc
 	dw QuestionMarkDesc
@@ -919,3 +919,39 @@ MirageMailDesc:
 FairyFeatherDesc:
 	db   "Powers up fairy-"
  	next "type moves. (HOLD)@"
+	
+OldAmberDesc:
+	db   "Amber with DNA of"
+	next "an ancient #MON."
+
+DomeFossilDesc:
+	db   "A dome-shaped fossil"
+	next "of an ancient #MON."
+	
+HelixFossilDesc:
+	db   "A swirl-shaped fossil"
+	next "of an ancient #MON."
+
+WingFossilDesc:
+	db   "A wing-shaped fossil"
+	next "of an ancient #MON."
+	
+HeartStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
+PoisonStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
+IceStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
+DuskStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
+ShinyStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"

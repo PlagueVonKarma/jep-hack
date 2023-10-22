@@ -1,37 +1,19 @@
-PewterMuseumOfScience1F_MapScriptHeader:
+	object_const_def
+	const PEWTERMUSEUMOFSCIENCE1F_SCIENTIST2
+
+PewterMuseumOfScience1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	
+Museum1FScientistScript:
+	jumptextfaceplayer Museum1FScientistText
+	
+Museum1FGrampsScript:
+	jumptextfaceplayer Museum1FGrampsText
 
-	def_warp_events
-	warp_event 10,  7, PEWTER_CITY, 6
-	warp_event 11,  7, PEWTER_CITY, 6
-	warp_event 16,  7, PEWTER_CITY, 7
-	warp_event 17,  7, PEWTER_CITY, 7
-	warp_event  7,  7, PEWTER_MUSEUM_OF_SCIENCE_2F, 1
-
-	def_coord_events
-
-	def_bg_events
-	bg_event  2,  3, BGEVENT_READ, KabutopsFossilSignpostScript
-	bg_event  6,  3, BGEVENT_READ, OmastarFossilSignpostScript
-	bg_event  3,  6, BGEVENT_READ, AerodactylFossilSignpostScript
-	bg_event 12,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-	bg_event 13,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-	bg_event 14,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-	bg_event 15,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-	bg_event 17,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-	bg_event 18,  1, BGEVENT_JUMPTEXT, Museum1FBookshelfSignpostText
-
-	def_object_events
-	object_event 18,  3, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Museum1FFossilScientistScript, -1
-	object_event 12,  4, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Museum1FReceptionistScript, -1
-	object_event 16,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum1FScientistText, -1
-	object_event  1,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum1FGrampsText, -1
-	object_event  4,  3, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum1FYoungsterText, -1
-
-	object_const_def
-	const PEWTERMUSEUMOFSCIENCE1F_SCIENTIST2
+Museum1FYoungsterScript:
+	jumptextfaceplayer Museum1FYoungsterText
 
 Museum1FFossilScientistScript:
 	faceplayer
@@ -42,31 +24,31 @@ Museum1FFossilScientistScript:
 	iftrue .own_helix
 	checkitem DOME_FOSSIL
 	iftrue .own_dome
-	checkitem OLD_AMBER
-	iftrue .ask_old_amber
-	jumpopenedtext NoFossilsText
+	checkitem WING_FOSSIL
+	iftrue .ask_wing_fossil
+	jumptext NoFossilsText
 
 .own_helix
 	checkitem DOME_FOSSIL
 	iftrue .own_helix_and_dome
-	checkitem OLD_AMBER
-	iftrue .ask_helix_amber
+	checkitem WING_FOSSIL
+	iftrue .ask_helix_wing
 	writetext AskHelixFossilText
 	yesorno
 	iftrue ResurrectHelixFossil
 	sjump .maybe_later
 
 .own_dome
-	checkitem OLD_AMBER
-	iftrue .ask_dome_amber
+	checkitem WING_FOSSIL
+	iftrue .ask_dome_wing
 	writetext AskDomeFossilText
 	yesorno
 	iftrue ResurrectDomeFossil
 	sjump .maybe_later
 
 .own_helix_and_dome
-	checkitem OLD_AMBER
-	iftrue .ask_helix_dome_amber
+	checkitem WING_FOSSIL
+	iftrue .ask_helix_dome_wing
 	loadmenu HelixDomeMenuDataHeader
 	verticalmenu
 	closewindow
@@ -74,37 +56,37 @@ Museum1FFossilScientistScript:
 	ifequal $2, ResurrectDomeFossil
 	sjump .maybe_later
 
-.ask_old_amber
-	writetext AskOldAmberText
+.ask_wing_fossil
+	writetext AskWingFossilText
 	yesorno
-	iftrue ResurrectOldAmber
+	iftrue ResurrectWingFossil
 	sjump .maybe_later
 
-.ask_helix_amber
-	loadmenu HelixAmberMenuDataHeader
+.ask_helix_wing
+	loadmenu HelixWingMenuDataHeader
 	verticalmenu
 	closewindow
 	ifequal $1, ResurrectHelixFossil
-	ifequal $2, ResurrectOldAmber
+	ifequal $2, ResurrectWingFossil
 	sjump .maybe_later
 
-.ask_dome_amber
-	loadmenu DomeAmberMenuDataHeader
+.ask_dome_wing
+	loadmenu DomeWingMenuDataHeader
 	verticalmenu
 	closewindow
 	ifequal $1, ResurrectDomeFossil
-	ifequal $2, ResurrectOldAmber
+	ifequal $2, ResurrectWingFossil
 	sjump .maybe_later
 
-.ask_helix_dome_amber
-	loadmenu HelixDomeAmberMenuDataHeader
+.ask_helix_dome_wing
+	loadmenu HelixDomeWingMenuDataHeader
 	verticalmenu
 	closewindow
 	ifequal $1, ResurrectHelixFossil
 	ifequal $2, ResurrectDomeFossil
-	ifequal $3, ResurrectOldAmber
+	ifequal $3, ResurrectWingFossil
 .maybe_later:
-	jumpopenedtext MaybeLaterText
+	jumptext MaybeLaterText
 
 HelixDomeMenuDataHeader:
 	db $40 ; flags
@@ -120,7 +102,7 @@ HelixDomeMenuDataHeader:
 	db "Dome Fossil@"
 	db "Cancel@"
 
-HelixAmberMenuDataHeader:
+HelixWingMenuDataHeader:
 	db $40 ; flags
 	db 04, 00 ; start coords
 	db 11, 15 ; end coords
@@ -131,10 +113,10 @@ HelixAmberMenuDataHeader:
 	db $80 ; flags
 	db 3 ; items
 	db "Helix Fossil@"
-	db "Old Amber@"
+	db "Wing Fossil@"
 	db "Cancel@"
 
-DomeAmberMenuDataHeader:
+DomeWingMenuDataHeader:
 	db $40 ; flags
 	db 04, 00 ; start coords
 	db 11, 14 ; end coords
@@ -145,10 +127,10 @@ DomeAmberMenuDataHeader:
 	db $80 ; flags
 	db 3 ; items
 	db "Dome Fossil@"
-	db "Old Amber@"
+	db "Wing Fossil@"
 	db "Cancel@"
 
-HelixDomeAmberMenuDataHeader:
+HelixDomeWingMenuDataHeader:
 	db $40 ; flags
 	db 02, 00 ; start coords
 	db 11, 15 ; end coords
@@ -160,7 +142,7 @@ HelixDomeAmberMenuDataHeader:
 	db 4 ; items
 	db "Helix Fossil@"
 	db "Dome Fossil@"
-	db "Old Amber@"
+	db "Wing Fossil@"
 	db "Cancel@"
 
 ResurrectHelixFossil:
@@ -175,13 +157,19 @@ ResurrectDomeFossil:
 	givepoke KABUTO, 20
 	sjump FinishResurrect
 
-ResurrectOldAmber:
-	takeitem OLD_AMBER
+ResurrectWingFossil:
+	takeitem WING_FOSSIL
 	scall ResurrectAFossilScript
 	givepoke AERODACTYL, 20
 FinishResurrect:
-	iffalse_jumpopenedtext NoRoomForFossilPokemonText
-	jumpopenedtext TakeGoodCareOfItText
+	iffalse .PartyFull
+	jumptext TakeGoodCareOfItText
+	
+.PartyFull:
+	writetext NoRoomForFossilPokemonText
+	waitbutton
+	closetext
+	end
 
 ResurrectAFossilScript:
 	writetext ResurrectingPokemonText
@@ -206,10 +194,11 @@ ResurrectAFossilScript:
 
 Museum1FReceptionistScript:
 	readvar VAR_FACING
-	ifequal DOWN, .Sneak
-	ifequal LEFT, .Sneak
-	jumpthistextfaceplayer
+	ifequal DOWN, SneakScript
+	ifequal LEFT, SneakScript
+	jumptextfaceplayer WelcomeText
 
+WelcomeText:
 	text "Welcome!"
 
 	para "Thanks to a gene-"
@@ -222,20 +211,22 @@ Museum1FReceptionistScript:
 	para "Please go ahead."
 	done
 
-.Sneak:
-	jumpthistextfaceplayer
+SneakScript:
+	jumptextfaceplayer SneakText
 
+SneakText:
 	text "You can't sneak"
 	line "in the back way!"
 	done
 
 KabutopsFossilSignpostScript:
 	refreshscreen
-	trainerpic KABUTOPS_FOSSIL
+	pokepic KABUTOPS ;placeholder, will become KABUTOPS_FOSSIL later
 	waitbutton
 	closepokepic
-	jumpthistext
+	jumptext KabutopsFossilText
 
+KabutopsFossilText:
 	text "Kabutops Fossil"
 	line "(Dome)"
 
@@ -245,11 +236,12 @@ KabutopsFossilSignpostScript:
 
 OmastarFossilSignpostScript:
 	refreshscreen
-	trainerpic OMASTAR_FOSSIL
+	pokepic OMASTAR ;placeholder, will become OMASTAR_FOSSIL later
 	waitbutton
 	closepokepic
-	jumpthistext
-
+	jumptext OmastarFossilText
+	
+OmastarFossilText:
 	text "Omastar Fossil"
 	line "(Helix)"
 
@@ -259,12 +251,14 @@ OmastarFossilSignpostScript:
 
 AerodactylFossilSignpostScript:
 	refreshscreen
-	trainerpic AERODACTYL_FOSSIL
+	pokepic AERODACTYL ;placeholder, will become AERODACTYL_FOSSIL later
 	waitbutton
 	closepokepic
-	jumpthistext
+	jumptext AerodactylFossilText
 
+AerodactylFossilText:
 	text "Aerodactyl Fossil"
+	line "(Wing)"
 
 	para "A primitive and"
 	line "rare #mon."
@@ -340,10 +334,10 @@ AskDomeFossilText:
 	cont "Dome Fossil?"
 	done
 
-AskOldAmberText:
+AskWingFossilText:
 	text "Do you want to"
 	line "resurrect the"
-	cont "Old Amber?"
+	cont "Wing Fossil?"
 	done
 
 NoFossilsText:
@@ -373,3 +367,31 @@ TakeGoodCareOfItText:
 	text "Take good care"
 	line "of it!"
 	done
+	
+PewterMuseumOfScience1F_MapEvents:
+	def_warp_events
+	warp_event 10,  7, PEWTER_CITY, 6
+	warp_event 11,  7, PEWTER_CITY, 6
+	warp_event 16,  7, PEWTER_CITY, 7
+	warp_event 17,  7, PEWTER_CITY, 7
+	warp_event  7,  7, PEWTER_MUSEUM_OF_SCIENCE_2F, 1
+
+	def_coord_events
+
+	def_bg_events
+	bg_event  2,  3, BGEVENT_READ, KabutopsFossilSignpostScript
+	bg_event  6,  3, BGEVENT_READ, OmastarFossilSignpostScript
+	bg_event  3,  6, BGEVENT_READ, AerodactylFossilSignpostScript
+	bg_event 12,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+	bg_event 13,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+	bg_event 14,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+	bg_event 15,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+	bg_event 17,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+	bg_event 18,  1, BGEVENT_READ, Museum1FBookshelfSignpostText
+
+	def_object_events
+	object_event 18,  3, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Museum1FFossilScientistScript, -1
+	object_event 12,  4, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Museum1FReceptionistScript, -1
+	object_event 16,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Museum1FScientistScript, -1
+	object_event  1,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Museum1FGrampsScript, -1
+	object_event  4,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Museum1FYoungsterScript, -1

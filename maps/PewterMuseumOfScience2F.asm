@@ -1,35 +1,26 @@
-PewterMuseumOfScience2F_MapScriptHeader:
+PewterMuseumOfScience2F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-	def_warp_events
-	warp_event  7,  7, PEWTER_MUSEUM_OF_SCIENCE_1F, 5
+Museum2FScientistScript:
+	jumptextfaceplayer Museum2FScientistText
 
-	def_coord_events
+Museum2FChildScript:
+	jumptextfaceplayer Museum2FChildText
 
-	def_bg_events
-	bg_event  3,  6, BGEVENT_READ, Museum2FMoonStoneSignpostScript
-	bg_event 11,  2, BGEVENT_JUMPTEXT, Museum2FSpaceShuttleSignpostText
+Museum2FTeacherScript:
+	jumptextfaceplayer Museum2FTeacherText
 
-	def_object_events
-	object_event  7,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum2FScientistText, -1
-	object_event  1,  7, SPRITE_CHILD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum2FChildText, -1
-	object_event  2,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum2FTeacherText, -1
-	object_event  2,  1, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Museum2FLassText, -1
-	object_event 12,  5, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Museum2FPokefanMScript, -1
+Museum2FLassScript:
+	jumptextfaceplayer Museum2FLassText
 
 Museum2FPokefanMScript:
 	faceplayer
 	opentext
 	checkevent EVENT_LISTENED_TO_SEISMIC_TOSS_INTRO
 	iftrue Museum2FTutorSeismicTossScript
-	checkunits
-	iftrue .metric
-	writetext Museum2FPokefanMImperialText
 	sjump .ok
-.metric
-	writetext Museum2FPokefanMMetricText
 .ok
 	waitbutton
 	setevent EVENT_LISTENED_TO_SEISMIC_TOSS_INTRO
@@ -42,25 +33,18 @@ Museum2FTutorSeismicTossScript:
 	yesorno
 	iffalse .TutorRefused
 	setval SEISMIC_TOSS
-	writetext ClearText
-	special Special_MoveTutor
+	writetext Text_Museum2FTutorMoveText
+	special MoveTutor
 	ifequal $0, .TeachMove
 .TutorRefused
-	jumpopenedtext Text_Museum2FTutorRefused
+	jumptext Text_Museum2FTutorRefused
 
 .NoSilverLeaf
-	jumpopenedtext Text_Museum2FTutorNoSilverLeaf
+	jumptext Text_Museum2FTutorNoSilverLeaf
 
 .TeachMove
 	takeitem SILVER_LEAF
-	jumpopenedtext Text_Museum2FTutorTaught
-
-Museum2FMoonStoneSignpostScript:
-	refreshscreen
-	trainerpic METEORITE
-	waitbutton
-	closepokepic
-	jumptext Museum2FMoonStoneSignpostText
+	jumptext Text_Museum2FTutorTaught
 
 Museum2FScientistText:
 	text "Meteorites struck"
@@ -146,6 +130,10 @@ Text_Museum2FTutorSeismicToss:
 	line "one Silver Leaf."
 	done
 
+Text_Museum2FTutorMoveText:
+	text_start
+	done
+
 Text_Museum2FTutorNoSilverLeaf:
 	text "You don't have a"
 	line "Silver Leaf!"
@@ -176,3 +164,20 @@ Museum2FMoonStoneSignpostText:
 Museum2FSpaceShuttleSignpostText:
 	text "Space Shuttle"
 	done
+	
+PewterMuseumOfScience2F_MapEvents:
+	def_warp_events
+	warp_event  7,  7, PEWTER_MUSEUM_OF_SCIENCE_1F, 5
+
+	def_coord_events
+
+	def_bg_events
+	bg_event  3,  6, BGEVENT_READ, Museum2FMoonStoneSignpostText
+	bg_event 11,  2, BGEVENT_READ, Museum2FSpaceShuttleSignpostText
+
+	def_object_events
+	object_event  7,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, Museum2FScientistScript, -1
+	object_event  1,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Museum2FChildScript, -1
+	object_event  2,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Museum2FTeacherScript, -1
+	object_event  2,  1, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Museum2FLassScript, -1
+	object_event 12,  5, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Museum2FPokefanMScript, -1
