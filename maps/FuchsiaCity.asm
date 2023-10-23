@@ -68,12 +68,12 @@ FuchsiaCityPokefanMText:
 	done
 
 FuchsiaCityTeacherText:
-	text "The SAFARI ZONE is"
-	line "closed… It's sad,"
-
-	para "considering it's"
-	line "FUCHSIA's main"
-	cont "attraction."
+	text "I caught a"
+	line "TRAMPEL in the"
+	cont "SAFARI ZONE!"
+	
+	para "I should show"
+	line "it to my class!"
 	done
 
 FuchsiaCitySignText:
@@ -93,12 +93,8 @@ FuchsiaGymSignText:
 	done
 
 SafariZoneOfficeSignText:
-	text "There's a notice"
-	line "here…"
-
-	para "SAFARI ZONE OFFICE"
-	line "is closed until"
-	cont "further notice."
+	text "#MON PARADISE"
+	line "SAFARI ZONE"
 	done
 
 WardensHomeSignText:
@@ -107,12 +103,8 @@ WardensHomeSignText:
 	done
 
 SafariZoneClosedSignText:
-	text "The WARDEN is"
-	line "traveling abroad."
-
-	para "Therefore, the"
-	line "SAFARI ZONE is"
-	cont "closed."
+	text "SAFARI GAME"
+	line "#MON-U-CATCH!"
 	done
 
 NoLitteringSignText:
@@ -132,7 +124,7 @@ FuchsiaCity_MapEvents:
 	warp_event 11, 27, BILLS_BROTHERS_HOUSE, 1
 	warp_event 19, 27, FUCHSIA_POKECENTER_1F, 1
 	warp_event 27, 27, SAFARI_ZONE_WARDENS_HOME, 1
-	warp_event 18,  3, SAFARI_ZONE_FUCHSIA_GATE_BETA, 3 ; inaccessible
+	warp_event 18,  3, SAFARI_ZONE_FUCHSIA_GATE_BETA, 3
 	warp_event 37, 22, ROUTE_15_FUCHSIA_GATE, 1
 	warp_event 37, 23, ROUTE_15_FUCHSIA_GATE, 2
 	warp_event  7, 35, ROUTE_19_FUCHSIA_GATE, 1
