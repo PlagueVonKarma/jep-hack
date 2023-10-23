@@ -153,8 +153,8 @@ Route2_MapEvents:
 	warp_event 17, 27, ROUTE_2_GATE, 2
 	warp_event 12,  7, DIGLETTS_CAVE, 3
 	warp_event  5, 33, VIRIDIAN_FOREST_VIRIDIAN_GATE, 1
-	warp_event  3, 11, VIRIDIAN_FOREST_PEWTER_GATE, 3
-	warp_event  4, 11, VIRIDIAN_FOREST_PEWTER_GATE, 4
+	warp_event  2, 11, VIRIDIAN_FOREST_PEWTER_GATE, 3
+	warp_event  3, 11, VIRIDIAN_FOREST_PEWTER_GATE, 4
 
 	def_coord_events
 
