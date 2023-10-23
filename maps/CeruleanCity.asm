@@ -283,6 +283,7 @@ CeruleanCity_MapEvents:
 	warp_event 19, 21, CERULEAN_POKECENTER_1F, 1
 	warp_event 30, 23, CERULEAN_GYM, 1
 	warp_event 25, 29, CERULEAN_MART, 2
+	warp_event  2, 11, CERULEAN_CAVE_1F, 1
 
 	def_coord_events
 
@@ -295,7 +296,7 @@ CeruleanCity_MapEvents:
 	bg_event 14, 29, BGEVENT_READ, CeruleanLockedDoor
 	bg_event 20, 21, BGEVENT_READ, CeruleanCityPokecenterSign
 	bg_event 26, 29, BGEVENT_READ, CeruleanCityMartSign
-	bg_event  2, 12, BGEVENT_ITEM, CeruleanCityHiddenBerserkGene
+	;bg_event  2, 12, BGEVENT_ITEM, CeruleanCityHiddenBerserkGene ; To be moved to where Mewtwo will have been sitting.
 
 	def_object_events
 	object_event 15, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeruleanCityCooltrainerMScript, -1
