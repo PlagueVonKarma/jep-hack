@@ -1077,4 +1077,13 @@ MACRO checkmaplockedmons
 	db checkmaplockedmons_command
 ENDM
 
+MACRO callthisasm
+	; "callasm .asm\@" causes a "File stack dump too long, got truncated"
+	; error due to the long filename:linenumber trace of nested macros.
+	db callasm_command
+	dba .asm\@
+	end
+.asm\@
+ENDM
+
 DEF NUM_EVENT_COMMANDS EQU const_value

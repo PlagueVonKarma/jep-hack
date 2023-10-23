@@ -1838,7 +1838,7 @@ wBufferMon:: party_struct wBufferMon
 	ds 8
 wMonOrItemNameBuffer:: ds NAME_LENGTH
 	ds NAME_LENGTH
-
+wOverworldDelaySkip:: db
 
 SECTION UNION "Miscellaneous WRAM 1", WRAMX
 
@@ -3120,6 +3120,7 @@ wFastShipB1FSceneID::                             db
 wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
+wCeruleanCave1FSceneID::                          db
 
 	ds 49
 
@@ -3235,6 +3236,9 @@ wdc41:: ds 1
 wdc42:: ds 8
 wBuenasPassword:: db
 wBlueCardBalance:: db
+
+wWalkingOnBridge:: db
+
 wDailyRematchFlags:: ds 4
 wDailyPhoneItemFlags:: ds 4
 wDailyPhoneTimeOfDayFlags:: ds 4
