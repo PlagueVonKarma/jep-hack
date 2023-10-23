@@ -94,3 +94,11 @@ if _NARG == 0
 	sine_table 32
 endc
 ENDM
+
+MACRO changebridgeblock
+	; lb de, \1 + 4, \2 + 4
+	; call GetBlockLocation
+	ld hl, wOverworldMapBlocks + (\2 / 2 + 3) * (\4_WIDTH + 6) + \1 / 2 + 3
+	; hard-coding the above calculation for efficiency
+	ld [hl], \3
+ENDM

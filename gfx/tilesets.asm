@@ -234,15 +234,6 @@ INCBIN "data/tilesets/johto_modern_metatiles.bin"
 TilesetJohtoModernColl::
 INCLUDE "data/tilesets/johto_modern_collision.asm"
 
-TilesetTraditionalHouseGFX::
-INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
-
-TilesetTraditionalHouseMeta::
-INCBIN "data/tilesets/traditional_house_metatiles.bin"
-
-TilesetTraditionalHouseColl::
-INCLUDE "data/tilesets/traditional_house_collision.asm"
-
 
 SECTION "Tileset Data 6", ROMX
 
@@ -463,3 +454,14 @@ INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
 
 TilesetNihon1Attr::
 INCBIN "data/tilesets/nihon01_attributes.bin"
+
+SECTION "Tileset Data 12", ROMX
+
+TilesetTraditionalHouseGFX::
+INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
+
+TilesetTraditionalHouseMeta::
+INCBIN "data/tilesets/traditional_house_metatiles.bin"
+
+TilesetTraditionalHouseColl::
+INCLUDE "data/tilesets/traditional_house_collision.asm"
