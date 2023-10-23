@@ -62,7 +62,7 @@ BugCatcherDaneSeenText:
 	text "Welcome to"
 	line "Viridian Forest."
 	cont "Enjoy my Bug-type"
-	cont "#mon."
+	cont "#MON!"
 	done
 
 BugCatcherDaneBeatenText:
@@ -88,11 +88,11 @@ BugCatcherDionBeatenText:
 	done
 	
 BugCatcherDionAfterBattleText:
-	text "Bug-type #mon"
+	text "Bug-type #MON"
 	line "make all kinds of"
 	cont "sounds."
 
-	para "For bug #mon"
+	para "For bug #MON"
 	line "fans, knowing how"
 	cont "to distinguish"
 	cont "them is key!"
@@ -100,11 +100,11 @@ BugCatcherDionAfterBattleText:
 
 BugCatcherStaceySeenText:
 	text "Wow, that's a HUGE"
-	line "#mon!"
+	line "#MON!"
 
 	para "…"
 	line "…What kind of"
-	cont "trainer?!"
+	cont "TRAINER?!"
 	done
 
 BugCatcherStaceyBeatenText:
@@ -116,14 +116,14 @@ BugCatcherStaceyAfterBattleText:
 	text "Has anyone ever"
 	line "told you that from"
 	cont "behind you look"
-	cont "like a Venonat?"
+	cont "like a VENONAT?"
 	done
 	
 BugCatcherEllisSeenText:
 	text "There's nothing"
 	line "more efficient and"
 	cont "beautiful than a"
-	cont "Bug-type #mon."
+	cont "Bug-type #MON."
 	done
 
 BugCatcherEllisBeatenText:
@@ -139,20 +139,20 @@ BugCatcherEllisAfterBattleText:
 
 BugCatcherAbnerSeenText:
 	text "Many people prefer"
-	line "solid bug #mon"
+	line "solid bug #MON"
 	cont "over squishy bug"
-	cont "#mon."
+	cont "#MON."
 	done
 
 BugCatcherAbnerBeatenText:
 	text "Thanks for your"
 	line "hard work, my"
-	cont "lovely #mon…"
+	cont "lovely #MON…"
 	done
 	
 BugCatcherAbnerAfterBattleText:
 	text "Doesn't matter what"
-	line "kind of #mon--"
+	line "kind of #MON--"
 
 	para "as long as you"
 	line "like them, they"
@@ -161,15 +161,15 @@ BugCatcherAbnerAfterBattleText:
 
 ViridianForestSignText1:
 	text "Leaving"
-	line "Viridian Forest"
-	cont "Pewter City Ahead"
+	line "VIRIDIAN FOREST"
+	cont "PEWTER CITY ahead"
 	done
 
 ViridianForestSignText2:
 	text "Trainer Tips"
 
 	para "Hold on to that"
-	line "Big Mushroom!"
+	line "BIG MUSHROOM!"
 
 	para "Some maniacs will"
 	line "pay lots of money"
@@ -179,21 +179,22 @@ ViridianForestSignText2:
 ViridianForestSignText3:
 	text "Trainer Tips"
 
-	para "Grass-type #mon"
-	line "are unaffected by"
-
-	para "powder and spore"
-	line "moves!"
+	para "Weaken #MON"
+	line "before trying"
+	cont "to catch them!"
+	
+	para "When healthy,"
+	line "they may escape!"
 	done
 
 ViridianForestSignText4:
 	text "For poison, use"
-	line "Antidote! Get it"
-	cont "at #mon Marts!"
+	line "ANTIDOTE! Get it"
+	cont "at #MON MARTs!"
 	done
 
 ViridianForestSignText5:
-	text "Trainer Tips"
+	text "TRAINER TIPS"
 
 	para "Poison-type #-"
 	line "mon can't be poi-"
@@ -201,9 +202,9 @@ ViridianForestSignText5:
 	done
 
 ViridianForestSignText6:
-	text "Trainer Tips"
+	text "TRAINER TIPS"
 
-	para "Weaken #mon"
+	para "Weaken #MON"
 	line "before attempting"
 	cont "capture!"
 
