@@ -166,7 +166,7 @@ ENDM
 	map_const ECRUTEAK_GYM,                                 5,  9 ;  7
 	map_const ECRUTEAK_ITEMFINDER_HOUSE,                    4,  4 ;  8
 	map_const ECRUTEAK_CITY,                               20, 18 ;  9
-    map_const BELLCHIME_TRAIL,                              6, 12
+    map_const BELLCHIME_TRAIL,                             12,  7
 	endgroup
 
 	newgroup BLACKTHORN                                           ;  5
@@ -211,9 +211,9 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
-    map_const CERULEAN_CAVE_1F,                             9, 15 
-	map_const CERULEAN_CAVE_2F,                             9, 15 
-	map_const CERULEAN_CAVE_B1F,                            9, 15 
+    map_const CERULEAN_CAVE_1F,                            17, 12 
+	map_const CERULEAN_CAVE_2F,                            17, 11 
+	map_const CERULEAN_CAVE_B1F,                           17, 11 
 	endgroup
 
 	newgroup AZALEA                                               ;  8
@@ -316,8 +316,8 @@ ENDM
 	map_const PEWTER_POKECENTER_1F,                         5,  4 ;  6
 	map_const PEWTER_POKECENTER_2F_BETA,                    8,  4 ;  7
 	map_const PEWTER_SNOOZE_SPEECH_HOUSE,                   4,  4 ;  8
-    map_const PEWTER_MUSEUM_OF_SCIENCE_1F,                  4, 10
-    map_const PEWTER_MUSEUM_OF_SCIENCE_2F,                  4,  7
+    map_const PEWTER_MUSEUM_OF_SCIENCE_1F,                 10,  4
+    map_const PEWTER_MUSEUM_OF_SCIENCE_2F,                  7,  4
 	endgroup
 
 	newgroup FAST_SHIP                                            ; 15
@@ -457,7 +457,7 @@ ENDM
 	map_const ROUTE_2_NUGGET_HOUSE,                         4,  4 ; 11
 	map_const ROUTE_2_GATE,                                 5,  4 ; 12
 	map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
-        map_const VIRIDIAN_FOREST,                             27, 15 
+    map_const VIRIDIAN_FOREST,                             19, 26 
 	map_const VIRIDIAN_FOREST_VIRIDIAN_GATE,                 4, 5 
 	map_const VIRIDIAN_FOREST_PEWTER_GATE,                   4, 5                           
 	endgroup
