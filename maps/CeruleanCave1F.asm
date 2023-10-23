@@ -2,6 +2,48 @@ CeruleanCave1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+CeruleanCave1FTileScript:
+	checkscene
+	iftrue .underfoot
+	callasm CeruleanCave1F_OverheadBridgeAsm
+	endcallback
+
+.underfoot:
+	callasm CeruleanCave1F_UnderfootBridgeAsm
+	endcallback
+
+CeruleanCave1F_OverheadBridgeAsm:
+	changebridgeblock 20, 2, $ea, CERULEAN_CAVE_1F
+	changebridgeblock 22, 2, $eb, CERULEAN_CAVE_1F
+	changebridgeblock 20, 4, $ee, CERULEAN_CAVE_1F
+	changebridgeblock 22, 4, $ef, CERULEAN_CAVE_1F
+	changebridgeblock 20, 6, $59, CERULEAN_CAVE_1F
+	changebridgeblock 22, 6, $5b, CERULEAN_CAVE_1F
+	jmp BufferScreen
+
+CeruleanCave1F_UnderfootBridgeAsm:
+	changebridgeblock 20, 2, $e8, CERULEAN_CAVE_1F
+	changebridgeblock 22, 2, $e9, CERULEAN_CAVE_1F
+	changebridgeblock 20, 4, $ec, CERULEAN_CAVE_1F
+	changebridgeblock 22, 4, $ed, CERULEAN_CAVE_1F
+	changebridgeblock 20, 6, $55, CERULEAN_CAVE_1F
+	changebridgeblock 22, 6, $57, CERULEAN_CAVE_1F
+	jmp BufferScreen
+
+CeruleanCave1FBridgeOverheadTrigger:
+	callasm CeruleanCave1F_OverheadBridgeAsm
+	callthisasm
+	xor a
+	jr CeruleanCave1F_FinishBridge
+
+CeruleanCave1FBridgeUnderfootTrigger:
+	callasm CeruleanCave1F_UnderfootBridgeAsm
+	callthisasm
+	ld a, $1
+CeruleanCave1F_FinishBridge:
+	ld [wWalkingOnBridge], a
+	ld [wCeruleanCave1FSceneID], a ; setscene a
+	jmp GenericFinishBridge
 
 CeruleanCave1F_MapEvents:
 	def_warp_events
