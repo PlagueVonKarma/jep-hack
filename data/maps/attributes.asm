@@ -695,14 +695,13 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
-        map_attributes BellchimeTrail, BELLCHIME_TRAIL, $5, 0
-	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $0, 0
-	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $0, 0
-	map_attributes ViridianForest, VIRIDIAN_FOREST, $45, 0
-	map_attributes ViridianForestViridianGate, VIRIDIAN_FOREST_VIRIDIAN_GATE, $0, 0
-	map_attributes ViridianForestPewterGate, VIRIDIAN_FOREST_PEWTER_GATE, $0, 0
-	map_attributes Route1ViridianGate, ROUTE_1_VIRIDIAN_GATE, $0, 0
-	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $9, 0
-	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $9, 0
-	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $9, 0
+    map_attributes BellchimeTrail, BELLCHIME_TRAIL, $00, 0
+	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $00, 0
+	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $00, 0
+	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
+	map_attributes ViridianForestViridianGate, VIRIDIAN_FOREST_VIRIDIAN_GATE, $00, 0
+	map_attributes ViridianForestPewterGate, VIRIDIAN_FOREST_PEWTER_GATE, $00, 0
+	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $00, 0
+	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $00, 0
+	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $00, 0
 	map_attributes SilentHills, SILENT_HILLS, $00, 0 ; this is on its own for now. add connections to mt. silver later.

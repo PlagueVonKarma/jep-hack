@@ -1048,17 +1048,17 @@ BetaBlank_Blocks: ; unreferenced
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.ablk"
 
-BellchimeTrail_Blocks
-        INCBIN "maps/BellchimeTrail.ablk"
+BellchimeTrail_Blocks:
+    INCBIN "maps/BellchimeTrail.ablk"
 
 ViridianForest_Blocks:
 	INCBIN "maps/ViridianForest.ablk"
 
-PewterCityMuseumOfScience1F_Blocks:
-        INCBIN "maps/PewterCityMuseumOfScience1F.ablk"
+PewterMuseumOfScience1F_Blocks:
+    INCBIN "maps/PewterMuseumOfScience1F.ablk"
 
-PewterCityMuseumOfScience2F_Blocks:
-        INCBIN "maps/PewterCityMuseumOfScience2F.ablk"
+PewterMuseumOfScience2F_Blocks:
+    INCBIN "maps/PewterMuseumOfScience2F.ablk"
 
 CeruleanCave1F_Blocks:
 	INCBIN "maps/CeruleanCave1F.ablk"
