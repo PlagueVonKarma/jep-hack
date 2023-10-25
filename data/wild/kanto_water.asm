@@ -170,4 +170,11 @@ KantoWaterWildMons:
 	dbw 35, TENTACRUEL
 	end_water_wildmons
 
+	def_water_wildmons SAFARI_ZONE_BETA
+	db 6 percent ; encounter rate
+	dbw 35, KINGLER
+	dbw 30, GYARADOS
+	dbw 35, DRAGONAIR
+	end_water_wildmons
+
 	db -1 ; end
