@@ -841,5 +841,33 @@ KantoGrassWildMons:
 	dbw 42, GOLBAT
 	dbw 42, GOLBAT
 	end_grass_wildmons
-
+	
+	def_grass_wildmons SAFARI_ZONE_BETA
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 39, NIDORINO
+	dbw 40, NIDORINA
+	dbw 40, PARASECT
+	dbw 42, VENOMOTH
+	dbw 41, EXEGGCUTE
+	dbw 43, MAROWAK
+	dbw 43, KANGASKHAN
+	; day
+	dbw 39, NIDORINO
+	dbw 40, NIDORINA
+	dbw 40, PARASECT
+	dbw 42, VENOMOTH
+	dbw 41, EXEGGCUTE
+	dbw 43, MAROWAK
+	dbw 43, TAUROS
+	; nite
+	dbw 39, NIDORINO
+	dbw 40, NIDORINA
+	dbw 40, PARASECT
+	dbw 42, VENOMOTH
+	dbw 41, EXEGGCUTE
+	dbw 43, MAROWAK
+	dbw 43, CHANSEY
+	end_grass_wildmons
+	
 	db -1 ; end
