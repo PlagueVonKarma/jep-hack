@@ -49,4 +49,5 @@ Tilesets::
 	tileset TilesetOmanyteWordRoom
 	tileset TilesetAerodactylWordRoom
 	tileset TilesetNihon1
+	tileset TilesetForestKanto
 	assert_table_length NUM_TILESETS + 1

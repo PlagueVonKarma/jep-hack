@@ -336,6 +336,15 @@ INCBIN "data/tilesets/nihon01_metatiles.bin"
 TilesetNihon1Coll::
 INCLUDE "data/tilesets/nihon01_collision.asm"
 
+TilesetForestKantoGFX::
+INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
+
+TilesetForestKantoMeta::
+INCBIN "data/tilesets/forest_kanto_metatiles.bin"
+
+TilesetForestKantoColl::
+INCLUDE "data/tilesets/forest_kanto_collision.asm"
+
 
 SECTION "Tileset Data 9", ROMX
 
@@ -454,6 +463,9 @@ INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
 
 TilesetNihon1Attr::
 INCBIN "data/tilesets/nihon01_attributes.bin"
+
+TilesetForestKantoAttr::
+INCBIN "data/tilesets/forest_kanto_attributes.bin"
 
 SECTION "Tileset Data 12", ROMX
 
