@@ -118,6 +118,8 @@ EggMovePointers1:
 	dw KangaskhanEggMoves
 	dw HorseaEggMoves
 	dw NoEggMoves1
+	dw BlastykeEggMoves
+	dw NoEggMoves1
 	dw GoldeenEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -513,6 +515,15 @@ HorseaEggMoves:
 	dw DISABLE
 	dw SPLASH
 	dw DRAGON_RAGE
+	dw -1 ; end
+	
+BlastykeEggMoves:
+	dw MIRROR_COAT
+	dw HAZE
+	dw MIST
+	dw CONFUSION
+	dw FORESIGHT
+	dw FLAIL
 	dw -1 ; end
 
 GoldeenEggMoves:

@@ -8,7 +8,7 @@ AnimationPointers:
 	dw CharizardAnimation
 	dw SquirtleAnimation
 	dw WartortleAnimation
-	dw BlastoiseAnimation
+	dw TotartleAnimation
 	dw CaterpieAnimation
 	dw MetapodAnimation
 	dw ButterfreeAnimation
@@ -117,6 +117,8 @@ AnimationPointers:
 	dw KangaskhanAnimation
 	dw HorseaAnimation
 	dw SeadraAnimation
+	dw BlastykeAnimation
+	dw BlastoiseAnimation
 	dw GoldeenAnimation
 	dw SeakingAnimation
 	dw StaryuAnimation

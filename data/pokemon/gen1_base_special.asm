@@ -10,7 +10,7 @@ KantoMonSpecials:
 	db  85 ; CHARIZARD
 	db  50 ; SQUIRTLE
 	db  65 ; WARTORTLE
-	db  85 ; BLASTOISE
+	db 100 ; BLASTOISE
 	db  20 ; CATERPIE
 	db  25 ; METAPOD
 	db  80 ; BUTTERFREE
@@ -119,6 +119,8 @@ KantoMonSpecials:
 	db  40 ; KANGASKHAN
 	db  70 ; HORSEA
 	db  95 ; SEADRA
+	db  45 ; BLASTYKE
+	db  85 ; BLASTOISE
 	db  50 ; GOLDEEN
 	db  80 ; SEAKING
 	db  70 ; STARYU

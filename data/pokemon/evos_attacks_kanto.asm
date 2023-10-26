@@ -9,7 +9,7 @@ EvosAttacksPointers1::
 	dw CharizardEvosAttacks
 	dw SquirtleEvosAttacks
 	dw WartortleEvosAttacks
-	dw BlastoiseEvosAttacks
+	dw TotartleEvosAttacks
 	dw CaterpieEvosAttacks
 	dw MetapodEvosAttacks
 	dw ButterfreeEvosAttacks
@@ -118,6 +118,8 @@ EvosAttacksPointers1::
 	dw KangaskhanEvosAttacks
 	dw HorseaEvosAttacks
 	dw SeadraEvosAttacks
+	dw BlastykeEvosAttacks
+	dw BlastoiseEvosAttacks
 	dw GoldeenEvosAttacks
 	dw SeakingEvosAttacks
 	dw StaryuEvosAttacks
@@ -271,7 +273,7 @@ SquirtleEvosAttacks:
 	db 0 ; no more level-up moves
 
 WartortleEvosAttacks:
-	dbbw EVOLVE_LEVEL, 36, BLASTOISE
+	dbbw EVOLVE_LEVEL, 36, TOTARTLE
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP
@@ -288,7 +290,7 @@ WartortleEvosAttacks:
 	dbw 53, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-BlastoiseEvosAttacks:
+TotartleEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP
@@ -301,9 +303,11 @@ BlastoiseEvosAttacks:
 	dbw 19, BITE
 	dbw 25, RAPID_SPIN
 	dbw 31, PROTECT
-	dbw 42, RAIN_DANCE
-	dbw 55, SKULL_BASH
-	dbw 68, HYDRO_PUMP
+	dbw 36, COMET_PUNCH
+	dbw 40, RAIN_DANCE
+	dbw 51, SKULL_BASH
+	dbw 62, HYDRO_PUMP
+	dbw 67, PETAL_DANCE
 	db 0 ; no more level-up moves
 
 CaterpieEvosAttacks:
@@ -1736,6 +1740,39 @@ SeadraEvosAttacks:
 	dbw 29, TWISTER
 	dbw 40, AGILITY
 	dbw 51, HYDRO_PUMP
+	db 0 ; no more level-up moves
+	
+BlastykeEvosAttacks:
+	dbbw EVOLVE_LEVEL, 36, BLASTOISE
+	dbw 1, TACKLE
+	dbw 4, TAIL_WHIP
+	dbw 7, BUBBLE
+	dbw 10, WITHDRAW
+	dbw 13, WATER_GUN
+	dbw 19, BITE
+	dbw 25, RAPID_SPIN
+	dbw 31, PROTECT
+	dbw 38, RAIN_DANCE
+	dbw 47, SKULL_BASH
+	dbw 56, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+BlastoiseEvosAttacks:
+db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, TAIL_WHIP
+	dbw 1, BUBBLE
+	dbw 1, WITHDRAW
+	dbw 4, TAIL_WHIP
+	dbw 7, BUBBLE
+	dbw 10, WITHDRAW
+	dbw 13, WATER_GUN
+	dbw 19, BITE
+	dbw 25, RAPID_SPIN
+	dbw 31, PROTECT
+	dbw 42, RAIN_DANCE
+	dbw 55, SKULL_BASH
+	dbw 68, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GoldeenEvosAttacks:

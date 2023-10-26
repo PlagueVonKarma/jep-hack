@@ -171,6 +171,7 @@ Pokered_MonIndices:
 	db GEODUDE
 	db PORYGON
 	db AERODACTYL
+	db BLASTYKE
 	db RAIKOU ; MISSINGNO.
 	db MAGNEMITE
 	db ENTEI ; MISSINGNO.
@@ -180,6 +181,7 @@ Pokered_MonIndices:
 	db CHARMELEON
 	db WARTORTLE
 	db CHARIZARD
+	db TOTARTLE
 	db LARVITAR ; MISSINGNO.
 	db PUPITAR ; MISSINGNO. KABUTOPS FOSSIL
 	db TYRANITAR ; MISSINGNO. AERODACTYL FOSSIL
@@ -190,7 +192,7 @@ Pokered_MonIndices:
 	db BELLSPROUT
 	db WEEPINBELL
 	db VICTREEBEL
-	assert_table_length 190 ; gen 1 mon indexes
+	assert_table_length 192 ; gen 1 mon indexes
 	db CHIKORITA
 	db BAYLEEF
 	db MEGANIUM

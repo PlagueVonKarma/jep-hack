@@ -118,6 +118,8 @@ FirstEvoStages::
 	dw KANGASKHAN
 	dw HORSEA
 	dw HORSEA
+	dw BLASTYKE
+	dw BLASTYKE
 	dw GOLDEEN
 	dw GOLDEEN
 	dw STARYU     ;78
