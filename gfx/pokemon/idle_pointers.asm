@@ -8,7 +8,7 @@ AnimationIdlePointers:
 	dw CharizardAnimationIdle
 	dw SquirtleAnimationIdle
 	dw WartortleAnimationIdle
-	dw BlastoiseAnimationIdle
+	dw TotartleAnimationIdle
 	dw CaterpieAnimationIdle
 	dw MetapodAnimationIdle
 	dw ButterfreeAnimationIdle
@@ -117,6 +117,8 @@ AnimationIdlePointers:
 	dw KangaskhanAnimationIdle
 	dw HorseaAnimationIdle
 	dw SeadraAnimationIdle
+	dw BlastykeAnimationIdle
+	dw BlastoiseAnimationIdle
 	dw GoldeenAnimationIdle
 	dw SeakingAnimationIdle
 	dw StaryuAnimationIdle

@@ -8,7 +8,7 @@ FramesPointers:
 	dba CharizardFrames
 	dba SquirtleFrames
 	dba WartortleFrames
-	dba BlastoiseFrames
+	dba TotartleFrames
 	dba CaterpieFrames
 	dba MetapodFrames
 	dba ButterfreeFrames
@@ -117,6 +117,8 @@ FramesPointers:
 	dba KangaskhanFrames
 	dba HorseaFrames
 	dba SeadraFrames
+	dba BlastykeFrames
+	dba BlastoiseFrames
 	dba GoldeenFrames
 	dba SeakingFrames
 	dba StaryuFrames

@@ -29,8 +29,8 @@ PokemonPicPointers::
 	dba SquirtleBackpic
 	dba WartortleFrontpic
 	dba WartortleBackpic
-	dba BlastoiseFrontpic
-	dba BlastoiseBackpic
+	dba TotartleFrontpic
+	dba TotartleBackpic
 	dba CaterpieFrontpic
 	dba CaterpieBackpic
 	dba MetapodFrontpic
@@ -247,6 +247,10 @@ PokemonPicPointers::
 	dba HorseaBackpic
 	dba SeadraFrontpic
 	dba SeadraBackpic
+	dba BlastykeFrontpic
+	dba BlastykeBackpic
+	dba BlastoiseFrontpic
+	dba BlastoiseBackpic
 	dba GoldeenFrontpic
 	dba GoldeenBackpic
 	dba SeakingFrontpic

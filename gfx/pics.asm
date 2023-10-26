@@ -713,10 +713,10 @@ SECTION "Pics 19", ROMX
 
 ; Seems to be an accidental copy of the previous bank
 
-INCBIN "gfx/pokemon/spinarak/back.2bpp.lz"
-INCBIN "gfx/pokemon/raikou/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/houndour/back.2bpp.lz"
+TotartleFrontpic:    INCBIN "gfx/pokemon/totartle/front.animated.2bpp.lz"
+TotartleBackpic:     INCBIN "gfx/pokemon/totartle/back.2bpp.lz"
+BlastykeFrontpic:    INCBIN "gfx/pokemon/blastyke/front.animated.2bpp.lz"
+BlastykeBackpic:     INCBIN "gfx/pokemon/blastyke/back.2bpp.lz"
 INCBIN "gfx/pokemon/poliwag/back.2bpp.lz"
 INCBIN "gfx/pokemon/squirtle/back.2bpp.lz"
 INCBIN "gfx/pokemon/shuckle/back.2bpp.lz"
