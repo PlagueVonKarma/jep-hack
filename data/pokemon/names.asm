@@ -75,6 +75,7 @@ PokemonNames::
 	db "BELLSPROUT"
 	db "WEEPINBELL"
 	db "VICTREEBEL"
+	db "BELLIGNAN@"
 	db "TENTACOOL@"
 	db "TENTACRUEL"
 	db "GEODUDE@@@"

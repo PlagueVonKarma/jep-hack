@@ -72,6 +72,7 @@ PokedexDataPointerTable:
 	dba BellsproutPokedexEntry
 	dba WeepinbellPokedexEntry
 	dba VictreebelPokedexEntry
+	dba BellignanPokedexEntry
 	dba TentacoolPokedexEntry
 	dba TentacruelPokedexEntry
 	dba GeodudePokedexEntry

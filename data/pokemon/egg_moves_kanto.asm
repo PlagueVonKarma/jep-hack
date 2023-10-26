@@ -72,6 +72,7 @@ EggMovePointers1:
 	dw BellsproutEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Bellignan
 	dw TentacoolEggMoves
 	dw NoEggMoves1
 	dw GeodudeEggMoves

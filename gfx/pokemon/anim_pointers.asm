@@ -71,6 +71,7 @@ AnimationPointers:
 	dw BellsproutAnimation
 	dw WeepinbellAnimation
 	dw VictreebelAnimation
+	dw BellignanAnimation
 	dw TentacoolAnimation
 	dw TentacruelAnimation
 	dw GeodudeAnimation

@@ -114,23 +114,23 @@ PlayersRadioText4:
 	
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BLASTYKE
+	getmonname STRING_BUFFER_3, BELLIGNAN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BLASTYKE, 35, RARE_CANDY
+	givepoke BELLIGNAN, 35, RARE_CANDY
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, WARTORTLE
+	getmonname STRING_BUFFER_3, WEEPINBELL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WARTORTLE, 35, RARE_CANDY
+	givepoke WEEPINBELL, 35, POISON_STONE
 	closetext
 	end
 

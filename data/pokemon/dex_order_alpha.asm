@@ -14,6 +14,7 @@ AlphabeticalPokedexOrder:
 	dw AZUMARILL
 	dw BAYLEEF
 	dw BEEDRILL
+	dw BELLIGNAN
 	dw BELLOSSOM
 	dw BELLSPROUT
 	dw BLASTOISE

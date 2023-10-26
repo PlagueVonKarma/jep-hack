@@ -71,6 +71,7 @@ FramesPointers:
 	dba BellsproutFrames
 	dba WeepinbellFrames
 	dba VictreebelFrames
+	dba BellignanFrames
 	dba TentacoolFrames
 	dba TentacruelFrames
 	dba GeodudeFrames

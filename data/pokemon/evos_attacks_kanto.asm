@@ -72,6 +72,7 @@ EvosAttacksPointers1::
 	dw BellsproutEvosAttacks
 	dw WeepinbellEvosAttacks
 	dw VictreebelEvosAttacks
+	dw BellignanEvosAttacks
 	dw TentacoolEvosAttacks
 	dw TentacruelEvosAttacks
 	dw GeodudeEvosAttacks
@@ -1069,6 +1070,7 @@ BellsproutEvosAttacks:
 
 WeepinbellEvosAttacks:
 	dbbw EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
+	dbbw EVOLVE_ITEM, POISON_STONE, BELLIGNAN
 	db 0 ; no more evolutions
 	dbw 1, VINE_WHIP
 	dbw 1, GROWTH
@@ -1090,6 +1092,16 @@ VictreebelEvosAttacks:
 	dbw 1, SLEEP_POWDER
 	dbw 1, SWEET_SCENT
 	dbw 1, RAZOR_LEAF
+	db 0 ; no more level-up moves
+
+BellignanEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SLEEP_POWDER
+	dbw 1, RAZOR_LEAF
+	dbw 1, LOVELY_KISS
+	dbw 1, ACID
+	dbw 40, LOVELY_KISS
+	dbw 48, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 TentacoolEvosAttacks:

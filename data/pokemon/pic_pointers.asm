@@ -155,6 +155,8 @@ PokemonPicPointers::
 	dba WeepinbellBackpic
 	dba VictreebelFrontpic
 	dba VictreebelBackpic
+	dba BellignanFrontpic
+	dba BellignanBackpic
 	dba TentacoolFrontpic
 	dba TentacoolBackpic
 	dba TentacruelFrontpic
