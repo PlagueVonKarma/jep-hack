@@ -345,6 +345,15 @@ INCBIN "data/tilesets/forest_kanto_metatiles.bin"
 TilesetForestKantoColl::
 INCLUDE "data/tilesets/forest_kanto_collision.asm"
 
+TilesetMuseumGFX::
+INCBIN "gfx/tilesets/museum.2bpp.lz"
+
+TilesetMuseumMeta::
+INCBIN "data/tilesets/museum_metatiles.bin"
+
+TilesetMuseumColl::
+INCLUDE "data/tilesets/museum_collision.asm"
+
 
 SECTION "Tileset Data 9", ROMX
 
@@ -468,6 +477,9 @@ TilesetForestKantoAttr::
 INCBIN "data/tilesets/forest_kanto_attributes.bin"
 
 SECTION "Tileset Data 12", ROMX
+
+TilesetMuseumAttr::
+INCBIN "data/tilesets/museum_attributes.bin"
 
 TilesetTraditionalHouseGFX::
 INCBIN "gfx/tilesets/traditional_house.2bpp.lz"

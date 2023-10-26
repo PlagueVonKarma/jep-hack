@@ -38,6 +38,7 @@
 	const TILESET_AERODACTYL_WORD_ROOM ; 24
 	const TILESET_NIHON_01             ; 25
 	const TILESET_FOREST_KANTO         ; 26
+	const TILESET_MUSEUM               ; 27
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size
