@@ -114,23 +114,23 @@ PlayersRadioText4:
 	
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BLASTYKE
+	getmonname STRING_BUFFER_3, BELLIGNAN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BLASTYKE, 35, RARE_CANDY
+	givepoke BELLIGNAN, 35, RARE_CANDY
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, WARTORTLE
+	getmonname STRING_BUFFER_3, WEEPINBELL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WARTORTLE, 35, RARE_CANDY
+	givepoke WEEPINBELL, 35, POISON_STONE
 	closetext
 	end
 
@@ -145,7 +145,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, LAKE_OF_RAGE, 3
+	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
 

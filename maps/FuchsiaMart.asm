@@ -21,11 +21,9 @@ FuchsiaMartCooltrainerFScript:
 	jumptextfaceplayer FuchsiaMartCooltrainerFText
 
 FuchsiaMartFisherText:
-	text "I was hoping to"
-	line "buy some SAFARI"
-
-	para "ZONE souvenirs,"
-	line "but it's closed…"
+	text "I'm buying some"
+	line "SAFARI ZONE"
+	cont "souvenirs!"
 	done
 
 FuchsiaMartCooltrainerFText:
