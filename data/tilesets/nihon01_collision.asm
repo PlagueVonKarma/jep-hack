@@ -123,6 +123,6 @@
 	tilecoll WATER, WATER, WATER, WATER ; 7a
 	tilecoll WALL, WALL, WALL, WALL ; 7b
 	tilecoll WALL, WALL, WALL, WALL ; 7c
-	tilecoll WALL, WALL, FLOOR, FLOOR ; 7d
+	tilecoll WALL, WALL, WALL, WALL ; 7d
 	tilecoll WALL, DOOR, FLOOR, FLOOR ; 7e
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 7f
