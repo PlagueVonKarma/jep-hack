@@ -11,6 +11,7 @@
 	const LAKEOFRAGE_WESLEY
 	const LAKEOFRAGE_POKE_BALL1
 	const LAKEOFRAGE_POKE_BALL2
+	const LAKEOFRAGE_CAMERAMAN
 
 LakeOfRage_MapScripts:
 	def_scene_scripts
@@ -124,6 +125,9 @@ LakeOfRageSuperNerdScript:
 
 LakeOfRageCooltrainerFScript:
 	jumptextfaceplayer LakeOfRageCooltrainerFText
+
+LakeOfRageCameramanScript:
+	jumptextfaceplayer LakeOfRageCameramanText
 
 LakeOfRageSign:
 	jumptext LakeOfRageSignText
@@ -491,32 +495,51 @@ FishingGurusHouseSignText:
 	line "HOUSE"
 	done
 
+LakeOfRageCameramanText: ; Reference to the Battle Zone
+	text "Hohoho!"
+	
+	para "Am I lucky to"
+	line "have been here"
+	cont "when that MAGIKARP"
+	cont "evolved!"
+	
+	para "This film is"
+	line "gonna make me"
+	cont "rich!"
+	done
+
 LakeOfRage_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  3, LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, 1
-	warp_event 27, 31, LAKE_OF_RAGE_MAGIKARP_HOUSE, 1
+	warp_event 21,  5, LAKE_OF_RAGE_HIDDEN_POWER_HOUSE, 1
+	warp_event 35, 29, LAKE_OF_RAGE_MAGIKARP_HOUSE, 1
+	warp_event  3,  9, LAKE_OF_RAGE_MART, 1
+	warp_event  5, 19, LAKE_OF_RAGE_POKECENTER_1F, 1
+	warp_event 17, 13, LAKE_OF_RAGE_TRADER_HOUSE, 1
+;	warp_event 10,  5, LAKE_OF_RAGE_PRE_GYM, 1 ; tbd
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 21, 27, BGEVENT_READ, LakeOfRageSign
-	bg_event 25, 31, BGEVENT_READ, MagikarpHouseSignScript
-	bg_event 11, 28, BGEVENT_ITEM, LakeOfRageHiddenFullRestore
-	bg_event  4,  4, BGEVENT_ITEM, LakeOfRageHiddenRareCandy
-	bg_event 35,  5, BGEVENT_ITEM, LakeOfRageHiddenMaxPotion
+	bg_event 19, 31, BGEVENT_READ, LakeOfRageSign
+	bg_event 33, 29, BGEVENT_READ, MagikarpHouseSignScript
+	bg_event  3, 31, BGEVENT_ITEM, LakeOfRageHiddenFullRestore
+	bg_event  9, 11, BGEVENT_ITEM, LakeOfRageHiddenRareCandy
+	bg_event 19,  5, BGEVENT_ITEM, LakeOfRageHiddenMaxPotion
 
 	def_object_events
-	object_event 21, 28, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageLanceScript, EVENT_LAKE_OF_RAGE_LANCE
-	object_event 20, 26, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageGrampsScript, -1
+	object_event 19, 32, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageLanceScript, EVENT_LAKE_OF_RAGE_LANCE
+	object_event 20, 30, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageGrampsScript, -1
 	object_event 36, 13, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageSuperNerdScript, -1
-	object_event 25, 29, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageCooltrainerFScript, -1
-	object_event 30, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherAndre, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event 24, 26, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherRaymond, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event  4, 15, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermAaron, EVENT_LAKE_OF_RAGE_CIVILIANS
+	object_event  9,  9, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageCooltrainerFScript, -1
+	object_event 21, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherAndre, EVENT_LAKE_OF_RAGE_CIVILIANS
+	object_event 31, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerFisherRaymond, EVENT_LAKE_OF_RAGE_CIVILIANS
+	object_event  2, 25, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerCooltrainermAaron, EVENT_LAKE_OF_RAGE_CIVILIANS
 	object_event 36,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerCooltrainerfLois, EVENT_LAKE_OF_RAGE_CIVILIANS
-	object_event 18, 22, SPRITE_GYARADOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedGyarados, EVENT_LAKE_OF_RAGE_RED_GYARADOS
-	object_event  4,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
-	object_event  7, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
-	object_event 35,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 19, 26, SPRITE_GYARADOS, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RedGyarados, EVENT_LAKE_OF_RAGE_RED_GYARADOS
+	object_event  9, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WesleyScript, EVENT_LAKE_OF_RAGE_WESLEY_OF_WEDNESDAY
+	object_event  7, 27, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageElixer, EVENT_LAKE_OF_RAGE_ELIXER
+	object_event 27,  8, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, LakeOfRageTMDetect, EVENT_LAKE_OF_RAGE_TM_DETECT
+	object_event 11, 18, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageCameramanScript, -1
+	

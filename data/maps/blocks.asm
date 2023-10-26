@@ -198,6 +198,7 @@ CherrygroveGymSpeechHouse_Blocks:
 GuideGentsHouse_Blocks:
 CherrygroveEvolutionSpeechHouse_Blocks:
 Route30BerryHouse_Blocks:
+LakeOfRageTraderHouse_Blocks:
 	INCBIN "maps/House1.ablk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
@@ -334,6 +335,7 @@ LavenderMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
+LakeOfRageMart_Blocks:
 	INCBIN "maps/Mart.ablk"
 
 Route10North_Blocks:
@@ -363,6 +365,7 @@ CianwoodPokecenter1F_Blocks:
 ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
+LakeOfRagePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.ablk"
 
 BetaPewterMuseumOfScience1F_Blocks: ; unreferenced

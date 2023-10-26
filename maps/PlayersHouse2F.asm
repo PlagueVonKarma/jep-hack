@@ -145,7 +145,8 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+	warp_event  7,  0, LAKE_OF_RAGE, 3
+	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
 

@@ -35,6 +35,7 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
+	dw MartLakeOfRage
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -404,4 +405,19 @@ DefaultMart:
 	db 2 ; # items
 	db POKE_BALL
 	db POTION
+	db -1 ; end
+
+; Excludes the Moon and Sun Stones, which are "treasure" items.
+; Designed to solve the "stone problem" faced by Pokemon like Bellsprout in the early-game.
+MartLakeOfRage:
+	db 9
+	db FIRE_STONE
+	db THUNDERSTONE
+	db WATER_STONE
+	db LEAF_STONE
+	db HEART_STONE
+	db POISON_STONE
+	db ICE_STONE
+	db DUSK_STONE
+	db SHINY_STONE
 	db -1 ; end

@@ -568,6 +568,7 @@ ENDM
 	map_attributes RedsHouse1F, REDS_HOUSE_1F, $00, 0
 	map_attributes RedsHouse2F, REDS_HOUSE_2F, $00, 0
 	map_attributes BluesHouse, BLUES_HOUSE, $00, 0
+	map_attributes LakeOfRageTraderHouse, LAKE_OF_RAGE_TRADER_HOUSE, $00, 0
 	map_attributes OaksLab, OAKS_LAB, $00, 0
 	map_attributes PewterNidoranSpeechHouse, PEWTER_NIDORAN_SPEECH_HOUSE, $00, 0
 	map_attributes PewterGym, PEWTER_GYM, $00, 0
@@ -603,11 +604,13 @@ ENDM
 	map_attributes SafariZoneWardensHome, SAFARI_ZONE_WARDENS_HOME, $00, 0
 	map_attributes Route15FuchsiaGate, ROUTE_15_FUCHSIA_GATE, $00, 0
 	map_attributes LavenderPokecenter1F, LAVENDER_POKECENTER_1F, $00, 0
+	map_attributes LakeOfRagePokecenter1F, LAKE_OF_RAGE_POKECENTER_1F, $00, 0
 	map_attributes LavenderPokecenter2FBeta, LAVENDER_POKECENTER_2F_BETA, $00, 0
 	map_attributes MrFujisHouse, MR_FUJIS_HOUSE, $00, 0
 	map_attributes LavenderSpeechHouse, LAVENDER_SPEECH_HOUSE, $00, 0
 	map_attributes LavenderNameRater, LAVENDER_NAME_RATER, $00, 0
 	map_attributes LavenderMart, LAVENDER_MART, $00, 0
+	map_attributes LakeOfRageMart, LAKE_OF_RAGE_MART, $00, 0
 	map_attributes SoulHouse, SOUL_HOUSE, $00, 0
 	map_attributes LavRadioTower1F, LAV_RADIO_TOWER_1F, $00, 0
 	map_attributes Route8SaffronGate, ROUTE_8_SAFFRON_GATE, $00, 0
