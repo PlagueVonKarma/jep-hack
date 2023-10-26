@@ -248,10 +248,12 @@ FramesPointers:
 	dba RaikouFrames
 	dba EnteiFrames
 	dba SuicuneFrames
+	dba WalkingWakeFrames
 	dba LarvitarFrames
 	dba PupitarFrames
 	dba TyranitarFrames
 	dba LugiaFrames
 	dba HoOhFrames
+	dba ShiShiFrames
 	dba CelebiFrames
 	assert_table_length NUM_POKEMON

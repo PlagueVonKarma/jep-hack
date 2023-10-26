@@ -4699,13 +4699,10 @@ SageGroup:
 	db -1 ; end
 
 	next_list_item ; SAGE (9)
-	db "LI@", TRAINERTYPE_NORMAL
-	db 7
-	dw BELLSPROUT
-	db 7
-	dw BELLSPROUT
+	db "LI@", TRAINERTYPE_MOVES
 	db 10
-	dw HOOTHOOT
+	dw BELLIGNAN
+	dw FLASH, VINE_WHIP, GROWTH, WRAP
 	db -1 ; end
 
 	next_list_item ; SAGE (10)

@@ -1,10 +1,10 @@
 	db "SPROUT@" ; species name
 	dw 403, 160 ; height, weight
 
-	db   "It lives through"
-	next "absorbing nutrients"
-	next "in the ground with"
+	db   "It digs its root-"
+	next "like feet into the"
+	next "ground to absorb"
 
-	page "its root-like"
-	next "feet. Revered"
-	next "by some faiths.@"
+	page "nutrients. It can"
+	next "grow to an immense"
+	next "size this way.@"

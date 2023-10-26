@@ -198,6 +198,7 @@ AlphabeticalPokedexOrder:
 	dw SEEL
 	dw SENTRET
 	dw SHELLDER
+	dw SHI_SHI
 	dw SHUCKLE
 	dw SKARMORY
 	dw SKIPLOOM
@@ -245,6 +246,7 @@ AlphabeticalPokedexOrder:
 	dw VILEPLUME
 	dw VOLTORB
 	dw VULPIX
+	dw WALKING_WAKE
 	dw WARTORTLE
 	dw WEEDLE
 	dw WEEPINBELL
