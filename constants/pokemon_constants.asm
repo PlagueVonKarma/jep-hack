@@ -27,7 +27,7 @@
 	const CHARIZARD  ; 06
 	const SQUIRTLE   ; 07
 	const WARTORTLE  ; 08
-	const BLASTOISE  ; 09
+	const TOTARTLE  ; 09
 	const CATERPIE   ; 0a
 	const METAPOD    ; 0b
 	const BUTTERFREE ; 0c
@@ -136,6 +136,8 @@
 	const KANGASKHAN ; 73
 	const HORSEA     ; 74
 	const SEADRA     ; 75
+	const BLASTYKE
+	const BLASTOISE
 	const GOLDEEN    ; 76
 	const SEAKING    ; 77
 	const STARYU     ; 78

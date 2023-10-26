@@ -8,7 +8,7 @@ BitmasksPointers:
 	dw CharizardBitmasks
 	dw SquirtleBitmasks
 	dw WartortleBitmasks
-	dw BlastoiseBitmasks
+	dw TotartleBitmasks
 	dw CaterpieBitmasks
 	dw MetapodBitmasks
 	dw ButterfreeBitmasks
@@ -117,6 +117,8 @@ BitmasksPointers:
 	dw KangaskhanBitmasks
 	dw HorseaBitmasks
 	dw SeadraBitmasks
+	dw BlastykeBitmasks
+	dw BlastoiseBitmasks
 	dw GoldeenBitmasks
 	dw SeakingBitmasks
 	dw StaryuBitmasks

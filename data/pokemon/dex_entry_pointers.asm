@@ -9,7 +9,7 @@ PokedexDataPointerTable:
 	dba CharizardPokedexEntry
 	dba SquirtlePokedexEntry
 	dba WartortlePokedexEntry
-	dba BlastoisePokedexEntry
+	dba TotartlePokedexEntry
 	dba CaterpiePokedexEntry
 	dba MetapodPokedexEntry
 	dba ButterfreePokedexEntry
@@ -118,6 +118,8 @@ PokedexDataPointerTable:
 	dba KangaskhanPokedexEntry
 	dba HorseaPokedexEntry
 	dba SeadraPokedexEntry
+	dba BlastykePokedexEntry
+	dba BlastoisePokedexEntry
 	dba GoldeenPokedexEntry
 	dba SeakingPokedexEntry
 	dba StaryuPokedexEntry

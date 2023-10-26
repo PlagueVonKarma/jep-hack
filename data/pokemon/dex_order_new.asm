@@ -190,6 +190,8 @@ NewPokedexOrder:
 	dw HORSEA
 	dw SEADRA
 	dw KINGDRA
+	dw BLASTYKE
+	dw BLASTOISE
 	dw GLIGAR
 	dw DELIBIRD
 	dw SWINUB
@@ -235,7 +237,7 @@ NewPokedexOrder:
 	dw CHARIZARD
 	dw SQUIRTLE
 	dw WARTORTLE
-	dw BLASTOISE
+	dw TOTARTLE
 	dw ARTICUNO
 	dw ZAPDOS
 	dw MOLTRES

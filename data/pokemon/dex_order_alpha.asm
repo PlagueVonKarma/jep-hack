@@ -17,6 +17,7 @@ AlphabeticalPokedexOrder:
 	dw BELLOSSOM
 	dw BELLSPROUT
 	dw BLASTOISE
+	dw BLASTYKE
 	dw BLISSEY
 	dw BULBASAUR
 	dw BUTTERFREE
@@ -227,6 +228,7 @@ AlphabeticalPokedexOrder:
 	dw TENTACRUEL
 	dw TOGEPI
 	dw TOGETIC
+	dw TOTARTLE
 	dw TOTODILE
 	dw TYPHLOSION
 	dw TYRANITAR
