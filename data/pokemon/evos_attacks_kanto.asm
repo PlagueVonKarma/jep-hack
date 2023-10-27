@@ -146,6 +146,7 @@ EvosAttacksPointers1::
 	dw KabutoEvosAttacks
 	dw KabutopsEvosAttacks
 	dw AerodactylEvosAttacks
+	dw MunchlaxEvosAttacks
 	dw SnorlaxEvosAttacks
 	dw ArticunoEvosAttacks
 	dw ZapdosEvosAttacks
@@ -2117,6 +2118,22 @@ AerodactylEvosAttacks:
 	dbw 36, SCARY_FACE
 	dbw 43, TAKE_DOWN
 	dbw 50, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+MunchlaxEvosAttacks:
+	db EVOLVE_HAPPINESS, TR_ANYTIME, SNORLAX
+	db 0 ; no more evolutions
+	db 1, TACKLE
+	db 1, METRONOME
+	db 8, AMNESIA
+	db 15, DEFENSE_CURL
+	db 22, BELLY_DRUM
+	db 29, HEADBUTT
+	db 36, SCREECH
+	db 36, REST
+	db 43, BODY_SLAM
+	db 50, ROLLOUT
+	db 57, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 SnorlaxEvosAttacks:

@@ -303,6 +303,8 @@ PokemonPicPointers::
 	dba KabutopsBackpic
 	dba AerodactylFrontpic
 	dba AerodactylBackpic
+	dba MunchlaxFrontpic
+	dba MunchlaxBackpic
 	dba SnorlaxFrontpic
 	dba SnorlaxBackpic
 	dba ArticunoFrontpic

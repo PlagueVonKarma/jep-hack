@@ -147,6 +147,7 @@ KantoMonSpecials:
 	db  45 ; KABUTO
 	db  70 ; KABUTOPS
 	db  60 ; AERODACTYL
+	db  40 ; MUNCHLAX
 	db  65 ; SNORLAX
 	db 125 ; ARTICUNO
 	db 125 ; ZAPDOS

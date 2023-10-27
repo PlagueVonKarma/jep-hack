@@ -145,6 +145,7 @@ AnimationPointers:
 	dw KabutoAnimation
 	dw KabutopsAnimation
 	dw AerodactylAnimation
+	dw MunchlaxAnimation
 	dw SnorlaxAnimation
 	dw ArticunoAnimation
 	dw ZapdosAnimation

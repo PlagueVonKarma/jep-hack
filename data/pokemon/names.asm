@@ -149,6 +149,7 @@ PokemonNames::
 	db "KABUTO@@@@"
 	db "KABUTOPS@@"
 	db "AERODACTYL"
+	db "MUNCHLAX@@"
 	db "SNORLAX@@@"
 	db "ARTICUNO@@"
 	db "ZAPDOS@@@@"

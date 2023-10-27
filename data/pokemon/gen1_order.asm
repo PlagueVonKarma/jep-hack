@@ -256,4 +256,5 @@ Pokered_MonIndices:
 	db BELLIGNAN
 	db WALKING_WAKE
 	db SHI_SHI
+	db MUNCHLAX
 	assert_table_length NUM_POKEMON - 1

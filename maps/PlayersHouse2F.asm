@@ -125,12 +125,12 @@ DebugPokemon1Script:
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, WEEPINBELL
+	getmonname STRING_BUFFER_3, MUNCHLAX
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WEEPINBELL, 35, POISON_STONE
+	givepoke MUNCHLAX, 35, POISON_STONE
 	closetext
 	end
 

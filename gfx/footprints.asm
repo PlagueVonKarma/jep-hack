@@ -146,6 +146,7 @@ INCBIN "gfx/footprints/omastar.1bpp"
 INCBIN "gfx/footprints/kabuto.1bpp"
 INCBIN "gfx/footprints/kabutops.1bpp"
 INCBIN "gfx/footprints/aerodactyl.1bpp"
+INCBIN "gfx/footprints/munchlax.1bpp"
 INCBIN "gfx/footprints/snorlax.1bpp"
 INCBIN "gfx/footprints/articuno.1bpp"
 INCBIN "gfx/footprints/zapdos.1bpp"
@@ -263,4 +264,4 @@ INCBIN "gfx/footprints/254.1bpp"
 INCBIN "gfx/footprints/255.1bpp"
 INCBIN "gfx/footprints/256.1bpp"
 
-	assert_table_length $104
+	assert_table_length $105 ; don't forget to update this

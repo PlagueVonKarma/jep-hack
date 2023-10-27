@@ -145,6 +145,7 @@ FramesPointers:
 	dba KabutoFrames
 	dba KabutopsFrames
 	dba AerodactylFrames
+	dba MunchlaxFrames
 	dba SnorlaxFrames
 	dba ArticunoFrames
 	dba ZapdosFrames
