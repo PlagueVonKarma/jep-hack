@@ -869,5 +869,35 @@ KantoGrassWildMons:
 	dbw 43, MAROWAK
 	dbw 43, CHANSEY
 	end_grass_wildmons
+
+; Viridian Forest uses Ilex Forest's data for now.
+; Yes, it was THAT bad.
+	def_grass_wildmons VIRIDIAN_FOREST
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 5, CATERPIE
+	dbw 6, METAPOD
+	dbw 6, CATERPIE
+	dbw 5, PARAS
+	dbw 5, ZUBAT ; KOKANA
+	dbw 6, PARAS
+	dbw 6, PIKACHU
+	; day
+	dbw 5, CATERPIE
+	dbw 6, CATERPIE
+	dbw 5, METAPOD
+	dbw 6, METAPOD
+	dbw 5, ZUBAT ; KOKANA
+	dbw 6, PARAS
+	dbw 6, PIKACHU
+	; nite
+	dbw 5, ODDISH ; KOTORA
+	dbw 6, ODDISH ; KOTORA
+	dbw 6, ZUBAT
+	dbw 5, PARAS
+	dbw 5, ZUBAT ; KOKANA
+	dbw 6, PARAS
+	dbw 6, PIKACHU
+	end_grass_wildmons
 	
 	db -1 ; end

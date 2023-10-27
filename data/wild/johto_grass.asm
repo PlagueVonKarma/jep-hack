@@ -282,6 +282,11 @@ JohtoGrassWildMons:
 	dbw 24, RATTATA
 	end_grass_wildmons
 
+; Reworked to be way more Fire-type themed.
+; The Burned Tower isn't very useful because stuff like Rattata can be found anywhere.
+; They're good for worldbuilding but little else.
+; Did you know they removed Magmar in B1F in Crystal? For Weezing??
+; The Rattata could possibly be replaced with Vulpiii later.
 	def_grass_wildmons BURNED_TOWER_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
@@ -289,53 +294,53 @@ JohtoGrassWildMons:
 	dbw 14, KOFFING
 	dbw 15, RATTATA
 	dbw 14, ZUBAT
-	dbw 15, RATTATA
-	dbw 15, RATICATE
-	dbw 15, RATICATE
+	dbw 16, KOFFING
+	dbw 15, HOUNDOUR
+	dbw 15, HOUNDOUR
 	; day
 	dbw 13, RATTATA
 	dbw 14, KOFFING
 	dbw 15, RATTATA
 	dbw 14, ZUBAT
-	dbw 15, RATTATA
-	dbw 15, RATICATE
-	dbw 15, RATICATE
+	dbw 16, KOFFING
+	dbw 15, HOUNDOUR
+	dbw 15, HOUNDOUR
 	; nite
 	dbw 13, RATTATA
 	dbw 14, KOFFING
 	dbw 15, RATTATA
 	dbw 14, ZUBAT
-	dbw 15, RATTATA
-	dbw 15, RATICATE
-	dbw 15, RATICATE
+	dbw 16, KOFFING
+	dbw 15, HOUNDOUR
+	dbw 15, HOUNDOUR
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 14, RATTATA
-	dbw 14, KOFFING
-	dbw 16, KOFFING
+	dbw 14, SLUGMA
+	dbw 16, SLUGMA
+	dbw 16, RATTATA
 	dbw 15, ZUBAT
-	dbw 12, KOFFING
-	dbw 16, KOFFING
-	dbw 16, WEEZING
+	dbw 14, MAGBY
+	dbw 14, MAGBY
 	; day
 	dbw 14, RATTATA
-	dbw 14, KOFFING
-	dbw 16, KOFFING
+	dbw 14, SLUGMA
+	dbw 16, SLUGMA
+	dbw 16, RATTATA
 	dbw 15, ZUBAT
-	dbw 12, KOFFING
-	dbw 16, KOFFING
-	dbw 16, WEEZING
+	dbw 14, MAGBY
+	dbw 14, MAGBY
 	; nite
 	dbw 14, RATTATA
-	dbw 14, KOFFING
-	dbw 16, KOFFING
+	dbw 14, SLUGMA
+	dbw 16, SLUGMA
+	dbw 16, RATTATA
 	dbw 15, ZUBAT
-	dbw 12, KOFFING
-	dbw 16, KOFFING
-	dbw 16, WEEZING
+	dbw 14, MAGMAR
+	dbw 14, MAGMAR
 	end_grass_wildmons
 
 	def_grass_wildmons NATIONAL_PARK
@@ -562,34 +567,40 @@ JohtoGrassWildMons:
 	dbw 23, SLOWPOKE
 	end_grass_wildmons
 
+; With Viridian Forest existing, much of this wild data no longer made sense.
+; Changed to feature Yanma, Ledyba, etc.
+; Yanma gives easier Yanmega access, Ledyba and Spinarak are nice flavour.
+; Paras remains accessible for HM usage. It should be Paraspor, though.
+; Shuckle, Pineco, and Heracross should be made more common Headbutt tree Pokemon.
 	def_grass_wildmons ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 5, CATERPIE
 	dbw 5, WEEDLE
-	dbw 7, METAPOD
-	dbw 7, KAKUNA
+	dbw 7, LEDYBA
+	dbw 7, LEDYBA
 	dbw 7, PIDGEY
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 6, YANMA
+	dbw 6, YANMA
 	; day
 	dbw 5, CATERPIE
 	dbw 5, WEEDLE
-	dbw 7, METAPOD
-	dbw 7, KAKUNA
+	dbw 7, LEDYBA
+	dbw 7, LEDYBA
 	dbw 7, PIDGEY
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 6, YANMA
+	dbw 6, YANMA
 	; nite
-	dbw 5, ODDISH
+	dbw 5, SPINARAK
 	dbw 5, VENONAT
-	dbw 7, ODDISH
+	dbw 7, SPINARAK
 	dbw 7, PSYDUCK
 	dbw 7, HOOTHOOT
-	dbw 6, PARAS
-	dbw 6, PARAS
+	dbw 6, PARAS ; PARASPOR
+	dbw 6, PARAS ; PARASPOR
 	end_grass_wildmons
 
+; Mt. Mortar now has consistent Marill access like GS.
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
@@ -618,6 +629,8 @@ JohtoGrassWildMons:
 	dbw 16, RATICATE
 	end_grass_wildmons
 
+; Also, Larvitar is available in the morning and daytime, unless it's B2F, wherein it's all-day.
+; It's known to eat mountain soil, so it makes sense to me.
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
@@ -625,17 +638,17 @@ JohtoGrassWildMons:
 	dbw 14, RATTATA
 	dbw 15, MACHOP
 	dbw 14, RATICATE
-	dbw 15, ZUBAT
-	dbw 15, GOLBAT
-	dbw 15, GOLBAT
+	dbw 15, MARILL
+	dbw 15, LARVITAR
+	dbw 15, LARVITAR
 	; day
 	dbw 13, GEODUDE
 	dbw 14, RATTATA
 	dbw 15, MACHOP
 	dbw 14, RATICATE
-	dbw 15, ZUBAT
-	dbw 15, GOLBAT
-	dbw 15, GOLBAT
+	dbw 15, MARILL
+	dbw 15, LARVITAR
+	dbw 15, LARVITAR
 	; nite
 	dbw 13, GEODUDE
 	dbw 14, RATTATA
@@ -653,17 +666,17 @@ JohtoGrassWildMons:
 	dbw 32, MACHOKE
 	dbw 31, GEODUDE
 	dbw 30, RATICATE
-	dbw 28, MACHOP
-	dbw 30, GOLBAT
-	dbw 30, GOLBAT
+	dbw 28, MARILL
+	dbw 30, LARVITAR
+	dbw 30, LARVITAR
 	; day
 	dbw 31, GRAVELER
 	dbw 32, MACHOKE
 	dbw 31, GEODUDE
 	dbw 30, RATICATE
-	dbw 28, MACHOP
-	dbw 30, GOLBAT
-	dbw 30, GOLBAT
+	dbw 28, MARILL
+	dbw 30, LARVITAR
+	dbw 30, LARVITAR
 	; nite
 	dbw 31, GRAVELER
 	dbw 31, GEODUDE
@@ -680,52 +693,56 @@ JohtoGrassWildMons:
 	dbw 15, ZUBAT
 	dbw 17, ZUBAT
 	dbw 17, GOLBAT
-	dbw 16, MACHOP
+	dbw 16, MARILL
 	dbw 16, GEODUDE
-	dbw 18, RATICATE
-	dbw 18, RATICATE
+	dbw 18, LARVITAR
+	dbw 18, LARVITAR
 	; day
 	dbw 15, ZUBAT
 	dbw 17, ZUBAT
 	dbw 17, GOLBAT
-	dbw 16, MACHOP
+	dbw 16, MARILL
 	dbw 16, GEODUDE
-	dbw 18, RATICATE
-	dbw 18, RATICATE
+	dbw 18, LARVITAR
+	dbw 18, LARVITAR
 	; nite
 	dbw 15, ZUBAT
 	dbw 17, ZUBAT
 	dbw 17, GOLBAT
 	dbw 16, MARILL
 	dbw 16, GEODUDE
-	dbw 18, RATICATE
-	dbw 18, RATICATE
+	dbw 18, LARVITAR
+	dbw 18, LARVITAR
 	end_grass_wildmons
 
+; Ice Path is very close to working. It just doesn't have good frequency in Johto encounters.
+; Also, jesus, so much Golbat??
+; Changed so Sneasel exists all day in the Ice Path with higher frequency.
+; Down the line, consider Buu, Bunice/Bundra, etc.
 	def_grass_wildmons ICE_PATH_1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 21, SWINUB
-	dbw 22, ZUBAT
+	dbw 22, SNEASEL
 	dbw 22, GOLBAT
 	dbw 23, SWINUB
-	dbw 24, GOLBAT
+	dbw 24, SNEASEL
 	dbw 22, GOLBAT
 	dbw 22, GOLBAT
 	; day
 	dbw 21, SWINUB
-	dbw 22, ZUBAT
+	dbw 22, SNEASEL
 	dbw 22, GOLBAT
 	dbw 23, SWINUB
-	dbw 24, GOLBAT
+	dbw 24, SNEASEL
 	dbw 22, GOLBAT
 	dbw 22, GOLBAT
 	; nite
 	dbw 21, DELIBIRD
-	dbw 22, ZUBAT
+	dbw 22, SNEASEL
 	dbw 22, GOLBAT
 	dbw 23, DELIBIRD
-	dbw 24, GOLBAT
+	dbw 24, SNEASEL
 	dbw 22, GOLBAT
 	dbw 22, GOLBAT
 	end_grass_wildmons
@@ -734,112 +751,112 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 22, SWINUB
-	dbw 23, ZUBAT
+	dbw 23, SNEASEL
 	dbw 23, GOLBAT
 	dbw 24, SWINUB
-	dbw 25, GOLBAT
+	dbw 25, SNEASEL
 	dbw 23, GOLBAT
 	dbw 22, JYNX
 	; day
 	dbw 22, SWINUB
-	dbw 23, ZUBAT
+	dbw 23, SNEASEL
 	dbw 23, GOLBAT
 	dbw 24, SWINUB
-	dbw 25, GOLBAT
+	dbw 25, SNEASEL
 	dbw 23, GOLBAT
 	dbw 22, JYNX
 	; nite
 	dbw 22, DELIBIRD
-	dbw 23, ZUBAT
+	dbw 23, SNEASEL
 	dbw 23, GOLBAT
 	dbw 24, DELIBIRD
-	dbw 25, GOLBAT
+	dbw 25, SNEASEL
 	dbw 23, GOLBAT
-	dbw 22, SNEASEL
+	dbw 22, JYNX ; BUU
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_MAHOGANY_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 23, SWINUB
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, SWINUB
-	dbw 26, GOLBAT
+	dbw 26, SNEASEL
 	dbw 22, JYNX
 	dbw 24, JYNX
 	; day
 	dbw 23, SWINUB
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, SWINUB
-	dbw 26, GOLBAT
+	dbw 26, SNEASEL
 	dbw 22, JYNX
 	dbw 24, JYNX
 	; nite
 	dbw 23, DELIBIRD
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, DELIBIRD
-	dbw 26, GOLBAT
-	dbw 22, SNEASEL
-	dbw 24, SNEASEL
+	dbw 26, SNEASEL
+	dbw 22, JYNX ; BUU
+	dbw 24, JYNX ; BUU
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_BLACKTHORN_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 23, SWINUB
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, SWINUB
-	dbw 26, GOLBAT
+	dbw 26, SNEASEL
 	dbw 22, JYNX
 	dbw 24, JYNX
 	; day
 	dbw 23, SWINUB
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, SWINUB
-	dbw 26, GOLBAT
+	dbw 26, SNEASEL
 	dbw 22, JYNX
 	dbw 24, JYNX
 	; nite
 	dbw 23, DELIBIRD
-	dbw 24, ZUBAT
+	dbw 24, SNEASEL
 	dbw 24, GOLBAT
 	dbw 25, DELIBIRD
 	dbw 26, GOLBAT
-	dbw 22, SNEASEL
-	dbw 24, SNEASEL
+	dbw 22, JYNX ; BUU
+	dbw 24, JYNX ; BUU
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 24, SWINUB
-	dbw 25, ZUBAT
+	dbw 25, SNEASEL
 	dbw 25, GOLBAT
 	dbw 26, SWINUB
-	dbw 22, JYNX
+	dbw 22, SNEASEL
 	dbw 24, JYNX
 	dbw 26, JYNX
 	; day
 	dbw 24, SWINUB
-	dbw 25, ZUBAT
+	dbw 25, SNEASEL
 	dbw 25, GOLBAT
 	dbw 26, SWINUB
-	dbw 22, JYNX
+	dbw 22, SNEASEL
 	dbw 24, JYNX
 	dbw 26, JYNX
 	; nite
 	dbw 24, DELIBIRD
-	dbw 25, ZUBAT
+	dbw 25, SNEASEL
 	dbw 25, GOLBAT
 	dbw 26, DELIBIRD
 	dbw 22, SNEASEL
-	dbw 24, SNEASEL
-	dbw 26, SNEASEL
+	dbw 24, JYNX ; BUU
+	dbw 26, JYNX ; BUU
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW
@@ -1290,6 +1307,9 @@ JohtoGrassWildMons:
 	dbw 4, HOOTHOOT
 	end_grass_wildmons
 
+; Replaced Gastly with Misdreavus for increased Johto frequency.
+; Gastly will remain in Sprout Tower for choice purposes.
+; This is technically a nerf: Gastly is wayyy stronger.
 	def_grass_wildmons ROUTE_31
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
@@ -1314,8 +1334,8 @@ JohtoGrassWildMons:
 	dbw 5, BELLSPROUT
 	dbw 5, HOOTHOOT
 	dbw 4, ZUBAT
-	dbw 5, GASTLY
-	dbw 5, GASTLY
+	dbw 5, MISDREAVUS
+	dbw 5, MISDREAVUS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_32
@@ -1323,7 +1343,7 @@ JohtoGrassWildMons:
 	; morn
 	dbw 4, EKANS
 	dbw 5, RATTATA
-	dbw 7, BELLSPROUT
+	dbw 6, MAREEP ; From Gold
 	dbw 6, HOPPIP
 	dbw 7, PIDGEY
 	dbw 7, HOPPIP
@@ -1331,7 +1351,7 @@ JohtoGrassWildMons:
 	; day
 	dbw 4, EKANS
 	dbw 5, RATTATA
-	dbw 7, BELLSPROUT
+	dbw 6, MAREEP ; From Gold
 	dbw 6, HOPPIP
 	dbw 7, PIDGEY
 	dbw 7, HOPPIP
@@ -1340,10 +1360,10 @@ JohtoGrassWildMons:
 	dbw 4, WOOPER
 	dbw 5, RATTATA
 	dbw 7, BELLSPROUT
-	dbw 6, ZUBAT
+	dbw 6, MAREEP ; From Gold
 	dbw 7, HOOTHOOT
-	dbw 7, GASTLY
-	dbw 7, GASTLY
+	dbw 7, MISDREAVUS
+	dbw 7, MISDREAVUS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_33
@@ -1454,15 +1474,18 @@ JohtoGrassWildMons:
 	dbw 5, BELLSPROUT
 	dbw 5, HOOTHOOT
 	dbw 5, HOOTHOOT
-	dbw 5, GASTLY
-	dbw 5, GASTLY
+	dbw 5, MISDREAVUS
+	dbw 5, MISDREAVUS
 	end_grass_wildmons
 
+; Restored the 30% Stantler from GS.
+; Removing it was a blunder but Crystal does get Ledian and Ariados right.
+; Murkrow is here too, 10%.
 	def_grass_wildmons ROUTE_37
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 13, LEDYBA
-	dbw 14, GROWLITHE
+	dbw 14, STANTLER
 	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
 	dbw 15, PIDGEOTTO
@@ -1470,7 +1493,7 @@ JohtoGrassWildMons:
 	dbw 15, LEDIAN
 	; day
 	dbw 13, PIDGEY
-	dbw 14, GROWLITHE
+	dbw 14, STANTLER
 	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
 	dbw 15, PIDGEOTTO
@@ -1480,38 +1503,40 @@ JohtoGrassWildMons:
 	dbw 13, SPINARAK
 	dbw 14, STANTLER
 	dbw 15, HOOTHOOT
-	dbw 16, STANTLER
-	dbw 15, NOCTOWL
+	dbw 16, MURKROW
+	dbw 15, MURKROW
 	dbw 15, ARIADOS
 	dbw 15, ARIADOS
 	end_grass_wildmons
 
+; Made Murkrow a 10% night time encounter for increased Johto frequency.
+; Built off Silver data to add Snubbull and have Meowth in the daytime.
 	def_grass_wildmons ROUTE_38
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 16, RATTATA
+	dbw 16, MEOWTH
 	dbw 16, RATICATE
 	dbw 16, MAGNEMITE
-	dbw 16, PIDGEOTTO
+	dbw 16, FARFETCH_D
+	dbw 13, MILTANK
 	dbw 13, TAUROS
-	dbw 13, MILTANK
-	dbw 13, MILTANK
+	dbw 13, SNUBBULL
 	; day
-	dbw 16, RATTATA
+	dbw 16, MEOWTH
 	dbw 16, RATICATE
 	dbw 16, MAGNEMITE
-	dbw 16, PIDGEOTTO
+	dbw 16, FARFETCH_D
+	dbw 13, MILTANK
 	dbw 13, TAUROS
-	dbw 13, MILTANK
-	dbw 13, MILTANK
+	dbw 13, SNUBBULL
 	; nite
-	dbw 16, MEOWTH
+	dbw 16, MEOWTH ; MOIBELLE
 	dbw 16, RATICATE
 	dbw 16, MAGNEMITE
-	dbw 16, NOCTOWL
-	dbw 16, MEOWTH
-	dbw 16, MEOWTH
-	dbw 16, MEOWTH
+	dbw 16, MEOWTH ; MOIBELLE
+	dbw 13, MURKROW ; Replacing Tauros and Miltank at night to replicate Crystal's idea.
+	dbw 13, MURKROW ; To me, the bovines sleeping makes sense.
+	dbw 13, SNUBBULL
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_39
@@ -1542,56 +1567,58 @@ JohtoGrassWildMons:
 	dbw 18, MEOWTH
 	end_grass_wildmons
 
+; Uses Wild Data from Gold version, but with Ekans over Mareep.
+; At night, Hoothoot is seen instead of Zubat, and Murkrow is a 10% encounter.
 	def_grass_wildmons ROUTE_42
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
+	dbw 15, MANKEY
 	dbw 13, EKANS
 	dbw 14, SPEAROW
-	dbw 15, RATTATA
-	dbw 16, RATICATE
-	dbw 15, ARBOK
-	dbw 16, FEAROW
-	dbw 16, FEAROW
+	dbw 16, SPEAROW
+	dbw 15, FLAAFFY
+	dbw 17, FLAAFFY
+	dbw 17, FLAAFFY
 	; day
+	dbw 15, MANKEY
 	dbw 13, EKANS
 	dbw 14, SPEAROW
-	dbw 15, RATTATA
-	dbw 16, RATICATE
-	dbw 15, ARBOK
-	dbw 16, FEAROW
-	dbw 16, FEAROW
+	dbw 16, SPEAROW
+	dbw 15, FLAAFFY
+	dbw 17, FLAAFFY
+	dbw 17, FLAAFFY
 	; nite
-	dbw 13, RATTATA
-	dbw 14, ZUBAT
-	dbw 15, RATICATE
-	dbw 16, GOLBAT
-	dbw 15, MARILL
-	dbw 16, GOLBAT
-	dbw 16, GOLBAT
+	dbw 15, MANKEY
+	dbw 13, EKANS
+	dbw 14, HOOTHOOT
+	dbw 16, MURKROW
+	dbw 15, MURKROW
+	dbw 17, FLAAFFY
+	dbw 17, FLAAFFY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 15, SENTRET
-	dbw 16, PIDGEOTTO
+	dbw 15, FLAAFFY ; From Gold
+	dbw 15, GIRAFARIG ; From Gold
 	dbw 16, FARFETCH_D
 	dbw 15, FURRET
 	dbw 17, RATICATE
 	dbw 17, FURRET
 	dbw 17, FURRET
 	; day
-	dbw 15, SENTRET
-	dbw 16, PIDGEOTTO
+	dbw 15, FLAAFFY ; From Gold
+	dbw 16, GIRAFARIG ; From Gold
 	dbw 16, FARFETCH_D
 	dbw 15, FURRET
 	dbw 17, RATICATE
 	dbw 17, FURRET
 	dbw 17, FURRET
 	; nite
-	dbw 15, VENONAT
-	dbw 16, NOCTOWL
-	dbw 16, RATICATE
+	dbw 15, FLAAFFY ; From Gold
+	dbw 16, GIRAFARIG ; From Gold
+	dbw 16, NOCTOWL ; From Gold
 	dbw 17, VENONAT
 	dbw 17, RATICATE
 	dbw 17, VENOMOTH
