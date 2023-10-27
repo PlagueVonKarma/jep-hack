@@ -132,6 +132,9 @@ LakeOfRageCameramanScript:
 LakeOfRageSign:
 	jumptext LakeOfRageSignText
 
+LakeOfRageSign2:
+	jumptext LakeOfRageSignText2
+
 MagikarpHouseSignScript:
 	opentext
 	writetext FishingGurusHouseSignText
@@ -245,6 +248,12 @@ LakeOfRageHiddenMaxPotion:
 LakeOfRageLanceTeleportIntoSkyMovement:
 	teleport_from
 	step_end
+
+LakeOfRagePokecenterSign:
+	jumpstd PokecenterSignScript
+
+LakeOfRageMartSign:
+	jumpstd MartSignScript
 
 LakeOfRageLanceForcedToEvolveText:
 	text "This lake is full"
@@ -490,6 +499,14 @@ LakeOfRageSignText:
 	cont "GYARADOS LAKE."
 	done
 
+LakeOfRageSignText2:
+	text "Take care when"
+	line "fishing!"
+	
+	para "GYARADOS will"
+	line "attack!"
+	done
+
 FishingGurusHouseSignText:
 	text "FISHING GURU'S"
 	line "HOUSE"
@@ -508,6 +525,13 @@ LakeOfRageCameramanText: ; Reference to the Battle Zone
 	cont "rich!"
 	done
 
+LakeOfRagePryceSign:
+	jumptext LakeOfRagePryceSignText
+
+LakeOfRagePryceSignText:
+	text "PRYCE's House"
+	done
+
 LakeOfRage_MapEvents:
 	db 0, 0 ; filler
 
@@ -517,16 +541,20 @@ LakeOfRage_MapEvents:
 	warp_event  3,  9, LAKE_OF_RAGE_MART, 1
 	warp_event  5, 19, LAKE_OF_RAGE_POKECENTER_1F, 1
 	warp_event 17, 13, LAKE_OF_RAGE_TRADER_HOUSE, 1
-;	warp_event 10,  5, LAKE_OF_RAGE_PRE_GYM, 1 ; tbd
+	warp_event 10,  5, LAKE_OF_RAGE_PRYCES_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 19, 31, BGEVENT_READ, LakeOfRageSign
+	bg_event 11, 11, BGEVENT_READ, LakeOfRageSign
 	bg_event 33, 29, BGEVENT_READ, MagikarpHouseSignScript
 	bg_event  3, 31, BGEVENT_ITEM, LakeOfRageHiddenFullRestore
 	bg_event  9, 11, BGEVENT_ITEM, LakeOfRageHiddenRareCandy
 	bg_event 19,  5, BGEVENT_ITEM, LakeOfRageHiddenMaxPotion
+	bg_event 19, 31, BGEVENT_READ, LakeOfRageSign2
+	bg_event  6, 19, BGEVENT_READ, LakeOfRagePokecenterSign
+	bg_event  4,  9, BGEVENT_READ, LakeOfRageMartSign
+	bg_event  7,  5, BGEVENT_READ, LakeOfRagePryceSign
 
 	def_object_events
 	object_event 19, 32, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LakeOfRageLanceScript, EVENT_LAKE_OF_RAGE_LANCE
