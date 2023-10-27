@@ -1417,9 +1417,9 @@ ShiShiEvosAttacks:
 	dbw 33, RECOVER
 	dbw 44, BLIZZARD
 	dbw 55, CRUNCH
-	dbw 66, BODY_SLAM
+	dbw 66, EXTREMESPEED
 	dbw 77, WHIRLWIND
-	dbw 88, EXTREMESPEED
+	dbw 88, ANCIENTPOWER
 	dbw 99, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
