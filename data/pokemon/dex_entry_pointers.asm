@@ -249,10 +249,12 @@ PokedexDataPointerTable:
 	dba RaikouPokedexEntry
 	dba EnteiPokedexEntry
 	dba SuicunePokedexEntry
+	dba WalkingWakePokedexEntry
 	dba LarvitarPokedexEntry
 	dba PupitarPokedexEntry
 	dba TyranitarPokedexEntry
 	dba LugiaPokedexEntry
 	dba HoOhPokedexEntry
+	dba ShiShiPokedexEntry
 	dba CelebiPokedexEntry
 	assert_table_length NUM_POKEMON

@@ -250,10 +250,12 @@ MonMenuIcons:
 	db ICON_FOX         ; RAIKOU
 	db ICON_FOX         ; ENTEI
 	db ICON_FOX         ; SUICUNE
+	db ICON_MONSTER     ; WALKING_WAKE
 	db ICON_MONSTER     ; LARVITAR
 	db ICON_MONSTER     ; PUPITAR
 	db ICON_MONSTER     ; TYRANITAR
 	db ICON_LUGIA       ; LUGIA
 	db ICON_HO_OH       ; HO_OH
+	db ICON_FOX         ; SHI_SHI
 	db ICON_HUMANSHAPE  ; CELEBI
 	assert_table_length NUM_POKEMON

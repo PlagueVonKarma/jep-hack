@@ -252,10 +252,12 @@ PokemonNames::
 	db "RAIKOU@@@@"
 	db "ENTEI@@@@@"
 	db "SUICUNE@@@"
+	db "WALKINWAKE"	; this is terrible but unless we can increase the character limit this is our best option
 	db "LARVITAR@@"
 	db "PUPITAR@@@"
 	db "TYRANITAR@"
 	db "LUGIA@@@@@"
 	db "HO-OH@@@@@"
+	db "SHI-SHI@@@"
 	db "CELEBI@@@@"
 	assert_table_length NUM_POKEMON

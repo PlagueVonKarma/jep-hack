@@ -245,6 +245,7 @@ NewPokedexOrder:
 	dw RAIKOU
 	dw ENTEI
 	dw SUICUNE
+	dw WALKING_WAKE
 	dw DRATINI
 	dw DRAGONAIR
 	dw DRAGONITE
@@ -253,6 +254,7 @@ NewPokedexOrder:
 	dw TYRANITAR
 	dw LUGIA
 	dw HO_OH
+	dw SHI_SHI
 	dw MEWTWO
 	dw MEW
 	dw CELEBI

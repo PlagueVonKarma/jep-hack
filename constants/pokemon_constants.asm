@@ -27,7 +27,7 @@
 	const CHARIZARD  ; 06
 	const SQUIRTLE   ; 07
 	const WARTORTLE  ; 08
-	const TOTARTLE  ; 09
+	const TOTARTLE   ; 09
 	const CATERPIE   ; 0a
 	const METAPOD    ; 0b
 	const BUTTERFREE ; 0c
@@ -268,13 +268,15 @@ DEF JOHTO_POKEMON EQU const_value
 	const RAIKOU     ; f3
 	const ENTEI      ; f4
 	const SUICUNE    ; f5
+	const WALKING_WAKE
 	const LARVITAR   ; f6
 	const PUPITAR    ; f7
 	const TYRANITAR  ; f8
 	const LUGIA      ; f9
 	const HO_OH      ; fa
+	const SHI_SHI
 	const CELEBI     ; fb
-DEF NUM_POKEMON EQU const_value - 1
+DEF NUM_POKEMON EQU const_value
 
 DEF EGG EQU -3
 

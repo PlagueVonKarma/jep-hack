@@ -119,7 +119,7 @@ DebugPokemon1Script:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BELLIGNAN, 35, RARE_CANDY
+	givepoke BELLIGNAN, 35, MASTER_BALL
 	closetext
 	end
 
@@ -139,6 +139,40 @@ ReceivedDebugPokemonText:
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
+	done
+	
+DebugPokemon3Script:
+	faceplayer
+	opentext
+	writetext DebugTextA
+	cry WALKING_WAKE
+	pause 15
+	closetext
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon WALKING_WAKE, 40
+	startbattle
+	reloadmapafterbattle
+	end
+
+DebugTextA:
+	text "Waaaake!!"
+	done
+	
+DebugPokemon4Script:
+	faceplayer
+	opentext
+	writetext DebugTextB
+	cry SHI_SHI
+	pause 15
+	closetext
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon SHI_SHI, 40
+	startbattle
+	reloadmapafterbattle
+	end
+
+DebugTextB:
+	text "Komaiiii!"
 	done
 
 PlayersHouse2F_MapEvents:
@@ -163,4 +197,6 @@ PlayersHouse2F_MapEvents:
 	object_event  0,  1, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseBigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL
 	object_event  2,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon1Script, -1
 	object_event  7,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
+	object_event  3,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
+	object_event  6,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
 	

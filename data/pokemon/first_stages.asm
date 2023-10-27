@@ -249,10 +249,12 @@ FirstEvoStages::
 	dw RAIKOU
 	dw ENTEI
 	dw SUICUNE
+	dw WALKING_WAKE
 	dw LARVITAR
 	dw LARVITAR
 	dw LARVITAR   ;f8
 	dw LUGIA
 	dw HO_OH
+	dw SHI_SHI
 	dw CELEBI
 	assert_table_length NUM_POKEMON
