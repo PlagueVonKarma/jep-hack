@@ -512,6 +512,8 @@ PokemonPicPointers::
 	dba EnteiBackpic
 	dba SuicuneFrontpic
 	dba SuicuneBackpic
+	dba WalkingWakeFrontpic
+	dba WalkingWakeBackpic
 	dba LarvitarFrontpic
 	dba LarvitarBackpic
 	dba PupitarFrontpic
@@ -522,6 +524,8 @@ PokemonPicPointers::
 	dba LugiaBackpic
 	dba HoOhFrontpic
 	dba HoOhBackpic
+	dba ShiShiFrontpic
+	dba ShiShiBackpic
 	dba CelebiFrontpic
 	dba CelebiBackpic
 	assert_table_length NUM_POKEMON + 1

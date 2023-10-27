@@ -248,10 +248,12 @@ BitmasksPointers:
 	dw RaikouBitmasks
 	dw EnteiBitmasks
 	dw SuicuneBitmasks
+	dw WalkingWakeBitmasks
 	dw LarvitarBitmasks
 	dw PupitarBitmasks
 	dw TyranitarBitmasks
 	dw LugiaBitmasks
 	dw HoOhBitmasks
+	dw ShiShiBitmasks
 	dw CelebiBitmasks
 	assert_table_length NUM_POKEMON

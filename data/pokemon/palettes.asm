@@ -529,6 +529,8 @@ INCBIN "gfx/pokemon/entei/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/entei/shiny.pal"
 INCBIN "gfx/pokemon/suicune/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/suicune/shiny.pal"
+INCBIN "gfx/pokemon/walking_wake/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/walking_wake/shiny.pal"
 INCBIN "gfx/pokemon/larvitar/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/larvitar/shiny.pal"
 INCBIN "gfx/pokemon/pupitar/front.gbcpal", middle_colors
@@ -539,6 +541,8 @@ INCBIN "gfx/pokemon/lugia/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/lugia/shiny.pal"
 INCBIN "gfx/pokemon/ho_oh/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/ho_oh/shiny.pal"
+INCBIN "gfx/pokemon/shi_shi/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/shi_shi/shiny.pal"
 INCBIN "gfx/pokemon/celebi/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/celebi/shiny.pal"
 

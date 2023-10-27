@@ -253,7 +253,7 @@ Pokered_MonIndices:
 	db SNUBBULL
 	db GRANBULL
 	db QWILFISH
-	db WOBBUFFET
-	db WOBBUFFET
 	db BELLIGNAN
-	assert_table_length NUM_POKEMON + 1
+	db WALKING_WAKE
+	db SHI_SHI
+	assert_table_length NUM_POKEMON - 1

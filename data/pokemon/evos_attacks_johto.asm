@@ -95,11 +95,13 @@ EvosAttacksPointers2::
 	dw RaikouEvosAttacks
 	dw EnteiEvosAttacks
 	dw SuicuneEvosAttacks
+	dw WalkingWakeEvosAttacks
 	dw LarvitarEvosAttacks
 	dw PupitarEvosAttacks
 	dw TyranitarEvosAttacks
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
+	dw ShiShiEvosAttacks
 	dw CelebiEvosAttacks
 .IndirectEnd::
 
@@ -1315,6 +1317,22 @@ SuicuneEvosAttacks:
 	dbw 71, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
+WalkingWakeEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, BITE
+	dbw 1, LEER
+	dbw 7, SUNNY_DAY
+	dbw 14, WATER_GUN
+	dbw 21, ROAR
+	dbw 28, DRAGONBREATH
+	dbw 35, AURORA_BEAM
+	dbw 42, TWISTER
+	dbw 49, CRUNCH
+	dbw 56, OUTRAGE
+	dbw 63, FLAMETHROWER
+	dbw 70, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
 LarvitarEvosAttacks:
 	dbbw EVOLVE_LEVEL, 30, PUPITAR
 	db 0 ; no more evolutions
@@ -1386,6 +1404,20 @@ HoOhEvosAttacks:
 	dbw 44, FIRE_BLAST
 	dbw 55, SUNNY_DAY
 	dbw 66, SWIFT
+	dbw 77, WHIRLWIND
+	dbw 88, ANCIENTPOWER
+	dbw 99, FUTURE_SIGHT
+	db 0 ; no more level-up moves
+
+ShiShiEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, FLY ; (placeholder before Wind Ride is added)
+	dbw 11, SAFEGUARD
+	dbw 22, GUST
+	dbw 33, RECOVER
+	dbw 44, BLIZZARD
+	dbw 55, CRUNCH
+	dbw 66, EXTREMESPEED
 	dbw 77, WHIRLWIND
 	dbw 88, ANCIENTPOWER
 	dbw 99, FUTURE_SIGHT

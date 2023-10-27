@@ -248,10 +248,12 @@ AnimationIdlePointers:
 	dw RaikouAnimationIdle
 	dw EnteiAnimationIdle
 	dw SuicuneAnimationIdle
+	dw WalkingWakeAnimationIdle
 	dw LarvitarAnimationIdle
 	dw PupitarAnimationIdle
 	dw TyranitarAnimationIdle
 	dw LugiaAnimationIdle
 	dw HoOhAnimationIdle
+	dw ShiShiAnimationIdle
 	dw CelebiAnimationIdle
 	assert_table_length NUM_POKEMON

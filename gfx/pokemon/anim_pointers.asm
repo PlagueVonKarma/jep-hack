@@ -248,10 +248,12 @@ AnimationPointers:
 	dw RaikouAnimation
 	dw EnteiAnimation
 	dw SuicuneAnimation
+	dw WalkingWakeAnimation
 	dw LarvitarAnimation
 	dw PupitarAnimation
 	dw TyranitarAnimation
 	dw LugiaAnimation
 	dw HoOhAnimation
+	dw ShiShiAnimation
 	dw CelebiAnimation
 	assert_table_length NUM_POKEMON
