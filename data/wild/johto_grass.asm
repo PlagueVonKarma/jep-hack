@@ -1681,32 +1681,36 @@ JohtoGrassWildMons:
 	dbw 27, GRAVELER
 	end_grass_wildmons
 
+; Buff Phanpy encounter rates to replace Geodude in the daytime, expanding on Crystal's work.
+; Ports the 5% Jigglypuff all-day encounter from GS.
+; Makes Hoothoot replace a Rattata at night to have continuity with Spearow.
+; Overall, increased Johto frequency that matches early advertising for the game.
 	def_grass_wildmons ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 2, GEODUDE
-	dbw 2, SPEAROW
-	dbw 3, GEODUDE
-	dbw 3, RATTATA
 	dbw 2, PHANPY
-	dbw 2, RATTATA
-	dbw 2, RATTATA
-	; day
-	dbw 2, GEODUDE
 	dbw 2, SPEAROW
-	dbw 3, GEODUDE
+	dbw 3, PHANPY
 	dbw 3, RATTATA
 	dbw 2, RATTATA
+	dbw 2, JIGGLYPUFF
+	dbw 2, JIGGLYPUFF
+	; day
+	dbw 2, PHANPY
+	dbw 2, SPEAROW
+	dbw 3, PHANPY
+	dbw 3, RATTATA
 	dbw 2, RATTATA
-	dbw 2, RATTATA
+	dbw 2, JIGGLYPUFF
+	dbw 2, JIGGLYPUFF
 	; nite
 	dbw 2, GEODUDE
-	dbw 2, RATTATA
+	dbw 2, HOOTHOOT
 	dbw 3, GEODUDE
 	dbw 3, RATTATA
 	dbw 2, RATTATA
-	dbw 2, RATTATA
-	dbw 2, RATTATA
+	dbw 2, JIGGLYPUFF
+	dbw 2, JIGGLYPUFF
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_OUTSIDE
