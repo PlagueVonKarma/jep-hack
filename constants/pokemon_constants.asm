@@ -276,7 +276,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const HO_OH      ; fa
 	const SHI_SHI
 	const CELEBI     ; fb
-DEF NUM_POKEMON EQU const_value
+DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3
 
