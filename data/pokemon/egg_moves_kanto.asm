@@ -9,7 +9,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw SquirtleEggMoves
 	dw NoEggMoves1
-	dw NoEggMoves1
+	dw NoEggMoves1 ; Totartle
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -35,6 +35,7 @@ EggMovePointers1:
 	dw NidoranMEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Nidoreign
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw VulpixEggMoves
@@ -119,18 +120,20 @@ EggMovePointers1:
 	dw KangaskhanEggMoves
 	dw HorseaEggMoves
 	dw NoEggMoves1
-	dw BlastykeEggMoves
-	dw NoEggMoves1
+	dw BlastykeEggMoves ; Blastyke
+	dw NoEggMoves1 ; Blastoise
 	dw GoldeenEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw MrMimeEggMoves
 	dw ScytherEggMoves
+	dw NoEggMoves1 ; Kleavor
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw PinsirEggMoves
+	dw NoEggMoves1 ; Tricules
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -146,8 +149,8 @@ EggMovePointers1:
 	dw KabutoEggMoves
 	dw NoEggMoves1
 	dw AerodactylEggMoves
-	dw MunchlaxEggMoves
-	dw SnorlaxEggMoves
+	dw MunchlaxEggMoves ; Munchlax
+	dw SnorlaxEggMoves ; Should this even exist?
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -274,6 +277,7 @@ ParasEggMoves:
 	dw FLAIL
 	dw LIGHT_SCREEN
 	dw PURSUIT
+	dw ROCK_SLASH
 	dw -1 ; end
 
 VenonatEggMoves:
@@ -365,6 +369,7 @@ TentacoolEggMoves:
 GeodudeEggMoves:
 	dw MEGA_PUNCH
 	dw ROCK_SLIDE
+	dw ROCK_SLASH
 	dw -1 ; end
 
 PonytaEggMoves:
@@ -444,6 +449,7 @@ KrabbyEggMoves:
 	dw AMNESIA
 	dw FLAIL
 	dw SLAM
+	dw ROCK_SLASH
 	dw -1 ; end
 
 ExeggcuteEggMoves:
@@ -462,6 +468,7 @@ CuboneEggMoves:
 	dw SKULL_BASH
 	dw PERISH_SONG
 	dw SWORDS_DANCE
+	dw ROCK_HEAD
 	dw -1 ; end
 
 LickitungEggMoves:
@@ -552,6 +559,7 @@ ScytherEggMoves:
 PinsirEggMoves:
 	dw FURY_ATTACK
 	dw FLAIL
+	dw ROCK_SLASH
 	dw -1 ; end
 
 LaprasEggMoves:

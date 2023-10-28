@@ -468,5 +468,6 @@ LarvitarEggMoves:
 	dw OUTRAGE
 	dw FOCUS_ENERGY
 	dw ANCIENTPOWER
+	dw ROCK_SLASH
 NoEggMoves2:
 	dw -1 ; end

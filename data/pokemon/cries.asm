@@ -40,6 +40,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,  256 ; NIDORAN_M
 	mon_cry CRY_NIDORAN_M,    44,  320 ; NIDORINO
 	mon_cry CRY_RAICHU,        0,  256 ; NIDOKING
+	mon_cry CRY_NIDOQUEEN,    44,  256 ; NIDOREIGN
 	mon_cry CRY_CLEFAIRY,    204,  129 ; CLEFAIRY
 	mon_cry CRY_CLEFAIRY,    170,  160 ; CLEFABLE
 	mon_cry CRY_VULPIX,       79,  144 ; VULPIX
@@ -132,10 +133,12 @@ PokemonCries::
 	mon_cry CRY_PARAS,         0,  256 ; STARMIE
 	mon_cry CRY_KRABBY,        8,  192 ; MR__MIME
 	mon_cry CRY_CATERPIE,      0,  256 ; SCYTHER
+	mon_cry CRY_CATERPIE,   -512,  383 ; KLEAVOR
 	mon_cry CRY_DROWZEE,     255,  383 ; JYNX
 	mon_cry CRY_VOLTORB,     143,  383 ; ELECTABUZZ
 	mon_cry CRY_CHARMANDER,  255,  176 ; MAGMAR
 	mon_cry CRY_PIDGEOTTO,     0,  256 ; PINSIR
+	mon_cry CRY_RAICHU,      291,  256 ; TRICULES
 	mon_cry CRY_SQUIRTLE,     17,  192 ; TAUROS
 	mon_cry CRY_EKANS,       128,  128 ; MAGIKARP
 	mon_cry CRY_EKANS,         0,  256 ; GYARADOS

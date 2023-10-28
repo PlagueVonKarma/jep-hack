@@ -34,6 +34,7 @@ AnimationIdlePointers:
 	dw NidoranMAnimationIdle
 	dw NidorinoAnimationIdle
 	dw NidokingAnimationIdle
+	dw NidoreignAnimationIdle
 	dw ClefairyAnimationIdle
 	dw ClefableAnimationIdle
 	dw VulpixAnimationIdle
@@ -126,10 +127,12 @@ AnimationIdlePointers:
 	dw StarmieAnimationIdle
 	dw MrMimeAnimationIdle
 	dw ScytherAnimationIdle
+	dw KleavorAnimationIdle
 	dw JynxAnimationIdle
 	dw ElectabuzzAnimationIdle
 	dw MagmarAnimationIdle
 	dw PinsirAnimationIdle
+	dw TriculesAnimationIdle
 	dw TaurosAnimationIdle
 	dw MagikarpAnimationIdle
 	dw GyaradosAnimationIdle

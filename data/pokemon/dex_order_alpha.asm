@@ -108,6 +108,7 @@ AlphabeticalPokedexOrder:
 	dw KANGASKHAN
 	dw KINGDRA
 	dw KINGLER
+	dw KLEAVOR
 	dw KOFFING
 	dw KRABBY
 	dw LANTURN
@@ -148,6 +149,7 @@ AlphabeticalPokedexOrder:
 	dw NIDOQUEEN
 	dw NIDORAN_F
 	dw NIDORAN_M
+	dw NIDOREIGN
 	dw NIDORINA
 	dw NIDORINO
 	dw NINETALES
@@ -233,6 +235,7 @@ AlphabeticalPokedexOrder:
 	dw TOGETIC
 	dw TOTARTLE
 	dw TOTODILE
+	dw TRICULES
 	dw TYPHLOSION
 	dw TYRANITAR
 	dw TYROGUE

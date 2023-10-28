@@ -35,6 +35,7 @@ PokedexDataPointerTable:
 	dba NidoranMPokedexEntry
 	dba NidorinoPokedexEntry
 	dba NidokingPokedexEntry
+	dba NidoreignPokedexEntry
 	dba ClefairyPokedexEntry
 	dba ClefablePokedexEntry
 	dba VulpixPokedexEntry
@@ -127,10 +128,12 @@ PokedexDataPointerTable:
 	dba StarmiePokedexEntry
 	dba MrMimePokedexEntry
 	dba ScytherPokedexEntry
+	dba KleavorPokedexEntry
 	dba JynxPokedexEntry
 	dba ElectabuzzPokedexEntry
 	dba MagmarPokedexEntry
 	dba PinsirPokedexEntry
+	dba TriculesPokedexEntry
 	dba TaurosPokedexEntry
 	dba MagikarpPokedexEntry
 	dba GyaradosPokedexEntry

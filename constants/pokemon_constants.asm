@@ -53,6 +53,7 @@
 	const NIDORAN_M  ; 20
 	const NIDORINO   ; 21
 	const NIDOKING   ; 22
+	const NIDOREIGN
 	const CLEFAIRY   ; 23
 	const CLEFABLE   ; 24
 	const VULPIX     ; 25
@@ -145,10 +146,12 @@
 	const STARMIE    ; 79
 	const MR__MIME   ; 7a
 	const SCYTHER    ; 7b
+	const KLEAVOR
 	const JYNX       ; 7c
 	const ELECTABUZZ ; 7d
 	const MAGMAR     ; 7e
 	const PINSIR     ; 7f
+	const TRICULES
 	const TAUROS     ; 80
 	const MAGIKARP   ; 81
 	const GYARADOS   ; 82

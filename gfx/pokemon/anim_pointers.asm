@@ -34,6 +34,7 @@ AnimationPointers:
 	dw NidoranMAnimation
 	dw NidorinoAnimation
 	dw NidokingAnimation
+	dw NidoreignAnimation
 	dw ClefairyAnimation
 	dw ClefableAnimation
 	dw VulpixAnimation
@@ -126,10 +127,12 @@ AnimationPointers:
 	dw StarmieAnimation
 	dw MrMimeAnimation
 	dw ScytherAnimation
+	dw KleavorAnimation
 	dw JynxAnimation
 	dw ElectabuzzAnimation
 	dw MagmarAnimation
 	dw PinsirAnimation
+	dw TriculesAnimation
 	dw TaurosAnimation
 	dw MagikarpAnimation
 	dw GyaradosAnimation

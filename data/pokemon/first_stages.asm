@@ -35,6 +35,7 @@ FirstEvoStages::
 	dw NIDORAN_M  ;20
 	dw NIDORAN_M
 	dw NIDORAN_M
+	dw NIDORAN_F  ; Nidoreign, tentative
 	dw CLEFFA
 	dw CLEFFA
 	dw VULPIX
@@ -127,9 +128,11 @@ FirstEvoStages::
 	dw STARYU
 	dw MR__MIME
 	dw SCYTHER
+	dw SCYTHER
 	dw SMOOCHUM
 	dw ELEKID
 	dw MAGBY
+	dw PINSIR
 	dw PINSIR
 	dw TAUROS     ;80
 	dw MAGIKARP

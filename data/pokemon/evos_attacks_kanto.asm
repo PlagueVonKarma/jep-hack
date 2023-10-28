@@ -35,6 +35,7 @@ EvosAttacksPointers1::
 	dw NidoranMEvosAttacks
 	dw NidorinoEvosAttacks
 	dw NidokingEvosAttacks
+	dw NidoreignEvosAttacks
 	dw ClefairyEvosAttacks
 	dw ClefableEvosAttacks
 	dw VulpixEvosAttacks
@@ -127,10 +128,12 @@ EvosAttacksPointers1::
 	dw StarmieEvosAttacks
 	dw MrMimeEvosAttacks
 	dw ScytherEvosAttacks
+	dw KleavorEvosAttacks
 	dw JynxEvosAttacks
 	dw ElectabuzzEvosAttacks
 	dw MagmarEvosAttacks
 	dw PinsirEvosAttacks
+	dw TriculesEvosAttacks
 	dw TaurosEvosAttacks
 	dw MagikarpEvosAttacks
 	dw GyaradosEvosAttacks
@@ -552,7 +555,9 @@ NidoranFEvosAttacks:
 	db 0 ; no more level-up moves
 
 NidorinaEvosAttacks:
-	dbbw EVOLVE_ITEM, MOON_STONE, NIDOQUEEN
+	dbbw EVOLVE_ITEM, POISON_STONE, NIDOQUEEN
+	dbbw EVOLVE_LEVEL, 36, NIDOQUEEN
+	dbbw EVOLVE_ITEM, MOON_STONE, NIDOREIGN
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, TACKLE
@@ -587,7 +592,9 @@ NidoranMEvosAttacks:
 	db 0 ; no more level-up moves
 
 NidorinoEvosAttacks:
-	dbbw EVOLVE_ITEM, MOON_STONE, NIDOKING
+	dbbw EVOLVE_ITEM, POISON_STONE, NIDOKING
+	dbbw EVOLVE_LEVEL, 36, NIDOKING
+	dbbw EVOLVE_ITEM, MOON_STONE, NIDOREIGN
 	db 0 ; no more evolutions
 	dbw 1, LEER
 	dbw 1, TACKLE
@@ -606,6 +613,15 @@ NidokingEvosAttacks:
 	dbw 1, DOUBLE_KICK
 	dbw 1, POISON_STING
 	dbw 23, THRASH
+	db 0 ; no more level-up moves
+	
+NidoreignEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, SPIKE_CANNON
+	dbw 1, POISON_STING
+	dbw 1, TOXIC
+	dbw 23, ROCK_HEAD
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -689,6 +705,7 @@ ZubatEvosAttacks:
 
 GolbatEvosAttacks:
 	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, CROBAT
+	dbbw EVOLVE_LEVEL, 44, CROBAT
 	db 0 ; no more evolutions
 	dbw 1, SCREECH
 	dbw 1, LEECH_LIFE
@@ -888,6 +905,7 @@ MankeyEvosAttacks:
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, FURY_SWIPES
+	dbw 24, ROCK_HEAD
 	dbw 27, FOCUS_ENERGY
 	dbw 33, SEISMIC_TOSS
 	dbw 39, CROSS_CHOP
@@ -904,6 +922,7 @@ PrimeapeEvosAttacks:
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, FURY_SWIPES
+	dbw 24, ROCK_HEAD
 	dbw 27, FOCUS_ENERGY
 	dbw 28, RAGE
 	dbw 36, SEISMIC_TOSS
@@ -950,6 +969,7 @@ PoliwagEvosAttacks:
 PoliwhirlEvosAttacks:
 	dbbw EVOLVE_ITEM, WATER_STONE, POLIWRATH
 	dbbw EVOLVE_TRADE, KINGS_ROCK, POLITOED
+	dbbw EVOLVE_ITEM, HEART_STONE, POLITOED
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, HYPNOSIS
@@ -1146,6 +1166,7 @@ GeodudeEvosAttacks:
 	dbw 31, ROLLOUT
 	dbw 36, EARTHQUAKE
 	dbw 41, EXPLOSION
+	dbw 46, ROCK_HEAD
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
@@ -1162,6 +1183,7 @@ GravelerEvosAttacks:
 	dbw 34, ROLLOUT
 	dbw 41, EARTHQUAKE
 	dbw 48, EXPLOSION
+	dbw 55, ROCK_HEAD
 	db 0 ; no more level-up moves
 
 GolemEvosAttacks:
@@ -1178,6 +1200,7 @@ GolemEvosAttacks:
 	dbw 34, ROLLOUT
 	dbw 41, EARTHQUAKE
 	dbw 48, EXPLOSION
+	dbw 55, ROCK_HEAD
 	db 0 ; no more level-up moves
 
 PonytaEvosAttacks:
@@ -1214,6 +1237,7 @@ RapidashEvosAttacks:
 SlowpokeEvosAttacks:
 	dbbw EVOLVE_LEVEL, 37, SLOWBRO
 	dbbw EVOLVE_TRADE, KINGS_ROCK, SLOWKING
+	dbbw EVOLVE_ITEM, HEART_STONE, SLOWKING
 	db 0 ; no more evolutions
 	dbw 1, CURSE
 	dbw 1, TACKLE
@@ -1432,6 +1456,7 @@ GengarEvosAttacks:
 
 OnixEvosAttacks:
 	dbbw EVOLVE_TRADE, METAL_COAT, STEELIX
+	dbbw EVOLVE_LEVEL, 38, STEELIX
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, SCREECH
@@ -1439,6 +1464,7 @@ OnixEvosAttacks:
 	dbw 14, ROCK_THROW
 	dbw 23, HARDEN
 	dbw 27, RAGE
+	dbw 31, ROCK_HEAD
 	dbw 36, SANDSTORM
 	dbw 40, SLAM
 	db 0 ; no more level-up moves
@@ -1667,6 +1693,7 @@ RhyhornEvosAttacks:
 	dbw 19, FURY_ATTACK
 	dbw 31, SCARY_FACE
 	dbw 37, HORN_DRILL
+	dbw 43, ROCK_HEAD
 	dbw 49, TAKE_DOWN
 	dbw 55, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -1681,6 +1708,7 @@ RhydonEvosAttacks:
 	dbw 19, FURY_ATTACK
 	dbw 31, SCARY_FACE
 	dbw 37, HORN_DRILL
+	dbw 48, ROCK_HEAD
 	dbw 54, TAKE_DOWN
 	dbw 65, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -1857,6 +1885,8 @@ MrMimeEvosAttacks:
 
 ScytherEvosAttacks:
 	dbbw EVOLVE_TRADE, METAL_COAT, SCIZOR
+	dbbw EVOLVE_LEVEL, 41, SCIZOR
+	dbbw EVOLVE_ITEM, BLK_AUGURITE, KLEAVOR
 	db 0 ; no more evolutions
 	dbw 1, QUICK_ATTACK
 	dbw 1, LEER
@@ -1865,6 +1895,20 @@ ScytherEvosAttacks:
 	dbw 18, FALSE_SWIPE
 	dbw 24, AGILITY
 	dbw 30, WING_ATTACK
+	dbw 36, SLASH
+	dbw 42, SWORDS_DANCE
+	dbw 48, DOUBLE_TEAM
+	db 0 ; no more level-up moves
+	
+KleavorEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, QUICK_ATTACK
+	dbw 1, LEER
+	dbw 6, FOCUS_ENERGY
+	dbw 12, PURSUIT
+	dbw 18, FALSE_SWIPE
+	dbw 24, AGILITY
+	dbw 30, ROCK_SLASH
 	dbw 36, SLASH
 	dbw 42, SWORDS_DANCE
 	dbw 48, DOUBLE_TEAM
@@ -1916,15 +1960,32 @@ MagmarEvosAttacks:
 	db 0 ; no more level-up moves
 
 PinsirEvosAttacks:
+	dbbw EVOLVE_TRADE, METAL_COAT, TRICULES
+	dbbw EVOLVE_LEVEL, 42, TRICULES
 	db 0 ; no more evolutions
 	dbw 1, VICEGRIP
 	dbw 7, FOCUS_ENERGY
 	dbw 13, BIND
 	dbw 19, SEISMIC_TOSS
 	dbw 25, HARDEN
-	dbw 31, GUILLOTINE
+	dbw 31, CROSS_CUTTER
 	dbw 37, SUBMISSION
 	dbw 43, SWORDS_DANCE
+	dbw 49, GUILLOTINE
+	db 0 ; no more level-up moves
+
+TriculesEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, VICEGRIP
+	dbw 7, FOCUS_ENERGY
+	dbw 13, BIND
+	dbw 19, SEISMIC_TOSS
+	dbw 25, HARDEN
+	dbw 31, CROSS_CUTTER
+	dbw 37, SUBMISSION
+	dbw 42, METAL_CLAW
+	dbw 43, SWORDS_DANCE
+	dbw 49, GUILLOTINE
 	db 0 ; no more level-up moves
 
 TaurosEvosAttacks:
@@ -2105,19 +2166,21 @@ KabutopsEvosAttacks:
 	dbw 37, ENDURE
 	dbw 40, SLASH
 	dbw 51, MEGA_DRAIN
+	dbw 58, ROCK_SLASH
 	dbw 65, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
 AerodactylEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, WING_ATTACK
+	dbw 1, TAKE_DOWN
 	dbw 8, AGILITY
 	dbw 15, BITE
 	dbw 22, SUPERSONIC
-	dbw 29, ANCIENTPOWER
+	dbw 28, ANCIENTPOWER
 	dbw 36, SCARY_FACE
-	dbw 43, TAKE_DOWN
-	dbw 50, HYPER_BEAM
+	dbw 40, WING_ATTACK
+	dbw 48, ROCK_HEAD
+	dbw 60, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 MunchlaxEvosAttacks:

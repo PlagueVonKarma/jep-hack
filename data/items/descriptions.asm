@@ -145,7 +145,7 @@ ItemDescriptions:
 	dw ShinyStoneDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
-	dw QuestionMarkDesc
+	dw BlkAuguriteDesc
 	dw LeftoversDesc
 	dw QuestionMarkDesc
 	dw QuestionMarkDesc
@@ -953,5 +953,9 @@ DuskStoneDesc:
 	next "kinds of #MON.@"
 	
 ShinyStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+
+BlkAuguriteDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
