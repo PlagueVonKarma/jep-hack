@@ -199,7 +199,7 @@ FishGroups:
 .Remoraid_Good:
 	dbbw  35 percent,     20, MAGIKARP
 	dbbw  70 percent,     20, POLIWAG
-	dbbw  90 percent + 1, 20, POLIWAG
+	dbbw  90 percent + 1, 20, REMORAID
 	dbbw 100 percent,     6, TIME_GROUP
 .Remoraid_Super:
 	dbbw  40 percent,     40, POLIWAG
