@@ -278,4 +278,9 @@ Pokered_MonIndices:
 	db LEAFEON
 	db GLACEON
 	db SYLVEON
+	db LICKILICKY
+	db LICKILORD
+	db BURGELA
+	db TANGROWTH
+	db JUNGELA
 	assert_table_length NUM_POKEMON - 1

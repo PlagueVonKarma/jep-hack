@@ -125,12 +125,17 @@ FramesPointers:
 	dba HitmonleeFrames
 	dba HitmonchanFrames
 	dba LickitungFrames
+	dba LickilickyFrames
+	dba LickilordFrames
 	dba KoffingFrames
 	dba WeezingFrames
 	dba RhyhornFrames
 	dba RhydonFrames
 	dba ChanseyFrames
+	dba BurgelaFrames
 	dba TangelaFrames
+	dba TangrowthFrames
+	dba JungelaFrames
 	dba KangaskhanFrames
 	dba HorseaFrames
 	dba SeadraFrames

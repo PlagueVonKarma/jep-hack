@@ -144,12 +144,17 @@
 	const HITMONLEE  ; 6a
 	const HITMONCHAN ; 6b
 	const LICKITUNG  ; 6c
+	const LICKILICKY
+	const LICKILORD
 	const KOFFING    ; 6d
 	const WEEZING    ; 6e
 	const RHYHORN    ; 6f
 	const RHYDON     ; 70
 	const CHANSEY    ; 71
+	const BURGELA
 	const TANGELA    ; 72
+	const TANGROWTH
+	const JUNGELA
 	const KANGASKHAN ; 73
 	const HORSEA     ; 74
 	const SEADRA     ; 75

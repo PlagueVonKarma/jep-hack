@@ -127,12 +127,17 @@ KantoMonSpecials:
 	db  35 ; HITMONLEE
 	db  35 ; HITMONCHAN
 	db  60 ; LICKITUNG
+	db  80 ; LICKILICKY
+	db  65 ; LICKILORD
 	db  60 ; KOFFING
 	db  85 ; WEEZING
 	db  30 ; RHYHORN
 	db  45 ; RHYDON
 	db 105 ; CHANSEY
+	db  80 ; BURGELA
 	db 100 ; TANGELA
+	db 110 ; TANGROWTH
+	db 125 ; JUNGELA
 	db  40 ; KANGASKHAN
 	db  70 ; HORSEA
 	db  95 ; SEADRA

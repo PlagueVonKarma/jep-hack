@@ -126,12 +126,17 @@ EvosAttacksPointers1::
 	dw HitmonleeEvosAttacks
 	dw HitmonchanEvosAttacks
 	dw LickitungEvosAttacks
+	dw LickilickyEvosAttacks
+	dw LickilordEvosAttacks
 	dw KoffingEvosAttacks
 	dw WeezingEvosAttacks
 	dw RhyhornEvosAttacks
 	dw RhydonEvosAttacks
 	dw ChanseyEvosAttacks
+	dw BurgelaEvosAttacks
 	dw TangelaEvosAttacks
+	dw TangrowthEvosAttacks
+	dw JungelaEvosAttacks
 	dw KangaskhanEvosAttacks
 	dw HorseaEvosAttacks
 	dw SeadraEvosAttacks
@@ -1862,6 +1867,9 @@ HitmonchanEvosAttacks:
 	db 0 ; no more level-up moves
 
 LickitungEvosAttacks:
+	dbbw EVOLVE_LEVEL, 32, LICKILICKY
+	dbbw EVOLVE_ITEM, POISON_STONE, LICKILORD
+	dbbw EVOLVE_TRADE, KINGS_ROCK, LICKILORD
 	db 0 ; no more evolutions
 	dbw 1, LICK
 	dbw 7, SUPERSONIC
@@ -1871,6 +1879,28 @@ LickitungEvosAttacks:
 	dbw 31, DISABLE
 	dbw 37, SLAM
 	dbw 43, SCREECH
+	db 0 ; no more level-up moves
+	
+LickilickyEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, LICK
+	dbw 7, SUPERSONIC
+	dbw 13, DEFENSE_CURL
+	dbw 19, STOMP
+	dbw 25, WRAP
+	dbw 31, DISABLE
+	dbw 32, ROLLOUT
+	dbw 40, SLAM
+	dbw 49, SCREECH
+	db 0 ; no more level-up moves
+	
+LickilordEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, ACID
+	dbw 1, LICK
+	dbw 1, WRAP
+	dbw 1, SLAM
+	dbw 30, TOXIC
 	db 0 ; no more level-up moves
 
 KoffingEvosAttacks:
@@ -1947,7 +1977,24 @@ ChanseyEvosAttacks:
 	dbw 57, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
+BurgelaEvosAttacks:
+	dbbw EVOLVE_LEVEL, 22, TANGELA
+	db 0 ; no more evolutions
+	dbw 1, CONSTRICT
+	dbw 4, SLEEP_POWDER
+	dbw 10, ABSORB
+	dbw 13, POISONPOWDER
+	dbw 19, VINE_WHIP
+	dbw 23, BIND
+	dbw 27, MEGA_DRAIN
+	dbw 28, STUN_SPORE
+	dbw 32, SLAM
+	dbw 36, GROWTH
+	db 0 ; no more level-up moves
+
 TangelaEvosAttacks:
+	dbbw EVOLVE_LEVEL, 44, TANGROWTH
+	dbbw EVOLVE_ITEM, DUSK_STONE, JUNGELA
 	db 0 ; no more evolutions
 	dbw 1, CONSTRICT
 	dbw 4, SLEEP_POWDER
@@ -1959,6 +2006,30 @@ TangelaEvosAttacks:
 	dbw 34, STUN_SPORE
 	dbw 40, SLAM
 	dbw 46, GROWTH
+	db 0 ; no more level-up moves
+	
+TangrowthEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, CONSTRICT
+	dbw 4, SLEEP_POWDER
+	dbw 10, ABSORB
+	dbw 13, POISONPOWDER
+	dbw 19, VINE_WHIP
+	dbw 25, BIND
+	dbw 31, MEGA_DRAIN
+	dbw 34, STUN_SPORE
+	dbw 40, SLAM
+	dbw 44, ANCIENTPOWER
+	dbw 51, GROWTH
+	db 0 ; no more level-up moves
+	
+JungelaEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, VINE_WHIP
+	dbw 1, BIND
+	dbw 1, FAINT_ATTACK
+	dbw 1, NIGHT_SHADE
+	dbw 30, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:

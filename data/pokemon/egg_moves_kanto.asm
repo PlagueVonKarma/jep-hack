@@ -126,12 +126,17 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw LickitungEggMoves
+	dw NoEggMoves1 ; Lickilicky
+	dw NoEggMoves1 ; Lickilord
 	dw KoffingEggMoves
 	dw NoEggMoves1
 	dw RhyhornEggMoves
 	dw NoEggMoves1
 	dw ChanseyEggMoves
-	dw TangelaEggMoves
+	dw BurgelaEggMoves ; Burgela
+	dw NoEggMoves1
+	dw NoEggMoves1 ; Tangrowth
+	dw NoEggMoves1 ; Jungela
 	dw KangaskhanEggMoves
 	dw HorseaEggMoves
 	dw NoEggMoves1
@@ -522,7 +527,7 @@ ChanseyEggMoves:
 	dw HEAL_BELL
 	dw -1 ; end
 
-TangelaEggMoves:
+BurgelaEggMoves:
 	dw FLAIL
 	dw CONFUSION
 	dw MEGA_DRAIN

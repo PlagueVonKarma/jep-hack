@@ -125,12 +125,17 @@ BitmasksPointers:
 	dw HitmonleeBitmasks
 	dw HitmonchanBitmasks
 	dw LickitungBitmasks
+	dw LickilickyBitmasks
+	dw LickilordBitmasks
 	dw KoffingBitmasks
 	dw WeezingBitmasks
 	dw RhyhornBitmasks
 	dw RhydonBitmasks
 	dw ChanseyBitmasks
+	dw BurgelaBitmasks
 	dw TangelaBitmasks
+	dw TangrowthBitmasks
+	dw JungelaBitmasks
 	dw KangaskhanBitmasks
 	dw HorseaBitmasks
 	dw SeadraBitmasks

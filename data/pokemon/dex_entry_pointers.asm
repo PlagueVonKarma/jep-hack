@@ -126,12 +126,17 @@ PokedexDataPointerTable:
 	dba HitmonleePokedexEntry
 	dba HitmonchanPokedexEntry
 	dba LickitungPokedexEntry
+	dba LickilickyPokedexEntry
+	dba LickilordPokedexEntry
 	dba KoffingPokedexEntry
 	dba WeezingPokedexEntry
 	dba RhyhornPokedexEntry
 	dba RhydonPokedexEntry
 	dba ChanseyPokedexEntry
+	dba BurgelaPokedexEntry
 	dba TangelaPokedexEntry
+	dba TangrowthPokedexEntry
+	dba JungelaPokedexEntry
 	dba KangaskhanPokedexEntry
 	dba HorseaPokedexEntry
 	dba SeadraPokedexEntry

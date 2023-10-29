@@ -125,12 +125,17 @@ AnimationPointers:
 	dw HitmonleeAnimation
 	dw HitmonchanAnimation
 	dw LickitungAnimation
+	dw LickilickyAnimation
+	dw LickilordAnimation
 	dw KoffingAnimation
 	dw WeezingAnimation
 	dw RhyhornAnimation
 	dw RhydonAnimation
 	dw ChanseyAnimation
+	dw BurgelaAnimation
 	dw TangelaAnimation
+	dw TangrowthAnimation
+	dw JungelaAnimation
 	dw KangaskhanAnimation
 	dw HorseaAnimation
 	dw SeadraAnimation

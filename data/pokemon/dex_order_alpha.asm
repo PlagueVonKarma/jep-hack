@@ -23,6 +23,7 @@ AlphabeticalPokedexOrder:
 	dw BLASTYKE
 	dw BLISSEY
 	dw BULBASAUR
+	dw BURGELA
 	dw BUTTERFREE
 	dw CARAPTHOR
 	dw CATERPIE
@@ -109,6 +110,7 @@ AlphabeticalPokedexOrder:
 	dw JIGGLYPUFF
 	dw JOLTEON
 	dw JUMPLUFF
+	dw JUNGELA
 	dw JYNX
 	dw KABUTO
 	dw KABUTOPS
@@ -127,6 +129,8 @@ AlphabeticalPokedexOrder:
 	dw LEAFEON
 	dw LEDIAN
 	dw LEDYBA
+	dw LICKILICKY
+	dw LICKILORD
 	dw LICKITUNG
 	dw LUGIA
 	dw MACHAMP
@@ -244,6 +248,7 @@ AlphabeticalPokedexOrder:
 	dw SWINUB
 	dw SYLVEON
 	dw TANGELA
+	dw TANGROWTH
 	dw TAUROS
 	dw TEDDIURSA
 	dw TENTACOOL
