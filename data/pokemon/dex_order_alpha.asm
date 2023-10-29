@@ -78,6 +78,7 @@ AlphabeticalPokedexOrder:
 	dw GOLDEEN
 	dw GOLDUCK
 	dw GOLEM
+	dw GOROCHU
 	dw GRANBULL
 	dw GRAVELER
 	dw GRIMER

@@ -1,6 +1,6 @@
 Footprints:
 	table_width LEN_1BPP_TILE * 4, Footprints
-
+; don't forget to update assert_table_length
 INCBIN "gfx/footprints/bulbasaur.1bpp"
 INCBIN "gfx/footprints/ivysaur.1bpp"
 INCBIN "gfx/footprints/venusaur.1bpp"
@@ -27,6 +27,7 @@ INCBIN "gfx/footprints/ekans.1bpp"
 INCBIN "gfx/footprints/arbok.1bpp"
 INCBIN "gfx/footprints/pikachu.1bpp"
 INCBIN "gfx/footprints/raichu.1bpp"
+INCBIN "gfx/footprints/gorochu.1bpp"
 INCBIN "gfx/footprints/sandshrew.1bpp"
 INCBIN "gfx/footprints/sandslash.1bpp"
 INCBIN "gfx/footprints/nidoran_f.1bpp"
@@ -267,4 +268,4 @@ INCBIN "gfx/footprints/254.1bpp"
 INCBIN "gfx/footprints/255.1bpp"
 INCBIN "gfx/footprints/256.1bpp"
 
-	assert_table_length $109 ; don't forget to update this
+	assert_table_length $110 ; don't forget to update this

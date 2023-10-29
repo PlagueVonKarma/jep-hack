@@ -125,12 +125,12 @@ DebugPokemon1Script:
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, NIDORINO
+	getmonname STRING_BUFFER_3, GOROCHU
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke NIDORINO, 36, POISON_STONE
+	givepoke GOROCHU, 35, POISON_STONE
 	closetext
 	end
 
@@ -145,11 +145,11 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry WALKING_WAKE
+	cry GOROCHU
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon WALKING_WAKE, 40
+	loadwildmon GOROCHU, 40
 	startbattle
 	reloadmapafterbattle
 	end

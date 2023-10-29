@@ -26,6 +26,7 @@ FramesPointers:
 	dba ArbokFrames
 	dba PikachuFrames
 	dba RaichuFrames
+	dba GorochuFrames
 	dba SandshrewFrames
 	dba SandslashFrames
 	dba NidoranFFrames

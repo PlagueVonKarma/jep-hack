@@ -27,6 +27,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1
 	dw SandshrewEggMoves
 	dw NoEggMoves1
 	dw NidoranFEggMoves

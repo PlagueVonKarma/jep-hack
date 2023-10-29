@@ -260,4 +260,5 @@ Pokered_MonIndices:
 	db SHI_SHI
 	db MUNCHLAX
 	db KLEAVOR
+	db GOROCHU
 	assert_table_length NUM_POKEMON - 1

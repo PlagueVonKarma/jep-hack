@@ -25,6 +25,7 @@ NewPokedexOrder:
 	dw PICHU
 	dw PIKACHU
 	dw RAICHU
+	dw GOROCHU
 	dw CATERPIE
 	dw METAPOD
 	dw BUTTERFREE
