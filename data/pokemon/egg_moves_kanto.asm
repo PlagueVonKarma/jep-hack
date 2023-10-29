@@ -16,6 +16,13 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Gentlarva
+	dw NoEggMoves1 ; Pupal
+	dw NoEggMoves1 ; Carapthor
+	dw KotoraEggMoves
+	dw NoEggMoves1 ; Gaotora
+	dw NoEggMoves1 ; Gorotora
+	dw NoEggMoves1 ; Raitora
 	dw PidgeyEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -39,28 +46,35 @@ EggMovePointers1:
 	dw NoEggMoves1 ; Nidoreign
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw VulpixEggMoves
+	dw VulpiiiEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw ZubatEggMoves
+	dw NoEggMoves1
+	dw BittybatEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw OddishEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw ParasEggMoves
+	dw ParasporEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw VenonatEggMoves
 	dw NoEggMoves1
 	dw DiglettEggMoves
 	dw NoEggMoves1
-	dw MeowthEggMoves
+	dw CoinpurEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1
+	dw NoEggMoves1 ; Perrserker
 	dw PsyduckEggMoves
 	dw NoEggMoves1
 	dw MankeyEggMoves
 	dw NoEggMoves1
-	dw GrowlitheEggMoves
+	dw NoEggMoves1 ; Annihilape
+	dw PupperonEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw PoliwagEggMoves
 	dw NoEggMoves1
@@ -151,7 +165,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw AerodactylEggMoves
 	dw MunchlaxEggMoves ; Munchlax
-	dw SnorlaxEggMoves ; Should this even exist?
+	dw NoEggMoves1 ; Should this even exist?
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -186,6 +200,12 @@ SquirtleEggMoves:
 	dw CONFUSION
 	dw FORESIGHT
 	dw FLAIL
+	dw -1 ; end
+
+KotoraEggMoves:
+	dw SCREECH
+	dw CHARM
+	dw CRUNCH
 	dw -1 ; end
 
 PidgeyEggMoves:
@@ -247,7 +267,7 @@ NidoranMEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-VulpixEggMoves:
+VulpiiiEggMoves:
 	dw FAINT_ATTACK
 	dw HYPNOSIS
 	dw FLAIL
@@ -255,7 +275,7 @@ VulpixEggMoves:
 	dw DISABLE
 	dw -1 ; end
 
-ZubatEggMoves:
+BittybatEggMoves:
 	dw QUICK_ATTACK
 	dw PURSUIT
 	dw FAINT_ATTACK
@@ -270,7 +290,7 @@ OddishEggMoves:
 	dw SYNTHESIS
 	dw -1 ; end
 
-ParasEggMoves:
+ParasporEggMoves:
 	dw FALSE_SWIPE
 	dw SCREECH
 	dw COUNTER
@@ -295,7 +315,7 @@ DiglettEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-MeowthEggMoves:
+CoinpurEggMoves:
 	dw SPITE
 	dw CHARM
 	dw HYPNOSIS
@@ -322,7 +342,7 @@ MankeyEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-GrowlitheEggMoves:
+PupperonEggMoves:
 	dw BODY_SLAM
 	dw SAFEGUARD
 	dw CRUNCH
@@ -596,10 +616,6 @@ AerodactylEggMoves:
 	dw -1 ; end
 
 MunchlaxEggMoves:
-	dw LICK
-	dw -1 ; end
-
-SnorlaxEggMoves:
 	dw LICK
 	dw -1 ; end
 

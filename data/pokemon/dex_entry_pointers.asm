@@ -16,6 +16,13 @@ PokedexDataPointerTable:
 	dba WeedlePokedexEntry
 	dba KakunaPokedexEntry
 	dba BeedrillPokedexEntry
+	dba GentlarvaPokedexEntry
+	dba PupalPokedexEntry
+	dba CarapthorPokedexEntry
+	dba KotoraPokedexEntry
+	dba GaotoraPokedexEntry
+	dba GorotoraPokedexEntry
+	dba RaitoraPokedexEntry
 	dba PidgeyPokedexEntry
 	dba PidgeottoPokedexEntry
 	dba PidgeotPokedexEntry
@@ -39,27 +46,34 @@ PokedexDataPointerTable:
 	dba NidoreignPokedexEntry
 	dba ClefairyPokedexEntry
 	dba ClefablePokedexEntry
+	dba VulpiiiPokedexEntry
 	dba VulpixPokedexEntry
 	dba NinetalesPokedexEntry
 	dba JigglypuffPokedexEntry
 	dba WigglytuffPokedexEntry
+	dba BittybatPokedexEntry
 	dba ZubatPokedexEntry
 	dba GolbatPokedexEntry
 	dba OddishPokedexEntry
 	dba GloomPokedexEntry
 	dba VileplumePokedexEntry
+	dba ParasporPokedexEntry
 	dba ParasPokedexEntry
 	dba ParasectPokedexEntry
 	dba VenonatPokedexEntry
 	dba VenomothPokedexEntry
 	dba DiglettPokedexEntry
 	dba DugtrioPokedexEntry
+	dba CoinpurPokedexEntry
 	dba MeowthPokedexEntry
 	dba PersianPokedexEntry
+	dba PerrserkerPokedexEntry
 	dba PsyduckPokedexEntry
 	dba GolduckPokedexEntry
 	dba MankeyPokedexEntry
 	dba PrimeapePokedexEntry
+	dba AnnihilapePokedexEntry
+	dba PupperonPokedexEntry
 	dba GrowlithePokedexEntry
 	dba ArcaninePokedexEntry
 	dba PoliwagPokedexEntry
@@ -206,6 +220,9 @@ PokedexDataPointerTable:
 	dba QuagsirePokedexEntry
 	dba EspeonPokedexEntry
 	dba UmbreonPokedexEntry
+	dba LeafeonPokedexEntry
+	dba GlaceonPokedexEntry
+	dba SylveonPokedexEntry
 	dba MurkrowPokedexEntry
 	dba SlowkingPokedexEntry
 	dba MisdreavusPokedexEntry

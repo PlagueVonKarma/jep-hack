@@ -34,6 +34,13 @@
 	const WEEDLE     ; 0d
 	const KAKUNA     ; 0e
 	const BEEDRILL   ; 0f
+	const GENTLARVA
+	const PUPAL
+	const CARAPTHOR
+	const KOTORA
+	const GAOTORA
+	const GOROTORA
+	const RAITORA
 	const PIDGEY     ; 10
 	const PIDGEOTTO  ; 11
 	const PIDGEOT    ; 12
@@ -57,27 +64,34 @@
 	const NIDOREIGN
 	const CLEFAIRY   ; 23
 	const CLEFABLE   ; 24
+	const VULPIII
 	const VULPIX     ; 25
 	const NINETALES  ; 26
 	const JIGGLYPUFF ; 27
 	const WIGGLYTUFF ; 28
+	const BITTYBAT
 	const ZUBAT      ; 29
 	const GOLBAT     ; 2a
 	const ODDISH     ; 2b
 	const GLOOM      ; 2c
 	const VILEPLUME  ; 2d
+	const PARASPOR
 	const PARAS      ; 2e
 	const PARASECT   ; 2f
 	const VENONAT    ; 30
 	const VENOMOTH   ; 31
 	const DIGLETT    ; 32
 	const DUGTRIO    ; 33
+	const COINPUR
 	const MEOWTH     ; 34
 	const PERSIAN    ; 35
+	const PERRSERKER
 	const PSYDUCK    ; 36
 	const GOLDUCK    ; 37
 	const MANKEY     ; 38
 	const PRIMEAPE   ; 39
+	const ANNIHILAPE
+	const PUPPERON
 	const GROWLITHE  ; 3a
 	const ARCANINE   ; 3b
 	const POLIWAG    ; 3c
@@ -225,6 +239,9 @@ DEF JOHTO_POKEMON EQU const_value
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
 	const UMBREON    ; c5
+	const LEAFEON
+	const GLACEON
+	const SYLVEON
 	const MURKROW    ; c6
 	const SLOWKING   ; c7
 	const MISDREAVUS ; c8

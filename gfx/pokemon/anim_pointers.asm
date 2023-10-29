@@ -15,6 +15,13 @@ AnimationPointers:
 	dw WeedleAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
+	dw GentlarvaAnimation
+	dw PupalAnimation
+	dw CarapthorAnimation
+	dw KotoraAnimation
+	dw GaotoraAnimation
+	dw GorotoraAnimation
+	dw RaitoraAnimation
 	dw PidgeyAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
@@ -38,27 +45,34 @@ AnimationPointers:
 	dw NidoreignAnimation
 	dw ClefairyAnimation
 	dw ClefableAnimation
+	dw VulpiiiAnimation
 	dw VulpixAnimation
 	dw NinetalesAnimation
 	dw JigglypuffAnimation
 	dw WigglytuffAnimation
+	dw BittybatAnimation
 	dw ZubatAnimation
 	dw GolbatAnimation
 	dw OddishAnimation
 	dw GloomAnimation
 	dw VileplumeAnimation
+	dw ParasporAnimation
 	dw ParasAnimation
 	dw ParasectAnimation
 	dw VenonatAnimation
 	dw VenomothAnimation
 	dw DiglettAnimation
 	dw DugtrioAnimation
+	dw CoinpurAnimation
 	dw MeowthAnimation
 	dw PersianAnimation
+	dw PerrserkerAnimation
 	dw PsyduckAnimation
 	dw GolduckAnimation
 	dw MankeyAnimation
 	dw PrimeapeAnimation
+	dw AnnihilapeAnimation
+	dw PupperonAnimation
 	dw GrowlitheAnimation
 	dw ArcanineAnimation
 	dw PoliwagAnimation
@@ -205,6 +219,9 @@ AnimationPointers:
 	dw QuagsireAnimation
 	dw EspeonAnimation
 	dw UmbreonAnimation
+	dw LeafeonAnimation
+	dw GlaceonAnimation
+	dw SylveonAnimation
 	dw MurkrowAnimation
 	dw SlowkingAnimation
 	dw MisdreavusAnimation

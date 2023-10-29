@@ -261,4 +261,21 @@ Pokered_MonIndices:
 	db MUNCHLAX
 	db KLEAVOR
 	db GOROCHU
+	db GENTLARVA
+	db PUPAL
+	db CARAPTHOR
+	db KOTORA
+	db GAOTORA
+	db GOROTORA
+	db RAITORA
+	db BITTYBAT
+	db VULPIII
+	db PARASPOR
+	db ANNIHILAPE
+	db PUPPERON
+	db COINPUR
+	db PERRSERKER
+	db LEAFEON
+	db GLACEON
+	db SYLVEON
 	assert_table_length NUM_POKEMON - 1

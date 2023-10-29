@@ -15,6 +15,13 @@ AnimationIdlePointers:
 	dw WeedleAnimationIdle
 	dw KakunaAnimationIdle
 	dw BeedrillAnimationIdle
+	dw GentlarvaAnimationIdle
+	dw PupalAnimationIdle
+	dw CarapthorAnimationIdle
+	dw KotoraAnimationIdle
+	dw GaotoraAnimationIdle
+	dw GorotoraAnimationIdle
+	dw RaitoraAnimationIdle
 	dw PidgeyAnimationIdle
 	dw PidgeottoAnimationIdle
 	dw PidgeotAnimationIdle
@@ -38,27 +45,34 @@ AnimationIdlePointers:
 	dw NidoreignAnimationIdle
 	dw ClefairyAnimationIdle
 	dw ClefableAnimationIdle
+	dw VulpiiiAnimationIdle
 	dw VulpixAnimationIdle
 	dw NinetalesAnimationIdle
 	dw JigglypuffAnimationIdle
 	dw WigglytuffAnimationIdle
+	dw BittybatAnimationIdle
 	dw ZubatAnimationIdle
 	dw GolbatAnimationIdle
 	dw OddishAnimationIdle
 	dw GloomAnimationIdle
 	dw VileplumeAnimationIdle
+	dw ParasporAnimationIdle
 	dw ParasAnimationIdle
 	dw ParasectAnimationIdle
 	dw VenonatAnimationIdle
 	dw VenomothAnimationIdle
 	dw DiglettAnimationIdle
 	dw DugtrioAnimationIdle
+	dw CoinpurAnimationIdle
 	dw MeowthAnimationIdle
 	dw PersianAnimationIdle
+	dw PerrserkerAnimationIdle
 	dw PsyduckAnimationIdle
 	dw GolduckAnimationIdle
 	dw MankeyAnimationIdle
 	dw PrimeapeAnimationIdle
+	dw AnnihilapeAnimationIdle
+	dw PupperonAnimationIdle
 	dw GrowlitheAnimationIdle
 	dw ArcanineAnimationIdle
 	dw PoliwagAnimationIdle
@@ -205,6 +219,9 @@ AnimationIdlePointers:
 	dw QuagsireAnimationIdle
 	dw EspeonAnimationIdle
 	dw UmbreonAnimationIdle
+	dw LeafeonAnimationIdle
+	dw GlaceonAnimationIdle
+	dw SylveonAnimationIdle
 	dw MurkrowAnimationIdle
 	dw SlowkingAnimationIdle
 	dw MisdreavusAnimationIdle

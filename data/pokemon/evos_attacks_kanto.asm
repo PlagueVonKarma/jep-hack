@@ -16,6 +16,13 @@ EvosAttacksPointers1::
 	dw WeedleEvosAttacks
 	dw KakunaEvosAttacks
 	dw BeedrillEvosAttacks
+	dw GentlarvaEvosAttacks
+	dw PupalEvosAttacks
+	dw CarapthorEvosAttacks
+	dw KotoraEvosAttacks
+	dw GaotoraEvosAttacks
+	dw GorotoraEvosAttacks
+	dw RaitoraEvosAttacks
 	dw PidgeyEvosAttacks
 	dw PidgeottoEvosAttacks
 	dw PidgeotEvosAttacks
@@ -39,27 +46,34 @@ EvosAttacksPointers1::
 	dw NidoreignEvosAttacks
 	dw ClefairyEvosAttacks
 	dw ClefableEvosAttacks
+	dw VulpiiiEvosAttacks
 	dw VulpixEvosAttacks
 	dw NinetalesEvosAttacks
 	dw JigglypuffEvosAttacks
 	dw WigglytuffEvosAttacks
+	dw BittybatEvosAttacks
 	dw ZubatEvosAttacks
 	dw GolbatEvosAttacks
 	dw OddishEvosAttacks
 	dw GloomEvosAttacks
 	dw VileplumeEvosAttacks
+	dw ParasporEvosAttacks
 	dw ParasEvosAttacks
 	dw ParasectEvosAttacks
 	dw VenonatEvosAttacks
 	dw VenomothEvosAttacks
 	dw DiglettEvosAttacks
 	dw DugtrioEvosAttacks
+	dw CoinpurEvosAttacks
 	dw MeowthEvosAttacks
 	dw PersianEvosAttacks
+	dw PerrserkerEvosAttacks
 	dw PsyduckEvosAttacks
 	dw GolduckEvosAttacks
 	dw MankeyEvosAttacks
 	dw PrimeapeEvosAttacks
+	dw AnnihilapeEvosAttacks
+	dw PupperonEvosAttacks
 	dw GrowlitheEvosAttacks
 	dw ArcanineEvosAttacks
 	dw PoliwagEvosAttacks
@@ -370,6 +384,98 @@ BeedrillEvosAttacks:
 	dbw 40, AGILITY
 	db 0 ; no more level-up moves
 
+GentlarvaEvosAttacks:
+	dbbw EVOLVE_LEVEL, 7, PUPAL
+	db 0 ; no more evolutions
+	dbw 1, LEECH_LIFE
+	dbw 1, STRING_SHOT
+	db 0 ; no more level-up moves
+
+PupalEvosAttacks:
+	dbbw EVOLVE_LEVEL, 10, CARAPTHOR
+	db 0 ; no more evolutions
+	dbw 1, HARDEN
+	dbw 7, HARDEN
+	db 0 ; no more level-up moves
+
+CarapthorEvosAttacks:
+	db 0 ; no more evolutions
+	dbw  1, COMET_PUNCH
+	dbw 10, COMET_PUNCH
+	dbw 15, PIN_MISSILE
+	dbw 20, DEFENSE_CURL
+	dbw 25, SWIFT
+	dbw 30, MEGA_PUNCH
+	dbw 35, SUBSTITUTE
+	dbw 40, SWAGGER
+	db 0 ; no more level-up moves
+
+KotoraEvosAttacks:
+	dbbw EVOLVE_LEVEL, 16, GAOTORA
+	dbbw EVOLVE_ITEM, THUNDERSTONE, RAITORA
+	db 0 ; no more evolutions
+	dbw  1, THUNDERSHOCK
+	dbw  3, TACKLE
+	dbw  7, LEER
+	dbw 13, ROAR
+	dbw 18, QUICK_ATTACK
+	dbw 23, PURSUIT
+	dbw 27, SPARK
+	dbw 31, BITE
+	dbw 34, SCARY_FACE
+	dbw 42, THUNDER
+	dbw 49, AGILITY
+	db 0 ; no more level-up moves
+
+GaotoraEvosAttacks:
+	dbbw EVOLVE_LEVEL, 36, GAOTORA
+	db 0 ; no more evolutions
+	dbw  1, THUNDERSHOCK
+	dbw  3, TACKLE
+	dbw  7, LEER
+	dbw 13, ROAR
+	dbw 20, QUICK_ATTACK
+	dbw 27, PURSUIT
+	dbw 33, SPARK
+	dbw 39, BITE
+	dbw 44, SCARY_FACE
+	dbw 49, THRASH
+	dbw 54, THUNDER
+	dbw 49, AGILITY
+	db 0 ; no more level-up moves
+
+GorotoraEvosAttacks:
+	db 0 ; no more evolutions
+	dbw  1, THUNDERSHOCK
+	dbw  3, TACKLE
+	dbw  7, LEER
+	dbw 13, ROAR
+	dbw 20, QUICK_ATTACK
+	dbw 27, PURSUIT
+	dbw 33, SPARK
+	dbw 36, BODY_SLAM
+	dbw 42, BITE
+	dbw 50, SCARY_FACE
+	dbw 58, THRASH
+	dbw 66, THUNDER
+	dbw 78, AGILITY
+	db 0 ; no more level-up moves
+
+RaitoraEvosAttacks:
+	db 0 ; no more evolutions
+	dbw  1, THUNDERSHOCK
+	dbw  3, TACKLE
+	dbw  7, LEER
+	dbw 13, ROAR
+	dbw 20, QUICK_ATTACK
+	dbw 27, PURSUIT
+	dbw 33, SPARK
+	dbw 39, BITE
+	dbw 44, SCARY_FACE
+	dbw 54, THUNDER
+	dbw 63, AGILITY
+	db 0 ; no more level-up moves
+
 PidgeyEvosAttacks:
 	dbbw EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
@@ -661,6 +767,19 @@ ClefableEvosAttacks:
 	dbw 1, MOONLIGHT
 	db 0 ; no more level-up moves
 
+VulpiiiEvosAttacks:
+	dbbw EVOLVE_LEVEL, 15, VULPIX
+	db 0 ; no more evolutions
+	dbw 1, EMBER
+	dbw 1, TAIL_WHIP
+	dbw 7, QUICK_ATTACK
+	dbw 13, ROAR
+	dbw 17, CONFUSE_RAY
+	dbw 21, SAFEGUARD
+	dbw 25, FLAMETHROWER
+	dbw 29, FIRE_SPIN
+	db 0 ; no more level-up moves
+
 VulpixEvosAttacks:
 	dbbw EVOLVE_ITEM, FIRE_STONE, NINETALES
 	db 0 ; no more evolutions
@@ -705,6 +824,18 @@ WigglytuffEvosAttacks:
 	dbw 1, DOUBLESLAP
 	db 0 ; no more level-up moves
 
+BittybatEvosAttacks:
+	dbbw EVOLVE_LEVEL, 15, ZUBAT
+	db 0 ; no more evolutions
+	dbw 1, LEECH_LIFE
+	dbw 6, SUPERSONIC
+	dbw 12, BITE
+	dbw 17, CONFUSE_RAY
+	dbw 23, WING_ATTACK
+	dbw 30, MEAN_LOOK
+	dbw 38, HAZE
+	db 0 ; no more level-up moves
+
 ZubatEvosAttacks:
 	dbbw EVOLVE_LEVEL, 22, GOLBAT
 	db 0 ; no more evolutions
@@ -719,7 +850,7 @@ ZubatEvosAttacks:
 
 GolbatEvosAttacks:
 	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, CROBAT
-	dbbw EVOLVE_LEVEL, 44, CROBAT
+	dbbw EVOLVE_LEVEL, 44, CROBAT ; do we need it this time?
 	db 0 ; no more evolutions
 	dbw 1, SCREECH
 	dbw 1, LEECH_LIFE
@@ -767,6 +898,20 @@ VileplumeEvosAttacks:
 	dbw 1, SWEET_SCENT
 	dbw 1, STUN_SPORE
 	dbw 1, PETAL_DANCE
+	db 0 ; no more level-up moves
+
+ParasporEvosAttacks:
+	dbbw EVOLVE_LEVEL, 15, PARAS
+	db 0 ; no more evolutions
+	dbw 1, ABSORB
+	dbw 1, SCRATCH
+	dbw 7, STUN_SPORE
+	dbw 13, POISONPOWDER
+	dbw 17, LEECH_LIFE
+	dbw 21, SPORE
+	dbw 25, SLASH
+	dbw 29, GROWTH
+	dbw 33, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -857,6 +1002,19 @@ DugtrioEvosAttacks:
 	dbw 61, FISSURE
 	db 0 ; no more level-up moves
 
+CoinpurEvosAttacks:
+	dbbw EVOLVE_LEVEL, 14, MEOWTH ; Consideration: Day, Meowth, night, Moibelle. May be excessive.
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, GROWL
+	dbw 11, BITE
+	dbw 19, PAY_DAY ; I remember having it learn this way earlier in later KEP versions...
+	dbw 25, FAINT_ATTACK
+	dbw 30, SCREECH
+	dbw 34, FURY_SWIPES
+	dbw 37, SLASH ; Seems a bit late, but Meowth gets it at L46, so...
+	db 0 ; no more level-up moves
+
 MeowthEvosAttacks:
 	dbbw EVOLVE_LEVEL, 28, PERSIAN
 	db 0 ; no more evolutions
@@ -881,6 +1039,19 @@ PersianEvosAttacks:
 	dbw 38, SCREECH
 	dbw 46, FURY_SWIPES
 	dbw 53, SLASH
+	db 0 ; no more level-up moves
+
+PerrserkerEvosAttacks:
+	db 0 ; no more evolutions
+	dbw  1, SCRATCH
+	dbw  1, GROWL
+	dbw 11, METAL_CLAW
+	dbw 20, PAY_DAY
+	dbw 29, SWAGGER
+	dbw 38, SCREECH
+	dbw 46, FURY_SWIPES
+	dbw 53, SLASH
+	dbw 63, THRASH
 	db 0 ; no more level-up moves
 
 PsyduckEvosAttacks:
@@ -928,6 +1099,7 @@ MankeyEvosAttacks:
 	db 0 ; no more level-up moves
 
 PrimeapeEvosAttacks:
+	dbbw EVOLVE_TRADE, -1, ANNIHILAPE ; funny
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -943,6 +1115,38 @@ PrimeapeEvosAttacks:
 	dbw 45, CROSS_CHOP
 	dbw 54, SCREECH
 	dbw 63, THRASH
+	db 0 ; no more level-up moves
+
+AnnihilapeEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 1, LOW_KICK
+	dbw 1, RAGE
+	dbw 9, LOW_KICK
+	dbw 15, KARATE_CHOP
+	dbw 21, FURY_SWIPES
+	dbw 24, ROCK_HEAD
+	dbw 27, FOCUS_ENERGY
+	dbw 28, RAGE
+	dbw 36, SEISMIC_TOSS
+	dbw 45, CROSS_CHOP
+	dbw 54, SCREECH
+	dbw 63, THRASH
+	dbw 72, SPITE
+	db 0 ; no more level-up moves
+
+PupperonEvosAttacks:
+	dbbw EVOLVE_LEVEL, 15, GROWLITHE
+	db 0 ; no more evolutions
+	dbw  1, BITE
+	dbw  1, ROAR
+	dbw  9, EMBER
+	dbw 16, LEER
+	dbw 22, TAKE_DOWN
+	dbw 28, FLAME_WHEEL
+	dbw 34, AGILITY
+	dbw 40, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 GrowlitheEvosAttacks:
@@ -2061,6 +2265,9 @@ EeveeEvosAttacks:
 	dbbw EVOLVE_ITEM, FIRE_STONE, FLAREON
 	dbbw EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
 	dbbw EVOLVE_HAPPINESS, TR_NITE, UMBREON
+	dbbw EVOLVE_ITEM, LEAF_STONE, LEAFEON
+	dbbw EVOLVE_ITEM, ICE_STONE, GLACEON
+	dbbw EVOLVE_ITEM, MOON_STONE, SYLVEON
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP

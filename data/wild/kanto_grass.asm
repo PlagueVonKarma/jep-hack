@@ -338,60 +338,62 @@ KantoGrassWildMons:
 	dbw 35, RATICATE
 	end_grass_wildmons
 
+; Gold Data, but with Snubbull in the day, vaguely like Crystal.
 	def_grass_wildmons ROUTE_7
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 37, RATTATA
-	dbw 37, SPEAROW
-	dbw 38, SNUBBULL
-	dbw 38, RATICATE
-	dbw 38, JIGGLYPUFF
-	dbw 36, ABRA
-	dbw 36, ABRA
+	db 37, RATTATA
+	db 37, SPEAROW
+	db 38, GROWLITHE
+	db 39, RATICATE
+	db 39, RATTATA
+	db 35, SNUBBULL
+	db 35, SNUBBULL
 	; day
-	dbw 37, RATTATA
-	dbw 37, SPEAROW
-	dbw 38, SNUBBULL
-	dbw 38, RATICATE
-	dbw 38, JIGGLYPUFF
-	dbw 36, ABRA
-	dbw 36, ABRA
+	db 37, RATTATA
+	db 37, SPEAROW
+	db 38, GROWLITHE
+	db 39, RATICATE
+	db 39, RATTATA
+	db 35, GROWLITHE
+	db 35, GROWLITHE
 	; nite
-	dbw 37, MEOWTH
-	dbw 37, MURKROW
-	dbw 38, HOUNDOUR
-	dbw 38, PERSIAN
-	dbw 38, JIGGLYPUFF
-	dbw 36, ABRA
-	dbw 36, ABRA
+	db 37, RATTATA
+	db 37, MURKROW
+	db 38, GROWLITHE
+	db 39, RATICATE
+	db 39, MURKROW
+	db 35, HOUNDOUR
+	db 35, HOUNDOUR
 	end_grass_wildmons
 
+; Silver Data, contrasting with Route 7's Gold Data.
 	def_grass_wildmons ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 37, SNUBBULL
-	dbw 39, PIDGEOTTO
-	dbw 36, ABRA
-	dbw 37, GROWLITHE
-	dbw 36, JIGGLYPUFF
-	dbw 38, KADABRA
-	dbw 38, KADABRA
+	db 37, MEOWTH
+	db 39, PIDGEOTTO
+	db 35, ABRA
+	db 38, VULPIX
+	db 37, PIDGEOTTO
+	db 35, KADABRA
+	db 35, KADABRA
 	; day
-	dbw 37, SNUBBULL
-	dbw 39, PIDGEOTTO
-	dbw 36, ABRA
-	dbw 37, GROWLITHE
-	dbw 36, JIGGLYPUFF
-	dbw 38, KADABRA
-	dbw 38, KADABRA
+	db 37, MEOWTH
+	db 39, PIDGEOTTO
+	db 35, ABRA
+	db 38, VULPIX
+	db 37, PIDGEOTTO
+	db 35, KADABRA
+	db 35, KADABRA
 	; nite
-	dbw 37, MEOWTH
-	dbw 30, NOCTOWL
-	dbw 36, ABRA
-	dbw 37, HAUNTER
-	dbw 36, JIGGLYPUFF
-	dbw 38, KADABRA
-	dbw 38, KADABRA
+	db 37, MEOWTH
+	db 30, HAUNTER
+	db 35, ABRA
+	db 39, NOCTOWL
+	db 38, VULPIX
+	db 35, KADABRA
+	db 35, KADABRA
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_9
@@ -879,7 +881,7 @@ KantoGrassWildMons:
 	dbw 36, METAPOD
 	dbw 36, CATERPIE
 	dbw 35, PARAS
-	dbw 35, ZUBAT ; KOKANA
+	dbw 35, GENTLARVA
 	dbw 36, PARAS
 	dbw 36, PIKACHU
 	; day
@@ -887,15 +889,15 @@ KantoGrassWildMons:
 	dbw 36, CATERPIE
 	dbw 35, METAPOD
 	dbw 36, METAPOD
-	dbw 35, ZUBAT ; KOKANA
+	dbw 35, GENTLARVA
 	dbw 36, PARAS
 	dbw 36, PIKACHU
 	; nite
-	dbw 35, ODDISH ; KOTORA
-	dbw 36, ODDISH ; KOTORA
+	dbw 35, KOTORA
+	dbw 36, KOTORA
 	dbw 36, ZUBAT
 	dbw 35, PARAS
-	dbw 35, ZUBAT ; KOKANA
+	dbw 35, GENTLARVA
 	dbw 36, PARAS
 	dbw 36, PIKACHU
 	end_grass_wildmons

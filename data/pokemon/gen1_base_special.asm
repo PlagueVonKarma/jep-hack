@@ -17,6 +17,13 @@ KantoMonSpecials:
 	db  20 ; WEEDLE
 	db  25 ; KAKUNA
 	db  45 ; BEEDRILL
+	db  25 ; GENTLARVA
+	db  30 ; PUPAL
+	db  60 ; CARAPTHOR
+	db  55 ; KOTORA
+	db  75 ; GAOTORA
+	db  95 ; GOROTORA
+	db 105 ; RAITORA, technically not meant to be here but stay with me
 	db  35 ; PIDGEY
 	db  50 ; PIDGEOTTO
 	db  70 ; PIDGEOT
@@ -40,27 +47,34 @@ KantoMonSpecials:
 	db  75 ; NIDOREIGN
 	db  60 ; CLEFAIRY
 	db  85 ; CLEFABLE
+	db  60 ; VULPIII
 	db  65 ; VULPIX
 	db 100 ; NINETALES
 	db  25 ; JIGGLYPUFF
 	db  50 ; WIGGLYTUFF
+	db  35 ; BITTYBAT
 	db  40 ; ZUBAT
 	db  75 ; GOLBAT
 	db  75 ; ODDISH
 	db  85 ; GLOOM
 	db 100 ; VILEPLUME
+	db  45 ; PARASPOR
 	db  55 ; PARAS
 	db  80 ; PARASECT
 	db  40 ; VENONAT
 	db  90 ; VENOMOTH
 	db  45 ; DIGLETT
 	db  70 ; DUGTRIO
+	db  35 ; COINPUR
 	db  40 ; MEOWTH
 	db  65 ; PERSIAN
+	db  50 ; PERRSERKER
 	db  50 ; PSYDUCK
 	db  80 ; GOLDUCK
 	db  35 ; MANKEY
 	db  60 ; PRIMEAPE
+	db  50 ; ANNIHILAPE
+	db  40 ; PUPPERON
 	db  50 ; GROWLITHE
 	db  80 ; ARCANINE
 	db  40 ; POLIWAG

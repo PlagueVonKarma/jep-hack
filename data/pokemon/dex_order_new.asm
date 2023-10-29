@@ -32,6 +32,13 @@ NewPokedexOrder:
 	dw WEEDLE
 	dw KAKUNA
 	dw BEEDRILL
+	dw GENTLARVA
+	dw PUPAL
+	dw CARAPTHOR
+	dw KOTORA
+	dw GAOTORA
+	dw GOROTORA
+	dw RAITORA
 	dw LEDYBA
 	dw LEDIAN
 	dw SPINARAK
@@ -39,6 +46,7 @@ NewPokedexOrder:
 	dw GEODUDE
 	dw GRAVELER
 	dw GOLEM
+	dw BITTYBAT
 	dw ZUBAT
 	dw GOLBAT
 	dw CROBAT
@@ -73,6 +81,7 @@ NewPokedexOrder:
 	dw HOPPIP
 	dw SKIPLOOM
 	dw JUMPLUFF
+	dw PARASPOR
 	dw PARAS
 	dw PARASECT
 	dw POLIWAG
@@ -131,8 +140,10 @@ NewPokedexOrder:
 	dw AIPOM
 	dw SNUBBULL
 	dw GRANBULL
+	dw VULPIII
 	dw VULPIX
 	dw NINETALES
+	dw PUPPERON
 	dw GROWLITHE
 	dw ARCANINE
 	dw STANTLER
@@ -142,8 +153,11 @@ NewPokedexOrder:
 	dw DUGTRIO
 	dw MANKEY
 	dw PRIMEAPE
+	dw ANNIHILAPE
+	dw COINPUR
 	dw MEOWTH
 	dw PERSIAN
+	dw PERRSERKER
 	dw PSYDUCK
 	dw GOLDUCK
 	dw MACHOP
@@ -192,6 +206,9 @@ NewPokedexOrder:
 	dw FLAREON
 	dw ESPEON
 	dw UMBREON
+	dw LEAFEON
+	dw GLACEON
+	dw SYLVEON
 	dw HORSEA
 	dw SEADRA
 	dw KINGDRA
