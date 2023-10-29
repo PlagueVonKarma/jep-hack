@@ -35,6 +35,7 @@ BitmasksPointers:
 	dw NidoranMBitmasks
 	dw NidorinoBitmasks
 	dw NidokingBitmasks
+	dw NidoreignBitmasks
 	dw ClefairyBitmasks
 	dw ClefableBitmasks
 	dw VulpixBitmasks
@@ -127,10 +128,12 @@ BitmasksPointers:
 	dw StarmieBitmasks
 	dw MrMimeBitmasks
 	dw ScytherBitmasks
+	dw KleavorBitmasks
 	dw JynxBitmasks
 	dw ElectabuzzBitmasks
 	dw MagmarBitmasks
 	dw PinsirBitmasks
+	dw TriculesBitmasks
 	dw TaurosBitmasks
 	dw MagikarpBitmasks
 	dw GyaradosBitmasks

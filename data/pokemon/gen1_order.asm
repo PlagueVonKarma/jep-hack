@@ -32,6 +32,7 @@ Pokered_MonIndices:
 	db TANGELA
 	db SCIZOR ; MISSINGNO.
 	db SHUCKLE ; MISSINGNO.
+	db NIDOREIGN
 	db GROWLITHE
 	db ONIX
 	db FEAROW
@@ -120,6 +121,7 @@ Pokered_MonIndices:
 	db DUGTRIO
 	db VENOMOTH
 	db DEWGONG
+	db TRICULES
 	db KINGDRA ; MISSINGNO.
 	db PHANPY ; MISSINGNO.
 	db CATERPIE
@@ -192,7 +194,7 @@ Pokered_MonIndices:
 	db BELLSPROUT
 	db WEEPINBELL
 	db VICTREEBEL
-	assert_table_length 192 ; gen 1 mon indexes
+	assert_table_length 194 ; gen 1 mon indexes
 	db CHIKORITA
 	db BAYLEEF
 	db MEGANIUM
@@ -257,5 +259,6 @@ Pokered_MonIndices:
 	db WALKING_WAKE
 	db SHI_SHI
 	db MUNCHLAX
+	db KLEAVOR
 	db GOROCHU
 	assert_table_length NUM_POKEMON - 1

@@ -37,6 +37,7 @@ KantoMonSpecials:
 	db  40 ; NIDORAN_M
 	db  55 ; NIDORINO
 	db  75 ; NIDOKING
+	db  75 ; NIDOREIGN
 	db  60 ; CLEFAIRY
 	db  85 ; CLEFABLE
 	db  65 ; VULPIX
@@ -129,10 +130,12 @@ KantoMonSpecials:
 	db 100 ; STARMIE
 	db 100 ; MR__MIME
 	db  55 ; SCYTHER
+	db  45 ; KLEAVOR
 	db  95 ; JYNX
 	db  85 ; ELECTABUZZ
 	db  85 ; MAGMAR
 	db  55 ; PINSIR
+	db  55 ; TRICULES
 	db  70 ; TAUROS
 	db  20 ; MAGIKARP
 	db 100 ; GYARADOS

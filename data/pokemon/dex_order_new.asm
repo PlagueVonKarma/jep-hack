@@ -104,6 +104,7 @@ NewPokedexOrder:
 	dw NIDORAN_M
 	dw NIDORINO
 	dw NIDOKING
+	dw NIDOREIGN
 	dw YANMA
 	dw SUNKERN
 	dw SUNFLORA
@@ -115,7 +116,9 @@ NewPokedexOrder:
 	dw VENOMOTH
 	dw SCYTHER
 	dw SCIZOR
+	dw KLEAVOR
 	dw PINSIR
+	dw TRICULES
 	dw HERACROSS
 	dw KOFFING
 	dw WEEZING

@@ -83,6 +83,8 @@ PokemonPicPointers::
 	dba NidorinoBackpic
 	dba NidokingFrontpic
 	dba NidokingBackpic
+	dba NidoreignFrontpic
+	dba NidoreignBackpic
 	dba ClefairyFrontpic
 	dba ClefairyBackpic
 	dba ClefableFrontpic
@@ -267,6 +269,8 @@ PokemonPicPointers::
 	dba MrMimeBackpic
 	dba ScytherFrontpic
 	dba ScytherBackpic
+	dba KleavorFrontpic
+	dba KleavorBackpic
 	dba JynxFrontpic
 	dba JynxBackpic
 	dba ElectabuzzFrontpic
@@ -275,6 +279,8 @@ PokemonPicPointers::
 	dba MagmarBackpic
 	dba PinsirFrontpic
 	dba PinsirBackpic
+	dba TriculesFrontpic
+	dba TriculesBackpic
 	dba TaurosFrontpic
 	dba TaurosBackpic
 	dba MagikarpFrontpic

@@ -35,6 +35,7 @@ FramesPointers:
 	dba NidoranMFrames
 	dba NidorinoFrames
 	dba NidokingFrames
+	dba NidoreignFrames
 	dba ClefairyFrames
 	dba ClefableFrames
 	dba VulpixFrames
@@ -127,10 +128,12 @@ FramesPointers:
 	dba StarmieFrames
 	dba MrMimeFrames
 	dba ScytherFrames
+	dba KleavorFrames
 	dba JynxFrames
 	dba ElectabuzzFrames
 	dba MagmarFrames
 	dba PinsirFrames
+	dba TriculesFrames
 	dba TaurosFrames
 	dba MagikarpFrames
 	dba GyaradosFrames
