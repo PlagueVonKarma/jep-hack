@@ -16,6 +16,13 @@ FirstEvoStages::
 	dw WEEDLE
 	dw WEEDLE
 	dw WEEDLE
+	dw GENTLARVA
+	dw GENTLARVA
+	dw GENTLARVA
+	dw KOTORA
+	dw KOTORA
+	dw KOTORA
+	dw KOTORA
 	dw PIDGEY     ;10
 	dw PIDGEY
 	dw PIDGEY
@@ -39,29 +46,36 @@ FirstEvoStages::
 	dw NIDORAN_F  ; Nidoreign, tentative
 	dw CLEFFA
 	dw CLEFFA
-	dw VULPIX
-	dw VULPIX
+	dw VULPIII
+	dw VULPIII
+	dw VULPIII
 	dw IGGLYBUFF
 	dw IGGLYBUFF  ;28
-	dw ZUBAT
-	dw ZUBAT
+	dw BITTYBAT
+	dw BITTYBAT
+	dw BITTYBAT
 	dw ODDISH
 	dw ODDISH
 	dw ODDISH
-	dw PARAS
-	dw PARAS
+	dw PARASPOR
+	dw PARASPOR
+	dw PARASPOR
 	dw VENONAT    ;30
 	dw VENONAT
 	dw DIGLETT
 	dw DIGLETT
-	dw MEOWTH
-	dw MEOWTH
+	dw COINPUR
+	dw COINPUR
+	dw COINPUR
+	dw MEOWTH ; Perrserker, should be MEOWTH_G
 	dw PSYDUCK
 	dw PSYDUCK
 	dw MANKEY     ;38
 	dw MANKEY
-	dw GROWLITHE
-	dw GROWLITHE
+	dw ANNIHILAPE
+	dw PUPPERON
+	dw PUPPERON
+	dw PUPPERON
 	dw POLIWAG
 	dw POLIWAG
 	dw POLIWAG
@@ -182,7 +196,7 @@ FirstEvoStages::
 	dw LEDYBA
 	dw SPINARAK
 	dw SPINARAK   ;a8
-	dw ZUBAT
+	dw BITTYBAT
 	dw CHINCHOU
 	dw CHINCHOU
 	dw PICHU
@@ -209,6 +223,9 @@ FirstEvoStages::
 	dw YANMA
 	dw WOOPER
 	dw WOOPER
+	dw EEVEE
+	dw EEVEE
+	dw EEVEE
 	dw EEVEE
 	dw EEVEE
 	dw MURKROW

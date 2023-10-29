@@ -47,12 +47,17 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Leafeon
+	dw NoEggMoves2 ; Glaceon
+	dw NoEggMoves2 ; Sylveon
 	dw MurkrowEggMoves
+	; dw NoEggMoves2 ; Honchkrow
 	dw NoEggMoves2
 	dw MisdreavusEggMoves
+	; dw NoEggMoves2 ; Mismagius
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw GirafarigEggMoves
+	dw GirafarigEggMoves ; This'll need a lot of stuff. Calfalc, Tsuinzu, Farigiraf...
 	dw PinecoEggMoves
 	dw NoEggMoves2
 	dw DunsparceEggMoves
