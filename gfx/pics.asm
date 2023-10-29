@@ -781,3 +781,8 @@ INCBIN "gfx/pokemon/unown_y/back.2bpp.lz"
 INCBIN "gfx/pokemon/unown_p/back.2bpp.lz"
 INCBIN "gfx/pokemon/unown_i/back.2bpp.lz"
 INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
+
+SECTION "Pics 20", ROMX
+
+GorochuFrontpic:	 INCBIN "gfx/pokemon/gorochu/front.animated.2bpp.lz"
+GorochuBackpic:	 INCBIN "gfx/pokemon/gorochu/back.2bpp.lz"

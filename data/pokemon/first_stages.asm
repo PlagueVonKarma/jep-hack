@@ -27,6 +27,7 @@ FirstEvoStages::
 	dw EKANS      ;18
 	dw PICHU
 	dw PICHU
+	dw PICHU
 	dw SANDSHREW
 	dw SANDSHREW
 	dw NIDORAN_F

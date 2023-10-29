@@ -28,6 +28,7 @@ KantoMonSpecials:
 	db  65 ; ARBOK
 	db  50 ; PIKACHU
 	db  90 ; RAICHU
+	db 100 ; GOROCHU
 	db  30 ; SANDSHREW
 	db  55 ; SANDSLASH
 	db  40 ; NIDORAN_F

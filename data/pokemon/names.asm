@@ -30,6 +30,7 @@ PokemonNames::
 	db "ARBOK@@@@@"
 	db "PIKACHU@@@"
 	db "RAICHU@@@@"
+	db "GOROCHU@@@"
 	db "SANDSHREW@"
 	db "SANDSLASH@"
 	db "NIDORAN♀@@"

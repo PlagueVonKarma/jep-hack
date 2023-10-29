@@ -65,6 +65,8 @@ PokemonPicPointers::
 	dba PikachuBackpic
 	dba RaichuFrontpic
 	dba RaichuBackpic
+	dba GorochuFrontpic
+	dba GorochuBackpic
 	dba SandshrewFrontpic
 	dba SandshrewBackpic
 	dba SandslashFrontpic

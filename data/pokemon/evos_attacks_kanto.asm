@@ -27,6 +27,7 @@ EvosAttacksPointers1::
 	dw ArbokEvosAttacks
 	dw PikachuEvosAttacks
 	dw RaichuEvosAttacks
+	dw GorochuEvosAttacks
 	dw SandshrewEvosAttacks
 	dw SandslashEvosAttacks
 	dw NidoranFEvosAttacks
@@ -504,11 +505,24 @@ PikachuEvosAttacks:
 	db 0 ; no more level-up moves
 
 RaichuEvosAttacks:
+	dbbw EVOLVE_TRADE, -1, GOROCHU
 	db 0 ; no more evolutions
 	dbw 1, THUNDERSHOCK
 	dbw 1, TAIL_WHIP
 	dbw 1, QUICK_ATTACK
 	dbw 1, THUNDERBOLT
+	db 0 ; no more level-up moves
+	
+GorochuEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, THUNDERSHOCK
+	dbw 1, TAIL_WHIP
+	dbw 1, QUICK_ATTACK
+	dbw 1, THUNDERBOLT
+	dbw 53, SAND_ATTACK
+	dbw 57, FOCUS_ENERGY
+	dbw 60, LEER
+	dbw 65, HORN_DRILL
 	db 0 ; no more level-up moves
 
 SandshrewEvosAttacks:
