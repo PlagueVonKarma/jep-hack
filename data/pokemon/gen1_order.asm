@@ -261,4 +261,9 @@ Pokered_MonIndices:
 	db MUNCHLAX
 	db KLEAVOR
 	db GOROCHU
+	db LICKILICKY
+	db LICKILORD
+	db BURGELA
+	db TANGROWTH
+	db JUNGELA
 	assert_table_length NUM_POKEMON - 1

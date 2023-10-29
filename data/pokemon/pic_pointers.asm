@@ -235,6 +235,10 @@ PokemonPicPointers::
 	dba HitmonchanBackpic
 	dba LickitungFrontpic
 	dba LickitungBackpic
+	dba LickilickyFrontpic
+	dba LickilickyBackpic
+	dba LickilordFrontpic
+	dba LickilordBackpic
 	dba KoffingFrontpic
 	dba KoffingBackpic
 	dba WeezingFrontpic
@@ -245,8 +249,14 @@ PokemonPicPointers::
 	dba RhydonBackpic
 	dba ChanseyFrontpic
 	dba ChanseyBackpic
+	dba BurgelaFrontpic
+	dba BurgelaBackpic
 	dba TangelaFrontpic
 	dba TangelaBackpic
+	dba TangrowthFrontpic
+	dba TangrowthBackpic
+	dba JungelaFrontpic
+	dba JungelaBackpic
 	dba KangaskhanFrontpic
 	dba KangaskhanBackpic
 	dba HorseaFrontpic

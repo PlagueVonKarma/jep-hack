@@ -111,12 +111,17 @@ AnimationIdlePointers:
 	dw HitmonleeAnimationIdle
 	dw HitmonchanAnimationIdle
 	dw LickitungAnimationIdle
+	dw LickilickyAnimationIdle
+	dw LickilordAnimationIdle
 	dw KoffingAnimationIdle
 	dw WeezingAnimationIdle
 	dw RhyhornAnimationIdle
 	dw RhydonAnimationIdle
 	dw ChanseyAnimationIdle
+	dw BurgelaAnimationIdle
 	dw TangelaAnimationIdle
+	dw TangrowthAnimationIdle
+	dw JungelaAnimationIdle
 	dw KangaskhanAnimationIdle
 	dw HorseaAnimationIdle
 	dw SeadraAnimationIdle

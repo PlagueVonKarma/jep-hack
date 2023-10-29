@@ -32,7 +32,7 @@ PokemonCries::
 	mon_cry CRY_EKANS,       224,  144 ; ARBOK
 	mon_cry CRY_BULBASAUR,   238,  129 ; PIKACHU
 	mon_cry CRY_RAICHU,      238,  136 ; RAICHU
-	mon_cry CRY_EARTHTRON,       0,  256 ; GOROCHU
+	mon_cry CRY_EARTHTRON,     0,  256 ; GOROCHU
 	mon_cry CRY_NIDORAN_M,    32,  192 ; SANDSHREW
 	mon_cry CRY_NIDORAN_M,   255,  383 ; SANDSLASH
 	mon_cry CRY_NIDORAN_F,     0,  256 ; NIDORAN_F
@@ -117,12 +117,17 @@ PokemonCries::
 	mon_cry CRY_GOLEM,       128,  320 ; HITMONLEE
 	mon_cry CRY_SEEL,        238,  320 ; HITMONCHAN
 	mon_cry CRY_SEEL,          0,  256 ; LICKITUNG
+	mon_cry CRY_SEEL,       -256,  300 ; LICKILICKY, tentative
+	mon_cry CRY_SEEL,       -300,  400 ; LICKILORD, tentative
 	mon_cry CRY_GOLEM,       230,  349 ; KOFFING
 	mon_cry CRY_GOLEM,       255,  383 ; WEEZING
 	mon_cry CRY_CHARMANDER,    0,  256 ; RHYHORN
 	mon_cry CRY_RHYDON,        0,  256 ; RHYDON
 	mon_cry CRY_PIDGEOTTO,    10,  320 ; CHANSEY
+	mon_cry CRY_GOLEM,        50,  140 ; BURGELA, tentative
 	mon_cry CRY_GOLEM,         0,  256 ; TANGELA
+	mon_cry CRY_GOLEM,      -256,  350 ; TANGROWTH, tentative
+	mon_cry CRY_GOLEM,      -140,  383 ; JUNGELA, tentative
 	mon_cry CRY_KANGASKHAN,    0,  256 ; KANGASKHAN
 	mon_cry CRY_CLEFAIRY,    153,  144 ; HORSEA
 	mon_cry CRY_CLEFAIRY,     60,  129 ; SEADRA

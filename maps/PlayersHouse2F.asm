@@ -114,23 +114,23 @@ PlayersRadioText4:
 	
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, NIDORINA
+	getmonname STRING_BUFFER_3, LICKITUNG
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke NIDORINA, 36, MOON_STONE
+	givepoke BURGELA, 42, DUSK_STONE
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, GOROCHU
+	getmonname STRING_BUFFER_3, LICKITUNG
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke GOROCHU, 35, POISON_STONE
+	givepoke LICKITUNG, 42, POISON_STONE
 	closetext
 	end
 
