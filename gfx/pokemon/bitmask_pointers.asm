@@ -15,6 +15,13 @@ BitmasksPointers:
 	dw WeedleBitmasks
 	dw KakunaBitmasks
 	dw BeedrillBitmasks
+	dw GentlarvaBitmasks
+	dw PupalBitmasks
+	dw CarapthorBitmasks
+	dw KotoraBitmasks
+	dw GaotoraBitmasks
+	dw GorotoraBitmasks
+	dw RaitoraBitmasks
 	dw PidgeyBitmasks
 	dw PidgeottoBitmasks
 	dw PidgeotBitmasks
@@ -26,6 +33,7 @@ BitmasksPointers:
 	dw ArbokBitmasks
 	dw PikachuBitmasks
 	dw RaichuBitmasks
+	dw GorochuBitmasks
 	dw SandshrewBitmasks
 	dw SandslashBitmasks
 	dw NidoranFBitmasks
@@ -34,29 +42,37 @@ BitmasksPointers:
 	dw NidoranMBitmasks
 	dw NidorinoBitmasks
 	dw NidokingBitmasks
+	dw NidoreignBitmasks
 	dw ClefairyBitmasks
 	dw ClefableBitmasks
+	dw VulpiiiBitmasks
 	dw VulpixBitmasks
 	dw NinetalesBitmasks
 	dw JigglypuffBitmasks
 	dw WigglytuffBitmasks
+	dw BittybatBitmasks
 	dw ZubatBitmasks
 	dw GolbatBitmasks
 	dw OddishBitmasks
 	dw GloomBitmasks
 	dw VileplumeBitmasks
+	dw ParasporBitmasks
 	dw ParasBitmasks
 	dw ParasectBitmasks
 	dw VenonatBitmasks
 	dw VenomothBitmasks
 	dw DiglettBitmasks
 	dw DugtrioBitmasks
+	dw CoinpurBitmasks
 	dw MeowthBitmasks
 	dw PersianBitmasks
+	dw PerrserkerBitmasks
 	dw PsyduckBitmasks
 	dw GolduckBitmasks
 	dw MankeyBitmasks
 	dw PrimeapeBitmasks
+	dw AnnihilapeBitmasks
+	dw PupperonBitmasks
 	dw GrowlitheBitmasks
 	dw ArcanineBitmasks
 	dw PoliwagBitmasks
@@ -109,12 +125,17 @@ BitmasksPointers:
 	dw HitmonleeBitmasks
 	dw HitmonchanBitmasks
 	dw LickitungBitmasks
+	dw LickilickyBitmasks
+	dw LickilordBitmasks
 	dw KoffingBitmasks
 	dw WeezingBitmasks
 	dw RhyhornBitmasks
 	dw RhydonBitmasks
 	dw ChanseyBitmasks
+	dw BurgelaBitmasks
 	dw TangelaBitmasks
+	dw TangrowthBitmasks
+	dw JungelaBitmasks
 	dw KangaskhanBitmasks
 	dw HorseaBitmasks
 	dw SeadraBitmasks
@@ -126,10 +147,12 @@ BitmasksPointers:
 	dw StarmieBitmasks
 	dw MrMimeBitmasks
 	dw ScytherBitmasks
+	dw KleavorBitmasks
 	dw JynxBitmasks
 	dw ElectabuzzBitmasks
 	dw MagmarBitmasks
 	dw PinsirBitmasks
+	dw TriculesBitmasks
 	dw TaurosBitmasks
 	dw MagikarpBitmasks
 	dw GyaradosBitmasks
@@ -201,6 +224,9 @@ BitmasksPointers:
 	dw QuagsireBitmasks
 	dw EspeonBitmasks
 	dw UmbreonBitmasks
+	dw LeafeonBitmasks
+	dw GlaceonBitmasks
+	dw SylveonBitmasks
 	dw MurkrowBitmasks
 	dw SlowkingBitmasks
 	dw MisdreavusBitmasks

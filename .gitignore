@@ -55,3 +55,8 @@ used_space.png
 
 # macos files
 .DS_STORE
+
+# nix files
+result
+.envrc
+.direnv/*

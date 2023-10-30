@@ -47,6 +47,9 @@ EvosAttacksPointers2::
 	dw QuagsireEvosAttacks
 	dw EspeonEvosAttacks
 	dw UmbreonEvosAttacks
+	dw LeafeonEvosAttacks
+	dw GlaceonEvosAttacks
+	dw SylveonEvosAttacks
 	dw MurkrowEvosAttacks
 	dw SlowkingEvosAttacks
 	dw MisdreavusEvosAttacks
@@ -716,6 +719,48 @@ UmbreonEvosAttacks:
 	dbw 42, MEAN_LOOK
 	dbw 47, SCREECH
 	dbw 52, MOONLIGHT
+	db 0 ; no more level-up moves
+
+LeafeonEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, TAIL_WHIP
+	dbw 8, SAND_ATTACK
+	dbw 16, ABSORB
+	dbw 23, QUICK_ATTACK
+	dbw 30, GROWTH
+	dbw 36, RAZOR_LEAF
+	dbw 42, TAKE_DOWN
+	dbw 47, SYNTHESIS
+	dbw 52, SOLARBEAM
+	db 0 ; no more level-up moves
+	
+GlaceonEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, TAIL_WHIP
+	dbw 8, SAND_ATTACK
+	dbw 16, AURORA_BEAM
+	dbw 23, QUICK_ATTACK
+	dbw 30, MIST
+	dbw 36, HAZE
+	dbw 42, TAKE_DOWN
+	dbw 47, BLIZZARD
+	dbw 52, BARRIER
+	db 0 ; no more level-up moves
+	
+SylveonEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, TAIL_WHIP
+	dbw 8, SAND_ATTACK
+	dbw 16, POUND ; DISARMING_VOICE
+	dbw 23, QUICK_ATTACK
+	dbw 30, POUND ; DRAINING_KISS
+	dbw 36, POUND ; DAZZLING_GLEAM
+	dbw 42, SWIFT
+	dbw 47, CHARM
+	dbw 52, LIGHT_SCREEN
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:

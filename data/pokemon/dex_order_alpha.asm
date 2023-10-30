@@ -7,6 +7,7 @@ AlphabeticalPokedexOrder:
 	dw AIPOM
 	dw ALAKAZAM
 	dw AMPHAROS
+	dw ANNIHILAPE
 	dw ARBOK
 	dw ARCANINE
 	dw ARIADOS
@@ -17,11 +18,14 @@ AlphabeticalPokedexOrder:
 	dw BELLIGNAN
 	dw BELLOSSOM
 	dw BELLSPROUT
+	dw BITTYBAT
 	dw BLASTOISE
 	dw BLASTYKE
 	dw BLISSEY
 	dw BULBASAUR
+	dw BURGELA
 	dw BUTTERFREE
+	dw CARAPTHOR
 	dw CATERPIE
 	dw CELEBI
 	dw CHANSEY
@@ -34,6 +38,7 @@ AlphabeticalPokedexOrder:
 	dw CLEFAIRY
 	dw CLEFFA
 	dw CLOYSTER
+	dw COINPUR
 	dw CORSOLA
 	dw CROBAT
 	dw CROCONAW
@@ -69,15 +74,20 @@ AlphabeticalPokedexOrder:
 	dw FORRETRESS
 	dw FURRET
 	dw GASTLY
+	dw GAOTORA
 	dw GENGAR
+	dw GENTLARVA
 	dw GEODUDE
 	dw GIRAFARIG
+	dw GLACEON
 	dw GLIGAR
 	dw GLOOM
 	dw GOLBAT
 	dw GOLDEEN
 	dw GOLDUCK
 	dw GOLEM
+	dw GOROCHU
+	dw GOROTORA
 	dw GRANBULL
 	dw GRAVELER
 	dw GRIMER
@@ -100,6 +110,7 @@ AlphabeticalPokedexOrder:
 	dw JIGGLYPUFF
 	dw JOLTEON
 	dw JUMPLUFF
+	dw JUNGELA
 	dw JYNX
 	dw KABUTO
 	dw KABUTOPS
@@ -108,13 +119,18 @@ AlphabeticalPokedexOrder:
 	dw KANGASKHAN
 	dw KINGDRA
 	dw KINGLER
+	dw KLEAVOR
 	dw KOFFING
+	dw KOTORA
 	dw KRABBY
 	dw LANTURN
 	dw LAPRAS
 	dw LARVITAR
+	dw LEAFEON
 	dw LEDIAN
 	dw LEDYBA
+	dw LICKILICKY
+	dw LICKILORD
 	dw LICKITUNG
 	dw LUGIA
 	dw MACHAMP
@@ -148,6 +164,7 @@ AlphabeticalPokedexOrder:
 	dw NIDOQUEEN
 	dw NIDORAN_F
 	dw NIDORAN_M
+	dw NIDOREIGN
 	dw NIDORINA
 	dw NIDORINO
 	dw NINETALES
@@ -159,6 +176,8 @@ AlphabeticalPokedexOrder:
 	dw ONIX
 	dw PARAS
 	dw PARASECT
+	dw PARASPOR
+	dw PERRSERKER
 	dw PERSIAN
 	dw PHANPY
 	dw PICHU
@@ -178,11 +197,14 @@ AlphabeticalPokedexOrder:
 	dw PORYGON2
 	dw PRIMEAPE
 	dw PSYDUCK
+	dw PUPAL
 	dw PUPITAR
+	dw PUPPERON
 	dw QUAGSIRE
 	dw QUILAVA
 	dw QWILFISH
 	dw RAICHU
+	dw RAITORA
 	dw RAIKOU
 	dw RAPIDASH
 	dw RATICATE
@@ -224,7 +246,9 @@ AlphabeticalPokedexOrder:
 	dw SUNFLORA
 	dw SUNKERN
 	dw SWINUB
+	dw SYLVEON
 	dw TANGELA
+	dw TANGROWTH
 	dw TAUROS
 	dw TEDDIURSA
 	dw TENTACOOL
@@ -233,6 +257,7 @@ AlphabeticalPokedexOrder:
 	dw TOGETIC
 	dw TOTARTLE
 	dw TOTODILE
+	dw TRICULES
 	dw TYPHLOSION
 	dw TYRANITAR
 	dw TYROGUE
@@ -246,6 +271,7 @@ AlphabeticalPokedexOrder:
 	dw VICTREEBEL
 	dw VILEPLUME
 	dw VOLTORB
+	dw VULPIII
 	dw VULPIX
 	dw WALKING_WAKE
 	dw WARTORTLE

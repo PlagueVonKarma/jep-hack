@@ -15,6 +15,13 @@ FramesPointers:
 	dba WeedleFrames
 	dba KakunaFrames
 	dba BeedrillFrames
+	dba GentlarvaFrames
+	dba PupalFrames
+	dba CarapthorFrames
+	dba KotoraFrames
+	dba GaotoraFrames
+	dba GorotoraFrames
+	dba RaitoraFrames
 	dba PidgeyFrames
 	dba PidgeottoFrames
 	dba PidgeotFrames
@@ -26,6 +33,7 @@ FramesPointers:
 	dba ArbokFrames
 	dba PikachuFrames
 	dba RaichuFrames
+	dba GorochuFrames
 	dba SandshrewFrames
 	dba SandslashFrames
 	dba NidoranFFrames
@@ -34,29 +42,37 @@ FramesPointers:
 	dba NidoranMFrames
 	dba NidorinoFrames
 	dba NidokingFrames
+	dba NidoreignFrames
 	dba ClefairyFrames
 	dba ClefableFrames
+	dba VulpiiiFrames
 	dba VulpixFrames
 	dba NinetalesFrames
 	dba JigglypuffFrames
 	dba WigglytuffFrames
+	dba BittybatFrames
 	dba ZubatFrames
 	dba GolbatFrames
 	dba OddishFrames
 	dba GloomFrames
 	dba VileplumeFrames
+	dba ParasporFrames
 	dba ParasFrames
 	dba ParasectFrames
 	dba VenonatFrames
 	dba VenomothFrames
 	dba DiglettFrames
 	dba DugtrioFrames
+	dba CoinpurFrames
 	dba MeowthFrames
 	dba PersianFrames
+	dba PerrserkerFrames
 	dba PsyduckFrames
 	dba GolduckFrames
 	dba MankeyFrames
 	dba PrimeapeFrames
+	dba AnnihilapeFrames
+	dba PupperonFrames
 	dba GrowlitheFrames
 	dba ArcanineFrames
 	dba PoliwagFrames
@@ -109,12 +125,17 @@ FramesPointers:
 	dba HitmonleeFrames
 	dba HitmonchanFrames
 	dba LickitungFrames
+	dba LickilickyFrames
+	dba LickilordFrames
 	dba KoffingFrames
 	dba WeezingFrames
 	dba RhyhornFrames
 	dba RhydonFrames
 	dba ChanseyFrames
+	dba BurgelaFrames
 	dba TangelaFrames
+	dba TangrowthFrames
+	dba JungelaFrames
 	dba KangaskhanFrames
 	dba HorseaFrames
 	dba SeadraFrames
@@ -126,10 +147,12 @@ FramesPointers:
 	dba StarmieFrames
 	dba MrMimeFrames
 	dba ScytherFrames
+	dba KleavorFrames
 	dba JynxFrames
 	dba ElectabuzzFrames
 	dba MagmarFrames
 	dba PinsirFrames
+	dba TriculesFrames
 	dba TaurosFrames
 	dba MagikarpFrames
 	dba GyaradosFrames
@@ -201,6 +224,9 @@ FramesPointers:
 	dba QuagsireFrames
 	dba EspeonFrames
 	dba UmbreonFrames
+	dba LeafeonFrames
+	dba GlaceonFrames
+	dba SylveonFrames
 	dba MurkrowFrames
 	dba SlowkingFrames
 	dba MisdreavusFrames

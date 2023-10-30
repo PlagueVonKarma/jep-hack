@@ -540,12 +540,12 @@ Pokegear_UpdateClock:
 
 PokegearMap_CheckRegion:
 	ld a, [wPokegearMapPlayerIconLandmark]
-	cp LANDMARK_FAST_SHIP
-	jr z, .johto
-	cp KANTO_LANDMARK
-	jr nc, .kanto
-	cp NIHON_LANDMARK
-	jr c, .nihon
+	cp LANDMARK_SILVER_CAVE+1
+	jr c, .johto
+	cp LANDMARK_FAST_SHIP+1
+	jr c, .kanto
+	;cp NIHON_LANDMARK
+	jp .nihon
 .johto
 	ld a, POKEGEARSTATE_JOHTOMAPINIT
 	jr .done
@@ -752,13 +752,13 @@ TownMap_GetKantoLandmarkLimits:
 	ld a, [wStatusFlags]
 	bit STATUSFLAGS_HALL_OF_FAME_F, a
 	jr z, .not_hof
-	ld d, LANDMARK_ROUTE_28
+	ld d, LANDMARK_FAST_SHIP
 	ld e, LANDMARK_PALLET_TOWN
 	ret
 
 .not_hof
-	ld d, LANDMARK_ROUTE_28
-	ld e, LANDMARK_VICTORY_ROAD
+	ld d, LANDMARK_VICTORY_ROAD
+	ld e, LANDMARK_PALLET_TOWN
 	ret
 
 TownMap_GetNihonLandmarkLimits:
@@ -1572,7 +1572,7 @@ RadioChannels:
 	ld a, [wPokegearMapPlayerIconLandmark]
 	cp LANDMARK_FAST_SHIP
 	jr z, .johto
-	cp KANTO_LANDMARK
+	cp LANDMARK_SILVER_CAVE+1
 	jr c, .johto
 ; kanto or nihon
 	and a
@@ -1925,10 +1925,13 @@ _TownMap:
 
 .InitTilemap:
 	ld a, [wTownMapPlayerIconLandmark]
-	cp NIHON_LANDMARK
-	jr nc, .nihon2
-	cp KANTO_LANDMARK
-	jr nc, .kanto2
+	cp LANDMARK_SILVER_CAVE + 1 ; last johto landmark + 1
+	jr c, .johto2
+	cp LANDMARK_FAST_SHIP + 1 ; last kanto landmark + 1
+	jr c, .kanto2
+	jp .nihon2
+
+.johto2
 	ld e, JOHTO_REGION
 	jr .okay_tilemap
 
@@ -2052,15 +2055,15 @@ LoadStation_PokemonChannel:
 
 PokegearMap:
 	ld a, e
-	and a
+	cp JOHTO_REGION
 	jr nz, .kanto
 	call LoadTownMapGFX
 	call FillJohtoMap
 	ret
 
 .kanto
-	cp NIHON_LANDMARK
-	jr c, .nihon
+	cp KANTO_REGION
+	jr nz, .nihon
 	call LoadTownMapGFX
 	call FillKantoMap
 	ret

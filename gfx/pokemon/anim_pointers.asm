@@ -15,6 +15,13 @@ AnimationPointers:
 	dw WeedleAnimation
 	dw KakunaAnimation
 	dw BeedrillAnimation
+	dw GentlarvaAnimation
+	dw PupalAnimation
+	dw CarapthorAnimation
+	dw KotoraAnimation
+	dw GaotoraAnimation
+	dw GorotoraAnimation
+	dw RaitoraAnimation
 	dw PidgeyAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
@@ -26,6 +33,7 @@ AnimationPointers:
 	dw ArbokAnimation
 	dw PikachuAnimation
 	dw RaichuAnimation
+	dw GorochuAnimation
 	dw SandshrewAnimation
 	dw SandslashAnimation
 	dw NidoranFAnimation
@@ -34,29 +42,37 @@ AnimationPointers:
 	dw NidoranMAnimation
 	dw NidorinoAnimation
 	dw NidokingAnimation
+	dw NidoreignAnimation
 	dw ClefairyAnimation
 	dw ClefableAnimation
+	dw VulpiiiAnimation
 	dw VulpixAnimation
 	dw NinetalesAnimation
 	dw JigglypuffAnimation
 	dw WigglytuffAnimation
+	dw BittybatAnimation
 	dw ZubatAnimation
 	dw GolbatAnimation
 	dw OddishAnimation
 	dw GloomAnimation
 	dw VileplumeAnimation
+	dw ParasporAnimation
 	dw ParasAnimation
 	dw ParasectAnimation
 	dw VenonatAnimation
 	dw VenomothAnimation
 	dw DiglettAnimation
 	dw DugtrioAnimation
+	dw CoinpurAnimation
 	dw MeowthAnimation
 	dw PersianAnimation
+	dw PerrserkerAnimation
 	dw PsyduckAnimation
 	dw GolduckAnimation
 	dw MankeyAnimation
 	dw PrimeapeAnimation
+	dw AnnihilapeAnimation
+	dw PupperonAnimation
 	dw GrowlitheAnimation
 	dw ArcanineAnimation
 	dw PoliwagAnimation
@@ -109,12 +125,17 @@ AnimationPointers:
 	dw HitmonleeAnimation
 	dw HitmonchanAnimation
 	dw LickitungAnimation
+	dw LickilickyAnimation
+	dw LickilordAnimation
 	dw KoffingAnimation
 	dw WeezingAnimation
 	dw RhyhornAnimation
 	dw RhydonAnimation
 	dw ChanseyAnimation
+	dw BurgelaAnimation
 	dw TangelaAnimation
+	dw TangrowthAnimation
+	dw JungelaAnimation
 	dw KangaskhanAnimation
 	dw HorseaAnimation
 	dw SeadraAnimation
@@ -126,10 +147,12 @@ AnimationPointers:
 	dw StarmieAnimation
 	dw MrMimeAnimation
 	dw ScytherAnimation
+	dw KleavorAnimation
 	dw JynxAnimation
 	dw ElectabuzzAnimation
 	dw MagmarAnimation
 	dw PinsirAnimation
+	dw TriculesAnimation
 	dw TaurosAnimation
 	dw MagikarpAnimation
 	dw GyaradosAnimation
@@ -201,6 +224,9 @@ AnimationPointers:
 	dw QuagsireAnimation
 	dw EspeonAnimation
 	dw UmbreonAnimation
+	dw LeafeonAnimation
+	dw GlaceonAnimation
+	dw SylveonAnimation
 	dw MurkrowAnimation
 	dw SlowkingAnimation
 	dw MisdreavusAnimation
