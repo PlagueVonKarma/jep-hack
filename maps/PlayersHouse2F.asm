@@ -114,23 +114,23 @@ PlayersRadioText4:
 	
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BELLIGNAN
+	getmonname STRING_BUFFER_3, BURGELA
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BELLIGNAN, 35, MASTER_BALL
+	givepoke BURGELA, 42, DUSK_STONE
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, WEEPINBELL
+	getmonname STRING_BUFFER_3, LICKITUNG
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WEEPINBELL, 35, POISON_STONE
+	givepoke LICKITUNG, 42, POISON_STONE
 	closetext
 	end
 
@@ -145,11 +145,11 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry WALKING_WAKE
+	cry GOROCHU
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon WALKING_WAKE, 40
+	loadwildmon GOROCHU, 40
 	startbattle
 	reloadmapafterbattle
 	end

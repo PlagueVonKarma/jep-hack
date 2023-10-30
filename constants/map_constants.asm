@@ -60,9 +60,6 @@ ENDM
 	map_const ROUTE_42,                                    30,  9 ;  5
 	map_const ROUTE_44,                                    30,  9 ;  6
 	map_const MAHOGANY_TOWN,                               10,  9 ;  7
-	map_const LAKE_OF_RAGE_TRADER_HOUSE,					4,  4 ;  8
-	map_const LAKE_OF_RAGE_POKECENTER_1F,                   5,  4 ;  9
-	map_const LAKE_OF_RAGE_MART,                            6,  4 ; 10
 	endgroup
 
 	newgroup DUNGEONS                                             ;  3
@@ -236,6 +233,10 @@ ENDM
 	map_const ROUTE_43_GATE,                                5,  4 ;  4
 	map_const ROUTE_43,                                    10, 27 ;  5
 	map_const LAKE_OF_RAGE,                                20, 18 ;  6
+	map_const LAKE_OF_RAGE_TRADER_HOUSE,					4,  4 ;  7
+	map_const LAKE_OF_RAGE_POKECENTER_1F,                   5,  4 ;  8
+	map_const LAKE_OF_RAGE_MART,                            6,  4 ;  9
+	map_const LAKE_OF_RAGE_PRYCES_HOUSE,					8,  5 ; 10
 	endgroup
 
 	newgroup VIOLET                                               ; 10

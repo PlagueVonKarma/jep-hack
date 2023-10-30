@@ -144,7 +144,7 @@ ItemNames::
 	li "SHINY STONE"
 	li "METAL COAT"
 	li "DRAGON FANG"
-	li "TERU-SAMA"
+	li "BLK AUGURITE"
 	li "LEFTOVERS"
 	li "TERU-SAMA"
 	li "TERU-SAMA"

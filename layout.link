@@ -169,7 +169,6 @@ ROMX $3b
 ROMX $3c
 	"Songs 3"
 	"Sound Effects"
-	"Cries"
 ROMX $3d
 	"Songs 4"
 ROMX $3e
@@ -317,6 +316,8 @@ ROMX $7e
 ROMX $7f
 	org $7de0
 	"Stadium 2 Checksums"
+ROMX $80
+	"Cries"
 WRAM0
 	"Stack"
 	"Audio RAM"

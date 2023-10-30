@@ -256,6 +256,9 @@ MoveDescriptions1:
 	dw RockSmashDescription
 	dw WhirlpoolDescription
 	dw BeatUpDescription
+	dw RockHeadDescription
+	dw RockSlashDescription
+	dw CrossCutterDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1264,3 +1267,15 @@ WhirlpoolDescription:
 BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
+	
+RockHeadDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
+
+RockSlashDescription:
+	db   "A strong imprecise"
+	next "ROCK-type attack.@" ;the original description was too long I think
+	
+CrossCutterDescription:
+	db   "Has a high criti-"
+	next "cal hit ratio.@"

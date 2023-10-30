@@ -9,13 +9,20 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw SquirtleEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Totartle
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw NoEggMoves1
+	dw NoEggMoves1 ; Gentlarva
+	dw NoEggMoves1 ; Pupal
+	dw NoEggMoves1 ; Carapthor
+	dw KotoraEggMoves
+	dw NoEggMoves1 ; Gaotora
+	dw NoEggMoves1 ; Gorotora
+	dw NoEggMoves1 ; Raitora
 	dw PidgeyEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -27,6 +34,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1
 	dw SandshrewEggMoves
 	dw NoEggMoves1
 	dw NidoranFEggMoves
@@ -35,30 +43,38 @@ EggMovePointers1:
 	dw NidoranMEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Nidoreign
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw VulpixEggMoves
+	dw VulpiiiEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw ZubatEggMoves
+	dw NoEggMoves1
+	dw BittybatEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw OddishEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw ParasEggMoves
+	dw ParasporEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw VenonatEggMoves
 	dw NoEggMoves1
 	dw DiglettEggMoves
 	dw NoEggMoves1
-	dw MeowthEggMoves
+	dw CoinpurEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1
+	dw NoEggMoves1 ; Perrserker
 	dw PsyduckEggMoves
 	dw NoEggMoves1
 	dw MankeyEggMoves
 	dw NoEggMoves1
-	dw GrowlitheEggMoves
+	dw NoEggMoves1 ; Annihilape
+	dw PupperonEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw PoliwagEggMoves
 	dw NoEggMoves1
@@ -110,27 +126,34 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw LickitungEggMoves
+	dw NoEggMoves1 ; Lickilicky
+	dw NoEggMoves1 ; Lickilord
 	dw KoffingEggMoves
 	dw NoEggMoves1
 	dw RhyhornEggMoves
 	dw NoEggMoves1
 	dw ChanseyEggMoves
-	dw TangelaEggMoves
+	dw BurgelaEggMoves ; Burgela
+	dw NoEggMoves1
+	dw NoEggMoves1 ; Tangrowth
+	dw NoEggMoves1 ; Jungela
 	dw KangaskhanEggMoves
 	dw HorseaEggMoves
 	dw NoEggMoves1
-	dw BlastykeEggMoves
-	dw NoEggMoves1
+	dw BlastykeEggMoves ; Blastyke
+	dw NoEggMoves1 ; Blastoise
 	dw GoldeenEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw MrMimeEggMoves
 	dw ScytherEggMoves
+	dw NoEggMoves1 ; Kleavor
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw PinsirEggMoves
+	dw NoEggMoves1 ; Tricules
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -146,7 +169,8 @@ EggMovePointers1:
 	dw KabutoEggMoves
 	dw NoEggMoves1
 	dw AerodactylEggMoves
-	dw SnorlaxEggMoves
+	dw MunchlaxEggMoves ; Munchlax
+	dw NoEggMoves1 ; Should this even exist?
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -181,6 +205,12 @@ SquirtleEggMoves:
 	dw CONFUSION
 	dw FORESIGHT
 	dw FLAIL
+	dw -1 ; end
+
+KotoraEggMoves:
+	dw SCREECH
+	dw CHARM
+	dw CRUNCH
 	dw -1 ; end
 
 PidgeyEggMoves:
@@ -242,7 +272,7 @@ NidoranMEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-VulpixEggMoves:
+VulpiiiEggMoves:
 	dw FAINT_ATTACK
 	dw HYPNOSIS
 	dw FLAIL
@@ -250,7 +280,7 @@ VulpixEggMoves:
 	dw DISABLE
 	dw -1 ; end
 
-ZubatEggMoves:
+BittybatEggMoves:
 	dw QUICK_ATTACK
 	dw PURSUIT
 	dw FAINT_ATTACK
@@ -265,7 +295,7 @@ OddishEggMoves:
 	dw SYNTHESIS
 	dw -1 ; end
 
-ParasEggMoves:
+ParasporEggMoves:
 	dw FALSE_SWIPE
 	dw SCREECH
 	dw COUNTER
@@ -273,6 +303,7 @@ ParasEggMoves:
 	dw FLAIL
 	dw LIGHT_SCREEN
 	dw PURSUIT
+	dw ROCK_SLASH
 	dw -1 ; end
 
 VenonatEggMoves:
@@ -289,7 +320,7 @@ DiglettEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-MeowthEggMoves:
+CoinpurEggMoves:
 	dw SPITE
 	dw CHARM
 	dw HYPNOSIS
@@ -316,7 +347,7 @@ MankeyEggMoves:
 	dw BEAT_UP
 	dw -1 ; end
 
-GrowlitheEggMoves:
+PupperonEggMoves:
 	dw BODY_SLAM
 	dw SAFEGUARD
 	dw CRUNCH
@@ -364,6 +395,7 @@ TentacoolEggMoves:
 GeodudeEggMoves:
 	dw MEGA_PUNCH
 	dw ROCK_SLIDE
+	dw ROCK_SLASH
 	dw -1 ; end
 
 PonytaEggMoves:
@@ -443,6 +475,7 @@ KrabbyEggMoves:
 	dw AMNESIA
 	dw FLAIL
 	dw SLAM
+	dw ROCK_SLASH
 	dw -1 ; end
 
 ExeggcuteEggMoves:
@@ -461,6 +494,7 @@ CuboneEggMoves:
 	dw SKULL_BASH
 	dw PERISH_SONG
 	dw SWORDS_DANCE
+	dw ROCK_HEAD
 	dw -1 ; end
 
 LickitungEggMoves:
@@ -493,7 +527,7 @@ ChanseyEggMoves:
 	dw HEAL_BELL
 	dw -1 ; end
 
-TangelaEggMoves:
+BurgelaEggMoves:
 	dw FLAIL
 	dw CONFUSION
 	dw MEGA_DRAIN
@@ -551,6 +585,7 @@ ScytherEggMoves:
 PinsirEggMoves:
 	dw FURY_ATTACK
 	dw FLAIL
+	dw ROCK_SLASH
 	dw -1 ; end
 
 LaprasEggMoves:
@@ -585,7 +620,7 @@ AerodactylEggMoves:
 	dw FORESIGHT
 	dw -1 ; end
 
-SnorlaxEggMoves:
+MunchlaxEggMoves:
 	dw LICK
 	dw -1 ; end
 

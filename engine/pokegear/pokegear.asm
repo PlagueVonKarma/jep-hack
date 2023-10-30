@@ -1925,17 +1925,11 @@ _TownMap:
 
 .InitTilemap:
 	ld a, [wTownMapPlayerIconLandmark]
-	cp LANDMARK_SILVER_CAVE + 1
+	cp LANDMARK_SILVER_CAVE + 1 ; last johto landmark + 1
 	jr c, .johto2
-	cp LANDMARK_FAST_SHIP + 1
+	cp LANDMARK_FAST_SHIP + 1 ; last kanto landmark + 1
 	jr c, .kanto2
 	jp .nihon2
-	;cp NIHON_LANDMARK
-	;jr nc, .nihon2
-	;cp KANTO_LANDMARK
-	;jr nc, .kanto2
-	;ld e, JOHTO_REGION
-	;jr .okay_tilemap
 
 .johto2
 	ld e, JOHTO_REGION

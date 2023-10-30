@@ -34,6 +34,13 @@
 	const WEEDLE     ; 0d
 	const KAKUNA     ; 0e
 	const BEEDRILL   ; 0f
+	const GENTLARVA
+	const PUPAL
+	const CARAPTHOR
+	const KOTORA
+	const GAOTORA
+	const GOROTORA
+	const RAITORA
 	const PIDGEY     ; 10
 	const PIDGEOTTO  ; 11
 	const PIDGEOT    ; 12
@@ -45,6 +52,7 @@
 	const ARBOK      ; 18
 	const PIKACHU    ; 19
 	const RAICHU     ; 1a
+	const GOROCHU
 	const SANDSHREW  ; 1b
 	const SANDSLASH  ; 1c
 	const NIDORAN_F  ; 1d
@@ -53,29 +61,37 @@
 	const NIDORAN_M  ; 20
 	const NIDORINO   ; 21
 	const NIDOKING   ; 22
+	const NIDOREIGN
 	const CLEFAIRY   ; 23
 	const CLEFABLE   ; 24
+	const VULPIII
 	const VULPIX     ; 25
 	const NINETALES  ; 26
 	const JIGGLYPUFF ; 27
 	const WIGGLYTUFF ; 28
+	const BITTYBAT
 	const ZUBAT      ; 29
 	const GOLBAT     ; 2a
 	const ODDISH     ; 2b
 	const GLOOM      ; 2c
 	const VILEPLUME  ; 2d
+	const PARASPOR
 	const PARAS      ; 2e
 	const PARASECT   ; 2f
 	const VENONAT    ; 30
 	const VENOMOTH   ; 31
 	const DIGLETT    ; 32
 	const DUGTRIO    ; 33
+	const COINPUR
 	const MEOWTH     ; 34
 	const PERSIAN    ; 35
+	const PERRSERKER
 	const PSYDUCK    ; 36
 	const GOLDUCK    ; 37
 	const MANKEY     ; 38
 	const PRIMEAPE   ; 39
+	const ANNIHILAPE
+	const PUPPERON
 	const GROWLITHE  ; 3a
 	const ARCANINE   ; 3b
 	const POLIWAG    ; 3c
@@ -128,12 +144,17 @@
 	const HITMONLEE  ; 6a
 	const HITMONCHAN ; 6b
 	const LICKITUNG  ; 6c
+	const LICKILICKY
+	const LICKILORD
 	const KOFFING    ; 6d
 	const WEEZING    ; 6e
 	const RHYHORN    ; 6f
 	const RHYDON     ; 70
 	const CHANSEY    ; 71
+	const BURGELA
 	const TANGELA    ; 72
+	const TANGROWTH
+	const JUNGELA
 	const KANGASKHAN ; 73
 	const HORSEA     ; 74
 	const SEADRA     ; 75
@@ -145,10 +166,12 @@
 	const STARMIE    ; 79
 	const MR__MIME   ; 7a
 	const SCYTHER    ; 7b
+	const KLEAVOR
 	const JYNX       ; 7c
 	const ELECTABUZZ ; 7d
 	const MAGMAR     ; 7e
 	const PINSIR     ; 7f
+	const TRICULES
 	const TAUROS     ; 80
 	const MAGIKARP   ; 81
 	const GYARADOS   ; 82
@@ -164,6 +187,7 @@
 	const KABUTO     ; 8c
 	const KABUTOPS   ; 8d
 	const AERODACTYL ; 8e
+	const MUNCHLAX
 	const SNORLAX    ; 8f
 	const ARTICUNO   ; 90
 	const ZAPDOS     ; 91
@@ -220,6 +244,9 @@ DEF JOHTO_POKEMON EQU const_value
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
 	const UMBREON    ; c5
+	const LEAFEON
+	const GLACEON
+	const SYLVEON
 	const MURKROW    ; c6
 	const SLOWKING   ; c7
 	const MISDREAVUS ; c8
@@ -276,7 +303,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const HO_OH      ; fa
 	const SHI_SHI
 	const CELEBI     ; fb
-DEF NUM_POKEMON EQU const_value
+DEF NUM_POKEMON EQU const_value - 1
 
 DEF EGG EQU -3
 

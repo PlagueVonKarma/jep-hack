@@ -1074,3 +1074,6 @@ CeruleanCaveB1F_Blocks:
 
 SilentHills_Blocks:
 	INCBIN "maps/SilentHills.ablk"
+
+LakeOfRagePrycesHouse_Blocks:
+	INCBIN "maps/LakeOfRagePrycesHouse.ablk"
