@@ -1077,3 +1077,6 @@ SilentHills_Blocks:
 
 LakeOfRagePrycesHouse_Blocks:
 	INCBIN "maps/LakeOfRagePrycesHouse.ablk"
+
+DebugRoom_Blocks:
+	INCBIN "maps/DebugRoom.ablk"

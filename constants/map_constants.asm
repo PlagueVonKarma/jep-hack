@@ -516,6 +516,7 @@ ENDM
 	
 	newgroup SILENT_HILLS ; 27
 	map_const SILENT_HILLS,								10, 10 ; 1
+	map_const DEBUG_ROOM,								20, 20 ; 2
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 27

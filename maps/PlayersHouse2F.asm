@@ -111,75 +111,12 @@ PlayersRadioText4:
 	text "#MON!"
 	line "#MON CHANNEL…"
 	done
-	
-DebugPokemon1Script:
-	opentext
-	getmonname STRING_BUFFER_3, BURGELA
-	writetext ReceivedDebugPokemonText
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	promptbutton
-	givepoke BURGELA, 42, DUSK_STONE
-	closetext
-	end
-
-DebugPokemon2Script:
-	opentext
-	getmonname STRING_BUFFER_3, LICKITUNG
-	writetext ReceivedDebugPokemonText
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	promptbutton
-	givepoke LICKITUNG, 42, POISON_STONE
-	closetext
-	end
-
-ReceivedDebugPokemonText:
-	text "<PLAYER> received"
-	line "@"
-	text_ram wStringBuffer3
-	text "!"
-	done
-	
-DebugPokemon3Script:
-	faceplayer
-	opentext
-	writetext DebugTextA
-	cry GOROCHU
-	pause 15
-	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon GOROCHU, 40
-	startbattle
-	reloadmapafterbattle
-	end
-
-DebugTextA:
-	text "Waaaake!!"
-	done
-	
-DebugPokemon4Script:
-	faceplayer
-	opentext
-	writetext DebugTextB
-	cry SHI_SHI
-	pause 15
-	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon SHI_SHI, 40
-	startbattle
-	reloadmapafterbattle
-	end
-
-DebugTextB:
-	text "Komaiiii!"
-	done
 
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7,  0, LAKE_OF_RAGE, 3
+	warp_event  7,  0, DEBUG_ROOM, 1
 	;warp_event  7,  0, PLAYERS_HOUSE_1F, 3
 
 	def_coord_events
@@ -195,8 +132,4 @@ PlayersHouse2F_MapEvents:
 	object_event  4,  4, SPRITE_DOLL_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll1Script, EVENT_PLAYERS_HOUSE_2F_DOLL_1
 	object_event  5,  4, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseDoll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
 	object_event  0,  1, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PlayersHouseBigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL
-	object_event  2,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon1Script, -1
-	object_event  7,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
-	object_event  3,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
-	object_event  6,  5, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
 	
