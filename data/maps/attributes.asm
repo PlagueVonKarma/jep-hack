@@ -700,8 +700,8 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
     map_attributes BellchimeTrail, BELLCHIME_TRAIL, $00, 0
-	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $00, 0
-	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $00, 0
+	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $0A, 0
+	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $0A, 0
 	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
 	map_attributes ViridianForestViridianGate, VIRIDIAN_FOREST_VIRIDIAN_GATE, $00, 0
 	map_attributes ViridianForestPewterGate, VIRIDIAN_FOREST_PEWTER_GATE, $00, 0
