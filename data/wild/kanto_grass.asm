@@ -342,58 +342,58 @@ KantoGrassWildMons:
 	def_grass_wildmons ROUTE_7
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 37, RATTATA
-	db 37, SPEAROW
-	db 38, GROWLITHE
-	db 39, RATICATE
-	db 39, RATTATA
-	db 35, SNUBBULL
-	db 35, SNUBBULL
+	dbw 37, RATTATA
+	dbw 37, SPEAROW
+	dbw 38, GROWLITHE
+	dbw 39, RATICATE
+	dbw 39, RATTATA
+	dbw 35, SNUBBULL
+	dbw 35, SNUBBULL
 	; day
-	db 37, RATTATA
-	db 37, SPEAROW
-	db 38, GROWLITHE
-	db 39, RATICATE
-	db 39, RATTATA
-	db 35, GROWLITHE
-	db 35, GROWLITHE
+	dbw 37, RATTATA
+	dbw 37, SPEAROW
+	dbw 38, GROWLITHE
+	dbw 39, RATICATE
+	dbw 39, RATTATA
+	dbw 35, GROWLITHE
+	dbw 35, GROWLITHE
 	; nite
-	db 37, RATTATA
-	db 37, MURKROW
-	db 38, GROWLITHE
-	db 39, RATICATE
-	db 39, MURKROW
-	db 35, HOUNDOUR
-	db 35, HOUNDOUR
+	dbw 37, RATTATA
+	dbw 37, MURKROW
+	dbw 38, GROWLITHE
+	dbw 39, RATICATE
+	dbw 39, MURKROW
+	dbw 35, HOUNDOUR
+	dbw 35, HOUNDOUR
 	end_grass_wildmons
 
 ; Silver Data, contrasting with Route 7's Gold Data.
 	def_grass_wildmons ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 37, MEOWTH
-	db 39, PIDGEOTTO
-	db 35, ABRA
-	db 38, VULPIX
-	db 37, PIDGEOTTO
-	db 35, KADABRA
-	db 35, KADABRA
+	dbw 37, MEOWTH
+	dbw 39, PIDGEOTTO
+	dbw 35, ABRA
+	dbw 38, VULPIX
+	dbw 37, PIDGEOTTO
+	dbw 35, KADABRA
+	dbw 35, KADABRA
 	; day
-	db 37, MEOWTH
-	db 39, PIDGEOTTO
-	db 35, ABRA
-	db 38, VULPIX
-	db 37, PIDGEOTTO
-	db 35, KADABRA
-	db 35, KADABRA
+	dbw 37, MEOWTH
+	dbw 39, PIDGEOTTO
+	dbw 35, ABRA
+	dbw 38, VULPIX
+	dbw 37, PIDGEOTTO
+	dbw 35, KADABRA
+	dbw 35, KADABRA
 	; nite
-	db 37, MEOWTH
-	db 30, HAUNTER
-	db 35, ABRA
-	db 39, NOCTOWL
-	db 38, VULPIX
-	db 35, KADABRA
-	db 35, KADABRA
+	dbw 37, MEOWTH
+	dbw 30, HAUNTER
+	dbw 35, ABRA
+	dbw 39, NOCTOWL
+	dbw 38, VULPIX
+	dbw 35, KADABRA
+	dbw 35, KADABRA
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_9
