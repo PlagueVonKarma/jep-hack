@@ -111,4 +111,7 @@ OverworldSprites:
 	overworld_sprite StandingYoungsterSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite EnbySpriteGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite EnbyBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
+	overworld_sprite ChrisRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+ 	overworld_sprite KrisRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite TopazRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
 	assert_table_length NUM_OVERWORLD_SPRITES

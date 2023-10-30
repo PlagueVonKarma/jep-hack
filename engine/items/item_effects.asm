@@ -158,7 +158,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; SHINY_STONE
 	dw NoEffect            ; METAL_COAT
 	dw NoEffect            ; DRAGON_FANG
-	dw NoEffect            ; ITEM_91
+	dw EvoStoneEffect      ; BLK_AUGURITE
 	dw NoEffect            ; LEFTOVERS
 	dw NoEffect            ; ITEM_93
 	dw NoEffect            ; ITEM_94

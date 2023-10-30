@@ -17,6 +17,13 @@ KantoMonSpecials:
 	db  20 ; WEEDLE
 	db  25 ; KAKUNA
 	db  45 ; BEEDRILL
+	db  25 ; GENTLARVA
+	db  30 ; PUPAL
+	db  60 ; CARAPTHOR
+	db  55 ; KOTORA
+	db  75 ; GAOTORA
+	db  95 ; GOROTORA
+	db 105 ; RAITORA, technically not meant to be here but stay with me
 	db  35 ; PIDGEY
 	db  50 ; PIDGEOTTO
 	db  70 ; PIDGEOT
@@ -28,6 +35,7 @@ KantoMonSpecials:
 	db  65 ; ARBOK
 	db  50 ; PIKACHU
 	db  90 ; RAICHU
+	db 100 ; GOROCHU
 	db  30 ; SANDSHREW
 	db  55 ; SANDSLASH
 	db  40 ; NIDORAN_F
@@ -36,29 +44,37 @@ KantoMonSpecials:
 	db  40 ; NIDORAN_M
 	db  55 ; NIDORINO
 	db  75 ; NIDOKING
+	db  75 ; NIDOREIGN
 	db  60 ; CLEFAIRY
 	db  85 ; CLEFABLE
+	db  60 ; VULPIII
 	db  65 ; VULPIX
 	db 100 ; NINETALES
 	db  25 ; JIGGLYPUFF
 	db  50 ; WIGGLYTUFF
+	db  35 ; BITTYBAT
 	db  40 ; ZUBAT
 	db  75 ; GOLBAT
 	db  75 ; ODDISH
 	db  85 ; GLOOM
 	db 100 ; VILEPLUME
+	db  45 ; PARASPOR
 	db  55 ; PARAS
 	db  80 ; PARASECT
 	db  40 ; VENONAT
 	db  90 ; VENOMOTH
 	db  45 ; DIGLETT
 	db  70 ; DUGTRIO
+	db  35 ; COINPUR
 	db  40 ; MEOWTH
 	db  65 ; PERSIAN
+	db  50 ; PERRSERKER
 	db  50 ; PSYDUCK
 	db  80 ; GOLDUCK
 	db  35 ; MANKEY
 	db  60 ; PRIMEAPE
+	db  50 ; ANNIHILAPE
+	db  40 ; PUPPERON
 	db  50 ; GROWLITHE
 	db  80 ; ARCANINE
 	db  40 ; POLIWAG
@@ -111,12 +127,17 @@ KantoMonSpecials:
 	db  35 ; HITMONLEE
 	db  35 ; HITMONCHAN
 	db  60 ; LICKITUNG
+	db  80 ; LICKILICKY
+	db  65 ; LICKILORD
 	db  60 ; KOFFING
 	db  85 ; WEEZING
 	db  30 ; RHYHORN
 	db  45 ; RHYDON
 	db 105 ; CHANSEY
+	db  80 ; BURGELA
 	db 100 ; TANGELA
+	db 110 ; TANGROWTH
+	db 125 ; JUNGELA
 	db  40 ; KANGASKHAN
 	db  70 ; HORSEA
 	db  95 ; SEADRA
@@ -128,10 +149,12 @@ KantoMonSpecials:
 	db 100 ; STARMIE
 	db 100 ; MR__MIME
 	db  55 ; SCYTHER
+	db  45 ; KLEAVOR
 	db  95 ; JYNX
 	db  85 ; ELECTABUZZ
 	db  85 ; MAGMAR
 	db  55 ; PINSIR
+	db  55 ; TRICULES
 	db  70 ; TAUROS
 	db  20 ; MAGIKARP
 	db 100 ; GYARADOS
@@ -147,6 +170,7 @@ KantoMonSpecials:
 	db  45 ; KABUTO
 	db  70 ; KABUTOPS
 	db  60 ; AERODACTYL
+	db  40 ; MUNCHLAX
 	db  65 ; SNORLAX
 	db 125 ; ARTICUNO
 	db 125 ; ZAPDOS

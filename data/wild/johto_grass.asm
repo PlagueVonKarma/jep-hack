@@ -24,10 +24,10 @@ JohtoGrassWildMons:
 	dbw 3, GASTLY
 	dbw 4, GASTLY
 	dbw 5, GASTLY
-	dbw 3, RATTATA
+	dbw 3, COINPUR
 	dbw 6, GASTLY
-	dbw 5, RATTATA
-	dbw 5, RATTATA
+	dbw 5, COINPUR
+	dbw 5, COINPUR
 	end_grass_wildmons
 
 	def_grass_wildmons SPROUT_TOWER_3F
@@ -52,10 +52,10 @@ JohtoGrassWildMons:
 	dbw 3, GASTLY
 	dbw 4, GASTLY
 	dbw 5, GASTLY
-	dbw 3, RATTATA
+	dbw 3, COINPUR
 	dbw 6, GASTLY
-	dbw 5, RATTATA
-	dbw 5, RATTATA
+	dbw 5, COINPUR
+	dbw 5, COINPUR
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_2F
@@ -80,10 +80,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_3F
@@ -108,10 +108,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_4F
@@ -136,10 +136,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_5F
@@ -164,10 +164,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_6F
@@ -192,10 +192,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_7F
@@ -220,10 +220,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_8F
@@ -248,10 +248,10 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 	def_grass_wildmons TIN_TOWER_9F
@@ -276,39 +276,39 @@ JohtoGrassWildMons:
 	dbw 20, GASTLY
 	dbw 21, GASTLY
 	dbw 22, GASTLY
-	dbw 22, RATTATA
-	dbw 23, RATTATA
-	dbw 24, RATTATA
-	dbw 24, RATTATA
+	dbw 22, MEOWTH ; MOIBELLE?
+	dbw 23, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
+	dbw 24, MEOWTH ; MOIBELLE?
 	end_grass_wildmons
 
 ; Reworked to be way more Fire-type themed.
 ; The Burned Tower isn't very useful because stuff like Rattata can be found anywhere.
 ; They're good for worldbuilding but little else.
 ; Did you know they removed Magmar in B1F in Crystal? For Weezing??
-; The Rattata could possibly be replaced with Vulpiii later.
+; The Rattata have been replaced with Vulpiii in 1F, and Pupperon in B1F.
 	def_grass_wildmons BURNED_TOWER_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 13, RATTATA
+	dbw 13, VULPIII
 	dbw 14, KOFFING
-	dbw 15, RATTATA
+	dbw 15, VULPIII
 	dbw 14, ZUBAT
 	dbw 16, KOFFING
 	dbw 15, HOUNDOUR
 	dbw 15, HOUNDOUR
 	; day
-	dbw 13, RATTATA
+	dbw 13, VULPIII
 	dbw 14, KOFFING
-	dbw 15, RATTATA
+	dbw 15, VULPIII
 	dbw 14, ZUBAT
 	dbw 16, KOFFING
 	dbw 15, HOUNDOUR
 	dbw 15, HOUNDOUR
 	; nite
-	dbw 13, RATTATA
+	dbw 13, VULPIII
 	dbw 14, KOFFING
-	dbw 15, RATTATA
+	dbw 15, VULPIII
 	dbw 14, ZUBAT
 	dbw 16, KOFFING
 	dbw 15, HOUNDOUR
@@ -318,26 +318,26 @@ JohtoGrassWildMons:
 	def_grass_wildmons BURNED_TOWER_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 14, RATTATA
+	dbw 14, PUPPERON
 	dbw 14, SLUGMA
 	dbw 16, SLUGMA
-	dbw 16, RATTATA
+	dbw 16, PUPPERON
 	dbw 15, ZUBAT
 	dbw 14, MAGBY
 	dbw 14, MAGBY
 	; day
-	dbw 14, RATTATA
+	dbw 14, PUPPERON
 	dbw 14, SLUGMA
 	dbw 16, SLUGMA
-	dbw 16, RATTATA
+	dbw 16, PUPPERON
 	dbw 15, ZUBAT
 	dbw 14, MAGBY
 	dbw 14, MAGBY
 	; nite
-	dbw 14, RATTATA
+	dbw 14, PUPPERON
 	dbw 14, SLUGMA
 	dbw 16, SLUGMA
-	dbw 16, RATTATA
+	dbw 16, PUPPERON
 	dbw 15, ZUBAT
 	dbw 14, MAGMAR
 	dbw 14, MAGMAR
@@ -432,7 +432,7 @@ JohtoGrassWildMons:
 	; morn
 	dbw 6, GEODUDE
 	dbw 6, SANDSHREW
-	dbw 5, ZUBAT
+	dbw 5, BITTYBAT
 	dbw 4, RATTATA
 	dbw 7, ZUBAT
 	dbw 6, ONIX
@@ -440,7 +440,7 @@ JohtoGrassWildMons:
 	; day
 	dbw 6, GEODUDE
 	dbw 6, SANDSHREW
-	dbw 5, ZUBAT
+	dbw 5, BITTYBAT
 	dbw 4, RATTATA
 	dbw 7, ZUBAT
 	dbw 6, ONIX
@@ -450,7 +450,7 @@ JohtoGrassWildMons:
 	dbw 6, RATTATA
 	dbw 5, WOOPER
 	dbw 4, RATTATA
-	dbw 7, ZUBAT
+	dbw 7, BITTYBAT
 	dbw 6, ONIX
 	dbw 6, ONIX
 	end_grass_wildmons
@@ -459,7 +459,7 @@ JohtoGrassWildMons:
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 8, GEODUDE
-	dbw 6, ZUBAT
+	dbw 6, BITTYBAT
 	dbw 8, ZUBAT
 	dbw 8, ONIX
 	dbw 6, RATTATA
@@ -467,15 +467,15 @@ JohtoGrassWildMons:
 	dbw 8, RATTATA
 	; day
 	dbw 8, GEODUDE
-	dbw 6, ZUBAT
-	dbw 8, ZUBAT
+	dbw 6, BITTYBAT
+	dbw 8, BITTYBAT
 	dbw 8, ONIX
 	dbw 6, RATTATA
 	dbw 8, RATTATA
 	dbw 8, RATTATA
 	; nite
 	dbw 8, GEODUDE
-	dbw 6, ZUBAT
+	dbw 6, BITTYBAT
 	dbw 8, WOOPER
 	dbw 8, ONIX
 	dbw 6, RATTATA
@@ -514,27 +514,27 @@ JohtoGrassWildMons:
 	def_grass_wildmons SLOWPOKE_WELL_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 5, ZUBAT
-	dbw 6, ZUBAT
-	dbw 7, ZUBAT
+	dbw 5, BITTYBAT
+	dbw 6, BITTYBAT
+	dbw 7, BITTYBAT
 	dbw 6, SLOWPOKE
-	dbw 8, ZUBAT
+	dbw 8, BITTYBAT
 	dbw 8, SLOWPOKE
 	dbw 8, SLOWPOKE
 	; day
-	dbw 5, ZUBAT
-	dbw 6, ZUBAT
-	dbw 7, ZUBAT
+	dbw 5, BITTYBAT
+	dbw 6, BITTYBAT
+	dbw 7, BITTYBAT
 	dbw 6, SLOWPOKE
-	dbw 8, ZUBAT
+	dbw 8, BITTYBAT
 	dbw 8, SLOWPOKE
 	dbw 8, SLOWPOKE
 	; nite
-	dbw 5, ZUBAT
-	dbw 6, ZUBAT
-	dbw 7, ZUBAT
+	dbw 5, BITTYBAT
+	dbw 6, BITTYBAT
+	dbw 7, BITTYBAT
 	dbw 6, SLOWPOKE
-	dbw 8, ZUBAT
+	dbw 8, BITTYBAT
 	dbw 8, SLOWPOKE
 	dbw 8, SLOWPOKE
 	end_grass_wildmons
@@ -570,8 +570,9 @@ JohtoGrassWildMons:
 ; With Viridian Forest existing, much of this wild data no longer made sense.
 ; Changed to feature Yanma, Ledyba, etc.
 ; Yanma gives easier Yanmega access, Ledyba and Spinarak are nice flavour.
-; Paras remains accessible for HM usage. It should be Paraspor, though.
+; Paraspor remains accessible for HM usage.
 ; Shuckle, Pineco, and Heracross should be made more common Headbutt tree Pokemon.
+; Gentlarva appears less than the other bugs, as usual, replacing Pidgey. Yanma is the new predator.
 	def_grass_wildmons ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
@@ -579,7 +580,7 @@ JohtoGrassWildMons:
 	dbw 5, WEEDLE
 	dbw 7, LEDYBA
 	dbw 7, LEDYBA
-	dbw 7, PIDGEY
+	dbw 7, GENTLARVA
 	dbw 6, YANMA
 	dbw 6, YANMA
 	; day
@@ -587,7 +588,7 @@ JohtoGrassWildMons:
 	dbw 5, WEEDLE
 	dbw 7, LEDYBA
 	dbw 7, LEDYBA
-	dbw 7, PIDGEY
+	dbw 7, GENTLARVA
 	dbw 6, YANMA
 	dbw 6, YANMA
 	; nite
@@ -596,26 +597,27 @@ JohtoGrassWildMons:
 	dbw 7, SPINARAK
 	dbw 7, PSYDUCK
 	dbw 7, HOOTHOOT
-	dbw 6, PARAS ; PARASPOR
-	dbw 6, PARAS ; PARASPOR
+	dbw 6, PARASPOR
+	dbw 6, PARASPOR
 	end_grass_wildmons
 
 ; Mt. Mortar now has consistent Marill access like GS.
+; Zubats and Golbats are no longer outside during the day as their Pokedex data often says they hate light. Also, Kotora.
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 14, RATTATA
-	dbw 13, ZUBAT
+	dbw 13, KOTORA
 	dbw 14, MACHOP
-	dbw 13, GOLBAT
+	dbw 13, KOTORA
 	dbw 14, GEODUDE
 	dbw 16, RATICATE
 	dbw 16, RATICATE
 	; day
 	dbw 14, RATTATA
-	dbw 13, ZUBAT
+	dbw 13, KOTORA
 	dbw 14, MACHOP
-	dbw 13, GOLBAT
+	dbw 13, KOTORA 
 	dbw 14, GEODUDE
 	dbw 16, RATICATE
 	dbw 16, RATICATE
@@ -1198,28 +1200,28 @@ JohtoGrassWildMons:
 	def_grass_wildmons DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 3, GEODUDE
-	dbw 2, ZUBAT
-	dbw 2, GEODUDE
-	dbw 4, GEODUDE
+	dbw 3, PHANPY
+	dbw 2, BITTYBAT
+	dbw 2, PHANPY
+	dbw 4, PHANPY
 	dbw 2, TEDDIURSA
-	dbw 4, ZUBAT
+	dbw 4, BITTYBAT
 	dbw 4, DUNSPARCE
 	; day
-	dbw 3, GEODUDE
-	dbw 2, ZUBAT
-	dbw 2, GEODUDE
-	dbw 4, GEODUDE
-	dbw 2, ZUBAT
-	dbw 4, ZUBAT
+	dbw 3, PHANPY
+	dbw 2, BITTYBAT
+	dbw 2, PHANPY
+	dbw 4, PHANPY
+	dbw 2, BITTYBAT
+	dbw 4, BITTYBAT
 	dbw 4, DUNSPARCE
 	; nite
 	dbw 3, GEODUDE
-	dbw 2, ZUBAT
+	dbw 2, BITTYBAT
 	dbw 2, GEODUDE
 	dbw 4, GEODUDE
-	dbw 2, ZUBAT
-	dbw 4, ZUBAT
+	dbw 2, BITTYBAT
+	dbw 4, BITTYBAT
 	dbw 4, DUNSPARCE
 	end_grass_wildmons
 
@@ -1358,7 +1360,7 @@ JohtoGrassWildMons:
 	dbw 7, HOPPIP
 	; nite
 	dbw 4, WOOPER
-	dbw 5, RATTATA
+	dbw 5, COINPUR
 	dbw 7, BELLSPROUT
 	dbw 6, MAREEP ; From Gold
 	dbw 7, HOOTHOOT
@@ -1385,13 +1387,13 @@ JohtoGrassWildMons:
 	dbw 7, HOPPIP
 	dbw 7, HOPPIP
 	; nite
-	dbw 6, RATTATA
+	dbw 6, COINPUR
 	dbw 6, ZUBAT
 	dbw 6, GEODUDE
 	dbw 6, ZUBAT
-	dbw 7, RATTATA
-	dbw 7, RATTATA
-	dbw 7, RATTATA
+	dbw 7, COINPUR
+	dbw 7, COINPUR
+	dbw 7, COINPUR
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_34
@@ -1414,7 +1416,7 @@ JohtoGrassWildMons:
 	dbw 10, DITTO
 	; nite
 	dbw 12, DROWZEE
-	dbw 11, RATTATA
+	dbw 11, COINPUR
 	dbw 12, HOOTHOOT
 	dbw 10, ABRA
 	dbw 12, JIGGLYPUFF
@@ -1456,7 +1458,7 @@ JohtoGrassWildMons:
 	dbw 4, LEDYBA
 	dbw 4, PIDGEY
 	dbw 5, BELLSPROUT
-	dbw 5, GROWLITHE
+	dbw 5, PUPPERON
 	dbw 5, PIDGEY
 	dbw 6, PIDGEY
 	dbw 6, PIDGEY
@@ -1464,7 +1466,7 @@ JohtoGrassWildMons:
 	dbw 4, PIDGEY
 	dbw 4, PIDGEY
 	dbw 5, BELLSPROUT
-	dbw 5, GROWLITHE
+	dbw 5, PUPPERON
 	dbw 5, PIDGEY
 	dbw 6, PIDGEY
 	dbw 6, PIDGEY
@@ -1472,7 +1474,7 @@ JohtoGrassWildMons:
 	dbw 4, SPINARAK
 	dbw 4, HOOTHOOT
 	dbw 5, BELLSPROUT
-	dbw 5, HOOTHOOT
+	dbw 5, VULPIII ; Silver data, but specifically at night
 	dbw 5, HOOTHOOT
 	dbw 5, MISDREAVUS
 	dbw 5, MISDREAVUS
@@ -1484,7 +1486,7 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_37
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 13, LEDYBA
+	dbw 13, PUPPERON
 	dbw 14, STANTLER
 	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
@@ -1492,7 +1494,7 @@ JohtoGrassWildMons:
 	dbw 15, LEDIAN
 	dbw 15, LEDIAN
 	; day
-	dbw 13, PIDGEY
+	dbw 13, PUPPERON
 	dbw 14, STANTLER
 	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
@@ -1685,6 +1687,7 @@ JohtoGrassWildMons:
 ; Ports the 5% Jigglypuff all-day encounter from GS.
 ; Makes Hoothoot replace a Rattata at night to have continuity with Spearow.
 ; Overall, increased Johto frequency that matches early advertising for the game.
+; Coinpur replaces Rattatas at night.
 	def_grass_wildmons ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
@@ -1707,8 +1710,8 @@ JohtoGrassWildMons:
 	dbw 2, GEODUDE
 	dbw 2, HOOTHOOT
 	dbw 3, GEODUDE
-	dbw 3, RATTATA
-	dbw 2, RATTATA
+	dbw 3, COINPUR
+	dbw 2, COINPUR
 	dbw 2, JIGGLYPUFF
 	dbw 2, JIGGLYPUFF
 	end_grass_wildmons

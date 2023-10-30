@@ -1,3 +1,73 @@
+# Johto Expansion Pak
+This is a ROM Hack of Pokemon Crystal, playing upon the Kanto Expansion Pak's old philosophy. It adds Johto- and Kanto-related Pokemon to Crystal, more interesting locations, and QoL changes.
+
+If playing on an emulator, BGB is strongly recommended for its accuracy and features. Inaccurate emulators, such as VBA and TGB Dual, can experience unintended glitches. This hack is fully playable on official hardware as well.
+
+# New Pokemon
+Using the Kanto Expansion Pak's original criteria, the ethos of the Johto Expansion Pak will be to add every "Johto- and Kanto-related Pokemon to Crystal without fundamentally changing the way the game is played." 
+
+What falls under "Johto- and Kanto-related" is a Pokemon is the following, so long as they are, in fact, related:
+- Is a regional variant (Eg. Hisuian Sneasel)
+- Evolves from or into a Pokemon (eg. Tangrowth, Honchkrow)
+- Was cut from the final game (eg. Bellignan, Tricules, Phandarin)
+- Is a Paradox equivalent (eg. Walking Wake)
+- Would qualify for the Kanto Expansion Pak (eg. Omegadge, Melmetal)
+
+Any Pokemon that you can think of that would come under this, is absolutely in. Dex total is 462!
+
+Mega Evolutions, Gigantamax forms, etc, are currently not in active consideration.
+
+The Fairy-type does exist.
+
+# Changes
+## New Features
+- There is now an enby character option named Topaz, purple-themed.
+- There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
+- The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
+
+## QoL Changes
+- A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
+- Instant text is now an option!
+- Clock reset procedure is now like vanilla GS, requiring just Down + B.
+- Tilesets now handle up to 255 titles (from 192), allowing for slightly nicer maps.
+- Can now have up to 17 object events.
+
+## Map Changes
+In general, there have been many wild encounter tweaks. View this document for details. (will link when hack is in a playable state)
+
+- Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc.
+- Kanto wild encounters have generally higher levels to aid in improving the level curve.
+- Viridian Forest has been restored.
+- The Pewter Museum of Science has been restored.
+- Cerulean Cave has been restored, complete with a Mewtwo fight!
+- The Kanto Safari Zone map from the prototype has been restored.
+- The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
+
+## Item Changes
+- Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo!
+- The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
+
+# Credits
+- Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
+- Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer)
+- Zeta_Null (Repository Owner, Spriter, Programming)
+- LadyMisticus (Documentation, Programming, Mapping)
+- thornAvery (Programming)
+- pret et al (LOTS of [Tutorials](https://github.com/pret/pokecrystal/wiki) that we used to get this off the ground!)
+- Wiz (Nihon Pokemon names)
+- Rezzo (GSC-specific advice)
+- Old Dance Jacket (GSC-specific advice)
+
+# Sprite Credits
+- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, 
+- Martha's Against Humanity: Shi-Shi
+- EyeDonutz: Walking Wake
+- nuuk: (TBD)
+- SCMidna: Munchlax
+- Pokemon October et al: Bellignan, Caretorker, Inoshika, Bipulla, Sonegg, Kolta, Coinpur, Dodaerie, Bundra, Kiwooked, Koalyptus, Trebir
+- Tom Wang: Gold/Chris running sprite
+- Seasick: Kris running sprite
+
 # 16-bit index expansion for Crystal
 
 This repository contains a modified Pokémon Crystal game, updated to handle 16-bit indexes. The main goal of this
