@@ -27,6 +27,7 @@ The Fairy-type does exist.
 
 ## QoL Changes
 - A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
+- Kurt now makes Apricorn Balls instantly. He's had his coffee and is listening to his favourite music.
 - Instant text is now an option!
 - Clock reset procedure is now like vanilla GS, requiring just Down + B.
 - Tilesets now handle up to 255 titles (from 192), allowing for slightly nicer maps.
