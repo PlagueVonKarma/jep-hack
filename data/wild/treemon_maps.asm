@@ -41,8 +41,15 @@ TreeMonMaps:
 	db -1
 
 RockMonMaps:
-	treemon_map CIANWOOD_CITY,             TREEMON_SET_ROCK
-	treemon_map ROUTE_40,                  TREEMON_SET_ROCK
-	treemon_map DARK_CAVE_VIOLET_ENTRANCE, TREEMON_SET_ROCK
-	treemon_map SLOWPOKE_WELL_B1F,         TREEMON_SET_ROCK
+	treemon_map CIANWOOD_CITY,                  TREEMON_SET_ROCK_BEACH
+	treemon_map ROUTE_40,                       TREEMON_SET_ROCK_BEACH
+	treemon_map DARK_CAVE_VIOLET_ENTRANCE,      TREEMON_SET_ROCK_DARK_CAVE
+	treemon_map SLOWPOKE_WELL_B1F,              TREEMON_SET_ROCK_WELL
+	treemon_map ICE_PATH_1F,			        TREEMON_SET_ROCK_ICE
+	treemon_map ICE_PATH_B1F,			        TREEMON_SET_ROCK_ICE
+	treemon_map ICE_PATH_B2F_MAHOGANY_SIDE,     TREEMON_SET_ROCK_ICE
+	treemon_map ICE_PATH_B2F_BLACKTHORN_SIDE,   TREEMON_SET_ROCK_ICE
+	treemon_map ICE_PATH_B3F,			        TREEMON_SET_ROCK_ICE
+	treemon_map MOUNT_MOON_SQUARE,			    TREEMON_SET_ROCK_SQUARE
+	treemon_map BURNED_TOWER_1F,		        TREEMON_SET_ROCK_TOWER
 	db -1

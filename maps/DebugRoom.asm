@@ -101,6 +101,7 @@ DebugRoom_MapEvents:
 	warp_event  5, 35, VIRIDIAN_FOREST, 1 ; southwest warp
 	warp_event 19, 34, VIRIDIAN_FOREST, 1 ; southern warp
 	warp_event 33, 33, VIRIDIAN_FOREST, 1 ; southeast warp
+	warp_event  5,  3, AZALEA_TOWN, 1 
 
 	def_coord_events
 
