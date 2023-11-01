@@ -108,4 +108,5 @@ Music:
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
 	dba Music_NihonTown01
+	dba Music_SinjohRuins
 	assert_table_length NUM_MUSIC_SONGS
