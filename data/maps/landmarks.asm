@@ -108,7 +108,7 @@ Landmarks:
 	landmark  20,  68, Route28Name
 	landmark 140, 116, FastShipName
 	assert_table_length NIHON_LANDMARK
-	landmark 100, 116, SilentHillsName
+	landmark 92, 108, SilentHillsName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
