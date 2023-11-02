@@ -10,6 +10,12 @@ EvosAttacksPointers2::
 	dw TotodileEvosAttacks
 	dw CroconawEvosAttacks
 	dw FeraligatrEvosAttacks
+	dw CubburnEvosAttacks
+	dw FlambearEvosAttacks
+	dw BruinousEvosAttacks
+	dw PalssioEvosAttacks
+	dw PressioEvosAttacks
+	dw DonmarinEvosAttacks
 	dw SentretEvosAttacks
 	dw FurretEvosAttacks
 	dw HoothootEvosAttacks
@@ -240,6 +246,91 @@ FeraligatrEvosAttacks:
 	dbw 47, SCREECH
 	dbw 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
+
+CubburnEvosAttacks:
+	dbbw EVOLVE_LEVEL, 16, FLAMBEAR
+	db 0
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 9, EMBER
+	dbw 14, ROAR
+	dbw 19, BITE
+	dbw 25, REST
+	dbw 31, FLAME_WHEEL
+	dbw 38, SCARY_FACE
+	dbw 45, FURY_SWIPES
+	dbw 53, FLAMETHROWER
+	db 0
+	
+FlambearEvosAttacks:
+	dbbw EVOLVE_LEVEL, 34, BRUINOUS
+	db 0
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 9, EMBER
+	dbw 14, ROAR
+	dbw 21, BITE
+	dbw 29, REST
+	dbw 37, FLAME_WHEEL
+	dbw 46, SCARY_FACE
+	dbw 55, FURY_SWIPES
+	dbw 65, FLAMETHROWER
+	db 0
+	
+BruinousEvosAttacks:
+	db 0
+	dbw 1, SCRATCH
+	dbw 5, LEER
+	dbw 9, EMBER
+	dbw 14, ROAR
+	dbw 21, BITE
+	dbw 29, REST
+	dbw 39, FLAME_WHEEL
+	dbw 50, SCARY_FACE
+	dbw 61, FURY_SWIPES
+	dbw 73, FLAMETHROWER
+	db 0
+
+PalssioEvosAttacks:
+	dbbw EVOLVE_LEVEL, 16, PRESSIO
+	db 0
+	dbw 1, TACKLE
+	dbw 5, GROWL
+	dbw 8, WATER_GUN
+	dbw 13, BITE
+	dbw 19, MIST
+	dbw 25, AURORA_BEAM
+	dbw 34, SAFEGUARD
+	dbw 43, BODY_SLAM
+	dbw 53, HYDRO_PUMP
+	db 0
+
+PressioEvosAttacks:
+	dbbw EVOLVE_LEVEL, 34, DONMARIN
+	db 0
+	dbw 1, TACKLE
+	dbw 5, GROWL
+	dbw 8, WATER_GUN
+	dbw 13, BITE
+	dbw 21, MIST
+	dbw 30, AURORA_BEAM
+	dbw 40, SAFEGUARD
+	dbw 51, BODY_SLAM
+	dbw 63, HYDRO_PUMP
+	db 0
+
+DonmarinEvosAttacks:
+	db 0
+	dbw 1, TACKLE
+	dbw 5, GROWL
+	dbw 8, WATER_GUN
+	dbw 13, BITE
+	dbw 21, MIST
+	dbw 30, AURORA_BEAM
+	dbw 43, SAFEGUARD
+	dbw 57, BODY_SLAM
+	dbw 72, HYDRO_PUMP
+	db 0
 
 SentretEvosAttacks:
 	dbbw EVOLVE_LEVEL, 15, FURRET

@@ -22,6 +22,7 @@ AlphabeticalPokedexOrder:
 	dw BLASTOISE
 	dw BLASTYKE
 	dw BLISSEY
+	dw BRUINOUS
 	dw BULBASAUR
 	dw BURGELA
 	dw BUTTERFREE
@@ -42,6 +43,7 @@ AlphabeticalPokedexOrder:
 	dw CORSOLA
 	dw CROBAT
 	dw CROCONAW
+	dw CUBBURN
 	dw CUBONE
 	dw CYNDAQUIL
 	dw DELIBIRD
@@ -50,6 +52,7 @@ AlphabeticalPokedexOrder:
 	dw DITTO
 	dw DODRIO
 	dw DODUO
+	dw DONMARIN
 	dw DONPHAN
 	dw DRAGONAIR
 	dw DRAGONITE
@@ -70,6 +73,7 @@ AlphabeticalPokedexOrder:
 	dw FEAROW
 	dw FERALIGATR
 	dw FLAAFFY
+	dw FLAMBEAR
 	dw FLAREON
 	dw FORRETRESS
 	dw FURRET
@@ -174,6 +178,7 @@ AlphabeticalPokedexOrder:
 	dw OMANYTE
 	dw OMASTAR
 	dw ONIX
+	dw PALSSIO
 	dw PARAS
 	dw PARASECT
 	dw PARASPOR
@@ -195,6 +200,7 @@ AlphabeticalPokedexOrder:
 	dw PONYTA
 	dw PORYGON
 	dw PORYGON2
+	dw PRESSIO
 	dw PRIMEAPE
 	dw PSYDUCK
 	dw PUPAL

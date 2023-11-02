@@ -207,6 +207,12 @@ DEF JOHTO_POKEMON EQU const_value
 	const TOTODILE   ; 9e
 	const CROCONAW   ; 9f
 	const FERALIGATR ; a0
+	const CUBBURN
+	const FLAMBEAR
+	const BRUINOUS
+	const PALSSIO
+	const PRESSIO
+	const DONMARIN
 	const SENTRET    ; a1
 	const FURRET     ; a2
 	const HOOTHOOT   ; a3

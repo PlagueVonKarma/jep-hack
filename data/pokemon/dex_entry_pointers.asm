@@ -188,6 +188,12 @@ PokedexDataPointerTable:
 	dba TotodilePokedexEntry
 	dba CroconawPokedexEntry
 	dba FeraligatrPokedexEntry
+	dba CubburnPokedexEntry
+	dba FlambearPokedexEntry
+	dba BruinousPokedexEntry
+	dba PalssioPokedexEntry
+	dba PressioPokedexEntry
+	dba DonmarinPokedexEntry
 	dba SentretPokedexEntry
 	dba FurretPokedexEntry
 	dba HoothootPokedexEntry

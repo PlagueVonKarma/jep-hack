@@ -8,23 +8,23 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BURGELA
+	getmonname STRING_BUFFER_3, PALSSIO
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BURGELA, 42, DUSK_STONE
+	givepoke PALSSIO, 42, RARE_CANDY
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, LICKITUNG
+	getmonname STRING_BUFFER_3, CUBBURN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke LICKITUNG, 42, POISON_STONE
+	givepoke CUBBURN, 42, RARE_CANDY
 	closetext
 	end
 

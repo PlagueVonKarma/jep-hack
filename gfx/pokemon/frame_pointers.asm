@@ -187,6 +187,12 @@ FramesPointers:
 	dba TotodileFrames
 	dba CroconawFrames
 	dba FeraligatrFrames
+	dba CubburnFrames
+	dba FlambearFrames
+	dba BruinousFrames
+	dba PalssioFrames
+	dba PressioFrames
+	dba DonmarinFrames
 	dba SentretFrames
 	dba FurretFrames
 	dba HoothootFrames
