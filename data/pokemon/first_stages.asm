@@ -188,6 +188,12 @@ FirstEvoStages::
 	dw TOTODILE
 	dw TOTODILE
 	dw TOTODILE   ;a0
+	dw CUBBURN
+	dw CUBBURN
+	dw CUBBURN
+	dw PALSSIO
+	dw PALSSIO
+	dw PALSSIO
 	dw SENTRET
 	dw SENTRET
 	dw HOOTHOOT

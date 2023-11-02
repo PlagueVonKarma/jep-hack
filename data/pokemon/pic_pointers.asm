@@ -387,6 +387,18 @@ PokemonPicPointers::
 	dba CroconawBackpic
 	dba FeraligatrFrontpic
 	dba FeraligatrBackpic
+	dba CubburnFrontpic
+	dba CubburnBackpic
+	dba FlambearFrontpic
+	dba FlambearBackpic
+	dba BruinousFrontpic
+	dba BruinousBackpic
+	dba PalssioFrontpic
+	dba PalssioBackpic
+	dba PressioFrontpic
+	dba PressioBackpic
+	dba DonmarinFrontpic
+	dba DonmarinBackpic
 	dba SentretFrontpic
 	dba SentretBackpic
 	dba FurretFrontpic

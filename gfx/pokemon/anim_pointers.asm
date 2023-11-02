@@ -187,6 +187,12 @@ AnimationPointers:
 	dw TotodileAnimation
 	dw CroconawAnimation
 	dw FeraligatrAnimation
+	dw CubburnAnimation
+	dw FlambearAnimation
+	dw BruinousAnimation
+	dw PalssioAnimation
+	dw PressioAnimation
+	dw DonmarinAnimation
 	dw SentretAnimation
 	dw FurretAnimation
 	dw HoothootAnimation

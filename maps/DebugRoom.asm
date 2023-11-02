@@ -8,23 +8,23 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BURGELA
+	getmonname STRING_BUFFER_3, PALSSIO
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BURGELA, 42, DUSK_STONE
+	givepoke PALSSIO, 42, RARE_CANDY
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, LICKITUNG
+	getmonname STRING_BUFFER_3, CUBBURN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke LICKITUNG, 42, POISON_STONE
+	givepoke CUBBURN, 42, RARE_CANDY
 	closetext
 	end
 
@@ -101,7 +101,8 @@ DebugRoom_MapEvents:
 	warp_event  5, 35, VIRIDIAN_FOREST, 1 ; southwest warp
 	warp_event 19, 34, VIRIDIAN_FOREST, 1 ; southern warp
 	warp_event 33, 33, VIRIDIAN_FOREST, 1 ; southeast warp
-	warp_event  5,  3, AZALEA_TOWN, 1 
+	warp_event  5,  3, AZALEA_TOWN, 1
+	warp_event 34, 11, CLIFF_CAVE, 1 
 
 	def_coord_events
 

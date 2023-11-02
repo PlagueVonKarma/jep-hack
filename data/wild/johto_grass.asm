@@ -1744,4 +1744,32 @@ JohtoGrassWildMons:
 	dbw 44, GOLBAT
 	end_grass_wildmons
 
+	def_grass_wildmons CLIFF_CAVE
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, ONIX
+	dbw 31, GOLBAT
+	dbw 30, MACHOKE
+	dbw 31, KINGLER
+	dbw 32, QUAGSIRE
+	dbw 32, QUAGSIRE
+	dbw 35, STEELIX
+	; day
+	dbw 30, ONIX
+	dbw 31, GOLBAT
+	dbw 30, MACHOKE
+	dbw 31, KINGLER
+	dbw 32, QUAGSIRE
+	dbw 32, QUAGSIRE
+	dbw 35, STEELIX
+	; nite
+	dbw 30, ONIX
+	dbw 31, GOLBAT
+	dbw 30, MACHOKE
+	dbw 31, KINGLER
+	dbw 32, MISDREAVUS
+	dbw 32, MISDREAVUS
+	dbw 35, STEELIX
+	end_grass_wildmons
+
 	db -1 ; end

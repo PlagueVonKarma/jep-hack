@@ -10,6 +10,12 @@ EggMovePointers2::
 	dw TotodileEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw CubburnEggMoves
+	dw NoEggMoves2 ; Flambear
+	dw NoEggMoves2 ; Bruinous
+	dw PalssioEggMoves
+	dw NoEggMoves2 ; Pressio
+	dw NoEggMoves2 ; Donmarin
 	dw SentretEggMoves
 	dw NoEggMoves2
 	dw HoothootEggMoves
@@ -136,6 +142,22 @@ TotodileEggMoves:
 	dw RAZOR_WIND
 	dw ROCK_SLIDE
 	dw -1 ; end
+
+CubburnEggMoves:
+	dw CRUNCH
+	dw FORESIGHT
+	dw REVERSAL
+	dw QUICK_ATTACK
+	dw SWIFT
+	dw -1
+
+PalssioEggMoves:
+	dw ANCIENTPOWER
+	dw ENCORE
+	dw FORESIGHT
+	dw PSYBEAM
+	dw HYPNOSIS
+	dw -1
 
 SentretEggMoves:
 	dw DOUBLE_EDGE

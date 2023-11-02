@@ -12,7 +12,12 @@ LakeOfRagePrycesHouse_MapScripts:
 ;	jumpstd MagazineBookshelfScript
 
 PrycesHousePryce:
-	jumptext PrycesHousePryceText
+	faceplayer
+	opentext
+	writetext PrycesHousePryceText
+	waitbutton
+	closetext
+	end
 
 PrycesHousePryceText:
 	text "Thank you for"
@@ -38,6 +43,7 @@ PrycesHousePryceText:
 	done
 
 LakeOfRagePrycesHouseDelibirdScript:
+	faceplayer
 	opentext
 	writetext LakeOfRagePrycesHouseDelibirdText
 	cry DELIBIRD
@@ -50,6 +56,7 @@ LakeOfRagePrycesHouseDelibirdText:
 	done
 
 LakeOfRagePrycesHouseSwinubScript:
+	faceplayer
 	opentext
 	writetext LakeOfRagePrycesHouseSwinubText
 	cry SWINUB

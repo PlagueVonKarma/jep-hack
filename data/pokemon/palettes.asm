@@ -407,6 +407,18 @@ INCBIN "gfx/pokemon/croconaw/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/croconaw/shiny.pal"
 INCBIN "gfx/pokemon/feraligatr/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/feraligatr/shiny.pal"
+INCBIN "gfx/pokemon/cubburn/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/cubburn/shiny.pal"
+INCBIN "gfx/pokemon/flambear/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/flambear/shiny.pal"
+INCBIN "gfx/pokemon/bruinous/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/bruinous/shiny.pal"
+INCBIN "gfx/pokemon/palssio/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/palssio/shiny.pal"
+INCBIN "gfx/pokemon/pressio/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/pressio/shiny.pal"
+INCBIN "gfx/pokemon/donmarin/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/donmarin/shiny.pal"
 INCBIN "gfx/pokemon/sentret/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/sentret/shiny.pal"
 INCBIN "gfx/pokemon/furret/front.gbcpal", middle_colors

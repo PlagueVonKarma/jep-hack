@@ -187,6 +187,12 @@ BitmasksPointers:
 	dw TotodileBitmasks
 	dw CroconawBitmasks
 	dw FeraligatrBitmasks
+	dw CubburnBitmasks
+	dw FlambearBitmasks
+	dw BruinousBitmasks
+	dw PalssioBitmasks
+	dw PressioBitmasks
+	dw DonmarinBitmasks
 	dw SentretBitmasks
 	dw FurretBitmasks
 	dw HoothootBitmasks

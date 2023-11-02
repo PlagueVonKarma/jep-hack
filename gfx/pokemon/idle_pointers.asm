@@ -187,6 +187,12 @@ AnimationIdlePointers:
 	dw TotodileAnimationIdle
 	dw CroconawAnimationIdle
 	dw FeraligatrAnimationIdle
+	dw CubburnAnimationIdle
+	dw FlambearAnimationIdle
+	dw BruinousAnimationIdle
+	dw PalssioAnimationIdle
+	dw PressioAnimationIdle
+	dw DonmarinAnimationIdle
 	dw SentretAnimationIdle
 	dw FurretAnimationIdle
 	dw HoothootAnimationIdle
