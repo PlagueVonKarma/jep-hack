@@ -710,3 +710,4 @@ ENDM
 	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $00, 0
 	map_attributes SilentHills, SILENT_HILLS, $00, 0 ; this is on its own for now. add connections to mt. silver later.
 	map_attributes DebugRoom, DEBUG_ROOM, $05, 0 ; Debug Room :V
+	map_attributes CliffCave, CLIFF_CAVE, $00, 0

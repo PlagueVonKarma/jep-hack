@@ -130,29 +130,33 @@ TreeMonSet_Forest:
 	dbbw  5, 10, KAKUNA
 	db -1
 
+; Rock Smash begins here.
 TreeMonSet_Rock_Beach:
-	dbbw 90, 15, KRABBY
-	dbbw 10, 15, SHUCKLE
+	dbbw 70, 23, KRABBY
+	dbbw 20, 23, CORSOLA
+	dbbw 10, 25, SHUCKLE
 	db -1
 
 TreeMonSet_Rock_Dark_Cave:
-	dbbw 90, 15, GEODUDE
-	dbbw 10, 15, DUNSPARCE
+	dbbw 70,  8, GEODUDE
+	dbbw 20,  9, PHANPY
+	dbbw 10,  9, DUNSPARCE
 	db -1
 
 TreeMonSet_Rock_Tower:
-	dbbw 90, 15, GEODUDE
-	dbbw 10, 15, SLUGMA
+	dbbw 90, 14, GEODUDE
+	dbbw 10, 16, SLUGMA
 	db -1
 
 TreeMonSet_Rock_Ice:
-	dbbw 90, 15, GEODUDE
-	dbbw 10, 15, SWINUB
+	dbbw 90, 25, GEODUDE
+	dbbw 10, 25, SWINUB
 	db -1
 
 TreeMonSet_Rock_Square:
-	dbbw 90, 15, GEODUDE
-	dbbw 10, 15, SHUCKLE
+	dbbw 85, 35, GRAVELER
+	dbbw 10, 35, SHUCKLE
+	dbbw  5, 40, GOLEM
 	db -1
 
 TreeMonSet_Rock_Well:
