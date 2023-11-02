@@ -39,6 +39,13 @@
 	const TILESET_NIHON_01             ; 25
 	const TILESET_FOREST_KANTO         ; 26
 	const TILESET_MUSEUM               ; 27
+	const TILESET_NIHON_SNOWY          ; 28
+	const TILESET_NIHON_BIRDON         ; 29
+	const TILESET_NIHON_FONT           ; 2A
+	const TILESET_NIHON_HIGHTECH       ; 2B
+	const TILESET_NIHON_OLD            ; 2C
+	const TILESET_NIHON_SOUTH          ; 2D
+	const TILESET_NIHON_WEST           ; 2E
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

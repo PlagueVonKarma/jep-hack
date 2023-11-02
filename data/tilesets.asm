@@ -51,4 +51,11 @@ Tilesets::
 	tileset TilesetNihon1
 	tileset TilesetForestKanto
 	tileset TilesetMuseum
+	tileset TilesetNihonSnowy
+	tileset TilesetNihonBirdon
+	tileset TilesetNihonFont
+	tileset TilesetNihonHighTech
+	tileset TilesetNihonOld
+	tileset TilesetNihonSouth
+	tileset TilesetNihonWest
 	assert_table_length NUM_TILESETS + 1

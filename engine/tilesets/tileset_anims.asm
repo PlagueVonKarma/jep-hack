@@ -251,6 +251,12 @@ UnusedTilesetAnim5: ; unreferenced
 	dw NULL,  DoneTileAnimation
 
 TilesetNihon1Anim:
+TilesetNihonBirdonAnim:
+TilesetNihonFontAnim:
+TilesetNihonHighTechAnim:
+TilesetNihonOldAnim:
+TilesetNihonSouthAnim:
+TilesetNihonWestAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -270,6 +276,19 @@ TilesetForestKantoAnim:
 	dw NULL,  AnimateFlowerTile
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  AnimateWaterPalette
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
+	
+TilesetNihonSnowyAnim:
+	dw vTiles2 tile $14, AnimateWaterTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateWaterPalette
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateFlowerTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 

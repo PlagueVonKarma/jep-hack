@@ -1,0 +1,4 @@
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 00
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 01
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 02
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 03

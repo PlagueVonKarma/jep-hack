@@ -354,6 +354,14 @@ INCBIN "data/tilesets/museum_metatiles.bin"
 TilesetMuseumColl::
 INCLUDE "data/tilesets/museum_collision.asm"
 
+TilesetNihonSnowyGFX::
+INCBIN "gfx/tilesets/nihon_snowy.2bpp.lz"
+
+TilesetNihonSnowyMeta::
+INCBIN "data/tilesets/nihon_snowy_metatiles.bin"
+
+TilesetNihonSnowyColl::
+INCLUDE "data/tilesets/nihon_snowy_collision.asm"
 
 SECTION "Tileset Data 9", ROMX
 
@@ -481,6 +489,45 @@ SECTION "Tileset Data 12", ROMX
 TilesetMuseumAttr::
 INCBIN "data/tilesets/museum_attributes.bin"
 
+TilesetNihonSnowyAttr::
+INCBIN "data/tilesets/nihon_snowy_attributes.bin"
+
+TilesetNihonBirdonGFX::
+INCBIN "gfx/tilesets/nihon_birdon.2bpp.lz"
+
+TilesetNihonBirdonMeta::
+INCBIN "data/tilesets/nihon_birdon_metatiles.bin"
+
+TilesetNihonBirdonColl::
+INCLUDE "data/tilesets/nihon_birdon_collision.asm"
+
+TilesetNihonFontGFX::
+INCBIN "gfx/tilesets/nihon_font.2bpp.lz"
+
+TilesetNihonFontMeta::
+INCBIN "data/tilesets/nihon_font_metatiles.bin"
+
+TilesetNihonFontColl::
+INCLUDE "data/tilesets/nihon_font_collision.asm"
+
+TilesetNihonHighTechGFX::
+INCBIN "gfx/tilesets/nihon_hightech.2bpp.lz"
+
+TilesetNihonHighTechMeta::
+INCBIN "data/tilesets/nihon_hightech_metatiles.bin"
+
+TilesetNihonHighTechColl::
+INCLUDE "data/tilesets/nihon_hightech_collision.asm"
+
+TilesetNihonOldGFX::
+INCBIN "gfx/tilesets/nihon_old.2bpp.lz"
+
+TilesetNihonOldMeta::
+INCBIN "data/tilesets/nihon_old_metatiles.bin"
+
+TilesetNihonOldColl::
+INCLUDE "data/tilesets/nihon_old_collision.asm"
+
 TilesetTraditionalHouseGFX::
 INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
 
@@ -489,3 +536,41 @@ INCBIN "data/tilesets/traditional_house_metatiles.bin"
 
 TilesetTraditionalHouseColl::
 INCLUDE "data/tilesets/traditional_house_collision.asm"
+
+SECTION "Tileset Data 13", ROMX
+
+TilesetNihonSouthGFX::
+INCBIN "gfx/tilesets/nihon_south.2bpp.lz"
+
+TilesetNihonSouthMeta::
+INCBIN "data/tilesets/nihon_south_metatiles.bin"
+
+TilesetNihonSouthColl::
+INCLUDE "data/tilesets/nihon_south_collision.asm"
+
+TilesetNihonWestGFX::
+INCBIN "gfx/tilesets/nihon_west.2bpp.lz"
+
+TilesetNihonWestMeta::
+INCBIN "data/tilesets/nihon_west_metatiles.bin"
+
+TilesetNihonWestColl::
+INCLUDE "data/tilesets/nihon_west_collision.asm"
+
+TilesetNihonBirdonAttr::
+INCBIN "data/tilesets/nihon_birdon_attributes.bin"
+
+TilesetNihonFontAttr::
+INCBIN "data/tilesets/nihon_font_attributes.bin"
+
+TilesetNihonHighTechAttr::
+INCBIN "data/tilesets/nihon_hightech_attributes.bin"
+
+TilesetNihonOldAttr::
+INCBIN "data/tilesets/nihon_old_attributes.bin"
+
+TilesetNihonSouthAttr::
+INCBIN "data/tilesets/nihon_south_attributes.bin"
+
+TilesetNihonWestAttr::
+INCBIN "data/tilesets/nihon_west_attributes.bin"
