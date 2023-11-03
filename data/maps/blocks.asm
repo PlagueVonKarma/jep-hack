@@ -1083,3 +1083,6 @@ DebugRoom_Blocks: ; Pipis Room
 
 CliffCave_Blocks:
 	INCBIN "maps/CliffCave.ablk"
+
+BlueForest_Blocks:
+	INCBIN "maps/BlueForest.ablk"

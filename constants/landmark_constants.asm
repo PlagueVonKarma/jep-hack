@@ -121,6 +121,7 @@ DEF KANTO_LANDMARK EQU const_value
     ;const LANDMARK_ONE_ISLAND
 DEF NIHON_LANDMARK EQU const_value
 	const LANDMARK_SILENT_HILLS
+	const LANDMARK_BLUE_FOREST
 DEF NUM_LANDMARKS EQU const_value
 
 ; used in CaughtData

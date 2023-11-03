@@ -12,6 +12,8 @@ LoadSpecialMapPalette:
 	jr z, .radio_tower
 	cp TILESET_MANSION
 	jr z, .mansion_mobile
+	cp TILESET_NIHON_SNOWY
+	jr z, .snowy
 	jr .do_nothing
 
 .pokecom_2f
@@ -48,6 +50,11 @@ LoadSpecialMapPalette:
 	scf
 	ret
 
+.snowy
+	call LoadSnowyPalette
+	scf
+	ret
+	
 .do_nothing
 	and a
 	ret
@@ -135,3 +142,35 @@ LoadMansionPalette:
 
 MansionPalette2:
 INCLUDE "gfx/tilesets/mansion_2.pal"
+
+LoadSnowyPalette:
+	ld a, [wTimeOfDay]
+	and $7
+	cp NITE_F
+	jr z, .nite
+	cp DAY_F
+	jr z, .day
+	scf
+;morn
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, SnowyMornPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+.day
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, SnowyDayPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+.nite
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, SnowyNitePalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+
+INCLUDE "gfx/tilesets/snowy.pal"

@@ -97,10 +97,10 @@ DebugRoom_MapEvents:
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
 	warp_event  4,  9, PALLET_TOWN, 1 ; left lab/league warp
 	warp_event  5,  9, PALLET_TOWN, 1 ; right lab/league warp
-	warp_event 35, 17, VIRIDIAN_FOREST, 1 ; east warp
-	warp_event  5, 35, VIRIDIAN_FOREST, 1 ; southwest warp
-	warp_event 19, 34, VIRIDIAN_FOREST, 1 ; southern warp
-	warp_event 33, 33, VIRIDIAN_FOREST, 1 ; southeast warp
+	warp_event 35, 17, BLUE_FOREST, 1 ; east warp
+	warp_event  5, 35, BLUE_FOREST, 1 ; southwest warp
+	warp_event 19, 34, BLUE_FOREST, 1 ; southern warp
+	warp_event 33, 33, BLUE_FOREST, 1 ; southeast warp
 	warp_event  5,  3, AZALEA_TOWN, 1
 	warp_event 34, 11, CLIFF_CAVE, 1 
 

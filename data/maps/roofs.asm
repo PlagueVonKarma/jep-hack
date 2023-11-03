@@ -39,6 +39,7 @@ MapGroupRoofs:
 	db -1             ; 25
 	db ROOF_NEW_BARK  ; 26 (Cherrygrove)
 	db ROOF_NEW_BARK  ; 27 (Silent Hills)
+	db ROOF_NEW_BARK  ; 28 (Blue Forest)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

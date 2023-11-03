@@ -68,6 +68,7 @@ In general, there have been many wild encounter tweaks. View this document for d
 - Pokemon October et al: Bellignan, Caretorker, Inoshika, Bipulla, Sonegg, Kolta, Coinpur, Dodaerie, Bundra, Kiwooked, Koalyptus, Trebir
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
+- Ferropexola/aforward9600: Time of day-based tileset palette code
 
 # 16-bit index expansion for Crystal
 

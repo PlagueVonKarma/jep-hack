@@ -44,6 +44,7 @@ MapGroupPointers::
 	dw MapGroup_Saffron     ; 25
 	dw MapGroup_Cherrygrove ; 26
 	dw MapGroup_SilentHills ; 27
+	dw MapGroup_BlueForest  ; 28
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -557,3 +558,8 @@ MapGroup_SilentHills:
 	map SilentHills, TILESET_NIHON_01, TOWN, LANDMARK_SILENT_HILLS, MUSIC_NIHON_TOWN_01, TRUE, PALETTE_AUTO, FISHGROUP_SHORE
 	map DebugRoom, TILESET_NIHON_01, TOWN, LANDMARK_SILENT_HILLS, MUSIC_SINJOH_RUINS, TRUE, PALETTE_MORN, FISHGROUP_SHORE
 	assert_table_length NUM_SILENT_HILLS_MAPS
+	
+MapGroup_BlueForest:
+	table_width MAP_LENGTH, MapGroup_BlueForest
+	map BlueForest, TILESET_NIHON_SNOWY, TOWN, LANDMARK_BLUE_FOREST, MUSIC_SINJOH_RUINS, TRUE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_BLUE_FOREST_MAPS
