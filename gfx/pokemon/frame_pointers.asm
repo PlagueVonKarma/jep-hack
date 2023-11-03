@@ -201,6 +201,8 @@ FramesPointers:
 	dba LedianFrames
 	dba SpinarakFrames
 	dba AriadosFrames
+	dba FolageFrames
+	dba BarreauFrames
 	dba CrobatFrames
 	dba ChinchouFrames
 	dba LanturnFrames

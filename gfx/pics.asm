@@ -794,3 +794,8 @@ PressioFrontpic:	 INCBIN "gfx/pokemon/pressio/front.animated.2bpp.lz"
 PressioBackpic:	 INCBIN "gfx/pokemon/pressio/back.2bpp.lz"
 DonmarinFrontpic:	 INCBIN "gfx/pokemon/donmarin/front.animated.2bpp.lz"
 DonmarinBackpic:	 INCBIN "gfx/pokemon/donmarin/back.2bpp.lz"
+
+FolageFrontpic:	 INCBIN "gfx/pokemon/folage/front.animated.2bpp.lz"
+FolageBackpic:	 INCBIN "gfx/pokemon/folage/back.2bpp.lz"
+BarreauFrontpic:	 INCBIN "gfx/pokemon/barreau/front.animated.2bpp.lz"
+BarreauBackpic:	 INCBIN "gfx/pokemon/barreau/back.2bpp.lz"

@@ -12,6 +12,7 @@ AsleepTreeMonsNite:
 	dw EXEGGCUTE
 	dw LEDYBA
 	dw AIPOM
+	dw FOLAGE
 	dw -1 ; end
 
 AsleepTreeMonsDay:

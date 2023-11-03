@@ -38,6 +38,8 @@ FindNest:
 	ld b, h
 	ld c, l
 	ld a, e
+	cp 2
+	jr z, .nihon
 	and a
 	jr nz, .kanto
 	decoord 0, 0
@@ -54,6 +56,13 @@ FindNest:
 	ld hl, KantoGrassWildMons
 	call .FindGrass
 	ld hl, KantoWaterWildMons
+	jp .FindWater
+
+.nihon
+	decoord 0, 0
+	ld hl, NihonGrassWildMons
+	call .FindGrass
+	ld hl, NihonWaterWildMons
 	jp .FindWater
 
 .FindGrass:
@@ -412,8 +421,24 @@ _GrassWildmonLookup:
 	call _SwarmWildmonCheck
 	ret c
 	ld hl, JohtoGrassWildMons
-	ld de, KantoGrassWildMons
-	call _JohtoWildmonCheck
+	
+	; Nihon Check
+	; Basically, conditionally load Nihon or Kanto into de, depending on region check.
+	; IsInJohto returns 1 if Kanto, 2 if Nihon.
+	; This way, when _JohtoWildmonCheck loads, it'll have Nihon's spliced in if you're there.
+	; This is INCREDIBLY suboptimal. Consider revising.
+	; As of 3rd Nov '23, this works correctly for Johto and Kanto, but Nihon routes will return nothing.
+	call IsInJohto ; Run IsInJohto
+	cp 1 ; If we're in Kanto...
+	jr z, .skip ; Skip the splicing.
+	ld de, NihonGrassWildMons ; No? Splice in Nihon.
+	jr .skip2 ; Now skip loading Kanto.
+.skip ; If you skip here, you're in Kanto.
+	ld de, KantoGrassWildMons ; So take this as normal.
+	; fallthrough
+.skip2 ; If you skip here, you're in Nihon or Johto.
+
+	call _JohtoWildmonCheck ; So run this check. More commentary there.
 	ld bc, GRASS_WILDDATA_LENGTH
 	jr _NormalWildmonOK
 
@@ -423,18 +448,35 @@ _WaterWildmonLookup:
 	call _SwarmWildmonCheck
 	ret c
 	ld hl, JohtoWaterWildMons
+	
+	; Nihon Check 2
+	call IsInJohto
+	cp 1
+	jr z, .skip
+	ld de, NihonWaterWildMons
+	jr .skip2
+.skip
 	ld de, KantoWaterWildMons
+	; fallthrough
+.skip2
+	
 	call _JohtoWildmonCheck
 	ld bc, WATER_WILDDATA_LENGTH
 	jr _NormalWildmonOK
 
+; The Nihon check works with this, because of the following:
+; _JohtoWildmonCheck checks if you're above 0.
+; Kanto is 1, Nihon is 2.
+; Therefore, it'll always take the data from de.
+; We've already decided what de is before between Kanto and Nihon.
+; Nothing fancy, but don't worry about it.
 _JohtoWildmonCheck:
-	call IsInJohto
-	and a
-	ret z
-	ld h, d
-	ld l, e
-	ret
+	call IsInJohto ; Check if we're in Johto or not.
+	and a ; Are we?
+	ret z ; If zero, skip. This means you're in Johto, so you take what's in hl.
+	ld h, d ; If you're not, though, you take what's in d...
+	ld l, e ; and e.
+	ret ; Therefore, you'll take either Kanto or Nihon wild data.
 
 _SwarmWildmonCheck:
 	call CopyCurrMapDE
@@ -1000,5 +1042,7 @@ INCLUDE "data/wild/johto_grass.asm"
 INCLUDE "data/wild/johto_water.asm"
 INCLUDE "data/wild/kanto_grass.asm"
 INCLUDE "data/wild/kanto_water.asm"
+INCLUDE "data/wild/nihon_grass.asm"
+INCLUDE "data/wild/nihon_water.asm"
 INCLUDE "data/wild/swarm_grass.asm"
 INCLUDE "data/wild/swarm_water.asm"

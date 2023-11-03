@@ -24,6 +24,8 @@ EvosAttacksPointers2::
 	dw LedianEvosAttacks
 	dw SpinarakEvosAttacks
 	dw AriadosEvosAttacks
+	dw FolageEvosAttacks
+	dw BarreauEvosAttacks
 	dw CrobatEvosAttacks
 	dw ChinchouEvosAttacks
 	dw LanturnEvosAttacks
@@ -445,6 +447,28 @@ AriadosEvosAttacks:
 	dbw 43, SPIDER_WEB
 	dbw 53, AGILITY
 	dbw 63, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+FolageEvosAttacks:
+	dbbw EVOLVE_LEVEL, 10, BARREAU
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, STRING_SHOT
+	dbw 1, PROTECT
+	dbw 10, SAFEGUARD
+	db 0 ; no more level-up moves
+
+BarreauEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, CONFUSION
+	dbw 10, CONFUSION
+	dbw 13, REFLECT
+	dbw 13, LIGHT_SCREEN
+	dbw 18, GUST
+	dbw 23, WHIRLWIND
+	dbw 28, PSYBEAM
+	dbw 34, BARRIER
+	dbw 40, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 CrobatEvosAttacks:

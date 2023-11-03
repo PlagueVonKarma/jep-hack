@@ -109,6 +109,7 @@ Landmarks:
 	landmark 140, 116, FastShipName
 	assert_table_length NIHON_LANDMARK
 	landmark 92, 108, SilentHillsName
+	landmark 91, 108, Route49Name ; probably not correct
 	landmark 140, 60, BlueForestName
 	assert_table_length NUM_LANDMARKS
 
@@ -216,4 +217,5 @@ UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE¯TOWER@"
 SpecialMapName:      db "SPECIAL@"
 SilentHillsName:	 db "SILENT¯HILLS@"
+Route49Name:		 db "ROUTE 49@"
 BlueForestName:		 db "BLUE¯FOREST@"

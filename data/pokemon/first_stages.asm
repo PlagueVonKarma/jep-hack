@@ -202,6 +202,8 @@ FirstEvoStages::
 	dw LEDYBA
 	dw SPINARAK
 	dw SPINARAK   ;a8
+	dw FOLAGE
+	dw BARREAU
 	dw BITTYBAT
 	dw CHINCHOU
 	dw CHINCHOU

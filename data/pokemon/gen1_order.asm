@@ -289,4 +289,6 @@ Pokered_MonIndices:
 	db BURGELA
 	db TANGROWTH
 	db JUNGELA
+	db FOLAGE
+	db BARREAU
 	assert_table_length NUM_POKEMON - 1

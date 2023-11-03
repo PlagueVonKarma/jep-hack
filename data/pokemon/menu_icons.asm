@@ -203,6 +203,8 @@ MonMenuIcons:
 	db ICON_BUG         ; LEDIAN
 	db ICON_BUG         ; SPINARAK
 	db ICON_BUG         ; ARIADOS
+	db ICON_BUG         ; FOLAGE
+	db ICON_MOTH         ; BARREAU
 	db ICON_BAT         ; CROBAT
 	db ICON_FISH        ; CHINCHOU
 	db ICON_FISH        ; LANTURN

@@ -201,6 +201,8 @@ BitmasksPointers:
 	dw LedianBitmasks
 	dw SpinarakBitmasks
 	dw AriadosBitmasks
+	dw FolageBitmasks
+	dw BarreauBitmasks
 	dw CrobatBitmasks
 	dw ChinchouBitmasks
 	dw LanturnBitmasks

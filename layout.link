@@ -196,7 +196,6 @@ ROMX $46
 ROMX $47
 	"Battle Tower"
 ROMX $48
-	"Pic Pointers"
 	"Pics 1"
 ROMX $49
 	"Unown Pic Pointers"
@@ -318,6 +317,7 @@ ROMX $7f
 	"Stadium 2 Checksums"
 ROMX $80
 	"Cries"
+	"Pic Pointers"
 WRAM0
 	"Stack"
 	"Audio RAM"

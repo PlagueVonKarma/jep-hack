@@ -49,6 +49,8 @@ NewPokedexOrder:
 	dw LEDIAN
 	dw SPINARAK
 	dw ARIADOS
+	dw FOLAGE
+	dw BARREAU
 	dw GEODUDE
 	dw GRAVELER
 	dw GOLEM

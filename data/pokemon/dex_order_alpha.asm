@@ -13,6 +13,7 @@ AlphabeticalPokedexOrder:
 	dw ARIADOS
 	dw ARTICUNO
 	dw AZUMARILL
+	dw BARREAU
 	dw BAYLEEF
 	dw BEEDRILL
 	dw BELLIGNAN
@@ -75,6 +76,7 @@ AlphabeticalPokedexOrder:
 	dw FLAAFFY
 	dw FLAMBEAR
 	dw FLAREON
+	dw FOLAGE
 	dw FORRETRESS
 	dw FURRET
 	dw GASTLY

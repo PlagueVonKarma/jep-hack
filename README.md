@@ -38,6 +38,7 @@ In general, there have been many wild encounter tweaks. View this document for d
 
 - Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc.
 - Kanto wild encounters have generally higher levels to aid in improving the level curve.
+- Rock Smash now has variable and larger wild data, featuring rare, location-based Pokemon (eg. Corsola on the shore), and level adjustments to make them more appropriate.
 - Viridian Forest has been restored.
 - The Pewter Museum of Science has been restored.
 - Cerulean Cave has been restored, complete with a Mewtwo fight!

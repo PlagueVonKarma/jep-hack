@@ -2464,6 +2464,14 @@ BugCatcherGroup:
 	dw PARAS
 	db -1 ; end
 
+	next_list_item ; BUG_CATCHER (20)
+	db "SIONED@", TRAINERTYPE_NORMAL
+	db 42
+	dw BARREAU
+	db 42
+	dw CARAPTHOR
+	db -1 ; end
+
 	end_list_items
 
 FisherGroup:
@@ -5084,6 +5092,10 @@ TwinsGroup:
 	db -1 ; end
 
 	end_list_items
+
+; Added this to make room for more stuff. 
+; Yeah, they filled trainers to max capacity originally. Pretty impressive.
+SECTION "Enemy Trainer Parties 3", ROMX
 
 PokefanFGroup:
 	next_list_item ; POKEFANF (1)

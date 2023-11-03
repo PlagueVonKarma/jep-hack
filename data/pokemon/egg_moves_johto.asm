@@ -24,6 +24,8 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw SpinarakEggMoves
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Folage
+	dw NoEggMoves2 ; Barreau
 	dw NoEggMoves2
 	dw ChinchouEggMoves
 	dw NoEggMoves2

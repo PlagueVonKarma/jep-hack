@@ -201,6 +201,8 @@ AnimationIdlePointers:
 	dw LedianAnimationIdle
 	dw SpinarakAnimationIdle
 	dw AriadosAnimationIdle
+	dw FolageAnimationIdle
+	dw BarreauAnimationIdle
 	dw CrobatAnimationIdle
 	dw ChinchouAnimationIdle
 	dw LanturnAnimationIdle

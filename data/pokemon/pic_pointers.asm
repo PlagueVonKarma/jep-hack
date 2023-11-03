@@ -415,6 +415,10 @@ PokemonPicPointers::
 	dba SpinarakBackpic
 	dba AriadosFrontpic
 	dba AriadosBackpic
+	dba FolageFrontpic
+	dba FolageBackpic
+	dba BarreauFrontpic
+	dba BarreauBackpic
 	dba CrobatFrontpic
 	dba CrobatBackpic
 	dba ChinchouFrontpic

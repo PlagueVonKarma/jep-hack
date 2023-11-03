@@ -201,6 +201,8 @@ AnimationPointers:
 	dw LedianAnimation
 	dw SpinarakAnimation
 	dw AriadosAnimation
+	dw FolageAnimation
+	dw BarreauAnimation
 	dw CrobatAnimation
 	dw ChinchouAnimation
 	dw LanturnAnimation

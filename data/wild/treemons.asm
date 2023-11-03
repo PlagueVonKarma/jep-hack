@@ -43,7 +43,7 @@ TreeMonSet_Canyon:
 TreeMonSet_Town:
 ; common
 	dbbw 50, 10, SPEAROW
-	dbbw 15, 10, EKANS
+	dbbw 15, 10, FOLAGE
 	dbbw 15, 10, SPEAROW
 	dbbw 10, 10, AIPOM
 	dbbw  5, 10, AIPOM
@@ -63,16 +63,16 @@ TreeMonSet_Route:
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, SPINARAK
 	dbbw 15, 10, LEDYBA
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE
+	dbbw  5, 10, FOLAGE
 	dbbw  5, 10, EXEGGCUTE
 	db -1
 ; rare
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE
+	dbbw  5, 10, FOLAGE
 	dbbw  5, 10, EXEGGCUTE
 	db -1
 
@@ -89,8 +89,8 @@ TreeMonSet_Kanto:
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE
+	dbbw  5, 10, FOLAGE
 	dbbw  5, 10, EXEGGCUTE
 	db -1
 
@@ -99,16 +99,16 @@ TreeMonSet_Lake:
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, VENONAT
 	dbbw 15, 10, HOOTHOOT
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE
+	dbbw  5, 10, FOLAGE
 	dbbw  5, 10, EXEGGCUTE
 	db -1
 ; rare
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE
+	dbbw  5, 10, FOLAGE
 	dbbw  5, 10, EXEGGCUTE
 	db -1
 
@@ -117,14 +117,14 @@ TreeMonSet_Forest:
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
-	dbbw 10, 10, NOCTOWL
+	dbbw 10, 10, FOLAGE
 	dbbw  5, 10, BUTTERFREE
 	dbbw  5, 10, BEEDRILL
 	db -1
 ; rare
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, CATERPIE
-	dbbw 15, 10, WEEDLE
+	dbbw 15, 10, FOLAGE
 	dbbw 10, 10, HOOTHOOT
 	dbbw  5, 10, METAPOD
 	dbbw  5, 10, KAKUNA

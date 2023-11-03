@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, PALSSIO
+	getmonname STRING_BUFFER_3, FOLAGE
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke PALSSIO, 42, RARE_CANDY
+	givepoke FOLAGE, 42, RARE_CANDY
 	closetext
 	end
 

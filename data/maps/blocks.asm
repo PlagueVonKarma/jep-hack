@@ -1086,3 +1086,6 @@ CliffCave_Blocks:
 
 BlueForest_Blocks:
 	INCBIN "maps/BlueForest.ablk"
+	
+Route49_Blocks:
+	INCBIN "maps/Route49.ablk"

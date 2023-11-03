@@ -205,6 +205,8 @@ PokemonNames::
 	db "LEDIAN@@@@"
 	db "SPINARAK@@"
 	db "ARIADOS@@@"
+	db "FOLAGE@@@@"
+	db "BARREAU@@@"
 	db "CROBAT@@@@"
 	db "CHINCHOU@@"
 	db "LANTURN@@@"

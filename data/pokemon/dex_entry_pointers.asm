@@ -202,6 +202,8 @@ PokedexDataPointerTable:
 	dba LedianPokedexEntry
 	dba SpinarakPokedexEntry
 	dba AriadosPokedexEntry
+	dba FolagePokedexEntry
+	dba BarreauPokedexEntry
 	dba CrobatPokedexEntry
 	dba ChinchouPokedexEntry
 	dba LanturnPokedexEntry
