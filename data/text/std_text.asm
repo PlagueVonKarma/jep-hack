@@ -189,7 +189,7 @@ SilphPokegearText:
 
 ; Using TCRF's translation https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Text
 AnimeTVText1:
-	text "PRIMAPE is on a"
+	text "PRIMEAPE is on a"
 	line "rampage and ASH"
 	cont "is running away!"
 	
