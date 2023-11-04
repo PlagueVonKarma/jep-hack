@@ -397,6 +397,7 @@ ENDM
 	map_const TIME_CAPSULE,                                 5,  4 ;  4
 	map_const MOBILE_TRADE_ROOM,                            5,  4 ;  5
 	map_const MOBILE_BATTLE_ROOM,                           5,  4 ;  6
+	map_const NIHON_POKECENTER_2F,							8,  4 ;  7
 	endgroup
 
 	newgroup CELADON                                              ; 21
@@ -521,6 +522,7 @@ ENDM
 	map_const ROUTE_49,									   15,  9 ; 3
 	map_const QUIET_CAVE,								   27, 18 ; 4
 	map_const ROUTE_49_2,								   10, 18 ; 5
+	map_const SILENT_HILLS_POKECENTER_1F,				   10,  4 ; 6
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 27

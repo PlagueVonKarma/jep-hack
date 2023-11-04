@@ -48,15 +48,6 @@ INCLUDE "data/tilesets/players_room_collision.asm"
 
 SECTION "Tileset Data 2", ROMX
 
-TilesetPokecenterGFX::
-INCBIN "gfx/tilesets/pokecenter.2bpp.lz"
-
-TilesetPokecenterMeta::
-INCBIN "data/tilesets/pokecenter_metatiles.bin"
-
-TilesetPokecenterColl::
-INCLUDE "data/tilesets/pokecenter_collision.asm"
-
 TilesetPortGFX::
 INCBIN "gfx/tilesets/port.2bpp.lz"
 
@@ -574,3 +565,14 @@ INCBIN "data/tilesets/nihon_south_attributes.bin"
 
 TilesetNihonWestAttr::
 INCBIN "data/tilesets/nihon_west_attributes.bin"
+
+SECTION "Tileset Data 14", ROMX
+
+TilesetPokecenterGFX::
+INCBIN "gfx/tilesets/pokecenter.2bpp.lz"
+
+TilesetPokecenterMeta::
+INCBIN "data/tilesets/pokecenter_metatiles.bin"
+
+TilesetPokecenterColl::
+INCLUDE "data/tilesets/pokecenter_collision.asm"

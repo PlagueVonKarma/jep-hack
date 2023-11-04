@@ -504,3 +504,8 @@ INCLUDE "maps/Route49.asm"
 INCLUDE "maps/BlueForest.asm"
 INCLUDE "maps/QuietCave.asm"
 INCLUDE "maps/Route49_2.asm"
+
+SECTION "Map Scripts 26", ROMX
+
+INCLUDE "maps/SilentHillsPokecenter1F.asm"
+INCLUDE "maps/NihonPokecenter2F.asm"

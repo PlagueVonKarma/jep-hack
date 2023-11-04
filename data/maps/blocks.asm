@@ -1095,3 +1095,10 @@ QuietCave_Blocks:
 
 Route49_2_Blocks:
 	INCBIN "maps/Route49_2.ablk"
+
+; All Nihon Pokecenter1Fs go here.
+SilentHillsPokecenter1F_Blocks:
+	INCBIN "maps/NihonPokecenter1F.ablk"
+
+NihonPokecenter2F_Blocks:
+	INCBIN "maps/NihonPokecenter2F.ablk"
