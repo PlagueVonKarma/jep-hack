@@ -309,7 +309,6 @@ IndigoGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
 
-SilentHillsGroupSprites: ; Will have its own thing eventually
 BlueForestGroupSprites: ; Will have its own thing eventually
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE

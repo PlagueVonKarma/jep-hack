@@ -10,7 +10,7 @@ QuietCave_MapScripts:
 	def_callbacks
 
 QuietCaveSign1:
-	jumptext QuietCaveSign1Text
+	jumptext QuietCaveSign2Text ; swapped because im lazy and misplaced the signs
 
 QuietCaveSign1Text:
 	text "SILENT HILLS"
@@ -18,7 +18,7 @@ QuietCaveSign1Text:
 	done
 
 QuietCaveSign2:
-	jumptext Route49Sign2Text
+	jumptext QuietCaveSign1Text
 
 QuietCaveSign2Text:
 	text "OLD CITY"
@@ -30,9 +30,9 @@ QuietCaveBoy1:
 
 QuietCaveBoy1Text:
 	text "The wild #MON"
-	line "here are weak,"
-	cont "so my friends"
-	cont "train here!"
+	line "are weak, so my"
+	cont "friends come"
+	cont "here to train!"
 	
 	para "Test your strength"
 	line "against them!"
@@ -139,7 +139,7 @@ TrainerBugCatcherElwyn:
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherElwynBeatenText
+	writetext BugCatcherElwynAfterText
 	waitbutton
 	closetext
 	end
@@ -208,8 +208,8 @@ QuietCave_MapEvents:
 	def_warp_events
 	warp_event 53, 29, ROUTE_49, 1
 	warp_event 53, 30, ROUTE_49, 2
-;	warp_event  8,  0, ROUTE_49_2, 1
-;	warp_event  9,  0, ROUTE_49_2, 2
+	warp_event  8,  0, ROUTE_49_2, 1
+	warp_event  9,  0, ROUTE_49_2, 2
 
 	def_coord_events
 
@@ -219,7 +219,7 @@ QuietCave_MapEvents:
 
 	def_object_events
 	object_event 45, 28, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, QuietCaveBoy1, -1
-	object_event 45, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 2, TrainerBugCatcherSioned, -1
+	object_event 45, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherSioned, -1
 	object_event 33, 26, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 5, TrainerBeautyJulie, -1
 	object_event 31,  6, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherDick, -1
 	object_event 11, 27, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherElwyn, -1

@@ -56,4 +56,32 @@ NihonGrassWildMons:
 	dbw 35, SKARMORY
 	end_grass_wildmons
 
+	def_grass_wildmons ROUTE_49_2
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, RATTATA
+	dbw 31, PIDGEY
+	dbw 30, PIKACHU
+	dbw 31, MARILL
+	dbw 32, HOPPIP
+	dbw 32, EKANS
+	dbw 35, SUNFLORA
+	; day
+	dbw 30, RATTATA
+	dbw 31, PIDGEY
+	dbw 30, PIKACHU
+	dbw 31, MARILL
+	dbw 32, HOPPIP
+	dbw 32, EKANS
+	dbw 35, GIRAFARIG
+	; nite
+	dbw 30, RATTATA
+	dbw 31, PIDGEY
+	dbw 30, PIKACHU
+	dbw 31, MARILL
+	dbw 32, HOOTHOOT
+	dbw 32, EKANS
+	dbw 35, SKARMORY
+	end_grass_wildmons
+
 	db -1 ; end

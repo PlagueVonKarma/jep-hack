@@ -35,9 +35,9 @@ Route49Boy1:
 ; Minamitoku stated that the school the boy went to here is used to prepare for exams and the like, so this seems to be the best localisation.
 Route49Boy1Text:
 	text "I saw a strange"
-	line "#MON when I came"
-	cont "back from prep"
-	cont "school!"
+	line "#MON when I was"
+	cont "coming back from"
+	cont "prep school!"
 	done
 
 Route49Boy2:

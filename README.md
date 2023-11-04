@@ -59,6 +59,7 @@ In general, there have been many wild encounter tweaks. View this document for d
 - Wiz (Nihon Pokemon names)
 - Rezzo (GSC-specific advice)
 - Old Dance Jacket (GSC-specific advice)
+- Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
 
 # Sprite Credits
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, 

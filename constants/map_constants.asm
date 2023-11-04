@@ -520,6 +520,7 @@ ENDM
 	map_const DEBUG_ROOM,								   20, 20 ; 2
 	map_const ROUTE_49,									   15,  9 ; 3
 	map_const QUIET_CAVE,								   27, 18 ; 4
+	map_const ROUTE_49_2,								   10, 18 ; 5
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 27

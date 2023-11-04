@@ -375,8 +375,15 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 	
-	map_attributes SilentHills, SILENT_HILLS, $00, WEST ; this is on its own for now. add connections to mt. silver later.
+	map_attributes SilentHills, SILENT_HILLS, $00, WEST ; this is on its own for now. add connections to Prince later.
 	connection west, Route49, ROUTE_49, 0
+	
+	map_attributes Route49, ROUTE_49, $05, EAST | WEST
+	connection east, SilentHills, SILENT_HILLS, $05, 0
+	connection west, Route49_2, ROUTE_49_2, $05, 0
+	
+	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST
+	connection east, Route49, ROUTE_49, $05, 0
 
 	map_attributes Route23, ROUTE_23, $0f, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
@@ -713,6 +720,5 @@ ENDM
 	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $00, 0
 	map_attributes DebugRoom, DEBUG_ROOM, $05, 0 ; Debug Room :V
 	map_attributes CliffCave, CLIFF_CAVE, $00, 0
-	map_attributes Route49, ROUTE_49, $00, 0
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
-	map_attributes QuietCave, QUIET_CAVE, $00, 0
+	map_attributes QuietCave, QUIET_CAVE, $76, 0

@@ -1092,3 +1092,6 @@ Route49_Blocks:
 	
 QuietCave_Blocks:
 	INCBIN "maps/QuietCave.ablk"
+
+Route49_2_Blocks:
+	INCBIN "maps/Route49_2.ablk"

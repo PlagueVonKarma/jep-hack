@@ -1822,8 +1822,10 @@ BeautyGroup:
 
 	next_list_item ; BEAUTY (15)
 	db "THERESA@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
+	db 45
+	dw FURRET ; MIMEAR
+	db 48
+	dw CLEFABLE
 	db -1 ; end
 
 	next_list_item ; BEAUTY (16)
