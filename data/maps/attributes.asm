@@ -715,3 +715,4 @@ ENDM
 	map_attributes CliffCave, CLIFF_CAVE, $00, 0
 	map_attributes Route49, ROUTE_49, $00, 0
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
+	map_attributes QuietCave, QUIET_CAVE, $00, 0

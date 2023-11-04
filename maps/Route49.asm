@@ -2,7 +2,8 @@
 ; https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku
 
 	object_const_def
-	const ROUTE_49_BUG_CATCHER
+	const ROUTE_49_BOY1
+	const ROUTE_49_BOY2
 
 Route49_MapScripts:
 	def_scene_scripts
@@ -50,44 +51,12 @@ Route49Boy2Text:
 	cont "the #MON!"
 	done
 
-TrainerBugCatcherSioned:
-	trainer BUG_CATCHER, SIONED, EVENT_BEAT_BUG_CATCHER_SIONED, BugCatcherSionedSeenText, BugCatcherSionedBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BugCatcherSionedAfterText
-	waitbutton
-	closetext
-	end
-
-BugCatcherSionedSeenText:
-	text "I haven't seen"
-	line "you around here"
-	cont "before!"
-	done
-
-BugCatcherSionedBeatenText:
-	text "You're good,"
-	line "too!"
-	done
-
-BugCatcherSionedAfterText:
-	text "Foreigners often"
-	line "say this place"
-	cont "feels familiar."
-	
-	para "What's so special"
-	line "about this place,"
-	cont "anyhow?"
-	done
-
 Route49_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	;warp_event  8,  9, QUIET_CAVE, 1
-	;warp_event  8,  8, QUIET_CAVE, 1
+	warp_event  8,  9, QUIET_CAVE, 1
+	warp_event  8,  8, QUIET_CAVE, 2
 
 	def_coord_events
 
@@ -96,6 +65,5 @@ Route49_MapEvents:
 	bg_event 12,  7, BGEVENT_READ, Route49Sign2
 
 	def_object_events
-	object_event 23,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 5, TrainerBugCatcherSioned, -1
 	object_event 20,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route49Boy2, -1
 	object_event 19, 12, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route49Boy1, -1

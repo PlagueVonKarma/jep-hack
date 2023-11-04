@@ -962,6 +962,14 @@ SchoolboyGroup:
 	dw ZAP_CANNON, THUNDER_WAVE, LOCK_ON, SWIFT
 	db -1 ; end
 
+	next_list_item ; SCHOOLBOY (23)
+	db "PERO@", TRAINERTYPE_NORMAL
+	db 49
+	dw SLOWKING ; How did bro have a L9 slowking in the spaceworld demo bro 
+	db 49
+	dw CLOYSTER ; DISTURBAN
+	db -1 ; end
+
 	end_list_items
 
 BirdKeeperGroup:
@@ -1730,8 +1738,10 @@ BeautyGroup:
 
 	next_list_item ; BEAUTY (3)
 	db "JULIE@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
+	db 45
+	dw FURRET
+	db 48
+	dw PERSIAN ; Uses L10 Meowth in SW97 demo
 	db -1 ; end
 
 	next_list_item ; BEAUTY (4)
@@ -2466,10 +2476,22 @@ BugCatcherGroup:
 
 	next_list_item ; BUG_CATCHER (20)
 	db "SIONED@", TRAINERTYPE_NORMAL
+	db 40
+	dw PARASECT ; Uses L7 Paras in SW97 demo
 	db 42
 	dw BARREAU
 	db 42
 	dw CARAPTHOR
+	db -1 ; end
+
+	next_list_item ; BUG_CATCHER (21)
+	db "ELWYN@", TRAINERTYPE_NORMAL
+	db 40
+	dw LEDIAN ; Uses L9 Ledian in SW97 demo
+	db 42
+	dw TRICULES
+	db 42
+	dw BUTTERFREE
 	db -1 ; end
 
 	end_list_items
@@ -3804,8 +3826,10 @@ FirebreatherGroup:
 
 	next_list_item ; FIREBREATHER (2)
 	db "DICK@", TRAINERTYPE_NORMAL
-	db 17
-	dw CHARMELEON
+	db 43
+	dw MAGMAR ; MAGMORTAR
+	db 48
+	dw CHARIZARD
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (3)

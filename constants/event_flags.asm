@@ -1483,5 +1483,9 @@
 	const EVENT_BATTLE_TOWER_OPEN_CIVILIANS
 ; Unused: next 48 events
 
+	; Nihon Trainers
+	const EVENT_BEAT_BUG_CATCHER_ELWYN
+	const EVENT_BEAT_SCHOOLBOY_PERO
+
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800

@@ -1089,3 +1089,6 @@ BlueForest_Blocks:
 	
 Route49_Blocks:
 	INCBIN "maps/Route49.ablk"
+	
+QuietCave_Blocks:
+	INCBIN "maps/QuietCave.ablk"

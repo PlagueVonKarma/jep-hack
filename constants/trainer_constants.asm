@@ -151,6 +151,7 @@ DEF KRIS EQU __trainer_class__
 	const ALAN5
 	const CHAD4
 	const CHAD5
+	const PERO
 
 	trainerclass BIRD_KEEPER ; 18
 	const ROD
@@ -349,6 +350,7 @@ DEF KRIS EQU __trainer_class__
 	const ARNIE5
 	const WAYNE
 	const SIONED
+	const ELWYN
 	const BUG_CATCHER_DANE
 	const BUG_CATCHER_DION
 	const BUG_CATCHER_STACEY
