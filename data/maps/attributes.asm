@@ -375,7 +375,7 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 	
-	map_attributes SilentHills, SILENT_HILLS, $00, WEST ; this is on its own for now. add connections to Prince later.
+	map_attributes SilentHills, SILENT_HILLS, $05, WEST ; Add Prince and east connections later
 	connection west, Route49, ROUTE_49, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
@@ -725,3 +725,6 @@ ENDM
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
+	map_attributes SilversHouse, SILVERS_HOUSE, $00, 0
+	map_attributes CalsHouse1F, CALS_HOUSE_1F, $00, 0
+	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0

@@ -26,14 +26,14 @@ SilentHillsSign2:
 
 SilentHillsSign2Text:
 	text "SILENT HILLS"
-	line "The Silent Town"
+	line "Ever peaceful..."
 	done
 
 SilentHillsSign3:
 	jumptext SilentHillsSign3Text
 
 SilentHillsSign3Text:
-	text "TO LET"
+	text "TO LET" ; It technically says "HOUSE TO RENT" but this is more natural.
 	done
 
 SilentHillsSign4:
@@ -77,10 +77,10 @@ SilentHills_MapEvents:
 
 	def_warp_events
 	warp_event 13,  4, SILENT_HILLS_POKECENTER_1F, 1 ; Pokecenter
-	warp_event  5,  4, PLAYERS_HOUSE_1F, 1 ; Cal's House
+	warp_event  5,  4, CALS_HOUSE_1F, 1 ; Cal's House
 	warp_event 14, 11, PLAYERS_HOUSE_1F, 1 ; Blue's Lab
 	warp_event 15, 11, PLAYERS_HOUSE_1F, 1 ; Blue's Lab
-	warp_event  3, 12, PLAYERS_HOUSE_1F, 1 ; Silver's House
+	warp_event  3, 12, SILVERS_HOUSE, 1 ; Silver's House
 
 	def_coord_events
 

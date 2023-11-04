@@ -524,6 +524,9 @@ ENDM
 	map_const QUIET_CAVE,								   27, 18 ; 4
 	map_const ROUTE_49_2,								   10, 18 ; 5
 	map_const SILENT_HILLS_POKECENTER_1F,				   10,  4 ; 6
+	map_const SILVERS_HOUSE,								5,  5 ; 7
+	map_const CALS_HOUSE_1F,								5,  4 ; 8
+	map_const CALS_HOUSE_2F,								5,  4 ; 8
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 27

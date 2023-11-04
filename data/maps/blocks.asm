@@ -268,6 +268,7 @@ Route43_Blocks:
 Route39_Blocks:
 	INCBIN "maps/Route39.ablk"
 
+CalsHouse1F_Blocks: ; Identical layout, so let's compress.
 PlayersHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.ablk"
 
@@ -1109,3 +1110,9 @@ CinnabarPokecenter1F_Blocks:
 
 KantoPokecenter2F_Blocks:
 	INCBIN "maps/KantoPokecenter2F.ablk"
+
+SilversHouse_Blocks:
+	INCBIN "maps/SilversHouse.ablk"
+
+CalsHouse2F_Blocks:
+	INCBIN "maps/CalsHouse2F.ablk"

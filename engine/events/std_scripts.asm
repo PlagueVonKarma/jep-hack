@@ -56,6 +56,15 @@ StdScripts::
 	add_stdscript PCScript
 	add_stdscript GameCornerCoinVendorScript
 	add_stdscript HappinessCheckScript
+	add_stdscript PCJournalScript ; Added a bunch of Bookshelf-likes.
+	add_stdscript SilphPokegearScript ; These will aid in sprucing up the houses.
+	add_stdscript AnimeTVScript1
+	add_stdscript AnimeTVScript2
+	add_stdscript AnimeTVScript3
+	add_stdscript GenericSinkScript
+	add_stdscript GenericStoveScript
+	add_stdscript GenericFridgeScript
+	add_stdscript Nintendo64Script
 
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
@@ -174,6 +183,35 @@ PictureBookshelfScript:
 
 MagazineBookshelfScript:
 	farjumptext MagazineBookshelfText
+
+; From the SW97 Demo
+PCJournalScript:
+	farjumptext PCJournalText
+
+; From the SW97 Demo
+SilphPokegearScript:
+	farjumptext SilphPokegearText
+
+AnimeTVScript1:
+	farjumptext AnimeTVText1
+
+AnimeTVScript2:
+	farjumptext AnimeTVText2
+
+AnimeTVScript3:
+	farjumptext AnimeTVText3
+
+GenericSinkScript:
+	farjumptext GenericSinkText
+
+GenericStoveScript:
+	farjumptext GenericStoveText
+
+GenericFridgeScript:
+	farjumptext GenericFridgeText
+
+Nintendo64Script:
+	farjumptext Nintendo64Text
 
 TeamRocketOathScript:
 	farjumptext TeamRocketOathText

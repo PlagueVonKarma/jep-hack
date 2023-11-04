@@ -133,6 +133,118 @@ MagazineBookshelfText:
 	line "#MON GRAPH…"
 	done
 
+; From the SpaceWorld demo.
+; Localisation uses these sources;
+; TCRF https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Text
+; Minamitoku https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku
+PCJournalText:
+	text "#MON JOURNAL"
+	line "HOME PAGE..."
+	
+	para "A new #MON has"
+	line "been discovered!"
+	
+	para "It has been"
+	line "named SKARMORY."
+	
+	para "SKARMORY's wings"
+	line "are strong, and"
+	cont "as hard as steel."
+	
+	para "It is not only a"
+	line "bird #MON, but"
+	cont "also part of the"
+	cont "new steel type!"
+	
+	para "Further research"
+	line "is underway."
+	done
+
+; Using TCRF's translation https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Text
+SilphPokegearText:
+	text "Introducing the"
+	line "#GEAR!"
+	
+	para "A cutting edge"
+	line "watch just for"
+	cont "#MON TRAINERs!"
+	
+	para "It tells the time"
+	line "and makes calls,"
+	cont "but add a CARD"
+	cont "and it can even"
+	cont "show where you"
+	cont "are!"
+	
+	para "And to top it"
+	line "all off, you"
+	cont "can even listen"
+	cont "to the radio!"
+	
+	para "Order yours at..."
+	
+	para "It's SILPH CO.'s"
+	line "home page."
+	done
+
+; Using TCRF's translation https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Text
+AnimeTVText1:
+	text "PRIMAPE is on a"
+	line "rampage and ASH"
+	cont "is running away!"
+	
+	para "The #MON anime"
+	line "is on TV!"
+	done
+
+; Using Team Spaceworld's translation
+; https://docs.google.com/spreadsheets/d/13UD3ULHk08eaCTM6_F8GbvQz1HBw-VAO87KoA4sBT5c/edit#gid=0
+AnimeTVText2:
+	text "BULBASAUR is"
+	line "pouting..."
+	
+	para "ASH is in a"
+	line "bind..."
+	
+	para "The #MON anime!"
+	done
+
+; Using Team Spaceworld's translation
+; https://docs.google.com/spreadsheets/d/13UD3ULHk08eaCTM6_F8GbvQz1HBw-VAO87KoA4sBT5c/edit#gid=0
+AnimeTVText3:
+	text "PIKACHU is in"
+	line "a battle with"
+	cont "SPEAROW!"
+	
+	para "ASH is moved"
+	line "to tears..."
+	
+	para "The #MON anime!"
+	done
+
+GenericSinkText:
+	text "A spotless sink!"
+	line "What's on the menu"
+	cont "this evening?"
+	done
+
+GenericStoveText:
+	text "The fire in the"
+	line "stove is out,"
+	cont "safety first!"
+	done
+
+GenericFridgeText:
+	text "The inside..."
+	para "Is almost empty."
+	done
+
+Nintendo64Text: ; Yeah, I thought there was generic text too.
+	text "It's a Nintendo"
+	line "64! The latest"
+	cont "game console!"
+	done
+
 TeamRocketOathText:
 	text "TEAM ROCKET OATH"
 
