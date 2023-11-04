@@ -398,6 +398,7 @@ ENDM
 	map_const MOBILE_TRADE_ROOM,                            5,  4 ;  5
 	map_const MOBILE_BATTLE_ROOM,                           5,  4 ;  6
 	map_const NIHON_POKECENTER_2F,							8,  4 ;  7
+	map_const KANTO_POKECENTER_2F,							8,  4 ;  7
 	endgroup
 
 	newgroup CELADON                                              ; 21

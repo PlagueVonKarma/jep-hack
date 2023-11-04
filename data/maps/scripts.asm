@@ -509,3 +509,4 @@ SECTION "Map Scripts 26", ROMX
 
 INCLUDE "maps/SilentHillsPokecenter1F.asm"
 INCLUDE "maps/NihonPokecenter2F.asm"
+INCLUDE "maps/KantoPokecenter2F.asm"

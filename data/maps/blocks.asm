@@ -348,22 +348,12 @@ OlivinePokecenter1F_Blocks:
 MahoganyPokecenter1F_Blocks:
 EcruteakPokecenter1F_Blocks:
 BlackthornPokecenter1F_Blocks:
-CinnabarPokecenter1F_Blocks:
-CeruleanPokecenter1F_Blocks:
-Route10Pokecenter1F_Blocks:
 AzaleaPokecenter1F_Blocks:
 VioletPokecenter1F_Blocks:
 Route32Pokecenter1F_Blocks:
 GoldenrodPokecenter1F_Blocks:
-VermilionPokecenter1F_Blocks:
-PewterPokecenter1F_Blocks:
-FuchsiaPokecenter1F_Blocks:
-LavenderPokecenter1F_Blocks:
 SilverCavePokecenter1F_Blocks:
-CeladonPokecenter1F_Blocks:
 CianwoodPokecenter1F_Blocks:
-ViridianPokecenter1F_Blocks:
-SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
 LakeOfRagePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.ablk"
@@ -1102,3 +1092,20 @@ SilentHillsPokecenter1F_Blocks:
 
 NihonPokecenter2F_Blocks:
 	INCBIN "maps/NihonPokecenter2F.ablk"
+
+; This restores the Kanto Pokemon Centre blockset.
+; Factoring the above, this means each region has its own version. Further immersion get!
+ViridianPokecenter1F_Blocks:
+PewterPokecenter1F_Blocks:
+CeruleanPokecenter1F_Blocks:
+VermilionPokecenter1F_Blocks:
+CeladonPokecenter1F_Blocks:
+FuchsiaPokecenter1F_Blocks:
+Route10Pokecenter1F_Blocks:
+LavenderPokecenter1F_Blocks:
+SaffronPokecenter1F_Blocks:
+CinnabarPokecenter1F_Blocks:
+	INCBIN "maps/KantoPokecenter1F.ablk"
+
+KantoPokecenter2F_Blocks:
+	INCBIN "maps/KantoPokecenter2F.ablk"

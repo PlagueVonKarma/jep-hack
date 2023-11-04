@@ -80,7 +80,7 @@ VermilionPokecenter1F_MapEvents:
 	def_warp_events
 	warp_event  3,  7, VERMILION_CITY, 2
 	warp_event  4,  7, VERMILION_CITY, 2
-	warp_event  0,  7, POKECENTER_2F, 1
+	warp_event  0,  7, KANTO_POKECENTER_2F, 1
 
 	def_coord_events
 
