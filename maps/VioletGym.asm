@@ -18,26 +18,8 @@ VioletGymFalknerScript:
 	waitbutton
 	closetext
 	winlosstext FalknerWinLossText, 0
-	
-	; Gym Scaling code
-	; This is incredibly inefficient, but so is the phone code that does a similar thing, so...cope. Seethe. Mald. Sue me.
-	; Also, this code has a flaw in that it presumes you went through the default gym order...
-	
-	loadtrainer FALKNER, FALKNER2
-	checkflag EVENT_BEAT_BUGSY
-	iftrue .okyoucanloadnow
-	loadtrainer FALKNER, FALKNER3
-	checkflag EVENT_BEAT_WHITNEY
-	iftrue .okyoucanloadnow
-	loadtrainer FALKNER, FALKNER4
-	checkflag EVENT_BEAT_MORTY
-	iftrue .okyoucanloadnow
-	
-	; If nothing else has been beaten, then Falkner hasn't been fought before, so we can load this now. It's slow, though.
 	loadtrainer FALKNER, FALKNER1
-
-.okyoucanloadnow
-	startbattle ; Now start the battle.
+	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_FALKNER
 	opentext
