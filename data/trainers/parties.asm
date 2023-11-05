@@ -13,13 +13,58 @@ FalknerGroup:
 	next_list_item ; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
 	db 7
-	dw PIDGEY
-	dw TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
+	dw HOOTHOOT
+	dw TACKLE, GROWL, FORESIGHT, NO_MOVE
 	db 9
 	dw PIDGEOTTO
-	dw TACKLE, MUD_SLAP, GUST, NO_MOVE
+	dw TACKLE, SAND_ATTACK, GUST, MUD_SLAP
 	db -1 ; end
-
+	
+	next_list_item ; FALKNER (2)
+	db "FALKNER@", TRAINERTYPE_MOVES
+	db 14
+	dw HOOTHOOT
+	dw TACKLE, PECK, FORESIGHT, MUD_SLAP
+	db 14
+	dw SPEAROW
+	dw PECK, MUD_SLAP, LEER, FURY_ATTACK
+	db 18
+	dw PIDGEOTTO
+	dw SWIFT, SAND_ATTACK, GUST, MUD_SLAP
+	db -1 ; end
+	
+	next_list_item ; FALKNER (3)
+	db "FALKNER@", TRAINERTYPE_MOVES
+	db 18
+	dw HOOTHOOT
+	dw TACKLE, PECK, HYPNOSIS, MUD_SLAP
+	db 18
+	dw SPEAROW
+	dw PECK, MUD_SLAP, LEER, FURY_ATTACK
+	db 19
+	dw MURKROW
+	dw PECK, PURSUIT, HAZE, MUD_SLAP
+	db 21
+	dw PIDGEOTTO
+	dw SWIFT, SAND_ATTACK, GUST, MUD_SLAP
+	db -1 ; end
+	
+	next_list_item ; FALKNER (4)
+	db "FALKNER@", TRAINERTYPE_MOVES
+	db 21
+	dw NOCTOWL
+	dw TACKLE, PECK, HYPNOSIS, MUD_SLAP
+	db 21
+	dw FEAROW
+	dw PECK, MUD_SLAP, LEER, FURY_ATTACK
+	db 22
+	dw MURKROW
+	dw PECK, PURSUIT, HAZE, MUD_SLAP
+	db 24
+	dw PIDGEOTTO
+	dw SWIFT, SAND_ATTACK, GUST, MUD_SLAP
+	db -1 ; end
+	
 	end_list_items
 
 WhitneyGroup:
@@ -28,6 +73,9 @@ WhitneyGroup:
 	db 18
 	dw CLEFAIRY
 	dw DOUBLESLAP, MIMIC, ENCORE, METRONOME
+	db 18
+	dw SNUBBULL
+	dw TACKLE, TAIL_WHIP, CHARM, BITE ; It learns Scary Face, but I don't think Whitney would like it, and it does need Tackle...
 	db 20
 	dw MILTANK
 	dw ROLLOUT, ATTRACT, STOMP, MILK_DRINK
@@ -39,11 +87,11 @@ BugsyGroup:
 	next_list_item ; BUGSY (1)
 	db "BUGSY@", TRAINERTYPE_MOVES
 	db 14
-	dw METAPOD
+	dw METAPOD ; I think keeping this is important considering what Bugsy is doing - researching move retention
 	dw TACKLE, STRING_SHOT, HARDEN, NO_MOVE
 	db 14
-	dw KAKUNA
-	dw POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
+	dw YANMA
+	dw LEECH_LIFE, FORESIGHT, QUICK_ATTACK, DOUBLE_TEAM
 	db 16
 	dw SCYTHER
 	dw QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
