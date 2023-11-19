@@ -254,4 +254,5 @@ MoveNames::
 	li "ROCK HEAD"
 	li "ROCK SLASH"
 	li "CROSS CUTTER"
+	li "MEGAPHONE"
 	assert_list_length NUM_ATTACKS

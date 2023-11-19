@@ -8,23 +8,23 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, FOLAGE
+	getmonname STRING_BUFFER_3, MISDREAVUS
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke FOLAGE, 42, RARE_CANDY
+	givepoke MISDREAVUS, 42, DUSK_STONE
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, CUBBURN
+	getmonname STRING_BUFFER_3, HERACROSS
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke CUBBURN, 42, RARE_CANDY
+	givepoke HERACROSS, 47, MASTER_BALL
 	closetext
 	end
 
@@ -39,34 +39,34 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry GOROCHU
+	cry DUNSPARCE
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon GOROCHU, 40
+	loadwildmon DUNSPARCE, 40
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextA:
-	text "Waaaake!!"
+	text "Duuuun!!"
 	done
 	
 DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry SHI_SHI
+	cry BIPULLA
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon SHI_SHI, 40
+	loadwildmon BIPULLA, 41
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextB:
-	text "Komaiiii!"
+	text "Hissss!"
 	done
 
 DebugFlyScript:

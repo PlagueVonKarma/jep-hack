@@ -3,6 +3,7 @@
 AlphabeticalPokedexOrder:
 	table_width 2, AlphabeticalPokedexOrder
 	dw ABRA
+	dw AERCROW
 	dw AERODACTYL
 	dw AIPOM
 	dw ALAKAZAM
@@ -16,9 +17,11 @@ AlphabeticalPokedexOrder:
 	dw BARREAU
 	dw BAYLEEF
 	dw BEEDRILL
+	dw BELLEDAM
 	dw BELLIGNAN
 	dw BELLOSSOM
 	dw BELLSPROUT
+	dw BIPULLA
 	dw BITTYBAT
 	dw BLASTOISE
 	dw BLASTYKE
@@ -27,6 +30,7 @@ AlphabeticalPokedexOrder:
 	dw BULBASAUR
 	dw BURGELA
 	dw BUTTERFREE
+	dw CALFLAC
 	dw CARAPTHOR
 	dw CATERPIE
 	dw CELEBI
@@ -59,6 +63,7 @@ AlphabeticalPokedexOrder:
 	dw DRAGONITE
 	dw DRATINI
 	dw DROWZEE
+	dw DUDUNSPARCE
 	dw DUGTRIO
 	dw DUNSPARCE
 	dw EEVEE
@@ -71,6 +76,7 @@ AlphabeticalPokedexOrder:
 	dw EXEGGCUTE
 	dw EXEGGUTOR
 	dw FARFETCH_D
+	dw FARIGIRAF
 	dw FEAROW
 	dw FERALIGATR
 	dw FLAAFFY
@@ -160,6 +166,8 @@ AlphabeticalPokedexOrder:
 	dw MEWTWO
 	dw MILTANK
 	dw MISDREAVUS
+	dw MISMAGIUS
+	dw MOIBELLE
 	dw MOLTRES
 	dw MR__MIME
 	dw MUK
@@ -186,6 +194,7 @@ AlphabeticalPokedexOrder:
 	dw PARASPOR
 	dw PERRSERKER
 	dw PERSIAN
+	dw PHANDARIN
 	dw PHANPY
 	dw PICHU
 	dw PIDGEOT
@@ -249,6 +258,7 @@ AlphabeticalPokedexOrder:
 	dw STARMIE
 	dw STARYU
 	dw STEELIX
+	dw STROMEN
 	dw SUDOWOODO
 	dw SUICUNE
 	dw SUNFLORA
@@ -272,6 +282,7 @@ AlphabeticalPokedexOrder:
 	dw UMBREON
 	dw UNOWN
 	dw URSARING
+	dw URSALUNA
 	dw VAPOREON
 	dw VENOMOTH
 	dw VENONAT

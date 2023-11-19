@@ -219,6 +219,8 @@ PokemonCries::
 	mon_cry CRY_TOGETIC,      59,   56 ; TOGETIC
 	mon_cry CRY_NATU,       -103,  256 ; NATU
 	mon_cry CRY_NATU,       -167,  360 ; XATU
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MOIBELLE	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BELLEDAM	(incomplete)
 	mon_cry CRY_MAREEP,       34,  216 ; MAREEP
 	mon_cry CRY_MAREEP,       -7,  384 ; FLAAFFY
 	mon_cry CRY_AMPHAROS,   -124,  232 ; AMPHAROS
@@ -233,6 +235,7 @@ PokemonCries::
 	mon_cry CRY_AIPOM,       -81,  232 ; AIPOM
 	mon_cry CRY_MARILL,      299,  184 ; SUNKERN
 	mon_cry CRY_SUNFLORA,    -32,  384 ; SUNFLORA
+	mon_cry CRY_NIDORAN_M,     0,    0 ; AERCROW	(incomplete)
 	mon_cry CRY_TOTODILE,     49,  200 ; YANMA
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER
 	mon_cry CRY_WOOPER,     -198,  320 ; QUAGSIRE
@@ -244,12 +247,19 @@ PokemonCries::
 	mon_cry CRY_MARILL,      -31,  384 ; MURKROW
 	mon_cry CRY_SLOWKING,    260,  512 ; SLOWKING
 	mon_cry CRY_HOOTHOOT,    304,  232 ; MISDREAVUS
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MISMAGIUS	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; STROMEN	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; PHANDARIN	(incomplete)
 	mon_cry CRY_HOOTHOOT,    354,  256 ; UNOWN
 	mon_cry CRY_AMPHAROS,    635,  324 ; WOBBUFFET
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BIPULLA	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; CALFLAC	(incomplete)
 	mon_cry CRY_GIRAFARIG,    65,  512 ; GIRAFARIG
+	mon_cry CRY_NIDORAN_M,     0,    0 ; FARIGIRAF	(incomplete)
 	mon_cry CRY_SLOWKING,    128,  256 ; PINECO
 	mon_cry CRY_SLOWKING,      0,  384 ; FORRETRESS
 	mon_cry CRY_DUNSPARCE,   452,  256 ; DUNSPARCE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; DUDUNSPARCE (incomplete)
 	mon_cry CRY_GLIGAR,     -258,  256 ; GLIGAR
 	mon_cry CRY_TYPHLOSION,  239,  247 ; STEELIX
 	mon_cry CRY_DUNSPARCE,   274,  232 ; SNUBBULL
@@ -261,6 +271,7 @@ PokemonCries::
 	mon_cry CRY_WOOPER,       83,  175 ; SNEASEL
 	mon_cry CRY_TEDDIURSA,  1954,  110 ; TEDDIURSA
 	mon_cry CRY_TEDDIURSA,  1600,  216 ; URSARING
+	mon_cry CRY_NIDORAN_M,     0,    0 ; URSALUNA	(incomplete)
 	mon_cry CRY_SLUGMA,     -472,  320 ; SLUGMA
 	mon_cry CRY_MAGCARGO,   -525,  448 ; MAGCARGO
 	mon_cry CRY_CYNDAQUIL,   510,  320 ; SWINUB

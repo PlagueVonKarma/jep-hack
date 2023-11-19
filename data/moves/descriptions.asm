@@ -259,6 +259,7 @@ MoveDescriptions1:
 	dw RockHeadDescription
 	dw RockSlashDescription
 	dw CrossCutterDescription
+	dw MegaphoneDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1279,3 +1280,7 @@ RockSlashDescription:
 CrossCutterDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
+	
+MegaphoneDescription:
+	db   "Reduces the foe's"
+	next "SPCL.ATK.@"

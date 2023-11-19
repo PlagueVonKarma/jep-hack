@@ -214,6 +214,8 @@ FirstEvoStages::
 	dw TOGEPI     ;b0
 	dw NATU
 	dw NATU
+	dw MOIBELLE
+	dw MOIBELLE
 	dw MAREEP
 	dw MAREEP
 	dw MAREEP
@@ -228,6 +230,7 @@ FirstEvoStages::
 	dw AIPOM
 	dw SUNKERN
 	dw SUNKERN    ;c0
+	dw AERCROW
 	dw YANMA
 	dw WOOPER
 	dw WOOPER
@@ -239,11 +242,18 @@ FirstEvoStages::
 	dw MURKROW
 	dw SLOWPOKE
 	dw MISDREAVUS ;c8
+	dw MISDREAVUS
+	dw STROMEN
+	dw STROMEN
 	dw UNOWN
 	dw WOBBUFFET
-	dw GIRAFARIG
+	dw BIPULLA
+	dw BIPULLA
+	dw BIPULLA
+	dw BIPULLA
 	dw PINECO
 	dw PINECO
+	dw DUNSPARCE
 	dw DUNSPARCE
 	dw GLIGAR
 	dw ONIX       ;d0
@@ -255,6 +265,7 @@ FirstEvoStages::
 	dw HERACROSS
 	dw SNEASEL
 	dw TEDDIURSA  ;d8
+	dw TEDDIURSA
 	dw TEDDIURSA
 	dw SLUGMA
 	dw SLUGMA

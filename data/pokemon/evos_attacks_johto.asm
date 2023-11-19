@@ -36,6 +36,8 @@ EvosAttacksPointers2::
 	dw TogeticEvosAttacks
 	dw NatuEvosAttacks
 	dw XatuEvosAttacks
+	dw MoibelleEvoAttacks
+	dw BelledamEvoAttacks
 	dw MareepEvosAttacks
 	dw FlaaffyEvosAttacks
 	dw AmpharosEvosAttacks
@@ -50,6 +52,7 @@ EvosAttacksPointers2::
 	dw AipomEvosAttacks
 	dw SunkernEvosAttacks
 	dw SunfloraEvosAttacks
+	dw AercrowEvosAttacks
 	dw YanmaEvosAttacks
 	dw WooperEvosAttacks
 	dw QuagsireEvosAttacks
@@ -61,12 +64,19 @@ EvosAttacksPointers2::
 	dw MurkrowEvosAttacks
 	dw SlowkingEvosAttacks
 	dw MisdreavusEvosAttacks
+	dw MismagiusEvosAttacks
+	dw StromenEvosAttacks
+	dw PhandarinEvosAttacks
 	dw UnownEvosAttacks
 	dw WobbuffetEvosAttacks
+	dw BipullaEvosAttacks
+	dw CalflacEvosAttacks
 	dw GirafarigEvosAttacks
+	dw FarigirafEvosAttacks
 	dw PinecoEvosAttacks
 	dw ForretressEvosAttacks
 	dw DunsparceEvosAttacks
+	dw DudunsparceEvosAttacks
 	dw GligarEvosAttacks
 	dw SteelixEvosAttacks
 	dw SnubbullEvosAttacks
@@ -78,6 +88,7 @@ EvosAttacksPointers2::
 	dw SneaselEvosAttacks
 	dw TeddiursaEvosAttacks
 	dw UrsaringEvosAttacks
+	dw UrsalunaEvosAttacks
 	dw SlugmaEvosAttacks
 	dw MagcargoEvosAttacks
 	dw SwinubEvosAttacks
@@ -367,9 +378,10 @@ HoothootEvosAttacks:
 	dbw 6, FORESIGHT
 	dbw 11, PECK
 	dbw 16, HYPNOSIS
-	dbw 22, REFLECT
+	dbw 22, MEGAPHONE
 	dbw 28, TAKE_DOWN
 	dbw 34, CONFUSION
+	dbw 42, REFLECT
 	dbw 48, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -382,9 +394,10 @@ NoctowlEvosAttacks:
 	dbw 6, FORESIGHT
 	dbw 11, PECK
 	dbw 16, HYPNOSIS
-	dbw 25, REFLECT
-	dbw 33, TAKE_DOWN
-	dbw 41, CONFUSION
+	dbw 23, MEGAPHONE
+	dbw 31, TAKE_DOWN
+	dbw 39, CONFUSION
+	dbw 49, REFLECT
 	dbw 57, DREAM_EATER
 	db 0 ; no more level-up moves
 
@@ -588,6 +601,35 @@ XatuEvosAttacks:
 	dbw 50, CONFUSE_RAY
 	dbw 65, PSYCHIC_M
 	db 0 ; no more level-up moves
+	
+MoibelleEvoAttacks:
+	dbbw EVOLVE_LEVEL, 28, BELLEDAM
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, GROWL
+	dbw 7, TAIL_WHIP
+	dbw 13, HEAL_BELL
+	dbw 19, FAINT_ATTACK
+	dbw 25, LOVELY_KISS
+	dbw 25, SWEET_KISS
+	dbw 34, FURY_SWIPES
+	dbw 43, ATTRACT
+	;dbw 50, COIN_HURL
+	db 0 ; no more level-up moves
+
+BelledamEvoAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, GROWL
+	dbw 7, TAIL_WHIP
+	dbw 13, HEAL_BELL
+	dbw 19, FAINT_ATTACK
+	dbw 25, LOVELY_KISS
+	dbw 25, SWEET_KISS
+	dbw 37, FURY_SWIPES
+	dbw 49, ATTRACT
+	;dbw 59, COIN_HURL
+	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
 	dbbw EVOLVE_LEVEL, 15, FLAAFFY
@@ -769,6 +811,19 @@ SunfloraEvosAttacks:
 	dbw 31, PETAL_DANCE
 	dbw 46, SOLARBEAM
 	db 0 ; no more level-up moves
+	
+AercrowEvosAttacks:
+	db 0; no more evolutions
+	dbw 1, PECK
+	dbw 1, MEGAPHONE
+	dbw 8, SUPERSONIC
+	dbw 14, FLAIL
+	dbw 21, SCARY_FACE
+	dbw 28, WING_ATTACK
+	dbw 35, PETAL_DANCE
+	dbw 42, FORESIGHT
+	dbw 50, RAZOR_WIND
+	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:
 	db 0 ; no more evolutions
@@ -902,6 +957,7 @@ SlowkingEvosAttacks:
 	db 0 ; no more level-up moves
 
 MisdreavusEvosAttacks:
+	dbbw EVOLVE_ITEM, DUSK_STONE, MISMAGIUS
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, PSYWAVE
@@ -911,6 +967,43 @@ MisdreavusEvosAttacks:
 	dbw 27, PSYBEAM
 	dbw 36, PAIN_SPLIT
 	dbw 46, PERISH_SONG
+	db 0 ; no more level-up moves
+	
+MismagiusEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GROWL
+	dbw 1, PSYWAVE
+	dbw 1, SPITE
+	dbw 1, CONFUSE_RAY
+	dbw 25, PSYCH_UP
+	db 0 ; no more level-up moves
+	
+StromenEvosAttacks:
+	dbbw EVOLVE_LEVEL, 1, PHANDARIN
+	db 0 ; no more evolutions
+	dbw 1, LEECH_LIFE
+	dbw 8, DISABLE
+	dbw 16, DESTINY_BOND
+	dbw 25, SPITE
+	dbw 35, CONFUSION
+	dbw 46, NIGHT_SHADE
+	dbw 58, SUBSTITUTE
+	dbw 71, PSYCHIC_M
+	dbw 85, PAIN_SPLIT
+	dbw 100, CURSE
+	db 0 ; no more level-up moves
+	
+PhandarinEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, LEECH_LIFE
+	dbw 8, DISABLE
+	dbw 16, SPLASH
+	dbw 25, SPITE
+	dbw 35, POUND ; DRAINING_KISS
+	dbw 46, NIGHT_SHADE
+	dbw 58, SUBSTITUTE
+	dbw 71, POUND ; DAZZLING_GLEAM
+	dbw 85, PAIN_SPLIT
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
@@ -926,18 +1019,62 @@ WobbuffetEvosAttacks:
 	dbw 1, DESTINY_BOND
 	db 0 ; no more level-up moves
 
-GirafarigEvosAttacks:
+BipullaEvosAttacks:
+	dbbw EVOLVE_LEVEL, 17, CALFLAC
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
-	dbw 1, CONFUSION
-	dbw 1, STOMP
 	dbw 7, CONFUSION
-	dbw 13, STOMP
+	dbw 13, LICK
 	dbw 20, AGILITY
-	dbw 30, BATON_PASS
+	dbw 27, BATON_PASS
+	dbw 35, PSYBEAM
+	dbw 42, CRUNCH
+	dbw 45, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+CalflacEvosAttacks:
+	dbbw EVOLVE_LEVEL, 29, GIRAFARIG
+	db 0 ; no more Evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 7, CONFUSION
+	dbw 13, LICK
+	dbw 17, STOMP
+	dbw 22, AGILITY
+	dbw 31, BATON_PASS
 	dbw 41, PSYBEAM
-	dbw 54, CRUNCH
+	dbw 50, CRUNCH
+	dbw 55, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+GirafarigEvosAttacks:
+	dbbw EVOLVE_LEVEL, 44, FARIGIRAF
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 7, CONFUSION
+	dbw 13, LICK
+	dbw 17, STOMP
+	dbw 22, AGILITY
+	dbw 32, BATON_PASS
+	dbw 44, PSYBEAM
+	dbw 55, CRUNCH
+	dbw 62, PSYCHIC_M
+	db 0 ; no more level-up moves
+	
+FarigirafEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 7, CONFUSION
+	dbw 13, LICK
+	dbw 17, STOMP
+	dbw 22, AGILITY
+	dbw 32, BATON_PASS
+	dbw 44, PSYBEAM
+	dbw 56, CRUNCH
+	dbw 65, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 PinecoEvosAttacks:
@@ -969,6 +1106,7 @@ ForretressEvosAttacks:
 	db 0 ; no more level-up moves
 
 DunsparceEvosAttacks:
+	dbbw EVOLVE_LEVEL, 33, DUDUNSPARCE
 	db 0 ; no more evolutions
 	dbw 1, RAGE
 	dbw 5, DEFENSE_CURL
@@ -977,6 +1115,20 @@ DunsparceEvosAttacks:
 	dbw 26, PURSUIT
 	dbw 30, SCREECH
 	dbw 38, TAKE_DOWN
+	db 0 ; no more level-up moves
+	
+DudunsparceEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, RAGE
+	dbw 5, DEFENSE_CURL
+	dbw 13, GLARE
+	dbw 18, SPITE
+	dbw 26, PURSUIT
+	dbw 30, SCREECH
+	dbw 33, HORN_DRILL
+	dbw 41, TAKE_DOWN
+	dbw 48, DOUBLE_EDGE
+	dbw 56, GUST
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:
@@ -1076,9 +1228,10 @@ HeracrossEvosAttacks:
 	dbw 6, HORN_ATTACK
 	dbw 12, ENDURE
 	dbw 19, FURY_ATTACK
-	dbw 27, COUNTER
-	dbw 35, TAKE_DOWN
-	dbw 44, REVERSAL
+	dbw 26, MEGAPHONE
+	dbw 33, COUNTER
+	dbw 40, TAKE_DOWN
+	dbw 47, REVERSAL
 	dbw 54, MEGAHORN
 	db 0 ; no more level-up moves
 
@@ -1111,6 +1264,7 @@ TeddiursaEvosAttacks:
 	db 0 ; no more level-up moves
 
 UrsaringEvosAttacks:
+	dbbw EVOLVE_ITEM, PEAT_BLOCK, URSALUNA
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -1122,6 +1276,21 @@ UrsaringEvosAttacks:
 	dbw 29, REST
 	dbw 39, SLASH
 	dbw 49, SNORE
+	dbw 59, THRASH
+	db 0 ; no more level-up moves
+	
+UrsalunaEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 8, LICK
+	dbw 15, FURY_SWIPES
+	dbw 22, FAINT_ATTACK
+	dbw 29, REST
+	dbw 39, SLASH
+	dbw 44, MOONLIGHT
+	dbw 49, SNORE
+	dbw 54, EARTHQUAKE
 	dbw 59, THRASH
 	db 0 ; no more level-up moves
 

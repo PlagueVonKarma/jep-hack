@@ -228,6 +228,8 @@ Pokered_MonIndices:
 	db TOGETIC
 	db NATU
 	db XATU
+	db MOIBELLE
+	db BELLEDAM
 	db MAREEP
 	db FLAAFFY
 	db AMPHAROS
@@ -242,6 +244,7 @@ Pokered_MonIndices:
 	db AIPOM
 	db SUNKERN
 	db SUNFLORA
+	db AERCROW
 	db YANMA
 	db WOOPER
 	db QUAGSIRE
@@ -250,12 +253,19 @@ Pokered_MonIndices:
 	db MURKROW
 	db SLOWKING
 	db MISDREAVUS
+	db MISMAGIUS
+	db STROMEN
+	db PHANDARIN
 	db UNOWN
 	db WOBBUFFET
+	db BIPULLA
+	db CALFLAC
 	db GIRAFARIG
+	db FARIGIRAF
 	db PINECO
 	db FORRETRESS
 	db DUNSPARCE
+	db DUDUNSPARCE
 	db GLIGAR
 	db STEELIX
 	db SNUBBULL
@@ -266,6 +276,7 @@ Pokered_MonIndices:
 	db SHI_SHI
 	db MUNCHLAX
 	db KLEAVOR
+	db URSALUNA
 	db GOROCHU
 	db GENTLARVA
 	db PUPAL

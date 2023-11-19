@@ -233,6 +233,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const TOGETIC    ; b0
 	const NATU       ; b1
 	const XATU       ; b2
+	const MOIBELLE
+	const BELLEDAM
 	const MAREEP     ; b3
 	const FLAAFFY    ; b4
 	const AMPHAROS   ; b5
@@ -247,6 +249,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const AIPOM      ; be
 	const SUNKERN    ; bf
 	const SUNFLORA   ; c0
+	const AERCROW
 	const YANMA      ; c1
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3
@@ -258,12 +261,19 @@ DEF JOHTO_POKEMON EQU const_value
 	const MURKROW    ; c6
 	const SLOWKING   ; c7
 	const MISDREAVUS ; c8
+	const MISMAGIUS  
+	const STROMEN
+	const PHANDARIN
 	const UNOWN      ; c9
 	const WOBBUFFET  ; ca
+	const BIPULLA
+	const CALFLAC
 	const GIRAFARIG  ; cb
+	const FARIGIRAF
 	const PINECO     ; cc
 	const FORRETRESS ; cd
 	const DUNSPARCE  ; ce
+	const DUDUNSPARCE
 	const GLIGAR     ; cf
 	const STEELIX    ; d0
 	const SNUBBULL   ; d1
@@ -275,6 +285,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const SNEASEL    ; d7
 	const TEDDIURSA  ; d8
 	const URSARING   ; d9
+	const URSALUNA
 	const SLUGMA     ; da
 	const MAGCARGO   ; db
 	const SWINUB     ; dc

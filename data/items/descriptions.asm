@@ -147,7 +147,7 @@ ItemDescriptions:
 	dw DragonFangDesc
 	dw BlkAuguriteDesc
 	dw LeftoversDesc
-	dw QuestionMarkDesc
+	dw PeatBlockDesc
 	dw QuestionMarkDesc
 	dw QuestionMarkDesc
 	dw MysteryBerryDesc
@@ -957,5 +957,9 @@ ShinyStoneDesc:
 	next "kinds of #MON.@"
 
 BlkAuguriteDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
+	
+PeatBlockDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"

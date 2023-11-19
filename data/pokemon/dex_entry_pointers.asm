@@ -214,6 +214,8 @@ PokedexDataPointerTable:
 	dba TogeticPokedexEntry
 	dba NatuPokedexEntry
 	dba XatuPokedexEntry
+	dba MoibellePokedexEntry
+	dba BelledamPokedexEntry
 	dba MareepPokedexEntry
 	dba FlaaffyPokedexEntry
 	dba AmpharosPokedexEntry
@@ -228,6 +230,7 @@ PokedexDataPointerTable:
 	dba AipomPokedexEntry
 	dba SunkernPokedexEntry
 	dba SunfloraPokedexEntry
+	dba AercrowPokedexEntry
 	dba YanmaPokedexEntry
 	dba WooperPokedexEntry
 	dba QuagsirePokedexEntry
@@ -239,12 +242,19 @@ PokedexDataPointerTable:
 	dba MurkrowPokedexEntry
 	dba SlowkingPokedexEntry
 	dba MisdreavusPokedexEntry
+	dba MismagiusPokedexEntry
+	dba StromenPokedexEntry
+	dba PhandarinPokedexEntry
 	dba UnownPokedexEntry
 	dba WobbuffetPokedexEntry
+	dba BipullaPokedexEntry
+	dba CalflacPokedexEntry
 	dba GirafarigPokedexEntry
+	dba FarigirafPokedexEntry
 	dba PinecoPokedexEntry
 	dba ForretressPokedexEntry
 	dba DunsparcePokedexEntry
+	dba DudunsparcePokedexEntry
 	dba GligarPokedexEntry
 	dba SteelixPokedexEntry
 	dba SnubbullPokedexEntry
@@ -256,6 +266,7 @@ PokedexDataPointerTable:
 	dba SneaselPokedexEntry
 	dba TeddiursaPokedexEntry
 	dba UrsaringPokedexEntry
+	dba UrsalunaPokedexEntry
 	dba SlugmaPokedexEntry
 	dba MagcargoPokedexEntry
 	dba SwinubPokedexEntry

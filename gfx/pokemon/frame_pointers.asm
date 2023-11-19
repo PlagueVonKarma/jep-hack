@@ -213,6 +213,8 @@ FramesPointers:
 	dba TogeticFrames
 	dba NatuFrames
 	dba XatuFrames
+	dba MoibelleFrames
+	dba BelledamFrames
 	dba MareepFrames
 	dba FlaaffyFrames
 	dba AmpharosFrames
@@ -227,6 +229,7 @@ FramesPointers:
 	dba AipomFrames
 	dba SunkernFrames
 	dba SunfloraFrames
+	dba AercrowFrames
 	dba YanmaFrames
 	dba WooperFrames
 	dba QuagsireFrames
@@ -238,12 +241,19 @@ FramesPointers:
 	dba MurkrowFrames
 	dba SlowkingFrames
 	dba MisdreavusFrames
+	dba MismagiusFrames
+	dba StromenFrames
+	dba PhandarinFrames
 	dba UnownFrames
 	dba WobbuffetFrames
+	dba BipullaFrames
+	dba CalflacFrames
 	dba GirafarigFrames
+	dba FarigirafFrames
 	dba PinecoFrames
 	dba ForretressFrames
 	dba DunsparceFrames
+	dba DudunsparceFrames
 	dba GligarFrames
 	dba SteelixFrames
 	dba SnubbullFrames
@@ -255,6 +265,7 @@ FramesPointers:
 	dba SneaselFrames
 	dba TeddiursaFrames
 	dba UrsaringFrames
+	dba UrsalunaFrames
 	dba SlugmaFrames
 	dba MagcargoFrames
 	dba SwinubFrames
