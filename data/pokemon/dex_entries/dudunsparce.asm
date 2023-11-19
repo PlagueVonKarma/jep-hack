@@ -7,4 +7,4 @@
 
 	page "it inflates its"
 	next "segments and blows"
-	next "it away with GUST."
+	next "it away with GUST.@"
