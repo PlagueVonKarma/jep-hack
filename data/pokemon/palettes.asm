@@ -523,6 +523,8 @@ INCBIN "gfx/pokemon/phandarin/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/phandarin/shiny.pal"
 INCLUDE "gfx/pokemon/unown/normal.pal" ; not front.gbcpal
 INCLUDE "gfx/pokemon/unown/shiny.pal"
+INCBIN "gfx/pokemon/wynaut/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/wynaut/shiny.pal"
 INCBIN "gfx/pokemon/wobbuffet/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/wobbuffet/shiny.pal"
 INCBIN "gfx/pokemon/bipulla/front.gbcpal", middle_colors

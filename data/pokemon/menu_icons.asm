@@ -247,6 +247,7 @@ MonMenuIcons:
 	db ICON_GHOST       ; STROMEN
 	db ICON_GHOST       ; PHANDARIN
 	db ICON_UNOWN       ; UNOWN
+	db ICON_GHOST       ; WYNAUT
 	db ICON_GHOST       ; WOBBUFFET
 	db ICON_GHOST       ; BIPULLA
 	db ICON_EQUINE      ; CALFLAC

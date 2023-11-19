@@ -245,6 +245,7 @@ BitmasksPointers:
 	dw StromenBitmasks
 	dw PhandarinBitmasks
 	dw UnownBitmasks
+	dw WynautBitmasks
 	dw WobbuffetBitmasks
 	dw BipullaBitmasks
 	dw CalflacBitmasks

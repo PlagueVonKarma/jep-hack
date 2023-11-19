@@ -7,4 +7,4 @@
 
 	page "have joined into"
 	next "one wicked and"
-	next "snide personality."
+	next "snide personality.@"

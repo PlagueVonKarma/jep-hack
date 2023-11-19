@@ -246,7 +246,8 @@ FirstEvoStages::
 	dw STROMEN
 	dw STROMEN
 	dw UNOWN
-	dw WOBBUFFET
+	dw WYNAUT
+	dw WYNAUT
 	dw BIPULLA
 	dw BIPULLA
 	dw BIPULLA

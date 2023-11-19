@@ -1219,9 +1219,9 @@ JohtoGrassWildMons:
 	dbw 5, GEODUDE
 	dbw 5, BITTYBAT
 	dbw 6, GEODUDE
-	dbw 7, GEODUDE
+	dbw 6, BIPULLA
+	dbw 7, WYNAUT
 	dbw 6, BITTYBAT
-	dbw 7, BITTYBAT
 	dbw 7, DUNSPARCE
 	end_grass_wildmons
 

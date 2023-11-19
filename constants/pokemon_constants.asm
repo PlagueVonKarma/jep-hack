@@ -265,6 +265,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const STROMEN
 	const PHANDARIN
 	const UNOWN      ; c9
+	const WYNAUT
 	const WOBBUFFET  ; ca
 	const BIPULLA
 	const CALFLAC

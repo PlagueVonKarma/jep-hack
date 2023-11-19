@@ -761,8 +761,10 @@ FarigirafFrontpic:   INCBIN "gfx/pokemon/farigiraf/front.animated.2bpp.lz"
 FarigirafBackpic:    INCBIN "gfx/pokemon/farigiraf/back.2bpp.lz"
 DudunsparceFrontpic: INCBIN "gfx/pokemon/dudunsparce/front.animated.2bpp.lz"
 DudunsparceBackpic:  INCBIN "gfx/pokemon/dudunsparce/back.2bpp.lz"
-UrsalunaFrontpic:     INCBIN "gfx/pokemon/ursaluna/front.animated.2bpp.lz"
-UrsalunaBackpic:      INCBIN "gfx/pokemon/ursaluna/back.2bpp.lz"
+UrsalunaFrontpic:    INCBIN "gfx/pokemon/ursaluna/front.animated.2bpp.lz"
+UrsalunaBackpic:     INCBIN "gfx/pokemon/ursaluna/back.2bpp.lz"
+WynautFrontpic:      INCBIN "gfx/pokemon/wynaut/front.animated.2bpp.lz"
+WynautBackpic:       INCBIN "gfx/pokemon/wynaut/back.2bpp.lz"
 
 SECTION "Pics 20", ROMX
 

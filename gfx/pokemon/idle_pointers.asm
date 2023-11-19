@@ -245,6 +245,7 @@ AnimationIdlePointers:
 	dw StromenAnimationIdle
 	dw PhandarinAnimationIdle
 	dw UnownAnimationIdle
+	dw WynautAnimationIdle
 	dw WobbuffetAnimationIdle
 	dw BipullaAnimationIdle
 	dw CalflacAnimationIdle
