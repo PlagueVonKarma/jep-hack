@@ -69,6 +69,7 @@ EggMovePointers2::
 	dw StromenEggMoves 
 	dw NoEggMoves2 ; Phandarin
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Wynaut
 	dw NoEggMoves2
 	dw BipullaEggMoves
 	dw NoEggMoves2 ; Calflac

@@ -245,6 +245,7 @@ FramesPointers:
 	dba StromenFrames
 	dba PhandarinFrames
 	dba UnownFrames
+	dba WynautFrames
 	dba WobbuffetFrames
 	dba BipullaFrames
 	dba CalflacFrames

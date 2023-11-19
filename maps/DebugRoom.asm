@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, MISDREAVUS
+	getmonname STRING_BUFFER_3, WYNAUT
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MISDREAVUS, 42, DUSK_STONE
+	givepoke WYNAUT, 14, RARE_CANDY
 	closetext
 	end
 

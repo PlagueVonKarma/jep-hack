@@ -68,6 +68,7 @@ EvosAttacksPointers2::
 	dw StromenEvosAttacks
 	dw PhandarinEvosAttacks
 	dw UnownEvosAttacks
+	dw WynautEvosAttacks
 	dw WobbuffetEvosAttacks
 	dw BipullaEvosAttacks
 	dw CalflacEvosAttacks
@@ -1009,6 +1010,18 @@ PhandarinEvosAttacks:
 UnownEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, HIDDEN_POWER
+	db 0 ; no more level-up moves
+
+WynautEvosAttacks:
+	dbbw EVOLVE_LEVEL, 15, WOBBUFFET
+	db 0 ; no more evolutions
+	dbw 1, SPLASH
+	dbw 1, CHARM
+	dbw 1, ENCORE
+	dbw 15, COUNTER
+	dbw 15, MIRROR_COAT
+	dbw 15, SAFEGUARD
+	dbw 15, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:

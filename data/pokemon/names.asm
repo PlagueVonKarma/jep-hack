@@ -249,6 +249,7 @@ PokemonNames::
 	db "STROMEN@@@"
 	db "PHANDARIN@"
 	db "UNOWN@@@@@"
+	db "WYNAUT@@@@"
 	db "WOBBUFFET@"
 	db "BIPULLA@@@"
 	db "CALFLAC@@@"

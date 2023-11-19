@@ -246,6 +246,7 @@ PokedexDataPointerTable:
 	dba StromenPokedexEntry
 	dba PhandarinPokedexEntry
 	dba UnownPokedexEntry
+	dba WynautPokedexEntry
 	dba WobbuffetPokedexEntry
 	dba BipullaPokedexEntry
 	dba CalflacPokedexEntry

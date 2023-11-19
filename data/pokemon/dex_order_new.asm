@@ -129,6 +129,7 @@ NewPokedexOrder:
 	dw EXEGGCUTE
 	dw EXEGGUTOR
 	dw SUDOWOODO
+	dw WYNAUT
 	dw WOBBUFFET
 	dw VENONAT
 	dw VENOMOTH

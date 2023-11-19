@@ -251,6 +251,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; STROMEN	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; PHANDARIN	(incomplete)
 	mon_cry CRY_HOOTHOOT,    354,  256 ; UNOWN
+	mon_cry CRY_NIDORAN_M,     0,    0 ; WYNAUT 	(incomplete)
 	mon_cry CRY_AMPHAROS,    635,  324 ; WOBBUFFET
 	mon_cry CRY_NIDORAN_M,     0,    0 ; BIPULLA	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; CALFLAC	(incomplete)

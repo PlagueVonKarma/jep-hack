@@ -245,6 +245,7 @@ AnimationPointers:
 	dw StromenAnimation
 	dw PhandarinAnimation
 	dw UnownAnimation
+	dw WynautAnimation
 	dw WobbuffetAnimation
 	dw BipullaAnimation
 	dw CalflacAnimation
