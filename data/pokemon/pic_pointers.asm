@@ -439,6 +439,10 @@ PokemonPicPointers::
 	dba NatuBackpic
 	dba XatuFrontpic
 	dba XatuBackpic
+	dba MoibelleFrontpic
+	dba MoibelleBackpic
+	dba BelledamFrontpic
+	dba BelledamBackpic
 	dba MareepFrontpic
 	dba MareepBackpic
 	dba FlaaffyFrontpic
@@ -467,6 +471,8 @@ PokemonPicPointers::
 	dba SunkernBackpic
 	dba SunfloraFrontpic
 	dba SunfloraBackpic
+	dba AercrowFrontpic
+	dba AercrowBackpic
 	dba YanmaFrontpic
 	dba YanmaBackpic
 	dba WooperFrontpic
@@ -489,6 +495,12 @@ PokemonPicPointers::
 	dba SlowkingBackpic
 	dba MisdreavusFrontpic
 	dba MisdreavusBackpic
+	dba MismagiusFrontpic
+	dba MismagiusBackpic
+	dba StromenFrontpic
+	dba StromenBackpic
+	dba PhandarinFrontpic
+	dba PhandarinBackpic
 
 	; Unown pics have their own table. See UnownPicPointers
 	dbw -1, -1
@@ -496,14 +508,22 @@ PokemonPicPointers::
 
 	dba WobbuffetFrontpic
 	dba WobbuffetBackpic
+	dba BipullaFrontpic
+	dba BipullaBackpic
+	dba CalflacFrontpic
+	dba CalflacBackpic
 	dba GirafarigFrontpic
 	dba GirafarigBackpic
+	dba FarigirafFrontpic
+	dba FarigirafBackpic
 	dba PinecoFrontpic
 	dba PinecoBackpic
 	dba ForretressFrontpic
 	dba ForretressBackpic
 	dba DunsparceFrontpic
 	dba DunsparceBackpic
+	dba DudunsparceFrontpic
+	dba DudunsparceBackpic
 	dba GligarFrontpic
 	dba GligarBackpic
 	dba SteelixFrontpic
@@ -526,6 +546,8 @@ PokemonPicPointers::
 	dba TeddiursaBackpic
 	dba UrsaringFrontpic
 	dba UrsaringBackpic
+	dba UrsalunaFrontpic
+	dba UrsalunaBackpic
 	dba SlugmaFrontpic
 	dba SlugmaBackpic
 	dba MagcargoFrontpic

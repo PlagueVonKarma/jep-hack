@@ -71,6 +71,7 @@ NewPokedexOrder:
 	dw EKANS
 	dw ARBOK
 	dw DUNSPARCE
+	dw DUDUNSPARCE
 	dw MAREEP
 	dw FLAAFFY
 	dw AMPHAROS
@@ -166,6 +167,8 @@ NewPokedexOrder:
 	dw MEOWTH
 	dw PERSIAN
 	dw PERRSERKER
+	dw MOIBELLE
+	dw BELLEDAM
 	dw PSYDUCK
 	dw GOLDUCK
 	dw MACHOP
@@ -175,7 +178,10 @@ NewPokedexOrder:
 	dw HITMONLEE
 	dw HITMONCHAN
 	dw HITMONTOP
+	dw BIPULLA
+	dw CALFLAC
 	dw GIRAFARIG
+	dw FARIGIRAF
 	dw TAUROS
 	dw MILTANK
 	dw MAGBY
@@ -189,6 +195,7 @@ NewPokedexOrder:
 	dw FARFETCH_D
 	dw NATU
 	dw XATU
+	dw AERCROW
 	dw QWILFISH
 	dw TENTACOOL
 	dw TENTACRUEL
@@ -233,6 +240,7 @@ NewPokedexOrder:
 	dw PILOSWINE
 	dw TEDDIURSA
 	dw URSARING
+	dw URSALUNA
 	dw PHANPY
 	dw DONPHAN
 	dw MANTINE
@@ -253,6 +261,9 @@ NewPokedexOrder:
 	dw MAGCARGO
 	dw SNEASEL
 	dw MISDREAVUS
+	dw MISMAGIUS
+	dw STROMEN
+	dw PHANDARIN
 	dw PORYGON
 	dw PORYGON2
 	dw CHANSEY

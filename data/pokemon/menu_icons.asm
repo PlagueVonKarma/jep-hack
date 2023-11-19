@@ -204,7 +204,7 @@ MonMenuIcons:
 	db ICON_BUG         ; SPINARAK
 	db ICON_BUG         ; ARIADOS
 	db ICON_BUG         ; FOLAGE
-	db ICON_MOTH         ; BARREAU
+	db ICON_MOTH        ; BARREAU
 	db ICON_BAT         ; CROBAT
 	db ICON_FISH        ; CHINCHOU
 	db ICON_FISH        ; LANTURN
@@ -215,6 +215,8 @@ MonMenuIcons:
 	db ICON_BIRD        ; TOGETIC
 	db ICON_BIRD        ; NATU
 	db ICON_BIRD        ; XATU
+	db ICON_FOX         ; MOIBELLE
+	db ICON_FOX         ; BELLEDAM
 	db ICON_FOX         ; MAREEP
 	db ICON_MONSTER     ; FLAAFFY
 	db ICON_MONSTER     ; AMPHAROS
@@ -229,6 +231,7 @@ MonMenuIcons:
 	db ICON_MONSTER     ; AIPOM
 	db ICON_ODDISH      ; SUNKERN
 	db ICON_ODDISH      ; SUNFLORA
+	db ICON_BIRD        ; AERCROW
 	db ICON_BUG         ; YANMA
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE
@@ -240,12 +243,19 @@ MonMenuIcons:
 	db ICON_BIRD        ; MURKROW
 	db ICON_SLOWPOKE    ; SLOWKING
 	db ICON_GHOST       ; MISDREAVUS
+	db ICON_GHOST       ; MISMAGIUS
+	db ICON_GHOST       ; STROMEN
+	db ICON_GHOST       ; PHANDARIN
 	db ICON_UNOWN       ; UNOWN
 	db ICON_GHOST       ; WOBBUFFET
+	db ICON_GHOST       ; BIPULLA
+	db ICON_EQUINE      ; CALFLAC
 	db ICON_EQUINE      ; GIRAFARIG
+	db ICON_EQUINE      ; FARIGIRAF
 	db ICON_BUG         ; PINECO
 	db ICON_BUG         ; FORRETRESS
 	db ICON_SERPENT     ; DUNSPARCE
+	db ICON_SERPENT     ; DUDUNSPARCE
 	db ICON_BUG         ; GLIGAR
 	db ICON_SERPENT     ; STEELIX
 	db ICON_MONSTER     ; SNUBBULL
@@ -257,6 +267,7 @@ MonMenuIcons:
 	db ICON_FOX         ; SNEASEL
 	db ICON_MONSTER     ; TEDDIURSA
 	db ICON_MONSTER     ; URSARING
+	db ICON_MONSTER     ; URSALUNA
 	db ICON_BLOB        ; SLUGMA
 	db ICON_BLOB        ; MAGCARGO
 	db ICON_EQUINE      ; SWINUB

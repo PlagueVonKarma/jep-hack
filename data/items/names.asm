@@ -146,7 +146,7 @@ ItemNames::
 	li "DRAGON FANG"
 	li "BLK AUGURITE"
 	li "LEFTOVERS"
-	li "TERU-SAMA"
+	li "PEAT BLOCK"
 	li "TERU-SAMA"
 	li "TERU-SAMA"
 	li "MYSTERYBERRY"

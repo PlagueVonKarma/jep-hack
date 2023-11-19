@@ -282,6 +282,7 @@ BattleAnimations::
 	dw BattleAnim_RockHead
 	dw BattleAnim_RockSlash
 	dw BattleAnim_CrossCutter
+	dw BattleAnim_Megaphone
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -4633,6 +4634,28 @@ BattleAnim_CrossCutter: ;uses the Cross Chop animation
 	anim_sound 0, 1, SFX_VICEGRIP
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $10
 	anim_wait 16
+	anim_ret
+	
+BattleAnim_Megaphone: ;uses the Growl animation
+	anim_1gfx ANIM_GFX_NOISE
+	anim_battlergfx_2row
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_cry $0
+.loop
+	anim_call BattleAnimSub_Sound
+	anim_wait 16
+	anim_loop 3, .loop
+	anim_wait 9
+	anim_bgeffect ANIM_BG_BATTLEROBJ_1ROW, $0, BG_EFFECT_USER, $0
+	anim_wait 8
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, BG_EFFECT_TARGET, $40
+	anim_wait 64
+	anim_incbgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING
+	anim_wait 1
+	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_USER, $0
+	anim_wait 5
+	anim_incobj 10
+	anim_wait 8
 	anim_ret
 
 BattleAnimSub_Drain:

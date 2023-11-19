@@ -160,7 +160,7 @@ ItemEffects:
 	dw NoEffect            ; DRAGON_FANG
 	dw EvoStoneEffect      ; BLK_AUGURITE
 	dw NoEffect            ; LEFTOVERS
-	dw NoEffect            ; ITEM_93
+	dw EvoStoneEffect      ; PEAT_BLOCK
 	dw NoEffect            ; ITEM_94
 	dw NoEffect            ; ITEM_95
 	dw RestorePPEffect     ; MYSTERYBERRY

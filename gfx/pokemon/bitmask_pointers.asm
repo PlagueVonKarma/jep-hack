@@ -213,6 +213,8 @@ BitmasksPointers:
 	dw TogeticBitmasks
 	dw NatuBitmasks
 	dw XatuBitmasks
+	dw MoibelleBitmasks
+	dw BelledamBitmasks
 	dw MareepBitmasks
 	dw FlaaffyBitmasks
 	dw AmpharosBitmasks
@@ -227,6 +229,7 @@ BitmasksPointers:
 	dw AipomBitmasks
 	dw SunkernBitmasks
 	dw SunfloraBitmasks
+	dw AercrowBitmasks
 	dw YanmaBitmasks
 	dw WooperBitmasks
 	dw QuagsireBitmasks
@@ -238,12 +241,19 @@ BitmasksPointers:
 	dw MurkrowBitmasks
 	dw SlowkingBitmasks
 	dw MisdreavusBitmasks
+	dw MismagiusBitmasks
+	dw StromenBitmasks
+	dw PhandarinBitmasks
 	dw UnownBitmasks
 	dw WobbuffetBitmasks
+	dw BipullaBitmasks
+	dw CalflacBitmasks
 	dw GirafarigBitmasks
+	dw FarigirafBitmasks
 	dw PinecoBitmasks
 	dw ForretressBitmasks
 	dw DunsparceBitmasks
+	dw DudunsparceBitmasks
 	dw GligarBitmasks
 	dw SteelixBitmasks
 	dw SnubbullBitmasks
@@ -255,6 +265,7 @@ BitmasksPointers:
 	dw SneaselBitmasks
 	dw TeddiursaBitmasks
 	dw UrsaringBitmasks
+	dw UrsalunaBitmasks
 	dw SlugmaBitmasks
 	dw MagcargoBitmasks
 	dw SwinubBitmasks

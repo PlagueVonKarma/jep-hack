@@ -272,4 +272,5 @@ Moves1:
 	move EFFECT_FLINCH_HIT,         80, ROCK,          100, 15,  30      ;ROCK_HEAD
 	move EFFECT_NORMAL_HIT,        140, ROCK,           70,  5,   0      ;ROCK_SLASH
 	move EFFECT_NORMAL_HIT,         50, BUG,           100, 15,   0      ;CROSS_CUTTER
+	move EFFECT_SP_ATK_DOWN,         0, NORMAL,        100, 40,   0      ;MEGAPHONE
 .IndirectEnd::

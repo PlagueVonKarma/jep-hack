@@ -36,6 +36,8 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NatuEggMoves
 	dw NoEggMoves2
+	dw MoibelleEggMoves 
+	dw NoEggMoves2 ; Belledam
 	dw MareepEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -47,6 +49,7 @@ EggMovePointers2::
 	dw HoppipEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw AercrowEggMoves
 	dw AipomEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -62,13 +65,19 @@ EggMovePointers2::
 	; dw NoEggMoves2 ; Honchkrow
 	dw NoEggMoves2
 	dw MisdreavusEggMoves
-	; dw NoEggMoves2 ; Mismagius
+	dw NoEggMoves2 ; Mismagius
+	dw StromenEggMoves 
+	dw NoEggMoves2 ; Phandarin
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw GirafarigEggMoves ; This'll need a lot of stuff. Calfalc, Tsuinzu, Farigiraf...
+	dw BipullaEggMoves
+	dw NoEggMoves2 ; Calflac
+	dw NoEggMoves2 ; Girafarig
+	dw NoEggMoves2 ; Farigiraf
 	dw PinecoEggMoves
 	dw NoEggMoves2
 	dw DunsparceEggMoves
+	dw NoEggMoves2 ; Dudunsparce
 	dw GligarEggMoves
 	dw NoEggMoves2
 	dw SnubbullEggMoves
@@ -80,6 +89,7 @@ EggMovePointers2::
 	dw SneaselEggMoves
 	dw TeddiursaEggMoves
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Ursaluna
 	dw SlugmaEggMoves
 	dw NoEggMoves2
 	dw SwinubEggMoves
@@ -237,6 +247,12 @@ NatuEggMoves:
 	dw STEEL_WING
 	dw -1 ; end
 
+MoibelleEggMoves:
+	dw CHARM
+	dw HYPNOSIS
+	dw PURSUIT
+	dw -1 ; end
+
 MareepEggMoves:
 	dw THUNDERBOLT
 	dw TAKE_DOWN
@@ -269,6 +285,13 @@ HoppipEggMoves:
 	dw REFLECT
 	dw AMNESIA
 	dw PAY_DAY
+	dw -1 ; end
+	
+AercrowEggMoves:
+	dw DRILL_PECK
+	dw FUTURE_SIGHT
+	dw SAFEGUARD
+	dw WHIRLWIND
 	dw -1 ; end
 
 AipomEggMoves:
@@ -308,7 +331,14 @@ MisdreavusEggMoves:
 	dw DESTINY_BOND
 	dw -1 ; end
 
-GirafarigEggMoves:
+StromenEggMoves:
+	dw BODY_SLAM
+	dw FAINT_ATTACK
+	dw PURSUIT
+	dw STOMP
+	dw -1 ; end
+
+BipullaEggMoves:
 	dw TAKE_DOWN
 	dw AMNESIA
 	dw FORESIGHT

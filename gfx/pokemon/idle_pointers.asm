@@ -213,6 +213,8 @@ AnimationIdlePointers:
 	dw TogeticAnimationIdle
 	dw NatuAnimationIdle
 	dw XatuAnimationIdle
+	dw MoibelleAnimationIdle
+	dw BelledamAnimationIdle
 	dw MareepAnimationIdle
 	dw FlaaffyAnimationIdle
 	dw AmpharosAnimationIdle
@@ -227,6 +229,7 @@ AnimationIdlePointers:
 	dw AipomAnimationIdle
 	dw SunkernAnimationIdle
 	dw SunfloraAnimationIdle
+	dw AercrowAnimationIdle
 	dw YanmaAnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle
@@ -238,12 +241,19 @@ AnimationIdlePointers:
 	dw MurkrowAnimationIdle
 	dw SlowkingAnimationIdle
 	dw MisdreavusAnimationIdle
+	dw MismagiusAnimationIdle
+	dw StromenAnimationIdle
+	dw PhandarinAnimationIdle
 	dw UnownAnimationIdle
 	dw WobbuffetAnimationIdle
+	dw BipullaAnimationIdle
+	dw CalflacAnimationIdle
 	dw GirafarigAnimationIdle
+	dw FarigirafAnimationIdle
 	dw PinecoAnimationIdle
 	dw ForretressAnimationIdle
 	dw DunsparceAnimationIdle
+	dw DudunsparceAnimationIdle
 	dw GligarAnimationIdle
 	dw SteelixAnimationIdle
 	dw SnubbullAnimationIdle
@@ -255,6 +265,7 @@ AnimationIdlePointers:
 	dw SneaselAnimationIdle
 	dw TeddiursaAnimationIdle
 	dw UrsaringAnimationIdle
+	dw UrsalunaAnimationIdle
 	dw SlugmaAnimationIdle
 	dw MagcargoAnimationIdle
 	dw SwinubAnimationIdle
