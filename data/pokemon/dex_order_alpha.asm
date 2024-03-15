@@ -100,6 +100,7 @@ AlphabeticalPokedexOrder:
 	dw GOLEM
 	dw GOROCHU
 	dw GOROTORA
+	dw GOUGING_FIRE
 	dw GRANBULL
 	dw GRAVELER
 	dw GRIMER
@@ -220,6 +221,7 @@ AlphabeticalPokedexOrder:
 	dw QUAGSIRE
 	dw QUILAVA
 	dw QWILFISH
+	dw RAGING_BOLT
 	dw RAICHU
 	dw RAITORA
 	dw RAIKOU

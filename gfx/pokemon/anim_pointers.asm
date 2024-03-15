@@ -292,10 +292,12 @@ AnimationPointers:
 	dw MagbyAnimation
 	dw MiltankAnimation
 	dw BlisseyAnimation
+	dw RagingBoltAnimation
+	dw GougingFireAnimation
+	dw WalkingWakeAnimation
 	dw RaikouAnimation
 	dw EnteiAnimation
 	dw SuicuneAnimation
-	dw WalkingWakeAnimation
 	dw LarvitarAnimation
 	dw PupitarAnimation
 	dw TyranitarAnimation

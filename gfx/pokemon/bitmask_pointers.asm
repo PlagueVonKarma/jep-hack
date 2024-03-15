@@ -292,10 +292,12 @@ BitmasksPointers:
 	dw MagbyBitmasks
 	dw MiltankBitmasks
 	dw BlisseyBitmasks
+	dw RagingBoltBitmasks
+	dw GougingFireBitmasks
+	dw WalkingWakeBitmasks
 	dw RaikouBitmasks
 	dw EnteiBitmasks
 	dw SuicuneBitmasks
-	dw WalkingWakeBitmasks
 	dw LarvitarBitmasks
 	dw PupitarBitmasks
 	dw TyranitarBitmasks

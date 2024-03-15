@@ -296,10 +296,12 @@ PokemonNames::
 	db "MAGBY@@@@@"
 	db "MILTANK@@@"
 	db "BLISSEY@@@"
+	db "RAGINGBOLT"
+	db "GOUGINFIRE"	; this is terrible but unless we can increase the character limit this is our best option
+	db "WALKINWAKE" ; see above
 	db "RAIKOU@@@@"
 	db "ENTEI@@@@@"
 	db "SUICUNE@@@"
-	db "WALKINWAKE"	; this is terrible but unless we can increase the character limit this is our best option
 	db "LARVITAR@@"
 	db "PUPITAR@@@"
 	db "TYRANITAR@"

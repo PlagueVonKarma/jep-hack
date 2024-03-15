@@ -7,4 +7,4 @@
 
 	page "can be extended"
 	next "with enough force"
-	next "to crush boulders."
+	next "to crush boulders.@"

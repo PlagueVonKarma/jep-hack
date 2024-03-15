@@ -303,4 +303,6 @@ Pokered_MonIndices:
 	db JUNGELA
 	db FOLAGE
 	db BARREAU
+	db RAGING_BOLT
+	db GOUGING_FIRE
 	assert_table_length NUM_POKEMON - 1

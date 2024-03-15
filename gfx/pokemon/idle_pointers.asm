@@ -292,10 +292,12 @@ AnimationIdlePointers:
 	dw MagbyAnimationIdle
 	dw MiltankAnimationIdle
 	dw BlisseyAnimationIdle
+	dw RagingBoltAnimationIdle
+	dw GougingFireAnimationIdle
+	dw WalkingWakeAnimationIdle
 	dw RaikouAnimationIdle
 	dw EnteiAnimationIdle
 	dw SuicuneAnimationIdle
-	dw WalkingWakeAnimationIdle
 	dw LarvitarAnimationIdle
 	dw PupitarAnimationIdle
 	dw TyranitarAnimationIdle

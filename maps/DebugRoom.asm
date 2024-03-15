@@ -19,12 +19,12 @@ DebugPokemon1Script:
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, HERACROSS
+	getmonname STRING_BUFFER_3, WALKING_WAKE
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke HERACROSS, 47, MASTER_BALL
+	givepoke WALKING_WAKE, 75, MASTER_BALL
 	closetext
 	end
 
@@ -39,34 +39,34 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry DUNSPARCE
+	cry GOUGING_FIRE
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon DUNSPARCE, 40
+	loadwildmon GOUGING_FIRE, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextA:
-	text "Duuuun!!"
+	text "Ennn-GRAHHH!"
 	done
 	
 DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry BIPULLA
+	cry RAGING_BOLT
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon BIPULLA, 41
+	loadwildmon RAGING_BOLT, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextB:
-	text "Hissss!"
+	text "Rai-GOOOHHH!!!"
 	done
 
 DebugFlyScript:
@@ -136,16 +136,16 @@ DebugRoom_MapEvents:
 	warp_event 19, 34, BLUE_FOREST, 1 ; southern warp
 	warp_event 33, 33, BLUE_FOREST, 1 ; southeast warp
 	warp_event  5,  3, AZALEA_TOWN, 1
-	warp_event 34, 11, CLIFF_CAVE, 1 
+	warp_event 34, 11, CLIFF_CAVE, 1
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event 21, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon1Script, -1
-	object_event 24, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
-	object_event 29, 24, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
-	object_event 29, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_OW_SILVER, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
+	object_event 22, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon1Script, -1
+	object_event 27, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
+	object_event 23, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_RED, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
+	object_event 26, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
 	object_event 24, 15, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
 	

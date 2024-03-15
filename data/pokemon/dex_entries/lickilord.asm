@@ -7,4 +7,4 @@
 
 	page "ches. A single"
 	next "lick causes"
-	next "severe poisoning."
+	next "severe poisoning.@"

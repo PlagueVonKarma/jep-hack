@@ -292,10 +292,12 @@ FramesPointers:
 	dba MagbyFrames
 	dba MiltankFrames
 	dba BlisseyFrames
+	dba RagingBoltFrames
+	dba GougingFireFrames
+	dba WalkingWakeFrames
 	dba RaikouFrames
 	dba EnteiFrames
 	dba SuicuneFrames
-	dba WalkingWakeFrames
 	dba LarvitarFrames
 	dba PupitarFrames
 	dba TyranitarFrames

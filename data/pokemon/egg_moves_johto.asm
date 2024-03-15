@@ -120,6 +120,8 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
 	dw LarvitarEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2

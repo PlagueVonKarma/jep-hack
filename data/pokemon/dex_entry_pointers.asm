@@ -293,10 +293,12 @@ PokedexDataPointerTable:
 	dba MagbyPokedexEntry
 	dba MiltankPokedexEntry
 	dba BlisseyPokedexEntry
+	dba RagingBoltPokedexEntry
+	dba GougingFirePokedexEntry
+	dba WalkingWakePokedexEntry
 	dba RaikouPokedexEntry
 	dba EnteiPokedexEntry
 	dba SuicunePokedexEntry
-	dba WalkingWakePokedexEntry
 	dba LarvitarPokedexEntry
 	dba PupitarPokedexEntry
 	dba TyranitarPokedexEntry

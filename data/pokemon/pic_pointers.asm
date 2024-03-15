@@ -600,14 +600,18 @@ PokemonPicPointers::
 	dba MiltankBackpic
 	dba BlisseyFrontpic
 	dba BlisseyBackpic
+	dba RagingBoltFrontpic
+	dba RagingBoltBackpic
+	dba GougingFireFrontpic
+	dba GougingFireBackpic
+	dba WalkingWakeFrontpic
+	dba WalkingWakeBackpic
 	dba RaikouFrontpic
 	dba RaikouBackpic
 	dba EnteiFrontpic
 	dba EnteiBackpic
 	dba SuicuneFrontpic
 	dba SuicuneBackpic
-	dba WalkingWakeFrontpic
-	dba WalkingWakeBackpic
 	dba LarvitarFrontpic
 	dba LarvitarBackpic
 	dba PupitarFrontpic

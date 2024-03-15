@@ -823,3 +823,8 @@ FolageFrontpic:	 INCBIN "gfx/pokemon/folage/front.animated.2bpp.lz"
 FolageBackpic:	 INCBIN "gfx/pokemon/folage/back.2bpp.lz"
 BarreauFrontpic:	 INCBIN "gfx/pokemon/barreau/front.animated.2bpp.lz"
 BarreauBackpic:	 INCBIN "gfx/pokemon/barreau/back.2bpp.lz"
+
+RagingBoltFrontpic: INCBIN "gfx/pokemon/raging_bolt/front.animated.2bpp.lz"
+RagingBoltBackpic:	 INCBIN "gfx/pokemon/raging_bolt/back.2bpp.lz"
+GougingFireFrontpic: INCBIN "gfx/pokemon/gouging_fire/front.animated.2bpp.lz"
+GougingFireBackpic:	 INCBIN "gfx/pokemon/gouging_fire/back.2bpp.lz"

@@ -293,10 +293,12 @@ FirstEvoStages::
 	dw MAGBY      ;f0
 	dw MILTANK
 	dw CHANSEY
+	dw RAGING_BOLT
+	dw GOUGING_FIRE
+	dw WALKING_WAKE
 	dw RAIKOU
 	dw ENTEI
 	dw SUICUNE
-	dw WALKING_WAKE
 	dw LARVITAR
 	dw LARVITAR
 	dw LARVITAR   ;f8

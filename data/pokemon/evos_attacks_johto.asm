@@ -115,10 +115,12 @@ EvosAttacksPointers2::
 	dw MagbyEvosAttacks
 	dw MiltankEvosAttacks
 	dw BlisseyEvosAttacks
+	dw RagingBoltEvosAttacks
+	dw GougingFireEvosAttacks
+	dw WalkingWakeEvosAttacks
 	dw RaikouEvosAttacks
 	dw EnteiEvosAttacks
 	dw SuicuneEvosAttacks
-	dw WalkingWakeEvosAttacks
 	dw LarvitarEvosAttacks
 	dw PupitarEvosAttacks
 	dw TyranitarEvosAttacks
@@ -1619,6 +1621,54 @@ BlisseyEvosAttacks:
 	dbw 40, LIGHT_SCREEN
 	dbw 47, DOUBLE_EDGE
 	db 0 ; no more level-up moves
+	
+RagingBoltEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, STOMP
+	dbw 1, LEER
+	dbw 7, SUNNY_DAY
+	dbw 14, THUNDERSHOCK
+	dbw 21, ROAR
+	dbw 28, DRAGONBREATH
+	dbw 35, THUNDERBOLT
+	dbw 42, TWISTER
+	dbw 49, ZAP_CANNON
+	dbw 56, OUTRAGE
+	dbw 63, BODY_SLAM
+	dbw 70, THUNDER
+	db 0 ; no more level-up moves
+	
+GougingFireEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, BITE
+	dbw 1, LEER
+	dbw 7, SUNNY_DAY
+	dbw 14, FLAME_WHEEL
+	dbw 21, ROAR
+	dbw 28, DRAGONBREATH
+	dbw 35, FLAMETHROWER
+	dbw 42, MORNING_SUN
+	dbw 49, PROTECT
+	dbw 56, OUTRAGE
+	dbw 63, ROCK_HEAD
+	dbw 70, FIRE_BLAST
+	db 0 ; no more level-up moves
+	
+WalkingWakeEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, BITE
+	dbw 1, LEER
+	dbw 7, SUNNY_DAY
+	dbw 14, WATER_GUN
+	dbw 21, ROAR
+	dbw 28, DRAGONBREATH
+	dbw 35, AURORA_BEAM
+	dbw 42, TWISTER
+	dbw 49, CRUNCH
+	dbw 56, OUTRAGE
+	dbw 63, FLAMETHROWER
+	dbw 70, HYDRO_PUMP
+	db 0 ; no more level-up moves
 
 RaikouEvosAttacks:
 	db 0 ; no more evolutions
@@ -1657,22 +1707,6 @@ SuicuneEvosAttacks:
 	dbw 51, MIST
 	dbw 61, MIRROR_COAT
 	dbw 71, HYDRO_PUMP
-	db 0 ; no more level-up moves
-
-WalkingWakeEvosAttacks:
-	db 0 ; no more evolutions
-	dbw 1, BITE
-	dbw 1, LEER
-	dbw 7, SUNNY_DAY
-	dbw 14, WATER_GUN
-	dbw 21, ROAR
-	dbw 28, DRAGONBREATH
-	dbw 35, AURORA_BEAM
-	dbw 42, TWISTER
-	dbw 49, CRUNCH
-	dbw 56, OUTRAGE
-	dbw 63, FLAMETHROWER
-	dbw 70, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 LarvitarEvosAttacks:
