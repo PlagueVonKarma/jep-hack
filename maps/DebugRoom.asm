@@ -111,7 +111,7 @@ DebugFlyScript:
 	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
-	givepoke PIDGEOT, 36, HM_FLY
+	givepoke SHI_SHI, 70, HM_FLY
 	closetext
 	end
 	
@@ -119,6 +119,35 @@ DebugTextC:
 	text "I believe I can" 
 	line "FLY!"
 	done
+
+DebugDexScript:
+	faceplayer
+	opentext
+	writetext DebugTextD
+	playsound SFX_FANFARE
+	promptbutton
+	callasm CheatFillPokedex
+	givepoke CELEBI, 50, MASTER_BALL
+	closetext
+	end
+
+DebugTextD:
+	text "Your #DEX is" 
+	line "fully complete!"
+	done
+
+CheatFillPokedex:
+	ld hl, wPokedexSeen
+	call .Fill
+	ld hl, wPokedexCaught
+	.Fill:
+	ld a, %11111111
+	ld bc, 31 ; 001-248
+	call ByteFill
+	ld a, %11111111
+	ld bc, 7 ; 249-304
+	call ByteFill
+	ret
 
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
@@ -148,4 +177,5 @@ DebugRoom_MapEvents:
 	object_event 23, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_RED, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
 	object_event 26, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
 	object_event 24, 15, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
+	object_event 22, 15, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
 	
