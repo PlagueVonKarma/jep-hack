@@ -1765,6 +1765,7 @@ LugiaEvosAttacks:
 	dbw 33, RECOVER
 	dbw 44, HYDRO_PUMP
 	dbw 55, RAIN_DANCE
+	dbw 60, AEROBLAST ; (allows it to have its signature move when caught)
 	dbw 66, SWIFT
 	dbw 77, WHIRLWIND
 	dbw 88, ANCIENTPOWER
@@ -1779,6 +1780,7 @@ HoOhEvosAttacks:
 	dbw 33, RECOVER
 	dbw 44, FIRE_BLAST
 	dbw 55, SUNNY_DAY
+	dbw 60, SACRED_FIRE ; (allows it to have its signature move when caught)
 	dbw 66, SWIFT
 	dbw 77, WHIRLWIND
 	dbw 88, ANCIENTPOWER
@@ -1787,13 +1789,14 @@ HoOhEvosAttacks:
 
 ShiShiEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, FLY ; (placeholder before Wind Ride is added)
+	dbw 1, WIND_RIDE
 	dbw 11, SAFEGUARD
 	dbw 22, GUST
 	dbw 33, RECOVER
 	dbw 44, BLIZZARD
 	dbw 55, CRUNCH
 	dbw 66, EXTREMESPEED
+	dbw 70, WIND_RIDE ; (allows it to have its signature move when caught)
 	dbw 77, WHIRLWIND
 	dbw 88, ANCIENTPOWER
 	dbw 99, FUTURE_SIGHT

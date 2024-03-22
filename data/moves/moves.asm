@@ -273,4 +273,5 @@ Moves1:
 	move EFFECT_NORMAL_HIT,        100, ROCK,           80,  5,   0      ;ROCK_SLASH
 	move EFFECT_NORMAL_HIT,         50, BUG,           100, 15,   0      ;CROSS_CUTTER
 	move EFFECT_SP_ATK_DOWN,         0, NORMAL,        100, 40,   0      ;MEGAPHONE
+	move EFFECT_FREEZE_HIT,        100, FLYING,         95,  5,  30      ;WIND RIDE
 .IndirectEnd::

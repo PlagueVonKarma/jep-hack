@@ -260,6 +260,8 @@ MoveDescriptions1:
 	dw RockSlashDescription
 	dw CrossCutterDescription
 	dw MegaphoneDescription
+	dw WindRideDescription
+
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1284,3 +1286,7 @@ CrossCutterDescription:
 MegaphoneDescription:
 	db   "Reduces the foe's"
 	next "SPCL.ATK.@"
+	
+WindRideDescription:
+	db   "Summons the north"
+	next "wind. May freeze.@"

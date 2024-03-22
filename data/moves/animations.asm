@@ -283,6 +283,7 @@ BattleAnimations::
 	dw BattleAnim_RockSlash
 	dw BattleAnim_CrossCutter
 	dw BattleAnim_Megaphone
+	dw BattleAnim_Wind_Ride
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -4657,6 +4658,40 @@ BattleAnim_Megaphone: ;uses the Growl animation
 	anim_incobj 10
 	anim_wait 8
 	anim_ret
+	
+BattleAnim_Wind_Ride:
+	anim_3gfx ANIM_GFX_SPEED, ANIM_GFX_WIND, ANIM_GFX_ICE
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $1, $0
+	anim_bgeffect ANIM_BG_HIDE_MON, $0, BG_EFFECT_USER, $0
+	anim_call BattleAnimSub_WarpAway
+	anim_obp0 $fc
+	anim_call BattleAnim_TargetObj_1Row
+	anim_obj ANIM_OBJ_AGILITY, 8, 24, $10
+	anim_obj ANIM_OBJ_AGILITY, 8, 48, $2
+	anim_obj ANIM_OBJ_AGILITY, 8, 88, $8
+	anim_wait 4
+	anim_obj ANIM_OBJ_AGILITY, 8, 32, $6
+	anim_obj ANIM_OBJ_AGILITY, 8, 56, $c
+	anim_obj ANIM_OBJ_AGILITY, 8, 80, $4
+	anim_obj ANIM_OBJ_AGILITY, 8, 104, $e
+	anim_obj ANIM_OBJ_ICE_BUILDUP, 136, 74, $8
+.loop2
+	anim_sound 0, 0, SFX_RAZOR_WIND
+	anim_wait 4
+	anim_loop 16, .loop2
+	anim_wait 64
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 8
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 16
+	anim_3gfx ANIM_GFX_SPEED, ANIM_GFX_WIND, ANIM_GFX_HIT
+	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
+	anim_sound 0, 1, SFX_MEGA_KICK
+	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
+	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_USER, $0
+	anim_wait 32
+	anim_ret
+
 
 BattleAnimSub_Drain:
 	anim_obj ANIM_OBJ_DRAIN, 132, 44, $0
