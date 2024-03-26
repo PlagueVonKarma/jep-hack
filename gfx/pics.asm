@@ -753,6 +753,9 @@ StromenFrontpic:     INCBIN "gfx/pokemon/stromen/front.animated.2bpp.lz"
 StromenBackpic:      INCBIN "gfx/pokemon/stromen/back.2bpp.lz"
 PhandarinFrontpic:   INCBIN "gfx/pokemon/phandarin/front.animated.2bpp.lz"
 PhandarinBackpic:    INCBIN "gfx/pokemon/phandarin/back.2bpp.lz"
+
+SECTION "Pics 20", ROMX
+
 BipullaFrontpic:     INCBIN "gfx/pokemon/bipulla/front.animated.2bpp.lz"
 BipullaBackpic:      INCBIN "gfx/pokemon/bipulla/back.2bpp.lz"
 CalflacFrontpic:     INCBIN "gfx/pokemon/calflac/front.animated.2bpp.lz"
@@ -765,9 +768,6 @@ UrsalunaFrontpic:    INCBIN "gfx/pokemon/ursaluna/front.animated.2bpp.lz"
 UrsalunaBackpic:     INCBIN "gfx/pokemon/ursaluna/back.2bpp.lz"
 WynautFrontpic:      INCBIN "gfx/pokemon/wynaut/front.animated.2bpp.lz"
 WynautBackpic:       INCBIN "gfx/pokemon/wynaut/back.2bpp.lz"
-
-SECTION "Pics 20", ROMX
-
 GorochuFrontpic:	 INCBIN "gfx/pokemon/gorochu/front.animated.2bpp.lz"
 GorochuBackpic:	 INCBIN "gfx/pokemon/gorochu/back.2bpp.lz"
 LeafeonFrontpic:	 INCBIN "gfx/pokemon/leafeon/front.animated.2bpp.lz"

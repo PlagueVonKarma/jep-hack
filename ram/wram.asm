@@ -732,6 +732,9 @@ wBackupDexListingCursor:: db
 wBackupDexListingPage:: dw
 wDexCurLocation:: db
 wPokedexStatus:: db
+wPokedexShinyToggle::
+; bit 0: set if displaying shiny palettes
+	db
 wPokedexDisplayNumber:: dw
 wDexLastSeenIndex:: db ; index into wPokedexSeen containing the last non-zero value
 wDexLastSeenValue:: db ; value at index
@@ -1456,8 +1459,6 @@ wEnemyHPPal:: db
 wHPPals:: ds PARTY_LENGTH
 wCurHPPal:: db
 
-	ds 7
-
 wSGBPals:: ds 48
 
 wAttrmap::
@@ -1504,8 +1505,6 @@ wMonType:: db
 wCurSpecies:: db
 
 wNamedObjectType:: db
-
-	ds 1
 
 wJumptableIndex::
 wBattleTowerBattleEnded::
@@ -1735,8 +1734,6 @@ wGameTimerPaused::
 ; bit 7: something mobile
 	db
 
-	ds 1
-
 wJoypadDisable::
 ; bits 4, 6, or 7 can be used to disable joypad input
 ; bit 4
@@ -1744,14 +1741,10 @@ wJoypadDisable::
 ; bit 7: ongoing sgb data transfer
 	db
 
-	ds 1
-
 wInBattleTowerBattle::
 ; 0 not in BattleTower-Battle
 ; 1 BattleTower-Battle
 	db
-
-	ds 1
 
 wFXAnimID:: dw
 
@@ -1766,8 +1759,6 @@ wOBP0:: db
 wOBP1:: db
 
 wNumHits:: db
-
-	ds 1
 
 wOptions::
 ; bit 0-2: number of frames to delay when printing text
@@ -1806,8 +1797,6 @@ wSecondsSince:: db
 wMinutesSince:: db
 wHoursSince:: db
 wDaysSince:: db
-
-	ds 7
 
 wTempLoopCounter:: db
 

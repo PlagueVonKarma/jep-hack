@@ -271,6 +271,15 @@ _CGB_Pokedex:
 
 .is_pokemon
 	call GetMonPalettePointer
+	ld a, [wPokedexShinyToggle]
+	and a
+	jr z, .not_shiny
+	; Get shiny palette pointer
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+.not_shiny
 	call LoadPalette_White_Col1_Col2_Black ; mon palette
 .got_palette
 	call WipeAttrmap

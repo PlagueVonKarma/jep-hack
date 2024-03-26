@@ -517,20 +517,20 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
 	
-	newgroup SILENT_HILLS ; 27
-	map_const SILENT_HILLS,								   10, 10 ; 1
-	map_const DEBUG_ROOM,								   20, 20 ; 2
-	map_const ROUTE_49,									   15,  9 ; 3
-	map_const QUIET_CAVE,								   27, 18 ; 4
-	map_const ROUTE_49_2,								   10, 18 ; 5
-	map_const SILENT_HILLS_POKECENTER_1F,				   10,  4 ; 6
-	map_const SILVERS_HOUSE,								5,  5 ; 7
-	map_const CALS_HOUSE_1F,								5,  4 ; 8
-	map_const CALS_HOUSE_2F,								5,  4 ; 8
+	newgroup SILENT_HILLS                                         ; 27
+	map_const SILENT_HILLS,                                10, 10 ; 1
+	map_const DEBUG_ROOM,                                  20, 20 ; 2
+	map_const ROUTE_49,                                    15,  9 ; 3
+	map_const QUIET_CAVE,                                  27, 18 ; 4
+	map_const ROUTE_49_2,                                  10, 18 ; 5
+	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 6
+	map_const SILVERS_HOUSE,                                5,  5 ; 7
+	map_const CALS_HOUSE_1F,                                5,  4 ; 8
+	map_const CALS_HOUSE_2F,                                5,  4 ; 8
 	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 27
-	map_const BLUE_FOREST,							       20, 18 ; 1
+	newgroup BLUE_FOREST                                          ; 28
+	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 27

@@ -111,7 +111,7 @@ DebugFlyScript:
 	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
-	givepoke SHI_SHI, 70, HM_FLY
+	givepoke SHI_SHI, 70
 	closetext
 	end
 	
@@ -127,7 +127,7 @@ DebugDexScript:
 	playsound SFX_FANFARE
 	promptbutton
 	callasm CheatFillPokedex
-	givepoke CELEBI, 50, MASTER_BALL
+	givepoke CELEBI, 50
 	closetext
 	end
 
@@ -149,13 +149,47 @@ CheatFillPokedex:
 	call ByteFill
 	ret
 
+DebugItemScript:
+	faceplayer
+	opentext
+	writetext DebugTextE
+	playsound SFX_FANFARE_2
+	promptbutton
+	giveitem MASTER_BALL, 99
+	giveitem LEVEL_BALL, 99
+	giveitem MOON_BALL, 99
+	giveitem FRIEND_BALL, 99
+	giveitem LURE_BALL, 99
+	giveitem LOVE_BALL, 99
+	giveitem FAST_BALL, 99
+	giveitem HEAVY_BALL, 99
+	giveitem HM_CUT, 1
+	giveitem HM_FLY, 1
+	giveitem HM_SURF, 1
+	giveitem HM_STRENGTH, 1
+	giveitem HM_WHIRLPOOL, 1
+	giveitem HM_WATERFALL, 1
+	giveitem FULL_RESTORE, 99
+	giveitem MAX_REVIVE, 99
+	giveitem MAX_REPEL, 99
+	giveitem RARE_CANDY, 99
+	giveitem BICYCLE, 1
+	giveitem SUPER_ROD, 1
+	closetext
+	end
+
+DebugTextE:
+	text "<PLAYER> received" 
+	line "many items!"
+	done
+
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
 	warp_event 23, 14, PLAYERS_HOUSE_1F, 1
 	warp_event  3, 20, SILENT_HILLS, 1
-	warp_event 15, 15, LAKE_OF_RAGE, 3
+	warp_event 11, 15, LAKE_OF_RAGE, 3
 	warp_event 27,  5, PEWTER_CITY, 2
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
 	warp_event  4,  9, PALLET_TOWN, 1 ; left lab/league warp
@@ -176,6 +210,7 @@ DebugRoom_MapEvents:
 	object_event 27, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
 	object_event 23, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_RED, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
 	object_event 26, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
-	object_event 24, 15, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
-	object_event 22, 15, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
+	object_event 17, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
+	object_event 16, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
+	object_event 19, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugItemScript, -1
 	
