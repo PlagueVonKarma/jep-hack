@@ -262,6 +262,7 @@ AnimationIdlePointers:
 	dw QwilfishAnimationIdle
 	dw ScizorAnimationIdle
 	dw ShuckleAnimationIdle
+	dw PockleAnimationIdle
 	dw HeracrossAnimationIdle
 	dw SneaselAnimationIdle
 	dw TeddiursaAnimationIdle

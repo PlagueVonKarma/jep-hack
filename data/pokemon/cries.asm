@@ -268,6 +268,7 @@ PokemonCries::
 	mon_cry CRY_SLOWKING,    352,  224 ; QWILFISH
 	mon_cry CRY_AMPHAROS,      0,  352 ; SCIZOR
 	mon_cry CRY_DUNSPARCE,   656,  168 ; SHUCKLE
+	mon_cry CRY_DUNSPARCE,   640,  208 ; POCKLE
 	mon_cry CRY_AMPHAROS,     53,  224 ; HERACROSS
 	mon_cry CRY_WOOPER,       83,  175 ; SNEASEL
 	mon_cry CRY_TEDDIURSA,  1954,  110 ; TEDDIURSA

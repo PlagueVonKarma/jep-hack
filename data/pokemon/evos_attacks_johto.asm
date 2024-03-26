@@ -85,6 +85,7 @@ EvosAttacksPointers2::
 	dw QwilfishEvosAttacks
 	dw ScizorEvosAttacks
 	dw ShuckleEvosAttacks
+	dw PockleEvosAttacks
 	dw HeracrossEvosAttacks
 	dw SneaselEvosAttacks
 	dw TeddiursaEvosAttacks
@@ -1226,6 +1227,18 @@ ScizorEvosAttacks:
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
+	dbbw EVOLVE_ITEM, ANTIQUE_POT, POCKLE
+	db 0 ; no more evolutions
+	dbw 1, CONSTRICT
+	dbw 1, WITHDRAW
+	dbw 9, WRAP
+	dbw 14, ENCORE
+	dbw 23, SAFEGUARD
+	dbw 28, BIDE
+	dbw 37, REST
+	db 0 ; no more level-up moves
+	
+PockleEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, CONSTRICT
 	dbw 1, WITHDRAW

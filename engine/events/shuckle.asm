@@ -5,11 +5,11 @@ GiveShuckle:
 	xor a ; PARTYMON
 	ld [wMonType], a
 
-; Level 15 Shuckle.
+; Level 20 Shuckle.
 	ld hl, SHUCKLE
 	call GetPokemonIDFromIndex
 	ld [wCurPartySpecies], a
-	ld a, 15
+	ld a, 20
 	ld [wCurPartyLevel], a
 
 	predef TryAddMonToParty
@@ -19,7 +19,7 @@ GiveShuckle:
 	ld b, CAUGHT_BY_UNKNOWN
 	farcall SetGiftPartyMonCaughtData
 
-; Holding a Berry.
+; Holding a Berry Juice.
 	ld bc, PARTYMON_STRUCT_LENGTH
 	ld a, [wPartyCount]
 	dec a
@@ -27,7 +27,7 @@ GiveShuckle:
 	push bc
 	ld hl, wPartyMon1Item
 	call AddNTimes
-	ld [hl], BERRY
+	ld [hl], BERRY_JUICE
 	pop bc
 	pop af
 
@@ -67,7 +67,7 @@ GiveShuckle:
 	ret
 
 SpecialShuckleOT:
-	db "MANIA@"
+	db "KIRK@"	; This guy was called Mania in Gen 2, which was changed to Kirk in HGSS. I prefer Kirk.
 
 SpecialShuckleNickname:
 	db "SHUCKIE@"
@@ -75,23 +75,6 @@ SpecialShuckleNickname:
 ReturnShuckie:
 	farcall SelectMonFromParty
 	jr c, .refused
-
-	ld a, [wCurPartySpecies]
-	call GetPokemonIndexFromID
-	ld a, l
-	sub LOW(SHUCKLE)
-	if HIGH(SHUCKLE) == 0
-		or h
-	else
-		jr nz, .DontReturn
-		if HIGH(SHUCKLE) == 1
-			dec h
-		else
-			ld a, h
-			cp HIGH(SHUCKLE)
-		endc
-	endc
-	jr nz, .DontReturn
 
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMon1ID
@@ -124,6 +107,26 @@ ReturnShuckie:
 .done
 	farcall CheckCurPartyMonFainted
 	jr c, .fainted
+	ld a, [wCurPartySpecies]
+	call GetPokemonIndexFromID
+	ld a, l
+	sub LOW(POCKLE)
+	if HIGH(POCKLE) == 0
+		or h
+	else
+		jr nz, .notPockle
+		if HIGH(POCKLE) == 1
+			dec h
+		else
+			ld a, h
+			cp HIGH(POCKLE)
+		endc
+	endc
+	jr nz, .notPockle
+	ld a, SHUCKIE_EVOLVED
+	ld [wScriptVar], a
+	ret
+.notPockle:
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMon1Happiness
 	ld bc, PARTYMON_STRUCT_LENGTH
@@ -132,10 +135,7 @@ ReturnShuckie:
 	cp 150
 	ld a, SHUCKIE_HAPPY
 	jr nc, .HappyToStayWithYou
-	xor a ; REMOVE_PARTY
-	ld [wPokemonWithdrawDepositParameter], a
-	callfar RemoveMonFromPartyOrBox
-	ld a, SHUCKIE_RETURNED
+	ld a, SHUCKIE_OKAY
 .HappyToStayWithYou:
 	ld [wScriptVar], a
 	ret

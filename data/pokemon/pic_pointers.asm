@@ -540,6 +540,8 @@ PokemonPicPointers::
 	dba ScizorBackpic
 	dba ShuckleFrontpic
 	dba ShuckleBackpic
+	dba PockleFrontpic
+	dba PockleBackpic
 	dba HeracrossFrontpic
 	dba HeracrossBackpic
 	dba SneaselFrontpic

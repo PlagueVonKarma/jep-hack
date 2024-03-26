@@ -55,13 +55,12 @@ ManiaScript:
 	special ReturnShuckie
 	ifequal SHUCKIE_WRONG_MON, .wrong
 	ifequal SHUCKIE_REFUSED, .refused
-	ifequal SHUCKIE_HAPPY, .superhappy
 	ifequal SHUCKIE_FAINTED, .default_postevent
-	; SHUCKIE_RETURNED
+	ifequal SHUCKIE_EVOLVED, .evolved
+	ifequal SHUCKIE_HAPPY, .superhappy
 	writetext ManiaText_ThankYou
 	waitbutton
 	closetext
-	setevent EVENT_MANIA_TOOK_SHUCKIE_OR_LET_YOU_KEEP_HIM
 	end
 
 .wrong
@@ -72,9 +71,12 @@ ManiaScript:
 
 .superhappy
 	writetext ManiaText_ShuckleLikesYou
-	waitbutton
-	closetext
+	promptbutton
+	verbosegiveitem ANTIQUE_POT
+	iffalse .NoRoom1
 	setevent EVENT_MANIA_TOOK_SHUCKIE_OR_LET_YOU_KEEP_HIM
+.NoRoom1:
+	closetext
 	end
 
 .refused
@@ -83,9 +85,13 @@ ManiaScript:
 	closetext
 	end
 
-.nothingleft ; unreferenced
-	writetext ManiaText_ShuckleIsYourLastMon
-	waitbutton
+.evolved
+	writetext ManiaText_Pockle
+	promptbutton
+	verbosegiveitem ANTIQUE_POT
+	iffalse .NoRoom2
+	setevent EVENT_MANIA_TOOK_SHUCKIE_OR_LET_YOU_KEEP_HIM
+.NoRoom2:
 	closetext
 	end
 
@@ -99,13 +105,12 @@ ManiasHouseUnusedBookshelf: ; unreferenced
 	jumpstd PictureBookshelfScript
 
 ManiaText_AskLookAfterShuckle:
-	text "I, I'm in shock!"
+	text "I-I'm in shock!"
 
 	para "A guy about your"
 	line "age with piercing"
-
-	para "eyes and long hair"
-	line "came in."
+	cont "eyes and long hair"
+	cont "came in."
 
 	para "He scared me into"
 	line "giving him my"
@@ -117,9 +122,8 @@ ManiaText_AskLookAfterShuckle:
 
 	para "You look strong."
 	line "Could you look"
-
-	para "after my #MON"
-	line "for a while?"
+	cont "after my #MON"
+	cont "for a while?"
 	done
 
 ManiaText_TakeCareOfShuckle:
@@ -131,7 +135,7 @@ ManiaText_TakeCareOfShuckle:
 
 ManiaText_GotShuckle:
 	text "<PLAYER> received a"
-	line "#MON."
+	line "SHUCKLE."
 	done
 
 ManiaText_PartyFull:
@@ -146,55 +150,67 @@ ManiaText_IfHeComesBack:
 	done
 
 ManiaText_CanIHaveMyMonBack:
-	text "Hi! How's my #-"
-	line "MON?"
+	text "Hi! How's my"
+	line "SHUCKIE?"
 
-	para "I think I'm safe"
-	line "now, so may I have"
-	cont "it back?"
+	para "If you have them"
+	line "with you, may I"
+	cont "see them?"
 	done
 
 ManiaText_ThankYou:
-	text "Thank you!"
+	text "SHUCKIE seems to"
+	line "want to spend a"
+	cont "little more time"
+	cont "with you."
 	done
 
 ManiaText_ShuckleNotThere:
 	text "Hey, you don't"
-	line "have my #MON"
-	cont "with you."
+	line "have SHUCKIE with"
+	cont "you."
 	done
 
 ManiaText_ShuckleLikesYou:
-	text "My #MON has"
-	line "come to like you."
+	text "Looks like SHUCKIE"
+	line "really likes you!"
 
-	para "All right, you"
-	line "should keep it."
-
-	para "But promise to"
-	line "be good to it!"
+	para "If you're going"
+	line "to keep SHUCKIE,"
+	cont "you can have this"
+	cont "too!"
 	done
 
 ManiaText_SameAsBeingRobbed:
-	text "Oh, no, no… That's"
-	line "the same as being"
-	cont "robbed."
+	text "Come back with"
+	line "SHUCKIE sometime!"
 	done
 
 ManiaText_HappinessSpeech:
-	text "For #MON, hap-"
-	line "piness is being"
+	text "SHUCKIE loves that"
+	line "ANTIQUE POT, so"
+	cont "I'm sure it'll"
+	cont "appreciate you"
+	cont "keeping it safe."
 
-	para "with a person who"
-	line "treats them well."
+	para "Promise to be good"
+	line "to SHUCKIE, won't"
+	cont "you?"
 	done
 
-ManiaText_ShuckleIsYourLastMon:
-	text "If I take my #-"
-	line "MON back, what are"
+ManiaText_Pockle:
+	text "Wow, you made"
+	line "SHUCKIE evolve?"
 
-	para "you going to use"
-	line "in battle?"
+	para "That's excellent!"
+	line "They look really"
+	cont "pleased now, too."
+
+	para "There's not much"
+	line "point in taking"
+	cont "this now that you"
+	cont "evolved SHUCKIE,"
+	cont "but have this!"
 	done
 
 ManiasHouse_MapEvents:

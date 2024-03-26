@@ -171,7 +171,7 @@ ItemDescriptions:
 	dw GorgeousBoxDesc
 	dw SunStoneDesc
 	dw PolkadotBowDesc
-	dw QuestionMarkDesc
+	dw AntiquePotDesc
 	dw UpGradeDesc
 	dw BerryDesc
 	dw GoldBerryDesc
@@ -848,6 +848,10 @@ SunStoneDesc:
 PolkadotBowDesc:
 	db   "Powers up normal-"
 	next "type moves. (HOLD)@"
+	
+AntiquePotDesc:
+	db   "A valuable pot."
+	next "Sell very high.@"
 
 UpGradeDesc:
 	db   "A mysterious box"

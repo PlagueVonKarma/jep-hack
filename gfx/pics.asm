@@ -828,3 +828,6 @@ RagingBoltFrontpic: INCBIN "gfx/pokemon/raging_bolt/front.animated.2bpp.lz"
 RagingBoltBackpic:	 INCBIN "gfx/pokemon/raging_bolt/back.2bpp.lz"
 GougingFireFrontpic: INCBIN "gfx/pokemon/gouging_fire/front.animated.2bpp.lz"
 GougingFireBackpic:	 INCBIN "gfx/pokemon/gouging_fire/back.2bpp.lz"
+
+PockleFrontpic: INCBIN "gfx/pokemon/pockle/front.animated.2bpp.lz"
+PockleBackpic:	 INCBIN "gfx/pokemon/pockle/back.2bpp.lz"

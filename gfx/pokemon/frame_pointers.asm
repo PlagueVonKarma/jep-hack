@@ -262,6 +262,7 @@ FramesPointers:
 	dba QwilfishFrames
 	dba ScizorFrames
 	dba ShuckleFrames
+	dba PockleFrames
 	dba HeracrossFrames
 	dba SneaselFrames
 	dba TeddiursaFrames

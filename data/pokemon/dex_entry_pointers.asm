@@ -263,6 +263,7 @@ PokedexDataPointerTable:
 	dba QwilfishPokedexEntry
 	dba ScizorPokedexEntry
 	dba ShucklePokedexEntry
+	dba PocklePokedexEntry
 	dba HeracrossPokedexEntry
 	dba SneaselPokedexEntry
 	dba TeddiursaPokedexEntry

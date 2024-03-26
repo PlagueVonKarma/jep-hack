@@ -203,6 +203,7 @@ NewPokedexOrder:
 	dw KRABBY
 	dw KINGLER
 	dw SHUCKLE
+	dw POCKLE
 	dw STARYU
 	dw STARMIE
 	dw SHELLDER

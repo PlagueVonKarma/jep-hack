@@ -280,9 +280,10 @@ DEF NUM_DECODESCS EQU const_value
 	const_def
 	const SHUCKIE_WRONG_MON ; 0
 	const SHUCKIE_REFUSED   ; 1
-	const SHUCKIE_RETURNED  ; 2
-	const SHUCKIE_HAPPY     ; 3
+	const SHUCKIE_HAPPY     ; 2
+	const SHUCKIE_EVOLVED   ; 3
 	const SHUCKIE_FAINTED   ; 4
+	const SHUCKIE_OKAY      ; 5
 
 ; CheckPartyFullAfterContest return values
 	const_def

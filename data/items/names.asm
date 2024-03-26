@@ -170,7 +170,7 @@ ItemNames::
 	li "GORGEOUS BOX"
 	li "SUN STONE"
 	li "POLKADOT BOW"
-	li "TERU-SAMA"
+	li "ANTIQUE POT"
 	li "UP-GRADE"
 	li "BERRY"
 	li "GOLD BERRY"

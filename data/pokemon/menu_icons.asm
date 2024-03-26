@@ -264,6 +264,7 @@ MonMenuIcons:
 	db ICON_FISH        ; QWILFISH
 	db ICON_BUG         ; SCIZOR
 	db ICON_BUG         ; SHUCKLE
+	db ICON_BUG         ; POCKLE
 	db ICON_BUG         ; HERACROSS
 	db ICON_FOX         ; SNEASEL
 	db ICON_MONSTER     ; TEDDIURSA

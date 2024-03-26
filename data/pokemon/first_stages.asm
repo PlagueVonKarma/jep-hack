@@ -263,6 +263,7 @@ FirstEvoStages::
 	dw QWILFISH
 	dw SCYTHER
 	dw SHUCKLE
+	dw SHUCKLE
 	dw HERACROSS
 	dw SNEASEL
 	dw TEDDIURSA  ;d8

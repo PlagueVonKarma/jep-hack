@@ -266,6 +266,7 @@ PokemonNames::
 	db "QWILFISH@@"
 	db "SCIZOR@@@@"
 	db "SHUCKLE@@@"
+	db "POCKLE@@@@"
 	db "HERACROSS@"
 	db "SNEASEL@@@"
 	db "TEDDIURSA@"

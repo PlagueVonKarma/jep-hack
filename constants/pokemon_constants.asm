@@ -282,6 +282,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const QWILFISH   ; d3
 	const SCIZOR     ; d4
 	const SHUCKLE    ; d5
+	const POCKLE
 	const HERACROSS  ; d6
 	const SNEASEL    ; d7
 	const TEDDIURSA  ; d8

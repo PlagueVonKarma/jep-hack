@@ -262,6 +262,7 @@ AnimationPointers:
 	dw QwilfishAnimation
 	dw ScizorAnimation
 	dw ShuckleAnimation
+	dw PockleAnimation
 	dw HeracrossAnimation
 	dw SneaselAnimation
 	dw TeddiursaAnimation
