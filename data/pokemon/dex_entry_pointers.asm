@@ -294,6 +294,37 @@ PokedexDataPointerTable:
 	dba MagbyPokedexEntry
 	dba MiltankPokedexEntry
 	dba BlisseyPokedexEntry
+	dba WaruchuPokedexEntry
+	dba SoneggPokedexEntry
+	dba CacawphonyPokedexEntry
+	dba TrebirPokedexEntry
+	dba SakurazePokedexEntry
+	dba AmanobiPokedexEntry
+	dba TrustanPokedexEntry
+	dba KuwaguardPokedexEntry
+	dba TonquitoPokedexEntry
+	dba MolambinoPokedexEntry
+	dba LuanboPokedexEntry
+	dba GranboPokedexEntry
+	dba AngorePokedexEntry
+	dba EucalaPokedexEntry
+	dba KiwookedPokedexEntry
+	dba CyclorpPokedexEntry
+	dba KitsenPokedexEntry
+	dba WispiritPokedexEntry
+	dba CoatlPokedexEntry
+	dba MimearPokedexEntry
+	dba InoshikaPokedexEntry
+	dba RuddernautPokedexEntry
+	dba XylodonPokedexEntry
+	dba XylofinPokedexEntry
+	dba DokuroarPokedexEntry
+	dba ScreamTailPokedexEntry
+	dba SandyShocksPokedexEntry
+	dba GreatTuskPokedexEntry
+	dba IronTreadsPokedexEntry
+	dba IronBundlePokedexEntry
+	dba IronThornsPokedexEntry
 	dba RagingBoltPokedexEntry
 	dba GougingFirePokedexEntry
 	dba WalkingWakePokedexEntry

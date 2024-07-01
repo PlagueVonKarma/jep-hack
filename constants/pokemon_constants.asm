@@ -313,6 +313,40 @@ DEF JOHTO_POKEMON EQU const_value
 	const MAGBY      ; f0
 	const MILTANK    ; f1
 	const BLISSEY    ; f2
+	; Nihon non-Starters begin here i guess
+	; also Folage is uh somewhere thatll be fine
+	const WARUCHU
+	const SONEGG
+	const CACAWPHONY
+	const TREBIR
+	const SAKURAZE
+	const AMANOBI
+	const TRUSTAN
+	const KUWAGUARD
+	const TONQUITO
+	const MOLAMBINO
+	const LUANBO
+	const GRANBO
+	const ANGORE
+	const EUCALA
+	const KIWOOKED
+	const CYCLORP
+	const KITSEN
+	const WISPIRIT
+	const COATL
+	const MIMEAR
+	const INOSHIKA
+	const RUDDERNAUT
+	const XYLODON
+	const XYLOFIN
+	const DOKUROAR
+	const SCREAM_TAIL
+	const SANDY_SHOCKS
+	const GREAT_TUSK
+	const FLUTTER_MANE
+	const IRON_TREADS
+	const IRON_BUNDLE
+	const IRON_THORNS
 	const RAGING_BOLT
 	const GOUGING_FIRE
 	const WALKING_WAKE

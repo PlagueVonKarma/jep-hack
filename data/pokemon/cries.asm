@@ -299,6 +299,38 @@ PokemonCries::
 	mon_cry CRY_TEDDIURSA,   374,   58 ; MAGBY
 	mon_cry CRY_GLIGAR,     -461,  416 ; MILTANK
 	mon_cry CRY_SLOWKING,    659,  320 ; BLISSEY
+	mon_cry CRY_NIDORAN_M,     0,  128 ; WARUCHU
+	mon_cry CRY_NIDORAN_M,     0,  128 ; SONEGG
+	mon_cry CRY_NIDORAN_M,     0,  128 ; CACAWPHONY
+	mon_cry CRY_NIDORAN_M,     0,  128 ; TREBIR
+	mon_cry CRY_NIDORAN_M,     0,  128 ; SAKURAZE
+	mon_cry CRY_NIDORAN_M,     0,  128 ; AMANOBI
+	mon_cry CRY_NIDORAN_M,     0,  128 ; TRUSTAN
+	mon_cry CRY_NIDORAN_M,     0,  128 ; KUWAGUARD
+	mon_cry CRY_NIDORAN_M,     0,  128 ; TONQUITO
+	mon_cry CRY_NIDORAN_M,     0,  128 ; MOLAMBINO
+	mon_cry CRY_NIDORAN_M,     0,  128 ; LUANBO
+	mon_cry CRY_NIDORAN_M,     0,  128 ; GRANBO
+	mon_cry CRY_NIDORAN_M,     0,  128 ; ANGORE
+	mon_cry CRY_NIDORAN_M,     0,  128 ; EUCALA
+	mon_cry CRY_NIDORAN_M,     0,  128 ; KIWOOKED
+	mon_cry CRY_NIDORAN_M,     0,  128 ; CYCLORP
+	mon_cry CRY_NIDORAN_M,     0,  128 ; KITSEN
+	mon_cry CRY_NIDORAN_M,     0,  128 ; WISPIRIT
+	mon_cry CRY_NIDORAN_M,     0,  128 ; COATL
+	mon_cry CRY_NIDORAN_M,     0,  128 ; MIMEAR
+	mon_cry CRY_NIDORAN_M,     0,  128 ; INOSHIKA
+	mon_cry CRY_NIDORAN_M,     0,  128 ; RUDDERNAUT
+	mon_cry CRY_NIDORAN_M,     0,  128 ; XYLODON
+	mon_cry CRY_NIDORAN_M,     0,  128 ; XYLOFIN
+	mon_cry CRY_NIDORAN_M,     0,  128 ; DOKUROAR
+	mon_cry CRY_NIDORAN_M,     0,  128 ; SCREAM_TAIL
+	mon_cry CRY_NIDORAN_M,     0,  128 ; SANDY_SHOCKS
+	mon_cry CRY_NIDORAN_M,     0,  128 ; GREAT_TUSK
+	mon_cry CRY_NIDORAN_M,     0,  128 ; FLUTTER_MANE
+	mon_cry CRY_NIDORAN_M,     0,  128 ; IRON_TREADS
+	mon_cry CRY_NIDORAN_M,     0,  128 ; IRON_BUNDLE
+	mon_cry CRY_NIDORAN_M,     0,  128 ; IRON_THORNS
 	mon_cry CRY_RAIKOU,      564,  310 ; RAGING_BOLT
 	mon_cry CRY_ENTEI,         5,  432 ; GOUGING_FIRE
 	mon_cry CRY_MAGCARGO,      3,  400 ; WALKING_WAKE

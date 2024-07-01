@@ -116,8 +116,41 @@ EggMovePointers2::
 	dw ElekidEggMoves
 	dw MagbyEggMoves
 	dw MiltankEggMoves
+	dw NoEggMoves2 ; Blissey
+	; Nihon non-starter/folage/barreau here
+	dw WaruchuEggMoves
+	dw SoneggEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw SakurazeEggMoves
+	dw AmanobiEggMoves
+	dw TrustanEggMoves
+	dw KuwaguardEggMoves
+	dw TonquitoEggMoves
+	dw MolambinoEggMoves
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw AngoreEggMoves
+	dw EucalaEggMoves
+	dw KiwookedEggMoves
+	dw CyclorpEggMoves
+	dw KitsenEggMoves
+	dw WispiritEggMoves
+	dw CoatlEggMoves
+	dw MimearEggMoves
+	dw InoshikaEggMoves
+	dw RuddernautEggMoves
+	dw XylodonEggMoves
+	dw NoEggMoves2
+	dw DokuroarEggMoves ; Dokuroar
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2
+	dw NoEggMoves2 ; Raging Bolt
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -524,6 +557,153 @@ MiltankEggMoves:
 	dw REVERSAL
 	dw SEISMIC_TOSS
 	dw -1 ; end
+
+WaruchuEggMoves:
+	dw BELLY_DRUM
+	dw DISABLE
+	dw DIZZY_PUNCH
+	dw FAINT_ATTACK
+	dw MEAN_LOOK
+	dw QUICK_ATTACK
+	dw -1 ;end 
+
+SoneggEggMoves:
+	dw DRILL_PECK
+	dw MIRROR_MOVE
+	dw SAND_ATTACK
+	dw SKY_ATTACK
+	dw WHIRLWIND
+	dw -1 ;end 
+
+SakurazeEggMoves:
+	dw ACID
+	dw FIRE_SPIN
+	dw MORNING_SUN
+	dw -1 ;end 
+
+AmanobiEggMoves:
+	dw EXTREMESPEED
+	dw FAINT_ATTACK
+	dw FURY_SWIPES
+	dw PETAL_DANCE
+	dw SMOKESCREEN
+	dw SUBSTITUTE
+	dw -1 ;end 
+
+TrustanEggMoves:
+	dw FAINT_ATTACK
+	dw PAY_DAY
+	dw SPLASH
+	dw SUBMISSION
+	dw -1 ;end 
+
+KuwaguardEggMoves:
+	dw CRUNCH
+	dw METAL_CLAW
+	dw WHIRLWIND
+	dw -1 ;end 
+
+TonquitoEggMoves:
+	dw MEGAPHONE
+	dw AGILITY
+	dw POISON_STING
+	dw PSYWAVE
+	dw -1 ;end 
+
+MolambinoEggMoves:
+	dw DOUBLE_EDGE
+	dw PSYBEAM
+	dw SELFDESTRUCT
+	dw SWEET_KISS
+	dw TAKE_DOWN
+	dw -1 ;end 
+
+AngoreEggMoves:
+	dw CRUNCH
+	dw FURY_ATTACK
+	dw SWORDS_DANCE
+	dw -1 ;end 
+
+EucalaEggMoves:
+	dw FAINT_ATTACK
+	dw FLAME_WHEEL
+	dw LICK
+	dw SLUDGE
+	dw -1 ;end 
+
+KiwookedEggMoves:
+	dw DOUBLE_KICK
+	dw FAINT_ATTACK
+	dw QUICK_ATTACK
+	dw JUMP_KICK
+	dw -1 ;end 
+
+CyclorpEggMoves:
+	dw BEAT_UP
+	dw FURY_ATTACK
+	dw PURSUIT
+	dw SWORDS_DANCE
+	dw -1 ;end 
+
+KitsenEggMoves:
+	dw RAZOR_WIND
+	dw NIGHT_SHADE
+	dw SPITE
+	dw WHIRLWIND
+	dw -1 ;end 
+
+WispiritEggMoves:
+	dw CONFUSE_RAY
+	dw DISABLE
+	dw PAIN_SPLIT
+	dw PURSUIT
+	dw SCARY_FACE
+	dw -1 ;end 
+
+CoatlEggMoves:
+	dw BITE
+	dw MEDITATE
+	dw PETAL_DANCE
+	dw RAZOR_WIND
+	dw -1 ;end 
+
+MimearEggMoves:
+	dw LOVELY_KISS
+	dw PRESENT
+	dw SWEET_KISS
+	dw -1 ;end 
+
+InoshikaEggMoves:
+	dw FURY_ATTACK
+	dw PAY_DAY
+	dw ROCK_SLIDE
+	dw TAKE_DOWN
+	dw -1 ;end 
+
+RuddernautEggMoves:
+	dw DOUBLE_EDGE
+	dw MIST
+	dw OUTRAGE
+	dw PSYBEAM
+	dw SAFEGUARD
+	dw -1 ;end 
+
+XylodonEggMoves:
+	dw BELLY_DRUM
+	dw CRUNCH
+	dw DOUBLE_EDGE
+	dw LEER
+	dw SLAM
+	dw THRASH
+	dw -1 ;end 
+
+DokuroarEggMoves:
+	dw BONEMERANG
+	dw BONE_RUSH
+	dw BONE_CLUB
+	dw ROCK_SLIDE
+	dw SCARY_FACE
+	dw -1 ;end 
 
 LarvitarEggMoves:
 	dw PURSUIT
