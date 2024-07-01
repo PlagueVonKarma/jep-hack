@@ -389,7 +389,7 @@ LeafStoneDesc:
 
 MetalPowderDesc:
 	db   "Raises DEFENSE of"
-	next "DITTO. (HOLD)@"
+	next "DITTO and MIMMEO.@"
 
 NuggetDesc:
 	db   "Made of pure gold."
@@ -465,7 +465,7 @@ ItemfinderDesc:
 
 ExpShareDesc:
 	db   "Shares battle EXP."
-	next "Points. (HOLD)@"
+	next "Points.@"
 
 OldRodDesc:
 	db   "Use by water to"
@@ -504,8 +504,8 @@ RedScaleDesc:
 	next "red GYARADOS.@"
 
 SecretPotionDesc:
-	db   "Fully heals any"
-	next "#MON.@"
+	db   "It can heal any"
+	next "#MON illness.@"
 
 SSTicketDesc:
 	db   "A ticket for the"
@@ -528,8 +528,8 @@ MoomooMilkDesc:
 	next "HP by 100.@"
 
 QuickClawDesc:
-	db   "Raises 1st strike"
-	next "ratio. (HOLD)@"
+	db   "May allow the user"
+	next "to move first.@"
 
 PsnCureBerryDesc:
 	db   "A self-cure for"
@@ -540,11 +540,11 @@ GoldLeafDesc:
 	next "colored leaf.@"
 
 SoftSandDesc:
-	db   "Powers up ground-"
+	db   "Powers up GROUND-"
 	next "type moves. (HOLD)@"
 
 SharpBeakDesc:
-	db   "Powers up flying-"
+	db   "Powers up FLYING-"
 	next "type moves. (HOLD)@"
 
 PrzCureBerryDesc:
@@ -560,7 +560,7 @@ IceBerryDesc:
 	next "burn. (HOLD)@"
 
 PoisonBarbDesc:
-	db   "Powers up poison-"
+	db   "Powers up POISON-"
 	next "type moves. (HOLD)@"
 
 KingsRockDesc:
@@ -587,7 +587,7 @@ BigMushroomDesc:
 	next "Sell high.@"
 
 SilverPowderDesc:
-	db   "Powers up bug-type"
+	db   "Powers up BUG-type"
 	next "moves. (HOLD)@"
 
 BluApricornDesc:
@@ -608,18 +608,18 @@ CleanseTagDesc:
 	next "#MON. (HOLD)@"
 
 MysticWaterDesc:
-	db   "Powers up water-"
+	db   "Powers up WATER-"
 	next "type moves. (HOLD)@"
 
 TwistedSpoonDesc:
-	db   "Powers up psychic-"
+	db   "Powers up PSYCHIC-"
 	next "type moves. (HOLD)@"
 
 WhtApricornDesc:
 	db   "A white APRICORN.@"
 
 BlackbeltDesc:
-	db   "Boosts fighting-"
+	db   "Boosts FIGHTING-"
 	next "type moves. (HOLD)@"
 
 BlkApricornDesc:
@@ -631,7 +631,7 @@ PnkApricornDesc:
 	next "@"
 
 BlackGlassesDesc:
-	db   "Powers up dark-"
+	db   "Powers up DARK-"
 	next "type moves. (HOLD)@"
 
 SlowpokeTailDesc:
@@ -639,23 +639,23 @@ SlowpokeTailDesc:
 	next "high.@"
 
 PinkBowDesc:
-	db   "Powers up normal-"
+	db   "Powers up NORMAL-"
 	next "type moves. (HOLD)@"
 
 StickDesc:
-	db   "An ordinary stick."
-	next "Sell low.@"
+	db   "Ups crit ratio of"
+	next "FARFETCH'D. (HOLD)@"
 
 SmokeBallDesc:
 	db   "Escape from wild"
 	next "#MON. (HOLD)@"
 
 NeverMeltIceDesc:
-	db   "Powers up ice-type"
+	db   "Powers up ICE-type"
 	next "moves. (HOLD)@"
 
 MagnetDesc:
-	db   "Boosts electric-"
+	db   "Boosts ELECTRIC-"
 	next "type moves. (HOLD)@"
 
 MiracleBerryDesc:
@@ -675,7 +675,7 @@ EverStoneDesc:
 	next "(HOLD)@"
 
 SpellTagDesc:
-	db   "Powers up ghost-"
+	db   "Powers up GHOST-"
 	next "type moves. (HOLD)@"
 
 RageCandyBarDesc:
@@ -691,16 +691,16 @@ BlueCardDesc:
 	next "points.@"
 
 MiracleSeedDesc:
-	db   "Powers up grass-"
+	db   "Powers up GRASS-"
 	next "type moves. (HOLD)@"
 
 ThickClubDesc:
-	db   "A bone of some"
-	next "sort. Sell low.@"
+	db   "Raises ATTACK of"
+	next "the CUBONE line.@"
 
 FocusBandDesc:
-	db   "May prevent faint-"
-	next "ing. (HOLD)@"
+	db   "It may prevent"
+	next "fainting. (HOLD)@"
 
 EnergyPowderDesc:
 	db   "Restores #MON"
@@ -719,7 +719,7 @@ RevivalHerbDesc:
 	next "#MON. Bitter.@"
 
 HardStoneDesc:
-	db   "Powers up rock-"
+	db   "Powers up ROCK-"
 	next "type moves. (HOLD)@"
 
 LuckyEggDesc:
@@ -735,8 +735,8 @@ MachinePartDesc:
 	next "the POWER PLANT.@"
 
 EggTicketDesc:
-	db   "May use at Golden-"
-	next "rod trade corner.@"
+	db   "This item cannot"
+	next "be used.@"
 
 LostItemDesc:
 	db   "The # DOLL lost"
@@ -758,7 +758,7 @@ PassDesc:
 	next "MAGNET TRAIN.@"
 
 CharcoalDesc:
-	db   "Powers up fire-"
+	db   "Powers up FIRE-"
 	next "type moves. (HOLD)@"
 
 BerryJuiceDesc:
@@ -770,11 +770,11 @@ ScopeLensDesc:
 	next "hit ratio. (HOLD)@"
 
 MetalCoatDesc:
-	db   "Powers up steel-"
+	db   "Powers up STEEL-"
 	next "type moves. (HOLD)@"
 
 DragonFangDesc:
-	db   "Powers up dragon-"
+	db   "Powers up DRAGON-"
 	next "type moves. (HOLD)@"
 
 LeftoversDesc:
@@ -786,8 +786,8 @@ MysteryBerryDesc:
 	next "for PP. (HOLD)@"
 
 DragonScaleDesc:
-	db   "A rare dragon-type"
-	next "item.@"
+	db   "Powers up DRAGON-"
+	next "type moves. (HOLD)@"
 
 BerserkGeneDesc:
 	db   "Boosts ATTACK but"
@@ -818,8 +818,8 @@ FastBallDesc:
 	next "ing fast #MON.@"
 
 LightBallDesc:
-	db   "An odd, electrical"
-	next "orb. (HOLD)@"
+	db   "Ups SPECIAL ATTACK"
+	next "of PIKACHU. (HOLD)@"
 
 FriendBallDesc:
 	db   "A BALL that makes"
@@ -846,7 +846,7 @@ SunStoneDesc:
 	next "kinds of #MON.@"
 
 PolkadotBowDesc:
-	db   "Powers up normal-"
+	db   "Powers up NORMAL-"
 	next "type moves. (HOLD)@"
 	
 AntiquePotDesc:
@@ -921,24 +921,24 @@ MirageMailDesc:
 	next "(HOLD)@"
 
 FairyFeatherDesc:
-	db   "Powers up fairy-"
+	db   "Powers up FAIRY-"
  	next "type moves. (HOLD)@"
 	
 OldAmberDesc:
-	db   "Amber with DNA of"
-	next "an ancient #MON."
+	db   "Fossilized resin"
+	next "containing DNA.@"
 
 DomeFossilDesc:
-	db   "A dome-shaped fossil"
-	next "of an ancient #MON."
+	db   "The shell of an"
+	next "ancient #MON.@"
 	
 HelixFossilDesc:
-	db   "A swirl-shaped fossil"
-	next "of an ancient #MON."
+	db   "The shell of an"
+	next "ancient #MON.@"
 
 WingFossilDesc:
-	db   "A wing-shaped fossil"
-	next "of an ancient #MON."
+	db   "The wing of an"
+	next "ancient #MON.@"
 	
 HeartStoneDesc:
 	db   "Evolves certain"

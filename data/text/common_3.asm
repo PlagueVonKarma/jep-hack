@@ -1409,6 +1409,16 @@ _ItemGotOffText::
 	text "."
 	prompt
 
+_ExpShareToggleOn::
+	text "The EXP.SHARE was"
+	line "turned on."
+	prompt
+
+_ExpShareToggleOff::
+	text "The EXP.SHARE was"
+	line "turned off."
+	prompt
+
 _KnowsMoveText::
 	text_ram wStringBuffer1
 	text " knows"

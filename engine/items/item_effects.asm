@@ -38,7 +38,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; FIRE_STONE
 	dw EvoStoneEffect      ; THUNDERSTONE
 	dw EvoStoneEffect      ; WATER_STONE
-	dw NoEffect			   ; FAIRY_FEATHER
+	dw NoEffect            ; FAIRY_FEATHER
 	dw VitaminEffect       ; HP_UP
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
@@ -70,7 +70,7 @@ ItemEffects:
 	dw CoinCaseEffect      ; COIN_CASE
 	dw ItemfinderEffect    ; ITEMFINDER
 	dw PokeFluteEffect     ; POKE_FLUTE
-	dw NoEffect            ; EXP_SHARE
+	dw ExpShareEffect      ; EXP_SHARE
 	dw OldRodEffect        ; OLD_ROD
 	dw GoodRodEffect       ; GOOD_ROD
 	dw NoEffect            ; SILVER_LEAF
@@ -215,10 +215,13 @@ ItemEffects:
 ; This has been amended for architectural purposes, and because we have a shitload of SW97 items to add.
 
 PokeBallEffect:
-; BUG: The Dude's catching tutorial may crash if his Poké Ball can't be used (see docs/bugs_and_glitches.md)
 	ld a, [wBattleMode]
 	dec a
 	jp nz, UseBallInTrainerBattle
+
+	ld a, [wBattleType]
+	cp BATTLETYPE_TUTORIAL
+	jr z, .room_in_party	; Fixes a catching tutorial bug
 
 	ld a, [wPartyCount]
 	cp PARTY_LENGTH
@@ -232,11 +235,10 @@ PokeBallEffect:
 	jp z, Ball_BoxIsFullMessage
 
 .room_in_party
-; BUG: Using a Park Ball in non-Contest battles has a corrupt animation (see docs/bugs_and_glitches.md)
 	xor a
 	ld [wWildMon], a
-	ld a, [wCurItem]
-	cp PARK_BALL
+	ld a, [wBattleType]
+	cp BATTLETYPE_CONTEST	; Fixes the Park Ball corrupting graphics when used outside of a Contest
 	call nz, ReturnToBattle_UseBall
 
 	ld hl, wOptions
@@ -341,12 +343,12 @@ PokeBallEffect:
 	jr nz, .statuscheck
 	ld a, 1
 .statuscheck
-; BUG: BRN/PSN/PAR do not affect catch rate (see docs/bugs_and_glitches.md)
 	ld b, a
 	ld a, [wEnemyMonStatus]
 	and 1 << FRZ | SLP_MASK
 	ld c, 10
 	jr nz, .addstatus
+	ld a, [wEnemyMonStatus]	; Fixes a bug where Burn, Poison and Paralysis have no effect on catch rate
 	and a
 	ld c, 5
 	jr nz, .addstatus
@@ -358,10 +360,10 @@ PokeBallEffect:
 	ld a, $ff
 .max_1
 
-; BUG: HELD_CATCH_CHANCE has no effect (see docs/bugs_and_glitches.md)
 	ld d, a
 	push de
 	ld a, [wBattleMonItem]
+	ld b, a			; Fixes this effect having no effect when loaded
 	farcall GetItemHeldEffect
 	ld a, b
 	cp HELD_CATCH_CHANCE
@@ -946,7 +948,7 @@ LoveBallMultiplier:
 	inc d   ; female
 .got_wild_gender
 
-; BUG: Love Ball boosts catch rate for the wrong gender (see docs/bugs_and_glitches.md)
+; BUG?: Love Ball boosts catch rate for the same gender. We're currently keeping it because we're all gay.
 	ld a, d
 	pop de
 	cp d
@@ -981,7 +983,7 @@ FastBallMultiplier:
 	push bc
 
 .loop
-; BUG: Fast Ball only boosts catch rate for three Pokémon (see docs/bugs_and_glitches.md)
+; BUG: Fast Ball only boosts catch rate for three Pokémon (not sure if this has been fixed here)
 	ld a, BANK(FleeMons)
 	call GetFarByte
 	ld c, a
@@ -1876,19 +1878,16 @@ LoadCurHPIntoBuffer3:
 	ld [wHPBuffer3], a
 	ret
 
-LoadHPIntoBuffer3: ; unreferenced
-	ld a, d
-	ld [wHPBuffer3 + 1], a
-	ld a, e
-	ld [wHPBuffer3], a
-	ret
+ExpShareEffect:
+	ld a, [wExpShareToggle]
+	xor 1
+	ld [wExpShareToggle], a
+	and a
+	ld hl, ExpShareToggleOn
+	jp nz, PrintText
 
-LoadHPFromBuffer3: ; unreferenced
-	ld a, [wHPBuffer3 + 1]
-	ld d, a
-	ld a, [wHPBuffer3]
-	ld e, a
-	ret
+	ld hl, ExpShareToggleOff
+	jp PrintText
 
 LoadCurHPIntoBuffer2:
 	ld a, MON_HP
@@ -2710,6 +2709,14 @@ ItemGotOnText: ; unreferenced
 
 ItemGotOffText: ; unreferenced
 	text_far _ItemGotOffText
+	text_end
+
+ExpShareToggleOff:
+	text_far _ExpShareToggleOff
+	text_end
+ 
+ExpShareToggleOn:
+	text_far _ExpShareToggleOn
 	text_end
 
 ApplyPPUp:
