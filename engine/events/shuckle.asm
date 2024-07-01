@@ -135,7 +135,10 @@ ReturnShuckie:
 	cp 150
 	ld a, SHUCKIE_HAPPY
 	jr nc, .HappyToStayWithYou
-	ld a, SHUCKIE_OKAY
+	xor a ; REMOVE_PARTY
+	ld [wPokemonWithdrawDepositParameter], a
+	callfar RemoveMonFromPartyOrBox
+	ld a, SHUCKIE_RETURNED
 .HappyToStayWithYou:
 	ld [wScriptVar], a
 	ret

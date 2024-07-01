@@ -59,7 +59,11 @@ ManiaScript:
 	ifequal SHUCKIE_EVOLVED, .evolved
 	ifequal SHUCKIE_HAPPY, .superhappy
 	writetext ManiaText_ThankYou
-	waitbutton
+	promptbutton
+	verbosegiveitem ANTIQUE_POT
+	iffalse .NoRoom0
+	setevent EVENT_MANIA_TOOK_SHUCKIE_OR_LET_YOU_KEEP_HIM
+.NoRoom0:
 	closetext
 	end
 
@@ -84,6 +88,10 @@ ManiaScript:
 	waitbutton
 	closetext
 	end
+	
+.nothingleft ; unreferenced
+	writetext ManiaText_ShuckleIsYourLastMon
+	waitbutton
 
 .evolved
 	writetext ManiaText_Pockle
@@ -153,16 +161,19 @@ ManiaText_CanIHaveMyMonBack:
 	text "Hi! How's my"
 	line "SHUCKIE?"
 
-	para "If you have them"
-	line "with you, may I"
-	cont "see them?"
+	para "I think I'm safe"
+	line "now, so may I have"
+	cont "them back?"
 	done
 
 ManiaText_ThankYou:
-	text "SHUCKIE seems to"
-	line "want to spend a"
-	cont "little more time"
-	cont "with you."
+	text "Thank you for"
+	line "keeping SHUCKIE"
+	cont "safe!"
+	
+	para "Here, you can"
+	line "have this as a"
+	cont "reward!"
 	done
 
 ManiaText_ShuckleNotThere:
@@ -174,6 +185,10 @@ ManiaText_ShuckleNotThere:
 ManiaText_ShuckleLikesYou:
 	text "Looks like SHUCKIE"
 	line "really likes you!"
+	
+	para "I think that they"
+	line "would rather stay"
+	cont "with you."
 
 	para "If you're going"
 	line "to keep SHUCKIE,"
@@ -182,20 +197,16 @@ ManiaText_ShuckleLikesYou:
 	done
 
 ManiaText_SameAsBeingRobbed:
-	text "Come back with"
-	line "SHUCKIE sometime!"
+	text "Oh, no, no… That's"
+	line "the same as being"
+	cont "robbed."
 	done
 
 ManiaText_HappinessSpeech:
-	text "SHUCKIE loves that"
-	line "ANTIQUE POT, so"
-	cont "I'm sure it'll"
-	cont "appreciate you"
-	cont "keeping it safe."
-
-	para "Promise to be good"
-	line "to SHUCKIE, won't"
-	cont "you?"
+	text "For #MON, hap-"
+	line "piness is being"
+	cont "with a person who"
+	cont "treats them well."
 	done
 
 ManiaText_Pockle:
@@ -212,6 +223,12 @@ ManiaText_Pockle:
 	cont "evolved SHUCKIE,"
 	cont "but have this!"
 	done
+	
+ManiaText_ShuckleIsYourLastMon:
+	text "If I take SHUCKIE"
+	line "back, what are"
+	cont "you going to use"
+	cont "in battle?"
 
 ManiasHouse_MapEvents:
 	db 0, 0 ; filler
