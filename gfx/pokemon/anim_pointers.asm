@@ -293,6 +293,39 @@ AnimationPointers:
 	dw MagbyAnimation
 	dw MiltankAnimation
 	dw BlisseyAnimation
+	
+	dw WaruchuAnimation
+	dw SoneggAnimation
+	dw CacawphonyAnimation
+	dw TrebirAnimation
+	dw SakurazeAnimation
+	dw AmanobiAnimation
+	dw TrustanAnimation
+	dw KuwaguardAnimation
+	dw TonquitoAnimation
+	dw MolambinoAnimation
+	dw LuanboAnimation
+	dw GranboAnimation
+	dw AngoreAnimation
+	dw EucalaAnimation
+	dw KiwookedAnimation
+	dw CyclorpAnimation
+	dw KitsenAnimation
+	dw WispiritAnimation
+	dw CoatlAnimation
+	dw MimearAnimation
+	dw InoshikaAnimation
+	dw RuddernautAnimation
+	dw XylodonAnimation
+	dw XylofinAnimation
+	dw DokuroarAnimation
+	dw ScreamTailAnimation
+	dw SandyShocksAnimation
+	dw GreatTuskAnimation
+	dw IronTreadsAnimation
+	dw IronBundleAnimation
+	dw IronThornsAnimation
+	
 	dw RagingBoltAnimation
 	dw GougingFireAnimation
 	dw WalkingWakeAnimation

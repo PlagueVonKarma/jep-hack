@@ -602,6 +602,68 @@ PokemonPicPointers::
 	dba MiltankBackpic
 	dba BlisseyFrontpic
 	dba BlisseyBackpic
+	dba WaruchuFrontpic
+	dba WaruchuBackpic
+	dba SoneggFrontpic
+	dba SoneggBackpic
+	dba CacawphonyFrontpic
+	dba CacawphonyBackpic
+	dba TrebirFrontpic
+	dba TrebirBackpic
+	dba SakurazeFrontpic
+	dba SakurazeBackpic
+	dba AmanobiFrontpic
+	dba AmanobiBackpic
+	dba TrustanFrontpic
+	dba TrustanBackpic
+	dba KuwaguardFrontpic
+	dba KuwaguardBackpic
+	dba TonquitoFrontpic
+	dba TonquitoBackpic
+	dba MolambinoFrontpic
+	dba MolambinoBackpic
+	dba LuanboFrontpic
+	dba LuanboBackpic
+	dba GranboFrontpic
+	dba GranboBackpic
+	dba AngoreFrontpic
+	dba AngoreBackpic
+	dba EucalaFrontpic
+	dba EucalaBackpic
+	dba KiwookedFrontpic
+	dba KiwookedBackpic
+	dba CyclorpFrontpic
+	dba CyclorpBackpic
+	dba KitsenFrontpic
+	dba KitsenBackpic
+	dba WispiritFrontpic
+	dba WispiritBackpic
+	dba CoatlFrontpic
+	dba CoatlBackpic
+	dba MimearFrontpic
+	dba MimearBackpic
+	dba InoshikaFrontpic
+	dba InoshikaBackpic
+	dba RuddernautFrontpic
+	dba RuddernautBackpic
+	dba XylodonFrontpic
+	dba XylodonBackpic
+	dba XylofinFrontpic
+	dba XylofinBackpic
+	dba DokuroarFrontpic
+	dba DokuroarBackpic
+	dba ScreamTailFrontpic
+	dba ScreamTailBackpic
+	dba SandyShocksFrontpic
+	dba SandyShocksBackpic
+	dba GreatTuskFrontpic
+	dba GreatTuskBackpic
+	dba IronTreadsFrontpic
+	dba IronTreadsBackpic
+	dba IronBundleFrontpic
+	dba IronBundleBackpic
+	dba IronThornsFrontpic
+	dba IronThornsBackpic
 	dba RagingBoltFrontpic
 	dba RagingBoltBackpic
 	dba GougingFireFrontpic

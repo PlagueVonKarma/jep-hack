@@ -293,6 +293,39 @@ FramesPointers:
 	dba MagbyFrames
 	dba MiltankFrames
 	dba BlisseyFrames
+	
+	dba WaruchuFrames
+	dba SoneggFrames
+	dba CacawphonyFrames
+	dba TrebirFrames
+	dba SakurazeFrames
+	dba AmanobiFrames
+	dba TrustanFrames
+	dba KuwaguardFrames
+	dba TonquitoFrames
+	dba MolambinoFrames
+	dba LuanboFrames
+	dba GranboFrames
+	dba AngoreFrames
+	dba EucalaFrames
+	dba KiwookedFrames
+	dba CyclorpFrames
+	dba KitsenFrames
+	dba WispiritFrames
+	dba CoatlFrames
+	dba MimearFrames
+	dba InoshikaFrames
+	dba RuddernautFrames
+	dba XylodonFrames
+	dba XylofinFrames
+	dba DokuroarFrames
+	dba ScreamTailFrames
+	dba SandyShocksFrames
+	dba GreatTuskFrames
+	dba IronTreadsFrames
+	dba IronBundleFrames
+	dba IronThornsFrames
+	
 	dba RagingBoltFrames
 	dba GougingFireFrames
 	dba WalkingWakeFrames

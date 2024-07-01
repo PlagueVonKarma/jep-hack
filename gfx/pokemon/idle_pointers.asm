@@ -293,6 +293,39 @@ AnimationIdlePointers:
 	dw MagbyAnimationIdle
 	dw MiltankAnimationIdle
 	dw BlisseyAnimationIdle
+	
+	dw WaruchuAnimationIdle
+	dw SoneggAnimationIdle
+	dw CacawphonyAnimationIdle
+	dw TrebirAnimationIdle
+	dw SakurazeAnimationIdle
+	dw AmanobiAnimationIdle
+	dw TrustanAnimationIdle
+	dw KuwaguardAnimationIdle
+	dw TonquitoAnimationIdle
+	dw MolambinoAnimationIdle
+	dw LuanboAnimationIdle
+	dw GranboAnimationIdle
+	dw AngoreAnimationIdle
+	dw EucalaAnimationIdle
+	dw KiwookedAnimationIdle
+	dw CyclorpAnimationIdle
+	dw KitsenAnimationIdle
+	dw WispiritAnimationIdle
+	dw CoatlAnimationIdle
+	dw MimearAnimationIdle
+	dw InoshikaAnimationIdle
+	dw RuddernautAnimationIdle
+	dw XylodonAnimationIdle
+	dw XylofinAnimationIdle
+	dw DokuroarAnimationIdle
+	dw ScreamTailAnimationIdle
+	dw SandyShocksAnimationIdle
+	dw GreatTuskAnimationIdle
+	dw IronTreadsAnimationIdle
+	dw IronBundleAnimationIdle
+	dw IronThornsAnimationIdle
+	
 	dw RagingBoltAnimationIdle
 	dw GougingFireAnimationIdle
 	dw WalkingWakeAnimationIdle

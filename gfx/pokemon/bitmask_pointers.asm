@@ -293,6 +293,39 @@ BitmasksPointers:
 	dw MagbyBitmasks
 	dw MiltankBitmasks
 	dw BlisseyBitmasks
+	
+	dw WaruchuBitmasks
+	dw SoneggBitmasks
+	dw CacawphonyBitmasks
+	dw TrebirBitmasks
+	dw SakurazeBitmasks
+	dw AmanobiBitmasks
+	dw TrustanBitmasks
+	dw KuwaguardBitmasks
+	dw TonquitoBitmasks
+	dw MolambinoBitmasks
+	dw LuanboBitmasks
+	dw GranboBitmasks
+	dw AngoreBitmasks
+	dw EucalaBitmasks
+	dw KiwookedBitmasks
+	dw CyclorpBitmasks
+	dw KitsenBitmasks
+	dw WispiritBitmasks
+	dw CoatlBitmasks
+	dw MimearBitmasks
+	dw InoshikaBitmasks
+	dw RuddernautBitmasks
+	dw XylodonBitmasks
+	dw XylofinBitmasks
+	dw DokuroarBitmasks
+	dw ScreamTailBitmasks
+	dw SandyShocksBitmasks
+	dw GreatTuskBitmasks
+	dw IronTreadsBitmasks
+	dw IronBundleBitmasks
+	dw IronThornsBitmasks
+	
 	dw RagingBoltBitmasks
 	dw GougingFireBitmasks
 	dw WalkingWakeBitmasks
