@@ -1958,7 +1958,7 @@ RuddernautEvosAttacks:
 	db 0 ; no more level-up moves
 
 XylodonEvosAttacks:
-	db 0 ; no more evolutions
+	db EVOLVE_LEVEL, 40, XYLOFIN ; no more evolutions
 	dbw 1, HEADBUTT
 	dbw 1, WITHDRAW
 	dbw 7, ROCK_THROW
