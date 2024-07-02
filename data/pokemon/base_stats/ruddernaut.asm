@@ -3,7 +3,7 @@
 	db 130,  80,  85,  85,  95,  60
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, PSYCHIC ; type
+	db WATER, PSYCHIC_TYPE ; type
 	db 45 ; catch rate								; PLACEHOLDER
 	db 64 ; base exp								; PLACEHOLDER
 	db NO_ITEM, NO_ITEM ; items

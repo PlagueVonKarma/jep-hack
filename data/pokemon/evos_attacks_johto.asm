@@ -1732,7 +1732,7 @@ SakurazeEvosAttacks:
 	dbw 26, PETAL_DANCE
 	dbw 32, TAKE_DOWN
 	dbw 38, SYNTHESIS
-	dbw 44, SOLAR_BEAM
+	dbw 44, SOLARBEAM
 	db 0 ; no more level-up moves
 
 AmanobiEvosAttacks: ; TODO: review moveset, it's fighting/steel
@@ -1788,42 +1788,42 @@ MolambinoEvosAttacks:
 	db EVOLVE_LEVEL, 20, LUANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	dbw 7, DRAINING_KISS
+	; dbw 7, DRAINING_KISS ; move not yet implemented
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 24, MORNING_SUN
 	dbw 29, BUBBLEBEAM
 	dbw 34, THRASH
 	dbw 39, HYDRO_PUMP
-	dbw 45, DAZZLING_GLEAM
+	; dbw 45, DAZZLING_GLEAM ; move not yet implemented
 	db 0 ; no more level-up moves
 
 LuanboEvosAttacks:
 	db EVOLVE_LEVEL, 35, GRANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	dbw 7, DRAINING_KISS
+	; dbw 7, DRAINING_KISS ; move not yet implemented
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 25, MORNING_SUN
 	dbw 32, BUBBLEBEAM
 	dbw 39, THRASH
 	dbw 46, HYDRO_PUMP
-	dbw 54, DAZZLING_GLEAM
+	; dbw 54, DAZZLING_GLEAM ; move not yet implemented
 	db 0 ; no more level-up moves
 
 GranboEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	dbw 7, DRAINING_KISS
+	; dbw 7, DRAINING_KISS ; move not yet implemented
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 25, MORNING_SUN
 	dbw 32, BUBBLEBEAM
 	dbw 43, THRASH
 	dbw 52, HYDRO_PUMP
-	dbw 63, DAZZLING_GLEAM
+	; dbw 63, DAZZLING_GLEAM ; move not yet implemented
 	db 0 ; no more level-up moves
 
 AngoreEvosAttacks:
@@ -1922,14 +1922,14 @@ CoatlEvosAttacks:
 
 MimearEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, DISARMING_VOICE
+	; dbw 1, DISARMING_VOICE ; move not yet implemented
 	dbw 1, GROWL
-	dbw 8, FAIRY_WIND
+	; dbw 8, FAIRY_WIND ; move not yet implemented
 	dbw 13, CHARM
-	dbw 21, DRAINING_KISS
+	; dbw 21, DRAINING_KISS ; move not yet implemented
 	dbw 32, MIRROR_COAT
 	dbw 37, SAFEGUARD
-	dbw 43, DAZZLING_GLEAM
+	; dbw 43, DAZZLING_GLEAM ; move not yet implemented
 	db 0 ; no more level-up moves
 
 InoshikaEvosAttacks:
@@ -2007,10 +2007,10 @@ ScreamTailEvosAttacks:
 	dbw 21, BITE
 	dbw 28, BODY_SLAM
 	dbw 35, REST
-	dbw 42, DRAINING_KISS
+	; dbw 42, DRAINING_KISS ; move not yet implemented
 	dbw 49, PSYCHIC_M
 	dbw 56, CRUNCH
-	dbw 63, DAZZLING_GLEAM
+	; dbw 63, DAZZLING_GLEAM ; move not yet implemented
 	dbw 70, PERISH_SONG
 	db 0 ; no more level-up moves
 
@@ -2053,9 +2053,9 @@ FlutterManeEvosAttacks:
 	dbw 7, SUNNY_DAY
 	dbw 14, PSYBEAM
 	dbw 21, MEAN_LOOK
-	dbw 28, FAIRY_WIND
+	; dbw 28, FAIRY_WIND ; move not yet implemented
 	dbw 35, PSYCH_UP
-	dbw 42, DAZZLING_GLEAM
+	; dbw 42, DAZZLING_GLEAM ; move not yet implemented
 	dbw 49, SHADOW_BALL
 	dbw 56, PSYCHIC_M
 	dbw 63, PAIN_SPLIT

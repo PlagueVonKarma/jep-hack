@@ -322,6 +322,7 @@ FramesPointers:
 	dba ScreamTailFrames
 	dba SandyShocksFrames
 	dba GreatTuskFrames
+	dba FlutterManeFrames
 	dba IronTreadsFrames
 	dba IronBundleFrames
 	dba IronThornsFrames

@@ -322,10 +322,10 @@ AnimationIdlePointers:
 	dw ScreamTailAnimationIdle
 	dw SandyShocksAnimationIdle
 	dw GreatTuskAnimationIdle
+	dw FlutterManeAnimationIdle
 	dw IronTreadsAnimationIdle
 	dw IronBundleAnimationIdle
 	dw IronThornsAnimationIdle
-	
 	dw RagingBoltAnimationIdle
 	dw GougingFireAnimationIdle
 	dw WalkingWakeAnimationIdle

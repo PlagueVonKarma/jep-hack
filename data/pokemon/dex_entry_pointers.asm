@@ -322,6 +322,7 @@ PokedexDataPointerTable:
 	dba ScreamTailPokedexEntry
 	dba SandyShocksPokedexEntry
 	dba GreatTuskPokedexEntry
+	dba FlutterManePokedexEntry
 	dba IronTreadsPokedexEntry
 	dba IronBundlePokedexEntry
 	dba IronThornsPokedexEntry

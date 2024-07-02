@@ -322,6 +322,7 @@ BitmasksPointers:
 	dw ScreamTailBitmasks
 	dw SandyShocksBitmasks
 	dw GreatTuskBitmasks
+	dw FlutterManeBitmasks
 	dw IronTreadsBitmasks
 	dw IronBundleBitmasks
 	dw IronThornsBitmasks

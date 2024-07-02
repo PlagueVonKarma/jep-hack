@@ -322,10 +322,10 @@ AnimationPointers:
 	dw ScreamTailAnimation
 	dw SandyShocksAnimation
 	dw GreatTuskAnimation
+	dw FlutterManeAnimation
 	dw IronTreadsAnimation
 	dw IronBundleAnimation
 	dw IronThornsAnimation
-	
 	dw RagingBoltAnimation
 	dw GougingFireAnimation
 	dw WalkingWakeAnimation

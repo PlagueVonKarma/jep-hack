@@ -658,6 +658,8 @@ PokemonPicPointers::
 	dba SandyShocksBackpic
 	dba GreatTuskFrontpic
 	dba GreatTuskBackpic
+	dba FlutterManeFrontpic
+	dba FlutterManeBackpic
 	dba IronTreadsFrontpic
 	dba IronTreadsBackpic
 	dba IronBundleFrontpic
