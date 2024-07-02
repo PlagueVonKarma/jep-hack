@@ -160,6 +160,7 @@
 	const SEADRA     ; 75
 	const BLASTYKE
 	const BLASTOISE
+	const ORFRY
 	const GOLDEEN    ; 76
 	const SEAKING    ; 77
 	const STARYU     ; 78

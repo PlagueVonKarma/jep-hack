@@ -147,6 +147,7 @@ PokemonCries::
 	mon_cry CRY_CLEFAIRY,     60,  129 ; SEADRA
 	mon_cry CRY_BLASTOISE,   247,  128 ; BLASTYKE
 	mon_cry CRY_BLASTOISE,     0,  256 ; BLASTOISE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; ORFRY (incomplete)
 	mon_cry CRY_CATERPIE,    128,  192 ; GOLDEEN
 	mon_cry CRY_CATERPIE,     16,  383 ; SEAKING
 	mon_cry CRY_PARAS,         2,  160 ; STARYU

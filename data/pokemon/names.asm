@@ -145,6 +145,7 @@ PokemonNames::
 	db "SEADRA@@@@"
 	db "BLASTYKE@@"
 	db "BLASTOISE@"
+	db "ORFRY@@@@@"
 	db "GOLDEEN@@@"
 	db "SEAKING@@@"
 	db "STARYU@@@@"

@@ -142,8 +142,9 @@ FirstEvoStages::
 	dw HORSEA
 	dw BLASTYKE
 	dw BLASTYKE
-	dw GOLDEEN
-	dw GOLDEEN
+	dw ORFRY
+	dw ORFRY
+	dw ORFRY
 	dw STARYU     ;78
 	dw STARYU
 	dw MR__MIME

@@ -209,6 +209,7 @@ AlphabeticalPokedexOrder:
 	dw OMANYTE
 	dw OMASTAR
 	dw ONIX
+	dw ORFRY
 	dw PALSSIO
 	dw PARAS
 	dw PARASECT

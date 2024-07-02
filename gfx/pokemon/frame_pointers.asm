@@ -141,6 +141,7 @@ FramesPointers:
 	dba SeadraFrames
 	dba BlastykeFrames
 	dba BlastoiseFrames
+	dba OrfryFrames
 	dba GoldeenFrames
 	dba SeakingFrames
 	dba StaryuFrames

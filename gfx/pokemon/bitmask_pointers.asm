@@ -141,6 +141,7 @@ BitmasksPointers:
 	dw SeadraBitmasks
 	dw BlastykeBitmasks
 	dw BlastoiseBitmasks
+	dw OrfryBitmasks
 	dw GoldeenBitmasks
 	dw SeakingBitmasks
 	dw StaryuBitmasks

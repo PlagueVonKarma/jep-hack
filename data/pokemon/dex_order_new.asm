@@ -99,6 +99,7 @@ NewPokedexOrder:
 	dw POLITOED
 	dw MAGIKARP
 	dw GYARADOS
+	dw ORFRY
 	dw GOLDEEN
 	dw SEAKING
 	dw SLOWPOKE

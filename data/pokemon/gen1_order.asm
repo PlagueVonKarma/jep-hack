@@ -338,4 +338,5 @@ Pokered_MonIndices:
 	db IRON_TREADS
 	db IRON_BUNDLE
 	db IRON_THORNS
+	db ORFRY
 	assert_table_length NUM_POKEMON - 1

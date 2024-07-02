@@ -142,6 +142,7 @@ PokedexDataPointerTable:
 	dba SeadraPokedexEntry
 	dba BlastykePokedexEntry
 	dba BlastoisePokedexEntry
+	dba OrfryPokedexEntry
 	dba GoldeenPokedexEntry
 	dba SeakingPokedexEntry
 	dba StaryuPokedexEntry

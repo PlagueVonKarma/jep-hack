@@ -143,6 +143,7 @@ MonMenuIcons:
 	db ICON_FISH        ; SEADRA
 	db ICON_SQUIRTLE    ; BLASTYKE
 	db ICON_SQUIRTLE    ; BLASTOISE
+	db ICON_FISH		; ORFRY
 	db ICON_FISH        ; GOLDEEN
 	db ICON_FISH        ; SEAKING
 	db ICON_STARYU      ; STARYU

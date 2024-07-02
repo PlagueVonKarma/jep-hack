@@ -143,6 +143,7 @@ KantoMonSpecials:
 	db  95 ; SEADRA
 	db  45 ; BLASTYKE
 	db  85 ; BLASTOISE
+	db  20 ; ORFRY
 	db  50 ; GOLDEEN
 	db  80 ; SEAKING
 	db  70 ; STARYU

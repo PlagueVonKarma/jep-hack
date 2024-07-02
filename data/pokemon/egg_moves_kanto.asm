@@ -142,7 +142,8 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw BlastykeEggMoves ; Blastyke
 	dw NoEggMoves1 ; Blastoise
-	dw GoldeenEggMoves
+	dw OrfryEggMoves
+	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -561,7 +562,7 @@ BlastykeEggMoves:
 	dw FLAIL
 	dw -1 ; end
 
-GoldeenEggMoves:
+OrfryEggMoves:
 	dw PSYBEAM
 	dw HAZE
 	dw HYDRO_PUMP

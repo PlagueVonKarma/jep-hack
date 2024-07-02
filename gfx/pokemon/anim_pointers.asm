@@ -141,6 +141,7 @@ AnimationPointers:
 	dw SeadraAnimation
 	dw BlastykeAnimation
 	dw BlastoiseAnimation
+	dw OrfryAnimation
 	dw GoldeenAnimation
 	dw SeakingAnimation
 	dw StaryuAnimation

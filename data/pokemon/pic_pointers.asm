@@ -295,6 +295,8 @@ PokemonPicPointers::
 	dba BlastykeBackpic
 	dba BlastoiseFrontpic
 	dba BlastoiseBackpic
+	dba OrfryFrontpic
+	dba OrfryBackpic
 	dba GoldeenFrontpic
 	dba GoldeenBackpic
 	dba SeakingFrontpic

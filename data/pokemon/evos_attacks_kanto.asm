@@ -142,6 +142,7 @@ EvosAttacksPointers1::
 	dw SeadraEvosAttacks
 	dw BlastykeEvosAttacks
 	dw BlastoiseEvosAttacks
+	dw OrfryEvosAttacks
 	dw GoldeenEvosAttacks
 	dw SeakingEvosAttacks
 	dw StaryuEvosAttacks
@@ -2103,6 +2104,19 @@ db 0 ; no more evolutions
 	dbw 42, RAIN_DANCE
 	dbw 55, SKULL_BASH
 	dbw 68, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+OrfryEvosAttacks:
+	dbbw EVOLVE_LEVEL, 16, GOLDEEN
+	db 0 ; no more evolutions
+	dbw 1, PECK
+	dbw 1, TAIL_WHIP
+	dbw 7, SUPERSONIC
+	dbw 12, HORN_ATTACK
+	dbw 16, FURY_ATTACK
+	dbw 26, WATERFALL
+	dbw 30, HORN_DRILL
+	dbw 34, AGILITY
 	db 0 ; no more level-up moves
 
 GoldeenEvosAttacks:

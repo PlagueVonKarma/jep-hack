@@ -141,6 +141,7 @@ AnimationIdlePointers:
 	dw SeadraAnimationIdle
 	dw BlastykeAnimationIdle
 	dw BlastoiseAnimationIdle
+	dw OrfryAnimationIdle
 	dw GoldeenAnimationIdle
 	dw SeakingAnimationIdle
 	dw StaryuAnimationIdle
