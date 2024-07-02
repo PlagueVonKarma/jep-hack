@@ -2086,7 +2086,7 @@ IronBundleEvosAttacks:
 	dbw 21, WATER_GUN
 	dbw 28, TAKE_DOWN
 	dbw 35, DRILL_PECK
-	dbw 42, WHIRLPOOL
+	dbw 42, WHIRLPOOL ; TODO: review whether appropriate
 	dbw 49, ICE_BEAM
 	dbw 56, AGILITY
 	dbw 63, HYDRO_PUMP
