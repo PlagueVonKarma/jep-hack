@@ -1,4 +1,4 @@
-	db 0 ; species ID placeholder
+	db QATU ; species ID placeholder
 
 	db  50,  60,  55,  80,  80,  55
 	;   hp  atk  def  spd  sat  sdf

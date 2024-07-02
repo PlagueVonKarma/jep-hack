@@ -1,4 +1,4 @@
-	db 0 ; species ID placeholder
+	db LURREEL ; species ID placeholder
 
 	db  70,  85, 105,  55, 105,  65
 	;   hp  atk  def  spd  sat  sdf

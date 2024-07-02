@@ -1,4 +1,4 @@
-	db 0 ; species ID placeholder
+	db QWILFATHER ; species ID placeholder
 
 	db  75, 115,  85,  85,  75,  75
 	;   hp  atk  def  spd  sat  sdf

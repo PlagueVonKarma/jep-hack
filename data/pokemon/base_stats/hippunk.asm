@@ -1,4 +1,4 @@
-	db 0 ; species ID placeholder
+	db HIPPUNK ; species ID placeholder
 
 	db  90,  75,  75,  30,  80,  80
 	;   hp  atk  def  spd  sat  sdf
