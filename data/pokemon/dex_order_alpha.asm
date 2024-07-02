@@ -303,6 +303,7 @@ AlphabeticalPokedexOrder:
 	dw TENTACRUEL
 	dw TOGEPI
 	dw TOGETIC
+	dw TOGEKISS
 	dw TONQUITO
 	dw TOTARTLE
 	dw TOTODILE

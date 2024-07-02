@@ -34,6 +34,7 @@ EggMovePointers2::
 	dw IgglybuffEggMoves
 	dw TogepiEggMoves
 	dw NoEggMoves2
+	dw NoEggMoves2
 	dw NatuEggMoves
 	dw NoEggMoves2
 	dw MoibelleEggMoves 

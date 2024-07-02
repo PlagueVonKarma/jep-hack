@@ -218,6 +218,7 @@ PokemonCries::
 	mon_cry CRY_CHIKORITA,   232,  232 ; IGGLYBUFF
 	mon_cry CRY_TOGEPI,       16,  256 ; TOGEPI
 	mon_cry CRY_TOGETIC,      59,   56 ; TOGETIC
+	mon_cry CRY_TOGETIC,      59,   56 ; TOGEKISS (incomplete)
 	mon_cry CRY_NATU,       -103,  256 ; NATU
 	mon_cry CRY_NATU,       -167,  360 ; XATU
 	mon_cry CRY_NIDORAN_M,     0,    0 ; MOIBELLE	(incomplete)

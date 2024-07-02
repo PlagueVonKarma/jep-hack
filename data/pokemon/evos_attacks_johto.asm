@@ -34,6 +34,7 @@ EvosAttacksPointers2::
 	dw IgglybuffEvosAttacks
 	dw TogepiEvosAttacks
 	dw TogeticEvosAttacks
+	dw TogekissEvosAttacks
 	dw NatuEvosAttacks
 	dw XatuEvosAttacks
 	dw MoibelleEvoAttacks
@@ -604,7 +605,8 @@ TogepiEvosAttacks:
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
-	db 0 ; no more evolutions
+	dbbw EVOLVE_ITEM, SHINY_STONE, TOGEKISS 
+	db 0; no more evolutions
 	dbw 1, GROWL
 	dbw 1, CHARM
 	dbw 7, METRONOME
@@ -613,6 +615,14 @@ TogeticEvosAttacks:
 	dbw 31, SAFEGUARD
 	dbw 38, DOUBLE_EDGE
 	db 0 ; no more level-up moves
+	
+TogekissEvosAttacks:
+	db 0
+	dbw 1, SKY_ATTACK
+	dbw 1, EXTREMESPEED
+	dbw 1, METRONOME
+	dbw 1, CHARM
+	db 0
 
 NatuEvosAttacks:
 	dbbw EVOLVE_LEVEL, 25, XATU
@@ -1958,7 +1968,8 @@ RuddernautEvosAttacks:
 	db 0 ; no more level-up moves
 
 XylodonEvosAttacks:
-	db EVOLVE_LEVEL, 40, XYLOFIN ; no more evolutions
+	dbbw EVOLVE_LEVEL, 40, XYLOFIN ; no more evolutions
+	db 0
 	dbw 1, HEADBUTT
 	dbw 1, WITHDRAW
 	dbw 7, ROCK_THROW

@@ -232,6 +232,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const IGGLYBUFF  ; ae
 	const TOGEPI     ; af
 	const TOGETIC    ; b0
+	const TOGEKISS
 	const NATU       ; b1
 	const XATU       ; b2
 	const MOIBELLE

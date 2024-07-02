@@ -212,6 +212,7 @@ FramesPointers:
 	dba IgglybuffFrames
 	dba TogepiFrames
 	dba TogeticFrames
+	dba TogekissFrames
 	dba NatuFrames
 	dba XatuFrames
 	dba MoibelleFrames

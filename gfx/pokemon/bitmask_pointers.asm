@@ -212,6 +212,7 @@ BitmasksPointers:
 	dw IgglybuffBitmasks
 	dw TogepiBitmasks
 	dw TogeticBitmasks
+	dw TogekissBitmasks
 	dw NatuBitmasks
 	dw XatuBitmasks
 	dw MoibelleBitmasks

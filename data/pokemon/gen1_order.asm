@@ -226,6 +226,7 @@ Pokered_MonIndices:
 	db IGGLYBUFF
 	db TOGEPI
 	db TOGETIC
+	db TOGEKISS
 	db NATU
 	db XATU
 	db MOIBELLE

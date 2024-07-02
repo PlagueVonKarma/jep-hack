@@ -437,6 +437,8 @@ PokemonPicPointers::
 	dba TogepiBackpic
 	dba TogeticFrontpic
 	dba TogeticBackpic
+	dba TogekissFrontpic
+	dba TogekissBackpic
 	dba NatuFrontpic
 	dba NatuBackpic
 	dba XatuFrontpic

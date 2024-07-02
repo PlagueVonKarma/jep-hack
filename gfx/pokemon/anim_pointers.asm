@@ -212,6 +212,7 @@ AnimationPointers:
 	dw IgglybuffAnimation
 	dw TogepiAnimation
 	dw TogeticAnimation
+	dw TogekissAnimation
 	dw NatuAnimation
 	dw XatuAnimation
 	dw MoibelleAnimation

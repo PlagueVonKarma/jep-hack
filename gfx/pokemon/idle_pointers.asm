@@ -212,6 +212,7 @@ AnimationIdlePointers:
 	dw IgglybuffAnimationIdle
 	dw TogepiAnimationIdle
 	dw TogeticAnimationIdle
+	dw TogekissAnimationIdle
 	dw NatuAnimationIdle
 	dw XatuAnimationIdle
 	dw MoibelleAnimationIdle

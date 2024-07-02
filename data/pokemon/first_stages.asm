@@ -213,6 +213,7 @@ FirstEvoStages::
 	dw IGGLYBUFF
 	dw TOGEPI
 	dw TOGEPI     ;b0
+	dw TOGEPI
 	dw NATU
 	dw NATU
 	dw MOIBELLE

@@ -213,6 +213,7 @@ PokedexDataPointerTable:
 	dba IgglybuffPokedexEntry
 	dba TogepiPokedexEntry
 	dba TogeticPokedexEntry
+	dba TogekissPokedexEntry
 	dba NatuPokedexEntry
 	dba XatuPokedexEntry
 	dba MoibellePokedexEntry
