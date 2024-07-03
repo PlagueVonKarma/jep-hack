@@ -19,13 +19,14 @@ SometimesFleeMons:
 
 OftenFleeMons:
 	dw CUBONE
-	dw ARTICUNO
-	dw ZAPDOS
-	dw MOLTRES
+	dw ARTICUNO ; review
+	dw ZAPDOS ; review
+	dw MOLTRES ; review
 	dw QUAGSIRE
 	dw DELIBIRD
 	dw PHANPY
 	dw TEDDIURSA
+	dw KIWOOKED
 	dw -1
 
 AlwaysFleeMons:
