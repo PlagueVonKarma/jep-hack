@@ -67,10 +67,10 @@ ROMX $0e
 ROMX $0f
 	"Battle Core"
 ROMX $10
-	"bank10"
 	"Evolutions and Attacks Pointers"
 	"Evolutions and Attacks 1"
 ROMX $11
+	"bank10"
 	"bank11"
 ROMX $12
 	"Crystal Features 1"
@@ -82,7 +82,6 @@ ROMX $13
 	"bank13_2"
 ROMX $14
 	"bank14"
-	"Unused Egg Pic"
 ROMX $15
 	"Map Scripts 1"
 ROMX $16
@@ -93,6 +92,7 @@ ROMX $18
 	"Map Scripts 4"
 ROMX $19
 	"Crystal Phone Text"
+	"Unused Egg Pic"
 ROMX $1a
 	"Map Scripts 5"
 ROMX $1b

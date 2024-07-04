@@ -101,6 +101,10 @@ KantoMonSpecials:
 	db  80 ; SLOWBRO
 	db  95 ; MAGNEMITE
 	db 120 ; MAGNETON
+	db  40 ; CHEEP
+	db  80 ; JABETTA
+	db  55 ; RIBBITO
+	db  75 ; CROAKOZUNA
 	db  58 ; FARFETCH_D
 	db  35 ; DODUO
 	db  60 ; DODRIO
@@ -110,6 +114,7 @@ KantoMonSpecials:
 	db  65 ; MUK
 	db  45 ; SHELLDER
 	db  85 ; CLOYSTER
+	db  70 ; DISTURBAN
 	db 100 ; GASTLY
 	db 115 ; HAUNTER
 	db 130 ; GENGAR

@@ -99,6 +99,10 @@ FramesPointers:
 	dba SlowbroFrames
 	dba MagnemiteFrames
 	dba MagnetonFrames
+	dba CheepFrames
+	dba JabettaFrames
+	dba RibbitoFrames
+	dba CroakozunaFrames
 	dba FarfetchDFrames
 	dba DoduoFrames
 	dba DodrioFrames
@@ -108,6 +112,7 @@ FramesPointers:
 	dba MukFrames
 	dba ShellderFrames
 	dba CloysterFrames
+	dba DisturbanFrames
 	dba GastlyFrames
 	dba HaunterFrames
 	dba GengarFrames
@@ -207,6 +212,7 @@ FramesPointers:
 	dba CrobatFrames
 	dba ChinchouFrames
 	dba LanturnFrames
+	dba ReroadFrames
 	dba PichuFrames
 	dba CleffaFrames
 	dba IgglybuffFrames
@@ -214,6 +220,7 @@ FramesPointers:
 	dba TogeticFrames
 	dba TogekissFrames
 	dba NatuFrames
+	dba QatuFrames
 	dba XatuFrames
 	dba MoibelleFrames
 	dba BelledamFrames
@@ -221,6 +228,7 @@ FramesPointers:
 	dba FlaaffyFrames
 	dba AmpharosFrames
 	dba BellossomFrames
+	dba AzurillFrames
 	dba MarillFrames
 	dba AzumarillFrames
 	dba SudowoodoFrames
@@ -229,10 +237,15 @@ FramesPointers:
 	dba SkiploomFrames
 	dba JumpluffFrames
 	dba AipomFrames
+	dba AmbipomFrames
 	dba SunkernFrames
+	dba SunbudFrames
 	dba SunfloraFrames
+	dba HippunkFrames
 	dba AercrowFrames
+	dba FoxfireFrames
 	dba YanmaFrames
+	dba YanmegaFrames
 	dba WooperFrames
 	dba QuagsireFrames
 	dba EspeonFrames
@@ -262,6 +275,8 @@ FramesPointers:
 	dba SnubbullFrames
 	dba GranbullFrames
 	dba QwilfishFrames
+	dba KazeppelinFrames
+	dba QwilfatherFrames
 	dba ScizorFrames
 	dba ShuckleFrames
 	dba PockleFrames
@@ -277,7 +292,10 @@ FramesPointers:
 	dba CorsolaFrames
 	dba RemoraidFrames
 	dba OctilleryFrames
+	dba StricheelFrames
+	dba LurreelFrames
 	dba DelibirdFrames
+	dba MantykeFrames
 	dba MantineFrames
 	dba SkarmoryFrames
 	dba HoundourFrames

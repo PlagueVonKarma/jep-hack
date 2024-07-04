@@ -22,6 +22,23 @@ TreeMons:
 ;	db  %, species, level
 
 TreeMonSet_City:
+; common
+	dbbw 50, 10, PIDGEY
+	dbbw 15, 10, MEOWTH
+	dbbw 15, 10, MEOWTH
+	dbbw 10, 10, HOPPIP
+	dbbw  5, 10, HOPPIP
+	dbbw  5, 10, HOPPIP
+	db -1
+; rare
+	dbbw 50, 10, PIDGEY
+	dbbw 15, 10, MOIBELLE
+	dbbw 15, 10, MOIBELLE
+	dbbw 10, 10, MURKROW
+	dbbw  5, 10, MURKROW
+	dbbw  5, 10, MURKROW
+	db -1
+	
 TreeMonSet_Canyon:
 ; common
 	dbbw 50, 10, SPEAROW
@@ -35,16 +52,16 @@ TreeMonSet_Canyon:
 	dbbw 50, 10, SPEAROW
 	dbbw 15, 10, HERACROSS
 	dbbw 15, 10, HERACROSS
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	dbbw 10, 10, GLIGAR
+	dbbw  5, 10, GLIGAR
+	dbbw  5, 10, GLIGAR
 	db -1
 
 TreeMonSet_Town:
 ; common
 	dbbw 50, 10, SPEAROW
+	dbbw 15, 10, SHUCKLE
 	dbbw 15, 10, FOLAGE
-	dbbw 15, 10, SPEAROW
 	dbbw 10, 10, AIPOM
 	dbbw  5, 10, AIPOM
 	dbbw  5, 10, AIPOM
@@ -53,9 +70,9 @@ TreeMonSet_Town:
 	dbbw 50, 10, SPEAROW
 	dbbw 15, 10, HERACROSS
 	dbbw 15, 10, HERACROSS
-	dbbw 10, 10, AIPOM
-	dbbw  5, 10, AIPOM
-	dbbw  5, 10, AIPOM
+	dbbw 10, 10, PINSIR
+	dbbw  5, 10, PINSIR
+	dbbw  5, 10, PINSIR
 	db -1
 
 TreeMonSet_Route:
@@ -72,26 +89,26 @@ TreeMonSet_Route:
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
 	dbbw 10, 10, FOLAGE
-	dbbw  5, 10, FOLAGE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw  5, 10, BURGELA
+	dbbw  5, 10, BURGELA
 	db -1
 
 TreeMonSet_Kanto:
 ; common
-	dbbw 50, 10, HOOTHOOT
+	dbbw 50, 10, HOOTHOOT ; DODAERIE
 	dbbw 15, 10, EKANS
 	dbbw 15, 10, HOOTHOOT
-	dbbw 10, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, FOLAGE ; BALUMBA
+	dbbw  5, 10, FOLAGE ; BALUMBA
+	dbbw  5, 10, FOLAGE ; BALUMBA
 	db -1
 ; rare
-	dbbw 50, 10, HOOTHOOT
-	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, FOLAGE
-	dbbw  5, 10, FOLAGE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 50, 10, HOOTHOOT ; DODAERIE
+	dbbw 15, 10, EXEGGCUTE
+	dbbw 15, 10, EXEGGCUTE
+	dbbw 10, 10, PINSIR
+	dbbw  5, 10, PINSIR
+	dbbw  5, 10, PINSIR
 	db -1
 
 TreeMonSet_Lake:
@@ -107,27 +124,27 @@ TreeMonSet_Lake:
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
 	dbbw 15, 10, PINECO
-	dbbw 10, 10, FOLAGE
-	dbbw  5, 10, FOLAGE
-	dbbw  5, 10, EXEGGCUTE
+	dbbw 10, 10, HERACROSS
+	dbbw  5, 10, HERACROSS
+	dbbw  5, 10, HERACROSS
 	db -1
 
 TreeMonSet_Forest:
 ; common
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, PINECO
-	dbbw 15, 10, PINECO
-	dbbw 10, 10, FOLAGE
+	dbbw 15, 10, FOLAGE
+	dbbw 10, 10, CARAPTHOR
 	dbbw  5, 10, BUTTERFREE
 	dbbw  5, 10, BEEDRILL
 	db -1
 ; rare
 	dbbw 50, 10, HOOTHOOT
 	dbbw 15, 10, CATERPIE
-	dbbw 15, 10, FOLAGE
-	dbbw 10, 10, HOOTHOOT
-	dbbw  5, 10, METAPOD
-	dbbw  5, 10, KAKUNA
+	dbbw 15, 10, WEEDLE
+	dbbw 10, 10, GENTLARVA
+	dbbw  5, 10, HERACROSS
+	dbbw  5, 10, PINSIR
 	db -1
 
 ; Rock Smash begins here.

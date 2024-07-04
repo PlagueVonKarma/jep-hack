@@ -98,6 +98,7 @@ NewPokedexOrder:
 	dw POLIWHIRL
 	dw POLIWRATH
 	dw POLITOED
+	dw REROAD
 	dw MAGIKARP
 	dw GYARADOS
 	dw ORFRY
@@ -106,6 +107,7 @@ NewPokedexOrder:
 	dw SLOWPOKE
 	dw SLOWBRO
 	dw SLOWKING
+	dw HIPPUNK
 	dw ODDISH
 	dw GLOOM
 	dw VILEPLUME
@@ -126,7 +128,9 @@ NewPokedexOrder:
 	dw NIDOKING
 	dw NIDOREIGN
 	dw YANMA
+	dw YANMEGA
 	dw SUNKERN
+	dw SUNBUD
 	dw SUNFLORA
 	dw EXEGGCUTE
 	dw EXEGGUTOR
@@ -150,6 +154,7 @@ NewPokedexOrder:
 	dw VOLTORB
 	dw ELECTRODE
 	dw AIPOM
+	dw AMBIPOM
 	dw SNUBBULL
 	dw GRANBULL
 	dw VULPIII
@@ -159,6 +164,7 @@ NewPokedexOrder:
 	dw GROWLITHE
 	dw ARCANINE
 	dw STANTLER
+	dw AZURILL
 	dw MARILL
 	dw AZUMARILL
 	dw DIGLETT
@@ -197,22 +203,33 @@ NewPokedexOrder:
 	dw SMEARGLE
 	dw FARFETCH_D
 	dw NATU
+	dw QATU
 	dw XATU
 	dw AERCROW
+	dw FOXFIRE
 	dw QWILFISH
+	dw KAZEPPELIN
+	dw QWILFATHER
 	dw TENTACOOL
 	dw TENTACRUEL
 	dw KRABBY
 	dw KINGLER
+	dw RIBBITO
+	dw CROAKOZUNA
+	dw CHEEP
+	dw JABETTA
 	dw SHUCKLE
 	dw POCKLE
 	dw STARYU
 	dw STARMIE
 	dw SHELLDER
 	dw CLOYSTER
+	dw DISTURBAN
 	dw CORSOLA
 	dw REMORAID
 	dw OCTILLERY
+	dw STRICHEEL
+	dw LURREEL
 	dw CHINCHOU
 	dw LANTURN
 	dw SEEL
@@ -247,6 +264,7 @@ NewPokedexOrder:
 	dw URSALUNA
 	dw PHANPY
 	dw DONPHAN
+	dw MANTYKE
 	dw MANTINE
 	dw SKARMORY
 	dw DODUO

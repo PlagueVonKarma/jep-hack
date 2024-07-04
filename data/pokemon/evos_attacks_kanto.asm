@@ -100,6 +100,10 @@ EvosAttacksPointers1::
 	dw SlowbroEvosAttacks
 	dw MagnemiteEvosAttacks
 	dw MagnetonEvosAttacks
+	dw CheepEvosAttacks
+	dw JabettaEvosAttacks
+	dw RibbitoEvosAttacks
+	dw CroakozunaEvosAttacks
 	dw FarfetchDEvosAttacks
 	dw DoduoEvosAttacks
 	dw DodrioEvosAttacks
@@ -109,6 +113,7 @@ EvosAttacksPointers1::
 	dw MukEvosAttacks
 	dw ShellderEvosAttacks
 	dw CloysterEvosAttacks
+	dw DisturbanEvosAttacks
 	dw GastlyEvosAttacks
 	dw HaunterEvosAttacks
 	dw GengarEvosAttacks
@@ -1519,6 +1524,68 @@ MagnetonEvosAttacks:
 	dbw 43, SCREECH
 	dbw 53, ZAP_CANNON
 	db 0 ; no more level-up moves
+	
+CheepEvosAttacks:
+	dbbw EVOLVE_LEVEL, 30, JABETTA
+	db 0 ; no more evolutions
+	dbw 1, BUBBLE
+	dbw 1, PECK
+	dbw 5, DOUBLE_KICK
+	dbw 11, COUNTER
+	dbw 16, BUBBLEBEAM
+	dbw 20, LOW_KICK
+	dbw 26, JUMP_KICK
+	dbw 31, SEISMIC_TOSS
+	dbw 36, WATERFALL
+	dbw 40, HI_JUMP_KICK
+	dbw 45, HYDRO_PUMP
+	dbw 49, DRILL_PECK
+	db 0 ; no more level-up moves
+	
+JabettaEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, BUBBLE
+	dbw 1, PECK
+	dbw 5, DOUBLE_KICK
+	dbw 11, COUNTER
+	dbw 16, BUBBLEBEAM
+	dbw 20, LOW_KICK
+	dbw 26, JUMP_KICK
+	dbw 33, SEISMIC_TOSS
+	dbw 40, WATERFALL
+	dbw 46, HI_JUMP_KICK
+	dbw 53, HYDRO_PUMP
+	dbw 59, DRILL_PECK
+	db 0 ; no more level-up moves
+	
+RibbitoEvosAttacks:
+	dbbw EVOLVE_LEVEL, 30, CROAKOZUNA
+	db 0 ; no more evolutions
+	dbw 1, DOUBLE_TEAM
+	dbw 1, DOUBLESLAP
+	dbw 7, BUBBLE
+	dbw 13, MEDITATE
+	dbw 19, WATER_GUN
+	dbw 24, FAINT_ATTACK
+	dbw 31, SUBSTITUTE
+	dbw 35, VITAL_THROW
+	dbw 42, BELLY_DRUM
+	dbw 48, HYDRO_PUMP
+	db 0 ; no more level-up moves
+	
+CroakozunaEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, DOUBLE_TEAM
+	dbw 1, DOUBLESLAP
+	dbw 7, BUBBLE
+	dbw 13, MEDITATE
+	dbw 19, WATER_GUN
+	dbw 24, FAINT_ATTACK
+	dbw 34, SUBSTITUTE
+	dbw 41, VITAL_THROW
+	dbw 51, BELLY_DRUM
+	dbw 60, HYDRO_PUMP
+	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
 	db 0 ; no more evolutions
@@ -1614,6 +1681,7 @@ MukEvosAttacks:
 
 ShellderEvosAttacks:
 	dbbw EVOLVE_ITEM, WATER_STONE, CLOYSTER
+	dbbw EVOLVE_ITEM, SLOWPOKETAIL, DISTURBAN
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, WITHDRAW
@@ -1633,6 +1701,16 @@ CloysterEvosAttacks:
 	dbw 1, PROTECT
 	dbw 33, SPIKES
 	dbw 41, SPIKE_CANNON
+	db 0 ; no more level-up moves
+	
+DisturbanEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, WITHDRAW
+	dbw 1, SUPERSONIC
+	dbw 1, BITE
+	dbw 1, POISON_GAS
+	dbw 33, SPIKES
+	dbw 41, CRUNCH
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:

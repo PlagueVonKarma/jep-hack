@@ -340,4 +340,22 @@ Pokered_MonIndices:
 	db IRON_BUNDLE
 	db IRON_THORNS
 	db ORFRY
+	db CHEEP
+	db JABETTA
+	db RIBBITO
+	db CROAKOZUNA
+	db DISTURBAN
+	db REROAD
+	db QATU
+	db AZURILL
+	db AMBIPOM
+	db SUNBUD
+	db HIPPUNK
+	db FOXFIRE
+	db YANMEGA
+	db KAZEPPELIN
+	db QWILFATHER
+	db STRICHEEL
+	db LURREEL
+	db MANTYKE
 	assert_table_length NUM_POKEMON - 1

@@ -29,6 +29,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw ChinchouEggMoves
 	dw NoEggMoves2
+	dw ReroadEggMoves
 	dw PichuEggMoves
 	dw CleffaEggMoves
 	dw IgglybuffEggMoves
@@ -36,6 +37,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NatuEggMoves
+	dw NoEggMoves2 ; Qatu
 	dw NoEggMoves2
 	dw MoibelleEggMoves 
 	dw NoEggMoves2 ; Belledam
@@ -43,18 +45,24 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw MarillEggMoves
+	dw AzurillEggMoves
+	dw NoEggMoves2
 	dw NoEggMoves2
 	dw SudowoodoEggMoves
 	dw NoEggMoves2
 	dw HoppipEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw AercrowEggMoves
 	dw AipomEggMoves
+	dw NoEggMoves2 ; Ambipom
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Sunbud
 	dw NoEggMoves2
+	dw HippunkEggMoves
+	dw AercrowEggMoves
+	dw FoxfireEggMoves
 	dw YanmaEggMoves
+	dw NoEggMoves2 ; Yanmega
 	dw WooperEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -85,6 +93,8 @@ EggMovePointers2::
 	dw SnubbullEggMoves
 	dw NoEggMoves2
 	dw QwilfishEggMoves
+	dw NoEggMoves2 ; Kazeppelin
+	dw NoEggMoves2 ; Qwilfather
 	dw NoEggMoves2
 	dw ShuckleEggMoves
 	dw NoEggMoves2
@@ -100,8 +110,11 @@ EggMovePointers2::
 	dw CorsolaEggMoves
 	dw RemoraidEggMoves
 	dw NoEggMoves2
+	dw StricheelEggMoves
+	dw NoEggMoves2 ; Lurreel
 	dw DelibirdEggMoves
-	dw MantineEggMoves
+	dw MantykeEggMoves
+	dw NoEggMoves2 ; Mantine
 	dw SkarmoryEggMoves
 	dw HoundourEggMoves
 	dw NoEggMoves2
@@ -245,6 +258,13 @@ ChinchouEggMoves:
 	dw SUPERSONIC
 	dw SCREECH
 	dw -1 ; end
+	
+ReroadEggMoves:
+	dw FAINT_ATTACK
+	dw HYPNOSIS
+	dw MIND_READER
+	dw SLUDGE
+	dw -1 ; end
 
 PichuEggMoves:
 	dw REVERSAL
@@ -300,7 +320,7 @@ MareepEggMoves:
 	dw REFLECT
 	dw -1 ; end
 
-MarillEggMoves:
+AzurillEggMoves:
 	dw LIGHT_SCREEN
 	dw PRESENT
 	dw AMNESIA
@@ -324,13 +344,6 @@ HoppipEggMoves:
 	dw AMNESIA
 	dw PAY_DAY
 	dw -1 ; end
-	
-AercrowEggMoves:
-	dw DRILL_PECK
-	dw FUTURE_SIGHT
-	dw SAFEGUARD
-	dw WHIRLWIND
-	dw -1 ; end
 
 AipomEggMoves:
 	dw COUNTER
@@ -341,6 +354,29 @@ AipomEggMoves:
 	dw SLAM
 	dw DOUBLESLAP
 	dw BEAT_UP
+	dw -1 ; end
+
+HippunkEggMoves:
+	dw ACID
+	dw BELLY_DRUM
+	dw BODY_SLAM
+	dw SCREECH
+	dw SING
+	dw -1 ; end
+
+AercrowEggMoves:
+	dw DRILL_PECK
+	dw FUTURE_SIGHT
+	dw SAFEGUARD
+	dw WHIRLWIND
+	dw -1 ; end
+
+FoxfireEggMoves:
+	dw CONFUSE_RAY
+	dw DISABLE
+	dw FAINT_ATTACK
+	dw HYPNOSIS
+	dw QUICK_ATTACK
 	dw -1 ; end
 
 YanmaEggMoves:
@@ -478,6 +514,13 @@ RemoraidEggMoves:
 	dw HAZE
 	dw SCREECH
 	dw -1 ; end
+	
+StricheelEggMoves:
+	dw BEAT_UP
+	dw FLAIL
+	dw SCREECH
+	dw SUPERSONIC
+	dw -1 ; end
 
 DelibirdEggMoves:
 	dw AURORA_BEAM
@@ -487,7 +530,7 @@ DelibirdEggMoves:
 	dw RAPID_SPIN
 	dw -1 ; end
 
-MantineEggMoves:
+MantykeEggMoves:
 	dw TWISTER
 	dw HYDRO_PUMP
 	dw HAZE

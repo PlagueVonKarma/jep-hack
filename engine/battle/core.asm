@@ -6216,7 +6216,7 @@ LoadEnemyMon:
 ; Try again if length < 1024 mm (i.e. if HIGH(length) < 3 feet)
 	ld a, [wMagikarpLength]
 	cp HIGH(1024)
-	jr c, .GenerateDVs ; try again
+	jp c, .GenerateDVs ; try again
 
 ; Finally done with DVs
 

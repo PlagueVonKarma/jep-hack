@@ -118,6 +118,10 @@
 	const SLOWBRO    ; 50
 	const MAGNEMITE  ; 51
 	const MAGNETON   ; 52
+	const CHEEP
+	const JABETTA
+	const RIBBITO
+	const CROAKOZUNA
 	const FARFETCH_D ; 53
 	const DODUO      ; 54
 	const DODRIO     ; 55
@@ -127,6 +131,7 @@
 	const MUK        ; 59
 	const SHELLDER   ; 5a
 	const CLOYSTER   ; 5b
+	const DISTURBAN
 	const GASTLY     ; 5c
 	const HAUNTER    ; 5d
 	const GENGAR     ; 5e
@@ -227,6 +232,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const CROBAT     ; a9
 	const CHINCHOU   ; aa
 	const LANTURN    ; ab
+	const REROAD
 	const PICHU      ; ac
 	const CLEFFA     ; ad
 	const IGGLYBUFF  ; ae
@@ -234,6 +240,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const TOGETIC    ; b0
 	const TOGEKISS
 	const NATU       ; b1
+	const QATU
 	const XATU       ; b2
 	const MOIBELLE
 	const BELLEDAM
@@ -241,6 +248,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const FLAAFFY    ; b4
 	const AMPHAROS   ; b5
 	const BELLOSSOM  ; b6
+	const AZURILL
 	const MARILL     ; b7
 	const AZUMARILL  ; b8
 	const SUDOWOODO  ; b9
@@ -249,10 +257,15 @@ DEF JOHTO_POKEMON EQU const_value
 	const SKIPLOOM   ; bc
 	const JUMPLUFF   ; bd
 	const AIPOM      ; be
+	const AMBIPOM
 	const SUNKERN    ; bf
+	const SUNBUD
 	const SUNFLORA   ; c0
+	const HIPPUNK
 	const AERCROW
+	const FOXFIRE
 	const YANMA      ; c1
+	const YANMEGA
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
@@ -282,6 +295,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const SNUBBULL   ; d1
 	const GRANBULL   ; d2
 	const QWILFISH   ; d3
+	const KAZEPPELIN
+	const QWILFATHER
 	const SCIZOR     ; d4
 	const SHUCKLE    ; d5
 	const POCKLE
@@ -297,7 +312,10 @@ DEF JOHTO_POKEMON EQU const_value
 	const CORSOLA    ; de
 	const REMORAID   ; df
 	const OCTILLERY  ; e0
+	const STRICHEEL
+	const LURREEL
 	const DELIBIRD   ; e1
+	const MANTYKE
 	const MANTINE    ; e2
 	const SKARMORY   ; e3
 	const HOUNDOUR   ; e4
