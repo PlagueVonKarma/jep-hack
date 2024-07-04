@@ -211,6 +211,14 @@ PokemonPicPointers::
 	dba MagnemiteBackpic
 	dba MagnetonFrontpic
 	dba MagnetonBackpic
+	dba CheepFrontpic
+	dba CheepBackpic
+	dba JabettaFrontpic
+	dba JabettaBackpic
+	dba RibbitoFrontpic
+	dba RibbitoBackpic
+	dba CroakozunaFrontpic
+	dba CroakozunaBackpic
 	dba FarfetchDFrontpic
 	dba FarfetchDBackpic
 	dba DoduoFrontpic
@@ -229,6 +237,8 @@ PokemonPicPointers::
 	dba ShellderBackpic
 	dba CloysterFrontpic
 	dba CloysterBackpic
+	dba DisturbanFrontpic
+	dba DisturbanBackpic
 	dba GastlyFrontpic
 	dba GastlyBackpic
 	dba HaunterFrontpic
@@ -427,6 +437,8 @@ PokemonPicPointers::
 	dba ChinchouBackpic
 	dba LanturnFrontpic
 	dba LanturnBackpic
+	dba ReroadFrontpic
+	dba ReroadBackpic
 	dba PichuFrontpic
 	dba PichuBackpic
 	dba CleffaFrontpic
@@ -441,6 +453,8 @@ PokemonPicPointers::
 	dba TogekissBackpic
 	dba NatuFrontpic
 	dba NatuBackpic
+	dba QatuFrontpic
+	dba QatuBackpic
 	dba XatuFrontpic
 	dba XatuBackpic
 	dba MoibelleFrontpic
@@ -455,6 +469,8 @@ PokemonPicPointers::
 	dba AmpharosBackpic
 	dba BellossomFrontpic
 	dba BellossomBackpic
+	dba AzurillFrontpic
+	dba AzurillBackpic
 	dba MarillFrontpic
 	dba MarillBackpic
 	dba AzumarillFrontpic
@@ -471,14 +487,24 @@ PokemonPicPointers::
 	dba JumpluffBackpic
 	dba AipomFrontpic
 	dba AipomBackpic
+	dba AmbipomFrontpic
+	dba AmbipomBackpic
 	dba SunkernFrontpic
 	dba SunkernBackpic
+	dba SunbudFrontpic
+	dba SunbudBackpic
 	dba SunfloraFrontpic
 	dba SunfloraBackpic
+	dba HippunkFrontpic
+	dba HippunkBackpic
 	dba AercrowFrontpic
 	dba AercrowBackpic
+	dba FoxfireFrontpic
+	dba FoxfireBackpic
 	dba YanmaFrontpic
 	dba YanmaBackpic
+	dba YanmegaFrontpic
+	dba YanmegaBackpic
 	dba WooperFrontpic
 	dba WooperBackpic
 	dba QuagsireFrontpic
@@ -540,6 +566,10 @@ PokemonPicPointers::
 	dba GranbullBackpic
 	dba QwilfishFrontpic
 	dba QwilfishBackpic
+	dba KazeppelinFrontpic
+	dba KazeppelinBackpic
+	dba QwilfatherFrontpic
+	dba QwilfatherBackpic
 	dba ScizorFrontpic
 	dba ScizorBackpic
 	dba ShuckleFrontpic
@@ -570,8 +600,14 @@ PokemonPicPointers::
 	dba RemoraidBackpic
 	dba OctilleryFrontpic
 	dba OctilleryBackpic
+	dba StricheelFrontpic
+	dba StricheelBackpic
+	dba LurreelFrontpic
+	dba LurreelBackpic
 	dba DelibirdFrontpic
 	dba DelibirdBackpic
+	dba MantykeFrontpic
+	dba MantykeBackpic
 	dba MantineFrontpic
 	dba MantineBackpic
 	dba SkarmoryFrontpic

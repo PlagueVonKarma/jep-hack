@@ -99,6 +99,10 @@ AnimationPointers:
 	dw SlowbroAnimation
 	dw MagnemiteAnimation
 	dw MagnetonAnimation
+	dw CheepAnimation
+	dw JabettaAnimation
+	dw RibbitoAnimation
+	dw CroakozunaAnimation
 	dw FarfetchDAnimation
 	dw DoduoAnimation
 	dw DodrioAnimation
@@ -108,6 +112,7 @@ AnimationPointers:
 	dw MukAnimation
 	dw ShellderAnimation
 	dw CloysterAnimation
+	dw DisturbanAnimation
 	dw GastlyAnimation
 	dw HaunterAnimation
 	dw GengarAnimation
@@ -207,6 +212,7 @@ AnimationPointers:
 	dw CrobatAnimation
 	dw ChinchouAnimation
 	dw LanturnAnimation
+	dw ReroadAnimation
 	dw PichuAnimation
 	dw CleffaAnimation
 	dw IgglybuffAnimation
@@ -214,6 +220,7 @@ AnimationPointers:
 	dw TogeticAnimation
 	dw TogekissAnimation
 	dw NatuAnimation
+	dw QatuAnimation
 	dw XatuAnimation
 	dw MoibelleAnimation
 	dw BelledamAnimation
@@ -221,6 +228,7 @@ AnimationPointers:
 	dw FlaaffyAnimation
 	dw AmpharosAnimation
 	dw BellossomAnimation
+	dw AzurillAnimation
 	dw MarillAnimation
 	dw AzumarillAnimation
 	dw SudowoodoAnimation
@@ -229,10 +237,15 @@ AnimationPointers:
 	dw SkiploomAnimation
 	dw JumpluffAnimation
 	dw AipomAnimation
+	dw AmbipomAnimation
 	dw SunkernAnimation
+	dw SunbudAnimation
 	dw SunfloraAnimation
+	dw HippunkAnimation
 	dw AercrowAnimation
+	dw FoxfireAnimation
 	dw YanmaAnimation
+	dw YanmegaAnimation
 	dw WooperAnimation
 	dw QuagsireAnimation
 	dw EspeonAnimation
@@ -262,6 +275,8 @@ AnimationPointers:
 	dw SnubbullAnimation
 	dw GranbullAnimation
 	dw QwilfishAnimation
+	dw KazeppelinAnimation
+	dw QwilfatherAnimation
 	dw ScizorAnimation
 	dw ShuckleAnimation
 	dw PockleAnimation
@@ -277,7 +292,10 @@ AnimationPointers:
 	dw CorsolaAnimation
 	dw RemoraidAnimation
 	dw OctilleryAnimation
+	dw StricheelAnimation
+	dw LurreelAnimation
 	dw DelibirdAnimation
+	dw MantykeAnimation
 	dw MantineAnimation
 	dw SkarmoryAnimation
 	dw HoundourAnimation

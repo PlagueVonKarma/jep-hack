@@ -99,6 +99,10 @@ AnimationIdlePointers:
 	dw SlowbroAnimationIdle
 	dw MagnemiteAnimationIdle
 	dw MagnetonAnimationIdle
+	dw CheepAnimationIdle
+	dw JabettaAnimationIdle
+	dw RibbitoAnimationIdle
+	dw CroakozunaAnimationIdle
 	dw FarfetchDAnimationIdle
 	dw DoduoAnimationIdle
 	dw DodrioAnimationIdle
@@ -108,6 +112,7 @@ AnimationIdlePointers:
 	dw MukAnimationIdle
 	dw ShellderAnimationIdle
 	dw CloysterAnimationIdle
+	dw DisturbanAnimationIdle
 	dw GastlyAnimationIdle
 	dw HaunterAnimationIdle
 	dw GengarAnimationIdle
@@ -207,6 +212,7 @@ AnimationIdlePointers:
 	dw CrobatAnimationIdle
 	dw ChinchouAnimationIdle
 	dw LanturnAnimationIdle
+	dw ReroadAnimationIdle
 	dw PichuAnimationIdle
 	dw CleffaAnimationIdle
 	dw IgglybuffAnimationIdle
@@ -214,6 +220,7 @@ AnimationIdlePointers:
 	dw TogeticAnimationIdle
 	dw TogekissAnimationIdle
 	dw NatuAnimationIdle
+	dw QatuAnimationIdle
 	dw XatuAnimationIdle
 	dw MoibelleAnimationIdle
 	dw BelledamAnimationIdle
@@ -221,6 +228,7 @@ AnimationIdlePointers:
 	dw FlaaffyAnimationIdle
 	dw AmpharosAnimationIdle
 	dw BellossomAnimationIdle
+	dw AzurillAnimationIdle
 	dw MarillAnimationIdle
 	dw AzumarillAnimationIdle
 	dw SudowoodoAnimationIdle
@@ -229,10 +237,15 @@ AnimationIdlePointers:
 	dw SkiploomAnimationIdle
 	dw JumpluffAnimationIdle
 	dw AipomAnimationIdle
+	dw AmbipomAnimationIdle
 	dw SunkernAnimationIdle
+	dw SunbudAnimationIdle
 	dw SunfloraAnimationIdle
+	dw HippunkAnimationIdle
 	dw AercrowAnimationIdle
+	dw FoxfireAnimationIdle
 	dw YanmaAnimationIdle
+	dw YanmegaAnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle
 	dw EspeonAnimationIdle
@@ -262,6 +275,8 @@ AnimationIdlePointers:
 	dw SnubbullAnimationIdle
 	dw GranbullAnimationIdle
 	dw QwilfishAnimationIdle
+	dw KazeppelinAnimationIdle
+	dw QwilfatherAnimationIdle
 	dw ScizorAnimationIdle
 	dw ShuckleAnimationIdle
 	dw PockleAnimationIdle
@@ -277,7 +292,10 @@ AnimationIdlePointers:
 	dw CorsolaAnimationIdle
 	dw RemoraidAnimationIdle
 	dw OctilleryAnimationIdle
+	dw StricheelAnimationIdle
+	dw LurreelAnimationIdle
 	dw DelibirdAnimationIdle
+	dw MantykeAnimationIdle
 	dw MantineAnimationIdle
 	dw SkarmoryAnimationIdle
 	dw HoundourAnimationIdle

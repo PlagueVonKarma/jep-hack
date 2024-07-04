@@ -13,7 +13,7 @@ DebugPokemon1Script:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WYNAUT, 14, RARE_CANDY
+	givepoke QWILFISH, 24, POISON_STONE
 	closetext
 	end
 
@@ -24,7 +24,7 @@ DebugPokemon2Script:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke WALKING_WAKE, 75, MASTER_BALL
+	givepoke QWILFISH, 31, THUNDERSTONE
 	closetext
 	end
 

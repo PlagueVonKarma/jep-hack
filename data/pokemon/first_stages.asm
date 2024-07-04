@@ -100,6 +100,10 @@ FirstEvoStages::
 	dw SLOWPOKE   ;50
 	dw MAGNEMITE
 	dw MAGNEMITE
+	dw CHEEP
+	dw CHEEP
+	dw RIBBITO
+	dw RIBBITO
 	dw FARFETCH_D
 	dw DODUO
 	dw DODUO
@@ -107,6 +111,7 @@ FirstEvoStages::
 	dw SEEL
 	dw GRIMER     ;58
 	dw GRIMER
+	dw SHELLDER
 	dw SHELLDER
 	dw SHELLDER
 	dw GASTLY
@@ -208,6 +213,7 @@ FirstEvoStages::
 	dw BITTYBAT
 	dw CHINCHOU
 	dw CHINCHOU
+	dw REROAD
 	dw PICHU
 	dw CLEFFA
 	dw IGGLYBUFF
@@ -216,23 +222,30 @@ FirstEvoStages::
 	dw TOGEPI
 	dw NATU
 	dw NATU
+	dw NATU
 	dw MOIBELLE
 	dw MOIBELLE
 	dw MAREEP
 	dw MAREEP
 	dw MAREEP
 	dw ODDISH
-	dw MARILL
-	dw MARILL     ;b8
+	dw AZURILL
+	dw AZURILL
+	dw AZURILL     ;b8
 	dw SUDOWOODO
 	dw POLIWAG
 	dw HOPPIP
 	dw HOPPIP
 	dw HOPPIP
 	dw AIPOM
+	dw AIPOM
+	dw SUNKERN
 	dw SUNKERN
 	dw SUNKERN    ;c0
+	dw HIPPUNK
 	dw AERCROW
+	dw FOXFIRE
+	dw YANMA
 	dw YANMA
 	dw WOOPER
 	dw WOOPER
@@ -263,6 +276,8 @@ FirstEvoStages::
 	dw SNUBBULL
 	dw SNUBBULL
 	dw QWILFISH
+	dw QWILFISH
+	dw QWILFISH
 	dw SCYTHER
 	dw SHUCKLE
 	dw SHUCKLE
@@ -278,8 +293,11 @@ FirstEvoStages::
 	dw CORSOLA
 	dw REMORAID
 	dw REMORAID   ;e0
+	dw STRICHEEL
+	dw STRICHEEL
 	dw DELIBIRD
-	dw MANTINE
+	dw MANTYKE
+	dw MANTYKE
 	dw SKARMORY
 	dw HOUNDOUR
 	dw HOUNDOUR

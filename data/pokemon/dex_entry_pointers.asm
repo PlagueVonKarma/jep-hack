@@ -100,6 +100,10 @@ PokedexDataPointerTable:
 	dba SlowbroPokedexEntry
 	dba MagnemitePokedexEntry
 	dba MagnetonPokedexEntry
+	dba CheepPokedexEntry
+	dba JabettaPokedexEntry
+	dba RibbitoPokedexEntry
+	dba CroakozunaPokedexEntry
 	dba FarfetchDPokedexEntry
 	dba DoduoPokedexEntry
 	dba DodrioPokedexEntry
@@ -109,6 +113,7 @@ PokedexDataPointerTable:
 	dba MukPokedexEntry
 	dba ShellderPokedexEntry
 	dba CloysterPokedexEntry
+	dba DisturbanPokedexEntry
 	dba GastlyPokedexEntry
 	dba HaunterPokedexEntry
 	dba GengarPokedexEntry
@@ -208,6 +213,7 @@ PokedexDataPointerTable:
 	dba CrobatPokedexEntry
 	dba ChinchouPokedexEntry
 	dba LanturnPokedexEntry
+	dba ReroadPokedexEntry
 	dba PichuPokedexEntry
 	dba CleffaPokedexEntry
 	dba IgglybuffPokedexEntry
@@ -215,6 +221,7 @@ PokedexDataPointerTable:
 	dba TogeticPokedexEntry
 	dba TogekissPokedexEntry
 	dba NatuPokedexEntry
+	dba QatuPokedexEntry
 	dba XatuPokedexEntry
 	dba MoibellePokedexEntry
 	dba BelledamPokedexEntry
@@ -222,6 +229,7 @@ PokedexDataPointerTable:
 	dba FlaaffyPokedexEntry
 	dba AmpharosPokedexEntry
 	dba BellossomPokedexEntry
+	dba AzurillPokedexEntry
 	dba MarillPokedexEntry
 	dba AzumarillPokedexEntry
 	dba SudowoodoPokedexEntry
@@ -230,10 +238,15 @@ PokedexDataPointerTable:
 	dba SkiploomPokedexEntry
 	dba JumpluffPokedexEntry
 	dba AipomPokedexEntry
+	dba AmbipomPokedexEntry
 	dba SunkernPokedexEntry
+	dba SunbudPokedexEntry
 	dba SunfloraPokedexEntry
+	dba HippunkPokedexEntry
 	dba AercrowPokedexEntry
+	dba FoxfirePokedexEntry
 	dba YanmaPokedexEntry
+	dba YanmegaPokedexEntry
 	dba WooperPokedexEntry
 	dba QuagsirePokedexEntry
 	dba EspeonPokedexEntry
@@ -263,6 +276,8 @@ PokedexDataPointerTable:
 	dba SnubbullPokedexEntry
 	dba GranbullPokedexEntry
 	dba QwilfishPokedexEntry
+	dba KazeppelinPokedexEntry
+	dba QwilfatherPokedexEntry
 	dba ScizorPokedexEntry
 	dba ShucklePokedexEntry
 	dba PocklePokedexEntry
@@ -278,7 +293,10 @@ PokedexDataPointerTable:
 	dba CorsolaPokedexEntry
 	dba RemoraidPokedexEntry
 	dba OctilleryPokedexEntry
+	dba StricheelPokedexEntry
+	dba LurreelPokedexEntry
 	dba DelibirdPokedexEntry
+	dba MantykePokedexEntry
 	dba MantinePokedexEntry
 	dba SkarmoryPokedexEntry
 	dba HoundourPokedexEntry

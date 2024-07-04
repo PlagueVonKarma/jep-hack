@@ -100,6 +100,10 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw CheepEggMoves
+	dw NoEggMoves1 ; Jabetta
+	dw RibbitoEggMoves
+	dw NoEggMoves1 ; Croakozuna
 	dw FarfetchDEggMoves
 	dw DoduoEggMoves
 	dw NoEggMoves1
@@ -109,6 +113,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw ShellderEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Disturban
 	dw GastlyEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -413,6 +418,20 @@ SlowpokeEggMoves:
 	dw BELLY_DRUM
 	dw FUTURE_SIGHT
 	dw STOMP
+	dw -1 ; end
+
+CheepEggMoves:
+	dw AGILITY
+	dw AURORA_BEAM
+	dw MEDITATE
+	dw WING_ATTACK
+	dw -1 ; end
+
+RibbitoEggMoves:
+	dw LOW_KICK
+	dw HAZE
+	dw CROSS_CHOP
+	dw TOXIC
 	dw -1 ; end
 
 FarfetchDEggMoves:

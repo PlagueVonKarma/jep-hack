@@ -8,6 +8,7 @@ AlphabeticalPokedexOrder:
 	dw AIPOM
 	dw ALAKAZAM
 	dw AMANOBI
+	dw AMBIPOM
 	dw AMPHAROS
 	dw ANGORE
 	dw ANNIHILAPE
@@ -16,6 +17,7 @@ AlphabeticalPokedexOrder:
 	dw ARIADOS
 	dw ARTICUNO
 	dw AZUMARILL
+	dw AZURILL
 	dw BARREAU
 	dw BAYLEEF
 	dw BEEDRILL
@@ -41,6 +43,7 @@ AlphabeticalPokedexOrder:
 	dw CHARIZARD
 	dw CHARMANDER
 	dw CHARMELEON
+	dw CHEEP
 	dw CHIKORITA
 	dw CHINCHOU
 	dw CLEFABLE
@@ -50,6 +53,7 @@ AlphabeticalPokedexOrder:
 	dw COATL
 	dw COINPUR
 	dw CORSOLA
+	dw CROAKOZUNA
 	dw CROBAT
 	dw CROCONAW
 	dw CUBBURN
@@ -59,6 +63,7 @@ AlphabeticalPokedexOrder:
 	dw DELIBIRD
 	dw DEWGONG
 	dw DIGLETT
+	dw DISTURBAN
 	dw DITTO
 	dw DODRIO
 	dw DODUO
@@ -92,6 +97,7 @@ AlphabeticalPokedexOrder:
 	dw FLUTTER_MANE
 	dw FOLAGE
 	dw FORRETRESS
+	dw FOXFIRE
 	dw FURRET
 	dw GASTLY
 	dw GAOTORA
@@ -118,6 +124,7 @@ AlphabeticalPokedexOrder:
 	dw GYARADOS
 	dw HAUNTER
 	dw HERACROSS
+	dw HIPPUNK
 	dw HITMONCHAN
 	dw HITMONLEE
 	dw HITMONTOP
@@ -134,6 +141,7 @@ AlphabeticalPokedexOrder:
 	dw IRON_BUNDLE
 	dw IRON_THORNS
 	dw IVYSAUR
+	dw JABETTA
 	dw JIGGLYPUFF
 	dw JOLTEON
 	dw JUMPLUFF
@@ -144,6 +152,7 @@ AlphabeticalPokedexOrder:
 	dw KADABRA
 	dw KAKUNA
 	dw KANGASKHAN
+	dw KAZEPPELIN
 	dw KINGDRA
 	dw KINGLER
 	dw KITSEN
@@ -164,6 +173,7 @@ AlphabeticalPokedexOrder:
 	dw LICKITUNG
 	dw LUANBO
 	dw LUGIA
+	dw LURREEL
 	dw MACHAMP
 	dw MACHOKE
 	dw MACHOP
@@ -175,6 +185,7 @@ AlphabeticalPokedexOrder:
 	dw MAGNETON
 	dw MANKEY
 	dw MANTINE
+	dw MANTYKE
 	dw MAREEP
 	dw MARILL
 	dw MAROWAK
@@ -240,8 +251,10 @@ AlphabeticalPokedexOrder:
 	dw PUPAL
 	dw PUPITAR
 	dw PUPPERON
+	dw QATU
 	dw QUAGSIRE
 	dw QUILAVA
+	dw QWILFATHER
 	dw QWILFISH
 	dw RAGING_BOLT
 	dw RAICHU
@@ -251,9 +264,11 @@ AlphabeticalPokedexOrder:
 	dw RATICATE
 	dw RATTATA
 	dw REMORAID
+	dw REROAD
 	dw RHYDON
 	dw RHYHORN
 	; dw RHYPERIOR
+	dw RIBBITO
 	dw RUDDERNAUT
 	dw SAKURAZE
 	dw SANDSHREW
@@ -288,9 +303,11 @@ AlphabeticalPokedexOrder:
 	dw STARMIE
 	dw STARYU
 	dw STEELIX
+	dw STRICHEEL
 	dw STROMEN
 	dw SUDOWOODO
 	dw SUICUNE
+	dw SUNBUD
 	dw SUNFLORA
 	dw SUNKERN
 	dw SWINUB
@@ -341,7 +358,7 @@ AlphabeticalPokedexOrder:
 	dw XYLODON
 	dw XYLOFIN
 	dw YANMA
-	; dw YANMEGA
+	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT
 	assert_table_length NUM_POKEMON

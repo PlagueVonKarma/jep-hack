@@ -101,6 +101,10 @@ MonMenuIcons:
 	db ICON_SLOWPOKE    ; SLOWBRO
 	db ICON_VOLTORB     ; MAGNEMITE
 	db ICON_VOLTORB     ; MAGNETON
+	db ICON_FISH        ; CHEEP
+	db ICON_FISH        ; JABETTA
+	db ICON_POLIWAG     ; RIBBITO
+	db ICON_POLIWAG     ; CROAKOZUNA
 	db ICON_BIRD        ; FARFETCH_D
 	db ICON_BIRD        ; DODUO
 	db ICON_BIRD        ; DODRIO
@@ -110,6 +114,7 @@ MonMenuIcons:
 	db ICON_BLOB        ; MUK
 	db ICON_SHELL       ; SHELLDER
 	db ICON_SHELL       ; CLOYSTER
+	db ICON_SHELL       ; DISTURBAN
 	db ICON_GHOST       ; GASTLY
 	db ICON_GHOST       ; HAUNTER
 	db ICON_GHOST       ; GENGAR
@@ -209,6 +214,7 @@ MonMenuIcons:
 	db ICON_BAT         ; CROBAT
 	db ICON_FISH        ; CHINCHOU
 	db ICON_FISH        ; LANTURN
+	db ICON_POLIWAG     ; REROAD
 	db ICON_PIKACHU     ; PICHU
 	db ICON_CLEFAIRY    ; CLEFFA
 	db ICON_JIGGLYPUFF  ; IGGLYBUFF
@@ -216,6 +222,7 @@ MonMenuIcons:
 	db ICON_BIRD        ; TOGETIC
 	db ICON_BIRD        ; TOGEKISS
 	db ICON_BIRD        ; NATU
+	db ICON_BIRD        ; QATU
 	db ICON_BIRD        ; XATU
 	db ICON_FOX         ; MOIBELLE
 	db ICON_FOX         ; BELLEDAM
@@ -223,6 +230,7 @@ MonMenuIcons:
 	db ICON_MONSTER     ; FLAAFFY
 	db ICON_MONSTER     ; AMPHAROS
 	db ICON_ODDISH      ; BELLOSSOM
+	db ICON_JIGGLYPUFF  ; AZURILL
 	db ICON_JIGGLYPUFF  ; MARILL
 	db ICON_JIGGLYPUFF  ; AZUMARILL
 	db ICON_SUDOWOODO   ; SUDOWOODO
@@ -231,10 +239,15 @@ MonMenuIcons:
 	db ICON_ODDISH      ; SKIPLOOM
 	db ICON_ODDISH      ; JUMPLUFF
 	db ICON_MONSTER     ; AIPOM
+	db ICON_MONSTER     ; AMBIPOM
 	db ICON_ODDISH      ; SUNKERN
+	db ICON_ODDISH      ; SUNBUD
 	db ICON_ODDISH      ; SUNFLORA
+	db ICON_SLOWPOKE    ; HIPPUNK
 	db ICON_BIRD        ; AERCROW
+	db ICON_FOX         ; FOXFIRE
 	db ICON_BUG         ; YANMA
+	db ICON_BUG         ; YANMEGA
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE
 	db ICON_FOX         ; ESPEON
@@ -264,6 +277,8 @@ MonMenuIcons:
 	db ICON_MONSTER     ; SNUBBULL
 	db ICON_MONSTER     ; GRANBULL
 	db ICON_FISH        ; QWILFISH
+	db ICON_FISH        ; KAZEPPELIN
+	db ICON_FISH        ; QWILFATHER
 	db ICON_BUG         ; SCIZOR
 	db ICON_BUG         ; SHUCKLE
 	db ICON_BUG         ; POCKLE
@@ -279,7 +294,10 @@ MonMenuIcons:
 	db ICON_SHELL       ; CORSOLA
 	db ICON_FISH        ; REMORAID
 	db ICON_FISH        ; OCTILLERY
+	db ICON_FISH        ; STRICHEEL
+	db ICON_FISH        ; LURREEL
 	db ICON_MONSTER     ; DELIBIRD
+	db ICON_FISH        ; MANTYKE
 	db ICON_FISH        ; MANTINE
 	db ICON_BIRD        ; SKARMORY
 	db ICON_FOX         ; HOUNDOUR
