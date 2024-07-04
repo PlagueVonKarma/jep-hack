@@ -39,34 +39,35 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry GOUGING_FIRE
+	cry DOKUROAR
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon GOUGING_FIRE, 75
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
+	loadwildmon DOKUROAR, 60
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextA:
-	text "Ennn-GRAHHH!"
+	text "Sparkle..."
+	line "Sparkle..."
 	done
 	
 DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry RAGING_BOLT
+	cry DOKUROAR
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon RAGING_BOLT, 75
+	loadvar VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadwildmon DOKUROAR, 60
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextB:
-	text "Rai-GOOOHHH!!!"
+	text "Do-ku-raaagh!"
 	done
 
 DebugFlyScript:
@@ -208,8 +209,8 @@ DebugRoom_MapEvents:
 	def_object_events
 	object_event 22, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon1Script, -1
 	object_event 27, 21, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugPokemon2Script, -1
-	object_event 23, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_RED, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
-	object_event 26, 27, SPRITE_SUICUNE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
+	object_event 23, 27, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_RED, OBJECTTYPE_SCRIPT, 0, DebugPokemon3Script, -1
+	object_event 26, 27, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_BROWN, OBJECTTYPE_SCRIPT, 0, DebugPokemon4Script, -1
 	object_event 17, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
 	object_event 16, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
 	object_event 19, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugItemScript, -1
