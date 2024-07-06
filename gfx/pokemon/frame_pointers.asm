@@ -68,6 +68,7 @@ FramesPointers:
 	dba PersianFrames
 	dba PerrserkerFrames
 	dba PsyduckFrames
+	dba WeirduckFrames
 	dba GolduckFrames
 	dba MankeyFrames
 	dba PrimeapeFrames

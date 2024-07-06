@@ -70,6 +70,7 @@ KantoMonSpecials:
 	db  65 ; PERSIAN
 	db  50 ; PERRSERKER
 	db  50 ; PSYDUCK
+	db  65 ; WEIRDUCK
 	db  80 ; GOLDUCK
 	db  35 ; MANKEY
 	db  60 ; PRIMEAPE

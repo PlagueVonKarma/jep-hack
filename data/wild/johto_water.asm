@@ -46,9 +46,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ILEX_FOREST
 	db 2 percent ; encounter rate
-	dbw 15, PSYDUCK
-	dbw 10, PSYDUCK ; WEIRDUCK
-	dbw 15, GOLDUCK
+	dbw 20, PSYDUCK
+	dbw 25, WEIRDUCK
+	dbw 35, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons MOUNT_MORTAR_1F_OUTSIDE
@@ -159,8 +159,8 @@ JohtoWaterWildMons:
 	def_water_wildmons ROUTE_35
 	db 4 percent ; encounter rate
 	dbw 20, PSYDUCK
-	dbw 15, PSYDUCK
-	dbw 20, GOLDUCK
+	dbw 25, WEIRDUCK
+	dbw 35, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_40

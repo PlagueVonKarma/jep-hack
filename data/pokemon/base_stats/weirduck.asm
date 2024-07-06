@@ -1,4 +1,4 @@
-	db 0 ; species ID placeholder
+	db WEIRDUCK ; species ID placeholder
 
 	db  65,  67,  63,  70,  80,  65
 	;   hp  atk  def  spd  sat  sdf

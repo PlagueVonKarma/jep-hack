@@ -74,6 +74,7 @@ PokemonCries::
 	mon_cry CRY_CLEFAIRY,    153,  383 ; PERSIAN
 	mon_cry CRY_CLEFAIRY,     26,  192 ; PERRSERKER	(may revise)
 	mon_cry CRY_PSYDUCK,      32,  224 ; PSYDUCK
+	mon_cry CRY_PSYDUCK,      32,  224 ; WEIRDUCK (incomplete)
 	mon_cry CRY_PSYDUCK,     255,  192 ; GOLDUCK
 	mon_cry CRY_NIDOQUEEN,   221,  224 ; MANKEY
 	mon_cry CRY_NIDOQUEEN,   175,  192 ; PRIMEAPE

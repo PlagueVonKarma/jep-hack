@@ -149,6 +149,8 @@ PokemonPicPointers::
 	dba PerrserkerBackpic
 	dba PsyduckFrontpic
 	dba PsyduckBackpic
+	dba WeirduckFrontpic
+	dba WeirduckBackpic
 	dba GolduckFrontpic
 	dba GolduckBackpic
 	dba MankeyFrontpic

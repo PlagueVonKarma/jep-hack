@@ -70,6 +70,7 @@ EggMovePointers1:
 	dw NoEggMoves1 ; Perrserker
 	dw PsyduckEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1
 	dw MankeyEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1 ; Annihilape

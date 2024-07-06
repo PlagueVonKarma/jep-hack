@@ -87,6 +87,7 @@
 	const PERSIAN    ; 35
 	const PERRSERKER
 	const PSYDUCK    ; 36
+	const WEIRDUCK
 	const GOLDUCK    ; 37
 	const MANKEY     ; 38
 	const PRIMEAPE   ; 39

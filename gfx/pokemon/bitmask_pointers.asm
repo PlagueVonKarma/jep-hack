@@ -68,6 +68,7 @@ BitmasksPointers:
 	dw PersianBitmasks
 	dw PerrserkerBitmasks
 	dw PsyduckBitmasks
+	dw WeirduckBitmasks
 	dw GolduckBitmasks
 	dw MankeyBitmasks
 	dw PrimeapeBitmasks

@@ -69,6 +69,7 @@ PokedexDataPointerTable:
 	dba PersianPokedexEntry
 	dba PerrserkerPokedexEntry
 	dba PsyduckPokedexEntry
+	dba WeirduckPokedexEntry
 	dba GolduckPokedexEntry
 	dba MankeyPokedexEntry
 	dba PrimeapePokedexEntry

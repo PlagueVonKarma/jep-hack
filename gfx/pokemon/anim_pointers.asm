@@ -68,6 +68,7 @@ AnimationPointers:
 	dw PersianAnimation
 	dw PerrserkerAnimation
 	dw PsyduckAnimation
+	dw WeirduckAnimation
 	dw GolduckAnimation
 	dw MankeyAnimation
 	dw PrimeapeAnimation

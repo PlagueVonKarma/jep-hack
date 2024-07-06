@@ -179,6 +179,7 @@ NewPokedexOrder:
 	dw MOIBELLE
 	dw BELLEDAM
 	dw PSYDUCK
+	dw WEIRDUCK
 	dw GOLDUCK
 	dw MACHOP
 	dw MACHOKE

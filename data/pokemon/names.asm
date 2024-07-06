@@ -72,6 +72,7 @@ PokemonNames::
 	db "PERSIAN@@@"
 	db "PERRSERKER"
 	db "PSYDUCK@@@"
+	db "WEIRDUCK@@"
 	db "GOLDUCK@@@"
 	db "MANKEY@@@@"
 	db "PRIMEAPE@@"

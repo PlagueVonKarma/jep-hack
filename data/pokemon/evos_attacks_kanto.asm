@@ -69,6 +69,7 @@ EvosAttacksPointers1::
 	dw PersianEvosAttacks
 	dw PerrserkerEvosAttacks
 	dw PsyduckEvosAttacks
+	dw WeirduckEvosAttacks
 	dw GolduckEvosAttacks
 	dw MankeyEvosAttacks
 	dw PrimeapeEvosAttacks
@@ -1066,7 +1067,7 @@ PerrserkerEvosAttacks:
 	db 0 ; no more level-up moves
 
 PsyduckEvosAttacks:
-	dbbw EVOLVE_LEVEL, 33, GOLDUCK
+	dbbw EVOLVE_LEVEL, 22, WEIRDUCK
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 5, TAIL_WHIP
@@ -1076,6 +1077,21 @@ PsyduckEvosAttacks:
 	dbw 31, PSYCH_UP
 	dbw 40, FURY_SWIPES
 	dbw 50, HYDRO_PUMP
+	db 0 ; no more level-up moves
+
+WeirduckEvosAttacks:
+	dbbw EVOLVE_LEVEL, 35, GOLDUCK
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 5, TAIL_WHIP
+	dbw 10, DISABLE
+	dbw 16, CONFUSION
+	dbw 25, SCREECH
+	dbw 28, AMNESIA
+	dbw 31, GLARE
+	dbw 34, PSYCH_UP
+	dbw 42, FURY_SWIPES
+	dbw 54, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GolduckEvosAttacks:

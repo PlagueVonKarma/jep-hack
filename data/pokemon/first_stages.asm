@@ -70,6 +70,7 @@ FirstEvoStages::
 	dw MEOWTH ; Perrserker, should be MEOWTH_G
 	dw PSYDUCK
 	dw PSYDUCK
+	dw PSYDUCK
 	dw MANKEY     ;38
 	dw MANKEY
 	dw ANNIHILAPE

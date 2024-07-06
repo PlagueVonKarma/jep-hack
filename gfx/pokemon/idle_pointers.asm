@@ -68,6 +68,7 @@ AnimationIdlePointers:
 	dw PersianAnimationIdle
 	dw PerrserkerAnimationIdle
 	dw PsyduckAnimationIdle
+	dw WeirduckAnimationIdle
 	dw GolduckAnimationIdle
 	dw MankeyAnimationIdle
 	dw PrimeapeAnimationIdle
