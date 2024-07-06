@@ -105,6 +105,7 @@ BitmasksPointers:
 	dw RibbitoBitmasks
 	dw CroakozunaBitmasks
 	dw FarfetchDBitmasks
+	dw LuxwanBitmasks
 	dw DoduoBitmasks
 	dw DodrioBitmasks
 	dw SeelBitmasks

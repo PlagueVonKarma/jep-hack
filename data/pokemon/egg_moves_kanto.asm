@@ -106,6 +106,7 @@ EggMovePointers1:
 	dw RibbitoEggMoves
 	dw NoEggMoves1 ; Croakozuna
 	dw FarfetchDEggMoves
+	dw NoEggMoves1 ; Luxwan
 	dw DoduoEggMoves
 	dw NoEggMoves1
 	dw SeelEggMoves

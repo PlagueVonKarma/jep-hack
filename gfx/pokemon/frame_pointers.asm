@@ -105,6 +105,7 @@ FramesPointers:
 	dba RibbitoFrames
 	dba CroakozunaFrames
 	dba FarfetchDFrames
+	dba LuxwanFrames
 	dba DoduoFrames
 	dba DodrioFrames
 	dba SeelFrames

@@ -223,6 +223,8 @@ PokemonPicPointers::
 	dba CroakozunaBackpic
 	dba FarfetchDFrontpic
 	dba FarfetchDBackpic
+	dba LuxwanFrontpic
+	dba LuxwanBackpic
 	dba DoduoFrontpic
 	dba DoduoBackpic
 	dba DodrioFrontpic

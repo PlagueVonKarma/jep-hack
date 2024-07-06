@@ -124,6 +124,7 @@
 	const RIBBITO
 	const CROAKOZUNA
 	const FARFETCH_D ; 53
+	const LUXWAN
 	const DODUO      ; 54
 	const DODRIO     ; 55
 	const SEEL       ; 56

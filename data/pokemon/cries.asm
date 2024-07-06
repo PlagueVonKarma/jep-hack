@@ -111,6 +111,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; RIBBITO	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; CROAKOZUNA	(incomplete)
 	mon_cry CRY_SPEAROW,     221,  129 ; FARFETCH_D
+	mon_cry CRY_SUNFLORA,     13,  256 ; LUXWAN (incomplete - just taken from remoraid for now)
 	mon_cry CRY_DIGLETT,     187,  129 ; DODUO
 	mon_cry CRY_DIGLETT,     153,  160 ; DODRIO
 	mon_cry CRY_SEEL,        136,  320 ; SEEL

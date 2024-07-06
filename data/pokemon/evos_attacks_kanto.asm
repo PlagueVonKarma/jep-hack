@@ -106,6 +106,7 @@ EvosAttacksPointers1::
 	dw RibbitoEvosAttacks
 	dw CroakozunaEvosAttacks
 	dw FarfetchDEvosAttacks
+	dw LuxwanEvosAttacks
 	dw DoduoEvosAttacks
 	dw DodrioEvosAttacks
 	dw SeelEvosAttacks
@@ -1604,6 +1605,7 @@ CroakozunaEvosAttacks:
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
+	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, LUXWAN ; Considering we're going off the final entries, this is unfortunately necessary.
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 7, SAND_ATTACK
@@ -1613,6 +1615,19 @@ FarfetchDEvosAttacks:
 	dbw 31, AGILITY
 	dbw 37, SLASH
 	dbw 44, FALSE_SWIPE
+	db 0 ; no more level-up moves
+
+LuxwanEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, PECK
+	dbw 7, SAND_ATTACK
+	dbw 13, LEER
+	dbw 19, FURY_ATTACK
+	dbw 25, SWORDS_DANCE
+	dbw 31, AGILITY
+	dbw 37, SLASH
+	dbw 44, FALSE_SWIPE
+	dbw 50, FURY_CUTTER
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:

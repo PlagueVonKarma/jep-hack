@@ -203,6 +203,7 @@ NewPokedexOrder:
 	dw MR__MIME
 	dw SMEARGLE
 	dw FARFETCH_D
+	dw LUXWAN
 	dw NATU
 	dw QATU
 	dw XATU

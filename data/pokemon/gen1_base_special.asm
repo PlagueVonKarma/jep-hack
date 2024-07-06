@@ -107,6 +107,7 @@ KantoMonSpecials:
 	db  55 ; RIBBITO
 	db  75 ; CROAKOZUNA
 	db  58 ; FARFETCH_D
+	db  63 ; LUXWAN
 	db  35 ; DODUO
 	db  60 ; DODRIO
 	db  70 ; SEEL

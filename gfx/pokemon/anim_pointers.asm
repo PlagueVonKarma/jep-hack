@@ -105,6 +105,7 @@ AnimationPointers:
 	dw RibbitoAnimation
 	dw CroakozunaAnimation
 	dw FarfetchDAnimation
+	dw LuxwanAnimation
 	dw DoduoAnimation
 	dw DodrioAnimation
 	dw SeelAnimation

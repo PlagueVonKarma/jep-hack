@@ -106,6 +106,7 @@ FirstEvoStages::
 	dw RIBBITO
 	dw RIBBITO
 	dw FARFETCH_D
+	dw FARFETCH_D
 	dw DODUO
 	dw DODUO
 	dw SEEL

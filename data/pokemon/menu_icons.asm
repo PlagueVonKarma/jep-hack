@@ -107,6 +107,7 @@ MonMenuIcons:
 	db ICON_POLIWAG     ; RIBBITO
 	db ICON_POLIWAG     ; CROAKOZUNA
 	db ICON_BIRD        ; FARFETCH_D
+	db ICON_BIRD        ; LUXWAN
 	db ICON_BIRD        ; DODUO
 	db ICON_BIRD        ; DODRIO
 	db ICON_LAPRAS      ; SEEL

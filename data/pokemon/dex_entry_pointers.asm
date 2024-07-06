@@ -106,6 +106,7 @@ PokedexDataPointerTable:
 	dba RibbitoPokedexEntry
 	dba CroakozunaPokedexEntry
 	dba FarfetchDPokedexEntry
+	dba LuxwanPokedexEntry
 	dba DoduoPokedexEntry
 	dba DodrioPokedexEntry
 	dba SeelPokedexEntry

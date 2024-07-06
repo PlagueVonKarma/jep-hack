@@ -359,4 +359,5 @@ Pokered_MonIndices:
 	db LURREEL
 	db MANTYKE
 	db WEIRDUCK
+	db LUXWAN
 	assert_table_length NUM_POKEMON - 1

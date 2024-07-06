@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, WYNAUT
+	getmonname STRING_BUFFER_3, LUXWAN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke QWILFISH, 24, POISON_STONE
+	givepoke LUXWAN, 24, POISON_STONE
 	closetext
 	end
 

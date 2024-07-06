@@ -173,6 +173,7 @@ AlphabeticalPokedexOrder:
 	dw LICKITUNG
 	dw LUANBO
 	dw LUGIA
+	dw LUXWAN
 	dw LURREEL
 	dw MACHAMP
 	dw MACHOKE

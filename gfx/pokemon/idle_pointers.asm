@@ -105,6 +105,7 @@ AnimationIdlePointers:
 	dw RibbitoAnimationIdle
 	dw CroakozunaAnimationIdle
 	dw FarfetchDAnimationIdle
+	dw LuxwanAnimationIdle
 	dw DoduoAnimationIdle
 	dw DodrioAnimationIdle
 	dw SeelAnimationIdle

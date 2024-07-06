@@ -109,6 +109,7 @@ PokemonNames::
 	db "RIBBITO@@@"
 	db "CROAKOZUNA"
 	db "FARFETCH'D"
+	db "LUXWAN@@@@"
 	db "DODUO@@@@@"
 	db "DODRIO@@@@"
 	db "SEEL@@@@@@"
