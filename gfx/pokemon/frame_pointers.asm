@@ -6,6 +6,7 @@ FramesPointers:
 	dba CharmanderFrames
 	dba CharmeleonFrames
 	dba CharizardFrames
+	dba CharmadaFrames
 	dba SquirtleFrames
 	dba WartortleFrames
 	dba TotartleFrames

@@ -360,4 +360,5 @@ Pokered_MonIndices:
 	db MANTYKE
 	db WEIRDUCK
 	db LUXWAN
+	db CHARMADA
 	assert_table_length NUM_POKEMON - 1

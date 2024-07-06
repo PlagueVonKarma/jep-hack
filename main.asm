@@ -240,10 +240,10 @@ INCLUDE "engine/pokemon/experience.asm"
 INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
 INCLUDE "engine/pokemon/move_mon_wo_mail.asm"
-INCLUDE "data/pokemon/base_stats.asm"
 
 SECTION "Pokemon Names", ROMX
 
+INCLUDE "data/pokemon/base_stats.asm" ; If moving pokemon becomes a problem, it's because of this.
 INCLUDE "data/pokemon/names.asm"
 
 
@@ -468,10 +468,10 @@ SECTION "bank3E", ROMX
 
 INCLUDE "engine/gfx/load_font.asm"
 INCLUDE "engine/events/name_rater.asm"
-INCLUDE "engine/events/play_slow_cry.asm"
 
 SECTION "bank3Econt", ROMX
 
+INCLUDE "engine/events/play_slow_cry.asm"
 INCLUDE "engine/link/time_capsule.asm"
 INCLUDE "engine/link/time_capsule_2.asm"
 INCLUDE "engine/events/magikarp.asm"

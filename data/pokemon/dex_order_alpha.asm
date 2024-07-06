@@ -41,6 +41,7 @@ AlphabeticalPokedexOrder:
 	dw CELEBI
 	dw CHANSEY
 	dw CHARIZARD
+	dw CHARMADA
 	dw CHARMANDER
 	dw CHARMELEON
 	dw CHEEP

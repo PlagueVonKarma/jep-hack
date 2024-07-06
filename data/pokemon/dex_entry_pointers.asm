@@ -7,6 +7,7 @@ PokedexDataPointerTable:
 	dba CharmanderPokedexEntry
 	dba CharmeleonPokedexEntry
 	dba CharizardPokedexEntry
+	dba CharmadaPokedexEntry
 	dba SquirtlePokedexEntry
 	dba WartortlePokedexEntry
 	dba TotartlePokedexEntry

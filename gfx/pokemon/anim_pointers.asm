@@ -6,6 +6,7 @@ AnimationPointers:
 	dw CharmanderAnimation
 	dw CharmeleonAnimation
 	dw CharizardAnimation
+	dw CharmadaAnimation
 	dw SquirtleAnimation
 	dw WartortleAnimation
 	dw TotartleAnimation

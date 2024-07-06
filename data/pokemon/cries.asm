@@ -12,6 +12,7 @@ PokemonCries::
 	mon_cry CRY_CHARMANDER,   96,  192 ; CHARMANDER
 	mon_cry CRY_CHARMANDER,   32,  192 ; CHARMELEON
 	mon_cry CRY_CHARMANDER,    0,  256 ; CHARIZARD
+	mon_cry CRY_CHARMANDER,    0,  256 ; CHARMADA (incomplete)
 	mon_cry CRY_SQUIRTLE,     96,  192 ; SQUIRTLE
 	mon_cry CRY_SQUIRTLE,     32,  192 ; WARTORTLE
 	mon_cry CRY_SQUIRTLE,      0,  256 ; TOTARTLE

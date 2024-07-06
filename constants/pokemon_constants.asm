@@ -25,6 +25,7 @@
 	const CHARMANDER ; 04
 	const CHARMELEON ; 05
 	const CHARIZARD  ; 06
+	const CHARMADA
 	const SQUIRTLE   ; 07
 	const WARTORTLE  ; 08
 	const TOTARTLE   ; 09

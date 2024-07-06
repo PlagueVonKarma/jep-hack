@@ -7,6 +7,7 @@ EvosAttacksPointers1::
 	dw CharmanderEvosAttacks
 	dw CharmeleonEvosAttacks
 	dw CharizardEvosAttacks
+	dw CharmadaEvosAttacks
 	dw SquirtleEvosAttacks
 	dw WartortleEvosAttacks
 	dw TotartleEvosAttacks
@@ -258,6 +259,7 @@ CharmanderEvosAttacks:
 
 CharmeleonEvosAttacks:
 	dbbw EVOLVE_LEVEL, 36, CHARIZARD
+	dbbw EVOLVE_TRADE, METAL_COAT, CHARMADA
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, GROWL
@@ -285,6 +287,23 @@ CharizardEvosAttacks:
 	dbw 34, FLAMETHROWER
 	dbw 36, WING_ATTACK
 	dbw 44, SLASH
+	dbw 54, DRAGON_RAGE
+	dbw 64, FIRE_SPIN
+	db 0 ; no more level-up moves
+	
+CharmadaEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, METAL_CLAW
+	dbw 1, GROWL
+	dbw 1, EMBER
+	dbw 1, SMOKESCREEN
+	dbw 7, EMBER
+	dbw 13, SMOKESCREEN
+	dbw 20, RAGE
+	dbw 27, SCARY_FACE
+	dbw 34, FLAMETHROWER
+	dbw 36, IRON_TAIL
+	dbw 44, SPARK
 	dbw 54, DRAGON_RAGE
 	dbw 64, FIRE_SPIN
 	db 0 ; no more level-up moves

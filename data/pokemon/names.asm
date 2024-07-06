@@ -10,6 +10,7 @@ PokemonNames::
 	db "CHARMANDER"
 	db "CHARMELEON"
 	db "CHARIZARD@"
+	db "CHARMADA@@"
 	db "SQUIRTLE@@"
 	db "WARTORTLE@"
 	db "TOTARTLE@@"

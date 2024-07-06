@@ -8,6 +8,7 @@ KantoMonSpecials:
 	db  50 ; CHARMANDER
 	db  65 ; CHARMELEON
 	db  85 ; CHARIZARD
+	db  95 ; CHARMADA
 	db  50 ; SQUIRTLE
 	db  65 ; WARTORTLE
 	db 100 ; BLASTOISE
