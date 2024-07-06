@@ -40,7 +40,7 @@ JohtoWaterWildMons:
 	def_water_wildmons SLOWPOKE_WELL_B2F
 	db 2 percent ; encounter rate
 	dbw 15, SLOWPOKE
-	dbw 20, SLOWPOKE ; DISTURBAN
+	dbw 20, DISTURBAN
 	dbw 20, SLOWBRO
 	end_water_wildmons
 
@@ -130,14 +130,14 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_30
 	db 2 percent ; encounter rate
-	dbw 20, POLIWAG ; RIBBITO?
+	dbw 20, RIBBITO
 	dbw 15, POLIWAG
 	dbw 20, POLIWHIRL
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_31
 	db 2 percent ; encounter rate
-	dbw 20, POLIWAG ; RIBBITO?
+	dbw 20, RIBBITO
 	dbw 15, POLIWAG
 	dbw 20, POLIWHIRL
 	end_water_wildmons

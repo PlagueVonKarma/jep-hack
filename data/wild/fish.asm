@@ -221,8 +221,8 @@ TimeFishGroups:
 	dbwbw 40, DRATINI,    40, DRATINI    ; 9
 	dbwbw 20, QWILFISH,   20, QWILFISH   ; 10
 	dbwbw 40, QWILFISH,   40, QWILFISH   ; 11
-	dbwbw 20, REMORAID,   20, REMORAID   ; 12
-	dbwbw 40, REMORAID,   40, REMORAID   ; 13
+	dbwbw 20, REMORAID,   20, STRICHEEL   ; 12
+	dbwbw 40, OCTILLERY,   40, LURREEL   ; 13
 	dbwbw 20, GYARADOS,   20, GYARADOS   ; 14
 	dbwbw 40, GYARADOS,   40, GYARADOS   ; 15
 	dbwbw 10, DRATINI,    10, DRATINI    ; 16
@@ -231,6 +231,6 @@ TimeFishGroups:
 	dbwbw 40, SEADRA,     40, LURREEL    ; 19
 	dbwbw 20, QWILFISH,   20, QWILFISH   ; 20
 	dbwbw 40, QWILFISH,   40, QWILFISH   ; 21
-	dbwbw 20, REMORAID,   20, REMORAID   ; 21
-	dbwbw 40, REMORAID,   40, REMORAID   ; 21
+	dbwbw 20, REMORAID,   20, STRICHEEL   ; 21
+	dbwbw 40, OCTILLERY,   40, LURREEL   ; 21
 	

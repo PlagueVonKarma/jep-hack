@@ -62,17 +62,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -90,17 +90,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -118,17 +118,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -146,17 +146,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -174,17 +174,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -202,17 +202,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -230,17 +230,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
@@ -258,17 +258,17 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
 	; day
 	dbw 40, GROWLITHE
-	dbw 41, NATU ; QATU
+	dbw 41, QATU
 	dbw 42, GROWLITHE
-	dbw 42, NATU ; QATU
+	dbw 42, QATU
 	dbw 43, SNEASEL
 	dbw 44, PERSIAN
 	dbw 44, ARCANINE
