@@ -22,13 +22,13 @@ BugContestantPointers:
 BugContestant_BugCatcherDon:
 	db BUG_CATCHER, DON
 	dw KAKUNA,     300
-	dw METAPOD,    285
+	dw PUPAL,    285
 	dw CATERPIE,   226
 
 BugContestant_BugCatcherEd:
 	db BUG_CATCHER, ED
 	dw BUTTERFREE, 286
-	dw BUTTERFREE, 251
+	dw CARAPTHOR, 251
 	dw CATERPIE,   237
 
 BugContestant_CooltrainerMNick:
@@ -57,7 +57,7 @@ BugContestant_CamperBarry:
 
 BugContestant_PicnickerCindy:
 	db PICNICKER, CINDY
-	dw BUTTERFREE, 341
+	dw HERACROSS, 341
 	dw METAPOD,    301
 	dw CATERPIE,   264
 
@@ -77,4 +77,4 @@ BugContestant_SchoolboyKipp:
 	db SCHOOLBOY, KIPP
 	dw VENONAT,    267
 	dw PARAS,      254
-	dw KAKUNA,     259
+	dw GENTLARVA,     259
