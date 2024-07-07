@@ -247,7 +247,7 @@ Route36Officer_ContestHasConcluded:
 .Sunstone:
 	writetext Route36NationalParkGateOfficer1HeresThePrizeText
 	promptbutton
-	verbosegiveitem SUN_STONE
+	verbosegiveitem BLK_AUGURITE
 	iffalse .BagFull
 	clearevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
 	closetext
