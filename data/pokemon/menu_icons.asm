@@ -167,6 +167,8 @@ MonMenuIcons:
 	db ICON_EQUINE      ; TAUROS
 	db ICON_FISH        ; MAGIKARP
 	db ICON_GYARADOS    ; GYARADOS
+	db ICON_FISH        ; MAGIPREY
+	db ICON_GYARADOS    ; TERRADOS
 	db ICON_LAPRAS      ; LAPRAS
 	db ICON_BLOB        ; DITTO
 	db ICON_FOX         ; EEVEE

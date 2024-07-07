@@ -165,6 +165,8 @@ FramesPointers:
 	dba TaurosFrames
 	dba MagikarpFrames
 	dba GyaradosFrames
+	dba MagipreyFrames
+	dba TerradosFrames
 	dba LaprasFrames
 	dba DittoFrames
 	dba EeveeFrames

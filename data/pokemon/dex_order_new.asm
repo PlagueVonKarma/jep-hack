@@ -101,6 +101,8 @@ NewPokedexOrder:
 	dw REROAD
 	dw MAGIKARP
 	dw GYARADOS
+	dw MAGIPREY
+	dw TERRADOS
 	dw ORFRY
 	dw GOLDEEN
 	dw SEAKING

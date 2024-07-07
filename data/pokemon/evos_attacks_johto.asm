@@ -1981,7 +1981,7 @@ TonquitoEvosAttacks:
 	db 0 ; no more level-up moves
 
 MolambinoEvosAttacks:
-	db EVOLVE_LEVEL, 20, LUANBO
+	dbbw EVOLVE_LEVEL, 20, LUANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
 	; dbw 7, DRAINING_KISS ; move not yet implemented
@@ -1995,7 +1995,7 @@ MolambinoEvosAttacks:
 	db 0 ; no more level-up moves
 
 LuanboEvosAttacks:
-	db EVOLVE_LEVEL, 35, GRANBO
+	dbbw EVOLVE_LEVEL, 35, GRANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
 	; dbw 7, DRAINING_KISS ; move not yet implemented

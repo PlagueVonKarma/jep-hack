@@ -165,6 +165,8 @@ AnimationPointers:
 	dw TaurosAnimation
 	dw MagikarpAnimation
 	dw GyaradosAnimation
+	dw MagipreyAnimation
+	dw TerradosAnimation
 	dw LaprasAnimation
 	dw DittoAnimation
 	dw EeveeAnimation

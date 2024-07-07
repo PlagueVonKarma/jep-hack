@@ -165,6 +165,8 @@ AnimationIdlePointers:
 	dw TaurosAnimationIdle
 	dw MagikarpAnimationIdle
 	dw GyaradosAnimationIdle
+	dw MagipreyAnimationIdle
+	dw TerradosAnimationIdle
 	dw LaprasAnimationIdle
 	dw DittoAnimationIdle
 	dw EeveeAnimationIdle

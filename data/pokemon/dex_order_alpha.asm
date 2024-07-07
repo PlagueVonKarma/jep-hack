@@ -182,6 +182,7 @@ AlphabeticalPokedexOrder:
 	dw MAGBY
 	dw MAGCARGO
 	dw MAGIKARP
+	dw MAGIPREY
 	dw MAGMAR
 	dw MAGNEMITE
 	dw MAGNETON
@@ -320,6 +321,7 @@ AlphabeticalPokedexOrder:
 	dw TEDDIURSA
 	dw TENTACOOL
 	dw TENTACRUEL
+	dw TERRADOS
 	dw TOGEPI
 	dw TOGETIC
 	dw TOGEKISS

@@ -166,6 +166,8 @@ FirstEvoStages::
 	dw TAUROS     ;80
 	dw MAGIKARP
 	dw MAGIKARP
+	dw MAGIPREY
+	dw MAGIPREY
 	dw LAPRAS
 	dw DITTO
 	dw EEVEE

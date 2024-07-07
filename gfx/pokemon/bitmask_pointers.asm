@@ -165,6 +165,8 @@ BitmasksPointers:
 	dw TaurosBitmasks
 	dw MagikarpBitmasks
 	dw GyaradosBitmasks
+	dw MagipreyBitmasks
+	dw TerradosBitmasks
 	dw LaprasBitmasks
 	dw DittoBitmasks
 	dw EeveeBitmasks

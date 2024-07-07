@@ -343,6 +343,10 @@ PokemonPicPointers::
 	dba MagikarpBackpic
 	dba GyaradosFrontpic
 	dba GyaradosBackpic
+	dba MagipreyFrontpic
+	dba MagipreyBackpic
+	dba TerradosFrontpic
+	dba TerradosBackpic
 	dba LaprasFrontpic
 	dba LaprasBackpic
 	dba DittoFrontpic

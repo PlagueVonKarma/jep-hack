@@ -166,6 +166,8 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Magiprey
+	dw NoEggMoves1 ; Terrados
 	dw LaprasEggMoves
 	dw NoEggMoves1
 	dw EeveeEggMoves

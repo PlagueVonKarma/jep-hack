@@ -361,4 +361,6 @@ Pokered_MonIndices:
 	db WEIRDUCK
 	db LUXWAN
 	db CHARMADA
+	db MAGIPREY
+	db TERRADOS
 	assert_table_length NUM_POKEMON - 1

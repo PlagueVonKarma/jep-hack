@@ -167,6 +167,8 @@ KantoMonSpecials:
 	db  70 ; TAUROS
 	db  20 ; MAGIKARP
 	db 100 ; GYARADOS
+	db  20 ; MAGIPREY
+	db 100 ; TERRADOS
 	db  95 ; LAPRAS
 	db  48 ; DITTO
 	db  65 ; EEVEE

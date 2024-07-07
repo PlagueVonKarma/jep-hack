@@ -169,6 +169,8 @@ PokemonNames::
 	db "TAUROS@@@@"
 	db "MAGIKARP@@"
 	db "GYARADOS@@"
+	db "MAGIPREY@@"
+	db "TERRADOS@@"
 	db "LAPRAS@@@@"
 	db "DITTO@@@@@"
 	db "EEVEE@@@@@"

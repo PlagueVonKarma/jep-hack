@@ -184,6 +184,8 @@
 	const TAUROS     ; 80
 	const MAGIKARP   ; 81
 	const GYARADOS   ; 82
+	const MAGIPREY
+	const TERRADOS
 	const LAPRAS     ; 83
 	const DITTO      ; 84
 	const EEVEE      ; 85

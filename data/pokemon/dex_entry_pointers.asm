@@ -166,6 +166,8 @@ PokedexDataPointerTable:
 	dba TaurosPokedexEntry
 	dba MagikarpPokedexEntry
 	dba GyaradosPokedexEntry
+	dba MagipreyPokedexEntry
+	dba TerradosPokedexEntry
 	dba LaprasPokedexEntry
 	dba DittoPokedexEntry
 	dba EeveePokedexEntry

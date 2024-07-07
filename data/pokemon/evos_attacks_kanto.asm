@@ -166,6 +166,8 @@ EvosAttacksPointers1::
 	dw TaurosEvosAttacks
 	dw MagikarpEvosAttacks
 	dw GyaradosEvosAttacks
+	dw MagipreyEvosAttacks
+	dw TerradosEvosAttacks
 	dw LaprasEvosAttacks
 	dw DittoEvosAttacks
 	dw EeveeEvosAttacks
@@ -2450,6 +2452,26 @@ GyaradosEvosAttacks:
 	dbw 40, HYDRO_PUMP
 	dbw 45, RAIN_DANCE
 	dbw 50, HYPER_BEAM
+	db 0 ; no more level-up moves
+
+MagipreyEvosAttacks:
+	dbbw EVOLVE_LEVEL, 20, TERRADOS
+	db 0 ; no more evolutions
+	dbw 1, SPLASH
+	dbw 15, LEECH_LIFE
+	dbw 30, FLAIL
+	db 0 ; no more level-up moves
+
+TerradosEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, DIG
+	dbw 20, BITE
+	dbw 25, MAGNITUDE
+	dbw 30, ROAR
+	dbw 35, CRUNCH
+	dbw 40, EARTHQUAKE
+	dbw 45, SANDSTORM
+	dbw 50, FISSURE
 	db 0 ; no more level-up moves
 
 LaprasEvosAttacks:

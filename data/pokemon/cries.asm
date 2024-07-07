@@ -171,6 +171,8 @@ PokemonCries::
 	mon_cry CRY_SQUIRTLE,     17,  192 ; TAUROS
 	mon_cry CRY_EKANS,       128,  128 ; MAGIKARP
 	mon_cry CRY_EKANS,         0,  256 ; GYARADOS
+	mon_cry CRY_EKANS,       128,  128 ; MAGIPREY (incomplete)
+	mon_cry CRY_EKANS,         0,  256 ; TERRADOS (incomplete)
 	mon_cry CRY_LAPRAS,        0,  256 ; LAPRAS
 	mon_cry CRY_PIDGEY,      255,  383 ; DITTO
 	mon_cry CRY_VENONAT,     136,  224 ; EEVEE
