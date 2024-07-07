@@ -1380,8 +1380,6 @@ _NPCTradeFanfareText::
 	text_pause
 	text_end
 
-	text_end ; unreferenced
-
 _NPCTradeIntroText1::
 	text "I collect #MON."
 	line "Do you have"
@@ -1532,6 +1530,42 @@ _NPCTradeAfterText4::
 
 	para "I still have a lot"
 	line "to learn about it."
+	done
+
+; Regional variant trades
+_NPCTradeIntroText5::
+	text "In my region,"
+	line "we have our own"
+	cont "@"
+	text_ram wStringBuffer1
+	text "!"
+
+	para "Wanna trade me"
+	line "yours?"
+	done
+
+_NPCTradeCancelText5::
+	text "Well, I'll be"
+	line "around…"
+	done
+
+_NPCTradeWrongText5::
+	text "Huh? That's not"
+	line "@"
+	text_ram wStringBuffer1
+	text ". "
+	cont "Try again!"
+	done
+
+_NPCTradeCompleteText5::
+	text "Wow! It's so"
+	line "different! Thanks"
+	cont "a bunch!"
+	done
+
+_NPCTradeAfterText5:: ; Should not happen.
+	text "AfterTrade event"
+	line "set incorrectly."
 	done
 
 _MomLeavingText1::

@@ -436,26 +436,31 @@ TradeTexts:
 	dw NPCTradeIntroText2
 	dw NPCTradeIntroText2
 	dw NPCTradeIntroText3
+	dw NPCTradeIntroText5
 ; TRADE_DIALOG_CANCEL
 	dw NPCTradeCancelText1
 	dw NPCTradeCancelText2
 	dw NPCTradeCancelText2
 	dw NPCTradeCancelText3
+	dw NPCTradeCancelText5
 ; TRADE_DIALOG_WRONG
 	dw NPCTradeWrongText1
 	dw NPCTradeWrongText2
 	dw NPCTradeWrongText2
 	dw NPCTradeWrongText3
+	dw NPCTradeWrongText5
 ; TRADE_DIALOG_COMPLETE
 	dw NPCTradeCompleteText1
 	dw NPCTradeCompleteText2
 	dw NPCTradeCompleteText4
 	dw NPCTradeCompleteText3
+	dw NPCTradeCompleteText5
 ; TRADE_DIALOG_AFTER
 	dw NPCTradeAfterText1
 	dw NPCTradeAfterText2
 	dw NPCTradeAfterText4
 	dw NPCTradeAfterText3
+	dw NPCTradeAfterText5
 
 NPCTradeCableText:
 	text_far _NPCTradeCableText
@@ -541,4 +546,24 @@ NPCTradeCompleteText4:
 
 NPCTradeAfterText4:
 	text_far _NPCTradeAfterText4
+	text_end
+
+NPCTradeIntroText5:
+	text_far _NPCTradeIntroText5
+	text_end
+
+NPCTradeCancelText5:
+	text_far _NPCTradeCancelText5
+	text_end
+
+NPCTradeWrongText5:
+	text_far _NPCTradeWrongText5
+	text_end
+
+NPCTradeCompleteText5:
+	text_far _NPCTradeCompleteText5
+	text_end
+
+NPCTradeAfterText5:
+	text_far _NPCTradeAfterText5
 	text_end
