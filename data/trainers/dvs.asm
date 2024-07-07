@@ -43,8 +43,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMERF
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-; BUG: RIVAL2 has lower DVs than RIVAL1 (see docs/bugs_and_glitches.md)
-	dn  9,  8,  8,  8 ; RIVAL2
+	dn 13, 13, 13, 13 ; RIVAL2
 	dn  9,  8,  8,  8 ; GUITARIST
 	dn 10,  8,  8,  8 ; HIKER
 	dn  9,  8,  8,  8 ; BIKER
@@ -70,4 +69,14 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn  7,  8,  8,  8 ; CHANNELER
+	dn  9,  8,  8,  8 ; CUE_BALL
+	dn  9,  8,  8,  8 ; ENGINEER
+	dn  9,  8,  8,  8 ; ROCKER
+	dn  9,  8,  8,  8 ; TAMER
+	dn  9,  8,  8,  8 ; FIREFIGHTER
+	dn  6,  8,  8,  8 ; TEACHERM
+	dn  9,  8,  8,  8 ; PAINTER
+	dn  9,  8,  8,  8 ; SOLDIER
+	dn  9,  8,  8,  8 ; SPORTSMAN
 	assert_table_length NUM_TRAINER_CLASSES

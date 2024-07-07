@@ -69,4 +69,15 @@ BTTrainerClassGenders:
 	db MALE   ; BLUE
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
-	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN
+	db MALE ; MYSTICALMAN sorry gamer
+	db FEMALE ; CHANNELER
+	db MALE ; CUE_BALL
+	db MALE ; ENGINEER
+	db MALE ; ROCKER
+	db MALE ; TAMER
+	db MALE ; FIREFIGHTER
+	db MALE ; TEACHERM
+	db FEMALE ; PAINTER
+	db MALE ; SOLDIER
+	db MALE ; SPORTSMAN
+	assert_table_length NUM_TRAINER_CLASSES

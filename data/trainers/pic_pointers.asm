@@ -70,4 +70,14 @@ TrainerPicPointers::
 	dba OfficerPic
 	dba GruntfPic
 	dba MysticalmanPic
+	dba ChannelerPic
+	dba CueBallPic
+	dba EngineerPic
+	dba RockerPic
+	dba TamerPic
+	dba FirefighterPic
+	dba TeacherMPic
+	dba PainterPic
+	dba SoldierPic
+	dba SportsmanPic
 	assert_table_length NUM_TRAINER_CLASSES

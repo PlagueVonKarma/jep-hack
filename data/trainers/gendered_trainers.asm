@@ -26,6 +26,15 @@ MaleTrainers:
 	db SAGE
 	db BIKER
 	db SCIENTIST
+	db MYSTICALMAN ; required when adding more trainers - imo though, they transcend gender
+	db CUE_BALL
+	db ENGINEER
+	db ROCKER
+	db TAMER
+	db FIREFIGHTER
+	db TEACHERM
+	db SOLDIER
+	db SPORTSMAN
 .End
 
 FemaleTrainers:
@@ -39,4 +48,6 @@ FemaleTrainers:
 	db KIMONO_GIRL
 	db POKEFANF
 	db COOLTRAINERF
+	db CHANNELER
+	db PAINTER
 .End

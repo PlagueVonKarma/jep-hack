@@ -77,6 +77,16 @@ INCBIN "gfx/trainers/blue.gbcpal", middle_colors
 INCBIN "gfx/trainers/officer.gbcpal", middle_colors
 INCBIN "gfx/trainers/grunt_f.gbcpal", middle_colors
 INCBIN "gfx/trainers/mysticalman.gbcpal", middle_colors
+INCBIN "gfx/trainers/channeler.gbcpal", middle_colors
+INCBIN "gfx/trainers/cue_ball.gbcpal", middle_colors
+INCBIN "gfx/trainers/engineer.gbcpal", middle_colors
+INCBIN "gfx/trainers/rocker.gbcpal", middle_colors
+INCBIN "gfx/trainers/tamer.gbcpal", middle_colors
+INCBIN "gfx/trainers/firefighter.gbcpal", middle_colors
+INCBIN "gfx/trainers/teacherm.gbcpal", middle_colors
+INCBIN "gfx/trainers/painter.gbcpal", middle_colors
+INCBIN "gfx/trainers/soldier.gbcpal", middle_colors
+INCBIN "gfx/trainers/sportsman.gbcpal", middle_colors
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"

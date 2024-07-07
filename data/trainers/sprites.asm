@@ -67,4 +67,15 @@ BTTrainerClassSprites:
 	db SPRITE_BLUE
 	db SPRITE_OFFICER
 	db SPRITE_ROCKET_GIRL
-	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN
+	db SPRITE_SUPER_NERD ; placeholder for mysticalman eusine
+	db SPRITE_KAREN ; placeholder until the channeler overworld sprite is added.
+	db SPRITE_BIKER		; Cue Ball
+	db SPRITE_POKEFAN_M ; Engineer
+	db SPRITE_ROCKER    ; Rocker
+	db SPRITE_POKEFAN_M ; Tamer
+	db SPRITE_POKEFAN_M ; Firefighter
+	db SPRITE_POKEFAN_M ; Teacher M 
+	db SPRITE_LASS		; Painter
+	db SPRITE_ROCKER	; Soldier
+	db SPRITE_SAILOR	; Sportsman uhhh
+	assert_table_length NUM_TRAINER_CLASSES

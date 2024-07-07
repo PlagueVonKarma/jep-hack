@@ -404,4 +404,64 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
+; Channeler
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Cue Ball
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; ENGINEER
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Rocker
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Tamer
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS | AI_AGGRESSIVE
+	dw CONTEXT_USE | SWITCH_OFTEN
+
+; Firefighter
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Male Teacher
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
+	dw AI_BASIC | AI_OPPORTUNIST | AI_AGGRESSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Painter
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS | AI_SMART
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Soldier
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; SPORTSMAN
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 	assert_table_length NUM_TRAINER_CLASSES

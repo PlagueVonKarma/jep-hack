@@ -70,4 +70,14 @@ TrainerGroups:
 	dba OfficerGroup
 	dba GruntFGroup
 	dba MysticalmanGroup
+	dba ChannelerGroup
+	dba CueBallGroup
+	dba EngineerGroup
+	dba RockerGroup
+	dba TamerGroup
+	dba FirefighterGroup
+	dba TeacherMGroup
+	dba PainterGroup
+	dba SoldierGroup
+	dba SportsmanGroup
 	assert_table_length NUM_TRAINER_CLASSES

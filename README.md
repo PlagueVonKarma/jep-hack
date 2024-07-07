@@ -25,6 +25,12 @@ The Fairy-type does exist.
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
 
+## New Things
+- 11 new Trainer classes, including;
+	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
+	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
+	- The Painter from FRLG!
+
 ## QoL Changes
 - A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
 - Kurt now makes Apricorn Balls instantly. He's had his coffee and is listening to his favourite music.
@@ -32,6 +38,8 @@ The Fairy-type does exist.
 - Clock reset procedure is now like vanilla GS, requiring just Down + B.
 - Tilesets now handle up to 255 titles (from 192), allowing for slightly nicer maps.
 - Can now have up to 17 object events.
+- Gen 6 Experience System!
+- Poke Balls now all have unique palettes.
 
 ## Map Changes
 In general, there have been many wild encounter tweaks. View this document for details. (will link when hack is in a playable state)
@@ -44,10 +52,12 @@ In general, there have been many wild encounter tweaks. View this document for d
 - Cerulean Cave has been restored, complete with a Mewtwo fight!
 - The Kanto Safari Zone map from the prototype has been restored.
 - The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
+- The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
 
 ## Item Changes
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo!
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
+- The Antique Pot has been added to accomodate a Shuckle evolution!
 
 # Credits
 - Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)

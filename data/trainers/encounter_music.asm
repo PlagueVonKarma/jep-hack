@@ -71,7 +71,14 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; officer
 	db MUSIC_ROCKET_ENCOUNTER      ; gruntf
 	db MUSIC_HIKER_ENCOUNTER       ; mysticalman
+	db MUSIC_SAGE_ENCOUNTER			; channeler
+	db MUSIC_HIKER_ENCOUNTER		; cue ball
+	db MUSIC_HIKER_ENCOUNTER		; engineer
+	db MUSIC_HIKER_ENCOUNTER		; rocker
+	db MUSIC_HIKER_ENCOUNTER		; tamer
+	db MUSIC_HIKER_ENCOUNTER		; firefighter
+	db MUSIC_HIKER_ENCOUNTER		; teacherm
+	db MUSIC_LASS_ENCOUNTER			; painter
+	db MUSIC_HIKER_ENCOUNTER		; soldier
+	db MUSIC_HIKER_ENCOUNTER		; sportsman
 	assert_table_length NUM_TRAINER_CLASSES + 1
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused

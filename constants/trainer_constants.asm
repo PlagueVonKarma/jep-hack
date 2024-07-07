@@ -710,6 +710,36 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass CHANNELER ; 44
+	const SHANNA
+	
+	trainerclass CUE_BALL ; 45
+	const KIRBY ; That one Cleffa trainer.
+	
+	trainerclass ENGINEER ; 46
+	const DASHU ; From Mandarin 大叔, literally meaning "uncle". Affectionately refers to middle-aged men, and is the name for the class in Chinese.
+	
+	trainerclass ROCKER ; 47
+	const BOWIE ; David Bowie!
+	
+	trainerclass TAMER ; 48
+	const MOE ; Ace Attorney reference
+	
+	trainerclass FIREFIGHTER ; 49
+	const REMY ; I am in France and larping at the time of doing this
+	
+	trainerclass TEACHERM ; 50
+	const DORNYEI ; Zoltan Dornyei, famous ELT teacher
+	
+	trainerclass PAINTER ; 51
+	const RACHEL ; Could use Salvador Dali later, a surrealist painter.
+	
+	trainerclass SOLDIER ; 52
+	const PEPPINO ; come on. COME ON.
+	
+	trainerclass SPORTSMAN ; 53
+	const JACQUES ; also an ace attorney reference.
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
