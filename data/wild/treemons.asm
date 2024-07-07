@@ -161,13 +161,13 @@ TreeMonSet_Rock_Dark_Cave:
 	db -1
 
 TreeMonSet_Rock_Tower:
-	dbbw 90, 14, GEODUDE
-	dbbw 10, 16, SLUGMA
+	dbbw 70, 14, GEODUDE
+	dbbw 30, 16, SLUGMA
 	db -1
 
 TreeMonSet_Rock_Ice:
-	dbbw 90, 25, GEODUDE
-	dbbw 10, 25, SWINUB
+	dbbw 70, 25, GEODUDE
+	dbbw 30, 25, SWINUB
 	db -1
 
 TreeMonSet_Rock_Square:
@@ -177,6 +177,6 @@ TreeMonSet_Rock_Square:
 	db -1
 
 TreeMonSet_Rock_Well:
-	dbbw 90, 15, KRABBY
-	dbbw 10, 15, SHELLDER
+	dbbw 70, 15, KRABBY
+	dbbw 30, 15, SHELLDER
 	db -1
