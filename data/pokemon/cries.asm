@@ -98,15 +98,24 @@ PokemonCries::
 	mon_cry CRY_SLOWKING,    573,  320 ; BELLIGNAN
 	mon_cry CRY_VENONAT,       0,  256 ; TENTACOOL
 	mon_cry CRY_VENONAT,     238,  383 ; TENTACRUEL
+	mon_cry CRY_NIDORAN_M,     0,    0 ; TOEDSCOOL (incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; TOEDSCRUEL (incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BLOTTLE (incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; PENDRAKEN (incomplete)
 	mon_cry CRY_VULPIX,      240,  144 ; GEODUDE
 	mon_cry CRY_VULPIX,        0,  256 ; GRAVELER
 	mon_cry CRY_GOLEM,       224,  192 ; GOLEM
+	mon_cry CRY_NIDORAN_M,     0,    0 ; KOLTA (incomplete)
 	mon_cry CRY_WEEPINBELL,    0,  256 ; PONYTA
 	mon_cry CRY_WEEPINBELL,   32,  320 ; RAPIDASH
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BALUMBA (incomplete)
 	mon_cry CRY_SLOWPOKE,      0,  256 ; SLOWPOKE
 	mon_cry CRY_GROWLITHE,     0,  256 ; SLOWBRO
 	mon_cry CRY_METAPOD,     128,  224 ; MAGNEMITE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MAGNETITE (incomplete)
 	mon_cry CRY_METAPOD,      32,  320 ; MAGNETON
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MAGNEZONE (incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; GAVILLAIN (incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; CHEEP	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; JABETTA	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; RIBBITO	(incomplete)

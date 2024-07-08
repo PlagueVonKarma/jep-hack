@@ -92,15 +92,24 @@ AnimationPointers:
 	dw BellignanAnimation
 	dw TentacoolAnimation
 	dw TentacruelAnimation
+	dw ToedscoolAnimation
+	dw ToedscruelAnimation
+	dw BlottleAnimation
+	dw PendrakenAnimation
 	dw GeodudeAnimation
 	dw GravelerAnimation
 	dw GolemAnimation
+	dw KoltaAnimation
 	dw PonytaAnimation
 	dw RapidashAnimation
+	dw BalumbaAnimation
 	dw SlowpokeAnimation
 	dw SlowbroAnimation
 	dw MagnemiteAnimation
+	dw MagnetiteAnimation
 	dw MagnetonAnimation
+	dw MagnezoneAnimation
+	dw GavillainAnimation
 	dw CheepAnimation
 	dw JabettaAnimation
 	dw RibbitoAnimation

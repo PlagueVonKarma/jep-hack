@@ -93,15 +93,24 @@ EggMovePointers1:
 	dw NoEggMoves1 ; Bellignan
 	dw TentacoolEggMoves
 	dw NoEggMoves1
+	dw ToedscoolEggMoves
+	dw NoEggMoves1
+	dw BlottleEggMoves
+	dw NoEggMoves1
 	dw GeodudeEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw PonytaEggMoves
+	dw KoltaEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1
+	dw BalumbaEggMoves
 	dw SlowpokeEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw NoEggMoves1
+	dw NoEggMoves1
+	dw GavillainEggMoves
 	dw CheepEggMoves
 	dw NoEggMoves1 ; Jabetta
 	dw RibbitoEggMoves
@@ -402,6 +411,21 @@ TentacoolEggMoves:
 	dw HAZE
 	dw SAFEGUARD
 	dw -1 ; end
+	
+ToedscoolEggMoves:
+	dw LEECH_SEED
+	dw MIRROR_COAT
+	dw RAPID_SPIN
+	dw TOXIC
+	dw -1
+
+BlottleEggMoves:
+	dw AURORA_BEAM
+	dw AMNESIA
+	dw RAPID_SPIN
+	dw POISON_GAS
+	dw SMOG
+	dw -1
 
 GeodudeEggMoves:
 	dw MEGA_PUNCH
@@ -409,7 +433,7 @@ GeodudeEggMoves:
 	dw ROCK_SLASH
 	dw -1 ; end
 
-PonytaEggMoves:
+KoltaEggMoves:
 	dw FLAME_WHEEL
 	dw THRASH
 	dw DOUBLE_KICK
@@ -418,12 +442,26 @@ PonytaEggMoves:
 	dw QUICK_ATTACK
 	dw -1 ; end
 
+BalumbaEggMoves:
+	dw SCREECH
+	dw PSYBEAM
+	dw HYPNOSIS
+	dw MINIMIZE
+	dw SPLASH
+	dw -1
+
 SlowpokeEggMoves:
 	dw SAFEGUARD
 	dw BELLY_DRUM
 	dw FUTURE_SIGHT
 	dw STOMP
 	dw -1 ; end
+
+GavillainEggMoves:
+	dw GROWL
+	dw SWORDS_DANCE
+	dw CRUNCH
+	dw -1
 
 CheepEggMoves:
 	dw AGILITY

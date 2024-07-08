@@ -93,15 +93,24 @@ PokedexDataPointerTable:
 	dba BellignanPokedexEntry
 	dba TentacoolPokedexEntry
 	dba TentacruelPokedexEntry
+	dba ToedscoolPokedexEntry
+	dba ToedscruelPokedexEntry
+	dba BlottlePokedexEntry
+	dba PendrakenPokedexEntry
 	dba GeodudePokedexEntry
 	dba GravelerPokedexEntry
 	dba GolemPokedexEntry
+	dba KoltaPokedexEntry
 	dba PonytaPokedexEntry
 	dba RapidashPokedexEntry
+	dba BalumbaPokedexEntry
 	dba SlowpokePokedexEntry
 	dba SlowbroPokedexEntry
 	dba MagnemitePokedexEntry
+	dba MagnetitePokedexEntry
 	dba MagnetonPokedexEntry
+	dba MagnezonePokedexEntry
+	dba GavillainPokedexEntry
 	dba CheepPokedexEntry
 	dba JabettaPokedexEntry
 	dba RibbitoPokedexEntry

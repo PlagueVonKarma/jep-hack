@@ -295,16 +295,16 @@ JohtoGrassWildMons:
 	dbw 15, VULPIII
 	dbw 14, ZUBAT
 	dbw 16, KOFFING
-	dbw 15, HOUNDOUR
-	dbw 15, HOUNDOUR
+	dbw 15, KOLTA
+	dbw 15, KOLTA
 	; day
 	dbw 13, VULPIII
 	dbw 14, KOFFING
 	dbw 15, VULPIII
 	dbw 14, ZUBAT
 	dbw 16, KOFFING
-	dbw 15, HOUNDOUR
-	dbw 15, HOUNDOUR
+	dbw 15, KOLTA
+	dbw 15, KOLTA
 	; nite
 	dbw 13, VULPIII
 	dbw 14, KOFFING
@@ -352,7 +352,7 @@ JohtoGrassWildMons:
 	dbw 14, PIDGEY
 	dbw 16, CATERPIE
 	dbw 16, WEEDLE
-	dbw 16, WEEDLE
+	dbw 16, BALUMBA
 	; day
 	dbw 15, NIDORAN_F
 	dbw 15, NIDORAN_M
@@ -360,7 +360,7 @@ JohtoGrassWildMons:
 	dbw 14, PIDGEY
 	dbw 16, CATERPIE
 	dbw 16, WEEDLE
-	dbw 16, WEEDLE
+	dbw 16, BALUMBA
 	; nite
 	dbw 15, PSYDUCK
 	dbw 15, HOOTHOOT
@@ -1250,7 +1250,7 @@ JohtoGrassWildMons:
 	dbw 20, WOBBUFFET
 	dbw 25, WOBBUFFET
 	dbw 23, GOLBAT
-	dbw 23, GOLBAT
+	dbw 23, GAVILLAIN
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_29

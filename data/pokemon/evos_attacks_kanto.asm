@@ -93,15 +93,24 @@ EvosAttacksPointers1::
 	dw BellignanEvosAttacks
 	dw TentacoolEvosAttacks
 	dw TentacruelEvosAttacks
+	dw ToedscoolEvosAttacks
+	dw ToedscruelEvosAttacks
+	dw BlottleEvosAttacks
+	dw PendrakenEvosAttacks
 	dw GeodudeEvosAttacks
 	dw GravelerEvosAttacks
 	dw GolemEvosAttacks
+	dw KoltaEvosAttacks
 	dw PonytaEvosAttacks
 	dw RapidashEvosAttacks
+	dw BalumbaEvosAttacks
 	dw SlowpokeEvosAttacks
 	dw SlowbroEvosAttacks
 	dw MagnemiteEvosAttacks
+	dw MagnetiteEvosAttacks
 	dw MagnetonEvosAttacks
+	dw MagnezoneEvosAttacks
+	dw GavillainEvosAttacks
 	dw CheepEvosAttacks
 	dw JabettaEvosAttacks
 	dw RibbitoEvosAttacks
@@ -1421,6 +1430,66 @@ TentacruelEvosAttacks:
 	dbw 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
+ToedscoolEvosAttacks:
+	dbbw EVOLVE_LEVEL, 30, TOEDSCRUEL
+	db 0 ; no more evolutions
+	dbw 1, MUD_SLAP
+	dbw 6, SUPERSONIC
+	dbw 12, CONSTRICT
+	dbw 19, ABSORB
+	dbw 25, POISONPOWDER
+	dbw 25, STUN_SPORE
+	dbw 30, WRAP
+	dbw 36, SPORE
+	dbw 43, SCREECH
+	dbw 49, GIGA_DRAIN
+	db 0 ; no more level-up moves
+
+ToedscruelEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, MUD_SLAP
+	dbw 1, SUPERSONIC
+	dbw 1, CONSTRICT
+	dbw 19, ABSORB
+	dbw 25, POISONPOWDER
+	dbw 25, STUN_SPORE
+	dbw 30, WRAP
+	dbw 38, SPORE
+	dbw 47, SCREECH
+	dbw 55, GIGA_DRAIN
+	db 0 ; no more level-up moves
+
+BlottleEvosAttacks:
+	dbbw EVOLVE_LEVEL, 30, PENDRAKEN
+	db 0 ; no more evolutions
+	dbw 1, CONSTRICT
+	dbw 1, SMOKESCREEN
+	dbw 7, BUBBLE
+	dbw 11, WRAP
+	; dbw 15, FAIRY_WIND
+	dbw 20, HYPNOSIS
+	dbw 24, OCTAZOOKA
+	dbw 29, SUPERSONIC
+	;dbw 33, DAZZLE_GLEAM
+	dbw 38, HAZE
+	dbw 43, HYDRO_PUMP
+	db 0
+
+PendrakenEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, CONSTRICT
+	dbw 1, SMOKESCREEN
+	dbw 7, BUBBLE
+	dbw 11, WRAP
+	; dbw 15, FAIRY_WIND
+	dbw 20, HYPNOSIS
+	dbw 24, OCTAZOOKA
+	dbw 29, SUPERSONIC
+	;dbw 35, DAZZLE_GLEAM
+	dbw 42, HAZE
+	dbw 49, HYDRO_PUMP
+	db 0
+
 GeodudeEvosAttacks:
 	dbbw EVOLVE_LEVEL, 25, GRAVELER
 	db 0 ; no more evolutions
@@ -1470,6 +1539,20 @@ GolemEvosAttacks:
 	dbw 55, ROCK_HEAD
 	db 0 ; no more level-up moves
 
+KoltaEvosAttacks:
+	dbbw EVOLVE_LEVEL, 20, PONYTA
+	db 0
+	dbw 1, TACKLE
+	dbw 4, GROWL
+	dbw 8, TAIL_WHIP
+	dbw 13, EMBER
+	dbw 19, STOMP
+	dbw 24, FIRE_SPIN
+	dbw 30, TAKE_DOWN
+	dbw 37, AGILITY
+	dbw 45, FIRE_BLAST
+	db 0 ; no more level-up moves
+
 PonytaEvosAttacks:
 	dbbw EVOLVE_LEVEL, 40, RAPIDASH
 	db 0 ; no more evolutions
@@ -1500,6 +1583,19 @@ RapidashEvosAttacks:
 	dbw 47, AGILITY
 	dbw 61, FIRE_BLAST
 	db 0 ; no more level-up moves
+
+BalumbaEvosAttacks:
+	db 0
+	; dbw 1, FAIRY_WIND
+	dbw 1, GROWL
+	; dbw 6, DRAIN_KISS
+	; dbw 12, DISARM_VOICE
+	dbw 19, GUST
+	dbw 25, SWEET_KISS
+	dbw 31, CONFUSE_RAY
+	dbw 37, CHARM
+	; dbw 43, DAZZLE_GLEAM
+	db 0
 
 SlowpokeEvosAttacks:
 	dbbw EVOLVE_LEVEL, 37, SLOWBRO
@@ -1534,7 +1630,7 @@ SlowbroEvosAttacks:
 	db 0 ; no more level-up moves
 
 MagnemiteEvosAttacks:
-	dbbw EVOLVE_LEVEL, 30, MAGNETON
+	dbbw EVOLVE_LEVEL, 20, MAGNETITE
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 6, THUNDERSHOCK
@@ -1547,7 +1643,23 @@ MagnemiteEvosAttacks:
 	dbw 45, ZAP_CANNON
 	db 0 ; no more level-up moves
 
+MagnetiteEvosAttacks:
+	dbbw EVOLVE_LEVEL, 30, MAGNETON
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 6, THUNDERSHOCK
+	dbw 11, SUPERSONIC
+	dbw 16, SONICBOOM
+	dbw 22, THUNDER_WAVE
+	dbw 26, SPARK
+	dbw 30, LOCK_ON
+	dbw 38, SWIFT
+	dbw 46, SCREECH
+	dbw 54, ZAP_CANNON
+	db 0 ; no more level-up moves
+
 MagnetonEvosAttacks:
+	dbbw EVOLVE_ITEM, THUNDERSTONE, MAGNEZONE ; could add magnetic area but it's so fuckin bleh dude oh my god
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, THUNDERSHOCK
@@ -1562,7 +1674,39 @@ MagnetonEvosAttacks:
 	dbw 43, SCREECH
 	dbw 53, ZAP_CANNON
 	db 0 ; no more level-up moves
-	
+
+MagnezoneEvosAttacks:
+db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, THUNDERSHOCK
+	dbw 1, SUPERSONIC
+	dbw 1, SONICBOOM
+	dbw 6, THUNDERSHOCK
+	dbw 11, SUPERSONIC
+	dbw 16, SONICBOOM
+	dbw 22, THUNDER_WAVE
+	dbw 30, LOCK_ON
+	dbw 40, SWIFT
+	dbw 40, TRI_ATTACK
+	dbw 50, SCREECH
+	dbw 60, ZAP_CANNON
+	db 0 ; no more level-up moves
+
+GavillainEvosAttacks:
+	db 0
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 7, SUPERSONIC
+	dbw 12, BITE
+	dbw 16, SPARK
+	dbw 20, DRAGON_RAGE
+	dbw 24, SLASH
+	dbw 30, SCREECH
+	dbw 34, GLARE
+	dbw 39, DRAGONBREATH
+	dbw 46, CONFUSE_RAY
+	db 0
+
 CheepEvosAttacks:
 	dbbw EVOLVE_LEVEL, 30, JABETTA
 	db 0 ; no more evolutions

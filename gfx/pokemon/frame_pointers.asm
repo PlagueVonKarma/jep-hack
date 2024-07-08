@@ -92,15 +92,24 @@ FramesPointers:
 	dba BellignanFrames
 	dba TentacoolFrames
 	dba TentacruelFrames
+	dba ToedscoolFrames
+	dba ToedscruelFrames
+	dba BlottleFrames
+	dba PendrakenFrames
 	dba GeodudeFrames
 	dba GravelerFrames
 	dba GolemFrames
+	dba KoltaFrames
 	dba PonytaFrames
 	dba RapidashFrames
+	dba BalumbaFrames
 	dba SlowpokeFrames
 	dba SlowbroFrames
 	dba MagnemiteFrames
+	dba MagnetiteFrames
 	dba MagnetonFrames
+	dba MagnezoneFrames
+	dba GavillainFrames
 	dba CheepFrames
 	dba JabettaFrames
 	dba RibbitoFrames

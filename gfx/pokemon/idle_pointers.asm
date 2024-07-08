@@ -92,15 +92,24 @@ AnimationIdlePointers:
 	dw BellignanAnimationIdle
 	dw TentacoolAnimationIdle
 	dw TentacruelAnimationIdle
+	dw ToedscoolAnimationIdle
+	dw ToedscruelAnimationIdle
+	dw BlottleAnimationIdle
+	dw PendrakenAnimationIdle
 	dw GeodudeAnimationIdle
 	dw GravelerAnimationIdle
 	dw GolemAnimationIdle
+	dw KoltaAnimationIdle
 	dw PonytaAnimationIdle
 	dw RapidashAnimationIdle
+	dw BalumbaAnimationIdle
 	dw SlowpokeAnimationIdle
 	dw SlowbroAnimationIdle
 	dw MagnemiteAnimationIdle
+	dw MagnetiteAnimationIdle
 	dw MagnetonAnimationIdle
+	dw MagnezoneAnimationIdle
+	dw GavillainAnimationIdle
 	dw CheepAnimationIdle
 	dw JabettaAnimationIdle
 	dw RibbitoAnimationIdle

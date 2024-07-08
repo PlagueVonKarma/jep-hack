@@ -92,15 +92,24 @@ BitmasksPointers:
 	dw BellignanBitmasks
 	dw TentacoolBitmasks
 	dw TentacruelBitmasks
+	dw ToedscoolBitmasks
+	dw ToedscruelBitmasks
+	dw BlottleBitmasks
+	dw PendrakenBitmasks
 	dw GeodudeBitmasks
 	dw GravelerBitmasks
 	dw GolemBitmasks
+	dw KoltaBitmasks
 	dw PonytaBitmasks
 	dw RapidashBitmasks
+	dw BalumbaBitmasks
 	dw SlowpokeBitmasks
 	dw SlowbroBitmasks
 	dw MagnemiteBitmasks
+	dw MagnetiteBitmasks
 	dw MagnetonBitmasks
+	dw MagnezoneBitmasks
+	dw GavillainBitmasks
 	dw CheepBitmasks
 	dw JabettaBitmasks
 	dw RibbitoBitmasks

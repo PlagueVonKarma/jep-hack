@@ -15,6 +15,7 @@ SometimesFleeMons:
 	dw UNOWN
 	dw SNUBBULL
 	dw HERACROSS
+	dw BALUMBA
 	dw -1
 
 OftenFleeMons:
@@ -27,6 +28,7 @@ OftenFleeMons:
 	dw PHANPY
 	dw TEDDIURSA
 	dw KIWOOKED
+	dw TOEDSCOOL
 	dw -1
 
 AlwaysFleeMons:

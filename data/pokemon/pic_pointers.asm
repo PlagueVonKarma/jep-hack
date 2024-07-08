@@ -197,24 +197,42 @@ PokemonPicPointers::
 	dba TentacoolBackpic
 	dba TentacruelFrontpic
 	dba TentacruelBackpic
+	dba ToedscoolFrontpic
+	dba ToedscoolBackpic
+	dba ToedscruelFrontpic
+	dba ToedscruelBackpic
+	dba BlottleFrontpic
+	dba BlottleBackpic
+	dba PendrakenFrontpic
+	dba PendrakenBackpic
 	dba GeodudeFrontpic
 	dba GeodudeBackpic
 	dba GravelerFrontpic
 	dba GravelerBackpic
 	dba GolemFrontpic
 	dba GolemBackpic
+	dba KoltaFrontpic
+	dba KoltaBackpic
 	dba PonytaFrontpic
 	dba PonytaBackpic
 	dba RapidashFrontpic
 	dba RapidashBackpic
+	dba BalumbaFrontpic
+	dba BalumbaBackpic
 	dba SlowpokeFrontpic
 	dba SlowpokeBackpic
 	dba SlowbroFrontpic
 	dba SlowbroBackpic
 	dba MagnemiteFrontpic
 	dba MagnemiteBackpic
+	dba MagnetiteFrontpic
+	dba MagnetiteBackpic
 	dba MagnetonFrontpic
 	dba MagnetonBackpic
+	dba MagnezoneFrontpic
+	dba MagnezoneBackpic
+	dba GavillainFrontpic
+	dba GavillainBackpic
 	dba CheepFrontpic
 	dba CheepBackpic
 	dba JabettaFrontpic

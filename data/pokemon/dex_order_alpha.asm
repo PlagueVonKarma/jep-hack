@@ -19,6 +19,7 @@ AlphabeticalPokedexOrder:
 	dw AZUMARILL
 	dw AZURILL
 	dw BARREAU
+	dw BALUMBA
 	dw BAYLEEF
 	dw BEEDRILL
 	dw BELLEDAM
@@ -30,6 +31,7 @@ AlphabeticalPokedexOrder:
 	dw BLASTOISE
 	dw BLASTYKE
 	dw BLISSEY
+	dw BLOTTLE
 	dw BRUINOUS
 	dw BULBASAUR
 	dw BURGELA
@@ -102,6 +104,7 @@ AlphabeticalPokedexOrder:
 	dw FURRET
 	dw GASTLY
 	dw GAOTORA
+	dw GAVILLAIN
 	dw GENGAR
 	dw GENTLARVA
 	dw GEODUDE
@@ -160,6 +163,7 @@ AlphabeticalPokedexOrder:
 	dw KIWOOKED
 	dw KLEAVOR
 	dw KOFFING
+	dw KOLTA
 	dw KOTORA
 	dw KRABBY
 	dw KUWAGUARD
@@ -186,6 +190,8 @@ AlphabeticalPokedexOrder:
 	dw MAGMAR
 	dw MAGNEMITE
 	dw MAGNETON
+	dw MAGNETITE
+	dw MAGNEZONE
 	dw MANKEY
 	dw MANTINE
 	dw MANTYKE
@@ -228,6 +234,7 @@ AlphabeticalPokedexOrder:
 	dw PARAS
 	dw PARASECT
 	dw PARASPOR
+	dw PENDRAKEN
 	dw PERRSERKER
 	dw PERSIAN
 	dw PHANDARIN
@@ -322,6 +329,8 @@ AlphabeticalPokedexOrder:
 	dw TENTACOOL
 	dw TENTACRUEL
 	dw TERRADOS
+	dw TOEDSCOOL
+	dw TOEDSCRUEL
 	dw TOGEPI
 	dw TOGETIC
 	dw TOGEKISS

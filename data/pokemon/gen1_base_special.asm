@@ -94,15 +94,24 @@ KantoMonSpecials:
 	db 100 ; BELLIGNAN
 	db 100 ; TENTACOOL
 	db 120 ; TENTACRUEL
+	db 100 ; TOEDSCOOL
+	db 120 ; TOEDSCRUEL
+	db  65 ; BLOTTLE
+	db  95 ; PENDRAKEN
 	db  30 ; GEODUDE
 	db  45 ; GRAVELER
 	db  55 ; GOLEM
+	db  45 ; KOLTA
 	db  65 ; PONYTA
 	db  80 ; RAPIDASH
+	db 100 ; BALUMBA
 	db  40 ; SLOWPOKE
 	db  80 ; SLOWBRO
 	db  95 ; MAGNEMITE
+	db 105 ; MAGNETITE
 	db 120 ; MAGNETON
+	db 135 ; MAGNEZONE
+	db  90 ; GAVILLAIN
 	db  40 ; CHEEP
 	db  80 ; JABETTA
 	db  55 ; RIBBITO

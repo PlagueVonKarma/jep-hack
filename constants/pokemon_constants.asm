@@ -111,15 +111,24 @@
 	const BELLIGNAN
 	const TENTACOOL  ; 48
 	const TENTACRUEL ; 49
+	const TOEDSCOOL
+	const TOEDSCRUEL
+	const BLOTTLE
+	const PENDRAKEN
 	const GEODUDE    ; 4a
 	const GRAVELER   ; 4b
 	const GOLEM      ; 4c
+	const KOLTA
 	const PONYTA     ; 4d
 	const RAPIDASH   ; 4e
+	const BALUMBA
 	const SLOWPOKE   ; 4f
 	const SLOWBRO    ; 50
 	const MAGNEMITE  ; 51
+	const MAGNETITE
 	const MAGNETON   ; 52
+	const MAGNEZONE
+	const GAVILLAIN
 	const CHEEP
 	const JABETTA
 	const RIBBITO

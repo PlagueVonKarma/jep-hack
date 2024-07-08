@@ -363,4 +363,13 @@ Pokered_MonIndices:
 	db CHARMADA
 	db MAGIPREY
 	db TERRADOS
+	db TOEDSCOOL
+	db TOEDSCRUEL
+	db BLOTTLE
+	db PENDRAKEN
+	db KOLTA
+	db BALUMBA
+	db MAGNETITE
+	db MAGNEZONE
+	db GAVILLAIN
 	assert_table_length NUM_POKEMON - 1
