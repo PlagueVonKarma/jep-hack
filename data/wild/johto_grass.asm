@@ -468,7 +468,7 @@ JohtoGrassWildMons:
 	; morn
 	dbw 8, GEODUDE
 	dbw 7, BITTYBAT
-	dbw 8, ZUBAT
+	dbw 8, BITTYBAT
 	dbw 10, ONIX
 	dbw 7, WOOPER
 	dbw 8, WOOPER
