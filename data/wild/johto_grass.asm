@@ -1,5 +1,13 @@
 ; Johto Pokémon in grass
 
+; General philosophies:
+; - Johto encounter bias at every opportunity.
+; - However, Kanto Pokemon should still be present.
+; - If there is an equivalent, it should switch (eg. Sentret vs Rattata)
+; - Making some Kanto Pokemon exclusive to Kanto is acceptable given the region's changes.
+; - Johto can't always stand on its own, so it's ok to have Kanto plurality.
+; - In general: Increase Johto *frequency*. Don't make an ethnostate (see: BW and its consequences).
+
 JohtoGrassWildMons:
 
 	def_grass_wildmons SPROUT_TOWER_2F
@@ -570,8 +578,8 @@ JohtoGrassWildMons:
 ; With Viridian Forest existing, much of this wild data no longer made sense.
 ; Changed to feature Yanma, Ledyba, etc.
 ; Yanma gives easier Yanmega access, Ledyba and Spinarak are nice flavour.
-; Paraspor remains accessible for HM usage.
-; Shuckle, Pineco, and Heracross should be made more common Headbutt tree Pokemon.
+; Paras becomes Paraspor, we want babies to exist and the TM/HM usage is desirable.
+; Headbutt makes Heracross, Folage, and Pineco accessible.
 ; Gentlarva appears less than the other bugs, as usual, replacing Pidgey. Yanma is the new predator.
 	def_grass_wildmons ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -592,13 +600,13 @@ JohtoGrassWildMons:
 	dbw 11, YANMA
 	dbw 12, YANMA
 	; nite
-	dbw 10, SPINARAK
-	dbw 10, VENONAT
+	dbw 10, PARASPOR
+	dbw 10, PSYDUCK
 	dbw 11, SPINARAK
-	dbw 12, PSYDUCK
+	dbw 12, SPINARAK
 	dbw 10, HOOTHOOT
 	dbw 11, PARASPOR
-	dbw 12, PARASPOR
+	dbw 12, KOTORA ; a la Pikachu, but night-locked. Just a lot we want in this place.
 	end_grass_wildmons
 
 ; Mt. Mortar now has consistent Marill access like GS.
@@ -606,29 +614,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 24, RATTATA
-	dbw 23, KOTORA
-	dbw 24, MACHOP
-	dbw 23, KOTORA
-	dbw 24, GEODUDE
-	dbw 26, RATICATE
-	dbw 26, RATICATE ; GRENMAR
+	dbw 19, RATTATA
+	dbw 22, KOTORA
+	dbw 18, MACHOP
+	dbw 21, KOTORA
+	dbw 19, GEODUDE
+	dbw 20, RATICATE
+	dbw 20, RATICATE ; GRENMAR
 	; day
-	dbw 24, RATTATA
-	dbw 23, KOTORA
-	dbw 24, MACHOP
-	dbw 23, KOTORA 
-	dbw 24, GEODUDE
-	dbw 26, RATICATE
-	dbw 26, RATICATE ; GRENMAR
+	dbw 19, RATTATA
+	dbw 22, KOTORA
+	dbw 18, MACHOP
+	dbw 21, KOTORA 
+	dbw 19, GEODUDE
+	dbw 20, RATICATE
+	dbw 20, RATICATE ; GRENMAR
 	; nite
-	dbw 24, RATTATA
-	dbw 23, ZUBAT
-	dbw 24, MARILL
-	dbw 23, GOLBAT
-	dbw 24, GEODUDE
-	dbw 26, RATICATE
-	dbw 26, RATICATE ; GRENMAR
+	dbw 18, RATTATA
+	dbw 22, ZUBAT
+	dbw 21, MARILL
+	dbw 22, GOLBAT
+	dbw 19, GEODUDE
+	dbw 20, RATICATE
+	dbw 20, RATICATE ; GRENMAR
 	end_grass_wildmons
 
 ; Also, Larvitar is available in the morning and daytime, unless it's B2F, wherein it's all-day.
@@ -636,29 +644,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 23, GEODUDE
-	dbw 24, RATTATA
-	dbw 25, MACHOP
-	dbw 24, RATICATE ; GRENMAR?
-	dbw 25, MARILL
-	dbw 25, LARVITAR
-	dbw 25, LARVITAR
+	dbw 18, GEODUDE
+	dbw 19, RATTATA
+	dbw 20, MACHOP
+	dbw 20, RATICATE ; GRENMAR?
+	dbw 22, MARILL
+	dbw 22, LARVITAR
+	dbw 23, LARVITAR
 	; day
-	dbw 23, GEODUDE
-	dbw 24, RATTATA
-	dbw 25, MACHOP
-	dbw 24, RATICATE ; GRENMAR?
-	dbw 25, MARILL
-	dbw 25, LARVITAR
-	dbw 25, LARVITAR
+	dbw 18, GEODUDE
+	dbw 19, RATTATA
+	dbw 20, MACHOP
+	dbw 20, RATICATE ; GRENMAR?
+	dbw 22, MARILL
+	dbw 22, LARVITAR
+	dbw 23, LARVITAR
 	; nite
-	dbw 23, GEODUDE
-	dbw 24, RATTATA
-	dbw 25, RATICATE ; GRENMAR?
-	dbw 24, ZUBAT
-	dbw 25, MARILL
-	dbw 25, GOLBAT
-	dbw 25, GOLBAT
+	dbw 18, GEODUDE
+	dbw 19, RATTATA
+	dbw 20, RATICATE ; GRENMAR?
+	dbw 22, ZUBAT
+	dbw 21, MARILL
+	dbw 22, GOLBAT
+	dbw 23, GOLBAT
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_2F_INSIDE
@@ -692,29 +700,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 25, ZUBAT
-	dbw 27, ZUBAT
-	dbw 27, GOLBAT
-	dbw 26, MARILL
-	dbw 26, GEODUDE ; GRENMAR?
-	dbw 28, LARVITAR
-	dbw 28, LARVITAR
+	dbw 19, ZUBAT
+	dbw 20, ZUBAT
+	dbw 23, GOLBAT
+	dbw 21, MARILL
+	dbw 20, GEODUDE ; GRENMAR?
+	dbw 24, LARVITAR
+	dbw 24, LARVITAR
 	; day
-	dbw 25, ZUBAT
-	dbw 27, ZUBAT
-	dbw 27, GOLBAT
-	dbw 26, MARILL
-	dbw 26, GEODUDE ; GRENMAR?
-	dbw 28, LARVITAR
-	dbw 28, LARVITAR
+	dbw 19, ZUBAT
+	dbw 20, ZUBAT
+	dbw 23, GOLBAT
+	dbw 21, MARILL
+	dbw 20, GEODUDE ; GRENMAR?
+	dbw 24, LARVITAR
+	dbw 24, LARVITAR
 	; nite
-	dbw 25, ZUBAT
-	dbw 27, ZUBAT
-	dbw 27, GOLBAT
-	dbw 26, MARILL
-	dbw 26, GEODUDE ; GRENMAR?
-	dbw 28, LARVITAR
-	dbw 28, LARVITAR
+	dbw 19, ZUBAT
+	dbw 20, ZUBAT
+	dbw 23, GOLBAT
+	dbw 21, MARILL
+	dbw 20, GEODUDE ; GRENMAR?
+	dbw 24, LARVITAR
+	dbw 24, LARVITAR
 	end_grass_wildmons
 
 ; Ice Path is very close to working. It just doesn't have good frequency in Johto encounters.
@@ -1431,28 +1439,29 @@ JohtoGrassWildMons:
 	dbw 12, SNUBBULL
 	dbw 14, PUPPERON
 	dbw 13, SNUBBULL
-	dbw 10, ABRA
+	dbw 12, ABRA
 	dbw 12, JIGGLYPUFF
-	dbw 10, ELEKID ; ELEBEBI
-	dbw 12, YANMA
+	dbw 12, ELEKID ; ELEBEBI
+	dbw 15, YANMA
 	; day
 	dbw 12, SNUBBULL
 	dbw 14, PUPPERON
 	dbw 13, SNUBBULL
-	dbw 10, ABRA
+	dbw 12, ABRA
 	dbw 12, JIGGLYPUFF
-	dbw 10, ELEKID ; ELEBEBI
-	dbw 12, YANMA
+	dbw 12, ELEKID ; ELEBEBI
+	dbw 15, YANMA
 	; nite
 	dbw 12, DROWZEE
 	dbw 14, VULPIII
 	dbw 13, DROWZEE
-	dbw 10, ABRA ; MIME_JR
+	dbw 12, ABRA ; MIME_JR
+	dbw 13, HOOTHOOT
 	dbw 12, HOOTHOOT
-	dbw 10, HOOTHOOT
-	dbw 12, YANMA
+	dbw 15, ARIADOS ; Crystal has these laying around Ecruteak and it seemed cool alongside Yanma
 	end_grass_wildmons
 
+; uhh what's happening here?
 	def_grass_wildmons ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
@@ -1688,7 +1697,7 @@ JohtoGrassWildMons:
 ; Ports the 5% Jigglypuff all-day encounter from GS.
 ; Makes Hoothoot replace a Sentret at night to have continuity with Spearow.
 ; Overall, increased Johto frequency that matches early advertising for the game.
-; Coinpur replaces Rattatas at night.
+; Coinpur replaces Sentret at night.
 	def_grass_wildmons ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
