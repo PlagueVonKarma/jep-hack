@@ -372,4 +372,6 @@ Pokered_MonIndices:
 	db MAGNETITE
 	db MAGNEZONE
 	db GAVILLAIN
+	db BUU
+	db GRENMAR
 	assert_table_length NUM_POKEMON - 1

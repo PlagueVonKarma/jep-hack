@@ -82,7 +82,7 @@ PryceGroup:
 	dw DELIBIRD
 	dw PRESENT, ICY_WIND, RAPID_SPIN, RAIN_DANCE ; Rain Dance can make Fire moves worse ig? Spikes is cool but it's an event move - do we want that?
 	db 33
-	dw SEEL ; BUU
+	dw BUU
 	dw HEADBUTT, ICY_WIND, AURORA_BEAM, REST
 	db 35
 	dw DEWGONG
@@ -3000,6 +3000,8 @@ SwimmerFGroup:
 	db "DENISE@", TRAINERTYPE_NORMAL
 	db 22
 	dw SEEL
+	db 23
+	dw GRENMAR
 	db -1 ; end
 
 	next_list_item ; SWIMMERF (6)
@@ -3087,7 +3089,7 @@ SwimmerFGroup:
 	db 28
 	dw SEEL
 	db 28
-	dw SEEL
+	dw GRENMAR
 	db 28
 	dw DEWGONG
 	db -1 ; end
@@ -4912,7 +4914,7 @@ BoarderGroup: ; All in Pryce's Gym. Could expand to Ice Path and Seafoam.
 	db 30
 	dw CLOYSTER
 	db 26
-	dw SHELLDER ; BUU
+	dw BUU
 	db -1 ; end
 
 	end_list_items

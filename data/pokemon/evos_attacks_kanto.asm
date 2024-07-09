@@ -168,6 +168,7 @@ EvosAttacksPointers1::
 	dw ScytherEvosAttacks
 	dw KleavorEvosAttacks
 	dw JynxEvosAttacks
+	dw BuuEvosAttacks
 	dw ElectabuzzEvosAttacks
 	dw MagmarEvosAttacks
 	dw PinsirEvosAttacks
@@ -2506,6 +2507,21 @@ JynxEvosAttacks:
 	dbw 51, PERISH_SONG
 	dbw 57, BLIZZARD
 	db 0 ; no more level-up moves
+
+BuuEvosAttacks:
+	db 0
+	dbw 1, AURORA_BEAM
+	dbw 6, LEER
+	dbw 11, ICE_PUNCH
+	dbw 16, MIST
+	dbw 21, DIZZY_PUNCH
+	dbw 27, FAINT_ATTACK
+	dbw 32, DISABLE
+	dbw 39, PURSUIT
+	dbw 45, HAZE
+	dbw 51, ICE_BEAM
+	dbw 58, BLIZZARD
+	db 0
 
 ElectabuzzEvosAttacks:
 	db 0 ; no more evolutions

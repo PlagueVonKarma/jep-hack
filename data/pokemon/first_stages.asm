@@ -168,6 +168,7 @@ FirstEvoStages::
 	dw SCYTHER
 	dw SCYTHER
 	dw SMOOCHUM
+	dw BUU
 	dw ELEKID
 	dw MAGBY
 	dw PINSIR
@@ -321,6 +322,7 @@ FirstEvoStages::
 	dw PORYGON
 	dw STANTLER
 	dw SMEARGLE
+	dw GRENMAR
 	dw TYROGUE
 	dw TYROGUE
 	dw SMOOCHUM

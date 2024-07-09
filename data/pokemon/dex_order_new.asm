@@ -203,10 +203,12 @@ NewPokedexOrder:
 	dw MAGMAR
 	dw SMOOCHUM
 	dw JYNX
+	dw BUU
 	dw ELEKID
 	dw ELECTABUZZ
 	dw MR__MIME
 	dw SMEARGLE
+	dw GRENMAR
 	dw FARFETCH_D
 	dw LUXWAN
 	dw NATU

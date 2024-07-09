@@ -167,6 +167,7 @@ AnimationPointers:
 	dw ScytherAnimation
 	dw KleavorAnimation
 	dw JynxAnimation
+	dw BuuAnimation
 	dw ElectabuzzAnimation
 	dw MagmarAnimation
 	dw PinsirAnimation
@@ -320,6 +321,7 @@ AnimationPointers:
 	dw Porygon2Animation
 	dw StantlerAnimation
 	dw SmeargleAnimation
+	dw GrenmarAnimation
 	dw TyrogueAnimation
 	dw HitmontopAnimation
 	dw SmoochumAnimation

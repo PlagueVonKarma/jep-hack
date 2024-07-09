@@ -168,6 +168,7 @@ EggMovePointers1:
 	dw ScytherEggMoves
 	dw NoEggMoves1 ; Kleavor
 	dw NoEggMoves1
+	dw BuuEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw PinsirEggMoves
@@ -644,6 +645,14 @@ ScytherEggMoves:
 	dw REVERSAL
 	dw LIGHT_SCREEN
 	dw -1 ; end
+
+BuuEggMoves:
+	dw BARRIER
+	dw CROSS_CHOP
+	dw KARATE_CHOP
+	dw SCREECH
+	dw ROLLING_KICK
+	dw -1
 
 PinsirEggMoves:
 	dw FURY_ATTACK

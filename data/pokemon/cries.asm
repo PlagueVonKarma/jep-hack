@@ -173,6 +173,7 @@ PokemonCries::
 	mon_cry CRY_CATERPIE,      0,  256 ; SCYTHER
 	mon_cry CRY_CATERPIE,   -512,  383 ; KLEAVOR
 	mon_cry CRY_DROWZEE,     255,  383 ; JYNX
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BUU
 	mon_cry CRY_VOLTORB,     143,  383 ; ELECTABUZZ
 	mon_cry CRY_CHARMANDER,  255,  176 ; MAGMAR
 	mon_cry CRY_PIDGEOTTO,     0,  256 ; PINSIR
@@ -326,6 +327,7 @@ PokemonCries::
 	mon_cry CRY_GIRAFARIG,   115,  576 ; PORYGON2
 	mon_cry CRY_AIPOM,      -352,  384 ; STANTLER
 	mon_cry CRY_PICHU,      -538,  496 ; SMEARGLE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; GRENMAR
 	mon_cry CRY_AIPOM,        44,  264 ; TYROGUE
 	mon_cry CRY_SLUGMA,        0,  256 ; HITMONTOP
 	mon_cry CRY_MARILL,      104,  256 ; SMOOCHUM

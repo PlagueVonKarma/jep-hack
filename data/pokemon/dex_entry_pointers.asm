@@ -168,6 +168,7 @@ PokedexDataPointerTable:
 	dba ScytherPokedexEntry
 	dba KleavorPokedexEntry
 	dba JynxPokedexEntry
+	dba BuuPokedexEntry
 	dba ElectabuzzPokedexEntry
 	dba MagmarPokedexEntry
 	dba PinsirPokedexEntry
@@ -321,6 +322,7 @@ PokedexDataPointerTable:
 	dba Porygon2PokedexEntry
 	dba StantlerPokedexEntry
 	dba SmearglePokedexEntry
+	dba GrenmarPokedexEntry
 	dba TyroguePokedexEntry
 	dba HitmontopPokedexEntry
 	dba SmoochumPokedexEntry

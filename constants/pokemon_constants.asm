@@ -186,6 +186,7 @@
 	const SCYTHER    ; 7b
 	const KLEAVOR
 	const JYNX       ; 7c
+	const BUU
 	const ELECTABUZZ ; 7d
 	const MAGMAR     ; 7e
 	const PINSIR     ; 7f
@@ -340,6 +341,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const PORYGON2   ; e9
 	const STANTLER   ; ea
 	const SMEARGLE   ; eb
+	const GRENMAR
 	const TYROGUE    ; ec
 	const HITMONTOP  ; ed
 	const SMOOCHUM   ; ee

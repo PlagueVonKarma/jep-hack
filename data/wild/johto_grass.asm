@@ -499,24 +499,24 @@ JohtoGrassWildMons:
 	dbw 24, RIBBITO
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX ; GRENMAR
-	dbw 27, ONIX ; GRENMAR
+	dbw 26, GRENMAR
+	dbw 27, GRENMAR
 	; day
 	dbw 26, GRAVELER
 	dbw 25, GOLBAT
 	dbw 24, RIBBITO
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX ; GRENMAR
-	dbw 27, ONIX ; GRENMAR
+	dbw 26, GRENMAR
+	dbw 27, GRENMAR
 	; nite
 	dbw 26, GRAVELER
 	dbw 25, GOLBAT
 	dbw 24, QUAGSIRE
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX ; GRENMAR
-	dbw 27, ONIX ; GRENMAR
+	dbw 26, GRENMAR
+	dbw 27, GRENMAR
 	end_grass_wildmons
 
 	def_grass_wildmons SLOWPOKE_WELL_B1F
@@ -620,7 +620,7 @@ JohtoGrassWildMons:
 	dbw 21, KOTORA
 	dbw 19, GEODUDE
 	dbw 20, RATICATE
-	dbw 20, RATICATE ; GRENMAR
+	dbw 20, GRENMAR
 	; day
 	dbw 19, RATTATA
 	dbw 22, KOTORA
@@ -628,7 +628,7 @@ JohtoGrassWildMons:
 	dbw 21, KOTORA 
 	dbw 19, GEODUDE
 	dbw 20, RATICATE
-	dbw 20, RATICATE ; GRENMAR
+	dbw 20, GRENMAR
 	; nite
 	dbw 18, RATTATA
 	dbw 22, ZUBAT
@@ -636,7 +636,7 @@ JohtoGrassWildMons:
 	dbw 22, GOLBAT
 	dbw 19, GEODUDE
 	dbw 20, RATICATE
-	dbw 20, RATICATE ; GRENMAR
+	dbw 20, GRENMAR
 	end_grass_wildmons
 
 ; Also, Larvitar is available in the morning and daytime, unless it's B2F, wherein it's all-day.
@@ -647,7 +647,7 @@ JohtoGrassWildMons:
 	dbw 18, GEODUDE
 	dbw 19, RATTATA
 	dbw 20, MACHOP
-	dbw 20, RATICATE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 22, MARILL
 	dbw 22, LARVITAR
 	dbw 23, LARVITAR
@@ -655,14 +655,14 @@ JohtoGrassWildMons:
 	dbw 18, GEODUDE
 	dbw 19, RATTATA
 	dbw 20, MACHOP
-	dbw 20, RATICATE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 22, MARILL
 	dbw 22, LARVITAR
 	dbw 23, LARVITAR
 	; nite
 	dbw 18, GEODUDE
 	dbw 19, RATTATA
-	dbw 20, RATICATE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 22, ZUBAT
 	dbw 21, MARILL
 	dbw 22, GOLBAT
@@ -675,7 +675,7 @@ JohtoGrassWildMons:
 	dbw 41, GRAVELER
 	dbw 42, MACHOKE
 	dbw 41, GEODUDE
-	dbw 40, RATICATE ; GRENMAR?
+	dbw 40, GRENMAR
 	dbw 48, MARILL
 	dbw 40, PUPITAR
 	dbw 40, PUPITAR
@@ -683,14 +683,14 @@ JohtoGrassWildMons:
 	dbw 41, GRAVELER
 	dbw 42, MACHOKE
 	dbw 41, GEODUDE
-	dbw 40, RATICATE ; GRENMAR?
+	dbw 40, GRENMAR
 	dbw 48, MARILL
 	dbw 40, PUPITAR
 	dbw 40, PUPITAR
 	; nite
 	dbw 41, GRAVELER
 	dbw 41, GEODUDE
-	dbw 40, RATICATE ; GRENMAR?
+	dbw 40, GRENMAR
 	dbw 40, GOLBAT
 	dbw 48, AZUMARILL
 	dbw 42, GOLBAT
@@ -704,7 +704,7 @@ JohtoGrassWildMons:
 	dbw 20, ZUBAT
 	dbw 23, GOLBAT
 	dbw 21, MARILL
-	dbw 20, GEODUDE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 24, LARVITAR
 	dbw 24, LARVITAR
 	; day
@@ -712,7 +712,7 @@ JohtoGrassWildMons:
 	dbw 20, ZUBAT
 	dbw 23, GOLBAT
 	dbw 21, MARILL
-	dbw 20, GEODUDE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 24, LARVITAR
 	dbw 24, LARVITAR
 	; nite
@@ -720,7 +720,7 @@ JohtoGrassWildMons:
 	dbw 20, ZUBAT
 	dbw 23, GOLBAT
 	dbw 21, MARILL
-	dbw 20, GEODUDE ; GRENMAR?
+	dbw 20, GRENMAR
 	dbw 24, LARVITAR
 	dbw 24, LARVITAR
 	end_grass_wildmons

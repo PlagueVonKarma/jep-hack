@@ -169,6 +169,7 @@ KantoMonSpecials:
 	db  55 ; SCYTHER
 	db  45 ; KLEAVOR
 	db  95 ; JYNX
+	db  85 ; BUU
 	db  85 ; ELECTABUZZ
 	db  85 ; MAGMAR
 	db  55 ; PINSIR

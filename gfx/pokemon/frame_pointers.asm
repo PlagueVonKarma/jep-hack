@@ -167,6 +167,7 @@ FramesPointers:
 	dba ScytherFrames
 	dba KleavorFrames
 	dba JynxFrames
+	dba BuuFrames
 	dba ElectabuzzFrames
 	dba MagmarFrames
 	dba PinsirFrames
@@ -320,6 +321,7 @@ FramesPointers:
 	dba Porygon2Frames
 	dba StantlerFrames
 	dba SmeargleFrames
+	dba GrenmarFrames
 	dba TyrogueFrames
 	dba HitmontopFrames
 	dba SmoochumFrames

@@ -124,6 +124,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw StantlerEggMoves
 	dw NoEggMoves2
+	dw GrenmarEggMoves
 	dw TyrogueEggMoves
 	dw NoEggMoves2
 	dw SmoochumEggMoves
@@ -568,6 +569,15 @@ StantlerEggMoves:
 	dw LIGHT_SCREEN
 	dw BITE
 	dw -1 ; end
+
+GrenmarEggMoves:
+	dw DISABLE
+	dw ENCORE
+	dw PERISH_SONG
+	dw RAPID_SPIN
+	dw SING
+	dw SLAM
+	dw -1
 
 TyrogueEggMoves:
 	dw RAPID_SPIN

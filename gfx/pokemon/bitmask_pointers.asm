@@ -167,6 +167,7 @@ BitmasksPointers:
 	dw ScytherBitmasks
 	dw KleavorBitmasks
 	dw JynxBitmasks
+	dw BuuBitmasks
 	dw ElectabuzzBitmasks
 	dw MagmarBitmasks
 	dw PinsirBitmasks
@@ -320,6 +321,7 @@ BitmasksPointers:
 	dw Porygon2Bitmasks
 	dw StantlerBitmasks
 	dw SmeargleBitmasks
+	dw GrenmarBitmasks
 	dw TyrogueBitmasks
 	dw HitmontopBitmasks
 	dw SmoochumBitmasks

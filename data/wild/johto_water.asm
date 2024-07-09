@@ -53,23 +53,23 @@ JohtoWaterWildMons:
 
 	def_water_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 4 percent ; encounter rate
-	dbw 15, GOLDEEN
-	dbw 20, MARILL
-	dbw 20, SEAKING
+	dbw 23, SEAKING
+	dbw 25, MARILL
+	dbw 25, GRENMAR
 	end_water_wildmons
 
 	def_water_wildmons MOUNT_MORTAR_2F_INSIDE
 	db 2 percent ; encounter rate
-	dbw 20, GOLDEEN
+	dbw 23, SEAKING
 	dbw 25, MARILL
-	dbw 25, SEAKING
+	dbw 25, GRENMAR
 	end_water_wildmons
 
 	def_water_wildmons MOUNT_MORTAR_B1F
 	db 2 percent ; encounter rate
-	dbw 15, GOLDEEN
-	dbw 20, MARILL
-	dbw 20, SEAKING
+	dbw 23, SEAKING
+	dbw 25, MARILL
+	dbw 25, GRENMAR
 	end_water_wildmons
 
 	def_water_wildmons WHIRL_ISLAND_SW

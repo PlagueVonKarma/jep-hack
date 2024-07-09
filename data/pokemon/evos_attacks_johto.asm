@@ -123,6 +123,7 @@ EvosAttacksPointers2::
 	dw Porygon2EvosAttacks
 	dw StantlerEvosAttacks
 	dw SmeargleEvosAttacks
+	dw GrenmarEvosAttacks
 	dw TyrogueEvosAttacks
 	dw HitmontopEvosAttacks
 	dw SmoochumEvosAttacks
@@ -1771,6 +1772,19 @@ SmeargleEvosAttacks:
 	dbw 81, SKETCH
 	dbw 91, SKETCH
 	db 0 ; no more level-up moves
+
+GrenmarEvosAttacks:
+	db 0
+	dbw 1, TACKLE
+	dbw 1, DEFENSE_CURL
+	dbw 9, TAIL_WHIP
+	dbw 17, WATER_GUN
+	dbw 25, BARRAGE
+	dbw 33, FLAME_WHEEL
+	dbw 41, SMOG
+	dbw 49, TAKE_DOWN
+	dbw 57, HYDRO_PUMP
+	db 0
 
 TyrogueEvosAttacks:
 	dbbbw EVOLVE_STAT, 20, ATK_LT_DEF, HITMONCHAN

@@ -36,6 +36,7 @@ AlphabeticalPokedexOrder:
 	dw BULBASAUR
 	dw BURGELA
 	dw BUTTERFREE
+	dw BUU
 	dw CACAWPHONY
 	dw CALFLAC
 	dw CARAPTHOR
@@ -123,6 +124,7 @@ AlphabeticalPokedexOrder:
 	dw GRANBULL
 	dw GRAVELER
 	dw GREAT_TUSK
+	dw GRENMAR
 	dw GRIMER
 	dw GROWLITHE
 	dw GYARADOS

@@ -167,6 +167,7 @@ AnimationIdlePointers:
 	dw ScytherAnimationIdle
 	dw KleavorAnimationIdle
 	dw JynxAnimationIdle
+	dw BuuAnimationIdle
 	dw ElectabuzzAnimationIdle
 	dw MagmarAnimationIdle
 	dw PinsirAnimationIdle
@@ -320,6 +321,7 @@ AnimationIdlePointers:
 	dw Porygon2AnimationIdle
 	dw StantlerAnimationIdle
 	dw SmeargleAnimationIdle
+	dw GrenmarAnimationIdle
 	dw TyrogueAnimationIdle
 	dw HitmontopAnimationIdle
 	dw SmoochumAnimationIdle

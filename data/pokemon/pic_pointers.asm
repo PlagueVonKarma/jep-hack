@@ -347,6 +347,8 @@ PokemonPicPointers::
 	dba KleavorBackpic
 	dba JynxFrontpic
 	dba JynxBackpic
+	dba BuuFrontpic
+	dba BuuBackpic
 	dba ElectabuzzFrontpic
 	dba ElectabuzzBackpic
 	dba MagmarFrontpic
@@ -656,6 +658,8 @@ PokemonPicPointers::
 	dba StantlerBackpic
 	dba SmeargleFrontpic
 	dba SmeargleBackpic
+	dba GrenmarFrontpic
+	dba GrenmarBackpic
 	dba TyrogueFrontpic
 	dba TyrogueBackpic
 	dba HitmontopFrontpic
