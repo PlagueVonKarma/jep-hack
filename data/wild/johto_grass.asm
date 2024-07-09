@@ -499,24 +499,24 @@ JohtoGrassWildMons:
 	dbw 24, RIBBITO
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX
-	dbw 27, ONIX
+	dbw 26, ONIX ; GRENMAR
+	dbw 27, ONIX ; GRENMAR
 	; day
 	dbw 26, GRAVELER
 	dbw 25, GOLBAT
 	dbw 24, RIBBITO
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX
-	dbw 27, ONIX
+	dbw 26, ONIX ; GRENMAR
+	dbw 27, ONIX ; GRENMAR
 	; nite
 	dbw 26, GRAVELER
 	dbw 25, GOLBAT
 	dbw 24, QUAGSIRE
 	dbw 26, AZUMARILL
 	dbw 25, GRAVELER
-	dbw 26, ONIX
-	dbw 27, ONIX
+	dbw 26, ONIX ; GRENMAR
+	dbw 27, ONIX ; GRENMAR
 	end_grass_wildmons
 
 	def_grass_wildmons SLOWPOKE_WELL_B1F
