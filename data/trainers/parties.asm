@@ -13,8 +13,8 @@ FalknerGroup:
 	next_list_item ; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
 	db 7
-	dw PIDGEY
-	dw TACKLE, MUD_SLAP, NO_MOVE, NO_MOVE
+	dw HOOTHOOT
+	dw TACKLE, MUD_SLAP, GROWL, FORESIGHT
 	db 9
 	dw PIDGEOTTO
 	dw TACKLE, MUD_SLAP, GUST, NO_MOVE
@@ -25,6 +25,9 @@ FalknerGroup:
 WhitneyGroup:
 	next_list_item ; WHITNEY (1)
 	db "WHITNEY@", TRAINERTYPE_MOVES
+	db 16
+	dw IGGLYBUFF ; This adds Johto to Whitney's team without really increasing the difficulty. Her team is basically perfect already.
+	dw POUND, SING, CHARM, SWEET_KISS
 	db 18
 	dw CLEFAIRY
 	dw DOUBLESLAP, MIMIC, ENCORE, METRONOME
@@ -39,15 +42,17 @@ BugsyGroup:
 	next_list_item ; BUGSY (1)
 	db "BUGSY@", TRAINERTYPE_MOVES
 	db 14
-	dw METAPOD
-	dw TACKLE, STRING_SHOT, HARDEN, NO_MOVE
-	db 14
-	dw KAKUNA
+	dw KAKUNA ; Keeps the organic "Bugsy is researching how cocoon Pokemon keep their moves" thing
 	dw POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
+	db 14
+	dw YANMA
+	dw LEECH_LIFE, FORESIGHT, QUICK_ATTACK, DOUBLE_TEAM
 	db 16
 	dw SCYTHER
 	dw QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
 	db -1 ; end
+	; Potential revision: Underlevelled Ariados? Test further.
+	; Also - This makes the Chikorita playthrough harder. Test?
 
 	end_list_items
 
@@ -55,13 +60,13 @@ MortyGroup:
 	next_list_item ; MORTY (1)
 	db "MORTY@", TRAINERTYPE_MOVES
 	db 21
-	dw GASTLY
-	dw LICK, SPITE, MEAN_LOOK, CURSE
+	dw PHANDARIN ; Not Stromen - Morty is looking for Ho-Oh, keep in mind!
+	dw LEECH_LIFE, DISABLE, SPITE, RETURN ; Not Curse, goes against lore.
 	db 21
-	dw HAUNTER
-	dw HYPNOSIS, MIMIC, CURSE, NIGHT_SHADE
+	dw BIPULLA
+	dw TACKLE, CONFUSION, LICK, AGILITY
 	db 25
-	dw GENGAR
+	dw MISMAGIUS
 	dw HYPNOSIS, SHADOW_BALL, MEAN_LOOK, DREAM_EATER
 	db 23
 	dw HAUNTER
@@ -73,31 +78,38 @@ MortyGroup:
 PryceGroup:
 	next_list_item ; PRYCE (1)
 	db "PRYCE@", TRAINERTYPE_MOVES
-	db 27
-	dw SEEL
+	db 33
+	dw DELIBIRD
+	dw PRESENT, ICY_WIND, RAPID_SPIN, RAIN_DANCE ; Rain Dance can make Fire moves worse ig? Spikes is cool but it's an event move - do we want that?
+	db 33
+	dw SEEL ; BUU
 	dw HEADBUTT, ICY_WIND, AURORA_BEAM, REST
-	db 29
+	db 35
 	dw DEWGONG
 	dw HEADBUTT, ICY_WIND, AURORA_BEAM, REST
-	db 31
-	dw PILOSWINE
+	; WEARLYCAN
+	db 41
+	dw PILOSWINE ; MAMOSWINE
 	dw ICY_WIND, FURY_ATTACK, MIST, BLIZZARD
 	db -1 ; end
 
 	end_list_items
 
-JasmineGroup:
+JasmineGroup: ; Jasmine is going to use Egg Moves!
 	next_list_item ; JASMINE (1)
 	db "JASMINE@", TRAINERTYPE_MOVES
 	db 30
-	dw MAGNEMITE
+	dw MAGNETON
 	dw THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
 	db 30
-	dw MAGNEMITE
-	dw THUNDERBOLT, SUPERSONIC, SONICBOOM, THUNDER_WAVE
-	db 35
+	dw FORRETRESS
+	dw TAKE_DOWN, SELFDESTRUCT, PIN_MISSILE, PROTECT ; EM Pin Missile is very very apt
+	db 32
+	dw SKARMORY
+	dw DRILL_PECK, SAND_ATTACK, STEEL_WING, LEER ; EM Drill Peck for a power boost, Skarmory isn't normally threatening.
+	db 35 ; Steel Wing TM too as it's obtainable around this point.
 	dw STEELIX
-	dw SCREECH, SUNNY_DAY, ROCK_THROW, IRON_TAIL
+	dw SCREECH, SANDSTORM, ROCK_HEAD, IRON_TAIL ; Changed Sunny Day because it just kind of doesn't work...it makes Typhlosion kill it, in exchange for hindering a Feraligatr speedrun? Sandstorm seems more interesting...
 	db -1 ; end
 
 	end_list_items
@@ -105,9 +117,15 @@ JasmineGroup:
 ChuckGroup:
 	next_list_item ; CHUCK (1)
 	db "CHUCK@", TRAINERTYPE_MOVES
+	db 25
+	dw MACHOKE
+	dw KARATE_CHOP, LOW_KICK, FOCUS_ENERGY, HEADBUTT
+	db 25
+	dw HITMONTOP
+	dw ROLLING_KICK, RAPID_SPIN, PURSUIT, FOCUS_ENERGY
 	db 27
-	dw PRIMEAPE
-	dw LEER, RAGE, KARATE_CHOP, FURY_SWIPES
+	dw HERACROSS ; Look, stag beetles can fling all kinds of things. Just like Chuck throws a boulder!
+	dw HORN_ATTACK, ROCK_SMASH, ENDURE, LEER ; Also it gets like no moves
 	db 30
 	dw POLIWRATH
 	dw HYPNOSIS, MIND_READER, SURF, DYNAMICPUNCH
@@ -118,16 +136,22 @@ ChuckGroup:
 ClairGroup:
 	next_list_item ; CLAIR (1)
 	db "CLAIR@", TRAINERTYPE_MOVES
-	db 37
-	dw DRAGONAIR
-	dw THUNDER_WAVE, SURF, SLAM, DRAGONBREATH
-	db 37
-	dw DRAGONAIR
-	dw THUNDER_WAVE, THUNDERBOLT, SLAM, DRAGONBREATH
-	db 37
+	db 41
+	dw COATL
+	dw TRANSFORM, DRAGONBREATH, MORNING_SUN, GUST
+	db 43
+	dw GYARADOS
+	dw FLAMETHROWER, SURF, BODY_SLAM, DRAGONBREATH
+	db 43
+	dw AMPHAROS
+	dw THUNDER_WAVE, THUNDERBOLT, FIRE_PUNCH, HEADBUTT
+	db 47
+	dw DRAGONAIR ; MINISTARE
+	dw THUNDER_WAVE, ICE_BEAM, SLAM, DRAGONBREATH
+	db 47
 	dw DRAGONAIR
 	dw THUNDER_WAVE, ICE_BEAM, SLAM, DRAGONBREATH
-	db 40
+	db 50
 	dw KINGDRA
 	dw SMOKESCREEN, SURF, HYPER_BEAM, DRAGONBREATH
 	db -1 ; end
@@ -368,13 +392,13 @@ WillGroup:
 	dw JYNX
 	dw DOUBLESLAP, LOVELY_KISS, ICE_PUNCH, PSYCHIC_M
 	db 41
-	dw EXEGGUTOR
-	dw REFLECT, LEECH_SEED, EGG_BOMB, PSYCHIC_M
+	dw ESPEON
+	dw REFLECT, QUICK_ATTACK, MORNING_SUN, PSYCHIC_M
 	db 41
-	dw SLOWBRO
+	dw SLOWKING
 	dw CURSE, AMNESIA, BODY_SLAM, PSYCHIC_M
 	db 42
-	dw XATU
+	dw XATU ; FARIGIRAF
 	dw QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
 	db -1 ; end
 
@@ -424,10 +448,10 @@ BrunoGroup:
 	dw SWAGGER, DOUBLE_KICK, HI_JUMP_KICK, FORESIGHT
 	db 42
 	dw HITMONCHAN
-	dw THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH, MACH_PUNCH
+	dw MEGA_PUNCH, ICE_PUNCH, COUNTER, MACH_PUNCH
 	db 43
-	dw ONIX
-	dw BIND, EARTHQUAKE, SANDSTORM, ROCK_SLIDE
+	dw STEELIX
+	dw IRON_TAIL, EARTHQUAKE, EXPLOSION, ROCK_HEAD
 	db 46
 	dw MACHAMP
 	dw ROCK_SLIDE, FORESIGHT, VITAL_THROW, CROSS_CHOP
@@ -440,19 +464,22 @@ KarenGroup:
 	db "KAREN@", TRAINERTYPE_MOVES
 	db 42
 	dw UMBREON
-	dw SAND_ATTACK, CONFUSE_RAY, FAINT_ATTACK, MEAN_LOOK
+	dw SAND_ATTACK, CONFUSE_RAY, PURSUIT, MEAN_LOOK
 	db 42
-	dw VILEPLUME
-	dw STUN_SPORE, ACID, MOONLIGHT, PETAL_DANCE
+	dw BELLEDAM
+	dw PURSUIT, HEAL_BELL, LOVELY_KISS, ATTRACT
 	db 45
-	dw GENGAR
-	dw LICK, SPITE, CURSE, DESTINY_BOND
+	dw WARUCHU
+	dw PURSUIT, THUNDERBOLT, THUNDER_WAVE, CRUNCH
 	db 44
-	dw MURKROW
+	dw MURKROW ; HONCHKROW
 	dw QUICK_ATTACK, WHIRLWIND, PURSUIT, FAINT_ATTACK
 	db 47
 	dw HOUNDOOM
 	dw ROAR, PURSUIT, FLAMETHROWER, CRUNCH
+	db 55
+	dw TYRANITAR
+	dw PURSUIT, ROCK_SLIDE, ICE_BEAM, DYNAMICPUNCH
 	db -1 ; end
 
 	end_list_items
@@ -460,15 +487,15 @@ KarenGroup:
 KogaGroup:
 	next_list_item ; KOGA (1)
 	db "KOGA@", TRAINERTYPE_MOVES
+	db 43
+	dw FORRETRESS
+	dw PROTECT, SWIFT, EXPLOSION, SPIKES
 	db 40
 	dw ARIADOS
 	dw DOUBLE_TEAM, SPIDER_WEB, BATON_PASS, GIGA_DRAIN
 	db 41
 	dw VENOMOTH
 	dw SUPERSONIC, GUST, PSYCHIC_M, TOXIC
-	db 43
-	dw FORRETRESS
-	dw PROTECT, SWIFT, EXPLOSION, SPIKES
 	db 42
 	dw MUK
 	dw MINIMIZE, ACID_ARMOR, SLUDGE_BOMB, TOXIC
@@ -640,7 +667,7 @@ YoungsterGroup:
 	next_list_item ; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
 	db 2
-	dw PIDGEY
+	dw LEDYBA
 	db 4
 	dw RATTATA
 	db -1 ; end
@@ -648,7 +675,7 @@ YoungsterGroup:
 	next_list_item ; YOUNGSTER (3)
 	db "ALBERT@", TRAINERTYPE_NORMAL
 	db 6
-	dw RATTATA
+	dw SENTRET
 	db 8
 	dw ZUBAT
 	db -1 ; end
@@ -2305,10 +2332,12 @@ SabrinaGroup:
 BugCatcherGroup:
 	next_list_item ; BUG_CATCHER (1)
 	db "DON@", TRAINERTYPE_NORMAL
-	db 3
+	db 2
 	dw CATERPIE
 	db 3
-	dw CATERPIE
+	dw LEDYBA
+	db 3
+	dw SPINARAK
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (2)
@@ -2334,19 +2363,15 @@ BugCatcherGroup:
 	db 2
 	dw CATERPIE
 	db 2
-	dw CATERPIE
+	dw GENTLARVA
 	db 3
 	dw WEEDLE
-	db 2
-	dw CATERPIE
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (5)
 	db "BENNY@", TRAINERTYPE_NORMAL
-	db 7
-	dw WEEDLE
-	db 9
-	dw KAKUNA
+	db 10
+	dw CARAPTHOR
 	db 12
 	dw BEEDRILL
 	db -1 ; end
@@ -2356,19 +2381,19 @@ BugCatcherGroup:
 	db 12
 	dw CATERPIE
 	db 12
-	dw WEEDLE
+	dw BUTTERFREE
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (7)
 	db "JOSH@", TRAINERTYPE_NORMAL
-	db 13
-	dw PARAS
+	db 18
+	dw LEDIAN ; It'll look scary in Azalea Gym but it's also Ledian
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (8)
 	db "ARNIE@", TRAINERTYPE_NORMAL
 	db 15
-	dw VENONAT
+	dw YANMA ; To show Yanma is on Route 35
 	db -1 ; end
 
 	next_list_item ; BUG_CATCHER (9)
@@ -2500,20 +2525,20 @@ BugCatcherGroup:
 
 FisherGroup:
 	next_list_item ; FISHER (1)
-	db "JUSTIN@", TRAINERTYPE_NORMAL
-	db 5
-	dw MAGIKARP
-	db 5
+	db "JUSTIN@", TRAINERTYPE_NORMAL ; There are multiple "Karp Spam" Fishers, so Justin is being completely changed.
+	db 15 ; Essentially, he is the player's introduction to Old Rod fishing in GSC.
 	dw MAGIKARP
 	db 15
-	dw MAGIKARP
-	db 5
-	dw MAGIKARP
+	dw ORFRY
+	db 17
+	dw TENTACOOL 
 	db -1 ; end
 
 	next_list_item ; FISHER (2)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 10
+	dw ORFRY
+	db 16 ; Could be a little strong, but Orfry evolves here...
 	dw GOLDEEN
 	db -1 ; end
 
@@ -2538,18 +2563,18 @@ FisherGroup:
 	db 8
 	dw POLIWAG
 	db 8
-	dw POLIWAG
+	dw KRABBY
 	db -1 ; end
 
 	next_list_item ; FISHER (6)
-	db "MARVIN@", TRAINERTYPE_NORMAL
-	db 10
+	db "MARVIN@", TRAINERTYPE_NORMAL ; Route 43, so this is where stuff becomes real
+	db 30
 	dw MAGIKARP
-	db 10
+	db 20
 	dw GYARADOS
-	db 15
+	db 35
 	dw MAGIKARP
-	db 15
+	db 25
 	dw GYARADOS
 	db -1 ; end
 
@@ -2566,7 +2591,11 @@ FisherGroup:
 	db -1 ; end
 
 	next_list_item ; FISHER (9)
-	db "RAYMOND@", TRAINERTYPE_NORMAL
+	db "RAYMOND@", TRAINERTYPE_NORMAL ; He can be 6 Magikarp guy
+	db 22
+	dw MAGIKARP
+	db 22
+	dw MAGIKARP
 	db 22
 	dw MAGIKARP
 	db 22
@@ -2579,16 +2608,14 @@ FisherGroup:
 
 	next_list_item ; FISHER (10)
 	db "WILTON@", TRAINERTYPE_NORMAL
-	db 23
-	dw GOLDEEN
-	db 23
-	dw GOLDEEN
-	db 25
-	dw SEAKING
+	db 33
+	dw MANTINE
+	db 35
+	dw OCTILLERY
 	db -1 ; end
 
 	next_list_item ; FISHER (11)
-	db "EDGAR@", TRAINERTYPE_MOVES
+	db "EDGAR@", TRAINERTYPE_MOVES ; Unsure about this guy
 	db 25
 	dw REMORAID
 	dw LOCK_ON, PSYBEAM, AURORA_BEAM, BUBBLEBEAM
@@ -2614,7 +2641,7 @@ FisherGroup:
 	db 32
 	dw REMORAID
 	db 32
-	dw REMORAID
+	dw REMORAID ; MANTYKE - that in the game yet?
 	db -1 ; end
 
 	next_list_item ; FISHER (14)
@@ -2666,7 +2693,7 @@ FisherGroup:
 	db 32
 	dw GOLDEEN
 	db 32
-	dw QWILFISH
+	dw QWILFATHER
 	db -1 ; end
 
 	next_list_item ; FISHER (20)
@@ -3208,11 +3235,11 @@ SuperNerdGroup:
 	db 11
 	dw GRIMER
 	db 11
-	dw GRIMER
+	dw MOIBELLE ; Nerds like cats, right? Maybe this could be fun.
 	db -1 ; end
 
-	next_list_item ; SUPER_NERD (3)
-	db "GREGG@", TRAINERTYPE_NORMAL
+	next_list_item ; SUPER_NERD (3) 
+	db "GREGG@", TRAINERTYPE_NORMAL ; seems to be unused - anything we can do?
 	db 20
 	dw MAGNEMITE
 	db 20
@@ -3222,7 +3249,7 @@ SuperNerdGroup:
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (4)
-	db "JAY@", TRAINERTYPE_NORMAL
+	db "JAY@", TRAINERTYPE_NORMAL ; also seems unused
 	db 22
 	dw KOFFING
 	db 22
@@ -3230,7 +3257,7 @@ SuperNerdGroup:
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (5)
-	db "DAVE@", TRAINERTYPE_NORMAL
+	db "DAVE@", TRAINERTYPE_NORMAL ; unused
 	db 24
 	dw DITTO
 	db -1 ; end
@@ -3256,7 +3283,7 @@ SuperNerdGroup:
 	next_list_item ; SUPER_NERD (8)
 	db "PAT@", TRAINERTYPE_NORMAL
 	db 36
-	dw PORYGON
+	dw PORYGON2 ; This guy is in Kanto, may as well buff em up a storm!
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (9)
@@ -3270,19 +3297,19 @@ SuperNerdGroup:
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (10)
-	db "TERU@", TRAINERTYPE_NORMAL
-	db 7
+	db "TERU@", TRAINERTYPE_NORMAL ; Goldenrod Tunnel
+	db 10
 	dw MAGNEMITE
-	db 11
+	db 13
 	dw VOLTORB
-	db 7
-	dw MAGNEMITE
 	db 9
 	dw MAGNEMITE
+	db 9
+	dw KOLTA ; In RBY they have these in Cinnabar, could restore it universally?
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (11)
-	db "RUSS@", TRAINERTYPE_NORMAL
+	db "RUSS@", TRAINERTYPE_NORMAL ; lots of unused super nerds...
 	db 27
 	dw MAGNEMITE
 	db 27
@@ -3292,8 +3319,8 @@ SuperNerdGroup:
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (12)
-	db "NORTON@", TRAINERTYPE_MOVES
-	db 30
+	db "NORTON@", TRAINERTYPE_MOVES ; unused - is it because of the name..?
+	db 15 ; Could put in Goldenrod Tunnel with a super nerfed Porygon? Game Corner reference??
 	dw PORYGON
 	dw CONVERSION, CONVERSION2, RECOVER, TRI_ATTACK
 	db -1 ; end
@@ -3457,40 +3484,40 @@ GuitaristGroup:
 	db -1 ; end
 
 	next_list_item ; GUITARIST (2)
-	db "VINCENT@", TRAINERTYPE_NORMAL
-	db 27
-	dw MAGNEMITE
-	db 33
-	dw VOLTORB
-	db 32
-	dw MAGNEMITE
-	db 32
-	dw MAGNEMITE
+	db "VINCENT@", TRAINERTYPE_NORMAL ; Vermillion Gym
+	db 47
+	dw MAGNEZONE
+	db 43
+	dw ELECTRODE
+	db 42
+	dw GOROTORA
+	db 42
+	dw ELECTABUZZ
 	db -1 ; end
 
 	end_list_items
 
 HikerGroup:
 	next_list_item ; HIKER (1)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
+	db "ANTHONY@", TRAINERTYPE_NORMAL ; This guy is notorious!
 	db 16
 	dw GEODUDE
 	db 18
-	dw MACHAMP
+	dw PHANPY ; But he still must have Johto!
 	db -1 ; end
 
 	next_list_item ; HIKER (2)
 	db "RUSSELL@", TRAINERTYPE_NORMAL
 	db 4
-	dw GEODUDE
+	dw PHANPY
 	db 6
-	dw GEODUDE
+	dw WOOPER
 	db 8
 	dw GEODUDE
 	db -1 ; end
 
 	next_list_item ; HIKER (3)
-	db "PHILLIP@", TRAINERTYPE_NORMAL
+	db "PHILLIP@", TRAINERTYPE_NORMAL ; Lower floor of Union Cave - anything we can do?
 	db 23
 	dw GEODUDE
 	db 23
@@ -3500,7 +3527,7 @@ HikerGroup:
 	db -1 ; end
 
 	next_list_item ; HIKER (4)
-	db "LEONARD@", TRAINERTYPE_NORMAL
+	db "LEONARD@", TRAINERTYPE_NORMAL ; same here
 	db 23
 	dw GEODUDE
 	db 25
@@ -3512,93 +3539,89 @@ HikerGroup:
 	db 11
 	dw GEODUDE
 	db 11
-	dw MACHOP
+	dw PHANPY
 	db -1 ; end
 
 	next_list_item ; HIKER (6)
 	db "BENJAMIN@", TRAINERTYPE_NORMAL
-	db 14
-	dw DIGLETT
-	db 14
-	dw GEODUDE
 	db 16
-	dw DUGTRIO
+	dw PHANPY
+	db 16
+	dw GEODUDE
+	db 18
+	dw DUGTRIO ; WHAT THE FUCK YOU'RE AT MT MORTAR you can keep it tho
 	db -1 ; end
 
 	next_list_item ; HIKER (7)
-	db "ERIK@", TRAINERTYPE_NORMAL
+	db "ERIK@", TRAINERTYPE_NORMAL ; outside blackthorn...
 	db 24
-	dw MACHOP
+	dw PHANPY
 	db 27
 	dw GRAVELER
-	db 27
-	dw MACHOP
+	db 32
+	dw URSARING
 	db -1 ; end
 
 	next_list_item ; HIKER (8)
 	db "MICHAEL@", TRAINERTYPE_NORMAL
 	db 25
-	dw GEODUDE
-	db 25
-	dw GRAVELER
-	db 25
+	dw MACHOP
+	db 27
+	dw GLIGAR
+	db 32
 	dw GOLEM
 	db -1 ; end
 
 	next_list_item ; HIKER (9)
 	db "PARRY@", TRAINERTYPE_NORMAL
 	db 35
-	dw ONIX
-	db 33
-	dw SWINUB
+	dw STEELIX
+	db 33 ; Bulbapedia says he doesn't have a Swinub? Cool tho.
+	dw PILOSWINE
 	db -1 ; end
 
 	next_list_item ; HIKER (10)
-	db "TIMOTHY@", TRAINERTYPE_MOVES
+	db "TIMOTHY@", TRAINERTYPE_NORMAL ; changed to optimise, moves type is unnecessary.
 	db 27
-	dw DIGLETT
-	dw MAGNITUDE, DIG, SAND_ATTACK, SLASH
-	db 27
+	dw LARVITAR
+	db 32
 	dw DUGTRIO
-	dw MAGNITUDE, DIG, SAND_ATTACK, SLASH
 	db -1 ; end
 
 	next_list_item ; HIKER (11)
-	db "BAILEY@", TRAINERTYPE_NORMAL
-	db 13
-	dw GEODUDE
-	db 13
-	dw GEODUDE
-	db 13
-	dw GEODUDE
-	db 13
-	dw GEODUDE
-	db 13
-	dw GEODUDE
+	db "BAILEY@", TRAINERTYPE_NORMAL ; genuinely deranged to have 5 L13 Geodudes when you're on the way to the Elite Four...
+	db 32
+	dw SLUGMA
+	db 32
+	dw PUPITAR
+	db 34
+	dw URSARING
+	db 38
+	dw STEELIX
 	db -1 ; end
 
 	next_list_item ; HIKER (12)
 	db "ANTHONY@", TRAINERTYPE_NORMAL
 	db 25
-	dw GRAVELER
+	dw PHANPY
 	db 27
-	dw GRAVELER
+	dw TEDDIURSA
 	db 29
-	dw MACHOKE
+	dw GRAVELER
 	db -1 ; end
 
 	next_list_item ; HIKER (13)
-	db "TIM@", TRAINERTYPE_NORMAL
-	db 31
-	dw GRAVELER
-	db 31
-	dw GRAVELER
-	db 31
-	dw GRAVELER
+	db "TIM@", TRAINERTYPE_MOVES ; Kanto trainer??
+	db 43
+	dw GOLEM
+	dw ROCK_HEAD, EARTHQUAKE, EXPLOSION, BODY_SLAM
+	db 45
+	dw RHYDON
+	dw EARTHQUAKE, ROCK_HEAD, ROAR, BODY_SLAM
 	db -1 ; end
 
 	next_list_item ; HIKER (14)
-	db "NOLAND@", TRAINERTYPE_NORMAL
+	db "NOLAND@", TRAINERTYPE_NORMAL ; unused?
 	db 31
 	dw SANDSLASH
 	db 33
@@ -3606,34 +3629,38 @@ HikerGroup:
 	db -1 ; end
 
 	next_list_item ; HIKER (15)
-	db "SIDNEY@", TRAINERTYPE_NORMAL
-	db 34
+	db "SIDNEY@", TRAINERTYPE_NORMAL ; kanto
+	db 40
 	dw DUGTRIO
-	db 32
-	dw ONIX
+	db 43
+	dw RHYDON
+	db 47
+	dw STEELIX
 	db -1 ; end
 
 	next_list_item ; HIKER (16)
-	db "KENNY@", TRAINERTYPE_NORMAL
-	db 27
+	db "KENNY@", TRAINERTYPE_NORMAL ; kanto
+	db 43
 	dw SANDSLASH
-	db 29
-	dw GRAVELER
-	db 31
+	db 43
+	dw STEELIX
+	db 45
 	dw GOLEM
-	db 29
+	db 40
 	dw GRAVELER
 	db -1 ; end
 
 	next_list_item ; HIKER (17)
 	db "JIM@", TRAINERTYPE_NORMAL
-	db 35
+	db 45
 	dw MACHAMP
 	db -1 ; end
 
 	next_list_item ; HIKER (18)
 	db "DANIEL@", TRAINERTYPE_NORMAL
-	db 11
+	db 10
+	dw WOOPER
+	db 12
 	dw ONIX
 	db -1 ; end
 
@@ -3652,8 +3679,10 @@ HikerGroup:
 
 	next_list_item ; HIKER (20)
 	db "PARRY@", TRAINERTYPE_NORMAL
-	db 29
-	dw ONIX
+	db 30
+	dw SWINUB
+	db 34
+	dw STEELIX
 	db -1 ; end
 
 	next_list_item ; HIKER (21)
@@ -3683,7 +3712,7 @@ HikerGroup:
 
 BikerGroup:
 	next_list_item ; BIKER (1)
-	db "BENNY@", TRAINERTYPE_NORMAL
+	db "BENNY@", TRAINERTYPE_NORMAL ; unused?
 	db 20
 	dw KOFFING
 	db 20
@@ -3693,7 +3722,7 @@ BikerGroup:
 	db -1 ; end
 
 	next_list_item ; BIKER (2)
-	db "KAZU@", TRAINERTYPE_NORMAL
+	db "KAZU@", TRAINERTYPE_NORMAL ; unused?
 	db 20
 	dw KOFFING
 	db 20
@@ -3703,20 +3732,20 @@ BikerGroup:
 	db -1 ; end
 
 	next_list_item ; BIKER (3)
-	db "DWAYNE@", TRAINERTYPE_NORMAL
+	db "DWAYNE@", TRAINERTYPE_NORMAL ; Kanto trainer, fix later
 	db 27
-	dw KOFFING
+	dw HORSEA
 	db 28
 	dw KOFFING
 	db 29
-	dw KOFFING
+	dw SLUGMA
 	db 30
 	dw KOFFING
 	db -1 ; end
 
 	next_list_item ; BIKER (4)
 	db "HARRIS@", TRAINERTYPE_NORMAL
-	db 34
+	db 44
 	dw FLAREON
 	db -1 ; end
 
@@ -3725,11 +3754,11 @@ BikerGroup:
 	db 32
 	dw KOFFING
 	db 32
-	dw KOFFING
+	dw KINGDRA ; also a kanto trainer
 	db -1 ; end
 
 	next_list_item ; BIKER (6)
-	db "CHARLES@", TRAINERTYPE_NORMAL
+	db "CHARLES@", TRAINERTYPE_NORMAL ; kanto
 	db 30
 	dw KOFFING
 	db 30
@@ -3741,18 +3770,18 @@ BikerGroup:
 	next_list_item ; BIKER (7)
 	db "RILEY@", TRAINERTYPE_NORMAL
 	db 34
-	dw WEEZING
+	dw WEEZING ; kanto
 	db -1 ; end
 
 	next_list_item ; BIKER (8)
-	db "JOEL@", TRAINERTYPE_NORMAL
+	db "JOEL@", TRAINERTYPE_NORMAL ; kanto 
 	db 32
 	dw MAGMAR
 	db 32
 	dw MAGMAR
 	db -1 ; end
 
-	next_list_item ; BIKER (9)
+	next_list_item ; BIKER (9) ; kanto
 	db "GLENN@", TRAINERTYPE_NORMAL
 	db 28
 	dw KOFFING
@@ -3767,42 +3796,49 @@ BikerGroup:
 BlaineGroup:
 	next_list_item ; BLAINE (1)
 	db "BLAINE@", TRAINERTYPE_MOVES
-	db 45
-	dw MAGCARGO
-	dw CURSE, SMOG, FLAMETHROWER, ROCK_SLIDE
-	db 45
-	dw MAGMAR
+	db 57
+	dw HOUNDOOM
+	dw PURSUIT, FIRE_BLAST, BEAT_UP, CRUNCH ; Beat Up seems REALLY fun with the high atk mons of the team.
+	db 54
+	dw NINETALES
+	dw HYPNOSIS, CONFUSE_RAY, FIRE_BLAST, DIG
+	db 55
+	db ARCANINE
+	dw FIRE_BLAST, ROAR, BODY_SLAM, EXTREMESPEED
+	db 56
+	dw MAGCARGO ; I am giving it a chance!!!
+	dw CURSE, BODY_SLAM, FLAMETHROWER, ROCK_SLIDE
+	db 57
+	dw MAGMAR ; MAGMORTAR
 	dw THUNDERPUNCH, FIRE_PUNCH, SUNNY_DAY, CONFUSE_RAY
-	db 50
+	db 57
 	dw RAPIDASH
-	dw QUICK_ATTACK, FIRE_SPIN, FURY_ATTACK, FIRE_BLAST
+	dw QUICK_ATTACK, HYPNOSIS, BODY_SLAM, FIRE_BLAST
 	db -1 ; end
 
 	end_list_items
 
 BurglarGroup:
 	next_list_item ; BURGLAR (1)
-	db "DUNCAN@", TRAINERTYPE_NORMAL
+	db "DUNCAN@", TRAINERTYPE_NORMAL ; Goldenrod tunnel, I believe during the rocket invasion. same with the next. evaluate levels.
 	db 23
-	dw KOFFING
+	dw TRUSTAN
 	db 25
 	dw MAGMAR
 	db 23
-	dw KOFFING
+	dw HOUNDOUR
 	db -1 ; end
 
 	next_list_item ; BURGLAR (2)
-	db "EDDIE@", TRAINERTYPE_MOVES
+	db "EDDIE@", TRAINERTYPE_NORMAL ; probably doesn't need type-moves
 	db 26
-	dw GROWLITHE
-	dw ROAR, EMBER, LEER, TAKE_DOWN
+	dw TRUSTAN
 	db 24
-	dw KOFFING
-	dw TACKLE, SMOG, SLUDGE, SMOKESCREEN
+	dw FURRET
 	db -1 ; end
 
 	next_list_item ; BURGLAR (3)
-	db "COREY@", TRAINERTYPE_NORMAL
+	db "COREY@", TRAINERTYPE_NORMAL ; SS Aqua
 	db 25
 	dw KOFFING
 	db 28
@@ -3810,14 +3846,14 @@ BurglarGroup:
 	db 25
 	dw KOFFING
 	db 30
-	dw KOFFING
+	dw FLAREON
 	db -1 ; end
 
 	end_list_items
 
 FirebreatherGroup:
 	next_list_item ; FIREBREATHER (1)
-	db "OTIS@", TRAINERTYPE_NORMAL
+	db "OTIS@", TRAINERTYPE_NORMAL ; can i just say this is the best name ever
 	db 29
 	dw MAGMAR
 	db 32
@@ -3827,21 +3863,21 @@ FirebreatherGroup:
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (2)
-	db "DICK@", TRAINERTYPE_NORMAL
-	db 43
+	db "DICK@", TRAINERTYPE_NORMAL ; HE LIVES
+	db 43 ; just need to reuse him
 	dw MAGMAR ; MAGMORTAR
 	db 48
 	dw CHARIZARD
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (3)
-	db "NED@", TRAINERTYPE_NORMAL
+	db "NED@", TRAINERTYPE_NORMAL ; Burned Tower, to be re-used
 	db 15
-	dw KOFFING
+	dw PUPPERON
 	db 16
-	dw GROWLITHE
+	dw VULPIII
 	db 15
-	dw KOFFING
+	dw KOLTA ; seems cute right?
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (4)
@@ -3854,24 +3890,26 @@ FirebreatherGroup:
 
 	next_list_item ; FIREBREATHER (5)
 	db "BILL@", TRAINERTYPE_NORMAL
-	db 6
+	db 7
 	dw KOFFING
-	db 6
-	dw KOFFING
+	db 10
+	dw SLUGMA
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (6)
 	db "WALT@", TRAINERTYPE_NORMAL
 	db 11
-	dw MAGMAR
+	dw MAGBY
 	db 13
-	dw MAGMAR
+	dw HOUNDOUR
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (7)
 	db "RAY@", TRAINERTYPE_NORMAL
 	db 9
-	dw VULPIX
+	dw VULPIII
+	db 10
+	dw MAGBY
 	db -1 ; end
 
 	next_list_item ; FIREBREATHER (8)
@@ -3888,15 +3926,15 @@ FirebreatherGroup:
 
 JugglerGroup:
 	next_list_item ; JUGGLER (1)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 2
+	db "IRWIN@", TRAINERTYPE_NORMAL ; I get his gimmick, but I do not like it.
+	db 7
 	dw VOLTORB
-	db 6
+	db 7
 	dw VOLTORB
 	db 10
-	dw VOLTORB
-	db 14
-	dw VOLTORB
+	dw PINECO
+	db 15
+	dw AIPOM
 	db -1 ; end
 
 	next_list_item ; JUGGLER (2)
@@ -3923,45 +3961,45 @@ JugglerGroup:
 
 	next_list_item ; JUGGLER (4)
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 6
+	db 10
 	dw VOLTORB
 	db 10
 	dw VOLTORB
-	db 14
-	dw VOLTORB
-	db 18
-	dw VOLTORB
+	db 12
+	dw PINECO
+	db 17
+	dw AIPOM
 	db -1 ; end
 
 	next_list_item ; JUGGLER (5)
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 18
+	db 25
 	dw VOLTORB
-	db 22
+	db 25
 	dw VOLTORB
-	db 26
-	dw VOLTORB
-	db 30
-	dw ELECTRODE
+	db 27
+	dw PINECO
+	db 32
+	dw AMBIPOM
 	db -1 ; end
 
 	next_list_item ; JUGGLER (6)
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 18
-	dw VOLTORB
-	db 22
-	dw VOLTORB
-	db 26
-	dw VOLTORB
-	db 30
+	db 36
 	dw ELECTRODE
+	db 36
+	dw ELECTRODE
+	db 40
+	dw FORRETRESS
+	db 42
+	dw AMBIPOM
 	db -1 ; end
 
 	end_list_items
 
 BlackbeltGroup:
 	next_list_item ; BLACKBELT_T (1)
-	db "KENJI@", TRAINERTYPE_NORMAL
+	db "KENJI@", TRAINERTYPE_NORMAL ; part of the unused rematches
 	db 27
 	dw ONIX
 	db 30
@@ -3973,8 +4011,11 @@ BlackbeltGroup:
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (2)
-	db "YOSHI@", TRAINERTYPE_MOVES
-	db 27
+	db "YOSHI@", TRAINERTYPE_MOVES ; cianwood gym
+	db 26
+	dw TYROGUE
+	dw TACKLE, MACH_PUNCH
+	db 30
 	dw HITMONLEE
 	dw DOUBLE_KICK, MEDITATE, JUMP_KICK, FOCUS_ENERGY
 	db -1 ; end
@@ -3996,48 +4037,51 @@ BlackbeltGroup:
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (4)
-	db "LAO@", TRAINERTYPE_MOVES
-	db 27
+	db "LAO@", TRAINERTYPE_MOVES ; cianwood gym
+	db 26
+	dw TYROGUE
+	dw TACKLE, MACH_PUNCH
+	db 30
 	dw HITMONCHAN
 	dw COMET_PUNCH, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (5)
-	db "NOB@", TRAINERTYPE_MOVES
-	db 25
+	db "NOB@", TRAINERTYPE_MOVES ; cianwood gym
+	db 28 ; This represents Ogasawara - anything we can do?
 	dw MACHOP
 	dw LEER, FOCUS_ENERGY, KARATE_CHOP, SEISMIC_TOSS
-	db 25
+	db 32
 	dw MACHOKE
 	dw LEER, KARATE_CHOP, SEISMIC_TOSS, ROCK_SLIDE
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (6)
-	db "KIYO@", TRAINERTYPE_NORMAL
+	db "KIYO@", TRAINERTYPE_NORMAL ; Boss fight who gives Tyrogue.
 	db 34
 	dw HITMONLEE
 	db 34
 	dw HITMONCHAN
+	db 36
+	dw HITMONTOP ; Demonstrates all 3 evolutions instead of just two.
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (7)
-	db "LUNG@", TRAINERTYPE_NORMAL
-	db 23
-	dw MANKEY
-	db 23
-	dw MANKEY
-	db 25
+	db "LUNG@", TRAINERTYPE_NORMAL ; Cianwood gym
+	db 26
+	dw MANKEY ; JABETTA - is that in the game yet? lol
+	db 27
 	dw PRIMEAPE
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (8)
-	db "KENJI@", TRAINERTYPE_NORMAL
-	db 28
-	dw MACHOKE
+	db "KENJI@", TRAINERTYPE_NORMAL ; Only Kenji fight in Crystal
+	db 34
+	dw MACHAMP
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (9)
-	db "WAI@", TRAINERTYPE_NORMAL
+	db "WAI@", TRAINERTYPE_NORMAL ; ss aqua
 	db 30
 	dw MACHOKE
 	db 32
@@ -4048,7 +4092,7 @@ BlackbeltGroup:
 
 	end_list_items
 
-ExecutiveMGroup:
+ExecutiveMGroup: ; Unsure which is which. Little help?
 	next_list_item ; EXECUTIVEM (1)
 	db "EXECUTIVE@", TRAINERTYPE_MOVES
 	db 33
@@ -4092,7 +4136,7 @@ ExecutiveMGroup:
 	db -1 ; end
 
 	next_list_item ; EXECUTIVEM (4)
-	db "EXECUTIVE@", TRAINERTYPE_NORMAL
+	db "EXECUTIVE@", TRAINERTYPE_NORMAL ; Slowpoke Well - Proton? Is he that strong?
 	db 22
 	dw ZUBAT
 	db 24
@@ -4105,47 +4149,52 @@ ExecutiveMGroup:
 
 PsychicGroup:
 	next_list_item ; PSYCHIC_T (1)
-	db "NATHAN@", TRAINERTYPE_NORMAL
+	db "NATHAN@", TRAINERTYPE_NORMAL ; Ruins of Alph
 	db 26
 	dw GIRAFARIG
+	db 30
+	dw UNOWN ; I think it's a little neat, don't you?
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (2)
-	db "FRANKLIN@", TRAINERTYPE_NORMAL
-	db 37
-	dw KADABRA
+	db "FRANKLIN@", TRAINERTYPE_NORMAL ; Saffron Gym...
+	db 47
+	dw ALAKAZAM
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (3)
-	db "HERMAN@", TRAINERTYPE_NORMAL
+	db "HERMAN@", TRAINERTYPE_NORMAL ; Route 11 Kanto
 	db 30
 	dw EXEGGCUTE
 	db 30
-	dw EXEGGCUTE
+	dw EXEGGCUTE ; EXEGGUTORA?
 	db 30
 	dw EXEGGUTOR
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (4)
-	db "FIDEL@", TRAINERTYPE_NORMAL
-	db 34
+	db "FIDEL@", TRAINERTYPE_NORMAL ; Castro? Woke Game Freak?
+	db 34 ; Oh, Kanto Route 11.
 	dw XATU
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (5)
-	db "GREG@", TRAINERTYPE_MOVES
+	db "GREG@", TRAINERTYPE_MOVES ; Just south of Ecruteak.
 	db 17
 	dw DROWZEE
-	dw HYPNOSIS, DISABLE, DREAM_EATER, NO_MOVE
+	dw HYPNOSIS, DISABLE, DREAM_EATER, NO_MOVE ; jesus ok
+	db 22
+	dw STANTLER
+	dw HYPNOSIS, TACKLE, LEER, NO_MOVE
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (6)
-	db "NORMAN@", TRAINERTYPE_MOVES
-	db 17
-	dw SLOWPOKE
-	dw TACKLE, GROWL, WATER_GUN, NO_MOVE
-	db 20
-	dw SLOWPOKE
+	db "NORMAN@", TRAINERTYPE_MOVES ; omg from hoenn? hi!!!
+	db 25 ; Route 39
+	dw QATU
+	dw PECK, NIGHT_SHADE, LEER, FUTURE_SIGHT
+	db 26
+	dw SLOWPOKE ; deranged moveset i love it
 	dw CURSE, BODY_SLAM, WATER_GUN, CONFUSION
 	db -1 ; end
 
@@ -4154,9 +4203,9 @@ PsychicGroup:
 	db 13
 	dw ABRA
 	dw TELEPORT, FLASH, NO_MOVE, NO_MOVE
-	db 13
-	dw ABRA
-	dw TELEPORT, FLASH, NO_MOVE, NO_MOVE
+	db 15
+	dw NATU
+	dw PECK, LEER, NIGHT_SHADE, NO_MOVE
 	db 15
 	dw KADABRA
 	dw TELEPORT, KINESIS, CONFUSION, NO_MOVE
@@ -4164,34 +4213,34 @@ PsychicGroup:
 
 	next_list_item ; PSYCHIC_T (8)
 	db "PHIL@", TRAINERTYPE_MOVES
-	db 24
+	db 28
 	dw NATU
 	dw LEER, NIGHT_SHADE, FUTURE_SIGHT, CONFUSE_RAY
-	db 26
+	db 32
 	dw KADABRA
 	dw DISABLE, PSYBEAM, RECOVER, FUTURE_SIGHT
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (9)
 	db "RICHARD@", TRAINERTYPE_NORMAL
-	db 36
+	db 46
 	dw ESPEON
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (10)
-	db "GILBERT@", TRAINERTYPE_NORMAL
-	db 30
+	db "GILBERT@", TRAINERTYPE_NORMAL ; your parents were so mean holy
+	db 40 ; Kanto Route 47
 	dw STARMIE
-	db 30
-	dw EXEGGCUTE
-	db 34
-	dw GIRAFARIG
+	db 40
+	dw EXEGGUTOR
+	db 44
+	dw FARIGIRAF
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (11)
 	db "JARED@", TRAINERTYPE_NORMAL
 	db 32
-	dw MR__MIME
+	dw MR__MIME ; saffron gym cba to fix
 	db 32
 	dw EXEGGCUTE
 	db 35
@@ -4199,7 +4248,7 @@ PsychicGroup:
 	db -1 ; end
 
 	next_list_item ; PSYCHIC_T (12)
-	db "RODNEY@", TRAINERTYPE_NORMAL
+	db "RODNEY@", TRAINERTYPE_NORMAL ; ss aqua
 	db 29
 	dw DROWZEE
 	db 33
@@ -4213,6 +4262,8 @@ PicnickerGroup:
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 9
 	dw NIDORAN_F
+	db 10
+	dw MOIBELLE
 	db -1 ; end
 
 	next_list_item ; PICNICKER (2)
@@ -4220,39 +4271,42 @@ PicnickerGroup:
 	db 9
 	dw HOPPIP
 	db 9
-	dw HOPPIP
+	dw SUNKERN
 	db 12
 	dw BULBASAUR
 	db -1 ; end
 
 	next_list_item ; PICNICKER (3)
-	db "BROOKE@", TRAINERTYPE_MOVES
+	db "BROOKE@", TRAINERTYPE_NORMAL ; unnecessary
+	db 13
+	dw PICHU
 	db 16
 	dw PIKACHU
-	dw THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
 	db -1 ; end
 
 	next_list_item ; PICNICKER (4)
 	db "KIM@", TRAINERTYPE_NORMAL
+	db 13
+	dw VULPIII
 	db 15
 	dw VULPIX
 	db -1 ; end
 
 	next_list_item ; PICNICKER (5)
 	db "CINDY@", TRAINERTYPE_NORMAL
-	db 36
+	db 36 ; Fuchsia Gym
 	dw NIDOQUEEN
 	db -1 ; end
 
 	next_list_item ; PICNICKER (6)
 	db "HOPE@", TRAINERTYPE_NORMAL
-	db 34
-	dw FLAAFFY
+	db 44
+	dw AMPHAROS ; Kanto Route 4
 	db -1 ; end
 
 	next_list_item ; PICNICKER (7)
 	db "SHARON@", TRAINERTYPE_NORMAL
-	db 31
+	db 31 ; Kanto Route 4
 	dw FURRET
 	db 33
 	dw RAPIDASH
@@ -4260,7 +4314,7 @@ PicnickerGroup:
 
 	next_list_item ; PICNICKER (8)
 	db "DEBRA@", TRAINERTYPE_NORMAL
-	db 33
+	db 33 ; ss aqua
 	dw SEAKING
 	db -1 ; end
 
@@ -4269,17 +4323,17 @@ PicnickerGroup:
 	db 14
 	dw HOPPIP
 	db 14
-	dw HOPPIP
+	dw SUNKERN
 	db 17
 	dw IVYSAUR
 	db -1 ; end
 
 	next_list_item ; PICNICKER (10)
-	db "ERIN@", TRAINERTYPE_NORMAL
-	db 16
-	dw PONYTA
-	db 16
-	dw PONYTA
+	db "ERIN@", TRAINERTYPE_NORMAL ; Route 46...post-blackthorn? I-I'm speechless, this genuinely makes me angry, TWO L16 PONYTAS
+	db 30 ; Technically post-Sudowoodo you can find your way there, but this is still unjustified as hell
+	dw RAPIDASH
+	db 33
+	dw FURRET
 	db -1 ; end
 
 	next_list_item ; PICNICKER (11)
@@ -4293,7 +4347,7 @@ PicnickerGroup:
 	next_list_item ; PICNICKER (12)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 19
-	dw WEEPINBELL
+	dw BELLIGNAN
 	db 19
 	dw NIDORINO
 	db 21
@@ -4301,19 +4355,19 @@ PicnickerGroup:
 	db -1 ; end
 
 	next_list_item ; PICNICKER (13)
-	db "HEIDI@", TRAINERTYPE_NORMAL
-	db 32
-	dw SKIPLOOM
-	db 32
-	dw SKIPLOOM
+	db "HEIDI@", TRAINERTYPE_NORMAL ; literally IN KANTO ROUTE 9
+	db 42
+	dw SKIPLOOM; TANGROWTH
+	db 42
+	dw JUMPLUFF
 	db -1 ; end
 
 	next_list_item ; PICNICKER (14)
 	db "EDNA@", TRAINERTYPE_NORMAL
-	db 30
-	dw NIDORINA
-	db 34
-	dw RAICHU
+	db 40
+	dw NIDOQUEEN
+	db 44
+	dw RAICHU ; GOROCHU ; KANTO ROUTE 9???
 	db -1 ; end
 
 	next_list_item ; PICNICKER (15)
@@ -4321,13 +4375,13 @@ PicnickerGroup:
 	db 26
 	dw SKIPLOOM
 	db 26
-	dw SKIPLOOM
+	dw SUNFLORA
 	db 29
 	dw IVYSAUR
 	db -1 ; end
 
 	next_list_item ; PICNICKER (16)
-	db "TIFFANY@", TRAINERTYPE_MOVES
+	db "TIFFANY@", TRAINERTYPE_MOVES ; Route 43
 	db 31
 	dw CLEFAIRY
 	dw ENCORE, SING, DOUBLESLAP, MINIMIZE
@@ -4343,35 +4397,38 @@ PicnickerGroup:
 	next_list_item ; PICNICKER (18)
 	db "ERIN@", TRAINERTYPE_NORMAL
 	db 32
-	dw PONYTA
+	dw RAPIDASH
 	db 32
-	dw PONYTA
+	dw FURRET ; will fix levels when i can be bothered, rematches are hard
 	db -1 ; end
 
 	next_list_item ; PICNICKER (19)
-	db "TANYA@", TRAINERTYPE_NORMAL
-	db 37
+	db "TANYA@", TRAINERTYPE_NORMAL ; celadon gym???
+	db 47
 	dw EXEGGUTOR
+	db 48
+	dw VICTREEBEL ; surely more can be done too
 	db -1 ; end
 
 	next_list_item ; PICNICKER (20)
-	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 20
+	db "TIFFANY@", TRAINERTYPE_NORMAL ; first fight on route 43
+	db 30 ; and no the moves thing wasn't needed
 	dw CLEFAIRY
-	dw ENCORE, SING, DOUBLESLAP, MINIMIZE
+	db 34
+	dw JIGGLYPUFF ; 90% sure there's a better way to do this
 	db -1 ; end
 
 	next_list_item ; PICNICKER (21)
 	db "ERIN@", TRAINERTYPE_MOVES
 	db 36
-	dw PONYTA
+	dw RAPIDASH
 	dw DOUBLE_TEAM, STOMP, FIRE_SPIN, SUNNY_DAY
 	db 34
 	dw RAICHU
 	dw SWIFT, MUD_SLAP, QUICK_ATTACK, THUNDERBOLT
 	db 36
-	dw PONYTA
-	dw DOUBLE_TEAM, STOMP, FIRE_SPIN, SUNNY_DAY
+	dw FURRET
+	dw HEADBUTT, QUICK_ATTACK, DEFENSE_CURL, ROLLOUT ; flashbang
 	db -1 ; end
 
 	next_list_item ; PICNICKER (22)
@@ -4402,7 +4459,7 @@ PicnickerGroup:
 	db 30
 	dw SKIPLOOM
 	db 30
-	dw SKIPLOOM
+	dw SUNFLORA
 	db 32
 	dw IVYSAUR
 	db -1 ; end
@@ -4412,9 +4469,9 @@ PicnickerGroup:
 	db 33
 	dw JUMPLUFF
 	dw STUN_SPORE, SUNNY_DAY, LEECH_SEED, COTTON_SPORE
-	db 33
-	dw JUMPLUFF
-	dw SUNNY_DAY, SLEEP_POWDER, LEECH_SEED, COTTON_SPORE
+	db 35
+	dw SUNFLORA
+	dw SUNNY_DAY, SOLARBEAM, RAZOR_LEAF, PETAL_DANCE
 	db 38
 	dw VENUSAUR
 	dw SOLARBEAM, RAZOR_LEAF, HEADBUTT, MUD_SLAP
@@ -4434,20 +4491,22 @@ CamperGroup:
 	db "ROLAND@", TRAINERTYPE_NORMAL
 	db 9
 	dw NIDORAN_M
+	db 11
+	dw PHANPY
 	db -1 ; end
 
 	next_list_item ; CAMPER (2)
 	db "TODD@", TRAINERTYPE_NORMAL
 	db 14
-	dw PSYDUCK
+	dw WOOPER
 	db -1 ; end
 
 	next_list_item ; CAMPER (3)
 	db "IVAN@", TRAINERTYPE_NORMAL
 	db 10
-	dw DIGLETT
+	dw SNUBBULL
 	db 10
-	dw ZUBAT
+	dw BITTYBAT
 	db 14
 	dw DIGLETT
 	db -1 ; end
@@ -4463,12 +4522,12 @@ CamperGroup:
 	next_list_item ; CAMPER (5)
 	db "BARRY@", TRAINERTYPE_NORMAL
 	db 36
-	dw NIDOKING
+	dw NIDOKING ; Fuchsia Gym
 	db -1 ; end
 
 	next_list_item ; CAMPER (6)
 	db "LLOYD@", TRAINERTYPE_NORMAL
-	db 34
+	db 34 ; Kanto Route 25
 	dw NIDOKING
 	db -1 ; end
 
@@ -4476,7 +4535,7 @@ CamperGroup:
 	db "DEAN@", TRAINERTYPE_NORMAL
 	db 33
 	dw GOLDUCK
-	db 31
+	db 31 ; Kanto Route 9
 	dw SANDSLASH
 	db -1 ; end
 
@@ -4485,7 +4544,7 @@ CamperGroup:
 	db 32
 	dw DUGTRIO
 	db 29
-	dw PRIMEAPE
+	dw PRIMEAPE ; Kanto Route 9
 	db 29
 	dw POLIWRATH
 	db -1 ; end
@@ -4493,12 +4552,12 @@ CamperGroup:
 	next_list_item ; CAMPER (9)
 	db "HARVEY@", TRAINERTYPE_NORMAL
 	db 15
-	dw NIDORINO
+	dw NIDORINO ; Unused?
 	db -1 ; end
 
 	next_list_item ; CAMPER (10)
 	db "DALE@", TRAINERTYPE_NORMAL
-	db 15
+	db 15 ; unused?
 	dw NIDORINO
 	db -1 ; end
 
@@ -4511,21 +4570,21 @@ CamperGroup:
 	next_list_item ; CAMPER (12)
 	db "TODD@", TRAINERTYPE_NORMAL
 	db 17
-	dw GEODUDE
+	dw PHANPY
 	db 17
 	dw GEODUDE
 	db 23
-	dw PSYDUCK
+	dw QUAGSIRE
 	db -1 ; end
 
 	next_list_item ; CAMPER (13)
 	db "TODD@", TRAINERTYPE_NORMAL
 	db 23
-	dw GEODUDE
+	dw PHANPY
 	db 23
-	dw GEODUDE
+	dw GRAVELER
 	db 26
-	dw PSYDUCK
+	dw QUAGSIRE
 	db -1 ; end
 
 	next_list_item ; CAMPER (14)
@@ -4535,7 +4594,7 @@ CamperGroup:
 	db 36
 	dw GRAVELER
 	db 40
-	dw GOLBAT
+	dw GOLBAT ; unused?
 	db 42
 	dw GOLDUCK
 	db -1 ; end
@@ -4546,7 +4605,7 @@ CamperGroup:
 	dw GRAVELER
 	db 36
 	dw GRAVELER
-	db 40
+	db 40 ; unused?
 	dw GOLBAT
 	db 42
 	dw GOLDUCK
@@ -4558,7 +4617,7 @@ CamperGroup:
 	dw GRAVELER
 	db 36
 	dw GRAVELER
-	db 40
+	db 40 ; unused?
 	dw GOLBAT
 	db 42
 	dw GOLDUCK
@@ -4570,7 +4629,7 @@ CamperGroup:
 	dw GRAVELER
 	db 36
 	dw GRAVELER
-	db 40
+	db 40 ; unused?
 	dw GOLBAT
 	db 42
 	dw GOLDUCK
@@ -4578,63 +4637,82 @@ CamperGroup:
 
 	next_list_item ; CAMPER (18)
 	db "JERRY@", TRAINERTYPE_NORMAL
-	db 37
+	db 37 ; Pewter Gym, lots of improvements to make
 	dw SANDSLASH
 	db -1 ; end
 
 	next_list_item ; CAMPER (19)
-	db "SPENCER@", TRAINERTYPE_NORMAL
-	db 17
+	db "SPENCER@", TRAINERTYPE_NORMAL ; Route 43
+	db 30
 	dw SANDSHREW
-	db 17
+	db 30
 	dw SANDSLASH
-	db 19
-	dw ZUBAT
+	db 32
+	dw GOLBAT
 	db -1 ; end
 
 	next_list_item ; CAMPER (20)
 	db "TODD@", TRAINERTYPE_NORMAL
 	db 30
-	dw GRAVELER
+	dw DONPHAN
 	db 30
 	dw GRAVELER
 	db 30
 	dw SLUGMA
 	db 32
-	dw PSYDUCK
+	dw QUAGSIRE
 	db -1 ; end
 
 	next_list_item ; CAMPER (21)
 	db "TODD@", TRAINERTYPE_MOVES
-	db 33
-	dw GRAVELER
+	db 45
+	dw DONPHAN
+	dw EARTHQUAKE, RAPID_SPIN, ROLLOUT, DEFENSE_CURL
+	db 43
+	dw GOLEM
 	dw SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 33
-	dw GRAVELER
-	dw SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 36
+	db 46
 	dw MAGCARGO
 	dw ROCK_THROW, HARDEN, AMNESIA, FLAMETHROWER
-	db 34
-	dw GOLDUCK
-	dw DISABLE, PSYCHIC_M, SURF, PSYCH_UP
+	db 44
+	dw QUAGSIRE
+	dw SURF, AMNESIA, EARTHQUAKE, RAIN_DANCE
 	db -1 ; end
 
 	next_list_item ; CAMPER (22)
-	db "QUENTIN@", TRAINERTYPE_NORMAL
-	db 30
+	db "QUENTIN@", TRAINERTYPE_NORMAL ; Route 45
+	db 32 ; It seems the devs realised they messed up this area and fixed it real quick
 	dw FEAROW
-	db 30
-	dw PRIMEAPE
-	db 30
+	db 32
+	dw PRIMEAPE ; ANNIHILAPE??
+	db 34
 	dw TAUROS
 	db -1 ; end
 
 	end_list_items
 
-ExecutiveFGroup:
+ExecutiveFGroup: ; Ariana
 	next_list_item ; EXECUTIVEF (1)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES
+	db "EXECUTIVE@", TRAINERTYPE_MOVES ; Radio Tower
+	db 30
+	dw BELLEDAM
+	dw PURSUIT, HEAL_BELL, LOVELY_KISS, FAINT_ATTACK
+	db 32
+	dw ARBOK
+	dw WRAP, POISON_STING, BITE, GLARE
+	db 32
+	dw MUK ; A fun thing we can do is acknowledge Team Rocket is Kantonian and give the Pokemon Kanto-exclusive TMs. Show they have money and power!
+	dw SLUDGE, SELFDESTRUCT, MINIMIZE, DISABLE
+	db 32
+	dw VILEPLUME
+	dw ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
+	db 32
+	dw MURKROW ; HONCHKROW?
+	dw PECK, PURSUIT, HAZE, NIGHT_SHADE
+	db -1 ; end
+
+	next_list_item ; EXECUTIVEF (2)
+	db "EXECUTIVE@", TRAINERTYPE_MOVES ; Radio Tower
 	db 32
 	dw ARBOK
 	dw WRAP, POISON_STING, BITE, GLARE
@@ -4642,21 +4720,9 @@ ExecutiveFGroup:
 	dw VILEPLUME
 	dw ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
 	db 32
-	dw MURKROW
+	dw MURKROW ; HONCHKROW?
 	dw PECK, PURSUIT, HAZE, NIGHT_SHADE
-	db -1 ; end
-
-	next_list_item ; EXECUTIVEF (2)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES
-	db 23
-	dw ARBOK
-	dw WRAP, LEER, POISON_STING, BITE
-	db 23
-	dw GLOOM
-	dw ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
-	db 25
-	dw MURKROW
-	dw PECK, PURSUIT, HAZE, NO_MOVE
+	; Sneasler
 	db -1 ; end
 
 	end_list_items
@@ -4739,28 +4805,30 @@ SageGroup:
 	dw FLASH, VINE_WHIP, GROWTH, WRAP
 	db -1 ; end
 
+; So these sages are in the Dragon's Den but end up being the Kimono Girls but again.
+; Let's give them the Eeveelutions the Kimono Girls don't have!
 	next_list_item ; SAGE (10)
 	db "GAKU@", TRAINERTYPE_NORMAL
-	db 32
+	db 42
 	dw NOCTOWL
-	db 32
-	dw FLAREON
+	db 42
+	dw LEAFEON
 	db -1 ; end
 
 	next_list_item ; SAGE (11)
 	db "MASA@", TRAINERTYPE_NORMAL
-	db 32
+	db 42
 	dw NOCTOWL
-	db 32
-	dw JOLTEON
+	db 42
+	dw GLACEON
 	db -1 ; end
 
 	next_list_item ; SAGE (12)
 	db "KOJI@", TRAINERTYPE_NORMAL
-	db 32
+	db 42
 	dw NOCTOWL
-	db 32
-	dw VAPOREON
+	db 42
+	dw SYLVEON
 	db -1 ; end
 
 	end_list_items
@@ -4769,84 +4837,82 @@ MediumGroup:
 	next_list_item ; MEDIUM (1)
 	db "MARTHA@", TRAINERTYPE_NORMAL
 	db 18
-	dw GASTLY
+	dw MISDREAVUS
 	db 20
 	dw HAUNTER
-	db 20
-	dw GASTLY
 	db -1 ; end
 
 	next_list_item ; MEDIUM (2)
 	db "GRACE@", TRAINERTYPE_NORMAL
 	db 20
-	dw HAUNTER
+	dw BIPULLA
 	db 20
-	dw HAUNTER
+	dw MISDREAVUS
 	db -1 ; end
 
 	next_list_item ; MEDIUM (3)
-	db "BETHANY@", TRAINERTYPE_NORMAL
+	db "BETHANY@", TRAINERTYPE_NORMAL ; Unused?
 	db 25
 	dw HAUNTER
 	db -1 ; end
 
 	next_list_item ; MEDIUM (4)
-	db "MARGRET@", TRAINERTYPE_NORMAL
+	db "MARGRET@", TRAINERTYPE_NORMAL ; unused
 	db 25
 	dw HAUNTER
 	db -1 ; end
 
 	next_list_item ; MEDIUM (5)
-	db "ETHEL@", TRAINERTYPE_NORMAL
+	db "ETHEL@", TRAINERTYPE_NORMAL ; unused
 	db 25
 	dw HAUNTER
 	db -1 ; end
 
 	next_list_item ; MEDIUM (6)
-	db "REBECCA@", TRAINERTYPE_NORMAL
-	db 35
-	dw DROWZEE
+	db "REBECCA@", TRAINERTYPE_NORMAL ; Saffron Gym
 	db 35
 	dw HYPNO
+	db 35
+	dw SLOWKING
 	db -1 ; end
 
 	next_list_item ; MEDIUM (7)
-	db "DORIS@", TRAINERTYPE_NORMAL
+	db "DORIS@", TRAINERTYPE_NORMAL ; Saffron Gym
 	db 34
-	dw SLOWPOKE
+	dw HYPNO
 	db 36
 	dw SLOWBRO
 	db -1 ; end
 
 	end_list_items
 
-BoarderGroup:
+BoarderGroup: ; All in Pryce's Gym. Could expand to Ice Path and Seafoam.
 	next_list_item ; BOARDER (1)
 	db "RONALD@", TRAINERTYPE_NORMAL
-	db 24
-	dw SEEL
-	db 25
+	db 28
+	dw SNEASEL
+	db 29
 	dw DEWGONG
-	db 24
+	db 30
 	dw SEEL
 	db -1 ; end
 
 	next_list_item ; BOARDER (2)
 	db "BRAD@", TRAINERTYPE_NORMAL
-	db 26
+	db 28
 	dw SWINUB
-	db 26
-	dw SWINUB
+	db 28
+	dw SWINUB ; WARFURS
 	db -1 ; end
 
 	next_list_item ; BOARDER (3)
 	db "DOUGLAS@", TRAINERTYPE_NORMAL
-	db 24
+	db 27
 	dw SHELLDER
-	db 25
+	db 30
 	dw CLOYSTER
-	db 24
-	dw SHELLDER
+	db 26
+	dw SHELLDER ; BUU
 	db -1 ; end
 
 	end_list_items
@@ -4874,7 +4940,7 @@ PokefanMGroup:
 	db -1 ; end
 
 	next_list_item ; POKEFANM (4)
-	db "JOSHUA@", TRAINERTYPE_ITEM
+	db "JOSHUA@", TRAINERTYPE_ITEM ; Kanto Route 13
 	db 23
 	dw PIKACHU
 	db BERRY
@@ -4909,9 +4975,24 @@ PokefanMGroup:
 	db -1 ; end
 
 	next_list_item ; POKEFANM (6)
-	db "TREVOR@", TRAINERTYPE_ITEM
-	db 33
-	dw PSYDUCK
+	db "TREVOR@", TRAINERTYPE_ITEM ; Kanto Route 14
+	db 23 ; Previously a Psyduck trainer, now 6 Kotora.
+	dw KOTORA
+	db BERRY
+	db 23
+	dw KOTORA
+	db BERRY
+	db 23
+	dw KOTORA
+	db BERRY
+	db 23
+	dw KOTORA
+	db BERRY
+	db 23
+	dw KOTORA
+	db BERRY
+	db 23
+	dw KOTORA
 	db BERRY
 	db -1 ; end
 
@@ -4923,12 +5004,12 @@ PokefanMGroup:
 	db -1 ; end
 
 	next_list_item ; POKEFANM (8)
-	db "JEREMY@", TRAINERTYPE_ITEM
+	db "JEREMY@", TRAINERTYPE_ITEM ; ss aqua
 	db 28
 	dw MEOWTH
 	db BERRY
 	db 28
-	dw MEOWTH
+	dw MOIBELLE
 	db BERRY
 	db 28
 	dw MEOWTH
@@ -4972,28 +5053,33 @@ PokefanMGroup:
 	next_list_item ; POKEFANM (13)
 	db "REX@", TRAINERTYPE_ITEM
 	db 35
-	dw PHANPY
+	dw DONPHAN
 	db BERRY
 	db -1 ; end
 
 	next_list_item ; POKEFANM (14)
 	db "ALLAN@", TRAINERTYPE_ITEM
 	db 35
-	dw TEDDIURSA
+	dw URSARING
 	db BERRY
 	db -1 ; end
 
 	end_list_items
 
+; Unusually, Naoko specifically has an unused fight.
+; Maybe we can do something with her in Nihon.
+; I've geared up the team, anyway.
 KimonoGirlGroup:
 	next_list_item ; KIMONO_GIRL (1)
 	db "NAOKO@", TRAINERTYPE_NORMAL
-	db 20
-	dw SKIPLOOM
-	db 20
-	dw VULPIX
-	db 18
-	dw SKIPLOOM
+	db 30
+	dw SUNFLORA
+	db 36
+	dw NINETALES
+	db 38
+	dw JUMPLUFF
+	db 45
+	dw FLAREON
 	db -1 ; end
 
 	next_list_item ; KIMONO_GIRL (2)
@@ -5028,6 +5114,9 @@ KimonoGirlGroup:
 
 	end_list_items
 
+; No rematches here, just a lot of unused dupes.
+; Potential alt usage? rename a few?
+; See spreadsheet for combinations.
 TwinsGroup:
 	next_list_item ; TWINS (1)
 	db "AMY & MAY@", TRAINERTYPE_NORMAL
@@ -5233,6 +5322,8 @@ BlueGroup:
 OfficerGroup:
 	next_list_item ; OFFICER (1)
 	db "KEITH@", TRAINERTYPE_NORMAL
+	db 14
+	dw HOOTHOOT
 	db 17
 	dw GROWLITHE
 	db -1 ; end
@@ -5240,7 +5331,7 @@ OfficerGroup:
 	next_list_item ; OFFICER (2)
 	db "DIRK@", TRAINERTYPE_NORMAL
 	db 14
-	dw GROWLITHE
+	dw SPINARAK
 	db 14
 	dw GROWLITHE
 	db -1 ; end
