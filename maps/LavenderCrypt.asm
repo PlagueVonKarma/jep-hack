@@ -9,6 +9,7 @@ LavenderCrypt_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event  8, 17, SOUL_HOUSE, 3
 
 	def_coord_events
 

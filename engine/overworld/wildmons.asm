@@ -27,7 +27,7 @@ LoadWildMonData:
 
 FindNest:
 ; Parameters:
-; e: 0 = Johto, 1 = Kanto
+; e: 0 = Johto, 1 = Kanto, 2 = Nihon
 ; wNamedObjectIndex: species
 	hlcoord 0, 0
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT

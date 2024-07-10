@@ -58,4 +58,5 @@ Tilesets::
 	tileset TilesetNihonOld
 	tileset TilesetNihonSouth
 	tileset TilesetNihonWest
+	tileset TilesetLavenderCrypt
 	assert_table_length NUM_TILESETS + 1

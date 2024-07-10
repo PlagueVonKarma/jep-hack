@@ -30,6 +30,7 @@ The Fairy-type does exist.
 	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
 	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
 	- The Painter from FRLG!
+- Numerous new maps, featuring new locations, the iconic Sevii Islands, and the Nihon region!
 
 ## QoL Changes
 - A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
@@ -69,9 +70,10 @@ In general, there have been many wild encounter tweaks. View this document for d
 	db 64, BRICK_PIECE
 
 ## Item Changes
-- Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo!
+- Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo, and the Peat Block!
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
 - The Antique Pot has been added to accomodate a Shuckle evolution!
+- New Club and Wing Fossils - you'll have to see what these do!
 
 # Credits
 - Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
@@ -84,6 +86,7 @@ In general, there have been many wild encounter tweaks. View this document for d
 - Rezzo (GSC-specific advice)
 - Old Dance Jacket (GSC-specific advice)
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
+- ausma (KEP Developer, legacy)
 
 # Sprite Credits
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, 
@@ -96,6 +99,8 @@ In general, there have been many wild encounter tweaks. View this document for d
 - Seasick: Kris running sprite
 - Ferropexola/aforward9600: Time of day-based tileset palette code
 
+
+Original readme proceeding...
 # 16-bit index expansion for Crystal
 
 This repository contains a modified Pokémon Crystal game, updated to handle 16-bit indexes. The main goal of this

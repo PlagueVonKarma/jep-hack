@@ -576,3 +576,15 @@ INCBIN "data/tilesets/pokecenter_metatiles.bin"
 
 TilesetPokecenterColl::
 INCLUDE "data/tilesets/pokecenter_collision.asm"
+
+TilesetLavenderCryptAttr::
+INCBIN "data/tilesets/lavendercrypt_attributes.bin"
+
+TilesetLavenderCryptGFX::
+INCBIN "gfx/tilesets/lavendercrypt.2bpp.lz"
+
+TilesetLavenderCryptMeta::
+INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
+
+TilesetLavenderCryptColl::
+INCLUDE "data/tilesets/lavendercrypt_collision.asm"

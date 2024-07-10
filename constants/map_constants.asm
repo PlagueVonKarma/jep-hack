@@ -390,7 +390,7 @@ ENDM
 	map_const LAV_RADIO_TOWER_1F,                          10,  4 ; 12
 	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 13
 	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 14
-	map_const LAVENDER_CRYPT,							   10, 10 ; 15
+	map_const LAVENDER_CRYPT,							    9, 10 ; 15
 	endgroup
 
 	newgroup SILVER                                               ; 19

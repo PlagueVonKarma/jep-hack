@@ -108,6 +108,9 @@ INCLUDE "gfx/tilesets/battle_tower_inside_palette_map.asm"
 TilesetBattleTowerOutsidePalMap:
 INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
 
+TilesetLavenderCryptPalMap:
+INCLUDE "gfx/tilesets/lavendercrypt_palette_map.asm"
+
 MapGroupPalettes: ; unreferenced
 ; entries correspond to MAPGROUP_* constants
 rept NUM_MAP_GROUPS

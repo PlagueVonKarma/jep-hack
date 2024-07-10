@@ -901,5 +901,33 @@ KantoGrassWildMons:
 	dbw 36, PARAS
 	dbw 36, PIKACHU
 	end_grass_wildmons
-	
+
+	def_grass_wildmons LAVENDER_CRYPT
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 33, GASTLY
+	dbw 36, GASTLY
+	dbw 32, HAUNTER
+	dbw 44, CUBONE
+	dbw 44, WISPIRIT
+	dbw 44, WISPIRIT
+	dbw 44, MAROWAK
+	; day
+	dbw 32, GASTLY
+	dbw 34, GASTLY
+	dbw 38, HAUNTER
+	dbw 36, CUBONE
+	dbw 46, WISPIRIT
+	dbw 46, WISPIRIT
+	dbw 46, MAROWAK
+	; nite
+	dbw 34, GASTLY
+	dbw 38, MISDREAVUS
+	dbw 36, HAUNTER
+	dbw 32, KITSEN
+	dbw 42, WISPIRIT
+	dbw 42, WISPIRIT
+	dbw 42, GENGAR
+	end_grass_wildmons
+
 	db -1 ; end
