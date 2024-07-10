@@ -42,6 +42,9 @@ Landmarks:
 	landmark  28,  92, WhirlIslandsName
 	landmark  28, 100, Route41Name
 	landmark  20, 100, CianwoodCityName
+	landmark   0,   0, UnknownName ; Route 47
+	landmark   0,   0, UnknownName ; Route 48
+	landmark   0,   0, UnknownName ; Johto Safari Zone
 	landmark  92,  44, Route42Name
 	landmark  84,  44, MtMortarName
 	landmark 108,  44, MahoganyTownName
@@ -64,11 +67,13 @@ Landmarks:
 	landmark  52,  52, PewterCityName
 	landmark  64,  52, Route3Name
 	landmark  76,  52, MtMoonName
+	landmark   0,   0, UnknownName ; Mt. Moon Crater
 	landmark  88,  52, Route4Name
 	landmark 100,  52, CeruleanCityName
     landmark 108,  52, CeruleanCaveName
 	landmark 100,  44, Route24Name
 	landmark 108,  36, Route25Name
+	landmark   0,   0, UnknownName ; Bill's Garden
 	landmark 100,  60, Route5Name
 	landmark 108,  76, UndergroundName
 	landmark 100,  76, Route6Name
@@ -78,11 +83,13 @@ Landmarks:
 	landmark 116,  68, Route8Name
 	landmark 116,  52, Route9Name
 	landmark 132,  52, RockTunnelName
+	landmark   0,   0, UnknownName ; Underwater Tunnel
 	landmark 132,  56, Route10Name
 	landmark 132,  60, PowerPlantName
 	landmark 132,  68, LavenderTownName
 	landmark 140,  68, LavRadioTowerName
 	landmark  76,  68, CeladonCityName
+	landmark   0,   0, UnknownName ; Celadon University
 	landmark 100,  68, SaffronCityName
 	landmark 116,  84, Route11Name
 	landmark 132,  80, Route12Name
@@ -93,6 +100,7 @@ Landmarks:
 	landmark  68,  92, Route17Name
 	landmark  80, 116, Route18Name
 	landmark  92, 116, FuchsiaCityName
+	landmark   0,   0, UnknownName ; Kanto Safari Zone
 	landmark  92, 128, Route19Name
 	landmark  76, 132, Route20Name
 	landmark  68, 132, SeafoamIslandsName
@@ -102,14 +110,28 @@ Landmarks:
 	landmark  28,  52, VictoryRoadName
 	landmark  28,  44, Route23Name
 	landmark  28,  36, IndigoPlateauName
+	landmark   0,   0, UnknownName ; Citrine City 
+	landmark   0,   0, UnknownName ; Brunswick Trail 
+	landmark   0,   0, UnknownName ; Brunswick Grotto 
+	landmark   0,   0, UnknownName ; Garnet Cavern 
+	landmark   0,   0, UnknownName ; Celeste Hill Cave 
+	landmark   0,   0, UnknownName ; Celeste Hill
 	landmark  28,  92, Route26Name
 	landmark  20, 100, Route27Name
 	landmark  12, 100, TohjoFallsName
 	landmark  20,  68, Route28Name
 	landmark 140, 116, FastShipName
+	; Sevii stuff 
+	landmark   0,   0, UnknownName ; One Island
+	landmark   0,   0, UnknownName ; Two Island
+	landmark   0,   0, UnknownName ; Three Island
+	landmark   0,   0, UnknownName ; Four Island
+	landmark   0,   0, UnknownName ; Five Island
+	landmark   0,   0, UnknownName ; Six Island
+	landmark   0,   0, UnknownName ; Seven Island
 	assert_table_length NIHON_LANDMARK
 	landmark 92, 108, SilentHillsName
-	landmark 20,  28, UnknownName
+	landmark 20,  28, UnknownName ; Debug Room 
 	landmark 91, 108, Route49Name ; probably not correct
 	landmark 91, 108, QuietCaveName ; probably not correct
 	landmark 140, 60, BlueForestName

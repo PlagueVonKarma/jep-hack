@@ -30,10 +30,28 @@ OutdoorSprites:
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw CitrineGroupSprites
+	dw OneIslandGroupSprites
+	dw TwoIslandGroupSprites
+	dw ThreeIslandGroupSprites
+	dw FourIslandGroupSprites
+	dw FiveIslandGroupSprites
+	dw SixIslandGroupSprites
+	dw SevenIslandGroupSprites
 	dw SilentHillsGroupSprites
 	dw BlueForestGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
+; Since these areas aren't done yet, their outdoor sprites will just use Pallet's.
+; Change as apt later. Right now, it's a space-saver.
+CitrineGroupSprites:
+OneIslandGroupSprites:
+TwoIslandGroupSprites:
+ThreeIslandGroupSprites:
+FourIslandGroupSprites:
+FiveIslandGroupSprites:
+SixIslandGroupSprites:
+SevenIslandGroupSprites:
 PalletGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

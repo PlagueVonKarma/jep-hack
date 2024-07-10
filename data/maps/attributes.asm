@@ -721,10 +721,96 @@ ENDM
 	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $00, 0
 	map_attributes CeruleanCaveB1F, CERULEAN_CAVE_B1F, $00, 0
 	map_attributes DebugRoom, DEBUG_ROOM, $05, 0 ; Debug Room :V
-	map_attributes CliffCave, CLIFF_CAVE, $00, 0
+	
+	; WIP Maps (need to be connected later)
+	map_attributes Route47, ROUTE_47, $00, 0 ; Bank 1
+	map_attributes CliffCave, CLIFF_CAVE, $00, 0 ; Bank 1
+	map_attributes CliffEdgeGate, CLIFF_EDGE_GATE, $00, 0 ; Bank 1
+	map_attributes EmbeddedTower, EMBEDDED_TOWER, $00, 0 ; Bank 1
+	map_attributes Route48, ROUTE_48, $00, 0 ; Bank 1
+	map_attributes JohtoSafariZoneGate, JOHTO_SAFARI_ZONE_GATE, $00, 0 ; Bank 1
+	map_attributes JohtoSafariZone, JOHTO_SAFARI_ZONE, $00, 0 ; Bank 1
+	map_attributes LavenderCrypt, LAVENDER_CRYPT, $00, 0 ; Bank 1
+	map_attributes UnderwaterTunnel, UNDERWATER_TUNNEL, $00, 0 ; Bank 1
+	map_attributes BillsGarden, BILLS_GARDEN, $00, 0 ; Bank 1
+	map_attributes CeladonUniversityOutside, CELADON_UNIVERSITY_OUTSIDE, $00, 0 ; Bank 1
+	map_attributes CeladonUniversityInside, CELADON_UNIVERSITY_INSIDE, $00, 0 ; Bank 1
+	map_attributes MtMoonCrater, MT_MOON_CRATER, $00, 0 ; Bank 1
+	map_attributes MtMoonCraterDepths, MT_MOON_CRATER_DEPTHS, $00, 0 ; Bank 1
+	map_attributes SeafoamIslands1F, SEAFOAM_ISLANDS_1F, $00, 0 ; Bank 1
+	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $00, 0 ; Bank 1
+	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $00, 0 ; Bank 1
+	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $00, 0 ; Bank 1
+	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $00, 0 ; Bank 1
+	
+	; Citrine City Maps
+	map_attributes CitrineCity, CITRINE_CITY, $00, 0 ; Bank 2
+	map_attributes BrunswickTrail, BRUNSWICK_TRAIL, $00, 0 ; Bank 2
+	map_attributes BrunswickGlade, BRUNSWICK_GLADE, $00, 0 ; Bank 2
+	map_attributes BrunswickGrotto, BRUNSWICK_GROTTO, $00, 0 ; Bank 2
+	map_attributes GarnetCavern1F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
+	map_attributes GarnetCavern2F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
+	map_attributes GarnetCavernB1F, GARNET_CAVERN_1F, $00, 0 ; Bank 2
+	map_attributes CelesteHill, CELESTE_HILL, $00, 0 ; Bank 2
+	map_attributes CelesteHillCave, CELESTE_HILL_CAVE, $00, 0 ; Bank 2
+	
+	; Sevii Island Sizzle Reel
+	map_attributes FarawayIslandOutside, FARAWAY_ISLAND_OUTSIDE, $00, 0 ; Bank 2
+	map_attributes FarawayIslandInside, FARAWAY_ISLAND_INSIDE, $00, 0 ; Bank 2
+	map_attributes OneIsland, ONE_ISLAND, $00, 0 ; Bank 2
+	map_attributes TreasureBeach, TREASURE_BEACH, $00, 0 ; Bank 2
+	map_attributes KindleRoad, KINDLE_ROAD, $00, 0 ; Bank 2
+	map_attributes MtEmberExterior, MT_EMBER_EXTERIOR, $00, 0 ; Bank 2
+	map_attributes MtEmberInterior, MT_EMBER_INTERIOR, $00, 0 ; Bank 2
+	map_attributes MtEmberSummit, MT_EMBER_SUMMIT, $00, 0 ; Bank 2
+	map_attributes MtEmberHiddenPath, MT_EMBER_HIDDEN_PATH, $00, 0 ; Bank 2
+	
+	map_attributes TwoIsland, TWO_ISLAND, $00, 0 ; Bank 2
+	map_attributes CapeBrink, CAPE_BRINK, $00, 0 ; Bank 2
+	
+	map_attributes ThreeIslandPort, THREE_ISLAND_PORT, $00, 0 ; Bank 2
+	map_attributes ThreeIsland, THREE_ISLAND, $00, 0 ; Bank 3 
+	map_attributes BondBridge, BOND_BRIDGE, $00, 0 ; Bank 3
+	map_attributes BerryForest, BERRY_FOREST, $00, 0 ; Bank 3
+	
+	map_attributes FourIsland, FOUR_ISLAND, $00, 0 ; Bank 3
+	map_attributes IcefallCaveEntrance, ICEFALL_CAVE_ENTRANCE, $00, 0 ; Bank 3
+	map_attributes IcefallCave1F, ICEFALL_CAVE_1F, $00, 0 ; Bank 3
+	map_attributes IcefallCaveB1F, ICEFALL_CAVE_B1F, $00, 0 ; Bank 3
+	map_attributes IcefallCaveBack, ICEFALL_CAVE_BACK, $00, 0 ; Bank 3
+	
+	map_attributes FiveIsland, FIVE_ISLAND, $00, 0
+	map_attributes FiveIslandMeadow, FIVE_ISLAND_MEADOW, $00, 0
+	map_attributes MemorialPillar, MEMORIAL_PILLAR, $00, 0
+	map_attributes WaterLabyrinth, WATER_LABYRINTH, $00, 0
+	map_attributes ResortGorgeous, RESORT_GORGEOUS, $00, 0
+	map_attributes LostCave, LOST_CAVE, $00, 0
+	
+	map_attributes SixIsland, SIX_ISLAND, $00, 0
+	map_attributes WaterPath, WATER_PATH, $00, 0
+	map_attributes RuinValley, RUIN_VALLEY, $00, 0
+	map_attributes DottedHole, DOTTED_HOLE, $00, 0
+	map_attributes GreenPath, GREEN_PATH, $00, 0
+	map_attributes PatternBush, PATTERN_BUSH, $00, 0
+	map_attributes OutcastIsland, OUTCAST_ISLAND, $00, 0
+	map_attributes AlteringCave, ALTERING_CAVE, $00, 0
+	
+	map_attributes SevenIsland, SEVEN_ISLAND, $00, 0
+	map_attributes CanyonEntrance, CANYON_ENTRANCE, $00, 0
+	map_attributes SevaultCanyon, SEVAULT_CANYON, $00, 0
+	map_attributes TanobyRuins, TANOBY_RUINS, $00, 0
+	map_attributes TanobyChambers, TANOBY_CHAMBERS, $00, 0
+	map_attributes NavalRockExterior, NAVAL_ROCK_EXTERIOR, $00, 0
+	map_attributes NavalRock1F, NAVAL_ROCK_1F, $00, 0
+	map_attributes NavalRock2F, NAVAL_ROCK_2F, $00, 0
+	map_attributes NavalRockB1F, NAVAL_ROCK_B1F, $00, 0
+	
+	; Nihon
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
 	map_attributes SilversHouse, SILVERS_HOUSE, $00, 0
 	map_attributes CalsHouse1F, CALS_HOUSE_1F, $00, 0
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
+	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
+	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0

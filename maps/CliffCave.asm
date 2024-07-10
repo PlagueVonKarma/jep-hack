@@ -21,8 +21,15 @@ CliffCaveMan:
 	end
 
 CliffCaveManText:
-	text "Comment to be"
-	line "written."
+	text "I remember a"
+	line "friend talking"
+	cont "about a strange"
+	cont "#MON in UNION"
+	cont "CAVE."
+	
+	para "It was red, and"
+	line "bobbed a flaming"
+	cont "rock on its nose!"
 	done
 
 CliffCaveRock:

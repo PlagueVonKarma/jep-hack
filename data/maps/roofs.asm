@@ -38,8 +38,16 @@ MapGroupRoofs:
 	db ROOF_NEW_BARK  ; 24 (New Bark)
 	db -1             ; 25
 	db ROOF_NEW_BARK  ; 26 (Cherrygrove)
-	db ROOF_NEW_BARK  ; 27 (Silent Hills)
-	db ROOF_NEW_BARK  ; 28 (Blue Forest)
+	db ROOF_GOLDENROD ; 27 (Citrine)
+	db ROOF_NEW_BARK  ; 28 (One Island)
+	db ROOF_VIOLET	  ; 29 (Two Island)
+	db ROOF_VIOLET	  ; 30 (Three Island)
+	db ROOF_VIOLET	  ; 31 (Four Island)
+	db ROOF_VIOLET	  ; 32 (Five Island)
+	db ROOF_VIOLET	  ; 33 (Six Island)
+	db ROOF_VIOLET	  ; 34 (Seven Island)
+	db ROOF_NEW_BARK  ; 35 (Silent Hills)
+	db ROOF_NEW_BARK  ; 36 (Blue Forest)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

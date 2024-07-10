@@ -191,6 +191,11 @@ ENDM
 	map_const ROUTE_20,                                    30,  9 ;  6
 	map_const ROUTE_21,                                    10, 18 ;  7
 	map_const CINNABAR_ISLAND,                             10,  9 ;  8
+	map_const SEAFOAM_ISLANDS_1F,						   10, 10 ;  9
+	map_const SEAFOAM_ISLANDS_B1F,						   10, 10 ; 10
+	map_const SEAFOAM_ISLANDS_B2F,						   10, 10 ; 11
+	map_const SEAFOAM_ISLANDS_B3F,						   10, 10 ; 12
+	map_const SEAFOAM_ISLANDS_B4F,						   10, 10 ; 13
 	endgroup
 
 	newgroup CERULEAN                                             ;  7
@@ -211,9 +216,11 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
-    map_const CERULEAN_CAVE_1F,                            17, 12 
-	map_const CERULEAN_CAVE_2F,                            17, 11 
-	map_const CERULEAN_CAVE_B1F,                           17, 11 
+    map_const CERULEAN_CAVE_1F,                            17, 12 ; 18
+	map_const CERULEAN_CAVE_2F,                            17, 11 ; 19
+	map_const CERULEAN_CAVE_B1F,                           17, 11 ; 20
+	map_const UNDERWATER_TUNNEL,						   10, 10 ; 21
+	map_const BILLS_GARDEN,							   	   10, 10 ; 22
 	endgroup
 
 	newgroup AZALEA                                               ;  8
@@ -337,6 +344,8 @@ ENDM
 	map_const MOUNT_MOON_SQUARE,                           15,  9 ; 10
 	map_const MOUNT_MOON_GIFT_SHOP,                         4,  4 ; 11
 	map_const TIN_TOWER_ROOF,                              10,  9 ; 12
+	map_const MT_MOON_CRATER,							   10, 10 ; 13
+	map_const MT_MOON_CRATER_DEPTHS,					   10, 10 ; 14
 	endgroup
 
 	newgroup INDIGO                                               ; 16
@@ -381,6 +390,7 @@ ENDM
 	map_const LAV_RADIO_TOWER_1F,                          10,  4 ; 12
 	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 13
 	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 14
+	map_const LAVENDER_CRYPT,							   10, 10 ; 15
 	endgroup
 
 	newgroup SILVER                                               ; 19
@@ -428,6 +438,8 @@ ENDM
 	map_const ROUTE_16_GATE,                                5,  4 ; 24
 	map_const ROUTE_7_SAFFRON_GATE,                         5,  4 ; 25
 	map_const ROUTE_17_ROUTE_18_GATE,                       5,  4 ; 26
+	map_const CELADON_UNIVERSITY_OUTSIDE,				   10, 10 ; 27
+	map_const CELADON_UNIVERSITY_INSIDE,				   10, 10 ; 28
 	endgroup
 
 	newgroup CIANWOOD                                             ; 22
@@ -447,7 +459,13 @@ ENDM
 	map_const BATTLE_TOWER_HALLWAY,                        11,  2 ; 14
 	map_const ROUTE_40_BATTLE_TOWER_GATE,                   5,  4 ; 15
 	map_const BATTLE_TOWER_OUTSIDE,                        10, 14 ; 16
-	map_const CLIFF_CAVE,								   19, 16 ; 17
+	map_const ROUTE_47,							   		   10, 10 ; 17
+	map_const CLIFF_CAVE,								   19, 16 ; 18
+	map_const CLIFF_EDGE_GATE,							   10, 10 ; 19
+	map_const ROUTE_48,							   		   10, 10 ; 20
+	map_const EMBEDDED_TOWER,							   10, 10 ; 21
+	map_const JOHTO_SAFARI_ZONE_GATE,					   10, 10 ; 22
+	map_const JOHTO_SAFARI_ZONE,						   10, 10 ; 23
 	endgroup
 
 	newgroup VIRIDIAN                                             ; 23
@@ -517,7 +535,87 @@ ENDM
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 	endgroup
 	
-	newgroup SILENT_HILLS                                         ; 27
+	newgroup CITRINE ; 27
+	; This doesn't have all the maps, just the bones
+	map_const CITRINE_CITY,						10, 10 ; 1
+	map_const BRUNSWICK_TRAIL,				10, 10 ; 2
+	map_const BRUNSWICK_GLADE,				10, 10 ; 3
+	map_const BRUNSWICK_GROTTO,				10, 10 ; 4
+	map_const GARNET_CAVERN_1F,				10, 10 ; 5
+	map_const GARNET_CAVERN_2F,				10, 10 ; 6
+	map_const GARNET_CAVERN_B1F,			10, 10 ; 7
+	map_const CELESTE_HILL,					10, 10 ; 8
+	map_const CELESTE_HILL_CAVE,			10, 10 ; 9
+	endgroup
+
+	; Like Citrine, this doesn't have all the houses yet...
+	; But it is almost mindblowing how uninspiring the total maps are.
+	; Look at the other groups! Not that much more!
+	newgroup ONE_ISLAND ; 28
+	map_const FARAWAY_ISLAND_OUTSIDE,				10, 10 ; 1
+	map_const FARAWAY_ISLAND_INSIDE,				10, 10 ; 2
+	map_const ONE_ISLAND,							10, 10 ; 3
+	map_const TREASURE_BEACH,						10, 10 ; 4
+	map_const KINDLE_ROAD,							10, 10 ; 5
+	map_const MT_EMBER_EXTERIOR,					10, 10 ; 6
+	map_const MT_EMBER_INTERIOR,					10, 10 ; 7
+	map_const MT_EMBER_SUMMIT,						10, 10 ; 8
+	map_const MT_EMBER_HIDDEN_PATH,					10, 10 ; 9
+	endgroup
+	
+	newgroup TWO_ISLAND ; 29
+	map_const TWO_ISLAND,							10, 10 ; 1
+	map_const CAPE_BRINK,							10, 10 ; 2
+	endgroup
+	
+	newgroup THREE_ISLAND ; 30
+	map_const THREE_ISLAND_PORT,					10, 10 ; 1
+	map_const THREE_ISLAND,							10, 10 ; 2
+	map_const BOND_BRIDGE,							10, 10 ; 3
+	map_const BERRY_FOREST,							10, 10 ; 4
+	endgroup
+	
+	newgroup FOUR_ISLAND ; 31
+	map_const FOUR_ISLAND,							10, 10 ; 1
+	map_const ICEFALL_CAVE_ENTRANCE,				10, 10 ; 2
+	map_const ICEFALL_CAVE_1F,						10, 10 ; 3
+	map_const ICEFALL_CAVE_B1F,						10, 10 ; 4
+	map_const ICEFALL_CAVE_BACK,					10, 10 ; 5
+	endgroup
+	
+	newgroup FIVE_ISLAND ; 32
+	map_const FIVE_ISLAND,							10, 10 ; 1
+	map_const FIVE_ISLAND_MEADOW,					10, 10 ; 2
+	map_const MEMORIAL_PILLAR,						10, 10 ; 3
+	map_const WATER_LABYRINTH,						10, 10 ; 4
+	map_const RESORT_GORGEOUS,						10, 10 ; 5
+	map_const LOST_CAVE,							10, 10 ; 7 Programming this as one map. Not wasting precious space on this awful map...
+	endgroup
+	
+	newgroup SIX_ISLAND ; 33
+	map_const SIX_ISLAND,							10, 10 ; 1
+	map_const WATER_PATH,							10, 10 ; 2
+	map_const RUIN_VALLEY,							10, 10 ; 3
+	map_const DOTTED_HOLE,							10, 10 ; 4
+	map_const GREEN_PATH,							10, 10 ; 5
+	map_const PATTERN_BUSH,							10, 10 ; 6
+	map_const OUTCAST_ISLAND,						10, 10 ; 7
+	map_const ALTERING_CAVE,						10, 10 ; 8
+	endgroup
+	
+	newgroup SEVEN_ISLAND ; 34
+	map_const SEVEN_ISLAND,							10, 10 ; 1
+	map_const CANYON_ENTRANCE,						10, 10 ; 2
+	map_const SEVAULT_CANYON,						10, 10 ; 3
+	map_const TANOBY_RUINS,							10, 10 ; 4
+	map_const TANOBY_CHAMBERS,						10, 10 ; 5
+	map_const NAVAL_ROCK_EXTERIOR,					10, 10 ; 6
+	map_const NAVAL_ROCK_1F,						10, 10 ; 7
+	map_const NAVAL_ROCK_2F,						10, 10 ; 8
+	map_const NAVAL_ROCK_B1F,						10, 10 ; 9
+	endgroup
+	
+	newgroup SILENT_HILLS                                         ; 35
 	map_const SILENT_HILLS,                                10, 10 ; 1
 	map_const DEBUG_ROOM,                                  20, 20 ; 2
 	map_const ROUTE_49,                                    15,  9 ; 3
@@ -526,11 +624,13 @@ ENDM
 	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 6
 	map_const SILVERS_HOUSE,                                5,  5 ; 7
 	map_const CALS_HOUSE_1F,                                5,  4 ; 8
-	map_const CALS_HOUSE_2F,                                5,  4 ; 8
+	map_const CALS_HOUSE_2F,                                5,  4 ; 9
+	map_const SINJOH_RUINS_EXTERIOR,					   10, 10 ; 10
+	map_const SINJOH_RUINS_INTERIOR,					   10, 10 ; 10
 	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 28
+	newgroup BLUE_FOREST                                          ; 36
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-DEF NUM_MAP_GROUPS EQU const_value ; 27
+DEF NUM_MAP_GROUPS EQU const_value ; 36
