@@ -81,3 +81,39 @@ CheckForHiddenItems:
 	call GetFarByte
 	inc hl
 	ret
+
+; from https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items
+RockItemEncounter:
+	ld hl, .RockItems
+	call Random
+.loop
+	sub [hl]
+	jr c, .ok
+	inc hl
+	inc hl
+	jr .loop
+
+.ok
+	ld a, [hli]
+	inc a
+	jr z, .done
+	ld a, [hli]
+.done
+	ld [wScriptVar], a
+	ret
+	
+.RockItems:
+	db 1, MAX_REVIVE
+	db 2, DOME_FOSSIL
+	db 2, HELIX_FOSSIL
+	db 2, WING_FOSSIL
+	db 2, OLD_AMBER
+	db 2, CLUB_FOSSIL
+	db 4, STAR_PIECE
+	db 10, BIG_PEARL
+	db 18, ETHER
+	db 24, HARD_STONE
+	db 24, SOFT_SAND
+	db 48, PEARL
+	db 64, BRICK_PIECE
+	db -1

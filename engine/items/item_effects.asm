@@ -161,7 +161,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; BLK_AUGURITE
 	dw NoEffect            ; LEFTOVERS
 	dw EvoStoneEffect      ; PEAT_BLOCK
-	dw NoEffect            ; ITEM_94
+	dw NoEffect            ; CLUB_FOSSIL, was ITEM_94
 	dw NoEffect            ; ITEM_95
 	dw RestorePPEffect     ; MYSTERYBERRY
 	dw NoEffect            ; DRAGON_SCALE
@@ -203,10 +203,10 @@ ItemEffects:
 	dw NoEffect			   ; BLUESKY_MAIL
 	dw NoEffect			   ; MUSIC_MAIL
 	dw NoEffect			   ; MIRAGE_MAIL
-	dw NoEffect			   ; ITEM_BE
-	dw NoEffect			   ; ITEM_DC
-	dw NoEffect			   ; ITEM_C3
-	dw NoEffect			   ; ITEM_FA
+	dw NoEffect			   ; OLD_AMBER
+	dw NoEffect			   ; DOME_FOSSIL
+	dw NoEffect			   ; HELIX_FOSSIL
+	dw NoEffect			   ; WING_FOSSIL
 	assert_table_length NUM_ITEMS
 ; The items past ITEM_B3 do not have effect entries:
 ; They all have the ITEMMENU_NOUSE attribute so they can't be used anyway.

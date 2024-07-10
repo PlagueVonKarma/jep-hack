@@ -148,7 +148,7 @@ ItemDescriptions:
 	dw BlkAuguriteDesc
 	dw LeftoversDesc
 	dw PeatBlockDesc
-	dw QuestionMarkDesc
+	dw ClubFossilDesc
 	dw QuestionMarkDesc
 	dw MysteryBerryDesc
 	dw DragonScaleDesc
@@ -967,3 +967,7 @@ BlkAuguriteDesc:
 PeatBlockDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
+
+ClubFossilDesc:
+	db   "The club of an"
+	next "ancient #MON.@"

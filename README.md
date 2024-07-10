@@ -53,6 +53,20 @@ In general, there have been many wild encounter tweaks. View this document for d
 - The Kanto Safari Zone map from the prototype has been restored.
 - The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
 - The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
+- Breakable rocks now give useful items...
+	db 1, MAX_REVIVE
+	db 2, DOME_FOSSIL
+	db 2, HELIX_FOSSIL
+	db 2, WING_FOSSIL
+	db 2, OLD_AMBER
+	db 2, CLUB_FOSSIL
+	db 4, STAR_PIECE
+	db 10, BIG_PEARL
+	db 18, ETHER
+	db 24, HARD_STONE
+	db 24, SOFT_SAND
+	db 48, PEARL
+	db 64, BRICK_PIECE
 
 ## Item Changes
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo!

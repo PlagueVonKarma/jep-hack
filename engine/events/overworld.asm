@@ -1374,11 +1374,19 @@ RockSmashScript:
 
 	callasm RockMonEncounter
 	readmem wTempWildMonSpecies
-	iffalse .done
+	iffalse .no_battle
 	randomwildmon
 	startbattle
 	reloadmapafterbattle
-.done
+	end
+; from https://github.com/pret/pokecrystal/wiki/Smashing-rocks-has-a-chance-to-contain-items
+.no_battle
+	callasm RockItemEncounter
+	iffalse .no_item
+	opentext
+	verbosegiveitem ITEM_FROM_MEM
+	closetext
+.no_item
 	end
 
 MovementData_RockSmash:

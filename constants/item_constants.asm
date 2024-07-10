@@ -153,7 +153,7 @@
 	const BLK_AUGURITE ; 91
 	const LEFTOVERS    ; 92
 	const PEAT_BLOCK   ; 93
-	const ITEM_94      ; 94
+	const CLUB_FOSSIL  ; 94, was ITEM_94
 	const ITEM_95      ; 95
 	const MYSTERYBERRY ; 96
 	const DRAGON_SCALE ; 97

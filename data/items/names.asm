@@ -147,7 +147,7 @@ ItemNames::
 	li "BLK AUGURITE"
 	li "LEFTOVERS"
 	li "PEAT BLOCK"
-	li "TERU-SAMA"
+	li "CLUB FOSSIL"
 	li "TERU-SAMA"
 	li "MYSTERYBERRY"
 	li "DRAGON SCALE"
