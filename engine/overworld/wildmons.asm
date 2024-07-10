@@ -441,9 +441,13 @@ _GrassWildmonLookup:
 ;.skip2 ; If you skip here, you're in Nihon or Johto.
 
 	ld de, NihonGrassWildMons
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
 	call GetWorldMapLocation
 	cp NIHON_LANDMARK
-	jr z, .skip2
+	jr nc, .skip2
 	ld de, KantoGrassWildMons
 .skip2
 
@@ -460,9 +464,13 @@ _WaterWildmonLookup:
 	
 	; Nihon Check 2
 	ld de, NihonWaterWildMons
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
 	call GetWorldMapLocation
 	cp NIHON_LANDMARK
-	jr z, .skip2
+	jr nc, .skip2
 	ld de, KantoWaterWildMons
 .skip2
 
