@@ -600,7 +600,7 @@ ENDM
 	map_const GREEN_PATH,							10, 10 ; 5
 	map_const PATTERN_BUSH,							10, 10 ; 6
 	map_const OUTCAST_ISLAND,						10, 10 ; 7
-	map_const ALTERING_CAVE,						10, 10 ; 8
+	map_const ALTERING_CAVE,						18, 15 ; 8
 	endgroup
 	
 	newgroup SEVEN_ISLAND ; 34
