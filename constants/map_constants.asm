@@ -462,7 +462,7 @@ ENDM
 	map_const ROUTE_47,							   		   10, 10 ; 17
 	map_const CLIFF_CAVE,								   19, 16 ; 18
 	map_const CLIFF_EDGE_GATE,							   10, 10 ; 19
-	map_const ROUTE_48,							   		   10, 10 ; 20
+	map_const ROUTE_48,							   		   13, 17 ; 20
 	map_const EMBEDDED_TOWER,							   10, 10 ; 21
 	map_const JOHTO_SAFARI_ZONE_GATE,					   10, 10 ; 22
 	map_const JOHTO_SAFARI_ZONE,						   10, 10 ; 23

@@ -1782,4 +1782,32 @@ JohtoGrassWildMons:
 	dbw 35, STEELIX
 	end_grass_wildmons
 
+	def_grass_wildmons ROUTE_48
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 20, GIRAFARIG
+	dbw 21, FEAROW
+	dbw 20, FARFETCH_D
+	dbw 21, GIRAFARIG
+	dbw 22, SKIPLOOM
+	dbw 23, MILTANK
+	dbw 25, TAUROS
+	; day
+	dbw 20, GIRAFARIG
+	dbw 21, FEAROW
+	dbw 20, FARFETCH_D
+	dbw 21, GIRAFARIG
+	dbw 22, SKIPLOOM
+	dbw 23, MILTANK
+	dbw 25, TAUROS
+	; nite
+	dbw 20, GIRAFARIG
+	dbw 21, GROWLITHE
+	dbw 20, VULPIX
+	dbw 21, GIRAFARIG
+	dbw 22, GLOOM
+	dbw 23, NOCTOWL
+	dbw 25, MURKROW
+	end_grass_wildmons
+
 	db -1 ; end
