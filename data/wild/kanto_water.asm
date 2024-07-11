@@ -176,5 +176,12 @@ KantoWaterWildMons:
 	dbw 30, GYARADOS
 	dbw 35, DRAGONAIR
 	end_water_wildmons
+	
+	def_water_wildmons BERRY_FOREST
+	db 6 percent ; encounter rate
+	dbw 35, GOLDUCK
+	dbw 30, SLOWBRO
+	dbw 35, SLOWKING
+	end_water_wildmons
 
 	db -1 ; end

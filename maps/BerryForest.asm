@@ -9,6 +9,8 @@ BerryForest_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
+	warp_event 27, 29, DEBUG_ROOM, 1 ; BOND_BRIDGE
+	warp_event 26, 29, DEBUG_ROOM, 1 ; BOND_BRIDGE
 
 	def_coord_events
 
