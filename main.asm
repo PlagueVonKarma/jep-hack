@@ -475,6 +475,7 @@ INCLUDE "engine/events/play_slow_cry.asm"
 INCLUDE "engine/link/time_capsule.asm"
 INCLUDE "engine/link/time_capsule_2.asm"
 INCLUDE "engine/events/magikarp.asm"
+INCLUDE "engine/events/fossil_scientist.asm"
 
 SECTION "bank3Econtcont", ROMX
 
