@@ -24,6 +24,7 @@ The Fairy-type does exist.
 - There is now an enby character option named Topaz, purple-themed.
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
+- Fossil revival is back in town! Get fossils using Rock Smash and revive them at Ruins of Alph or the newly-added Pewter Museum of Science!
 
 ## New Things
 - 11 new Trainer classes, including;
@@ -54,20 +55,21 @@ In general, there have been many wild encounter tweaks. View this document for d
 - The Kanto Safari Zone map from the prototype has been restored.
 - The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
 - The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
+	- Additionally, old lore relating to the area has now been restored.
 - Breakable rocks now give useful items...
-	db 1, MAX_REVIVE
-	db 2, DOME_FOSSIL
-	db 2, HELIX_FOSSIL
-	db 2, WING_FOSSIL
-	db 2, OLD_AMBER
-	db 2, CLUB_FOSSIL
-	db 4, STAR_PIECE
-	db 10, BIG_PEARL
-	db 18, ETHER
-	db 24, HARD_STONE
-	db 24, SOFT_SAND
-	db 48, PEARL
-	db 64, BRICK_PIECE
+	- 1% MAX_REVIVE
+	- 2% DOME_FOSSIL - Kabuto
+	- 2% HELIX_FOSSIL - Omanyte
+	- 2% WING_FOSSIL - Feradactyl
+	- 2% OLD_AMBER - Decilla
+	- 2% CLUB_FOSSIL - Xylodon
+	- 4% STAR_PIECE
+	- 10% BIG_PEARL
+	- 18% ETHER
+	- 24% HARD_STONE
+	- 24% SOFT_SAND
+	- 48% PEARL
+	- 64% BRICK_PIECE
 
 ## Item Changes
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo, and the Peat Block!

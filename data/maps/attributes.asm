@@ -561,7 +561,7 @@ ENDM
 	map_attributes GoldenrodDeptStoreElevator, GOLDENROD_DEPT_STORE_ELEVATOR, $00, 0
 	map_attributes GoldenrodDeptStoreRoof, GOLDENROD_DEPT_STORE_ROOF, $24, 0
 	map_attributes GoldenrodGameCorner, GOLDENROD_GAME_CORNER, $00, 0
-	map_attributes GoldenrodPokecenter1F, GOLDENROD_POKECENTER_1F, $00, 0
+;	map_attributes GoldenrodPokecenter1F, GOLDENROD_POKECENTER_1F, $00, 0
 	map_attributes PokecomCenterAdminOfficeMobile, POKECOM_CENTER_ADMIN_OFFICE_MOBILE, $00, 0
 	map_attributes IlexForestAzaleaGate, ILEX_FOREST_AZALEA_GATE, $00, 0
 	map_attributes Route34IlexForestGate, ROUTE_34_ILEX_FOREST_GATE, $00, 0
