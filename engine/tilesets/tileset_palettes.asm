@@ -14,6 +14,8 @@ LoadSpecialMapPalette:
 	jr z, .mansion_mobile
 	cp TILESET_NIHON_SNOWY
 	jr z, .snowy
+	cp TILESET_LAVENDER_CRYPT
+	jr z, .crypt
 	jr .do_nothing
 
 .pokecom_2f
@@ -52,6 +54,11 @@ LoadSpecialMapPalette:
 
 .snowy
 	call LoadSnowyPalette
+	scf
+	ret
+
+.crypt
+	call LoadCryptPalette
 	scf
 	ret
 	
@@ -174,3 +181,13 @@ LoadSnowyPalette:
 	ret
 
 INCLUDE "gfx/tilesets/snowy.pal"
+
+LoadCryptPalette:
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, CryptPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+
+CryptPalette:
+INCLUDE "gfx/tilesets/lavendercrypt.pal"
