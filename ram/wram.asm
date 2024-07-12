@@ -3110,8 +3110,8 @@ wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wCeruleanCave1FSceneID::                          db
-
-	ds 49
+wPewterMuseum1FSceneID::						  db
+	ds 48
 
 ; fight counts
 wJackFightCount::    db

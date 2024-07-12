@@ -493,7 +493,7 @@ DebugRoom_MapEvents:
 	warp_event 19, 34, BLUE_FOREST, 1 ; southern warp
 	warp_event 33, 33, BLUE_FOREST, 1 ; southeast warp
 	warp_event  5,  3, AZALEA_TOWN, 1
-	warp_event 34, 11, RUINS_OF_ALPH_RESEARCH_CENTER, 1
+	warp_event 34, 11, PEWTER_MUSEUM_OF_SCIENCE_1F, 1
 
 	def_coord_events
 

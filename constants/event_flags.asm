@@ -208,7 +208,9 @@
 	const EVENT_GAVE_GS_BALL_TO_KURT
 	const EVENT_FOREST_IS_RESTLESS
 	const EVENT_ANSWERED_DRAGON_MASTER_QUIZ_WRONG
-; Unused: next 4 events
+	
+	const EVENT_GOT_TICKET ; Pewter Museum, temporary
+; Unused: next 3 events
 
 	const_next 200
 ; Kanto story events
