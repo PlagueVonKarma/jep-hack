@@ -735,8 +735,8 @@ MachinePartDesc:
 	next "the POWER PLANT.@"
 
 EggTicketDesc:
-	db   "This item cannot"
-	next "be used.@"
+	db   "Take this to the"
+	next "#COM CENTER!@"
 
 LostItemDesc:
 	db   "The # DOLL lost"
