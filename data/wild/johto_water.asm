@@ -13,14 +13,14 @@ JohtoWaterWildMons:
 	db 2 percent ; encounter rate
 	dbw 15, WOOPER
 	dbw 20, QUAGSIRE
-	dbw 15, QUAGSIRE
+	dbw 15, RIBBITO
 	end_water_wildmons
 
 	def_water_wildmons UNION_CAVE_B1F
 	db 2 percent ; encounter rate
 	dbw 15, WOOPER
 	dbw 20, QUAGSIRE
-	dbw 15, QUAGSIRE
+	dbw 15, RIBBITO
 	end_water_wildmons
 
 	def_water_wildmons UNION_CAVE_B2F
@@ -151,14 +151,14 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_34
 	db 6 percent ; encounter rate
-	dbw 20, TENTACOOL ; MANTYKE
-	dbw 15, TENTACOOL
-	dbw 20, TENTACRUEL
+	dbw 20, MANTYKE
+	dbw 15, CHINCHOU
+	dbw 20, TENTACOOL
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_35
 	db 4 percent ; encounter rate
-	dbw 20, PSYDUCK
+	dbw 20, MANTYKE
 	dbw 25, WEIRDUCK
 	dbw 35, GOLDUCK
 	end_water_wildmons

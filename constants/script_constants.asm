@@ -328,3 +328,11 @@ DEF NUM_UNOWN_PUZZLES EQU const_value
 	const MOVETUTOR_FLAMETHROWER ; 1
 	const MOVETUTOR_THUNDERBOLT  ; 2
 	const MOVETUTOR_ICE_BEAM     ; 3
+
+; Fossil Scientist setvals
+	const_def 1
+	const REVIVE_OLD_AMBER ; 1
+	const REVIVE_DOME_FOSSIL ; 2
+	const REVIVE_HELIX_FOSSIL ; 3
+	const REVIVE_CLUB_FOSSIL ; 4
+	const REVIVE_WING_FOSSIL ; 5

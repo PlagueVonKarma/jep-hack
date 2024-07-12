@@ -930,4 +930,63 @@ KantoGrassWildMons:
 	dbw 42, GENGAR
 	end_grass_wildmons
 
+	def_grass_wildmons ALTERING_CAVE
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 45, ZUBAT
+	dbw 46, MAREEP
+	dbw 46, ZUBAT
+	dbw 46, AIPOM
+	dbw 49, PINECO
+	dbw 48, TEDDIURSA
+	dbw 49, SMEARGLE
+	; day
+	dbw 45, ZUBAT
+	dbw 46, MAREEP
+	dbw 46, ZUBAT
+	dbw 46, AIPOM
+	dbw 49, PINECO
+	dbw 48, TEDDIURSA
+	dbw 49, STANTLER
+	; nite
+	dbw 45, ZUBAT
+	dbw 46, MAREEP
+	dbw 46, ZUBAT
+	dbw 46, AIPOM
+	dbw 49, PINECO
+	dbw 48, TEDDIURSA
+	dbw 49, HOUNDOUR
+	end_grass_wildmons
+	
+	; The Kanto-ness isn't an issue, and should still exist for One-Three Island.
+	; Shuckle is a nice touch.
+	; Added Lickitung so it can gorge itself on berries and be more available.
+	def_grass_wildmons BERRY_FOREST
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 45, PIDGEOT
+	dbw 46, GLOOM
+	dbw 46, WEEPINBELL
+	dbw 46, EXEGGCUTE
+	dbw 49, LICKITUNG
+	dbw 48, VENOMOTH
+	dbw 49, HYPNO
+	; day
+	dbw 45, PIDGEOT
+	dbw 46, GLOOM
+	dbw 46, WEEPINBELL
+	dbw 46, EXEGGCUTE
+	dbw 49, LICKITUNG
+	dbw 48, VENOMOTH
+	dbw 49, HYPNO
+	; nite
+	dbw 45, SHUCKLE
+	dbw 46, TANGELA
+	dbw 46, TANGELA
+	dbw 46, EXEGGCUTE
+	dbw 49, LICKITUNG
+	dbw 48, VENOMOTH
+	dbw 49, HYPNO
+	end_grass_wildmons
+	
 	db -1 ; end

@@ -1276,8 +1276,8 @@ RockHeadDescription:
 	next "cause flinching.@"
 
 RockSlashDescription:
-	db   "A slash so strong,"
-	next "it can cut rocks.@" ;the original description was too long I think
+	db   "A strong imprecise"
+	next "ROCK-type attack.@" ;the original description was too long I think
 	
 CrossCutterDescription:
 	db   "Has a high criti-"

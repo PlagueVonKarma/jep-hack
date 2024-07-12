@@ -120,6 +120,7 @@ NewPokedexOrder:
 	dw KADABRA
 	dw ALAKAZAM
 	dw DITTO
+	dw MIMMEO
 	dw PINECO
 	dw FORRETRESS
 	dw NIDORAN_F
@@ -136,6 +137,7 @@ NewPokedexOrder:
 	dw SUNFLORA
 	dw EXEGGCUTE
 	dw EXEGGUTOR
+	dw BONSLY
 	dw SUDOWOODO
 	dw WYNAUT
 	dw WOBBUFFET
@@ -149,6 +151,7 @@ NewPokedexOrder:
 	dw HERACROSS
 	dw KOFFING
 	dw WEEZING
+	dw SMUJJ
 	dw GRIMER
 	dw MUK
 	dw MAGNEMITE
@@ -162,6 +165,7 @@ NewPokedexOrder:
 	dw AMBIPOM
 	dw SNUBBULL
 	dw GRANBULL
+	dw CARETORKER
 	dw VULPIII
 	dw VULPIX
 	dw NINETALES
@@ -169,6 +173,7 @@ NewPokedexOrder:
 	dw GROWLITHE
 	dw ARCANINE
 	dw STANTLER
+	dw WYRDEER
 	dw AZURILL
 	dw MARILL
 	dw AZUMARILL
@@ -201,11 +206,15 @@ NewPokedexOrder:
 	dw MILTANK
 	dw MAGBY
 	dw MAGMAR
+	dw MAGMORTAR
 	dw SMOOCHUM
 	dw JYNX
 	dw BUU
+	dw ELEBEBI
 	dw ELEKID
 	dw ELECTABUZZ
+	dw ELECTIVIRE
+	dw MIME_JR_
 	dw MR__MIME
 	dw SMEARGLE
 	dw GRENMAR
@@ -288,10 +297,12 @@ NewPokedexOrder:
 	dw BALUMBA
 	dw CUBONE
 	dw MAROWAK
+	dw GUARDIA
 	dw KANGASKHAN
 	dw RHYHORN
 	dw RHYDON
 	dw MURKROW
+	dw HONCHKROW
 	dw HOUNDOUR
 	dw HOUNDOOM
 	dw SLUGMA
@@ -303,6 +314,8 @@ NewPokedexOrder:
 	dw PHANDARIN
 	dw PORYGON
 	dw PORYGON2
+	dw PORYGON_Z
+	dw HAPPINY
 	dw CHANSEY
 	dw BLISSEY
 	dw WARUCHU
@@ -335,7 +348,10 @@ NewPokedexOrder:
 	dw OMASTAR
 	dw KABUTO
 	dw KABUTOPS
+	dw FERADACTYL
 	dw AERODACTYL
+	dw DECILLA
+	dw GAWARHED
 	dw MUNCHLAX
 	dw SNORLAX
 	dw BULBASAUR
@@ -364,6 +380,9 @@ NewPokedexOrder:
 	dw RAIKOU
 	dw ENTEI
 	dw SUICUNE
+	dw SQUEAMATA
+	dw MINISTARE
+	dw IGUANARCH
 	dw DRATINI
 	dw DRAGONAIR
 	dw DRAGONITE

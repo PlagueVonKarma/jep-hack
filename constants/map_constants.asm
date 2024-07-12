@@ -90,7 +90,7 @@ ENDM
 	map_const RUINS_OF_ALPH_OMANYTE_CHAMBER,                4,  5 ; 25
 	map_const RUINS_OF_ALPH_AERODACTYL_CHAMBER,             4,  5 ; 26
 	map_const RUINS_OF_ALPH_INNER_CHAMBER,                 10, 14 ; 27
-	map_const RUINS_OF_ALPH_RESEARCH_CENTER,                4,  4 ; 28
+	map_const RUINS_OF_ALPH_RESEARCH_CENTER,                6,  4 ; 28
 	map_const RUINS_OF_ALPH_HO_OH_ITEM_ROOM,                4,  5 ; 29
 	map_const RUINS_OF_ALPH_KABUTO_ITEM_ROOM,               4,  5 ; 30
 	map_const RUINS_OF_ALPH_OMANYTE_ITEM_ROOM,              4,  5 ; 31
@@ -286,7 +286,7 @@ ENDM
 	map_const GOLDENROD_DEPT_STORE_ELEVATOR,                2,  2 ; 17
 	map_const GOLDENROD_DEPT_STORE_ROOF,                    8,  4 ; 18
 	map_const GOLDENROD_GAME_CORNER,                       10,  7 ; 19
-	map_const GOLDENROD_POKECENTER_1F,                      5,  4 ; 20
+;	map_const GOLDENROD_POKECENTER_1F,                      5,  4 ; 20
 	map_const POKECOM_CENTER_ADMIN_OFFICE_MOBILE,          16, 16 ; 21
 	map_const ILEX_FOREST_AZALEA_GATE,                      5,  4 ; 22
 	map_const ROUTE_34_ILEX_FOREST_GATE,                    5,  4 ; 23
@@ -462,7 +462,7 @@ ENDM
 	map_const ROUTE_47,							   		   10, 10 ; 17
 	map_const CLIFF_CAVE,								   19, 16 ; 18
 	map_const CLIFF_EDGE_GATE,							   10, 10 ; 19
-	map_const ROUTE_48,							   		   10, 10 ; 20
+	map_const ROUTE_48,							   		   13, 17 ; 20
 	map_const EMBEDDED_TOWER,							   10, 10 ; 21
 	map_const JOHTO_SAFARI_ZONE_GATE,					   10, 10 ; 22
 	map_const JOHTO_SAFARI_ZONE,						   10, 10 ; 23
@@ -572,7 +572,7 @@ ENDM
 	map_const THREE_ISLAND_PORT,					10, 10 ; 1
 	map_const THREE_ISLAND,							10, 10 ; 2
 	map_const BOND_BRIDGE,							10, 10 ; 3
-	map_const BERRY_FOREST,							10, 10 ; 4
+	map_const BERRY_FOREST,							17, 15 ; 4
 	endgroup
 	
 	newgroup FOUR_ISLAND ; 31
@@ -600,7 +600,7 @@ ENDM
 	map_const GREEN_PATH,							10, 10 ; 5
 	map_const PATTERN_BUSH,							10, 10 ; 6
 	map_const OUTCAST_ISLAND,						10, 10 ; 7
-	map_const ALTERING_CAVE,						10, 10 ; 8
+	map_const ALTERING_CAVE,						18, 15 ; 8
 	endgroup
 	
 	newgroup SEVEN_ISLAND ; 34
@@ -620,13 +620,14 @@ ENDM
 	map_const DEBUG_ROOM,                                  20, 20 ; 2
 	map_const ROUTE_49,                                    15,  9 ; 3
 	map_const QUIET_CAVE,                                  27, 18 ; 4
-	map_const ROUTE_49_2,                                  10, 18 ; 5
+	map_const ROUTE_49_2,                                  10, 19 ; 5
 	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 6
 	map_const SILVERS_HOUSE,                                5,  5 ; 7
 	map_const CALS_HOUSE_1F,                                5,  4 ; 8
 	map_const CALS_HOUSE_2F,                                5,  4 ; 9
 	map_const SINJOH_RUINS_EXTERIOR,					   10, 10 ; 10
 	map_const SINJOH_RUINS_INTERIOR,					   10, 10 ; 10
+	map_const ROUTE_49_OLD_CITY_GATE,						5,  4 ; 11
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 36

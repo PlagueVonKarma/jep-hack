@@ -241,11 +241,13 @@ INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
 INCLUDE "engine/pokemon/move_mon_wo_mail.asm"
 
-SECTION "Pokemon Names", ROMX
+SECTION "Pokemon Base Stats", ROMX
 
 INCLUDE "data/pokemon/base_stats.asm" ; If moving pokemon becomes a problem, it's because of this.
-INCLUDE "data/pokemon/names.asm"
 
+SECTION "Pokemon Names", ROMX
+
+INCLUDE "data/pokemon/names.asm"
 
 SECTION "Crystal Phone Text", ROMX
 
@@ -488,6 +490,7 @@ INCLUDE "engine/tilesets/tileset_anims.asm"
 INCLUDE "engine/events/npc_trade.asm"
 INCLUDE "engine/events/mom_phone.asm"
 INCLUDE "engine/events/tradeback_npc.asm" ; Tradeback NPC tutorial
+;INCLUDE "engine/events/fossil_scientist.asm"
 INCLUDE "engine/battle/misc.asm"
 
 SECTION "mobile40", ROMX

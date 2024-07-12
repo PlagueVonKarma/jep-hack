@@ -374,4 +374,23 @@ Pokered_MonIndices:
 	db GAVILLAIN
 	db BUU
 	db GRENMAR
+	db SMUJJ
+	db GUARDIA
+	db HAPPINY
+	db MIME_JR_
+	db ELECTIVIRE
+	db MAGMORTAR
+	db MIMMEO
+	db SQUEAMATA
+	db MINISTARE
+	db IGUANARCH
+	db BONSLY
+	db HONCHKROW
+	db CARETORKER
+	db PORYGON_Z
+	db WYRDEER
+	db ELEBEBI
+	db FERADACTYL
+	db DECILLA
+	db GAWARHED
 	assert_table_length NUM_POKEMON - 1

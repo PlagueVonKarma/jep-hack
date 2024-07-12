@@ -298,57 +298,57 @@ JohtoGrassWildMons:
 	def_grass_wildmons BURNED_TOWER_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 13, VULPIII
-	dbw 14, KOFFING
-	dbw 15, VULPIII
-	dbw 14, ZUBAT
-	dbw 16, KOFFING
-	dbw 15, KOLTA
-	dbw 15, KOLTA
+	dbw 16, VULPIII
+	dbw 17, KOFFING
+	dbw 17, VULPIII
+	dbw 16, ZUBAT
+	dbw 18, KOFFING
+	dbw 18, KOLTA
+	dbw 16, KOLTA
 	; day
-	dbw 13, VULPIII
-	dbw 14, KOFFING
-	dbw 15, VULPIII
-	dbw 14, ZUBAT
-	dbw 16, KOFFING
-	dbw 15, KOLTA
-	dbw 15, KOLTA
+	dbw 16, VULPIII
+	dbw 17, KOFFING
+	dbw 17, VULPIII
+	dbw 16, ZUBAT
+	dbw 18, KOFFING
+	dbw 18, KOLTA
+	dbw 16, KOLTA
 	; nite
-	dbw 13, VULPIII
-	dbw 14, KOFFING
 	dbw 15, VULPIII
-	dbw 14, ZUBAT
-	dbw 16, KOFFING
-	dbw 15, HOUNDOUR
-	dbw 15, HOUNDOUR
+	dbw 17, KOFFING
+	dbw 16, VULPIII
+	dbw 16, ZUBAT
+	dbw 18, KOFFING
+	dbw 17, HOUNDOUR
+	dbw 18, HOUNDOUR
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 14, PUPPERON
-	dbw 14, SLUGMA
-	dbw 16, SLUGMA
 	dbw 16, PUPPERON
-	dbw 15, ZUBAT
-	dbw 14, MAGBY
-	dbw 14, MAGBY
+	dbw 17, SLUGMA
+	dbw 18, SLUGMA
+	dbw 15, PUPPERON
+	dbw 18, ZUBAT
+	dbw 18, MAGBY
+	dbw 19, MAGBY
 	; day
-	dbw 14, PUPPERON
-	dbw 14, SLUGMA
-	dbw 16, SLUGMA
 	dbw 16, PUPPERON
-	dbw 15, ZUBAT
-	dbw 14, MAGBY
-	dbw 14, MAGBY
+	dbw 17, SLUGMA
+	dbw 18, SLUGMA
+	dbw 15, PUPPERON
+	dbw 18, ZUBAT
+	dbw 18, MAGBY
+	dbw 19, MAGBY
 	; nite
-	dbw 14, PUPPERON
-	dbw 14, SLUGMA
+	dbw 17, HOUNDOUR
 	dbw 16, SLUGMA
-	dbw 16, PUPPERON
-	dbw 15, ZUBAT
-	dbw 14, MAGMAR
-	dbw 14, MAGMAR
+	dbw 17, SLUGMA
+	dbw 18, HOUNDOUR
+	dbw 16, ZUBAT
+	dbw 18, MAGMAR
+	dbw 19, MAGMAR
 	end_grass_wildmons
 
 	def_grass_wildmons NATIONAL_PARK
@@ -370,11 +370,11 @@ JohtoGrassWildMons:
 	dbw 16, WEEDLE
 	dbw 16, BALUMBA
 	; nite
-	dbw 15, PSYDUCK
-	dbw 15, HOOTHOOT
+	dbw 15, NIDORAN_M
+	dbw 15, NIDORAN_F
 	dbw 14, SPINARAK
 	dbw 14, HOOTHOOT
-	dbw 15, VENONAT
+	dbw 15, PSYDUCK
 	dbw 16, VENONAT
 	dbw 16, VENONAT
 	end_grass_wildmons
@@ -1408,29 +1408,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_34
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 10, SNUBBULL
+	dbw 11, SNUBBULL
 	dbw 11, PICHU
-	dbw 12, SNUBBULL
-	dbw 10, ABRA
-	dbw 12, JIGGLYPUFF
-	dbw 10, DITTO ; HAPPINY
-	dbw 10, DITTO ; CARETORKER
+	dbw 13, SNUBBULL
+	dbw 11, ABRA
+	dbw 12, HAPPINY
+	dbw 12, CARETORKER
+	dbw 13, CARETORKER
 	; day
-	dbw 10, SNUBBULL
+	dbw 11, SNUBBULL
 	dbw 11, PICHU
-	dbw 12, SNUBBULL
-	dbw 10, ABRA
-	dbw 12, JIGGLYPUFF
-	dbw 10, DITTO ; HAPPINY
-	dbw 10, DITTO ; CARETORKER
+	dbw 13, SNUBBULL
+	dbw 11, ABRA
+	dbw 12, HAPPINY
+	dbw 12, CARETORKER
+	dbw 13, CARETORKER
 	; nite
 	dbw 12, DROWZEE
 	dbw 11, CLEFFA
+	dbw 13, HOOTHOOT
+	dbw 11, ABRA
 	dbw 12, HOOTHOOT
-	dbw 10, ABRA
-	dbw 12, HOOTHOOT
-	dbw 10, DITTO
-	dbw 10, DITTO
+	dbw 12, DITTO
+	dbw 13, DITTO
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_35
@@ -1440,54 +1440,53 @@ JohtoGrassWildMons:
 	dbw 14, PUPPERON
 	dbw 13, SNUBBULL
 	dbw 12, ABRA
-	dbw 12, JIGGLYPUFF
-	dbw 12, ELEKID ; ELEBEBI
+	dbw 12, PUPPERON
+	dbw 12, ELEBEBI
 	dbw 15, YANMA
 	; day
 	dbw 12, SNUBBULL
 	dbw 14, PUPPERON
 	dbw 13, SNUBBULL
 	dbw 12, ABRA
-	dbw 12, JIGGLYPUFF
-	dbw 12, ELEKID ; ELEBEBI
+	dbw 12, PUPPERON
+	dbw 12, ELEBEBI
 	dbw 15, YANMA
 	; nite
 	dbw 12, DROWZEE
 	dbw 14, VULPIII
 	dbw 13, DROWZEE
-	dbw 12, ABRA ; MIME_JR
+	dbw 12, MIME_JR_
 	dbw 13, HOOTHOOT
 	dbw 12, HOOTHOOT
 	dbw 15, ARIADOS ; Crystal has these laying around Ecruteak and it seemed cool alongside Yanma
 	end_grass_wildmons
 
-; uhh what's happening here?
 	def_grass_wildmons ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 4, LEDYBA
-	dbw 4, PIDGEY
-	dbw 5, BELLSPROUT
-	dbw 5, PUPPERON
-	dbw 5, PIDGEY
-	dbw 6, PIDGEY
-	dbw 6, PIDGEY
+	dbw 14, LEDYBA
+	dbw 16, FARFETCH_D
+	dbw 15, AERCROW
+	dbw 15, KOTORA
+	dbw 17, KOTORA
+	dbw 14, NATU
+	dbw 16, NATU
 	; day
-	dbw 4, PIDGEY
-	dbw 4, PIDGEY
-	dbw 5, BELLSPROUT
-	dbw 5, PUPPERON
-	dbw 5, PIDGEY
-	dbw 6, PIDGEY
-	dbw 6, PIDGEY
+	dbw 15, FARFETCH_D
+	dbw 14, KOTORA
+	dbw 15, BELLSPROUT
+	dbw 16, AERCROW
+	dbw 17, AERCROW
+	dbw 15, NATU
+	dbw 16, NATU
 	; nite
-	dbw 4, SPINARAK
-	dbw 4, HOOTHOOT
-	dbw 5, BELLSPROUT
-	dbw 5, VULPIII ; Silver data, but specifically at night
-	dbw 5, HOOTHOOT
-	dbw 5, MISDREAVUS
-	dbw 5, MISDREAVUS
+	dbw 15, SPINARAK
+	dbw 14, HOOTHOOT
+	dbw 16, BELLSPROUT
+	dbw 14, VULPIII ; Silver data, but specifically at night
+	dbw 15, HOOTHOOT
+	dbw 16, MISDREAVUS
+	dbw 17, MISDREAVUS
 	end_grass_wildmons
 
 ; Restored the 30% Stantler from GS.
@@ -1496,29 +1495,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_37
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 15, PUPPERON
-	dbw 16, STANTLER
-	dbw 16, PIDGEY
 	dbw 16, GROWLITHE
-	dbw 15, PIDGEOTTO
-	dbw 15, LEDIAN
-	dbw 15, LEDIAN
+	dbw 18, STANTLER
+	dbw 17, PIDGEOTTO
+	dbw 17, GROWLITHE
+	dbw 15, BONSLY
+	dbw 18, LEDIAN
+	dbw 19, LEDIAN
 	; day
-	dbw 15, PUPPERON
-	dbw 16, STANTLER
-	dbw 15, PIDGEY
 	dbw 16, GROWLITHE
-	dbw 15, PIDGEOTTO
-	dbw 15, PIDGEY
-	dbw 15, PIDGEY
+	dbw 17, STANTLER
+	dbw 17, PIDGEOTTO
+	dbw 18, GROWLITHE
+	dbw 15, BONSLY
+	dbw 17, KOLTA
+	dbw 18, KOLTA
 	; nite
-	dbw 15, SPINARAK
-	dbw 16, STANTLER
-	dbw 15, HOOTHOOT
+	dbw 16, VULPIX
+	dbw 18, STANTLER
+	dbw 17, HOOTHOOT
 	dbw 16, MURKROW
-	dbw 15, MURKROW
-	dbw 15, ARIADOS
-	dbw 15, ARIADOS
+	dbw 18, MURKROW
+	dbw 16, ARIADOS
+	dbw 19, ARIADOS
 	end_grass_wildmons
 
 ; Made Murkrow a 10% night time encounter for increased Johto frequency.
@@ -1556,23 +1555,23 @@ JohtoGrassWildMons:
 	; morn
 	dbw 21, FURRET
 	dbw 22, FURRET
-	dbw 21, MAGNEMITE
-	dbw 23, PIDGEOTTO
+	dbw 21, MAGNETITE
+	dbw 23, SUNBUD
 	dbw 24, MILTANK
 	dbw 24, TAUROS
 	dbw 24, TAUROS
 	; day
 	dbw 21, FURRET
 	dbw 22, FURRET
-	dbw 21, MAGNEMITE
-	dbw 23, PIDGEOTTO
+	dbw 21, MAGNETITE
+	dbw 23, SUNBUD
 	dbw 24, MILTANK
 	dbw 24, TAUROS
 	dbw 24, TAUROS
 	; nite
 	dbw 23, MOIBELLE
 	dbw 21, RATICATE
-	dbw 22, MAGNEMITE
+	dbw 22, MAGNETITE
 	dbw 22, MOIBELLE
 	dbw 21, MURKROW
 	dbw 21, MURKROW
@@ -1780,6 +1779,34 @@ JohtoGrassWildMons:
 	dbw 32, MISDREAVUS
 	dbw 32, MISDREAVUS
 	dbw 35, STEELIX
+	end_grass_wildmons
+
+	def_grass_wildmons ROUTE_48
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 20, GIRAFARIG
+	dbw 21, FEAROW
+	dbw 20, FARFETCH_D
+	dbw 21, GIRAFARIG
+	dbw 22, SKIPLOOM
+	dbw 23, MILTANK
+	dbw 25, TAUROS
+	; day
+	dbw 20, GIRAFARIG
+	dbw 21, FEAROW
+	dbw 20, FARFETCH_D
+	dbw 21, GIRAFARIG
+	dbw 22, SKIPLOOM
+	dbw 23, MILTANK
+	dbw 25, TAUROS
+	; nite
+	dbw 20, GIRAFARIG
+	dbw 21, GROWLITHE
+	dbw 20, VULPIX
+	dbw 21, GIRAFARIG
+	dbw 22, GLOOM
+	dbw 23, NOCTOWL
+	dbw 25, MURKROW
 	end_grass_wildmons
 
 	db -1 ; end

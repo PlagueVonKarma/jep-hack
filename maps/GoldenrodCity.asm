@@ -262,7 +262,7 @@ GoldenrodCityUndergroundSignSouth:
 	jumptext GoldenrodCityUndergroundSignSouthText
 
 GoldenrodCityPokecenterSign:
-	jumpstd PokecenterSignScript
+	jumptext GoldenrodCityPokeComCenterSignText ; Now using the PCC text
 
 GoldenrodCityFlowerShopSign:
 	jumptext GoldenrodCityFlowerShopSignText
@@ -476,7 +476,7 @@ GoldenrodCityUndergroundSignSouthText:
 	line "ENTRANCE"
 	done
 
-GoldenrodCityPokeComCenterSignText: ; unreferenced
+GoldenrodCityPokeComCenterSignText:
 	text "For Mobile Tips!"
 	line "#COM CENTER"
 	done
@@ -566,7 +566,7 @@ GoldenrodCity_MapEvents:
 	warp_event 19,  1, ROUTE_35_GOLDENROD_GATE, 3
 	warp_event  9,  5, GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, 8
 	warp_event 11, 29, GOLDENROD_UNDERGROUND_SWITCH_ROOM_ENTRANCES, 5
-	warp_event 15, 27, GOLDENROD_POKECENTER_1F, 1
+	warp_event 14, 27, POKECOM_CENTER_ADMIN_OFFICE_MOBILE, 3
 
 	def_coord_events
 
@@ -581,7 +581,7 @@ GoldenrodCity_MapEvents:
 	bg_event 12,  7, BGEVENT_READ, GoldenrodCityNameRaterSign
 	bg_event  8,  6, BGEVENT_READ, GoldenrodCityUndergroundSignNorth
 	bg_event 12, 30, BGEVENT_READ, GoldenrodCityUndergroundSignSouth
-	bg_event 16, 27, BGEVENT_UP, GoldenrodCityPokecenterSign
+	bg_event 17, 27, BGEVENT_UP, GoldenrodCityPokecenterSign
 	bg_event 30,  6, BGEVENT_READ, GoldenrodCityFlowerShopSign
 
 	def_object_events

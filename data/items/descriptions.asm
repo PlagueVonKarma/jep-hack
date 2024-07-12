@@ -176,7 +176,7 @@ ItemDescriptions:
 	dw BerryDesc
 	dw GoldBerryDesc
 	dw SquirtBottleDesc
-	dw QuestionMarkDesc
+	dw DubiousDiscDesc
 	dw ParkBallDesc
 	dw RainbowWingDesc
 	dw QuestionMarkDesc
@@ -735,8 +735,8 @@ MachinePartDesc:
 	next "the POWER PLANT.@"
 
 EggTicketDesc:
-	db   "This item cannot"
-	next "be used.@"
+	db   "Take this to the"
+	next "#COM CENTER!@"
 
 LostItemDesc:
 	db   "The # DOLL lost"
@@ -868,6 +868,10 @@ GoldBerryDesc:
 SquirtBottleDesc:
 	db   "A bottle used for"
 	next "watering plants.@"
+
+DubiousDiscDesc:
+	db   "A mysterious box"
+	next "of dubious data.@"
 
 ParkBallDesc:
 	db   "The Bug-Catching"

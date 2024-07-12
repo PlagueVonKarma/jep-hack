@@ -62,7 +62,7 @@ SECTION "Map Scripts 4", ROMX
 INCLUDE "maps/RadioTower5F.asm"
 INCLUDE "maps/OlivineLighthouse5F.asm"
 INCLUDE "maps/OlivineLighthouse6F.asm"
-INCLUDE "maps/GoldenrodPokecenter1F.asm"
+;INCLUDE "maps/GoldenrodPokecenter1F.asm"
 INCLUDE "maps/PokecomCenterAdminOfficeMobile.asm"
 INCLUDE "maps/IlexForestAzaleaGate.asm"
 INCLUDE "maps/Route34IlexForestGate.asm"
@@ -498,6 +498,9 @@ INCLUDE "maps/LakeOfRageTraderHouse.asm"
 INCLUDE "maps/LakeOfRagePokecenter1F.asm"
 INCLUDE "maps/LakeOfRageMart.asm"
 INCLUDE "maps/LakeOfRagePrycesHouse.asm"
+
+SECTION "Map Scripts 26", ROMX
+
 INCLUDE "maps/DebugRoom.asm"
 INCLUDE "maps/CliffCave.asm"
 INCLUDE "maps/Route49.asm"
@@ -505,9 +508,6 @@ INCLUDE "maps/BlueForest.asm"
 INCLUDE "maps/QuietCave.asm"
 INCLUDE "maps/Route49_2.asm"
 INCLUDE "maps/SilversHouse.asm"
-
-SECTION "Map Scripts 26", ROMX
-
 INCLUDE "maps/SilentHillsPokecenter1F.asm"
 INCLUDE "maps/NihonPokecenter2F.asm"
 INCLUDE "maps/KantoPokecenter2F.asm"
@@ -521,6 +521,8 @@ INCLUDE "maps/JohtoSafariZone.asm"
 INCLUDE "maps/LavenderCrypt.asm"
 INCLUDE "maps/UnderwaterTunnel.asm"
 INCLUDE "maps/BillsGarden.asm"
+
+SECTION "Map Scripts 27", ROMX
 INCLUDE "maps/CeladonUniversityOutside.asm"
 INCLUDE "maps/CeladonUniversityInside.asm"
 INCLUDE "maps/MtMoonCrater.asm"
@@ -551,6 +553,8 @@ INCLUDE "maps/IcefallCave1F.asm"
 INCLUDE "maps/IcefallCaveB1F.asm"
 INCLUDE "maps/IcefallCaveBack.asm"
 INCLUDE "maps/FiveIsland.asm"
+
+SECTION "Map Scripts 28", ROMX
 INCLUDE "maps/FiveIslandMeadow.asm"
 INCLUDE "maps/MemorialPillar.asm"
 INCLUDE "maps/WaterLabyrinth.asm"
@@ -585,3 +589,6 @@ INCLUDE "maps/ThreeIslandPort.asm"
 INCLUDE "maps/AlteringCave.asm"
 INCLUDE "maps/SinjohRuinsExterior.asm"
 INCLUDE "maps/SinjohRuinsInterior.asm"
+
+SECTION "Map Scripts 29", ROMX
+INCLUDE "maps/Route49OldCityGate.asm"

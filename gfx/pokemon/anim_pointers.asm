@@ -120,6 +120,7 @@ AnimationPointers:
 	dw DodrioAnimation
 	dw SeelAnimation
 	dw DewgongAnimation
+	dw SmujjAnimation
 	dw GrimerAnimation
 	dw MukAnimation
 	dw ShellderAnimation
@@ -139,6 +140,7 @@ AnimationPointers:
 	dw ExeggutorAnimation
 	dw CuboneAnimation
 	dw MarowakAnimation
+	dw GuardiaAnimation
 	dw HitmonleeAnimation
 	dw HitmonchanAnimation
 	dw LickitungAnimation
@@ -148,6 +150,7 @@ AnimationPointers:
 	dw WeezingAnimation
 	dw RhyhornAnimation
 	dw RhydonAnimation
+	dw HappinyAnimation
 	dw ChanseyAnimation
 	dw BurgelaAnimation
 	dw TangelaAnimation
@@ -163,13 +166,16 @@ AnimationPointers:
 	dw SeakingAnimation
 	dw StaryuAnimation
 	dw StarmieAnimation
+	dw MimeJrAnimation
 	dw MrMimeAnimation
 	dw ScytherAnimation
 	dw KleavorAnimation
 	dw JynxAnimation
 	dw BuuAnimation
 	dw ElectabuzzAnimation
+	dw ElectivireAnimation
 	dw MagmarAnimation
+	dw MagmortarAnimation
 	dw PinsirAnimation
 	dw TriculesAnimation
 	dw TaurosAnimation
@@ -179,6 +185,7 @@ AnimationPointers:
 	dw TerradosAnimation
 	dw LaprasAnimation
 	dw DittoAnimation
+	dw MimmeoAnimation
 	dw EeveeAnimation
 	dw VaporeonAnimation
 	dw JolteonAnimation
@@ -188,12 +195,18 @@ AnimationPointers:
 	dw OmastarAnimation
 	dw KabutoAnimation
 	dw KabutopsAnimation
+	dw FeradactylAnimation
 	dw AerodactylAnimation
+	dw DecillaAnimation
+	dw GawarhedAnimation
 	dw MunchlaxAnimation
 	dw SnorlaxAnimation
 	dw ArticunoAnimation
 	dw ZapdosAnimation
 	dw MoltresAnimation
+	dw SqueamataAnimation
+	dw MinistareAnimation
+	dw IguanarchAnimation
 	dw DratiniAnimation
 	dw DragonairAnimation
 	dw DragoniteAnimation
@@ -246,6 +259,7 @@ AnimationPointers:
 	dw AzurillAnimation
 	dw MarillAnimation
 	dw AzumarillAnimation
+	dw BonslyAnimation
 	dw SudowoodoAnimation
 	dw PolitoedAnimation
 	dw HoppipAnimation
@@ -269,6 +283,7 @@ AnimationPointers:
 	dw GlaceonAnimation
 	dw SylveonAnimation
 	dw MurkrowAnimation
+	dw HonchkrowAnimation
 	dw SlowkingAnimation
 	dw MisdreavusAnimation
 	dw MismagiusAnimation
@@ -289,6 +304,7 @@ AnimationPointers:
 	dw SteelixAnimation
 	dw SnubbullAnimation
 	dw GranbullAnimation
+	dw CaretorkerAnimation
 	dw QwilfishAnimation
 	dw KazeppelinAnimation
 	dw QwilfatherAnimation
@@ -319,12 +335,15 @@ AnimationPointers:
 	dw PhanpyAnimation
 	dw DonphanAnimation
 	dw Porygon2Animation
+	dw PorygonZAnimation
 	dw StantlerAnimation
+	dw WyrdeerAnimation
 	dw SmeargleAnimation
 	dw GrenmarAnimation
 	dw TyrogueAnimation
 	dw HitmontopAnimation
 	dw SmoochumAnimation
+	dw ElebebiAnimation
 	dw ElekidAnimation
 	dw MagbyAnimation
 	dw MiltankAnimation

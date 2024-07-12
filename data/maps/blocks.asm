@@ -182,6 +182,7 @@ Route29Route46Gate_Blocks:
 Route5SaffronGate_Blocks:
 ViridianForestViridianGate_Blocks:
 ViridianForestPewterGate_Blocks:
+Route49OldCityGate_Blocks:
 	INCBIN "maps/NorthSouthGate.ablk"
 
 CinnabarIsland_Blocks:
@@ -342,7 +343,6 @@ BlackthornPokecenter1F_Blocks:
 AzaleaPokecenter1F_Blocks:
 VioletPokecenter1F_Blocks:
 Route32Pokecenter1F_Blocks:
-GoldenrodPokecenter1F_Blocks:
 SilverCavePokecenter1F_Blocks:
 CianwoodPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
@@ -1060,6 +1060,9 @@ CinnabarPokecenter1F_Blocks:
 
 KantoPokecenter2F_Blocks:
 	INCBIN "maps/KantoPokecenter2F.ablk"
+
+;GoldenrodPokecenter1F_Blocks:
+;	INCBIN "maps/PokecomCenterAdminOfficeMobile.ablk"
 
 SilversHouse_Blocks:
 	INCBIN "maps/SilversHouse.ablk"

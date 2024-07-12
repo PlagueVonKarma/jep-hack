@@ -120,6 +120,7 @@ FramesPointers:
 	dba DodrioFrames
 	dba SeelFrames
 	dba DewgongFrames
+	dba SmujjFrames
 	dba GrimerFrames
 	dba MukFrames
 	dba ShellderFrames
@@ -139,6 +140,7 @@ FramesPointers:
 	dba ExeggutorFrames
 	dba CuboneFrames
 	dba MarowakFrames
+	dba GuardiaFrames
 	dba HitmonleeFrames
 	dba HitmonchanFrames
 	dba LickitungFrames
@@ -148,6 +150,7 @@ FramesPointers:
 	dba WeezingFrames
 	dba RhyhornFrames
 	dba RhydonFrames
+	dba HappinyFrames
 	dba ChanseyFrames
 	dba BurgelaFrames
 	dba TangelaFrames
@@ -163,13 +166,16 @@ FramesPointers:
 	dba SeakingFrames
 	dba StaryuFrames
 	dba StarmieFrames
+	dba MimeJrFrames
 	dba MrMimeFrames
 	dba ScytherFrames
 	dba KleavorFrames
 	dba JynxFrames
 	dba BuuFrames
 	dba ElectabuzzFrames
+	dba ElectivireFrames
 	dba MagmarFrames
+	dba MagmortarFrames
 	dba PinsirFrames
 	dba TriculesFrames
 	dba TaurosFrames
@@ -179,6 +185,7 @@ FramesPointers:
 	dba TerradosFrames
 	dba LaprasFrames
 	dba DittoFrames
+	dba MimmeoFrames
 	dba EeveeFrames
 	dba VaporeonFrames
 	dba JolteonFrames
@@ -188,12 +195,18 @@ FramesPointers:
 	dba OmastarFrames
 	dba KabutoFrames
 	dba KabutopsFrames
+	dba FeradactylFrames
 	dba AerodactylFrames
+	dba DecillaFrames
+	dba GawarhedFrames
 	dba MunchlaxFrames
 	dba SnorlaxFrames
 	dba ArticunoFrames
 	dba ZapdosFrames
 	dba MoltresFrames
+	dba SqueamataFrames
+	dba MinistareFrames
+	dba IguanarchFrames
 	dba DratiniFrames
 	dba DragonairFrames
 	dba DragoniteFrames
@@ -246,6 +259,7 @@ FramesPointers:
 	dba AzurillFrames
 	dba MarillFrames
 	dba AzumarillFrames
+	dba BonslyFrames
 	dba SudowoodoFrames
 	dba PolitoedFrames
 	dba HoppipFrames
@@ -269,6 +283,7 @@ FramesPointers:
 	dba GlaceonFrames
 	dba SylveonFrames
 	dba MurkrowFrames
+	dba HonchkrowFrames
 	dba SlowkingFrames
 	dba MisdreavusFrames
 	dba MismagiusFrames
@@ -289,6 +304,7 @@ FramesPointers:
 	dba SteelixFrames
 	dba SnubbullFrames
 	dba GranbullFrames
+	dba CaretorkerFrames
 	dba QwilfishFrames
 	dba KazeppelinFrames
 	dba QwilfatherFrames
@@ -319,12 +335,15 @@ FramesPointers:
 	dba PhanpyFrames
 	dba DonphanFrames
 	dba Porygon2Frames
+	dba PorygonZFrames
 	dba StantlerFrames
+	dba WyrdeerFrames
 	dba SmeargleFrames
 	dba GrenmarFrames
 	dba TyrogueFrames
 	dba HitmontopFrames
 	dba SmoochumFrames
+	dba ElebebiFrames
 	dba ElekidFrames
 	dba MagbyFrames
 	dba MiltankFrames
