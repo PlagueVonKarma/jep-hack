@@ -8,23 +8,23 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, LUXWAN
+	getmonname STRING_BUFFER_3, DECILLA
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke LUXWAN, 24, POISON_STONE
+	givepoke DECILLA, 39, POISON_STONE
 	closetext
 	end
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, MACHAMP
+	getmonname STRING_BUFFER_3, FERADACTYL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MACHAMP, 31, TM_ROCK_SMASH
+	givepoke FERADACTYL, 39, TM_ROCK_SMASH
 	closetext
 	end
 

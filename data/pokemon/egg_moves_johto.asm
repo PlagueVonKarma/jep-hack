@@ -48,7 +48,8 @@ EggMovePointers2::
 	dw AzurillEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
-	dw SudowoodoEggMoves
+	dw BonslyEggMoves
+	dw NoEggMoves2
 	dw NoEggMoves2
 	dw HoppipEggMoves
 	dw NoEggMoves2
@@ -71,7 +72,7 @@ EggMovePointers2::
 	dw NoEggMoves2 ; Glaceon
 	dw NoEggMoves2 ; Sylveon
 	dw MurkrowEggMoves
-	; dw NoEggMoves2 ; Honchkrow
+	dw NoEggMoves2 ; Honchkrow
 	dw NoEggMoves2
 	dw MisdreavusEggMoves
 	dw NoEggMoves2 ; Mismagius
@@ -92,6 +93,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw SnubbullEggMoves
 	dw NoEggMoves2
+	dw CaretorkerEggMoves
 	dw QwilfishEggMoves
 	dw NoEggMoves2 ; Kazeppelin
 	dw NoEggMoves2 ; Qwilfather
@@ -122,13 +124,16 @@ EggMovePointers2::
 	dw PhanpyEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Porygon-Z
 	dw StantlerEggMoves
+	dw NoEggMoves2 ; Wyrdeer
 	dw NoEggMoves2
 	dw GrenmarEggMoves
 	dw TyrogueEggMoves
 	dw NoEggMoves2
 	dw SmoochumEggMoves
-	dw ElekidEggMoves
+	dw ElebebiEggMoves
+	dw NoEggMoves2 ; Elekid
 	dw MagbyEggMoves
 	dw MiltankEggMoves
 	dw NoEggMoves2 ; Blissey
@@ -332,7 +337,8 @@ AzurillEggMoves:
 	dw FORESIGHT
 	dw -1 ; end
 
-SudowoodoEggMoves:
+BonslyEggMoves:
+	dw ROCK_HEAD
 	dw SELFDESTRUCT
 	dw -1 ; end
 
@@ -452,6 +458,14 @@ SnubbullEggMoves:
 	dw HEAL_BELL
 	dw LICK
 	dw LEER
+	dw -1 ; end
+	
+CaretorkerEggMoves:
+	dw DRILL_PECK
+	dw FOCUS_ENERGY
+	dw FORESIGHT
+	dw HEAL_BELL
+	dw PRESENT
 	dw -1 ; end
 
 QwilfishEggMoves:
@@ -590,7 +604,7 @@ SmoochumEggMoves:
 	dw MEDITATE
 	dw -1 ; end
 
-ElekidEggMoves:
+ElebebiEggMoves:
 	dw KARATE_CHOP
 	dw BARRIER
 	dw ROLLING_KICK

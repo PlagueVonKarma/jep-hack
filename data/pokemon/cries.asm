@@ -126,6 +126,7 @@ PokemonCries::
 	mon_cry CRY_DIGLETT,     153,  160 ; DODRIO
 	mon_cry CRY_SEEL,        136,  320 ; SEEL
 	mon_cry CRY_SEEL,         35,  383 ; DEWGONG
+	mon_cry CRY_NIDORAN_M,     0,    0 ; SMUJJ	(incomplete)
 	mon_cry CRY_GRIMER,        0,  256 ; GRIMER
 	mon_cry CRY_MUK,         239,  383 ; MUK
 	mon_cry CRY_FEAROW,        0,  256 ; SHELLDER
@@ -145,6 +146,7 @@ PokemonCries::
 	mon_cry CRY_DROWZEE,       0,  256 ; EXEGGUTOR
 	mon_cry CRY_CLEFAIRY,      0,  256 ; CUBONE
 	mon_cry CRY_ODDISH,       79,  224 ; MAROWAK
+	mon_cry CRY_NIDORAN_M,     0,    0 ; GUARDIA	(incomplete)
 	mon_cry CRY_GOLEM,       128,  320 ; HITMONLEE
 	mon_cry CRY_SEEL,        238,  320 ; HITMONCHAN
 	mon_cry CRY_SEEL,          0,  256 ; LICKITUNG
@@ -154,6 +156,7 @@ PokemonCries::
 	mon_cry CRY_GOLEM,       255,  383 ; WEEZING
 	mon_cry CRY_CHARMANDER,    0,  256 ; RHYHORN
 	mon_cry CRY_RHYDON,        0,  256 ; RHYDON
+	mon_cry CRY_NIDORAN_M,     0,    0 ; HAPPINY	(incomplete)
 	mon_cry CRY_PIDGEOTTO,    10,  320 ; CHANSEY
 	mon_cry CRY_GOLEM,        50,  140 ; BURGELA, tentative
 	mon_cry CRY_GOLEM,         0,  256 ; TANGELA
@@ -169,13 +172,16 @@ PokemonCries::
 	mon_cry CRY_CATERPIE,     16,  383 ; SEAKING
 	mon_cry CRY_PARAS,         2,  160 ; STARYU
 	mon_cry CRY_PARAS,         0,  256 ; STARMIE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MIME_JR	(incomplete)
 	mon_cry CRY_KRABBY,        8,  192 ; MR__MIME
 	mon_cry CRY_CATERPIE,      0,  256 ; SCYTHER
 	mon_cry CRY_CATERPIE,   -512,  383 ; KLEAVOR
 	mon_cry CRY_DROWZEE,     255,  383 ; JYNX
 	mon_cry CRY_NIDORAN_M,     0,    0 ; BUU
 	mon_cry CRY_VOLTORB,     143,  383 ; ELECTABUZZ
+	mon_cry CRY_NIDORAN_M,     0,    0 ; ELECTIVIRE	(incomplete)
 	mon_cry CRY_CHARMANDER,  255,  176 ; MAGMAR
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MAGMORTAR	(incomplete)
 	mon_cry CRY_PIDGEOTTO,     0,  256 ; PINSIR
 	mon_cry CRY_RAICHU,      291,  256 ; TRICULES
 	mon_cry CRY_SQUIRTLE,     17,  192 ; TAUROS
@@ -185,6 +191,7 @@ PokemonCries::
 	mon_cry CRY_EKANS,         0,  256 ; TERRADOS (incomplete)
 	mon_cry CRY_LAPRAS,        0,  256 ; LAPRAS
 	mon_cry CRY_PIDGEY,      255,  383 ; DITTO
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MIMMEO	(incomplete)
 	mon_cry CRY_VENONAT,     136,  224 ; EEVEE
 	mon_cry CRY_VENONAT,     170,  383 ; VAPOREON
 	mon_cry CRY_VENONAT,      61,  256 ; JOLTEON
@@ -194,12 +201,18 @@ PokemonCries::
 	mon_cry CRY_GROWLITHE,   255,  192 ; OMASTAR
 	mon_cry CRY_CATERPIE,    187,  192 ; KABUTO
 	mon_cry CRY_FEAROW,      238,  129 ; KABUTOPS
+	mon_cry CRY_NIDORAN_M,     0,    0 ; FERADACTYL	(incomplete)
 	mon_cry CRY_VILEPLUME,    32,  368 ; AERODACTYL
+	mon_cry CRY_NIDORAN_M,     0,    0 ; DECILLA	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; GAWARHED	(incomplete)
 	mon_cry CRY_GRIMER,     101,   128 ; MUNCHLAX
 	mon_cry CRY_GRIMER,       85,  129 ; SNORLAX
 	mon_cry CRY_RAICHU,      128,  192 ; ARTICUNO
 	mon_cry CRY_FEAROW,      255,  256 ; ZAPDOS
 	mon_cry CRY_RAICHU,      248,  192 ; MOLTRES
+	mon_cry CRY_NIDORAN_M,     0,    0 ; SQUEAMATA	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MINISTARE	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; IGUANARCH	(incomplete)
 	mon_cry CRY_BULBASAUR,    96,  192 ; DRATINI
 	mon_cry CRY_BULBASAUR,    64,  256 ; DRAGONAIR
 	mon_cry CRY_BULBASAUR,    60,  320 ; DRAGONITE
@@ -252,6 +265,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; AZURILL	(incomplete)
 	mon_cry CRY_MARILL,      283,  288 ; MARILL
 	mon_cry CRY_MARILL,      182,  384 ; AZUMARILL
+	mon_cry CRY_NIDORAN_M,     0,    0 ; BONSLY	(incomplete)
 	mon_cry CRY_CLEFFA,     3904,  384 ; SUDOWOODO
 	mon_cry CRY_CLEFFA,     -675,  456 ; POLITOED
 	mon_cry CRY_CLEFFA,       59,  200 ; HOPPIP
@@ -275,6 +289,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; GLACEON	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; SYLVEON	(incomplete)
 	mon_cry CRY_MARILL,      -31,  384 ; MURKROW
+	mon_cry CRY_NIDORAN_M,     0,    0 ; HONCHKROW	(incomplete)
 	mon_cry CRY_SLOWKING,    260,  512 ; SLOWKING
 	mon_cry CRY_HOOTHOOT,    304,  232 ; MISDREAVUS
 	mon_cry CRY_NIDORAN_M,     0,    0 ; MISMAGIUS	(incomplete)
@@ -295,6 +310,7 @@ PokemonCries::
 	mon_cry CRY_TYPHLOSION,  239,  247 ; STEELIX
 	mon_cry CRY_DUNSPARCE,   274,  232 ; SNUBBULL
 	mon_cry CRY_DUNSPARCE,     0,  384 ; GRANBULL
+	mon_cry CRY_NIDORAN_M,     0,    0 ; CARETORKER	(incomplete)
 	mon_cry CRY_SLOWKING,    352,  224 ; QWILFISH
 	mon_cry CRY_NIDORAN_M,     0,    0 ; KAZEPPELIN	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; QWILFATHER	(incomplete)
@@ -325,12 +341,15 @@ PokemonCries::
 	mon_cry CRY_SENTRET,      72,  560 ; PHANPY
 	mon_cry CRY_DONPHAN,       0,  416 ; DONPHAN
 	mon_cry CRY_GIRAFARIG,   115,  576 ; PORYGON2
+	mon_cry CRY_NIDORAN_M,     0,    0 ; PORYGON_Z	(incomplete)
 	mon_cry CRY_AIPOM,      -352,  384 ; STANTLER
+	mon_cry CRY_NIDORAN_M,     0,    0 ; WYRDEER	(incomplete)
 	mon_cry CRY_PICHU,      -538,  496 ; SMEARGLE
 	mon_cry CRY_NIDORAN_M,     0,    0 ; GRENMAR
 	mon_cry CRY_AIPOM,        44,  264 ; TYROGUE
 	mon_cry CRY_SLUGMA,        0,  256 ; HITMONTOP
 	mon_cry CRY_MARILL,      104,  256 ; SMOOCHUM
+	mon_cry CRY_NIDORAN_M,     0,    0 ; ELEBEBI	(incomplete)
 	mon_cry CRY_SUNFLORA,   -728,  180 ; ELEKID
 	mon_cry CRY_TEDDIURSA,   374,   58 ; MAGBY
 	mon_cry CRY_GLIGAR,     -461,  416 ; MILTANK

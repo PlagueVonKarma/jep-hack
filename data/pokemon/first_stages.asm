@@ -121,8 +121,9 @@ FirstEvoStages::
 	dw DODUO
 	dw SEEL
 	dw SEEL
-	dw GRIMER     ;58
-	dw GRIMER
+	dw SMUJJ
+	dw SMUJJ     ;58
+	dw SMUJJ
 	dw SHELLDER
 	dw SHELLDER
 	dw SHELLDER
@@ -140,6 +141,7 @@ FirstEvoStages::
 	dw EXEGGCUTE
 	dw CUBONE     ;68
 	dw CUBONE
+	dw CUBONE
 	dw TYROGUE
 	dw TYROGUE
 	dw LICKITUNG
@@ -149,7 +151,8 @@ FirstEvoStages::
 	dw KOFFING
 	dw RHYHORN
 	dw RHYHORN    ;70
-	dw CHANSEY
+	dw HAPPINY
+	dw HAPPINY
 	dw BURGELA
 	dw BURGELA
 	dw BURGELA
@@ -164,12 +167,15 @@ FirstEvoStages::
 	dw ORFRY
 	dw STARYU     ;78
 	dw STARYU
-	dw MR__MIME
+	dw MIME_JR_
+	dw MIME_JR_
 	dw SCYTHER
 	dw SCYTHER
 	dw SMOOCHUM
 	dw BUU
-	dw ELEKID
+	dw ELEBEBI
+	dw ELEBEBI
+	dw MAGBY
 	dw MAGBY
 	dw PINSIR
 	dw PINSIR
@@ -180,6 +186,7 @@ FirstEvoStages::
 	dw MAGIPREY
 	dw LAPRAS
 	dw DITTO
+	dw DITTO
 	dw EEVEE
 	dw EEVEE
 	dw EEVEE
@@ -189,12 +196,18 @@ FirstEvoStages::
 	dw OMANYTE
 	dw KABUTO
 	dw KABUTO
-	dw AERODACTYL
+	dw FERADACTYL
+	dw FERADACTYL
+	dw DECILLA
+	dw DECILLA
 	dw MUNCHLAX
 	dw MUNCHLAX
 	dw ARTICUNO   ;90
 	dw ZAPDOS
 	dw MOLTRES
+	dw SQUEAMATA
+	dw SQUEAMATA
+	dw SQUEAMATA
 	dw DRATINI
 	dw DRATINI
 	dw DRATINI
@@ -247,7 +260,8 @@ FirstEvoStages::
 	dw AZURILL
 	dw AZURILL
 	dw AZURILL     ;b8
-	dw SUDOWOODO
+	dw BONSLY
+	dw BONSLY
 	dw POLIWAG
 	dw HOPPIP
 	dw HOPPIP
@@ -270,6 +284,7 @@ FirstEvoStages::
 	dw EEVEE
 	dw EEVEE
 	dw MURKROW
+	dw MURKROW
 	dw SLOWPOKE
 	dw MISDREAVUS ;c8
 	dw MISDREAVUS
@@ -290,6 +305,7 @@ FirstEvoStages::
 	dw ONIX       ;d0
 	dw SNUBBULL
 	dw SNUBBULL
+	dw CARETORKER
 	dw QWILFISH
 	dw QWILFISH
 	dw QWILFISH
@@ -320,13 +336,16 @@ FirstEvoStages::
 	dw PHANPY
 	dw PHANPY     ;e8
 	dw PORYGON
+	dw PORYGON
+	dw STANTLER
 	dw STANTLER
 	dw SMEARGLE
 	dw GRENMAR
 	dw TYROGUE
 	dw TYROGUE
 	dw SMOOCHUM
-	dw ELEKID
+	dw ELEBEBI
+	dw ELEBEBI
 	dw MAGBY      ;f0
 	dw MILTANK
 	dw CHANSEY

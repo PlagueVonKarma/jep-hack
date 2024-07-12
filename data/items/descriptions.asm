@@ -176,7 +176,7 @@ ItemDescriptions:
 	dw BerryDesc
 	dw GoldBerryDesc
 	dw SquirtBottleDesc
-	dw QuestionMarkDesc
+	dw DubiousDiscDesc
 	dw ParkBallDesc
 	dw RainbowWingDesc
 	dw QuestionMarkDesc
@@ -868,6 +868,10 @@ GoldBerryDesc:
 SquirtBottleDesc:
 	db   "A bottle used for"
 	next "watering plants.@"
+
+DubiousDiscDesc:
+	db   "A mysterious box"
+	next "of dubious data.@"
 
 ParkBallDesc:
 	db   "The Bug-Catching"

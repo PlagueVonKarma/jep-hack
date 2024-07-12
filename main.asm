@@ -241,11 +241,13 @@ INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
 INCLUDE "engine/pokemon/move_mon_wo_mail.asm"
 
-SECTION "Pokemon Names", ROMX
+SECTION "Pokemon Base Stats", ROMX
 
 INCLUDE "data/pokemon/base_stats.asm" ; If moving pokemon becomes a problem, it's because of this.
-INCLUDE "data/pokemon/names.asm"
 
+SECTION "Pokemon Names", ROMX
+
+INCLUDE "data/pokemon/names.asm"
 
 SECTION "Crystal Phone Text", ROMX
 
