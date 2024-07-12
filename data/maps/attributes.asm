@@ -814,3 +814,4 @@ ENDM
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
 	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0
+	map_attributes Route49OldCityGate, ROUTE_49_OLD_CITY_GATE, $00, 0

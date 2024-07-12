@@ -182,6 +182,7 @@ Route29Route46Gate_Blocks:
 Route5SaffronGate_Blocks:
 ViridianForestViridianGate_Blocks:
 ViridianForestPewterGate_Blocks:
+Route49OldCityGate_Blocks:
 	INCBIN "maps/NorthSouthGate.ablk"
 
 CinnabarIsland_Blocks:

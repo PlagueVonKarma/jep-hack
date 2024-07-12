@@ -521,6 +521,8 @@ INCLUDE "maps/JohtoSafariZone.asm"
 INCLUDE "maps/LavenderCrypt.asm"
 INCLUDE "maps/UnderwaterTunnel.asm"
 INCLUDE "maps/BillsGarden.asm"
+
+SECTION "Map Scripts 27", ROMX
 INCLUDE "maps/CeladonUniversityOutside.asm"
 INCLUDE "maps/CeladonUniversityInside.asm"
 INCLUDE "maps/MtMoonCrater.asm"
@@ -551,6 +553,8 @@ INCLUDE "maps/IcefallCave1F.asm"
 INCLUDE "maps/IcefallCaveB1F.asm"
 INCLUDE "maps/IcefallCaveBack.asm"
 INCLUDE "maps/FiveIsland.asm"
+
+SECTION "Map Scripts 28", ROMX
 INCLUDE "maps/FiveIslandMeadow.asm"
 INCLUDE "maps/MemorialPillar.asm"
 INCLUDE "maps/WaterLabyrinth.asm"
@@ -585,3 +589,6 @@ INCLUDE "maps/ThreeIslandPort.asm"
 INCLUDE "maps/AlteringCave.asm"
 INCLUDE "maps/SinjohRuinsExterior.asm"
 INCLUDE "maps/SinjohRuinsInterior.asm"
+
+SECTION "Map Scripts 29", ROMX
+INCLUDE "maps/Route49OldCityGate.asm"
