@@ -12,7 +12,7 @@ FossilScientistGuy::
 	checkevent EVENT_GAVE_SCIENTIST_CLUB_FOSSIL
 	iftrue .GiveXylodon
 	checkevent EVENT_GAVE_SCIENTIST_WING_FOSSIL
-	iftrue .GiveFeraldactyl
+	iftrue .GiveFeradactyl
 	writetext FossilScientistIntroText
 	waitbutton
 	loadmenu .MoveMenuHeader
@@ -81,7 +81,7 @@ FossilScientistGuy::
 .WingFossil:
 	checkitem HELIX_FOSSIL
 	iffalse .No
-	getmonname STRING_BUFFER_3, FERODACTYL
+	getmonname STRING_BUFFER_3, FERADACTYL
 	writetext FossilScientistMonText
 	promptbutton
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1 ; remove this to immediately receive the fossil
@@ -173,19 +173,19 @@ FossilScientistGuy::
 	closetext
 	end
 
-.GiveFeraldactyl:
+.GiveFeradactyl:
 	readvar VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, .NoRoom
 	clearevent EVENT_GAVE_SCIENTIST_WING_FOSSIL
 	writetext FossilScientistDoneText
 	promptbutton
-	getmonname STRING_BUFFER_3, FERODACTYL
+	getmonname STRING_BUFFER_3, FERADACTYL
 	writetext FossilScientistReceiveText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	waitbutton
 	writetext FossilScientistMonText
-	givepoke FERODACTYL, 30
+	givepoke FERADACTYL, 30
 	closetext
 	end
 
