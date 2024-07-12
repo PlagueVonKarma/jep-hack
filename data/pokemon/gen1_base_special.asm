@@ -122,6 +122,7 @@ KantoMonSpecials:
 	db  60 ; DODRIO
 	db  70 ; SEEL
 	db  95 ; DEWGONG
+	db  20 ; SMUJJ
 	db  40 ; GRIMER
 	db  65 ; MUK
 	db  45 ; SHELLDER
@@ -141,6 +142,7 @@ KantoMonSpecials:
 	db 125 ; EXEGGUTOR
 	db  40 ; CUBONE
 	db  50 ; MAROWAK
+	db 100 ; GUARDIA
 	db  35 ; HITMONLEE
 	db  35 ; HITMONCHAN
 	db  60 ; LICKITUNG
@@ -150,6 +152,7 @@ KantoMonSpecials:
 	db  85 ; WEEZING
 	db  30 ; RHYHORN
 	db  45 ; RHYDON
+	db  65 ; HAPPINY
 	db 105 ; CHANSEY
 	db  80 ; BURGELA
 	db 100 ; TANGELA
@@ -165,13 +168,16 @@ KantoMonSpecials:
 	db  80 ; SEAKING
 	db  70 ; STARYU
 	db 100 ; STARMIE
+	db  70 ; MIME_JR_
 	db 100 ; MR__MIME
 	db  55 ; SCYTHER
 	db  45 ; KLEAVOR
 	db  95 ; JYNX
 	db  85 ; BUU
 	db  85 ; ELECTABUZZ
+	db  85 ; ELECTIVIRE
 	db  85 ; MAGMAR
+	db  95 ; MAGMORTAR
 	db  55 ; PINSIR
 	db  55 ; TRICULES
 	db  70 ; TAUROS
@@ -181,6 +187,7 @@ KantoMonSpecials:
 	db 100 ; TERRADOS
 	db  95 ; LAPRAS
 	db  48 ; DITTO
+	db  50 ; MIMMEO
 	db  65 ; EEVEE
 	db 110 ; VAPOREON
 	db 110 ; JOLTEON
@@ -190,12 +197,18 @@ KantoMonSpecials:
 	db 115 ; OMASTAR
 	db  45 ; KABUTO
 	db  70 ; KABUTOPS
+	db  40 ; FERADACTYL
 	db  60 ; AERODACTYL
+	db  40 ; DECILLA
+	db  95 ; GAWARHED
 	db  40 ; MUNCHLAX
 	db  65 ; SNORLAX
 	db 125 ; ARTICUNO
 	db 125 ; ZAPDOS
 	db 125 ; MOLTRES
+	db  71 ; SQUEAMATA
+	db  81 ; MINISTARE
+	db 121 ; IGUANARCH
 	db  50 ; DRATINI
 	db  70 ; DRAGONAIR
 	db 100 ; DRAGONITE

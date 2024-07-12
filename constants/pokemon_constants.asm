@@ -139,6 +139,7 @@
 	const DODRIO     ; 55
 	const SEEL       ; 56
 	const DEWGONG    ; 57
+	const SMUJJ
 	const GRIMER     ; 58
 	const MUK        ; 59
 	const SHELLDER   ; 5a
@@ -158,6 +159,7 @@
 	const EXEGGUTOR  ; 67
 	const CUBONE     ; 68
 	const MAROWAK    ; 69
+	const GUARDIA
 	const HITMONLEE  ; 6a
 	const HITMONCHAN ; 6b
 	const LICKITUNG  ; 6c
@@ -167,6 +169,7 @@
 	const WEEZING    ; 6e
 	const RHYHORN    ; 6f
 	const RHYDON     ; 70
+	const HAPPINY
 	const CHANSEY    ; 71
 	const BURGELA
 	const TANGELA    ; 72
@@ -182,13 +185,16 @@
 	const SEAKING    ; 77
 	const STARYU     ; 78
 	const STARMIE    ; 79
+	const MIME_JR_
 	const MR__MIME   ; 7a
 	const SCYTHER    ; 7b
 	const KLEAVOR
 	const JYNX       ; 7c
 	const BUU
 	const ELECTABUZZ ; 7d
+	const ELECTIVIRE
 	const MAGMAR     ; 7e
+	const MAGMORTAR
 	const PINSIR     ; 7f
 	const TRICULES
 	const TAUROS     ; 80
@@ -198,6 +204,7 @@
 	const TERRADOS
 	const LAPRAS     ; 83
 	const DITTO      ; 84
+	const MIMMEO
 	const EEVEE      ; 85
 	const VAPOREON   ; 86
 	const JOLTEON    ; 87
@@ -207,12 +214,18 @@
 	const OMASTAR    ; 8b
 	const KABUTO     ; 8c
 	const KABUTOPS   ; 8d
+	const FERADACTYL
 	const AERODACTYL ; 8e
+	const DECILLA
+	const GAWARHED
 	const MUNCHLAX
 	const SNORLAX    ; 8f
 	const ARTICUNO   ; 90
 	const ZAPDOS     ; 91
 	const MOLTRES    ; 92
+	const SQUEAMATA
+	const MINISTARE
+	const IGUANARCH
 	const DRATINI    ; 93
 	const DRAGONAIR  ; 94
 	const DRAGONITE  ; 95
@@ -266,6 +279,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const AZURILL
 	const MARILL     ; b7
 	const AZUMARILL  ; b8
+	const BONSLY
 	const SUDOWOODO  ; b9
 	const POLITOED   ; ba
 	const HOPPIP     ; bb
@@ -289,6 +303,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const GLACEON
 	const SYLVEON
 	const MURKROW    ; c6
+	const HONCHKROW
 	const SLOWKING   ; c7
 	const MISDREAVUS ; c8
 	const MISMAGIUS  
@@ -309,6 +324,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const STEELIX    ; d0
 	const SNUBBULL   ; d1
 	const GRANBULL   ; d2
+	const CARETORKER
 	const QWILFISH   ; d3
 	const KAZEPPELIN
 	const QWILFATHER
@@ -339,12 +355,15 @@ DEF JOHTO_POKEMON EQU const_value
 	const PHANPY     ; e7
 	const DONPHAN    ; e8
 	const PORYGON2   ; e9
+	const PORYGON_Z
 	const STANTLER   ; ea
+	const WYRDEER
 	const SMEARGLE   ; eb
 	const GRENMAR
 	const TYROGUE    ; ec
 	const HITMONTOP  ; ed
 	const SMOOCHUM   ; ee
+	const ELEBEBI
 	const ELEKID     ; ef
 	const MAGBY      ; f0
 	const MILTANK    ; f1

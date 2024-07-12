@@ -48,6 +48,7 @@ EvosAttacksPointers2::
 	dw AzurillEvosAttacks
 	dw MarillEvosAttacks
 	dw AzumarillEvosAttacks
+	dw BonslyEvosAttacks
 	dw SudowoodoEvosAttacks
 	dw PolitoedEvosAttacks
 	dw HoppipEvosAttacks
@@ -71,6 +72,7 @@ EvosAttacksPointers2::
 	dw GlaceonEvosAttacks
 	dw SylveonEvosAttacks
 	dw MurkrowEvosAttacks
+	dw HonchkrowEvosAttacks
 	dw SlowkingEvosAttacks
 	dw MisdreavusEvosAttacks
 	dw MismagiusEvosAttacks
@@ -91,6 +93,7 @@ EvosAttacksPointers2::
 	dw SteelixEvosAttacks
 	dw SnubbullEvosAttacks
 	dw GranbullEvosAttacks
+	dw CaretorkerEvosAttacks
 	dw QwilfishEvosAttacks
 	dw KazeppelinEvosAttacks
 	dw QwilfatherEvosAttacks
@@ -121,12 +124,15 @@ EvosAttacksPointers2::
 	dw PhanpyEvosAttacks
 	dw DonphanEvosAttacks
 	dw Porygon2EvosAttacks
+	dw PorygonZEvosAttacks
 	dw StantlerEvosAttacks
+	dw WyrdeerEvosAttacks
 	dw SmeargleEvosAttacks
 	dw GrenmarEvosAttacks
 	dw TyrogueEvosAttacks
 	dw HitmontopEvosAttacks
 	dw SmoochumEvosAttacks
+	dw ElebebiEvosAttacks
 	dw ElekidEvosAttacks
 	dw MagbyEvosAttacks
 	dw MiltankEvosAttacks
@@ -802,6 +808,18 @@ AzumarillEvosAttacks:
 	dbw 48, RAIN_DANCE
 	db 0 ; no more level-up moves
 
+BonslyEvosAttacks:
+	dbbw EVOLVE_LEVEL, 17, SUDOWOODO ; tentative
+	db 0 ; no more evolutions
+	dbw 1, ROCK_THROW
+	dbw 9, FLAIL
+	dbw 16, LOW_KICK
+	dbw 17, MIMIC
+	dbw 23, ROCK_SLIDE
+	dbw 30, FAINT_ATTACK
+	dbw 37, SLAM
+	db 0 ; no more level-up moves
+
 SudowoodoEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ROCK_THROW
@@ -1097,6 +1115,7 @@ SylveonEvosAttacks:
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
+	dbbw EVOLVE_ITEM, DUSK_STONE, HONCHKROW
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 11, PURSUIT
@@ -1104,6 +1123,16 @@ MurkrowEvosAttacks:
 	dbw 26, NIGHT_SHADE
 	dbw 31, FAINT_ATTACK
 	dbw 41, MEAN_LOOK
+	db 0 ; no more level-up moves
+	
+HonchkrowEvosAttacks:
+	dbbw EVOLVE_ITEM, DUSK_STONE, HONCHKROW
+	db 0 ; no more evolutions
+	dbw 1, PECK
+	dbw 1, PURSUIT
+	dbw 1, HAZE
+	dbw 1, WING_ATTACK
+	dbw 25, SWAGGER
 	db 0 ; no more level-up moves
 
 SlowkingEvosAttacks:
@@ -1356,6 +1385,19 @@ GranbullEvosAttacks:
 	dbw 28, ROAR
 	dbw 38, RAGE
 	dbw 51, TAKE_DOWN
+	db 0 ; no more level-up moves
+	
+CaretorkerEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, GUST
+	dbw 1, GROWL
+	dbw 10, SING
+	dbw 19, FLAIL
+	dbw 23, SAFEGUARD
+	; dbw 29, DISARMING_VOICE
+	dbw 35, WHIRLWIND
+	dbw 41, SOFTBOILED
+	; dbw 47, DAZZLING_GLEAM
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
@@ -1735,6 +1777,7 @@ DonphanEvosAttacks:
 	db 0 ; no more level-up moves
 
 Porygon2EvosAttacks:
+	dbbw EVOLVE_TRADE, DUBIOUS_DISK, PORYGON_Z
 	db 0 ; no more evolutions
 	dbw 1, CONVERSION2
 	dbw 1, TACKLE
@@ -1747,8 +1790,23 @@ Porygon2EvosAttacks:
 	dbw 36, TRI_ATTACK
 	dbw 44, ZAP_CANNON
 	db 0 ; no more level-up moves
+	
+PorygonZEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, CONVERSION2
+	dbw 1, TACKLE
+	dbw 1, CONVERSION
+	dbw 9, AGILITY
+	dbw 12, PSYBEAM
+	dbw 20, RECOVER
+	dbw 24, METRONOME
+	dbw 32, LOCK_ON
+	dbw 36, TRI_ATTACK
+	dbw 44, ZAP_CANNON
+	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:
+	dbbw EVOLVE_ITEM, HEART_STONE, WYRDEER
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 8, LEER
@@ -1757,6 +1815,19 @@ StantlerEvosAttacks:
 	dbw 31, SAND_ATTACK
 	dbw 40, TAKE_DOWN
 	dbw 49, CONFUSE_RAY
+	db 0 ; no more level-up moves
+	
+WyrdeerEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 8, LEER
+	dbw 15, HYPNOSIS
+	dbw 23, STOMP
+	dbw 31, SAND_ATTACK
+	dbw 40, TAKE_DOWN
+	dbw 49, CONFUSE_RAY
+	dbw 55, PSYBEAM
+	dbw 62, MEGAHORN
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:
@@ -1820,6 +1891,16 @@ SmoochumEvosAttacks:
 	dbw 37, PSYCHIC_M
 	dbw 45, PERISH_SONG
 	dbw 49, BLIZZARD
+	db 0 ; no more level-up moves
+
+ElebebiEvosAttacks:
+	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, ELEKID
+	db 0 ; no more evolutions
+	dbw 1, QUICK_ATTACK
+	dbw 1, CHARM
+	dbw 5, THUNDER_WAVE
+	dbw 9, LOW_KICK
+	dbw 12, SWEET_KISS
 	db 0 ; no more level-up moves
 
 ElekidEvosAttacks:

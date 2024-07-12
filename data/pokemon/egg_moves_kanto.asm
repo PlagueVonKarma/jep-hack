@@ -121,7 +121,8 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw SeelEggMoves
 	dw NoEggMoves1
-	dw GrimerEggMoves
+	dw SmujjEggMoves
+	dw NoEggMoves1 ; Grimer
 	dw NoEggMoves1
 	dw ShellderEggMoves
 	dw NoEggMoves1
@@ -140,6 +141,7 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw CuboneEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Guardia
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw LickitungEggMoves
@@ -149,7 +151,8 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw RhyhornEggMoves
 	dw NoEggMoves1
-	dw ChanseyEggMoves
+	dw HappinyEggMoves
+	dw NoEggMoves1 ; Chansey
 	dw BurgelaEggMoves ; Burgela
 	dw NoEggMoves1
 	dw NoEggMoves1 ; Tangrowth
@@ -164,13 +167,16 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
-	dw MrMimeEggMoves
+	dw MimeJrEggMoves
+	dw NoEggMoves1 ; Mr. Mime
 	dw ScytherEggMoves
 	dw NoEggMoves1 ; Kleavor
 	dw NoEggMoves1
 	dw BuuEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Electivire
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Magmortar
 	dw PinsirEggMoves
 	dw NoEggMoves1 ; Tricules
 	dw NoEggMoves1
@@ -180,6 +186,7 @@ EggMovePointers1:
 	dw NoEggMoves1 ; Terrados
 	dw LaprasEggMoves
 	dw NoEggMoves1
+	dw NoEggMoves1 ; Mimmeo
 	dw EeveeEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -189,12 +196,18 @@ EggMovePointers1:
 	dw NoEggMoves1
 	dw KabutoEggMoves
 	dw NoEggMoves1
-	dw AerodactylEggMoves
+	dw FeradactylEggMoves
+	dw NoEggMoves1 ; Aerodactyl
+	dw DecillaEggMoves
+	dw NoEggMoves1 ; Gawarhed
 	dw MunchlaxEggMoves ; Munchlax
 	dw NoEggMoves1 ; Should this even exist?
 	dw NoEggMoves1
 	dw NoEggMoves1
 	dw NoEggMoves1
+	dw SqueamataEggMoves
+	dw NoEggMoves1 ; Ministare
+	dw NoEggMoves1 ; Iguanarch
 	dw DratiniEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1
@@ -503,7 +516,7 @@ SeelEggMoves:
 	dw ENCORE
 	dw -1 ; end
 
-GrimerEggMoves:
+SmujjEggMoves:
 	dw HAZE
 	dw MEAN_LOOK
 	dw LICK
@@ -585,7 +598,7 @@ RhyhornEggMoves:
 	dw MAGNITUDE
 	dw -1 ; end
 
-ChanseyEggMoves:
+HappinyEggMoves:
 	dw PRESENT
 	dw METRONOME
 	dw HEAL_BELL
@@ -631,7 +644,7 @@ OrfryEggMoves:
 	dw HYDRO_PUMP
 	dw -1 ; end
 
-MrMimeEggMoves:
+MimeJrEggMoves:
 	dw FUTURE_SIGHT
 	dw HYPNOSIS
 	dw MIMIC
@@ -686,14 +699,29 @@ KabutoEggMoves:
 	dw FLAIL
 	dw -1 ; end
 
-AerodactylEggMoves:
+FeradactylEggMoves:
 	dw WHIRLWIND
 	dw PURSUIT
 	dw FORESIGHT
 	dw -1 ; end
+	
+DecillaEggMoves:
+	dw CRUNCH
+	dw STOMP
+	dw THRASH
+	dw LICK
+	dw -1 ; end
 
 MunchlaxEggMoves:
 	dw LICK
+	dw -1 ; end
+
+SqueamataEggMoves:
+	dw THRASH
+	dw MIST
+	dw QUICK_ATTACK
+	dw BUBBLE
+	dw BUBBLEBEAM
 	dw -1 ; end
 
 DratiniEggMoves:

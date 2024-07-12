@@ -32,6 +32,7 @@ AlphabeticalPokedexOrder:
 	dw BLASTYKE
 	dw BLISSEY
 	dw BLOTTLE
+	dw BONSLY
 	dw BRUINOUS
 	dw BULBASAUR
 	dw BURGELA
@@ -40,6 +41,7 @@ AlphabeticalPokedexOrder:
 	dw CACAWPHONY
 	dw CALFLAC
 	dw CARAPTHOR
+	dw CARETORKER
 	dw CATERPIE
 	dw CELEBI
 	dw CHANSEY
@@ -64,6 +66,7 @@ AlphabeticalPokedexOrder:
 	dw CUBONE
 	dw CYCLORP
 	dw CYNDAQUIL
+	dw DECILLA
 	dw DELIBIRD
 	dw DEWGONG
 	dw DIGLETT
@@ -83,7 +86,9 @@ AlphabeticalPokedexOrder:
 	dw DUNSPARCE
 	dw EEVEE
 	dw EKANS
+	dw ELEBEBI
 	dw ELECTABUZZ
+	dw ELECTIVIRE
 	dw ELECTRODE
 	dw ELEKID
 	dw ENTEI
@@ -94,6 +99,7 @@ AlphabeticalPokedexOrder:
 	dw FARFETCH_D
 	dw FARIGIRAF
 	dw FEAROW
+	dw FERADACTYL
 	dw FERALIGATR
 	dw FLAAFFY
 	dw FLAMBEAR
@@ -106,6 +112,7 @@ AlphabeticalPokedexOrder:
 	dw GASTLY
 	dw GAOTORA
 	dw GAVILLAIN
+	dw GAWARHED
 	dw GENGAR
 	dw GENTLARVA
 	dw GEODUDE
@@ -127,7 +134,9 @@ AlphabeticalPokedexOrder:
 	dw GRENMAR
 	dw GRIMER
 	dw GROWLITHE
+	dw GUARDIA
 	dw GYARADOS
+	dw HAPPINY
 	dw HAUNTER
 	dw HERACROSS
 	dw HIPPUNK
@@ -135,6 +144,7 @@ AlphabeticalPokedexOrder:
 	dw HITMONLEE
 	dw HITMONTOP
 	dw HO_OH
+	dw HONCHKROW
 	dw HOOTHOOT
 	dw HOPPIP
 	dw HORSEA
@@ -142,6 +152,7 @@ AlphabeticalPokedexOrder:
 	dw HOUNDOUR
 	dw HYPNO
 	dw IGGLYBUFF
+	dw IGUANARCH
 	dw INOSHIKA
 	dw IRON_TREADS
 	dw IRON_BUNDLE
@@ -190,6 +201,7 @@ AlphabeticalPokedexOrder:
 	dw MAGIKARP
 	dw MAGIPREY
 	dw MAGMAR
+	dw MAGMORTAR
 	dw MAGNEMITE
 	dw MAGNETON
 	dw MAGNETITE
@@ -205,8 +217,11 @@ AlphabeticalPokedexOrder:
 	dw METAPOD
 	dw MEW
 	dw MEWTWO
-	dw MIMEAR
 	dw MILTANK
+	dw MIME_JR_
+	dw MIMEAR
+	dw MIMMEO
+	dw MINISTARE
 	dw MISDREAVUS
 	dw MISMAGIUS
 	dw MOIBELLE
@@ -256,6 +271,7 @@ AlphabeticalPokedexOrder:
 	dw POLIWRATH
 	dw PONYTA
 	dw PORYGON
+	dw PORYGON_Z
 	dw PORYGON2
 	dw PRESSIO
 	dw PRIMEAPE
@@ -304,12 +320,14 @@ AlphabeticalPokedexOrder:
 	dw SLUGMA
 	dw SMEARGLE
 	dw SMOOCHUM
+	dw SMUJJ
 	dw SNEASEL
 	dw SNORLAX
 	dw SNUBBULL
 	dw SONEGG
 	dw SPEAROW
 	dw SPINARAK
+	dw SQUEAMATA
 	dw SQUIRTLE
 	dw STANTLER
 	dw STARMIE
@@ -370,6 +388,7 @@ AlphabeticalPokedexOrder:
 	dw WOBBUFFET
 	dw WOOPER
 	dw WYNAUT
+	dw WYRDEER
 	dw XATU
 	dw XYLODON
 	dw XYLOFIN
