@@ -477,7 +477,6 @@ INCLUDE "engine/events/play_slow_cry.asm"
 INCLUDE "engine/link/time_capsule.asm"
 INCLUDE "engine/link/time_capsule_2.asm"
 INCLUDE "engine/events/magikarp.asm"
-INCLUDE "engine/events/fossil_scientist.asm"
 
 SECTION "bank3Econtcont", ROMX
 
@@ -491,6 +490,7 @@ INCLUDE "engine/tilesets/tileset_anims.asm"
 INCLUDE "engine/events/npc_trade.asm"
 INCLUDE "engine/events/mom_phone.asm"
 INCLUDE "engine/events/tradeback_npc.asm" ; Tradeback NPC tutorial
+;INCLUDE "engine/events/fossil_scientist.asm"
 INCLUDE "engine/battle/misc.asm"
 
 SECTION "mobile40", ROMX

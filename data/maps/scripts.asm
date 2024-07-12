@@ -498,6 +498,9 @@ INCLUDE "maps/LakeOfRageTraderHouse.asm"
 INCLUDE "maps/LakeOfRagePokecenter1F.asm"
 INCLUDE "maps/LakeOfRageMart.asm"
 INCLUDE "maps/LakeOfRagePrycesHouse.asm"
+
+SECTION "Map Scripts 26", ROMX
+
 INCLUDE "maps/DebugRoom.asm"
 INCLUDE "maps/CliffCave.asm"
 INCLUDE "maps/Route49.asm"
@@ -505,9 +508,6 @@ INCLUDE "maps/BlueForest.asm"
 INCLUDE "maps/QuietCave.asm"
 INCLUDE "maps/Route49_2.asm"
 INCLUDE "maps/SilversHouse.asm"
-
-SECTION "Map Scripts 26", ROMX
-
 INCLUDE "maps/SilentHillsPokecenter1F.asm"
 INCLUDE "maps/NihonPokecenter2F.asm"
 INCLUDE "maps/KantoPokecenter2F.asm"

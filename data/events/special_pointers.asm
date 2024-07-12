@@ -186,4 +186,4 @@ SpecialsPointers::
 
 ; Tradeback NPC tutorial
 	add_special TradebackNPC
-	add_special FossilScientist
+	;add_special FossilScientist

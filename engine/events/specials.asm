@@ -426,6 +426,6 @@ TradebackNPC:
 	farcall TradebackGuy
 	ret
 
-FossilScientist:
-	farcall FossilScientistGuy
-	ret
+;FossilScientist:
+;	farcall FossilScientistGuy
+;	ret

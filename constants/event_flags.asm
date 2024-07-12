@@ -136,9 +136,15 @@
 	const EVENT_TIN_TOWER_5F_HIDDEN_FULL_RESTORE
 	const EVENT_TIN_TOWER_5F_HIDDEN_CARBOS
 	const EVENT_BURNED_TOWER_1F_HIDDEN_ETHER
-	const_skip ; unused in Crystal
-	const_skip ; unused in Crystal
-	const_skip ; unused in Crystal
+	
+	; These are now fossil-related pieces.
+	; adapted from https://github.com/pret/pokecrystal/wiki/Reviving-Pok%C3%A9mon-from-Fossils-(Gen-I)
+	const EVENT_GAVE_SCIENTIST_OLD_AMBER
+	const EVENT_GAVE_SCIENTIST_HELIX_FOSSIL
+	const EVENT_GAVE_SCIENTIST_DOME_FOSSIL
+	const EVENT_GAVE_SCIENTIST_CLUB_FOSSIL
+	const EVENT_GAVE_SCIENTIST_WING_FOSSIL
+	
 	const EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
 	const EVENT_OLIVINE_LIGHTHOUSE_5F_HIDDEN_HYPER_POTION
 	const EVENT_TEAM_ROCKET_BASE_B1F_HIDDEN_REVIVE
@@ -202,7 +208,7 @@
 	const EVENT_GAVE_GS_BALL_TO_KURT
 	const EVENT_FOREST_IS_RESTLESS
 	const EVENT_ANSWERED_DRAGON_MASTER_QUIZ_WRONG
-; Unused: next 6 events
+; Unused: next 4 events
 
 	const_next 200
 ; Kanto story events
