@@ -507,6 +507,11 @@ AerodactylFossilScript:
 	opentext
 	writetext AerodactylFossilText
 	waitbutton
+	refreshscreen
+	pokepic EGG
+	cry AERODACTYL
+	waitbutton
+	closepokepic
 	closetext
 	end
 
@@ -521,7 +526,12 @@ KabutopsFossilScript:
 	opentext
 	writetext KabutopsFossilText
 	waitbutton
-	setval KABUTOPS
+	refreshscreen
+	pokepic KABUTOPS
+	cry KABUTOPS
+	waitbutton
+	closepokepic
+	closetext
 	end
 
 KabutopsFossilText:
