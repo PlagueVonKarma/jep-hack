@@ -526,8 +526,11 @@ Route36LassText:
 	line "blocking the way"
 	cont "to GOLDENROD CITY."
 
-	para "It's preventing"
-	line "me from shopping."
+	para "I wanted to go"
+	line "shopping and see"
+	cont "the huge #MON"
+	cont "CENTER they just"
+	cont "opened…"
 
 	para "Something should"
 	line "be done about it."

@@ -55,6 +55,8 @@ In general, there have been many wild encounter tweaks. View this document for d
 - The Kanto Safari Zone map from the prototype has been restored.
 - The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
 - The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
+	- The GS Ball event has been restored, now being obtainable after beating the Elite Four and trying to exit the building.
+	- The Egg Ticket and Eon Mail events have been restored, now being associated with Buena's Password.
 	- Additionally, old lore relating to the area has now been restored.
 - Breakable rocks now give useful items...
 	- 1% MAX_REVIVE
