@@ -1,7 +1,7 @@
 BuenaPrizeItems:
 	table_width 2, BuenaPrizeItems
-	db ULTRA_BALL,   2
-	db FULL_RESTORE, 2
+	db EGG_TICKET,   2
+	db EON_MAIL, 2
 	db NUGGET,       3
 	db RARE_CANDY,   3
 	db PROTEIN,      5

@@ -158,7 +158,10 @@ CeladonCityTeacher2Text:
 	line "a sales clerk."
 	done
 
-CeladonCityLassText_Mobile: ; unreferenced
+CeladonCityLassText_MobileScript:
+	jumptextfaceplayer CeladonCityLassText_Mobile
+
+CeladonCityLassText_Mobile: ; Now existing
 	text "I love being"
 	line "surrounded by tall"
 	cont "buildings!"
@@ -267,3 +270,4 @@ CeladonCity_MapEvents:
 	object_event 24, 33, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityYoungster2Script, -1
 	object_event  6, 14, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonCityTeacher2Script, -1
 	object_event  7, 22, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityLassScript, -1
+	object_event 10, 11, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonCityLassText_MobileScript, -1
