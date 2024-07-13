@@ -720,8 +720,8 @@ PokecomCenterAdminOfficeMobile_MapEvents:
 	warp_event  1, 31, POKECOM_CENTER_ADMIN_OFFICE_MOBILE, 5
 	warp_event  6, 15, GOLDENROD_CITY, 15
 	warp_event  7, 15, GOLDENROD_CITY, 15
-	warp_event  0, 15, POKECOM_CENTER_ADMIN_OFFICE_MOBILE, 1
-	warp_event  0,  6, POKECENTER_2F, 1
+	warp_event  0,  6, POKECOM_CENTER_ADMIN_OFFICE_MOBILE, 1
+	warp_event  0, 15, POKECENTER_2F, 1
 
 	def_coord_events
 	coord_event  6, 15, SCENE_GOLDENRODPOKECENTER1F_GS_BALL, GoldenrodPokecenter1F_GSBallSceneLeft
@@ -732,7 +732,7 @@ PokecomCenterAdminOfficeMobile_MapEvents:
 	bg_event  6, 28, BGEVENT_UP, PokecomCenterAdminOfficeMobileComputer2
 	bg_event  3, 26, BGEVENT_UP, PokecomCenterAdminOfficeMobileComputer3
 	bg_event 19,  8, BGEVENT_UP, GoldenrodPokecomCenterNewsMachineScript
-	bg_event  2,  9, BG_EVENT_UP, GoldenrodPokecomCenterSignScript
+	bg_event  2,  9, BGEVENT_UP, GoldenrodPokecomCenterSignScript
 
 	def_object_events
 	object_event  4, 28, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PokecomCenterAdminOfficeMobileScientist1Script, -1
