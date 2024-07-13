@@ -504,14 +504,13 @@ MuseumReceptionistLol:
 	done
 
 AerodactylFossilScript:
+	refreshscreen
+	trainerpic AEROFOSSIL
+	waitbutton
+	closepokepic
 	opentext
 	writetext AerodactylFossilText
 	waitbutton
-	refreshscreen
-	trainerpic AEROFOSSIL
-	cry AERODACTYL
-	waitbutton
-	closepokepic
 	closetext
 	end
 
@@ -523,14 +522,13 @@ AerodactylFossilText:
 	done
 
 KabutopsFossilScript:
+	refreshscreen
+	trainerpic KABUFOSSIL
+	waitbutton
+	closepokepic
 	opentext
 	writetext KabutopsFossilText
 	waitbutton
-	refreshscreen
-	trainerpic KABUFOSSIL
-	cry KABUTOPS
-	waitbutton
-	closepokepic
 	closetext
 	end
 

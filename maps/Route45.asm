@@ -286,7 +286,7 @@ TrainerCamperQuentin:
 	end
 
 Route45DummyScript: ; unreferenced
-	writetext Route45DummyText
+;	writetext Route45DummyText
 	waitbutton
 	closetext
 	end
