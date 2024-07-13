@@ -246,7 +246,7 @@ GoldenrodPokecomCenterNewsMachineText:
 	para "That's it! The"
 	line "crowd goes wild!"
 	
-	para "Sato Yuki wins"
+	para "SATO YUKI wins"
 	line "the 4th #MON"
 	cont "LEAGUE National"
 	cont "Tournament!"
@@ -731,8 +731,23 @@ PokecomCenterAdminOfficeMobile_MapEvents:
 	bg_event  6, 26, BGEVENT_UP, PokecomCenterAdminOfficeMobileComputer1
 	bg_event  6, 28, BGEVENT_UP, PokecomCenterAdminOfficeMobileComputer2
 	bg_event  3, 26, BGEVENT_UP, PokecomCenterAdminOfficeMobileComputer3
-	bg_event 19,  8, BGEVENT_UP, GoldenrodPokecomCenterNewsMachineScript
-	bg_event  2,  9, BGEVENT_UP, GoldenrodPokecomCenterSignScript
+	bg_event  2,  9, BGEVENT_READ, GoldenrodPokecomCenterSignScript
+	bg_event 24,  9, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 27, 11, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 26, 11, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 25, 11, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 24,  8, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 24,  7, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 24,  6, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 24,  5, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 24,  4, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  9, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  8, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  7, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  6, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  5, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 29,  4, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
+	bg_event 28, 11, BGEVENT_READ, GoldenrodPokecomCenterNewsMachineScript
 
 	def_object_events
 	object_event  4, 28, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PokecomCenterAdminOfficeMobileScientist1Script, -1
