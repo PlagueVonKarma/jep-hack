@@ -80,4 +80,6 @@ TrainerPicPointers::
 	dba PainterPic
 	dba SoldierPic
 	dba SportsmanPic
+	dba AerodactylFossilPic
+	dba KabutopsFossilPic
 	assert_table_length NUM_TRAINER_CLASSES

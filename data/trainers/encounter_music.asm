@@ -81,4 +81,6 @@ TrainerEncounterMusic::
 	db MUSIC_LASS_ENCOUNTER			; painter
 	db MUSIC_HIKER_ENCOUNTER		; soldier
 	db MUSIC_HIKER_ENCOUNTER		; sportsman
+	db MUSIC_ROCKET_ENCOUNTER      ; fossil1
+	db MUSIC_ROCKET_ENCOUNTER      ; fossil2
 	assert_table_length NUM_TRAINER_CLASSES + 1

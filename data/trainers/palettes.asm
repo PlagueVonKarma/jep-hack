@@ -87,6 +87,8 @@ INCBIN "gfx/trainers/teacherm.gbcpal", middle_colors
 INCBIN "gfx/trainers/painter.gbcpal", middle_colors
 INCBIN "gfx/trainers/soldier.gbcpal", middle_colors
 INCBIN "gfx/trainers/sportsman.gbcpal", middle_colors
+INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; duplicate for fossils
+INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; duplicate for fossils
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"

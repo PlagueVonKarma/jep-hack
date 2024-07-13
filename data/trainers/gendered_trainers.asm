@@ -35,6 +35,7 @@ MaleTrainers:
 	db TEACHERM
 	db SOLDIER
 	db SPORTSMAN
+	db AEROFOSSIL
 .End
 
 FemaleTrainers:
@@ -50,4 +51,5 @@ FemaleTrainers:
 	db COOLTRAINERF
 	db CHANNELER
 	db PAINTER
+	db KABUFOSSIL
 .End

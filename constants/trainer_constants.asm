@@ -740,6 +740,12 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass SPORTSMAN ; 53
 	const JACQUES ; also an ace attorney reference.
+	
+	trainerclass AEROFOSSIL ; 54
+	const FOSSIL1
+	
+	trainerclass KABUFOSSIL ; 55
+	const FOSSIL2
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

@@ -79,4 +79,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; PAINTER
 	dn  9,  8,  8,  8 ; SOLDIER
 	dn  9,  8,  8,  8 ; SPORTSMAN
+	dn 15, 15, 15, 15 ; FOSSIL1
+	dn 15, 15, 15, 15 ; FOSSIL2
 	assert_table_length NUM_TRAINER_CLASSES

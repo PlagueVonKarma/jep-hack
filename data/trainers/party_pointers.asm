@@ -80,4 +80,6 @@ TrainerGroups:
 	dba PainterGroup
 	dba SoldierGroup
 	dba SportsmanGroup
+	dba AerofossilGroup
+	dba KabufossilGroup
 	assert_table_length NUM_TRAINER_CLASSES

@@ -5482,3 +5482,19 @@ SportsmanGroup:
 	dw DODUO
 	db -1 ; end
 	end_list_items
+	
+AerofossilGroup:
+	next_list_item ; SPORTSMAN (1)
+	db "???@", TRAINERTYPE_NORMAL
+	db 99
+	dw AERODACTYL
+	db -1 ; end
+	end_list_items
+
+KabufossilGroup:
+	next_list_item ; SPORTSMAN (1)
+	db "???@", TRAINERTYPE_NORMAL
+	db 99
+	dw KABUTOPS
+	db -1 ; end
+	end_list_items

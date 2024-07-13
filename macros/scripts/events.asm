@@ -1065,14 +1065,20 @@ MACRO checksave
 	db checksave_command
 ENDM
 
-	const loadmonindex_command ; $aa
+	const trainerpic_command ; $aa
+MACRO trainerpic
+	db trainerpic_command
+	db \1 ; trainer
+ENDM
+
+	const loadmonindex_command ; $ab
 MACRO loadmonindex
 	db loadmonindex_command
 	dw \2 ; pokemon
 	db \1 ; 0: don't reserve, 1-8: reserve in specific spot
 ENDM
 
-	const checkmaplockedmons_command ; $ab
+	const checkmaplockedmons_command ; $ac
 MACRO checkmaplockedmons
 	db checkmaplockedmons_command
 ENDM

@@ -463,5 +463,17 @@ TrainerClassAttributes:
 	db 10 ; base reward
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; FOSSIL1
+	db NO_ITEM, NO_ITEM ; items
+	db 99 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_RARELY
+	
+; FOSSIL2
+	db NO_ITEM, NO_ITEM ; items
+	db 99 ; base reward
+	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_RARELY
 
 	assert_table_length NUM_TRAINER_CLASSES

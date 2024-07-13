@@ -80,4 +80,6 @@ BTTrainerClassGenders:
 	db FEMALE ; PAINTER
 	db MALE ; SOLDIER
 	db MALE ; SPORTSMAN
+	db MALE ; FOSSIL
+	db FEMALE ; FOSSIL
 	assert_table_length NUM_TRAINER_CLASSES

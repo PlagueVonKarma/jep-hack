@@ -234,8 +234,9 @@ ScriptCommandTable:
 	dw Script_getname                    ; a7
 	dw Script_wait                       ; a8
 	dw Script_checksave                  ; a9
-	dw Script_loadmonindex               ; aa
-	dw Script_checkmaplockedmons         ; ab
+	dw Script_trainerpic				 ; aa
+	dw Script_loadmonindex               ; ab
+	dw Script_checkmaplockedmons         ; ac
 	assert_table_length NUM_EVENT_COMMANDS
 
 StartScript:
@@ -2347,6 +2348,12 @@ Script_checkver_duplicate: ; unreferenced
 
 .gs_version:
 	db GS_VERSION
+
+Script_trainerpic:
+	call GetScriptByte
+	ld [wTrainerClass], a
+	farcall Trainerpic
+	ret
 
 Script_loadmonindex:
 ; script command 0xaa

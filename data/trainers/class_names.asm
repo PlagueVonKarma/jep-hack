@@ -78,4 +78,6 @@ TrainerClassNames::
 	li "PAINTER"
 	li "SOLDIER"
 	li "SPORTSMAN"
+	li "???"
+	li "???"
 	assert_list_length NUM_TRAINER_CLASSES

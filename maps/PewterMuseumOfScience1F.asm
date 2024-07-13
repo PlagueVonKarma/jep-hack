@@ -508,7 +508,7 @@ AerodactylFossilScript:
 	writetext AerodactylFossilText
 	waitbutton
 	refreshscreen
-	pokepic EGG
+	trainerpic AEROFOSSIL
 	cry AERODACTYL
 	waitbutton
 	closepokepic
@@ -527,7 +527,7 @@ KabutopsFossilScript:
 	writetext KabutopsFossilText
 	waitbutton
 	refreshscreen
-	pokepic KABUTOPS
+	trainerpic KABUFOSSIL
 	cry KABUTOPS
 	waitbutton
 	closepokepic

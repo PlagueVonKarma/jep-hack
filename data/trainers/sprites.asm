@@ -78,4 +78,6 @@ BTTrainerClassSprites:
 	db SPRITE_LASS		; Painter
 	db SPRITE_ROCKER	; Soldier
 	db SPRITE_SAILOR	; Sportsman uhhh
+	db SPRITE_RED		; Fossil Placeholder
+	db SPRITE_RED		; Fossil Placeholder
 	assert_table_length NUM_TRAINER_CLASSES
