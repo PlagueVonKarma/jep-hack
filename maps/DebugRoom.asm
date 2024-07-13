@@ -110,6 +110,8 @@ DebugFlyScript:
 	setflag ENGINE_FLYPOINT_SILVER_CAVE
 	setflag ENGINE_FLYPOINT_SILENT_HILLS
 	
+	setevent EVENT_BEAT_ELITE_FOUR
+	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
 	givepoke SHI_SHI, 70
