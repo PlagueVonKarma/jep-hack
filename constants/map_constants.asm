@@ -483,8 +483,8 @@ ENDM
 	map_const ROUTE_2_GATE,                                 5,  4 ; 12
 	map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
     map_const VIRIDIAN_FOREST,                             19, 26 
-	map_const VIRIDIAN_FOREST_VIRIDIAN_GATE,                 4, 5 
-	map_const VIRIDIAN_FOREST_PEWTER_GATE,                   4, 5                           
+	map_const VIRIDIAN_FOREST_VIRIDIAN_GATE,                 5, 4 
+	map_const VIRIDIAN_FOREST_PEWTER_GATE,                   5, 4                           
 	endgroup
 
 	newgroup NEW_BARK                                             ; 24

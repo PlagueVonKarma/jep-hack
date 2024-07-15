@@ -1,3 +1,12 @@
+	object_const_def
+	const VIRIDIANFOREST_BUG_CATCHER1
+	const VIRIDIANFOREST_BUG_CATCHER2
+	const VIRIDIANFOREST_BUG_CATCHER3
+	const VIRIDIANFOREST_BUG_CATCHER4
+	const VIRIDIANFOREST_BUG_CATCHER5
+	const VIRIDIANFOREST_POKE_BALL1
+	const VIRIDIANFOREST_POKE_BALL2
+
 ViridianForest_MapScripts:
 	def_scene_scripts
 
@@ -213,6 +222,8 @@ ViridianForestSignText6:
 	done
 	
 ViridianForest_MapEvents:
+	db 0, 0 ; filler
+
 	def_warp_events
 	warp_event  3,  5, VIRIDIAN_FOREST_PEWTER_GATE, 1
 	warp_event 18, 47, VIRIDIAN_FOREST_VIRIDIAN_GATE, 1
@@ -221,7 +232,7 @@ ViridianForest_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  4,  7, BGEVENT_READ, ViridianForestSignText1
+	bg_event  4,  6, BGEVENT_READ, ViridianForestSignText1
 	bg_event  6, 26, BGEVENT_READ, ViridianForestSignText2
 	bg_event 28, 19, BGEVENT_READ, ViridianForestSignText3
 	bg_event 18, 34, BGEVENT_READ, ViridianForestSignText4
