@@ -148,7 +148,7 @@ CheatFillPokedex:
 	ld bc, 31 ; 001-248
 	call ByteFill
 	ld a, %11111111
-	ld bc, 11 ; 249-336
+	ld bc, 18 ; 249-392
 	call ByteFill
 	ret
 
