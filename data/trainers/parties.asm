@@ -1997,7 +1997,7 @@ PokemaniacGroup:
 
 GruntMGroup:
 	next_list_item ; GRUNTM (1)
-	db "GRUNT@", TRAINERTYPE_NORMAL
+	db "GRUNT@", TRAINERTYPE_NORMAL ; Proton, he's a grunt here. 
 	db 14
 	dw KOFFING
 	db -1 ; end
@@ -4204,7 +4204,7 @@ ExecutiveMGroup: ; Unsure which is which. Little help?
 	db -1 ; end
 
 	next_list_item ; EXECUTIVEM (4)
-	db "EXECUTIVE@", TRAINERTYPE_NORMAL ; Slowpoke Well - Proton? Is he that strong?
+	db "EXECUTIVE@", TRAINERTYPE_NORMAL
 	db 22
 	dw ZUBAT
 	db 24
