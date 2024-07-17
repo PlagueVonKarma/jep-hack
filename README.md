@@ -9,15 +9,16 @@ Using the Kanto Expansion Pak's original criteria, the ethos of the Johto Expans
 What falls under "Johto- and Kanto-related" is a Pokemon is the following, so long as they are, in fact, related:
 - Is a regional variant (Eg. Hisuian Sneasel)
 - Evolves from or into a Pokemon (eg. Tangrowth, Honchkrow)
-- Was cut from the final game (eg. Bellignan, Tricules, Phandarin)
+- Was cut from the final game (eg. Bellignan, Tricules, Phandarin; "beta" Pokemon)
+	- Or from a future title and was related to a Kanto/Johto Pokemon (eg. Lizargun/Charmada)
 - Is a Paradox equivalent (eg. Walking Wake)
 - Would qualify for the Kanto Expansion Pak (eg. Omegadge, Melmetal)
 
-Any Pokemon that you can think of that would come under this, is absolutely in. Dex total is 462!
+Any Pokemon that you can think of that would come under this, is absolutely in. Dex total is 466!
 
-Mega Evolutions, Gigantamax forms, etc, are currently not in active consideration.
+With respect to Pokemon from the May 1998 Sprite Cache, creative liberties based on their designs are taken. Given the lack of...anything for these Pokemon, they're heavily customised. Similar philosophies to the Kanto Expansion Pak's RG Asset Leak Pokemon are used.
 
-The Fairy-type does exist.
+Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 
 # Changes
 ## New Features
@@ -25,39 +26,6 @@ The Fairy-type does exist.
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
 - Fossil revival is back in town! Get fossils using Rock Smash and revive them at Ruins of Alph or the newly-added Pewter Museum of Science!
-
-## New Things
-- 11 new Trainer classes, including;
-	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
-	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
-	- The Painter from FRLG!
-- Numerous new maps, featuring new locations, the iconic Sevii Islands, and the Nihon region!
-
-## QoL Changes
-- A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
-- Kurt now makes Apricorn Balls instantly. He's had his coffee and is listening to his favourite music.
-- Instant text is now an option!
-- Clock reset procedure is now like vanilla GS, requiring just Down + B.
-- Tilesets now handle up to 255 titles (from 192), allowing for slightly nicer maps.
-- Can now have up to 17 object events.
-- Gen 6 Experience System!
-- Poke Balls now all have unique palettes.
-
-## Map Changes
-In general, there have been many wild encounter tweaks. View this document for details. (will link when hack is in a playable state)
-
-- Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc.
-- Kanto wild encounters have generally higher levels to aid in improving the level curve.
-- Rock Smash now has variable and larger wild data, featuring rare, location-based Pokemon (eg. Corsola on the shore), and level adjustments to make them more appropriate.
-- Viridian Forest has been restored.
-- The Pewter Museum of Science has been restored.
-- Cerulean Cave has been restored, complete with a Mewtwo fight!
-- The Kanto Safari Zone map from the prototype has been restored.
-- The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
-- The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
-	- The GS Ball event has been restored, now being obtainable after beating the Elite Four and trying to exit the building.
-	- The Egg Ticket and Eon Mail events have been restored, now being associated with Buena's Password.
-	- Additionally, old lore relating to the area has now been restored.
 - Breakable rocks now give useful items...
 	- 1% MAX_REVIVE
 	- 2% DOME_FOSSIL - Kabuto
@@ -73,11 +41,44 @@ In general, there have been many wild encounter tweaks. View this document for d
 	- 48% PEARL
 	- 64% BRICK_PIECE
 
-## Item Changes
+# New things
+- 11 new Trainer classes, including;
+	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
+	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
+	- The Painter from FRLG!
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo, and the Peat Block!
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
 - The Antique Pot has been added to accomodate a Shuckle evolution!
-- New Club and Wing Fossils - you'll have to see what these do!
+- New Club and Wing Fossils; the former for Xylodon, a May98 Prototype Pokemon, and the latter for Feradactyl, (seemingly) an Aerodactyl pre-evolution from the same prototype.
+
+## QoL Changes
+- A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
+- Kurt now makes Apricorn Balls instantly. He's had his coffee and is listening to his favourite music.
+- Instant text is now an option!
+- Clock reset procedure is now like vanilla GS, requiring just Down + B.
+- Tilesets now handle up to 255 titles (from 192), allowing for slightly nicer maps.
+- Can now have up to 17 object events.
+- Gen 6 Experience System!
+- Poke Balls now all have unique palettes.
+- The high friendship evolution threshold is now 170, making Friend Balls sufficient for instant evolution and hatching from Eggs takes minimal effort.
+
+## Map Changes
+Numerous new maps are available, featuring new locations, the iconic Sevii Islands, and the Nihon region!
+
+Additionally, there have been many wild encounter tweaks. View this document for details. (will link when hack is in a playable state)
+
+- Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc.
+- Kanto wild encounters have generally higher levels to aid in improving the level curve.
+- Rock Smash now has variable and larger wild data, featuring rare, location-based Pokemon (eg. Corsola on the shore), and level adjustments to make them more appropriate.
+- Viridian Forest has been restored.
+- The Pewter Museum of Science has been restored.
+- Cerulean Cave has been restored, complete with a Mewtwo fight!
+- The Kanto Safari Zone map from the prototype has been restored.
+- The prototype Lake of Rage village has been restored, complete with an Evolution Stone shop and Trader NPC! In general, it's themed around Pokemon evolution.
+- The Pokemon Communications Centre from JP GSC has been added and tweaked into a Regional Variant Trade hub, increasing with badge count.
+	- The GS Ball event has been restored, now being obtainable after beating the Elite Four and trying to exit the building.
+	- The Egg Ticket and Eon Mail events have been restored, now being associated with Buena's Password. Redeeming the Egg Ticket gives you an Odd Egg with the usual Pokemon pool and Shiny chances; this is soft resettable if you like that sort of thing.
+	- Additionally, old lore relating to the area has now been restored, including something about the Unown!
 
 # Credits
 - Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)

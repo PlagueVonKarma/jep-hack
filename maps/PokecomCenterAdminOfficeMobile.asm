@@ -47,8 +47,7 @@ GoldenrodPokecenter1F_GSBallSceneLeft:
 	closetext
 	applymovement GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, GoldenrodPokeCenter1FLinkReceptionistWalkToStairsFromLeftDoorwayTileMovement
 	special RestartMapMusic
-	disappear GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST
-	playsound SFX_EXIT_BUILDING
+	moveobject GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, 16, 8
 .cancel
 	end
 
@@ -78,8 +77,7 @@ GoldenrodPokecenter1F_GSBallSceneRight:
 	closetext
 	applymovement GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, GoldenrodPokeCenter1FLinkReceptionistWalkToStairsFromRightDoorwayTileMovement
 	special RestartMapMusic
-	disappear GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST
-	playsound SFX_EXIT_BUILDING
+	moveobject GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, 16, 8
 .cancel
 	end
 
@@ -100,7 +98,7 @@ GoldenrodPokecenter1FPokefanF:
 	waitbutton
 	writetext GoldenrodPokecenter1FPokefanFThisIsForYouText
 	waitbutton
-	verbosegiveitem REVIVE
+	verbosegiveitem MAX_REVIVE
 	iffalse .NoRoom
 	writetext GoldenrodPokecenter1FPokefanFDaughterWillBeDelightedText
 	waitbutton
@@ -159,54 +157,97 @@ GoldenrodPokeCenter1FLinkReceptionistWalkToStairsFromRightDoorwayTileMovement:
 	step_end
 
 ; Egg Ticket stuff.
-; Martha ought to restore this..?
-GoldenrodPokecomCenterEggTicketText: ; unreferenced
+; There seems to be an animation for this in JP Crystal, but I'm not sure how to get it running, so we have a cute little animation where the lady puts the ticket in the machine and gives you the egg instead. I checked mobile-eng but didn't see anything significant.
+
+GoldenrodPokecomCenterEggTicketGirl:
+	opentext
+	writetext GoldenrodPokecomCenterEggTicketGirlWelcomeText
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .PartyFull
+	
+	opentext
+	writetext GoldenrodPokecomCenterEggTicketText
+	waitbutton
+	closetext
+	
+	playmusic MUSIC_SHOW_ME_AROUND
+	applymovement GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, GoldenrodPokecomCenterEggTicketMovement1
+	playsound SFX_SLOT_MACHINE_START
+	waitsfx
+	pause 20
+	applymovement GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, GoldenrodPokecomCenterEggTicketMovement2
+	playsound SFX_BALL_POOF
+	waitsfx
+	playsound SFX_ITEM
+	waitsfx
+	pause 20
+	applymovement GOLDENRODPOKECENTER1F_LINK_RECEPTIONIST, GoldenrodPokecomCenterEggTicketMovement3
+	pause 5
+	
+	opentext
+	writetext GoldenrodPokecomCenterEggTicketGirlHereIsYourOddEggText
+	
+	special GiveOddEgg
+	opentext
+	writetext PokecomText_GotOddEgg
+	playsound SFX_KEY_ITEM
+	waitsfx
+	opentext 
+	writetext GoldenrodPokecomCenterEggTicketGirl_ComeAgain
+	waitbutton
+	closetext
+	takeitem EGG_TICKET
+	special RestartMapMusic
+	end
+
+.PartyFull:
+	opentext
+	writetext GoldenrodPokecomCenterEggTicketGirlPartyFull
+	waitbutton
+	closetext
+	end
+
+GoldenrodPokecomCenterEggTicketMovement1:
+	step UP
+	step UP
+	step RIGHT
+	turn_head UP
+	step_end
+
+GoldenrodPokecomCenterEggTicketMovement2:
+	step LEFT
+	step LEFT
+	turn_head UP
+	step_end
+
+GoldenrodPokecomCenterEggTicketMovement3:
+	step RIGHT
+	step DOWN
+	step DOWN
+	step_end
+
+GoldenrodPokecomCenterEggTicketGirlWelcomeText:
+	text "Welcome to the"
+	line "TICKET CORNER."
+	prompt
+
+GoldenrodPokecomCenterEggTicketText:
 	text "Oh!"
 
 	para "I see you have an"
 	line "EGG TICKET!"
 
 	para "It's a coupon that"
-	line "special people can"
+	line "lucky people can"
 
 	para "redeem for a"
 	line "special #MON!"
+	
+	para "Please wait a"
+	line "moment!"
 	done
 
-GoldenrodPokecomCenterOddEggBriefingText: ; unreferenced
-	text "Let me give you a"
-	line "quick briefing."
-
-	para "Trades held at the"
-	line "TRADE CORNER are"
-
-	para "between two"
-	line "trainers who don't"
-
-	para "know each other's"
-	line "identity."
-
-	para "As a result, it"
-	line "may take time."
-
-	para "However, an ODD"
-	line "EGG is available"
-	cont "just for you."
-
-	para "It will be sent to"
-	line "you right away."
-
-	para "Please choose one"
-	line "of the rooms in"
-
-	para "the CENTER."
-	line "An ODD EGG will be"
-
-	para "sent from the"
-	line "chosen room."
-	done
-
-GoldenrodPokecomCenterHereIsYourOddEggText: ; unreferenced
+GoldenrodPokecomCenterEggTicketGirlHereIsYourOddEggText:
 	text "Thank you for"
 	line "waiting."
 
@@ -217,6 +258,24 @@ GoldenrodPokecomCenterHereIsYourOddEggText: ; unreferenced
 
 	para "Please raise it"
 	line "with loving care."
+	done
+
+GoldenrodPokecomCenterEggTicketGirl_ComeAgain:
+	text "Come again!"
+	done
+
+GoldenrodPokecomCenterEggTicketGirlPartyFull:
+	text "Oops! I'm sorry,"
+	line "your party is"
+	cont "full."
+	
+	para "Please make room"
+	line "and come back!"
+	done
+
+PokecomText_GotOddEgg:
+	text "<PLAYER> received"
+	line "ODD EGG!"
 	done
 
 ; The News feature obviously can't work in our build, as we won't use the Mobile Adapter.
@@ -754,7 +813,7 @@ PokecomCenterAdminOfficeMobile_MapEvents:
 	object_event  7, 27, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PokecomCenterAdminOfficeMobileScientist2Script, -1
 	object_event  7, 29, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PokecomCenterAdminOfficeMobileScientist3Script, -1
 	object_event  7,  7, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FNurseScript, -1
-	object_event 16,  8, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 16,  8, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecomCenterEggTicketGirl, -1
 	object_event  3, 12, SPRITE_LASS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FLassScript, -1
 	object_event 11, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecenter1FPokefanF, -1
 	object_event 15, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, GoldenrodPokecomCenterPerson1Script, -1

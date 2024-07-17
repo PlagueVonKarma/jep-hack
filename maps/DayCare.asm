@@ -25,12 +25,12 @@ DayCareManScript_Inside:
 	opentext
 	checkevent EVENT_GOT_ODD_EGG
 	iftrue .AlreadyHaveOddEgg
-	writetext DayCareManText_GiveOddEgg
+	writetext Text_DayCareManTalksAboutEggTicket
 	promptbutton
 	closetext
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, .PartyFull
-	special GiveOddEgg
+	
+	giveitem EGG_TICKET
+	
 	opentext
 	writetext DayCareText_GotOddEgg
 	playsound SFX_KEY_ITEM
@@ -78,14 +78,14 @@ Text_GrampsLookingForYou:
 	line "for you."
 	done
 
-Text_DayCareManTalksAboutEggTicket: ; unreferenced
+Text_DayCareManTalksAboutEggTicket:
 	text "I'm the DAY-CARE"
 	line "MAN."
 
 	para "There's something"
 	line "new in GOLDENROD"
 
-	para "called the TRADE"
+	para "called the TICKET"
 	line "CORNER."
 
 	para "I was given an EGG"
@@ -125,27 +125,20 @@ DayCareManText_GiveOddEgg:
 	line "yours to keep!"
 	done
 
-DayCareText_ComeAgain: ; unreferenced
-	text "Come again."
-	done
-
 DayCareText_GotOddEgg:
 	text "<PLAYER> received"
-	line "ODD EGG!"
+	line "EGG TICKET!"
 	done
 
 DayCareText_DescribeOddEgg:
-	text "I found that when"
-	line "I was caring for"
-
-	para "someone's #MON"
-	line "before."
-
-	para "But the trainer"
-	line "didn't want the"
-
-	para "EGG, so I'd kept"
-	line "it around."
+	text "They say that"
+	line "the EGGs at the"
+	cont "TICKET CORNER"
+	cont "sometimes hatch"
+	cont "with rare colors!"
+	
+	para "I wonder what"
+	line "causes it?"
 	done
 
 DayCareText_PartyFull:
