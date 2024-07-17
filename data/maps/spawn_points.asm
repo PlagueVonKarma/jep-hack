@@ -30,16 +30,16 @@ SpawnPoints:
 	spawn ROUTE_32,                   11, 74
 	spawn AZALEA_TOWN,                15, 10
 	spawn CIANWOOD_CITY,              23, 44
-	spawn GOLDENROD_CITY,             15, 28
+	spawn GOLDENROD_CITY,             14, 28
 	spawn OLIVINE_CITY,               13, 22
 	spawn ECRUTEAK_CITY,              23, 28
 	spawn MAHOGANY_TOWN,              15, 14
-	spawn LAKE_OF_RAGE,               21, 29
+	spawn LAKE_OF_RAGE,                5, 20
 	spawn BLACKTHORN_CITY,            21, 30
 	spawn SILVER_CAVE_OUTSIDE,        23, 20
 	spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
 	
-	spawn SILENT_HILLS,				  10, 10
+	spawn SILENT_HILLS,				  13,  5
 	
 	spawn N_A,                        -1, -1
 
