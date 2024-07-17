@@ -1480,25 +1480,29 @@ CooltrainerMGroup:
 	dw SANDSLASH
 	dw SAND_ATTACK, POISON_STING, SLASH, SWIFT
 	db -1 ; end
-
+	
+	; Previously unused, now Winner's Path
 	next_list_item ; COOLTRAINERM (13)
 	db "ERICK@", TRAINERTYPE_NORMAL
-	db 10
-	dw BULBASAUR
-	db 10
-	dw CHARMANDER
-	db 10
-	dw SQUIRTLE
+	db 56
+	dw VENUSAUR
+	db 56
+	dw CHARIZARD
+	db 56
+	dw TOTARTLE
 	db -1 ; end
-
+	
+	; Previously unused, now Winner's Path
 	next_list_item ; COOLTRAINERM (14)
 	db "ANDY@", TRAINERTYPE_NORMAL
-	db 10
-	dw BULBASAUR
-	db 10
-	dw CHARMANDER
-	db 10
-	dw SQUIRTLE
+	db 53
+	dw CACAWPHONY
+	db 54
+	dw WARUCHU
+	db 53
+	dw SNEASEL ; WEARLYCAN
+	db 56
+	dw PILOSWINE ; BUNDRAKE
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (15)
@@ -1530,15 +1534,18 @@ CooltrainerMGroup:
 	db 35
 	dw WARTORTLE
 	db -1 ; end
-
+	
+	; Previously unused, now Winner's Path
 	next_list_item ; COOLTRAINERM (18)
 	db "STEVE@", TRAINERTYPE_NORMAL
-	db 14
-	dw BULBASAUR
-	db 14
-	dw CHARMANDER
-	db 14
-	dw SQUIRTLE
+	db 53
+	dw TREBIR
+	db 54
+	dw GOROCHU
+	db 53
+	dw SNEASEL ; WEAVILE
+	db 56
+	dw PILOSWINE ; BUNBERG
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (19)
