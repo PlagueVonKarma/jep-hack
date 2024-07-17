@@ -67,9 +67,33 @@ TrainerBugCatcherAbner:
 	closetext
 	end
 
+; I wanted a trainer to serve as the Lass from Yellow, so I took Ikue (LGPE) and the Yellow Lass trainer, put them together, and put her in the same area. 
+; Restores a removed reference to Ikue Otani from the Crystal localisation without removing the old name, in a cosmic sort of way.
+TrainerLassIkue:
+	trainer LASS, IKUE, EVENT_BEAT_LASS_IKUE, LassIkueSeenText, LassIkueBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext LassIkueAfterBattleText
+	waitbutton
+	closetext
+	end
+
+LassIkueSeenText:
+	text "PIKACHU is so"
+	line "cute, right?"
+	done
+
+LassIkueBeatenText:
+	text "I wonder if"
+	line "you recognise"
+	cont "my voice…"
+	done
+
 BugCatcherDaneSeenText:
 	text "Welcome to"
-	line "Viridian Forest."
+	line "VIRIDIAN FOREST."
 	cont "Enjoy my Bug-type"
 	cont "#MON!"
 	done
@@ -88,7 +112,7 @@ BugCatcherDaneAfterBattleText:
 
 BugCatcherDionSeenText:
 	text "Shh! Be quiet! The"
-	line "bug #mon will"
+	line "bug #MON will"
 	cont "run away!"
 	done
 
@@ -168,14 +192,38 @@ BugCatcherAbnerAfterBattleText:
 	cont "all look cute."
 	done
 
+LassIkueAfterBattleText:
+	text "My PIKACHU is"
+	line "really strong,"
+	cont "huh?"
+	
+	para "I don't know"
+	line "why. Did I give"
+	cont "it something?"
+	done
+
+ViridianForestSignScript1:
+	opentext
+	writetext ViridianForestSignText1
+	waitbutton
+	closetext
+	end
+
 ViridianForestSignText1:
 	text "Leaving"
 	line "VIRIDIAN FOREST"
 	cont "PEWTER CITY ahead"
 	done
 
+ViridianForestSignScript2:
+	opentext
+	writetext ViridianForestSignText2
+	waitbutton
+	closetext
+	end
+
 ViridianForestSignText2:
-	text "Trainer Tips"
+	text "TRAINER TIPS"
 
 	para "Hold on to that"
 	line "BIG MUSHROOM!"
@@ -185,8 +233,15 @@ ViridianForestSignText2:
 	cont "for useless items!"
 	done
 
+ViridianForestSignScript3:
+	opentext
+	writetext ViridianForestSignText3
+	waitbutton
+	closetext
+	end
+
 ViridianForestSignText3:
-	text "Trainer Tips"
+	text "TRAINER TIPS"
 
 	para "Weaken #MON"
 	line "before trying"
@@ -196,19 +251,40 @@ ViridianForestSignText3:
 	line "they may escape!"
 	done
 
+ViridianForestSignScript4:
+	opentext
+	writetext ViridianForestSignText4
+	waitbutton
+	closetext
+	end
+
 ViridianForestSignText4:
 	text "For poison, use"
 	line "ANTIDOTE! Get it"
 	cont "at #MON MARTs!"
 	done
 
+ViridianForestSignScript5:
+	opentext
+	writetext ViridianForestSignText5
+	waitbutton
+	closetext
+	end
+
 ViridianForestSignText5:
 	text "TRAINER TIPS"
 
-	para "Poison-type #-"
-	line "mon can't be poi-"
-	cont "soned themselves!"
+	para "Poison and steel" ; tweaked to include info on the "new" steel-type.
+	line "#MON can't be"
+	cont "poisoned!"
 	done
+
+ViridianForestSignScript6:
+	opentext
+	writetext ViridianForestSignText6
+	waitbutton
+	closetext
+	end
 
 ViridianForestSignText6:
 	text "TRAINER TIPS"
@@ -232,12 +308,12 @@ ViridianForest_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  4,  6, BGEVENT_READ, ViridianForestSignText1
-	bg_event  6, 26, BGEVENT_READ, ViridianForestSignText2
-	bg_event 28, 19, BGEVENT_READ, ViridianForestSignText3
-	bg_event 18, 34, BGEVENT_READ, ViridianForestSignText4
-	bg_event 26, 42, BGEVENT_READ, ViridianForestSignText5
-	bg_event 20, 44, BGEVENT_READ, ViridianForestSignText6
+	bg_event  4,  6, BGEVENT_READ, ViridianForestSignScript1
+	bg_event  6, 26, BGEVENT_READ, ViridianForestSignScript2
+	bg_event 29, 19, BGEVENT_READ, ViridianForestSignScript3
+	bg_event 18, 34, BGEVENT_READ, ViridianForestSignScript4
+	bg_event 26, 42, BGEVENT_READ, ViridianForestSignScript5
+	bg_event 20, 44, BGEVENT_READ, ViridianForestSignScript6
 	bg_event 32, 44, BGEVENT_ITEM + MAX_ETHER, EVENT_VIRIDIAN_FOREST_HIDDEN_MAX_ETHER
 	bg_event 18, 43, BGEVENT_ITEM + FULL_HEAL, EVENT_VIRIDIAN_FOREST_HIDDEN_FULL_HEAL
 	bg_event  4, 43, BGEVENT_ITEM + TINYMUSHROOM, EVENT_VIRIDIAN_FOREST_HIDDEN_TINYMUSHROOM
@@ -250,6 +326,7 @@ ViridianForest_MapEvents:
 	object_event 32, 21, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherStacey, -1
 	object_event 31,  4, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherEllis, -1
 	object_event  5, 24, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherAbner, -1
+	object_event  3, 43, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerLassIkue, -1
 	object_event 14, 31, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DIRE_HIT, 1, EVENT_ROUTE_2_DIRE_HIT
 	object_event  3, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, MAX_POTION, 1, EVENT_ROUTE_2_MAX_POTION
 

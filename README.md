@@ -67,7 +67,7 @@ Numerous new maps are available, featuring new locations, the iconic Sevii Islan
 
 Additionally, there have been many wild encounter tweaks. View this document for details. (will link when hack is in a playable state)
 
-- Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc.
+- Johto wild encounters have been changed to be more weighted towards Johto Pokemon; eg. Murkrow is available about Ecruteak at night, Misdreavus largely replaces Gastly, etc. Levels have been adjusted.
 - Kanto wild encounters have generally higher levels to aid in improving the level curve.
 - Rock Smash now has variable and larger wild data, featuring rare, location-based Pokemon (eg. Corsola on the shore), and level adjustments to make them more appropriate.
 - Viridian Forest has been restored.

@@ -11,10 +11,36 @@ ViridianForestPewterGateOfficerScript:
 
 ViridianForestPewterGateOfficerText:
 	text "Are you headed"
-	line "to Pewter City?"
+	line "to PEWTER CITY?"
 
 	para "Be sure to check"
-	line "out the Museum!"
+	line "out the MUSEUM!"
+	done
+
+ViridianForestPewterGateYoungsterScript:
+	jumptextfaceplayer ViridianForestPewterGateYoungsterText
+
+ViridianForestPewterGateYoungsterText:
+	text "Many #MON live"
+	line "only in forests "
+	cont "and caves."
+
+	para "You need to look"
+	line "everywhere to get"
+	cont "different kinds!"
+	done
+
+ViridianForestPewterGateGrampsScript:
+	jumptextfaceplayer ViridianForestPewterGateGrampsText
+
+ViridianForestPewterGateGrampsText:
+	text "Have you noticed"
+	line "the bushes on the"
+	cont "roadside?"
+
+	para "They can be cut"
+	line "down by a special"
+	cont "#MON move."
 	done
 
 ViridianForestPewterGate_MapEvents:
@@ -32,3 +58,5 @@ ViridianForestPewterGate_MapEvents:
 
 	def_object_events
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianForestPewterGateOfficerScript, -1
+	object_event  3,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianForestPewterGateYoungsterScript, -1
+	object_event  6,  3, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianForestPewterGateGrampsScript, -1

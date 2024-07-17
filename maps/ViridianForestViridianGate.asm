@@ -10,11 +10,20 @@ ViridianForestViridianGateOfficerScript:
 	jumptextfaceplayer ViridianForestViridianGateOfficerText
 	
 ViridianForestViridianGateOfficerText:
-	text "Be careful,"
-	line "Viridian Forest"
+	text "Are you going to"
+	line "VIRIDIAN FOREST?"
+	para "Be careful, it's"
+	line "a natural maze!"
+	done
 
-	para "is a natural"
-	line "maze!"
+ViridianForestYoungsterTextScript:
+	jumptextfaceplayer ViridianForestYoungsterText
+
+ViridianForestYoungsterText:
+	text "RATTATA may be"
+	line "small, but its"
+	cont "bite is wicked!"
+	cont "Do you have one?"
 	done
 
 ViridianForestViridianGate_MapEvents:
@@ -32,3 +41,4 @@ ViridianForestViridianGate_MapEvents:
 
 	def_object_events
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianForestViridianGateOfficerScript, -1
+	object_event  6,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianForestYoungsterTextScript, -1

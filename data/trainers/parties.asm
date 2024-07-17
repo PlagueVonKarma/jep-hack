@@ -1310,6 +1310,22 @@ LassGroup:
 	dw GOLDUCK
 	dw DISABLE, SURF, PSYCHIC_M, SCREECH
 	db -1 ; end
+	
+	next_list_item ; LASS (2)
+	db "IKUE@", TRAINERTYPE_ITEM_MOVES
+	db 43
+	dw NIDOQUEEN ; From the Yellow Lass
+	db NO_ITEM
+	db BODY_SLAM, SCRATCH, BLIZZARD, THUNDERBOLT
+	db 43
+	dw GOROTORA ; Basically the beta Pikaclone counterpart, right?
+	db NO_ITEM
+	db THUNDERBOLT, SCARY_FACE, QUICK_ATTACK, PURSUIT
+	db 45
+	dw PIKACHU ; And a pipe bomb.
+	db LIGHT_BALL
+	db THUNDERBOLT, QUICK_ATTACK, DOUBLE_EDGE, AGILITY ; Moves from Johto anime
+	db -1 ; end
 
 	end_list_items
 
@@ -2519,6 +2535,56 @@ BugCatcherGroup:
 	dw TRICULES
 	db 42
 	dw BUTTERFREE
+	db -1 ; end
+	
+	next_list_item ; BUG_CATCHER (21)
+	db "DANE@", TRAINERTYPE_NORMAL ; From HGSS, + Carapthor
+	db 44
+	dw BEEDRILL 
+	db 48
+	dw BUTTERFREE
+	db 44
+	dw CARAPTHOR
+	db -1 ; end
+	
+	next_list_item ; BUG_CATCHER (21)
+	db "DION@", TRAINERTYPE_NORMAL ; From HGSS, + Ledian and Barreau
+	db 44
+	dw BARREAU ; Should have screens, making the next two Pokemon...less awful.
+	db 42
+	dw ARIADOS
+	db 42
+	dw LEDIAN
+	db -1 ; end
+	
+	next_list_item ; BUG_CATCHER (21)
+	db "STACEY@", TRAINERTYPE_NORMAL ; In HGSS, this trainer has 3 Metapod. I have sense, so that won't happen here. Instead, we can have some fun.
+	db 41
+	dw LEDIAN ; At this level, it only knows screens, letting it do useful things instead of 1 damage with Swift.
+	db 43
+	dw SCYTHER
+	db 43
+	dw VENOMOTH
+	db -1 ; end
+	
+	next_list_item ; BUG_CATCHER (21)
+	db "ELLIS@", TRAINERTYPE_NORMAL ; From HGSS. Fine...may alter later.
+	db 42
+	dw WEEDLE 
+	db 44
+	dw KAKUNA
+	db 53
+	dw BEEDRILL
+	db -1 ; end
+	
+	next_list_item ; BUG_CATCHER (21)
+	db "ABNER@", TRAINERTYPE_NORMAL ; From HGSS
+	db 42
+	dw BUTTERFREE
+	db 42
+	dw BEEDRILL
+	db 45
+	dw PIKACHU
 	db -1 ; end
 
 	end_list_items

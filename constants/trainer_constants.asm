@@ -192,6 +192,7 @@ DEF KRIS EQU __trainer_class__
 	const DANA3
 	const DANA4
 	const DANA5
+	const IKUE ; Name taken from LGPE, referencing Pikachu's voice actor, Ikue Otani. Technically exists in Picnicker Brooke, but it's more convenient to put her in Viridian Forest, so...
 
 	trainerclass JANINE ; 1a
 	const JANINE1
