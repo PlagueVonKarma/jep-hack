@@ -310,7 +310,7 @@ PokemonCries::
 	mon_cry CRY_TYPHLOSION,  239,  247 ; STEELIX
 	mon_cry CRY_DUNSPARCE,   274,  232 ; SNUBBULL
 	mon_cry CRY_DUNSPARCE,     0,  384 ; GRANBULL
-	mon_cry CRY_NIDORAN_M,     0,    0 ; CARETORKER	(incomplete)
+	mon_cry CRY_RAIKOU,       64,  512 ; CARETORKER
 	mon_cry CRY_SLOWKING,    352,  224 ; QWILFISH
 	mon_cry CRY_NIDORAN_M,     0,    0 ; KAZEPPELIN	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; QWILFATHER	(incomplete)
