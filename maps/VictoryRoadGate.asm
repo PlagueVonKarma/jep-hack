@@ -77,7 +77,9 @@ VictoryRoadGateEightBadgesText:
 
 VictoryRoadGateLeftBlackBeltText:
 	text "This way leads to"
-	line "MT.SILVER."
+	line "WINNER'S PATH,"
+	cont "which leads to"
+	cont "NIHON."
 
 	para "You'll see scary-"
 	line "strong #MON out"
@@ -105,8 +107,8 @@ VictoryRoadGate_MapEvents:
 	warp_event 10, 17, ROUTE_26, 1
 	warp_event  9,  0, VICTORY_ROAD, 1
 	warp_event 10,  0, VICTORY_ROAD, 1
-	warp_event  1,  7, ROUTE_28, 2
-	warp_event  2,  7, ROUTE_28, 2
+	warp_event  1,  7, WINNERS_PATH_OUTSIDE, 1
+	warp_event  2,  7, WINNERS_PATH_OUTSIDE, 2
 
 	def_coord_events
 	coord_event 10, 11, SCENE_VICTORYROADGATE_BADGE_CHECK, VictoryRoadGateBadgeCheckScript

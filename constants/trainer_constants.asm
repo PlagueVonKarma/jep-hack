@@ -245,8 +245,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass BEAUTY ; 1d
 	const VICTORIA
 	const SAMANTHA
-	const JULIE ; unused
-	const JACLYN ; unused
+	const JULIE
+	const JACLYN
 	const BRENDA ; unused
 	const CASSIE
 	const CAROLINE ; unused
@@ -257,7 +257,7 @@ DEF KRIS EQU __trainer_class__
 	const KENDRA ; unused
 	const VERONICA ; unused
 	const JULIA
-	const THERESA ; unused
+	const THERESA
 	const VALERIE
 	const OLIVIA
 
@@ -517,7 +517,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass FIREBREATHER ; 30
 	const OTIS
-	const DICK ; unused
+	const DICK
 	const NED ; unused
 	const BURT
 	const BILL
@@ -713,34 +713,35 @@ DEF KRIS EQU __trainer_class__
 	const EUSINE
 	
 	trainerclass CHANNELER ; 44
-	const SHANNA
+	const SHANNA ; unused
 	
 	trainerclass CUE_BALL ; 45
-	const KIRBY ; That one Cleffa trainer.
+	const KIRBY ; unused, that one Cleffa trainer.
 	
 	trainerclass ENGINEER ; 46
-	const DASHU ; From Mandarin 大叔, literally meaning "uncle". Affectionately refers to middle-aged men, and is the name for the class in Chinese.
+	const DASHU ; unused, From Mandarin 大叔, literally meaning "uncle". Affectionately refers to middle-aged men, and is the name for the class in Chinese.
 	
 	trainerclass ROCKER ; 47
-	const BOWIE ; David Bowie!
+	const BOWIE ; unused
 	
 	trainerclass TAMER ; 48
-	const MOE ; Ace Attorney reference
+	const MOE ; unused
 	
 	trainerclass FIREFIGHTER ; 49
-	const REMY ; I am in France and larping at the time of doing this
+	const REMY ; unused
 	
 	trainerclass TEACHERM ; 50
-	const DORNYEI ; Zoltan Dornyei, famous ELT teacher
+	const DORNYEI ; unused, Zoltan Dornyei, famous ELT teacher
 	
 	trainerclass PAINTER ; 51
-	const RACHEL ; Could use Salvador Dali later, a surrealist painter.
+	const RACHEL ; Famous figure in the prototype Pokemon community and unused general girl name, unused
+	const DALI ; unused
 	
 	trainerclass SOLDIER ; 52
-	const PEPPINO ; come on. COME ON.
+	const PEPPINO ; unused, may change
 	
 	trainerclass SPORTSMAN ; 53
-	const JACQUES ; also an ace attorney reference.
+	const JACQUES ; unused
 	
 	trainerclass AEROFOSSIL ; 54
 	const FOSSIL1

@@ -1073,7 +1073,19 @@
 	const EVENT_BEAT_SAGE_GAKU
 	const EVENT_BEAT_SAGE_MASA
 	const EVENT_BEAT_SAGE_KOJI
-; Unused: next 116 events
+; New trainers
+	const EVENT_BEAT_CHANNELER_SHANNA ; unused
+	const EVENT_BEAT_CUE_BALL_KIRBY ; unused
+	const EVENT_BEAT_ENGINEER_DASHU
+	const EVENT_BEAT_ROCKER_BOWIE ; unused
+	const EVENT_BEAT_TAMER_MOE ; unused
+	const EVENT_BEAT_FIREFIGHTER_REMY ; unused
+	const EVENT_BEAT_TEACHERM_DORNYEI ; unused
+	const EVENT_BEAT_PAINTER_RACHEL ; unused
+	const EVENT_BEAT_PAINTER_DALI ; unused
+	const EVENT_BEAT_SOLDIER_PEPPINO ; unused
+	const EVENT_BEAT_SPORTSMAN_JACQUES ; unused
+; Unused: next 106 events
 
 	const_next 1600
 ; Sprite visibility flags

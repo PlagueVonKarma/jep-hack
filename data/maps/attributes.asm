@@ -807,6 +807,7 @@ ENDM
 	
 	; Nihon
 	map_attributes WinnersPath, WINNERS_PATH, $00, 0
+	map_attributes WinnersPathOutside, WINNERS_PATH_OUTSIDE, $05, 0
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0

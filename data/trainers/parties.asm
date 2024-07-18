@@ -1796,8 +1796,12 @@ BeautyGroup:
 
 	next_list_item ; BEAUTY (4)
 	db "JACLYN@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
+	db 53
+	dw FURRET
+	db 53
+	dw MEGANIUM
+	db 55
+	dw EUCALA
 	db -1 ; end
 
 	next_list_item ; BEAUTY (5)
@@ -5495,8 +5499,10 @@ CueBallGroup:
 EngineerGroup:
 	next_list_item ; ENGINEER (1)
 	db "DASHU@", TRAINERTYPE_NORMAL
-	db 23
-	dw MAGNEMITE
+	db 52
+	dw MAGNEZONE
+	db 54
+	dw ELECTIVIRE
 	db -1 ; end
 	end_list_items
 
@@ -5538,6 +5544,13 @@ PainterGroup:
 	db 23
 	dw SMEARGLE
 	db -1 ; end
+	
+	next_list_item ; PAINTER (1)
+	db "DALI@", TRAINERTYPE_NORMAL
+	db 23
+	dw SMEARGLE
+	db -1 ; end
+	
 	end_list_items
 
 SoldierGroup:

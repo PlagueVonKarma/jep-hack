@@ -593,3 +593,4 @@ INCLUDE "maps/SinjohRuinsInterior.asm"
 SECTION "Map Scripts 29", ROMX
 INCLUDE "maps/Route49OldCityGate.asm"
 INCLUDE "maps/WinnersPath.asm"
+INCLUDE "maps/WinnersPathOutside.asm"
