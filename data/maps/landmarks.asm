@@ -130,6 +130,7 @@ Landmarks:
 	landmark   0,   0, UnknownName ; Six Island
 	landmark   0,   0, UnknownName ; Seven Island
 	assert_table_length NIHON_LANDMARK
+	landmark  0,   0, WinnersPathName
 	landmark 92, 108, SilentHillsName
 	landmark 20,  28, UnknownName ; Debug Room 
 	landmark 91, 108, Route49Name ; probably not correct
@@ -240,6 +241,7 @@ TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE¯TOWER@"
 SpecialMapName:      db "SPECIAL@"
+WinnersPathName:	 db "WINNER'S¯PATH@"
 SilentHillsName:     db "SILENT¯HILLS@"
 UnknownName:         db "?????@"
 Route49Name:         db "ROUTE 49@"

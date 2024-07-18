@@ -76,7 +76,14 @@ DebugFlyScript:
 	writetext DebugTextC
 	playsound SFX_GET_BADGE
 	promptbutton
+	setflag ENGINE_ZEPHYRBADGE
+	setflag ENGINE_HIVEBADGE
+	setflag ENGINE_PLAINBADGE
+	setflag ENGINE_FOGBADGE
 	setflag ENGINE_STORMBADGE
+	setflag ENGINE_MINERALBADGE
+	setflag ENGINE_GLACIERBADGE
+	setflag ENGINE_RISINGBADGE
 	setflag ENGINE_POKEDEX
 	setflag ENGINE_MAP_CARD
 	setflag ENGINE_POKEGEAR
@@ -130,7 +137,7 @@ DebugDexScript:
 	playsound SFX_FANFARE
 	promptbutton
 	callasm CheatFillPokedex
-	givepoke CELEBI, 50
+	givepoke FURRET, 100 ; gets all the hms
 	closetext
 	end
 
@@ -495,7 +502,7 @@ DebugRoom_MapEvents:
 	warp_event 19, 34, BLUE_FOREST, 1 ; southern warp
 	warp_event 33, 33, BLUE_FOREST, 1 ; southeast warp
 	warp_event  5,  3, AZALEA_TOWN, 1
-	warp_event 34, 11, PEWTER_MUSEUM_OF_SCIENCE_1F, 1
+	warp_event 34, 11, WINNERS_PATH, 1
 
 	def_coord_events
 

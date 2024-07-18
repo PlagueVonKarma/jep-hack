@@ -1198,3 +1198,6 @@ SinjohRuinsExterior_Blocks:
 
 SinjohRuinsInterior_Blocks:
 	INCBIN "maps/SinjohRuinsInterior.ablk"
+
+WinnersPath_Blocks:
+	INCBIN "maps/WinnersPath.ablk"
