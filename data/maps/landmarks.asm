@@ -130,11 +130,12 @@ Landmarks:
 	landmark   0,   0, UnknownName ; Six Island
 	landmark   0,   0, UnknownName ; Seven Island
 	assert_table_length NIHON_LANDMARK
-	landmark  0,   0, WinnersPathName
-	landmark 92, 108, SilentHillsName
+	landmark 108, 116, WinnersPathName
+	landmark 108, 108, UnknownName ; Unnumbered post-Winner's Path Route
+	landmark  92, 108, SilentHillsName
 	landmark 20,  28, UnknownName ; Debug Room 
-	landmark 91, 108, Route49Name ; probably not correct
-	landmark 91, 108, QuietCaveName ; probably not correct
+	landmark 84, 108, Route49Name
+	landmark 76, 108, QuietCaveName
 	landmark 140, 60, BlueForestName
 	assert_table_length NUM_LANDMARKS
 
@@ -164,7 +165,7 @@ WhirlIslandsName:    db "WHIRL¯ISLANDS@"
 MtMortarName:        db "MT.MORTAR@"
 DragonsDenName:      db "DRAGON'S¯DEN@"
 IcePathName:         db "ICE PATH@"
-NotApplicableName:   db "N/A@" ; unreferenced ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
+HauntedHouseName:    db "HAUNTED¯HOUSE@" ; unreferenced ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
 PalletTownName:      db "PALLET TOWN@"
 ViridianCityName:    db "VIRIDIAN¯CITY@"
 PewterCityName:      db "PEWTER CITY@"

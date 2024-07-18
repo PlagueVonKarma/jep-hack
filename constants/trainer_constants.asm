@@ -210,12 +210,12 @@ DEF KRIS EQU __trainer_class__
 	const GAVEN3
 	const BLAKE
 	const BRIAN
-	const ERICK ; unused
-	const ANDY ; unused
+	const ERICK
+	const ANDY
 	const TYLER ; unused
 	const SEAN
 	const KEVIN
-	const STEVE ; unused
+	const STEVE
 	const ALLEN
 	const DARIN
 
@@ -384,6 +384,7 @@ DEF KRIS EQU __trainer_class__
 	const RALPH4
 	const RALPH5
 	const TULLY4
+	const BRAN
 
 	trainerclass SWIMMERM ; 26
 	const HAROLD
@@ -447,7 +448,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass SUPER_NERD ; 29
 	const STAN
 	const ERIC
-	const GREGG ; unused
+	const GREGG
 	const JAY ; unused
 	const DAVE ; unused
 	const SAM
@@ -734,8 +735,8 @@ DEF KRIS EQU __trainer_class__
 	const DORNYEI ; unused, Zoltan Dornyei, famous ELT teacher
 	
 	trainerclass PAINTER ; 51
-	const RACHEL ; Famous figure in the prototype Pokemon community and unused general girl name, unused
-	const DALI ; unused
+	const RACHEL ; Famous figure in the prototype Pokemon community and unused general girl name, unused, give kotora, smeargle...
+	const DALI
 	
 	trainerclass SOLDIER ; 52
 	const PEPPINO ; unused, may change

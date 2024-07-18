@@ -1204,3 +1204,6 @@ WinnersPath_Blocks:
 	
 WinnersPathOutside_Blocks:
 	INCBIN "maps/WinnersPathOutside.ablk"
+	
+UnnumberedRoute_Blocks:
+	INCBIN "maps/UnnumberedRoute.ablk"

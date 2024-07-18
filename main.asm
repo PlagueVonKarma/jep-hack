@@ -662,13 +662,11 @@ SECTION "European Mail", ROMX
 
 INCLUDE "engine/pokemon/european_mail.asm"
 
-
+if DEF(_DEBUG)
 SECTION "Debug Room", ROMX
 
-if DEF(_DEBUG)
 INCLUDE "engine/debug/debug_room.asm"
 endc
-
 
 SECTION "Battle Tower Text", ROMX
 
@@ -691,7 +689,7 @@ INCLUDE "engine/events/battle_tower/load_trainer.asm"
 INCLUDE "engine/events/odd_egg.asm"
 
 
-SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
+;SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
 
 ; The end of the ROM is taken up by checksums of the content, apparently used
 ; by Pokémon Stadium 2 due to the checksums' "N64PS3" header. (In Japan,
@@ -703,5 +701,6 @@ SECTION "16-bit ID stuff", ROMX
 
 INCLUDE "engine/16/table_functions.asm"
 
-; own section
+; own sections
 INCLUDE "data/trainers/parties.asm"
+INCLUDE "data/trainers/parties_new_classes.asm"
