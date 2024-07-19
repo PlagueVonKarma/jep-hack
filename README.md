@@ -97,7 +97,7 @@ Additionally, there have been many wild encounter tweaks. View this document for
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, 
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
 - EyeDonutz: Walking Wake
-- nuuk: (WIP) Azurill, Farigiraf, Glaceon, Leafeon, Magnezone, Sylveon, Togekiss
+- nuuk: (WIP) Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer
 - SCMidna: Munchlax
 - Pokemon October et al: Bellignan, Caretorker, Inoshika, Bipulla, Sonegg, Kolta, Coinpur, Dodaerie, Bundra, Kiwooked, Koalyptus, Trebir
 - Tom Wang: Gold/Chris running sprite
