@@ -3324,9 +3324,9 @@ SuperNerdGroup:
 	next_list_item ; SUPER_NERD (3) 
 	db "GREGG@", TRAINERTYPE_NORMAL
 	db 50
-	dw MAGNEZONE
+	dw ELECTRODE
 	db 51
-	dw MUK
+	dw PORYGON2
 	db 50
 	dw BELLEDAM
 	db -1 ; end

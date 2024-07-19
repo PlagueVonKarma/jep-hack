@@ -56,13 +56,13 @@ EngineerDashuBeatenText:
 
 EngineerDashuAfterBattleText:
 	text "There's a huge"
-	line "POWER PLANT"
-	cont "near NEW TYPE." ; Change name when necessary.
+	line "POWER PLANT near"
+	cont "NEW TYPE." ; Change name when necessary.
 	
-	para "Why aren't I"
-	line "there right"
-	cont "now? Aren't"
-	cont "you a nosy"
+	para "Why aren't I there"
+	line "right now"
+	
+	para "Aren't you a nosy"
 	cont "one, eh?"
 	done
 
@@ -119,4 +119,4 @@ WinnersPathOutside_MapEvents:
 
 	def_object_events
 	object_event  6, 48, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerCoolTrainerSteve, -1
-	object_event 10, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerEngineerDashu, -1
+	object_event 10, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerEngineerDashu, -1

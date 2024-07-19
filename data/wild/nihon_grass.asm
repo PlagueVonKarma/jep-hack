@@ -6,7 +6,7 @@ NihonGrassWildMons:
 	; morn
 	dbw 50, MUNCHLAX
 	dbw 51, SKARMORY
-	dbw 50, CHANSEY
+	dbw 56, CHANSEY ; Allows a Repel trick. Thanks for the suggestion Molk!
 	dbw 51, MUNCHLAX
 	dbw 52, RHYDON
 	dbw 52, FORRETRESS
@@ -14,7 +14,7 @@ NihonGrassWildMons:
 	; day
 	dbw 50, MUNCHLAX
 	dbw 51, SKARMORY
-	dbw 50, CHANSEY
+	dbw 56, CHANSEY
 	dbw 51, MUNCHLAX
 	dbw 52, RHYDON
 	dbw 52, FORRETRESS
