@@ -631,6 +631,7 @@ ENDM
 	map_const SINJOH_RUINS_EXTERIOR,					   10, 10 ; 13
 	map_const SINJOH_RUINS_INTERIOR,					   10, 10 ; 14
 	map_const ROUTE_49_OLD_CITY_GATE,						5,  4 ; 15
+	map_const BLUE_LAB,									   12, 10 ; 16
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 36

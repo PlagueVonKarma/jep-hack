@@ -401,6 +401,7 @@ INCLUDE "engine/phone/scripts/kenji.asm"
 INCLUDE "engine/phone/scripts/parry.asm"
 INCLUDE "engine/phone/scripts/erin.asm"
 INCLUDE "engine/phone/scripts/generic_callee.asm"
+INCLUDE "engine/phone/scripts/blue.asm"
 INCLUDE "engine/events/trainer_scripts.asm"
 
 
@@ -633,6 +634,7 @@ INCLUDE "data/phone/text/wilton_callee.asm"
 INCLUDE "data/phone/text/kenji_callee.asm"
 INCLUDE "data/phone/text/parry_callee.asm"
 INCLUDE "data/phone/text/erin_callee.asm"
+INCLUDE "data/phone/text/blue_callee.asm"
 INCLUDE "data/phone/text/unused.asm"
 
 

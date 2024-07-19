@@ -8,7 +8,7 @@
 	const PHONE_SCHOOLBOY_JACK
 	const PHONE_POKEFAN_BEVERLY
 	const PHONE_SAILOR_HUEY
-	const_skip
+	const PHONE_BLUE
 	const_skip
 	const_skip
 	const PHONE_COOLTRAINERM_GAVEN

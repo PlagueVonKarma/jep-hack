@@ -59,4 +59,5 @@ Tilesets::
 	tileset TilesetNihonSouth
 	tileset TilesetNihonWest
 	tileset TilesetLavenderCrypt
+	tileset TilesetBlueLab
 	assert_table_length NUM_TILESETS + 1

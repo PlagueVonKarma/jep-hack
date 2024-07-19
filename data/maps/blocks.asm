@@ -1207,3 +1207,6 @@ WinnersPathOutside_Blocks:
 	
 UnnumberedRoute_Blocks:
 	INCBIN "maps/UnnumberedRoute.ablk"
+	
+BlueLab_Blocks:
+	INCBIN "maps/BlueLab.ablk"

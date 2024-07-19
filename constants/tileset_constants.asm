@@ -47,6 +47,7 @@
 	const TILESET_NIHON_SOUTH          ; 2D
 	const TILESET_NIHON_WEST           ; 2E
 	const TILESET_LAVENDER_CRYPT	   ; 2F
+	const TILESET_BLUE_LAB			   ; 30
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size
