@@ -105,7 +105,7 @@ TileCollisionTable::
 	db LAND_TILE         ; COLL_65
 	db LAND_TILE         ; 66
 	db LAND_TILE         ; 67
-	db LAND_TILE         ; COLL_PIT_68
+	db LAND_TILE         ; COLL_SWITCH
 	db LAND_TILE         ; 69
 	db WALL_TILE         ; 6a
 	db LAND_TILE         ; 6b

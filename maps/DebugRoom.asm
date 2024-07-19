@@ -502,7 +502,7 @@ DebugRoom_MapEvents:
 	warp_event 19, 34, BLUE_FOREST, 1 ; southern warp
 	warp_event 33, 33, BLUE_FOREST, 1 ; southeast warp
 	warp_event  5,  3, AZALEA_TOWN, 1
-	warp_event 34, 11, WINNERS_PATH_OUTSIDE, 1
+	warp_event 34, 11, WINNERS_PATH, 3
 
 	def_coord_events
 

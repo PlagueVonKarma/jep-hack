@@ -62,7 +62,7 @@ DEF COLL_PIT               EQU $60
 DEF COLL_VIRTUAL_BOY       EQU $61 ; garbage
 DEF COLL_64                EQU $64 ; garbage
 DEF COLL_65                EQU $65 ; garbage
-DEF COLL_PIT_68            EQU $68 ; unused
+DEF COLL_SWITCH            EQU $68 ; Previously PIT_68, changed to make a non-warping equivalent to the pit, allowing for RBY cave switch mechanics
 DEF COLL_WARP_CARPET_DOWN  EQU $70
 DEF COLL_DOOR              EQU $71
 DEF COLL_LADDER            EQU $72
