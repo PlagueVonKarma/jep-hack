@@ -7,6 +7,7 @@ NonTrainerCallerNames:
 	dw .bill
 	dw .elm
 	dw .buena
+	dw .blue
 	assert_table_length NUM_NONTRAINER_PHONECONTACTS + 1
 
 .none:     db "----------@"
@@ -15,3 +16,4 @@ NonTrainerCallerNames:
 .elm:      db "PROF.ELM:@"
 .bikeshop: db "BIKE SHOP:@"
 .buena:    db "BUENA:<LF>   DISC JOCKEY@"
+.blue:	   db "BILL:@"

@@ -588,3 +588,15 @@ INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
 
 TilesetLavenderCryptColl::
 INCLUDE "data/tilesets/lavendercrypt_collision.asm"
+
+TilesetBlueLabAttr::
+INCBIN "data/tilesets/bluelab_attributes.bin"
+
+TilesetBlueLabGFX::
+INCBIN "gfx/tilesets/bluelab.2bpp.lz"
+
+TilesetBlueLabMeta::
+INCBIN "data/tilesets/bluelab_metatiles.bin"
+
+TilesetBlueLabColl::
+INCLUDE "data/tilesets/bluelab_collision.asm"

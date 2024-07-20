@@ -617,18 +617,21 @@ ENDM
 	
 	newgroup SILENT_HILLS                                         ; 35
 	map_const WINNERS_PATH,								   10, 26 ; 1
-	map_const SILENT_HILLS,                                10, 10 ; 2
-	map_const DEBUG_ROOM,                                  20, 20 ; 3
-	map_const ROUTE_49,                                    15,  9 ; 4
-	map_const QUIET_CAVE,                                  27, 18 ; 5
-	map_const ROUTE_49_2,                                  10, 19 ; 6
-	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 7
-	map_const SILVERS_HOUSE,                                5,  5 ; 8
-	map_const CALS_HOUSE_1F,                                5,  4 ; 9
-	map_const CALS_HOUSE_2F,                                5,  4 ; 10
-	map_const SINJOH_RUINS_EXTERIOR,					   10, 10 ; 11
-	map_const SINJOH_RUINS_INTERIOR,					   10, 10 ; 12
-	map_const ROUTE_49_OLD_CITY_GATE,						5,  4 ; 13
+	map_const WINNERS_PATH_OUTSIDE,							9, 30 ; 2
+	map_const UNNUMBERED_ROUTE,							   31,  9 ; 3
+	map_const SILENT_HILLS,                                10, 10 ; 4
+	map_const DEBUG_ROOM,                                  20, 20 ; 5
+	map_const ROUTE_49,                                    15,  9 ; 6
+	map_const QUIET_CAVE,                                  27, 18 ; 7
+	map_const ROUTE_49_2,                                  10, 19 ; 8
+	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 9
+	map_const SILVERS_HOUSE,                                5,  5 ; 10
+	map_const CALS_HOUSE_1F,                                5,  4 ; 11
+	map_const CALS_HOUSE_2F,                                5,  4 ; 12
+	map_const SINJOH_RUINS_EXTERIOR,					   10, 10 ; 13
+	map_const SINJOH_RUINS_INTERIOR,					   10, 10 ; 14
+	map_const ROUTE_49_OLD_CITY_GATE,						5,  4 ; 15
+	map_const BLUE_LAB,									   12, 10 ; 16
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 36

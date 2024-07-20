@@ -236,19 +236,6 @@ TilesetTowerAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation
 
-UnusedTilesetAnim5: ; unreferenced
-; Scrolls tile $4f like cave water.
-	dw vTiles2 tile $4f, ReadTileToAnimBuffer
-	dw wTileAnimBuffer, ScrollTileRightLeft
-	dw vTiles2 tile $4f, WriteTileFromAnimBuffer
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  WaitTileAnimation
-	dw NULL,  DoneTileAnimation
-
 TilesetNihon1Anim:
 TilesetNihonBirdonAnim:
 TilesetNihonFontAnim:
@@ -331,6 +318,7 @@ TilesetOmanyteWordRoomAnim:
 TilesetAerodactylWordRoomAnim:
 TilesetMuseumAnim:
 TilesetLavenderCryptAnim:
+TilesetBlueLabAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

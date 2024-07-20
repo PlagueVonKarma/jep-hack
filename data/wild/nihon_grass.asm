@@ -1,32 +1,93 @@
 NihonGrassWildMons:
+	; Winner's Path is themed around Pokemon found in the PokeWalker map.
+	; Additionally, it features Pokemon known to be successful in Nintendo Cup 2000.
 	def_grass_wildmons WINNERS_PATH
 	db 2 percent, 2 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 50, MUNCHLAX
 	dbw 51, SKARMORY
-	dbw 50, CHANSEY
+	dbw 56, CHANSEY ; Allows a Repel trick. Thanks for the suggestion Molk!
 	dbw 51, MUNCHLAX
-	dbw 52, TAUROS
+	dbw 52, RHYDON
 	dbw 52, FORRETRESS
 	dbw 55, STEELIX
 	; day
 	dbw 50, MUNCHLAX
 	dbw 51, SKARMORY
-	dbw 50, CHANSEY
+	dbw 56, CHANSEY
 	dbw 51, MUNCHLAX
-	dbw 52, TAUROS
+	dbw 52, RHYDON
 	dbw 52, FORRETRESS
 	dbw 55, STEELIX
 	; nite
-	dbw 50, MUNCHLAX
+	dbw 50, MAROWAK
 	dbw 51, SKARMORY
 	dbw 50, KITSEN
-	dbw 51, MUNCHLAX
+	dbw 51, MAROWAK
 	dbw 52, HAUNTER
 	dbw 52, MISDREAVUS
 	dbw 55, STEELIX
 	end_grass_wildmons
-
+	
+	def_grass_wildmons WINNERS_PATH_OUTSIDE
+	db 2 percent, 2 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 50, MUNCHLAX
+	dbw 51, SKARMORY
+	dbw 50, MILTANK
+	dbw 51, MUNCHLAX
+	dbw 52, TAUROS
+	dbw 52, QUAGSIRE
+	dbw 55, AMPHAROS
+	; day
+	dbw 50, MUNCHLAX
+	dbw 51, SKARMORY
+	dbw 50, MILTANK
+	dbw 51, MUNCHLAX
+	dbw 52, TAUROS
+	dbw 52, QUAGSIRE
+	dbw 55, AMPHAROS
+	; nite
+	dbw 50, KADABRA
+	dbw 51, SKARMORY
+	dbw 50, KITSEN
+	dbw 51, KADABRA
+	dbw 52, HAUNTER
+	dbw 52, MISDREAVUS
+	dbw 55, AMPHAROS
+	end_grass_wildmons
+	
+	; Route east of Silent Hills
+	; Encounter data based on what is in the SW97 demo.
+	; https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Maps
+	def_grass_wildmons UNNUMBERED_ROUTE
+	db 2 percent, 2 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 29, PICHU
+	dbw 29, SMEARGLE
+	dbw 28, PICHU
+	dbw 29, ODDISH
+	dbw 32, GLOOM
+	dbw 27, PIKACHU
+	dbw 27, SMEARGLE
+	; day
+	dbw 29, ODDISH
+	dbw 29, SMEARGLE
+	dbw 28, PICHU
+	dbw 29, MEOWTH
+	dbw 32, RATICATE
+	dbw 27, MEOWTH
+	dbw 27, SMEARGLE
+	; nite
+	dbw 29, RATICATE
+	dbw 29, HOOTHOOT
+	dbw 28, EKANS
+	dbw 29, HOOTHOOT
+	dbw 32, ARBOK
+	dbw 27, NOCTOWL
+	dbw 27, SMEARGLE
+	end_grass_wildmons
+	
 	def_grass_wildmons QUIET_CAVE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn

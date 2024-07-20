@@ -3111,7 +3111,9 @@ wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wCeruleanCave1FSceneID::                          db
 wPewterMuseum1FSceneID::						  db
-	ds 48
+wSilentHillsSceneID::							  db
+wBlueLabSceneID::								  db
+	ds 46
 
 ; fight counts
 wJackFightCount::    db

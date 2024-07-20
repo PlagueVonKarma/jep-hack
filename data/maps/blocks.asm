@@ -1201,3 +1201,12 @@ SinjohRuinsInterior_Blocks:
 
 WinnersPath_Blocks:
 	INCBIN "maps/WinnersPath.ablk"
+	
+WinnersPathOutside_Blocks:
+	INCBIN "maps/WinnersPathOutside.ablk"
+	
+UnnumberedRoute_Blocks:
+	INCBIN "maps/UnnumberedRoute.ablk"
+	
+BlueLab_Blocks:
+	INCBIN "maps/BlueLab.ablk"

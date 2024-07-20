@@ -152,7 +152,6 @@ ROMX $34
 ROMX $35
 	"Pic Animations 2"
 ROMX $36
-	"Font Inversed"
 	"Pic Animations 3"
 ROMX $37
 	"Tileset Data 6"
@@ -176,6 +175,7 @@ ROMX $3e
 ROMX $3f
 	"bank3F"
 ROMX $40
+	"Font Inversed"
 	"mobile40"
 ROMX $41
 	"bank41"
@@ -313,11 +313,12 @@ ROMX $7d
 ROMX $7e
 	"Crystal Events"
 ROMX $7f
-	org $7de0
-	"Stadium 2 Checksums"
+	
 ROMX $80
 	"Cries"
 	"Pic Pointers"
+ROMX $81
+	"Enemy Trainer Parties 4"
 WRAM0
 	"Stack"
 	"Audio RAM"

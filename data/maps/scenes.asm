@@ -86,4 +86,6 @@ MapScenes::
 	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
 	scene_var CERULEAN_CAVE_1F,                            wCeruleanCave1FSceneID
 	scene_var PEWTER_MUSEUM_OF_SCIENCE_1F,				   wPewterMuseum1FSceneID
+	scene_var SILENT_HILLS,					   		       wSilentHillsSceneID
+	scene_var BLUE_LAB,									   wBlueLabSceneID
 	db -1 ; end

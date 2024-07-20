@@ -1161,10 +1161,9 @@ BirdKeeperGroup:
 
 LassGroup:
 	next_list_item ; LASS (1)
-	db "CARRIE@", TRAINERTYPE_MOVES
+	db "CARRIE@", TRAINERTYPE_NORMAL
 	db 18
 	dw SNUBBULL
-	dw SCARY_FACE, CHARM, BITE, LICK
 	db -1 ; end
 
 	next_list_item ; LASS (2)
@@ -1353,16 +1352,13 @@ JanineGroup:
 
 CooltrainerMGroup:
 	next_list_item ; COOLTRAINERM (1)
-	db "NICK@", TRAINERTYPE_MOVES
+	db "NICK@", TRAINERTYPE_NORMAL
 	db 26
 	dw CHARMANDER
-	dw EMBER, SMOKESCREEN, RAGE, SCARY_FACE
 	db 26
 	dw SQUIRTLE
-	dw WITHDRAW, WATER_GUN, BITE, CURSE
 	db 26
 	dw BULBASAUR
-	dw LEECH_SEED, POISONPOWDER, SLEEP_POWDER, RAZOR_LEAF
 	db -1 ; end
 
 	next_list_item ; COOLTRAINERM (2)
@@ -1796,8 +1792,12 @@ BeautyGroup:
 
 	next_list_item ; BEAUTY (4)
 	db "JACLYN@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
+	db 53
+	dw FURRET
+	db 53
+	dw MEGANIUM
+	db 55
+	dw EUCALA
 	db -1 ; end
 
 	next_list_item ; BEAUTY (5)
@@ -2833,6 +2833,14 @@ FisherGroup:
 	dw ROLLOUT, SURF, PIN_MISSILE, TAKE_DOWN
 	db -1 ; end
 
+	next_list_item ; FISHER (25)
+	db "BRAN@", TRAINERTYPE_NORMAL
+	db 54
+	dw QWILFATHER
+	db 57
+	dw KAZEPPELIN
+	db -1 ; end
+
 	end_list_items
 
 SwimmerMGroup:
@@ -3314,13 +3322,13 @@ SuperNerdGroup:
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (3) 
-	db "GREGG@", TRAINERTYPE_NORMAL ; seems to be unused - anything we can do?
-	db 20
-	dw MAGNEMITE
-	db 20
-	dw MAGNEMITE
-	db 20
-	dw MAGNEMITE
+	db "GREGG@", TRAINERTYPE_NORMAL
+	db 50
+	dw ELECTRODE
+	db 51
+	dw PORYGON2
+	db 50
+	dw BELLEDAM
 	db -1 ; end
 
 	next_list_item ; SUPER_NERD (4)
@@ -5475,99 +5483,3 @@ MysticalmanGroup:
 	db -1 ; end
 	end_list_items
 
-; RBY / unused trainer types. Mostly placeholders.
-ChannelerGroup:
-	next_list_item ; CHANNELER (1)
-	db "SHANNA@", TRAINERTYPE_NORMAL
-	db 23
-	dw GASTLY
-	db -1 ; end
-	end_list_items
-
-CueBallGroup:
-	next_list_item ; CUE_BALL (1)
-	db "KIRBY@", TRAINERTYPE_NORMAL
-	db 23
-	dw CLEFFA
-	db -1 ; end
-	end_list_items
-
-EngineerGroup:
-	next_list_item ; ENGINEER (1)
-	db "DASHU@", TRAINERTYPE_NORMAL
-	db 23
-	dw MAGNEMITE
-	db -1 ; end
-	end_list_items
-
-RockerGroup:
-	next_list_item ; ROCKER (1)
-	db "BOWIE@", TRAINERTYPE_NORMAL
-	db 23
-	dw VOLTORB
-	db -1 ; end
-	end_list_items
-
-TamerGroup:
-	next_list_item ; TAMER (1)
-	db "MOE@", TRAINERTYPE_NORMAL
-	db 23
-	dw TAUROS
-	db -1 ; end
-	end_list_items
-
-FirefighterGroup:
-	next_list_item ; FIREFIGHTER (1)
-	db "REMY@", TRAINERTYPE_NORMAL
-	db 23
-	dw POLIWAG
-	db -1 ; end
-	end_list_items
-
-TeacherMGroup:
-	next_list_item ; TEACHERM (1)
-	db "DORNYEI@", TRAINERTYPE_NORMAL
-	db 23
-	dw BLISSEY
-	db -1 ; end
-	end_list_items
-
-PainterGroup:
-	next_list_item ; PAINTER (1)
-	db "RACHEL@", TRAINERTYPE_NORMAL
-	db 23
-	dw SMEARGLE
-	db -1 ; end
-	end_list_items
-
-SoldierGroup:
-	next_list_item ; SOLDIER (1)
-	db "PEPPINO@", TRAINERTYPE_NORMAL
-	db 23
-	dw FORRETRESS
-	db -1 ; end
-	end_list_items
-
-SportsmanGroup:
-	next_list_item ; SPORTSMAN (1)
-	db "JACQUES@", TRAINERTYPE_NORMAL
-	db 23
-	dw DODUO
-	db -1 ; end
-	end_list_items
-	
-AerofossilGroup:
-	next_list_item ; SPORTSMAN (1)
-	db "???@", TRAINERTYPE_NORMAL
-	db 99
-	dw AERODACTYL
-	db -1 ; end
-	end_list_items
-
-KabufossilGroup:
-	next_list_item ; SPORTSMAN (1)
-	db "???@", TRAINERTYPE_NORMAL
-	db 99
-	dw KABUTOPS
-	db -1 ; end
-	end_list_items

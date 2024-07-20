@@ -401,6 +401,7 @@ INCLUDE "engine/phone/scripts/kenji.asm"
 INCLUDE "engine/phone/scripts/parry.asm"
 INCLUDE "engine/phone/scripts/erin.asm"
 INCLUDE "engine/phone/scripts/generic_callee.asm"
+INCLUDE "engine/phone/scripts/blue.asm"
 INCLUDE "engine/events/trainer_scripts.asm"
 
 
@@ -440,14 +441,14 @@ INCLUDE "gfx/pokemon/bitmasks.asm"
 INCLUDE "gfx/pokemon/unown_bitmask_pointers.asm"
 INCLUDE "gfx/pokemon/unown_bitmasks.asm"
 INCLUDE "gfx/pokemon/frame_pointers.asm"
-INCLUDE "gfx/pokemon/kanto_frames.asm"
+INCLUDE "gfx/pokemon/unown_frame_pointers.asm"
+INCLUDE "gfx/pokemon/unown_frames.asm"
 
 
 SECTION "Pic Animations 3", ROMX
 
+INCLUDE "gfx/pokemon/kanto_frames.asm"
 INCLUDE "gfx/pokemon/johto_frames.asm"
-INCLUDE "gfx/pokemon/unown_frame_pointers.asm"
-INCLUDE "gfx/pokemon/unown_frames.asm"
 
 
 SECTION "bank38", ROMX
@@ -633,6 +634,7 @@ INCLUDE "data/phone/text/wilton_callee.asm"
 INCLUDE "data/phone/text/kenji_callee.asm"
 INCLUDE "data/phone/text/parry_callee.asm"
 INCLUDE "data/phone/text/erin_callee.asm"
+INCLUDE "data/phone/text/blue_callee.asm"
 INCLUDE "data/phone/text/unused.asm"
 
 
@@ -662,13 +664,11 @@ SECTION "European Mail", ROMX
 
 INCLUDE "engine/pokemon/european_mail.asm"
 
-
+if DEF(_DEBUG)
 SECTION "Debug Room", ROMX
 
-if DEF(_DEBUG)
 INCLUDE "engine/debug/debug_room.asm"
 endc
-
 
 SECTION "Battle Tower Text", ROMX
 
@@ -691,7 +691,7 @@ INCLUDE "engine/events/battle_tower/load_trainer.asm"
 INCLUDE "engine/events/odd_egg.asm"
 
 
-SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
+;SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
 
 ; The end of the ROM is taken up by checksums of the content, apparently used
 ; by Pokémon Stadium 2 due to the checksums' "N64PS3" header. (In Japan,
@@ -703,5 +703,6 @@ SECTION "16-bit ID stuff", ROMX
 
 INCLUDE "engine/16/table_functions.asm"
 
-; own section
+; own sections
 INCLUDE "data/trainers/parties.asm"
+INCLUDE "data/trainers/parties_new_classes.asm"

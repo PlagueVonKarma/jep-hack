@@ -494,13 +494,13 @@ INCLUDE "maps/CeruleanCave1F.asm"
 INCLUDE "maps/CeruleanCave2F.asm"
 INCLUDE "maps/CeruleanCaveB1F.asm"
 INCLUDE "maps/SilentHills.asm"
+
+SECTION "Map Scripts 26", ROMX
+
 INCLUDE "maps/LakeOfRageTraderHouse.asm"
 INCLUDE "maps/LakeOfRagePokecenter1F.asm"
 INCLUDE "maps/LakeOfRageMart.asm"
 INCLUDE "maps/LakeOfRagePrycesHouse.asm"
-
-SECTION "Map Scripts 26", ROMX
-
 INCLUDE "maps/DebugRoom.asm"
 INCLUDE "maps/CliffCave.asm"
 INCLUDE "maps/Route49.asm"
@@ -514,6 +514,8 @@ INCLUDE "maps/KantoPokecenter2F.asm"
 INCLUDE "maps/CalsHouse1F.asm"
 INCLUDE "maps/CalsHouse2F.asm"
 INCLUDE "maps/CliffEdgeGate.asm"
+
+SECTION "Map Scripts 27", ROMX
 INCLUDE "maps/EmbeddedTower.asm"
 INCLUDE "maps/Route48.asm"
 INCLUDE "maps/JohtoSafariZoneGate.asm"
@@ -521,8 +523,6 @@ INCLUDE "maps/JohtoSafariZone.asm"
 INCLUDE "maps/LavenderCrypt.asm"
 INCLUDE "maps/UnderwaterTunnel.asm"
 INCLUDE "maps/BillsGarden.asm"
-
-SECTION "Map Scripts 27", ROMX
 INCLUDE "maps/CeladonUniversityOutside.asm"
 INCLUDE "maps/CeladonUniversityInside.asm"
 INCLUDE "maps/MtMoonCrater.asm"
@@ -544,6 +544,8 @@ INCLUDE "maps/MtEmberHiddenPath.asm"
 INCLUDE "maps/TwoIsland.asm"
 INCLUDE "maps/CapeBrink.asm"
 INCLUDE "maps/Route47.asm"
+
+SECTION "Map Scripts 28", ROMX
 INCLUDE "maps/ThreeIsland.asm"
 INCLUDE "maps/BondBridge.asm"
 INCLUDE "maps/BerryForest.asm"
@@ -553,8 +555,6 @@ INCLUDE "maps/IcefallCave1F.asm"
 INCLUDE "maps/IcefallCaveB1F.asm"
 INCLUDE "maps/IcefallCaveBack.asm"
 INCLUDE "maps/FiveIsland.asm"
-
-SECTION "Map Scripts 28", ROMX
 INCLUDE "maps/FiveIslandMeadow.asm"
 INCLUDE "maps/MemorialPillar.asm"
 INCLUDE "maps/WaterLabyrinth.asm"
@@ -570,6 +570,15 @@ INCLUDE "maps/OutcastIsland.asm"
 INCLUDE "maps/SevenIsland.asm"
 INCLUDE "maps/CanyonEntrance.asm"
 INCLUDE "maps/SevaultCanyon.asm"
+
+SECTION "Map Scripts 29", ROMX
+INCLUDE "maps/Route49OldCityGate.asm"
+INCLUDE "maps/WinnersPath.asm"
+INCLUDE "maps/WinnersPathOutside.asm"
+INCLUDE "maps/UnnumberedRoute.asm"
+INCLUDE "maps/BlueLab.asm"
+
+SECTION "Map Scripts 30", ROMX
 INCLUDE "maps/TanobyRuins.asm"
 INCLUDE "maps/TanobyChambers.asm"
 INCLUDE "maps/NavalRockExterior.asm"
@@ -589,7 +598,3 @@ INCLUDE "maps/ThreeIslandPort.asm"
 INCLUDE "maps/AlteringCave.asm"
 INCLUDE "maps/SinjohRuinsExterior.asm"
 INCLUDE "maps/SinjohRuinsInterior.asm"
-
-SECTION "Map Scripts 29", ROMX
-INCLUDE "maps/Route49OldCityGate.asm"
-INCLUDE "maps/WinnersPath.asm"

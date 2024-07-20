@@ -153,7 +153,7 @@ CheckCounterTile::
 CheckPitTile::
 	cp COLL_PIT
 	ret z
-	cp COLL_PIT_68
+	cp COLL_SWITCH
 	ret
 
 CheckIceTile::
@@ -517,16 +517,6 @@ _GetMovementIndex::
 	rst Bankswitch
 
 	ld a, h
-	ret
-
-SetVramState_Bit0:: ; unreferenced
-	ld hl, wVramState
-	set 0, [hl]
-	ret
-
-ResetVramState_Bit0:: ; unreferenced
-	ld hl, wVramState
-	res 0, [hl]
 	ret
 
 UpdateSprites::

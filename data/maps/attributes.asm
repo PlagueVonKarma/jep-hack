@@ -375,8 +375,9 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 	
-	map_attributes SilentHills, SILENT_HILLS, $05, WEST ; Add Prince and east connections later
+	map_attributes SilentHills, SILENT_HILLS, $05, EAST | WEST ; Add Prince connections later
 	connection west, Route49, ROUTE_49, 0
+	connection east, UnnumberedRoute, UNNUMBERED_ROUTE, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
 	connection east, SilentHills, SILENT_HILLS, $05, 0
@@ -807,7 +808,15 @@ ENDM
 	
 	; Nihon
 	map_attributes WinnersPath, WINNERS_PATH, $00, 0
+	map_attributes WinnersPathOutside, WINNERS_PATH_OUTSIDE, $05, NORTH
+	connection north, UnnumberedRoute, UNNUMBERED_ROUTE, 0
+	
+	map_attributes UnnumberedRoute, UNNUMBERED_ROUTE, $05, WEST | SOUTH
+	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
+	connection west, SilentHills, SILENT_HILLS, 0
+	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
+	map_attributes BlueLab, BLUE_LAB, $00, 0
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
 	map_attributes SilversHouse, SILVERS_HOUSE, $00, 0
