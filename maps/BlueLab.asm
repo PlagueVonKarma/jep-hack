@@ -12,12 +12,16 @@
 	const BLUELAB_CHIKORITA
 	const BLUELAB_KEN
 	const BLUELAB_OAK
+	const BLUELAB_POKEDEX1
+	const BLUELAB_POKEDEX2
+	const BLUELAB_DAISY
+	const BLUELAB_AIDE
 
 BlueLab_MapScripts:
 	def_scene_scripts
 	scene_script EnterLabWithBlue, SCENE_ENTER_LAB_WITH_BLUE
 	scene_script EnterStarterRoomWithBlue, SCENE_ENTER_STARTER_ROOM_WITH_BLUE
-	scene_script BlueLabWhereGoing, SCENE_BLUELAB_WHERE_GOING
+	scene_script BlueLabNoopScene, SCENE_BLUELAB_WHERE_GOING
 	scene_script BlueLabNoopScene, SCENE_BLUELAB_NOOP
 
 	def_callbacks
@@ -27,22 +31,12 @@ BlueLabNoopScene:
 	end
 
 BlueLabSetup:
-	checkevent EVENT_DRAGGED_BY_BLUE
-	iffalse .skip1
-	moveobject BLUELAB_BLUE, 4, 18
-.skip1
-	checkevent EVENT_GONE_THROUGH_STARTER_DOOR
-	iffalse .skip2
-	appear BLUELAB_BLUE
-	appear BLUELAB_KEN
-	moveobject BLUELAB_BLUE, 20, 2
-	moveobject BLUELAB_KEN, 19, 4
-.skip2
 	checkevent EVENT_BRIEFED_BY_BLUE
-	iffalse .skip3
+	iffalse .skip
 	moveobject BLUELAB_OAK, 6, 2
 	moveobject BLUELAB_KEN, 23, 19
-.skip3
+	disappear BLUELAB_POKEDEX2
+.skip
 	endcallback
 	end
 
@@ -63,20 +57,18 @@ EnterLabWithBlue:
 	writetext OakAhYesIAmOak
 	waitbutton
 	closetext
+.No1
 	opentext
 	writetext OakStoryAskText
-	waitbutton
-	closetext
 	yesorno
-	iffalse .No1
+	iffalse .discerningEye
 	sjump .Yes1
-.No1
+.discerningEye
 	opentext
 	writetext OakDiscerningEye
 	waitbutton
 	closetext
-	yesorno
-	iffalse .No1
+	sjump .No1
 .Yes1
 	opentext
 	writetext OakStoryText
@@ -106,11 +98,27 @@ EnterLabWithBlue:
 	playsound SFX_ENTER_DOOR
 	pause 10
 	applymovement PLAYER, EnterStarterRoomMovement1
-	setscene SCENE_BLUELAB_NOOP
+	
+	; So get this: GSC never actually moves you into a warp. You'll be bounced back.
+	; Here, we use Lance's Room's method: An illusion of it actually happening.
+	disappear PLAYER
+	playsound SFX_ENTER_DOOR
+	special FadeOutPalettes
+	pause 15
+	warpfacing UP, BLUE_LAB, 20,  9
+	
+	moveobject BLUELAB_KEN, 19, 4
+	setscene SCENE_ENTER_STARTER_ROOM_WITH_BLUE
+	setevent EVENT_GONE_THROUGH_STARTER_DOOR
 	end
 
 EnterStarterRoomWithBlue:
+	appear BLUELAB_KEN
+;	moveobject BLUELAB_KEN, 19, 4
+	appear BLUELAB_BLUE
+	moveobject BLUELAB_BLUE, 20, 2
 	applymovement PLAYER, EnterStarterRoomMovement2
+	;turnobject BLUELAB_BLUE, DOWN ; It didn't work the other way, but this makes it kind of sick actually.
 	opentext
 	writetext BlueChooseText
 	waitbutton
@@ -121,18 +129,18 @@ EnterStarterRoomWithBlue:
 	closetext
 	applymovement BLUELAB_KEN, KenPickMovement1
 	opentext
-	writetext KenChikoritaText
+	writetext KenChikoritaText ; No one wants Chikorita, so...
 	waitbutton
 	closetext
 	disappear BLUELAB_CHIKORITA
 	opentext
 	writetext KenReceivedChikoritaText
-	waitbutton
-	closetext
 	playsound SFX_CAUGHT_MON
 	waitsfx
+	waitbutton
+	closetext
 	applymovement BLUELAB_KEN, KenPickMovement2
-	moveobject BLUELAB_KEN, 23, 19	
+	disappear BLUELAB_KEN
 	playsound SFX_ENTER_DOOR
 	pause 10
 	opentext
@@ -142,16 +150,12 @@ EnterStarterRoomWithBlue:
 .goBack
 	opentext
 	writetext BlueProposalText
-	waitbutton
-	closetext
 	yesorno
 	iffalse .No
 	sjump .Yes
 .No
 	opentext
 	writetext BlueLabINeedYouText
-	waitbutton
-	closetext
 	yesorno
 	iffalse .goBack
 .Yes
@@ -296,6 +300,7 @@ BlueAfterStarterScript:
 	closetext
 	moveobject BLUELAB_OAK, 6, 2
 	setevent EVENT_BRIEFED_BY_BLUE
+	setevent EVENT_GOT_POKEMON_FROM_BLUE
 	end
 
 BlueDidntChooseStarterScript:
@@ -390,7 +395,10 @@ KenIfItIsntYouText:
 	line "around!"
 	done
 
-PCText:
+BlueLabPC:
+	jumptext BlueLabPCText
+
+BlueLabPCText:
 	text "There's some mail"
 	line "here!"
 	
@@ -421,19 +429,28 @@ PCText:
 	line "AIDE"
 	done
 
-ReportText:
+BlueLabReport:
+	jumptext BlueLabReportText
+
+BlueLabReportText:
 	text "Don't forget to"
 	line "SAVE!"
 	done
 
-PokedexText:
+BlueLabPokedex:
+	jumptext BlueLabPokedexText
+
+BlueLabPokedexText:
 	text "It's a #DEX!"
 	line "It looks diff-"
 	cont "erent to the"
 	cont "ones in JOHTO!"
 	done
 
-DoorLockedText:
+BlueLabDoorLocked:
+	jumptext BlueLabDoorLockedText
+
+BlueLabDoorLockedText:
 	text "The door is"
 	line "locked."
 	done
@@ -495,11 +512,12 @@ OakDiscerningEye:
 	para "Hmm…"
 	done
 
+; Mostly translated from the SW97 dialogue, but adapted to KEP/JEP's AU.
 OakStoryText:
-	text "OAK: Right! A year"
+	text "OAK: Right! A year" ; In the SW demo, this was technically correct. In modern GSC, it's set 3 years later, coinciding with the game's release schedule. Given the storyline, let's keep the original quote, naturally creating an inconsistency.
 	line "ago, I gave two"
 	cont "boys #MON so"
-	cont "they could carry"
+	cont "they could carry" ; This can surely be expressed in fewer lines...
 	cont "out my dream of"
 	cont "filling the"
 	cont "#DEX!"
@@ -510,18 +528,18 @@ OakStoryText:
 	cont "with aplomb!"
 	
 	para "They documented"
-	line "all 190 #MON!"
+	line "all 190 #MON!" ; Adjusted for KEP. I accidentally made it the RG prototype numbers, but I actually like this.
 	
 	para "But…the world is"
 	line "a big place! One"
-	cont "after another, new"
+	cont "after another,"
 	cont "#MON have been"
 	cont "discovered!"
 	
 	para "I moved to this"
 	line "place, SILENT"
-	cont "HILLS, to cont-"
-	cont "inue my research!"
+	cont "HILLS, to conti-"
+	cont "nue my research!"
 	
 	para "I must see all"
 	line "#MON up close!"
@@ -530,7 +548,7 @@ OakStoryText:
 	para "… … …"
 	
 	para "As you can see,"
-	line "my nephew is here"
+	line "my nephew is here" ; He does say this, yes.
 	cont "to help, as are"
 	cont "everyone else."
 	
@@ -542,6 +560,8 @@ OakStoryText:
 	para "I need your help!"
 	done
 
+; Ken often words things like this.
+; He seems impressionable and kind, so let's establish him like that.
 KenResponseText:
 	text "KEN: Oh, <PLAYER>!"
 	line "This is super"
@@ -561,8 +581,7 @@ OakThanksText:
 
 BlueChooseText:
 	text "BLUE: So here we"
-	line "have 3 #"
-	cont "BALLS!"
+	line "have 3 # BALLS!"
 	
 	para "Haha! They contain"
 	line "#MON."
@@ -596,19 +615,19 @@ KenPickText:
 	done
 
 KenPickMovement1:
-	step RIGHT
-	step RIGHT
 	step UP
+	step RIGHT
+	step RIGHT
+	turn_head UP
 	step_end
 
 KenChikoritaText:
 	text "CHIKORITA!"
-	line "It's so cute"
-	cont "and cuddly!"
+	line "It's so cute and"
+	cont "cuddly!"
 	
-	para "Let's go on"
-	line "an adventure"
-	cont "together!"
+	para "Let's go on an"
+	line "adventure!"
 	
 	para "I'll show CAL!"
 	done
@@ -619,6 +638,8 @@ KenReceivedChikoritaText:
 	done
 
 KenPickMovement2:
+	step DOWN
+	step DOWN
 	step LEFT
 	step DOWN
 	step DOWN
@@ -630,15 +651,12 @@ KenPickMovement2:
 
 BlueWeirdText:
 	text "BLUE: Such a"
-	line "starry-eyed"
-	cont "kid…"
+	line "starry-eyed kid…"
 	
 	para "Well, champ…"
 	
 	para "You saw it too,"
-	line "right? I mean,"
-	cont "you have to be"
-	cont "blind to not."
+	line "right?"
 	
 	para "That ain't gramps."
 	
@@ -647,7 +665,7 @@ BlueWeirdText:
 	cont "DAISY! Gramps's"
 	cont "research is top-"
 	cont "notch, but this"
-	cont "one hardly responds"
+	cont "one hardly replies"
 	cont "to e-mails!"
 	
 	para "#MON TALK is"
@@ -657,27 +675,25 @@ BlueWeirdText:
 	done
 
 BlueProposalText:
-	text "So here's the"
-	line "deal. I want you"
-	cont "to search for"
+	text "So here's the deal."
+	line "I want you to find"
 	cont "gramps."
 	
-	para "In return, I"
-	line "will give you"
-	cont "one of these"
-	cont "#MON. Capische?"
+	para "In return, I'll"
+	line "give you one of"
+	cont "these #MON."
+	
+	para "Capische?"
 	done
 
 BlueAcceptText:
-	text "They're super"
-	line "rare! I'm sure"
-	cont "they'll be safe"
-	cont "with you!"
+	text "I'm counting on"
+	line "you, <PLAYER>!"
 	done
 
 BlueAfterStarterText:
-	text "Right place at"
-	line "the right time,"
+	text "BLUE: Right place"
+	line "at the right time,"
 	cont "huh, <PLAYER>?"
 	
 	para "I don't have any"
@@ -685,9 +701,9 @@ BlueAfterStarterText:
 	cont "has disappeared,"
 	cont "only a hunch."
 	
-	para "I don't know"
+	para "I don't even know"
 	line "where he could"
-	cont "have gone, even."
+	cont "have gone!"
 	
 	para "The NIHON LEAGUE"
 	line "is wicked tough,"
@@ -701,7 +717,7 @@ BlueAfterStarterText:
 	line "want my #GEAR"
 	cont "number? I'll call"
 	cont "you if anything"
-	cont "comes up"
+	cont "comes up."
 	done
 
 BlueLabWhereAreYouGoingMovement:
@@ -748,10 +764,17 @@ KenRegularText:
 	text "?"
 	done
 
-; To be expanded on later.
+; To be expanded on later, a la Elm.
 ProfBlueScript:
+	faceplayer
 	opentext
+	checkevent EVENT_GOT_POKEMON_FROM_BLUE
+	iftrue .skip
+	writetext BlueDidntChooseStarterText
+	sjump .omniSkip
+.skip
 	writetext BlueRegularText
+.omniSkip
 	waitbutton
 	closetext
 	end
@@ -762,6 +785,39 @@ BlueRegularText:
 	para "I'll let you know"
 	line "If anything comes"
 	cont "up."
+	done
+
+BlueLabBookshelf:
+	jumpstd DifficultBookshelfScript
+
+BlueLabDaisyScript:
+	jumptextfaceplayer BlueLabDaisyText
+
+BlueLabDaisyText:
+	text "DAISY: Yup, this"
+	line "is my day job."
+	
+	para "At the same time,"
+	line "seeing BLUE work"
+	cont "so hard warms my"
+	cont "heart!"
+	
+	para "But I wonder if"
+	line "the stress gets"
+	cont "to him?"
+	done
+
+BlueLabAideScript:
+	jumptextfaceplayer BlueLabAideText
+
+BlueLabAideText:
+	text "I'm glad OAK fina-"
+	line "lly sees the value"
+	cont "in my research!"
+	
+	para "Legendary #-"
+	line "MON need more"
+	cont "study!"
 	done
 
 BlueLab_MapEvents:
@@ -780,11 +836,34 @@ BlueLab_MapEvents:
 	coord_event 19,  9, SCENE_BLUELAB_WHERE_GOING, BlueLabWhereGoing
 
 	def_bg_events
+	bg_event  6,  1, BGEVENT_READ, BlueLabPC
+	bg_event  2,  0, BGEVENT_READ, BlueLabReport
+	bg_event 22,  0, BGEVENT_READ, BlueLabReport
+	bg_event  7,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  6,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  5,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  2,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  1,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  0,  9, BGEVENT_READ, BlueLabBookshelf
+	bg_event  7, 13, BGEVENT_READ, BlueLabBookshelf
+	bg_event  6, 13, BGEVENT_READ, BlueLabBookshelf
+	bg_event 19,  1, BGEVENT_READ, BlueLabBookshelf
+	bg_event 18,  1, BGEVENT_READ, BlueLabBookshelf
+	bg_event 17,  1, BGEVENT_READ, BlueLabBookshelf
+	bg_event 16,  1, BGEVENT_READ, BlueLabBookshelf
+	bg_event  5, 13, BGEVENT_READ, BlueLabBookshelf
+	bg_event  2, 13, BGEVENT_READ, BlueLabBookshelf
+	bg_event  1, 13, BGEVENT_READ, BlueLabBookshelf
+	bg_event  0, 13, BGEVENT_READ, BlueLabBookshelf
 
 	def_object_events
-	object_event  4,  2, SPRITE_BLUE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfBlueScript, -1
+	object_event  4,  2, SPRITE_BLUE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfBlueScript, -1
 	object_event 22,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CubburnPokeBallScript, EVENT_CUBBURN_POKEBALL_IN_BLUES_LAB
 	object_event 23,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PalssioPokeBallScript, EVENT_PALSSIO_POKEBALL_IN_BLUES_LAB
 	object_event 21,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlueChikoritaPokeBallScript, -1
 	object_event  3,  4, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, KenRegularScript, -1
 	object_event  4,  2, SPRITE_OAK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OakRegularScript, -1
+	object_event  1,  1, SPRITE_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlueLabPokedex, -1
+	object_event  0,  1, SPRITE_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlueLabPokedex, -1
+	object_event  6, 14, SPRITE_DAISY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlueLabDaisyScript, -1
+	object_event  1, 10, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BlueLabAideScript, -1

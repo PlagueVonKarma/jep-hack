@@ -602,9 +602,6 @@ ElmsLabTrashcan:
 ElmsLabPC:
 	jumptext ElmsLabPCText
 
-ElmsLabTrashcan2: ; unreferenced
-	jumpstd TrashCanScript
-
 ElmsLabBookshelf:
 	jumpstd DifficultBookshelfScript
 

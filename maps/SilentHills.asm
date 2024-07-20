@@ -8,9 +8,7 @@
 
 SilentHills_MapScripts:
 	def_scene_scripts
-	scene_script SilentHillsNoopScene, SCENE_SILENT_HILLS_NOOP
-	scene_script SilentHillsBlue1, SCENE_SILENT_HILLS_BLUE1
-	scene_script SilentHillsBlue2, SCENE_SILENT_HILLS_BLUE2
+	scene_script SilentHillsNoopScene, SCENE_SILENT_HILLS_BLUE
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, SilentHillsFlypointCallback
@@ -19,63 +17,83 @@ SilentHillsNoopScene:
 	end
 
 SilentHillsBlue1:
-	checkevent EVENT_DRAGGED_BY_BLUE
-	iftrue .end
-	moveobject SILENT_HILLS_BLUE, 4, 8
+	playmusic MUSIC_PROF_OAK
 	opentext
 	writetext BlueWaitText1
 	waitbutton
 	closetext
 	pause 15
+	applymovement PLAYER, KrisWantsLefties
+	moveobject SILENT_HILLS_BLUE, 6, 9
+	disappear SILENT_HILLS_BLUE
+	appear SILENT_HILLS_BLUE
 	opentext
 	writetext BlueWaitText2
 	waitbutton
 	closetext
-	opentext
-	writetext BlueFollowMeText
-	playmusic MUSIC_SHOW_ME_AROUND
 	appear SILENT_HILLS_BLUE
+	turnobject PLAYER, RIGHT
+	showemote EMOTE_SHOCK, PLAYER, 15
 	applymovement SILENT_HILLS_BLUE, BlueStrideMovement
 	opentext 
 	writetext BlueFollowMeText
 	waitbutton
 	closetext
-	follow SILENT_HILLS_BLUE, PLAYER, BlueFollowMeMovement1
+	follow SILENT_HILLS_BLUE, PLAYER
+	applymovement SILENT_HILLS_BLUE, BlueFollowMeMovement1A
+	applymovement SILENT_HILLS_BLUE, BlueFollowMeMovement1
+	applymovement SILENT_HILLS_BLUE, BlueFollowMeMovement1B
+	disappear SILENT_HILLS_BLUE
+	playsound SFX_ENTER_DOOR
 	stopfollow
+	pause 10
+	applymovement PLAYER, KrisWantsUppies
+	disappear PLAYER
+	playsound SFX_ENTER_DOOR
+	special FadeOutPalettes
+	pause 15
+	warpfacing UP, BLUE_LAB, 4, 19
 	setevent EVENT_DRAGGED_BY_BLUE
 	setevent EVENT_GOT_POKEMON_FROM_BLUE ; It's only for the moment, it gets reset once you're actually picking one. Just handles potentially stupid scenarios.
-.end
-	setscene SCENE_SILENT_HILLS_NOOP
 	end
 
 SilentHillsBlue2:
-	checkevent EVENT_DRAGGED_BY_BLUE
-	iftrue .end
-	moveobject SILENT_HILLS_BLUE, 4, 8
+	playmusic MUSIC_PROF_OAK
 	opentext
 	writetext BlueWaitText1
 	waitbutton
 	closetext
 	pause 15
+	applymovement PLAYER, KrisWantsLefties
+	moveobject SILENT_HILLS_BLUE, 6, 8
+	disappear SILENT_HILLS_BLUE
+	appear SILENT_HILLS_BLUE
 	opentext
 	writetext BlueWaitText2
 	waitbutton
 	closetext
-	opentext
-	writetext BlueFollowMeText
-	playmusic MUSIC_SHOW_ME_AROUND
-	appear SILENT_HILLS_BLUE
+	turnobject PLAYER, RIGHT
+	showemote EMOTE_SHOCK, PLAYER, 15
 	applymovement SILENT_HILLS_BLUE, BlueStrideMovement
 	opentext 
 	writetext BlueFollowMeText
 	waitbutton
 	closetext
-	follow SILENT_HILLS_BLUE, PLAYER, BlueFollowMeMovement2
+	follow SILENT_HILLS_BLUE, PLAYER
+	applymovement SILENT_HILLS_BLUE, BlueFollowMeMovement1A
+	applymovement SILENT_HILLS_BLUE, BlueFollowMeMovement2 ; don't need 1B as we use a fallthrough instead
+	disappear SILENT_HILLS_BLUE
+	playsound SFX_ENTER_DOOR
 	stopfollow
+	pause 10
+	applymovement PLAYER, KrisWantsUppies
+	disappear PLAYER
+	playsound SFX_ENTER_DOOR
+	special FadeOutPalettes
+	pause 15
+	warpfacing UP, BLUE_LAB, 4, 19
 	setevent EVENT_DRAGGED_BY_BLUE
 	setevent EVENT_GOT_POKEMON_FROM_BLUE ; It's only for the moment, it gets reset once you're actually picking one. Just handles potentially stupid scenarios.
-.end
-	setscene SCENE_SILENT_HILLS_NOOP
 	end
 
 SilentHillsFlypointCallback:
@@ -142,6 +160,7 @@ SilentHillManText:
 
 BlueWaitText1:
 	text "Hey! Hey! Wait!"
+	line "Don't go out!"
 	done
 
 BlueWaitText2:	
@@ -153,8 +172,8 @@ BlueFollowMeText:
 	line "know--"
 	
 	para "Huh?! It's you!"
-	line "You wiped the floor"
-	cont "with me before!"
+	line "You wiped the flo-"
+	cont "or with me before!"
 	
 	para "What are you doing"
 	line "in NIHON?!"
@@ -162,26 +181,44 @@ BlueFollowMeText:
 	para "…"
 	
 	para "You may be useful,"
-	line "actually. Come with"
-	cont "me!"
+	line "actually. Come on,"
+	cont "follow me!"
 	done
 
 BlueStrideMovement:
 	step LEFT
 	step LEFT
 	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
+; I got really annoyed at the inefficiency and decided to do things like this.
+; There is probably a fallthrough you can use somewhere.
+BlueFollowMeMovement1A:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
 	step_end
 
 BlueFollowMeMovement1:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
 	step DOWN
 	step DOWN
 	step DOWN
+	step_end
+
+BlueFollowMeMovement2:
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	; fallthrough
+BlueFollowMeMovement1B:
+	step RIGHT
+	step RIGHT
 	step RIGHT
 	step RIGHT
 	step RIGHT
@@ -191,23 +228,12 @@ BlueFollowMeMovement1:
 	step UP
 	step_end
 
-BlueFollowMeMovement2:
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step DOWN
-	step DOWN
-	step DOWN
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
-	step RIGHT
+KrisWantsUppies:
 	step UP
+	step_end
+
+KrisWantsLefties: ; Wasn't funny enough
+	step LEFT
 	step_end
 
 ; A little message for the cheaters.
@@ -223,7 +249,7 @@ SilentHillsWhatText:
 	para "…"
 	
 	para "Well, you must be"
-	line "smart…and dedicated."
+	line "smart…."
 	
 	para "So, props! Thanks"
 	line "for playing!"
@@ -240,8 +266,8 @@ SilentHills_MapEvents:
 	warp_event  3, 12, SILVERS_HOUSE, 1
 
 	def_coord_events
-	coord_event  1,  9, SCENE_SILENT_HILLS_BLUE1, SilentHillsBlue1
-	coord_event  1,  8, SCENE_SILENT_HILLS_BLUE2, SilentHillsBlue2
+	coord_event  1,  9, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue1
+	coord_event  1,  8, SCENE_SILENT_HILLS_BLUE, SilentHillsBlue2
 
 	def_bg_events
 	bg_event  8,  4, BGEVENT_READ, SilentHillsSign1
@@ -255,4 +281,4 @@ SilentHills_MapEvents:
 	def_object_events
 	object_event  8,  7, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SilentHillPokefanF, -1
 	object_event  9, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SilentHillYoungster, -1
-	object_event  0,  0, SPRITE_BLUE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, SilentHillsWhatText, -1
+	object_event  0,  0, SPRITE_BLUE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SilentHillsWhatScript, -1
