@@ -57,11 +57,11 @@ DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry DOKUROAR
+	cry NIDORAN_M
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_NORMAL
-	loadwildmon DOKUROAR, 60
+	loadwildmon BIPULLA, 60
 	startbattle
 	reloadmapafterbattle
 	end
