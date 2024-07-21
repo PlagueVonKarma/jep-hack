@@ -1303,6 +1303,7 @@ TryHeadbuttOW::
 
 AskHeadbuttScript:
 	opentext
+	callasm TrySweetHoneyOW
 	writetext AskHeadbuttText
 	yesorno
 	iftrue HeadbuttScript
@@ -1312,6 +1313,85 @@ AskHeadbuttScript:
 AskHeadbuttText:
 	text_far _AskHeadbuttText
 	text_end
+
+TrySweetHoneyOW:
+; is player at the right position?
+	call CheckSavedSweetHoneySpot
+	ret nz ; return if not
+
+	farcall _CheckSweetHoneyTimer
+	ld a, [wSweetHoneyTimer]
+	and a
+	; ret z
+
+; - added day 2 check-
+	ld hl, .TwoDaysAgoText
+	jr z, .print_message
+; - end add -
+
+	ld hl, .YesterdayText
+	cp 1 ; day left
+	jr z, .print_message
+
+	cp 2 ; days left
+	ret	nz
+
+	ld hl, .TodayText
+.print_message
+; writetext
+	push hl
+	call SpeechTextbox
+	call SafeUpdateSprites
+	ld a, 1
+	ldh [hOAMUpdate], a
+	call ApplyTilemap
+	pop hl
+	call PrintTextboxText
+	xor a
+	ldh [hOAMUpdate], a
+	ret
+
+.TodayText:
+	text "There's SWEET HONEY"
+	line "on the tree!"
+	para "It's still fresh."
+	prompt
+
+.YesterdayText:
+	text "There's SWEET HONEY"
+	line "on the tree!"
+	para "It's about a day"
+	line "old."
+	prompt
+
+.TwoDaysAgoText:
+	text "There's SWEET HONEY"
+	line "on the tree!"
+	para "Looks ripe!"
+	prompt
+
+CheckSavedSweetHoneySpot:
+; Z flag is set when player is in the exact spot
+; where Sweet Honey is applied
+
+; check map group
+	ld hl, wSweetHoneyMapGroup
+	ld a, [wMapGroup]
+	cp [hl]
+	ret nz
+; map number
+	inc hl ; wSweetHoneyMapNumber
+	ld a, [wMapNumber]
+	cp [hl]
+	ret nz
+; X and Y
+	call GetFacingTileCoord
+	ld a, [wSweetHoneyX]
+	cp d
+	ret nz
+	ld a, [wSweetHoneyY]
+	cp e
+	ret
 
 RockSmashFunction:
 	call TryRockSmashFromMenu

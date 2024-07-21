@@ -113,7 +113,7 @@ ItemEffects:
 	dw NoEffect            ; WHT_APRICORN
 	dw NoEffect            ; BLACKBELT_I
 	dw NoEffect            ; BLK_APRICORN
-	dw NoEffect            ; ITEM_64
+	dw UseHoneyEffect      ; HONEY_POT was ITEM_64
 	dw NoEffect            ; PNK_APRICORN
 	dw NoEffect            ; BLACKGLASSES
 	dw EvoStoneEffect      ; SLOWPOKETAIL
@@ -2836,6 +2836,10 @@ RestoreAllPP:
 	pop hl
 	dec c
 	jr nz, .loop
+	ret
+
+UseHoneyEffect:
+	farcall _UseHoney
 	ret
 
 GetMaxPPOfMove:

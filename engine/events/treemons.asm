@@ -12,7 +12,7 @@ TreeMonEncounter:
 	call GetTreeMons
 	jr nc, .no_battle
 
-	call GetTreeMon
+	call ModifyTreeMonRates
 	jr nc, .no_battle
 
 	ld a, BATTLETYPE_TREE
@@ -122,6 +122,22 @@ GetTreeMons:
 
 INCLUDE "data/wild/treemons.asm"
 
+ModifyTreeMonRates:
+	push hl
+		farcall CheckSavedSweetHoneySpot
+	pop hl
+	jr nz, GetTreeMon
+
+	push hl
+		farcall _CheckSweetHoneyTimer
+	pop hl
+
+	ld a, [wSweetHoneyTimer]
+	cp 2 ; was 1; jump if sweethoney was applied today
+	jr z, GetTreeMon
+
+	ld hl, TreeMonSet_Sweet_Honey
+; fallthrough for sweet honey mons
 GetTreeMon:
 	push hl
 	call GetTreeScore

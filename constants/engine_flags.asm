@@ -14,8 +14,8 @@
 ; wMomSavingMoney
 	const ENGINE_MOM_SAVING_MONEY
 	const ENGINE_MOM_ACTIVE
-; wUnusedTwoDayTimerOn
-	const ENGINE_UNUSED_TWO_DAY_TIMER_ON
+; wSweetHoneyEnabled
+	const ENGINE_SWEET_HONEY
 ; wStatusFlags
 	const ENGINE_POKEDEX
 	const ENGINE_UNOWN_DEX

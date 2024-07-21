@@ -100,7 +100,7 @@ ItemDescriptions:
 	dw WhtApricornDesc
 	dw BlackbeltDesc
 	dw BlkApricornDesc
-	dw QuestionMarkDesc
+	dw HoneyPotDesc
 	dw PnkApricornDesc
 	dw BlackGlassesDesc
 	dw SlowpokeTailDesc
@@ -975,3 +975,7 @@ PeatBlockDesc:
 ClubFossilDesc:
 	db   "The club of an"
 	next "ancient #MON.@"
+
+HoneyPotDesc:
+	db   "A pot for storing"
+	next "SWEET HONEY.@"

@@ -273,9 +273,9 @@ ScriptReturnCarry:
 	ld [wScriptVar], a
 	ret
 
-UnusedCheckUnusedTwoDayTimer:
-	farcall CheckUnusedTwoDayTimer
-	ld a, [wUnusedTwoDayTimer]
+CheckSweetHoneyTimer:
+	farcall _CheckSweetHoneyTimer
+	ld a, [wSweetHoneyTimer]
 	ld [wScriptVar], a
 	ret
 

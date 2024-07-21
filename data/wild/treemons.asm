@@ -14,8 +14,8 @@ TreeMons:
 	dw TreeMonSet_Rock_Ice
 	dw TreeMonSet_Rock_Square
 	dw TreeMonSet_Rock_Well
+	dw TreeMonSet_Sweet_Honey
 	assert_table_length NUM_TREEMON_SETS
-	dw TreeMonSet_City ; unused
 
 ; Two tables each (common, rare).
 ; Structure:
@@ -179,4 +179,11 @@ TreeMonSet_Rock_Square:
 TreeMonSet_Rock_Well:
 	dbbw 70, 15, KRABBY
 	dbbw 30, 15, SHELLDER
+	db -1
+
+TreeMonSet_Sweet_Honey:
+	dbbw 25, 60, HERACROSS
+	dbbw 25, 60, URSARING
+	dbbw 25, 60, BEEDRILL
+	dbbw 25, 60, MUNCHLAX
 	db -1

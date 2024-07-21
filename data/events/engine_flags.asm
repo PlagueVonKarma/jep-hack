@@ -23,7 +23,7 @@ EngineFlags:
 	engine_flag wMomSavingMoney, MOM_SAVING_SOME_MONEY_F
 	engine_flag wMomSavingMoney, MOM_ACTIVE_F
 
-	engine_flag wUnusedTwoDayTimerOn, 0 ; unused, possibly related to a 2-day timer
+	engine_flag wSweetHoneyEnabled, SWEET_HONEY_F ; unused, possibly related to a 2-day timer
 
 	engine_flag wStatusFlags, STATUSFLAGS_POKEDEX_F
 	engine_flag wStatusFlags, STATUSFLAGS_UNOWN_DEX_F
