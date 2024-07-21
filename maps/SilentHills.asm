@@ -17,6 +17,8 @@ SilentHillsNoopScene:
 	end
 
 SilentHillsBlue1:
+	checkevent EVENT_GOT_POKEMON_FROM_BLUE
+	iftrue .end
 	playmusic MUSIC_PROF_OAK
 	opentext
 	writetext BlueWaitText1
@@ -55,9 +57,12 @@ SilentHillsBlue1:
 	warpfacing UP, BLUE_LAB, 4, 19
 	setevent EVENT_DRAGGED_BY_BLUE
 	setevent EVENT_GOT_POKEMON_FROM_BLUE ; It's only for the moment, it gets reset once you're actually picking one. Just handles potentially stupid scenarios.
+.end
 	end
 
 SilentHillsBlue2:
+	checkevent EVENT_GOT_POKEMON_FROM_BLUE
+	iftrue .end
 	playmusic MUSIC_PROF_OAK
 	opentext
 	writetext BlueWaitText1
@@ -94,6 +99,7 @@ SilentHillsBlue2:
 	warpfacing UP, BLUE_LAB, 4, 19
 	setevent EVENT_DRAGGED_BY_BLUE
 	setevent EVENT_GOT_POKEMON_FROM_BLUE ; It's only for the moment, it gets reset once you're actually picking one. Just handles potentially stupid scenarios.
+.end
 	end
 
 SilentHillsFlypointCallback:

@@ -380,7 +380,7 @@ ENDM
 	connection east, UnnumberedRoute, UNNUMBERED_ROUTE, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
-	connection east, SilentHills, SILENT_HILLS, $05, 0
+	connection east, SilentHills, SILENT_HILLS, $00, 0
 	connection west, Route49_2, ROUTE_49_2, $05, 0
 	
 	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST
@@ -824,4 +824,5 @@ ENDM
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
 	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0
-	map_attributes Route49OldCityGate, ROUTE_49_OLD_CITY_GATE, $00, 0
+	map_attributes Route49OldCityGate1F, ROUTE_49_OLD_CITY_GATE_1F, $00, 0
+	map_attributes Route49OldCityGate2F, ROUTE_49_OLD_CITY_GATE_2F, $00, 0

@@ -319,6 +319,7 @@ TilesetAerodactylWordRoomAnim:
 TilesetMuseumAnim:
 TilesetLavenderCryptAnim:
 TilesetBlueLabAnim:
+TilesetNihonGateAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

@@ -88,22 +88,24 @@ Additionally, there have been many wild encounter tweaks. View this document for
 - thornAvery (Programming)
 - pret et al (LOTS of [Tutorials](https://github.com/pret/pokecrystal/wiki) that we used to get this off the ground!)
 - Wiz (Nihon Pokemon names)
+- Nob Ogasawara (Many prototype Pokemon names)
 - Rezzo (GSC-specific advice)
 - Old Dance Jacket (GSC-specific advice)
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
 - ausma (KEP Developer, legacy)
 
 # Sprite Credits
-- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, 
+- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
-- EyeDonutz: Walking Wake
 - nuuk: (WIP) Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer
+- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly - Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
+- SoupPotato et al - Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazeppelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
 - SCMidna: Munchlax
-- Pokemon October et al: Bellignan, Caretorker, Inoshika, Bipulla, Sonegg, Kolta, Coinpur, Dodaerie, Bundra, Kiwooked, Koalyptus, Trebir
+- EyeDonutz: Walking Wake
+- SageDeoxys: (TBA)
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Ferropexola/aforward9600: Time of day-based tileset palette code
-
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal
