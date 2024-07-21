@@ -448,6 +448,10 @@ INCLUDE "gfx/pokemon/unown_frames.asm"
 SECTION "Pic Animations 3", ROMX
 
 INCLUDE "gfx/pokemon/kanto_frames.asm"
+
+
+SECTION "Pic Animations 4", ROMX
+
 INCLUDE "gfx/pokemon/johto_frames.asm"
 
 
