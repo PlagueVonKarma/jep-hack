@@ -50,6 +50,7 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
 - The Antique Pot has been added to accomodate a Shuckle evolution!
 - New Club and Wing Fossils; the former for Xylodon, a May98 Prototype Pokemon, and the latter for Feradactyl, (seemingly) an Aerodactyl pre-evolution from the same prototype.
+- The unused Honey Pot from prototype GSC has been added! 2 days after placing Sweet Honey, you can encounter either Munchlax, Beedrill, Ursaring, or Heracross!
 
 ## QoL Changes
 - A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
@@ -92,6 +93,7 @@ Additionally, there have been many wild encounter tweaks. View this document for
 - Rezzo (GSC-specific advice)
 - Old Dance Jacket (GSC-specific advice)
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
+- ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6).
 - ausma (KEP Developer, legacy)
 
 # Sprite Credits
