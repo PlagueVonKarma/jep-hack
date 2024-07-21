@@ -380,7 +380,7 @@ ENDM
 	connection east, UnnumberedRoute, UNNUMBERED_ROUTE, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
-	connection east, SilentHills, SILENT_HILLS, $05, 0
+	connection east, SilentHills, SILENT_HILLS, $00, 0
 	connection west, Route49_2, ROUTE_49_2, $05, 0
 	
 	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST

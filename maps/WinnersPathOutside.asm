@@ -60,10 +60,10 @@ EngineerDashuAfterBattleText:
 	cont "NEW TYPE." ; Change name when necessary.
 	
 	para "Why aren't I there"
-	line "right now"
+	line "right now?"
 	
 	para "Aren't you a nosy"
-	cont "one, eh?"
+	line "one, eh?"
 	done
 
 TrainerCoolTrainerSteve:
