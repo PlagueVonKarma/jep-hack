@@ -600,3 +600,15 @@ INCBIN "data/tilesets/bluelab_metatiles.bin"
 
 TilesetBlueLabColl::
 INCLUDE "data/tilesets/bluelab_collision.asm"
+
+TilesetNihonGateAttr::
+INCBIN "data/tilesets/nihongate_attributes.bin"
+
+TilesetNihonGateGFX::
+INCBIN "gfx/tilesets/nihongate.2bpp.lz"
+
+TilesetNihonGateMeta::
+INCBIN "data/tilesets/nihongate_metatiles.bin"
+
+TilesetNihonGateColl::
+INCLUDE "data/tilesets/nihongate_collision.asm"

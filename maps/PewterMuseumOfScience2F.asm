@@ -1,4 +1,9 @@
 	object_const_def
+	const MUSEUM2F_YOUNGSTER
+	const MUSEUM2F_GRAMPS
+	const MUSEUM2F_SCIENTIST
+	const MUSEUM2F_LASS
+	const MUSEUM2F_POKEFAN_M
 
 PewterMuseumOfScience2F_MapScripts:
 	def_scene_scripts

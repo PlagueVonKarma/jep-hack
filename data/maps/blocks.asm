@@ -1210,3 +1210,12 @@ UnnumberedRoute_Blocks:
 	
 BlueLab_Blocks:
 	INCBIN "maps/BlueLab.ablk"
+
+Route49OldCityGate1F_Blocks:
+	INCBIN "maps/NihonGateNorthSouth.ablk" ; 5, 4
+
+Route49OldCityGate2F_Blocks:
+	INCBIN "maps/NihonGate2F.ablk" ; 4, 3
+
+;InsertGateNameHere_Blocks:
+;	INCBIN "maps/NihonGateWestEast.ablk"
