@@ -131,7 +131,7 @@ Landmarks:
 	landmark   0,   0, UnknownName ; Seven Island
 	assert_table_length NIHON_LANDMARK
 	landmark 108, 116, WinnersPathName
-	landmark 108, 108, UnknownName ; Unnumbered post-Winner's Path Route
+	landmark 108, 108, Route66Name
 	landmark  92, 108, SilentHillsName
 	landmark 20,  28, UnknownName ; Debug Room 
 	landmark 84, 108, Route49Name
@@ -245,6 +245,7 @@ SpecialMapName:      db "SPECIAL@"
 WinnersPathName:	 db "WINNER'S¯PATH@"
 SilentHillsName:     db "SILENT¯HILLS@"
 UnknownName:         db "?????@"
+Route66Name:         db "ROUTE 66@"
 Route49Name:         db "ROUTE 49@"
 QuietCaveName:       db "QUIET¯CAVE@"
 BlueForestName:      db "BLUE¯FOREST@"

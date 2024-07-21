@@ -60,7 +60,7 @@ NihonGrassWildMons:
 	; Route east of Silent Hills
 	; Encounter data based on what is in the SW97 demo.
 	; https://tcrf.net/Proto:Pok%C3%A9mon_Gold_and_Silver/Spaceworld_1997_Demo/Maps
-	def_grass_wildmons UNNUMBERED_ROUTE
+	def_grass_wildmons ROUTE_66
 	db 2 percent, 2 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	dbw 29, PICHU

@@ -6,7 +6,7 @@ NihonWaterWildMons:
 	dbw 40, GRANBO ; SHARPOON
 	end_water_wildmons
 
-	def_water_wildmons UNNUMBERED_ROUTE
+	def_water_wildmons ROUTE_66
 	db 4 percent ; encounter rates: morn/day/nite
 	dbw 30, MAGIKARP
 	dbw 31, ANGORE

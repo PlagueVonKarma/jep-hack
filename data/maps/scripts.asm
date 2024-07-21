@@ -576,7 +576,7 @@ INCLUDE "maps/Route49OldCityGate1F.asm"
 INCLUDE "maps/Route49OldCityGate2F.asm"
 INCLUDE "maps/WinnersPath.asm"
 INCLUDE "maps/WinnersPathOutside.asm"
-INCLUDE "maps/UnnumberedRoute.asm"
+INCLUDE "maps/Route66.asm"
 INCLUDE "maps/BlueLab.asm"
 
 SECTION "Map Scripts 30", ROMX

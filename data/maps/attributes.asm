@@ -809,9 +809,9 @@ ENDM
 	; Nihon
 	map_attributes WinnersPath, WINNERS_PATH, $00, 0
 	map_attributes WinnersPathOutside, WINNERS_PATH_OUTSIDE, $05, NORTH
-	connection north, UnnumberedRoute, UNNUMBERED_ROUTE, 0
+	connection north, Route66, ROUTE_66, 0
 	
-	map_attributes UnnumberedRoute, UNNUMBERED_ROUTE, $05, WEST | SOUTH
+	map_attributes Route66, ROUTE_66, $05, WEST | SOUTH
 	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
 	connection west, SilentHills, SILENT_HILLS, 0
 	
