@@ -326,7 +326,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const GRANBULL   ; d2
 	const CARETORKER
 	const QWILFISH   ; d3
-	const KAZEPPELIN
+	const KAZAPPELIN
 	const QWILFATHER
 	const SCIZOR     ; d4
 	const SHUCKLE    ; d5

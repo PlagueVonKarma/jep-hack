@@ -310,7 +310,7 @@ PokemonNames::
 	db "GRANBULL@@"
 	db "CARETORKER"
 	db "QWILFISH@@"
-	db "KAZEPPELIN"
+	db "KAZAPPELIN"
 	db "QWILFATHER"
 	db "SCIZOR@@@@"
 	db "SHUCKLE@@@"

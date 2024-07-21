@@ -95,7 +95,7 @@ EvosAttacksPointers2::
 	dw GranbullEvosAttacks
 	dw CaretorkerEvosAttacks
 	dw QwilfishEvosAttacks
-	dw KazeppelinEvosAttacks
+	dw KazappelinEvosAttacks
 	dw QwilfatherEvosAttacks
 	dw ScizorEvosAttacks
 	dw ShuckleEvosAttacks
@@ -1401,7 +1401,7 @@ CaretorkerEvosAttacks:
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
-	dbbw EVOLVE_ITEM, THUNDERSTONE, KAZEPPELIN
+	dbbw EVOLVE_ITEM, THUNDERSTONE, KAZAPPELIN
 	dbbw EVOLVE_ITEM, POISON_STONE, QWILFATHER
 	db 0 ; no more evolutions
 	dbw 1, SPIKES
@@ -1415,7 +1415,7 @@ QwilfishEvosAttacks:
 	dbw 46, HYDRO_PUMP
 	db 0 ; no more level-up moves
 	
-KazeppelinEvosAttacks:
+KazappelinEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
 	dbw 7, TAIL_WHIP

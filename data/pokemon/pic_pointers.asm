@@ -628,8 +628,8 @@ PokemonPicPointers::
 	dba CaretorkerBackpic
 	dba QwilfishFrontpic
 	dba QwilfishBackpic
-	dba KazeppelinFrontpic
-	dba KazeppelinBackpic
+	dba KazappelinFrontpic
+	dba KazappelinBackpic
 	dba QwilfatherFrontpic
 	dba QwilfatherBackpic
 	dba ScizorFrontpic

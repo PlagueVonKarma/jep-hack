@@ -306,7 +306,7 @@ AnimationIdlePointers:
 	dw GranbullAnimationIdle
 	dw CaretorkerAnimationIdle
 	dw QwilfishAnimationIdle
-	dw KazeppelinAnimationIdle
+	dw KazappelinAnimationIdle
 	dw QwilfatherAnimationIdle
 	dw ScizorAnimationIdle
 	dw ShuckleAnimationIdle

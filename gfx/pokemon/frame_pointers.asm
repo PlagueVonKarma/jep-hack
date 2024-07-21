@@ -306,7 +306,7 @@ FramesPointers:
 	dba GranbullFrames
 	dba CaretorkerFrames
 	dba QwilfishFrames
-	dba KazeppelinFrames
+	dba KazappelinFrames
 	dba QwilfatherFrames
 	dba ScizorFrames
 	dba ShuckleFrames

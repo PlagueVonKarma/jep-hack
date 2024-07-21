@@ -99,7 +99,7 @@ Additionally, there have been many wild encounter tweaks. View this document for
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
 - nuuk: (WIP) Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer
 - Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly - Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
-- SoupPotato et al - Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazeppelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
+- SoupPotato et al - Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
 - SCMidna: Munchlax
 - EyeDonutz: Walking Wake
 - SageDeoxys: (TBA)

@@ -307,7 +307,7 @@ PokedexDataPointerTable:
 	dba GranbullPokedexEntry
 	dba CaretorkerPokedexEntry
 	dba QwilfishPokedexEntry
-	dba KazeppelinPokedexEntry
+	dba KazappelinPokedexEntry
 	dba QwilfatherPokedexEntry
 	dba ScizorPokedexEntry
 	dba ShucklePokedexEntry

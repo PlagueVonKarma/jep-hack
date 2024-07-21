@@ -95,7 +95,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw CaretorkerEggMoves
 	dw QwilfishEggMoves
-	dw NoEggMoves2 ; Kazeppelin
+	dw NoEggMoves2 ; Kazappelin
 	dw NoEggMoves2 ; Qwilfather
 	dw NoEggMoves2
 	dw ShuckleEggMoves

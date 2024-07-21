@@ -169,7 +169,7 @@ AlphabeticalPokedexOrder:
 	dw KADABRA
 	dw KAKUNA
 	dw KANGASKHAN
-	dw KAZEPPELIN
+	dw KAZAPPELIN
 	dw KINGDRA
 	dw KINGLER
 	dw KITSEN

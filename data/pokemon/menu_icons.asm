@@ -308,7 +308,7 @@ MonMenuIcons:
 	db ICON_MONSTER     ; GRANBULL
 	db ICON_BIRD        ; CARETORKER
 	db ICON_FISH        ; QWILFISH
-	db ICON_FISH        ; KAZEPPELIN
+	db ICON_FISH        ; KAZAPPELIN
 	db ICON_FISH        ; QWILFATHER
 	db ICON_BUG         ; SCIZOR
 	db ICON_BUG         ; SHUCKLE

@@ -306,7 +306,7 @@ BitmasksPointers:
 	dw GranbullBitmasks
 	dw CaretorkerBitmasks
 	dw QwilfishBitmasks
-	dw KazeppelinBitmasks
+	dw KazappelinBitmasks
 	dw QwilfatherBitmasks
 	dw ScizorBitmasks
 	dw ShuckleBitmasks

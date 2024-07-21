@@ -306,7 +306,7 @@ AnimationPointers:
 	dw GranbullAnimation
 	dw CaretorkerAnimation
 	dw QwilfishAnimation
-	dw KazeppelinAnimation
+	dw KazappelinAnimation
 	dw QwilfatherAnimation
 	dw ScizorAnimation
 	dw ShuckleAnimation
