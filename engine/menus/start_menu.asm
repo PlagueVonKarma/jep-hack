@@ -381,8 +381,8 @@ endr
 	jp TextboxPalette
 
 .IsMenuAccountOn:
-	ld a, [wOptions2]
-	and 1 << MENU_ACCOUNT
+;	ld a, [wOptions2]
+;	and 1 << MENU_ACCOUNT
 	ret
 
 .DrawBugContestStatusBox:

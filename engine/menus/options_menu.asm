@@ -85,7 +85,7 @@ StringOptions:
 	db "        :<LF>"
 	db "PRINT<LF>"
 	db "        :<LF>"
-	db "MENU ACCOUNT<LF>"
+	db "GBC COLORS<LF>"
 	db "        :<LF>"
 	db "FRAME<LF>"
 	db "        :TYPE<LF>"

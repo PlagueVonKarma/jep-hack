@@ -645,8 +645,8 @@ StartTrainerBattle_LoadPokeBallGraphics:
 	dec b
 	jr nz, .tile_loop
 
-	ldh a, [hCGB]
-	and a
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
 	jr nz, .cgb
 	ld a, 1
 	ldh [hBGMapMode], a

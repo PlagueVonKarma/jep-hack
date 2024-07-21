@@ -155,7 +155,8 @@ INCBIN "gfx/overworld/heal_machine.2bpp"
 	dbsprite  11,   7, 5, 1, $7d, PAL_OW_TREE | OBP_NUM
 
 .LoadPalettes:
-	call IsCGB
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
 	jr nz, .cgb
 	ld a, %11100000
 	ldh [rOBP1], a
