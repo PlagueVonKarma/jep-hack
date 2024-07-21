@@ -377,7 +377,7 @@ ENDM
 	
 	map_attributes SilentHills, SILENT_HILLS, $05, EAST | WEST ; Add Prince connections later
 	connection west, Route49, ROUTE_49, 0
-	connection east, UnnumberedRoute, UNNUMBERED_ROUTE, 0
+	connection east, Route66, ROUTE_66, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
 	connection east, SilentHills, SILENT_HILLS, $00, 0

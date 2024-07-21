@@ -60,7 +60,7 @@ DebugPokemon4Script:
 	cry NIDORAN_M
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_NORMAL
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SAFARI
 	loadwildmon BIPULLA, 60
 	startbattle
 	reloadmapafterbattle

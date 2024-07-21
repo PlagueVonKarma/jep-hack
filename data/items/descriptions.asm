@@ -979,3 +979,7 @@ ClubFossilDesc:
 HoneyPotDesc:
 	db   "A pot for storing"
 	next "SWEET HONEY.@"
+
+SafariBallDesc:
+	db   "An ULTRA BALL"
+	next "painted green.@"

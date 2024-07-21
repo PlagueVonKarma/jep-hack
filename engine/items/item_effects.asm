@@ -58,7 +58,7 @@ ItemEffects:
 	dw SuperRepelEffect    ; SUPER_REPEL
 	dw MaxRepelEffect      ; MAX_REPEL
 	dw DireHitEffect       ; DIRE_HIT
-	dw NoEffect            ; ITEM_2D
+	dw PokeBallEffect      ; SAFARI_BALL, was ITEM_2D
 	dw RestoreHPEffect     ; FRESH_WATER
 	dw RestoreHPEffect     ; SODA_POP
 	dw RestoreHPEffect     ; LEMONADE
@@ -239,6 +239,8 @@ PokeBallEffect:
 	ld [wWildMon], a
 	ld a, [wBattleType]
 	cp BATTLETYPE_CONTEST	; Fixes the Park Ball corrupting graphics when used outside of a Contest
+	call nz, ReturnToBattle_UseBall
+	cp BATTLETYPE_SAFARI
 	call nz, ReturnToBattle_UseBall
 
 	ld hl, wOptions
@@ -691,8 +693,8 @@ PokeBallEffect:
 	ld a, [wBattleType]
 	cp BATTLETYPE_TUTORIAL
 	ret z
-	cp BATTLETYPE_DEBUG
-	ret z
+	cp BATTLETYPE_SAFARI
+	jr z, .used_safari_ball
 	cp BATTLETYPE_CONTEST
 	jr z, .used_park_ball
 
@@ -711,6 +713,11 @@ PokeBallEffect:
 
 .used_park_ball
 	ld hl, wParkBallsRemaining
+	dec [hl]
+	ret
+
+.used_safari_ball
+	ld hl, wSafariBallsRemaining
 	dec [hl]
 	ret
 

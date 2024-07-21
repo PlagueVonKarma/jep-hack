@@ -9,8 +9,8 @@ LoadBattleMenu:
 	call ExitMenu
 	ret
 
-SafariBattleMenu: ; unreferenced
-	ld hl, SafariBattleMenuHeader
+SafariBattleMenu: 
+	ld hl, SafariBattleMenuDataHeader
 	call LoadMenuHeader
 	jr CommonBattleMenu
 
@@ -47,7 +47,7 @@ BattleMenuHeader:
 	db "PACK@"
 	db "RUN@"
 
-SafariBattleMenuHeader:
+SafariBattleMenuDataHeader:
 	db MENU_BACKUP_TILES ; flags
 	menu_coords 0, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .MenuData
@@ -61,13 +61,13 @@ SafariBattleMenuHeader:
 	dba .PrintSafariBallsRemaining
 
 .Text:
-	db "サファりボール×　　@" ; "SAFARI BALL×  @"
-	db "エサをなげる@" ; "THROW BAIT"
-	db "いしをなげる@" ; "THROW ROCK"
-	db "にげる@" ; "RUN"
+	db "BALL×　　@" ; "SAFARI BALL×  @"
+	db "BAIT@" ; "THROW BAIT"
+	db "ROCK@" ; "THROW ROCK"
+	db "RUN@" ; "RUN"
 
 .PrintSafariBallsRemaining:
-	hlcoord 17, 13
+	hlcoord 7, 14
 	ld de, wSafariBallsRemaining
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	call PrintNum

@@ -1,15 +1,15 @@
 	object_const_def
 
-UnnumberedRoute_MapScripts:
+Route66_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-UnnumberedRouteSign1Script:
-	jumptext UnnumberedRouteSign1Text
+Route66Sign1Script:
+	jumptext Route66Sign1Text
 
-UnnumberedRouteSign1Text:
-	text "Route XX"
+Route66Sign1Text:
+	text "ROUTE 66"
 	line "WEST: SILENT"
 	cont "HILLS"
 	
@@ -17,10 +17,10 @@ UnnumberedRouteSign1Text:
 	line "PATH"
 	done
 
-UnnumberedRouteSign2Script:
-	jumptext UnnumberedRouteSign2Text
+Route66Sign2Script:
+	jumptext Route66Sign2Text
 
-UnnumberedRouteSign2Text:
+Route66Sign2Text:
 	text "TRAINER TIPS"
 	
 	para "If you use DEF-"
@@ -119,7 +119,7 @@ FisherBranAfterBattleText:
 	line "incredible?"
 	done
 
-UnnumberedRoute_MapEvents:
+Route66_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
@@ -128,8 +128,8 @@ UnnumberedRoute_MapEvents:
 	def_coord_events
 
 	def_bg_events
-	bg_event  2,  4, BGEVENT_READ, UnnumberedRouteSign1Script
-	bg_event 30,  6, BGEVENT_READ, UnnumberedRouteSign2Script
+	bg_event  2,  4, BGEVENT_READ, Route66Sign1Script
+	bg_event 30,  6, BGEVENT_READ, Route66Sign2Script
 
 	def_object_events
 	object_event 47,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerPainterDali, -1
