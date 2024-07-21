@@ -13,7 +13,7 @@ OverworldSprites:
 	overworld_sprite RivalSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite OakSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite RedSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite BillSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ElderSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite JanineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
