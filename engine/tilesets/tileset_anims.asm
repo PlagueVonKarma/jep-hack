@@ -717,8 +717,8 @@ AnimateFlowerTile:
 
 ; CGB has different tile graphics for flowers
 	ld e, a
-	ldh a, [hCGB]
-	and 1
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
 	add e
 
 ; hl = .FlowerTileFrames + a * 16
@@ -738,6 +738,7 @@ AnimateFlowerTile:
 	INCBIN "gfx/tilesets/flower/cgb_1.2bpp"
 	INCBIN "gfx/tilesets/flower/dmg_2.2bpp"
 	INCBIN "gfx/tilesets/flower/cgb_2.2bpp"
+	
 
 AnimateLavaBubbleTile1:
 ; Save the stack pointer in bc for WriteTile to restore
@@ -950,8 +951,8 @@ AnimateWaterPalette:
 ; Transition between color values 0-2 for color 0 in palette 3.
 
 ; Don't update the palette on DMG
-	ldh a, [hCGB]
-	and a
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
 	ret z
 
 ; Don't update a non-standard palette order
@@ -1013,8 +1014,8 @@ AnimateWaterPalette:
 
 FlickeringCaveEntrancePalette:
 ; Don't update the palette on DMG
-	ldh a, [hCGB]
-	and a
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
 	ret z
 
 ; Don't update a non-standard palette order
