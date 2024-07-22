@@ -52,7 +52,7 @@ SilentHillsPokecenter1FHoundoomScript:
 	end
 
 SilentHillsPokecenter1FHoundoomText:
-	text "Bark! Bark!"
+	text "HOUNDOOM: Grr…"
 	
 	done
 

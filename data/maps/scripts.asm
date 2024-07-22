@@ -578,8 +578,12 @@ INCLUDE "maps/WinnersPath.asm"
 INCLUDE "maps/WinnersPathOutside.asm"
 INCLUDE "maps/Route66.asm"
 INCLUDE "maps/BlueLab.asm"
+INCLUDE "maps/OldCity.asm"
+INCLUDE "maps/OldCityPokecenter1F.asm"
+INCLUDE "maps/OldMart.asm"
+INCLUDE "maps/HoneyGrandmasHouse.asm"
 
-SECTION "Map Scripts 30", ROMX
+SECTION "Map Scripts 30", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"
 INCLUDE "maps/TanobyChambers.asm"
 INCLUDE "maps/NavalRockExterior.asm"

@@ -1039,7 +1039,12 @@ Route49_2_Blocks:
 
 ; All Nihon Pokecenter1Fs go here.
 SilentHillsPokecenter1F_Blocks:
+OldCityPokecenter1F_Blocks:
 	INCBIN "maps/NihonPokecenter1F.ablk"
+
+; All generic Nihon Pokemarts go here.
+OldMart_Blocks:
+	INCBIN "maps/NihonMart.ablk"
 
 NihonPokecenter2F_Blocks:
 	INCBIN "maps/NihonPokecenter2F.ablk"
@@ -1219,3 +1224,9 @@ Route49OldCityGate2F_Blocks:
 
 ;InsertGateNameHere_Blocks:
 ;	INCBIN "maps/NihonGateWestEast.ablk"
+
+OldCity_Blocks:
+	INCBIN "maps/OldCity.ablk"
+
+HoneyGrandmasHouse_Blocks:
+	INCBIN "maps/HoneyGrandmasHouse.ablk"

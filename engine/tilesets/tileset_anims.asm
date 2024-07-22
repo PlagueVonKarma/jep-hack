@@ -320,6 +320,7 @@ TilesetMuseumAnim:
 TilesetLavenderCryptAnim:
 TilesetBlueLabAnim:
 TilesetNihonGateAnim:
+TilesetNihonMartAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

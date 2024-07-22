@@ -131,12 +131,13 @@ Landmarks:
 	landmark   0,   0, UnknownName ; Seven Island
 	assert_table_length NIHON_LANDMARK
 	landmark 108, 116, WinnersPathName
-	landmark 108, 108, Route66Name
 	landmark  92, 108, SilentHillsName
 	landmark 20,  28, UnknownName ; Debug Room 
 	landmark 84, 108, Route49Name
 	landmark 76, 108, QuietCaveName
+	landmark 76, 100, OldCityName
 	landmark 140, 60, BlueForestName
+	landmark 108, 108, Route66Name
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -248,4 +249,5 @@ UnknownName:         db "?????@"
 Route66Name:         db "ROUTE 66@"
 Route49Name:         db "ROUTE 49@"
 QuietCaveName:       db "QUIET¯CAVE@"
+OldCityName:		 db "OLD CITY@" ; I've considered the name "Archaic City", whereas "High Tech" will be "Vogue City". Thoughts? Archaic is considered a little snarly in modern day, so I haven't put it in yet.
 BlueForestName:      db "BLUE¯FOREST@"

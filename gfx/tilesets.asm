@@ -612,3 +612,15 @@ INCBIN "data/tilesets/nihongate_metatiles.bin"
 
 TilesetNihonGateColl::
 INCLUDE "data/tilesets/nihongate_collision.asm"
+
+TilesetNihonMartAttr::
+INCBIN "data/tilesets/nihonmart_attributes.bin"
+
+TilesetNihonMartGFX::
+INCBIN "gfx/tilesets/nihonmart.2bpp.lz"
+
+TilesetNihonMartMeta::
+INCBIN "data/tilesets/nihonmart_metatiles.bin"
+
+TilesetNihonMartColl::
+INCLUDE "data/tilesets/nihonmart_collision.asm"

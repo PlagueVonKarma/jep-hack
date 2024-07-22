@@ -1,0 +1,192 @@
+	object_const_def
+	const OLDCITY_FRUITTREE
+	const OLDCITY_GRAMPS
+	const OLDCITY_TWIN
+	const OLDCITY_BUGCATCHER
+	const OLDCITY_YOUNGSTER
+	const OLDCITY_SUPERNERD
+	const OLDCITY_GRANNY
+	const OLDCITY_MONSTER
+
+OldCity_MapScripts:
+	def_scene_scripts
+
+	def_callbacks
+	callback MAPCALLBACK_NEWMAP, OldCityFlypointCallback
+
+OldCityFlypointCallback:
+	setflag ENGINE_FLYPOINT_OLD
+	endcallback
+
+HoneyGrandmaSignScript:
+	jumptext HoneyGrandmaSignText
+
+HoneyGrandmaSignText:
+	text "HONEY GRANDMA's"
+	line "house"
+	done
+
+OldCitySignScript:
+	jumptext OldCitySignText
+
+OldCitySignText:
+	text "OLD CITY"
+	para "The city of gold-"
+	line "en leaves." ; doubles as a HGSS ref. maybe have a gold/silver leaf maniac somewhere idfk they're in the game and totally useless
+	done
+
+GrowlitheTowerSignScript:
+	jumptext GrowlitheTowerSignText
+
+; TODO: What are they doing in the tower? Probably something to do with Shi-Shi, but what?
+GrowlitheTowerSignText:
+	text "GROWLITHE TOWER"
+	line "Comment to be"
+	cont "written."
+	done
+
+OldCityMuseumSignScript:
+	jumptext OldCityMuseumSignText
+
+OldCityMuseumSignText:
+	text "XX"
+	line "Comment to be"
+	cont "written."
+	done
+
+OldCityFruitTree:
+	fruittree FRUITTREE_OLD_CITY
+
+OldCityPokecenterSign:
+	jumpstd PokecenterSignScript
+
+OldCityMartSign:
+	jumpstd MartSignScript
+
+OldCityOldManScript:
+	jumptextfaceplayer OldCityOldManText
+
+OldCityOldManText:
+	text "GROWLITHE TOWER"
+	line "is only open to"
+	cont "citizens."
+	
+	para "We await a hero." ; or something like that.
+	done
+
+OldCityTwinScript:
+	jumptextfaceplayer OldCityTwinText
+
+OldCityTwinText:
+	text "Comment to be"
+	line "written."
+	done
+
+OldCityBugCatcherScript:
+	jumptextfaceplayer OldCityBugCatcherText
+
+OldCityBugCatcherText:
+	text "The HONEY GRANDMA"
+	line "helped me catch"
+	cont "a HERACROSS!"
+	
+	para "I'm so happy! My"
+	line "friends are so"
+	cont "jealous!"
+	done
+
+OldCityYoungsterScript:
+	jumptextfaceplayer OldCityYoungsterText
+
+OldCityYoungsterText:
+	text "Did you come here"
+	line "through QUIET"
+	cont "CAVE?"
+	
+	para "My friends go"
+	line "there to catch"
+	cont "bug #MON!"
+	done
+
+OldCitySuperNerdScript:
+	jumptextfaceplayer OldCitySuperNerdText
+
+OldCitySuperNerdText:
+	text "LARVITAR and I"
+	line "are on a journey!"
+	
+	para "One day, it'll be"
+	line "big and strong!"
+	done
+
+OldCityLarvitarScript:
+	faceplayer
+	opentext
+	writetext OldCityLarvitarText
+	cry LARVITAR
+	waitbutton
+	closetext
+	end
+
+OldCityLarvitarText:
+	text "LARVITAR: Hwarg!"
+	line "Grr!"
+	done
+
+OldCityGrannyScript:
+	jumptextfaceplayer OldCityGrannyText
+
+OldCityGrannyText:
+	text "WALKER? He's from"
+	line "JOHTO. When he"
+	cont "left, his son"
+	cont "inherited the"
+	cont "GYM."
+	
+	para "You beat him?"
+	
+	para "Very good."
+	done
+
+OldCity_MapEvents:
+	db 0, 0 ; filler
+
+	def_warp_events
+	warp_event 18, 31, ROUTE_49_OLD_CITY_GATE_1F, 3
+	warp_event 19, 31, ROUTE_49_OLD_CITY_GATE_1F, 4
+	warp_event 22, 26, DEBUG_ROOM, 1 ; Right-down house
+	warp_event  3, 26, OLD_MART, 1 ; Mart
+	warp_event 27, 12, DEBUG_ROOM, 1 ; gym right
+	warp_event 26, 12, DEBUG_ROOM, 1 ; gym left
+	warp_event  5, 12, DEBUG_ROOM, 1 ; Museum(?) right
+	warp_event  4, 12, DEBUG_ROOM, 1 ; Museum(?) left
+	warp_event 12, 16, DEBUG_ROOM, 1 ; Growlithe Tower right
+	warp_event 11, 16, DEBUG_ROOM, 1 ; Growlithe Tower left
+	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1 ; southwest house (Honey Grandma)
+	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1 ; pokecenter
+	warp_event 30, 20, DEBUG_ROOM, 1 ; right-up house
+	warp_event 10, 26, DEBUG_ROOM, 1 ; house by mart
+; considering a tearoom where the waiters are passive-aggressive. classic kyoto.
+	def_coord_events
+
+	def_bg_events
+	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
+	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
+	bg_event  8, 14, BGEVENT_READ, GrowlitheTowerSignScript
+	bg_event 26, 20, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event 28, 14, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign
+	bg_event  4, 26, BGEVENT_READ, OldCityMartSign
+
+	def_object_events
+	object_event 24,  3, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityFruitTree, -1
+	object_event  9, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityOldManScript, -1
+	object_event 26, 22, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityTwinScript, -1
+	object_event 17, 16, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityBugCatcherScript, -1
+	object_event 18, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityYoungsterScript, -1
+	object_event 14, 21, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCitySuperNerdScript, -1
+	object_event 13, 26, SPRITE_GRANNY, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityGrannyScript, -1
+	object_event 15, 21, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, OldCityLarvitarScript, -1
+	
+	

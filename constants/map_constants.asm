@@ -166,7 +166,7 @@ ENDM
 	map_const ECRUTEAK_GYM,                                 5,  9 ;  7
 	map_const ECRUTEAK_ITEMFINDER_HOUSE,                    4,  4 ;  8
 	map_const ECRUTEAK_CITY,                               20, 18 ;  9
-    map_const BELLCHIME_TRAIL,                             12,  7
+    map_const BELLCHIME_TRAIL,                             12,  7 ; 10
 	endgroup
 
 	newgroup BLACKTHORN                                           ;  5
@@ -633,6 +633,13 @@ ENDM
 	map_const ROUTE_49_OLD_CITY_GATE_1F,					5,  4 ; 15
 	map_const ROUTE_49_OLD_CITY_GATE_2F,					4,  3 ; 16
 	map_const BLUE_LAB,									   12, 10 ; 17
+	endgroup
+	
+	newgroup OLD_CITY
+	map_const OLD_CITY,										20, 18 ; 1
+	map_const OLD_CITY_POKECENTER_1F,						10,  4 ; 2
+	map_const OLD_MART,								 		 8,  4 ; 3
+	map_const HONEY_GRANDMAS_HOUSE,							 5,  5 ; 4
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 36

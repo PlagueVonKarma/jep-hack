@@ -813,16 +813,24 @@ ENDM
 	
 	map_attributes Route66, ROUTE_66, $05, WEST | SOUTH
 	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
-	connection west, SilentHills, SILENT_HILLS, 0
 	
-	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
-	map_attributes BlueLab, BLUE_LAB, $00, 0
+	connection west, SilentHills, SILENT_HILLS, 0
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
+	map_attributes BlueLab, BLUE_LAB, $00, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
 	map_attributes SilversHouse, SILVERS_HOUSE, $00, 0
 	map_attributes CalsHouse1F, CALS_HOUSE_1F, $00, 0
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
-	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
-	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0
+	
+	map_attributes OldCity, OLD_CITY, $00, 0 ; will have a west exit.
+	
 	map_attributes Route49OldCityGate1F, ROUTE_49_OLD_CITY_GATE_1F, $00, 0
 	map_attributes Route49OldCityGate2F, ROUTE_49_OLD_CITY_GATE_2F, $00, 0
+	map_attributes OldCityPokecenter1F, OLD_CITY_POKECENTER_1F, $00, 0
+	map_attributes OldMart, OLD_MART, $00, 0
+	map_attributes HoneyGrandmasHouse, HONEY_GRANDMAS_HOUSE, $00, 0
+	
+	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
+	
+	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
+	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0

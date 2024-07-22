@@ -31,4 +31,5 @@ FruitTreeItems:
 	db ICE_BERRY    ; PEWTER_CITY_1
 	db MINT_BERRY   ; PEWTER_CITY_2
 	db BURNT_BERRY  ; FUCHSIA_CITY
+	db GOLD_BERRY	; OLD_CITY - now there's a farming spot!
 	assert_table_length NUM_FRUIT_TREES

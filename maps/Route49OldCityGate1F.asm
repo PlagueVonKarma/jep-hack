@@ -57,8 +57,8 @@ Route49OldCityGate1F_MapEvents:
 	def_warp_events
 	warp_event  4,  7, ROUTE_49_2, 3
 	warp_event  5,  7, ROUTE_49_2, 4
-	warp_event  4,  0, DEBUG_ROOM, 1 ; OLD_CITY
-	warp_event  5,  0, DEBUG_ROOM, 1 ; OLD_CITY
+	warp_event  4,  0, OLD_CITY, 1
+	warp_event  5,  0, OLD_CITY, 2
 	warp_event  1,  0, ROUTE_49_OLD_CITY_GATE_2F, 1
 
 	def_coord_events

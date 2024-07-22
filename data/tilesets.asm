@@ -61,4 +61,5 @@ Tilesets::
 	tileset TilesetLavenderCrypt
 	tileset TilesetBlueLab
 	tileset TilesetNihonGate
+	tileset TilesetNihonMart
 	assert_table_length NUM_TILESETS + 1

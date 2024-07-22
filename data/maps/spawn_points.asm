@@ -40,6 +40,7 @@ SpawnPoints:
 	spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
 	
 	spawn SILENT_HILLS,				  13,  5
+	spawn OLD_CITY,				  	  27, 29
 	
 	spawn N_A,                        -1, -1
 

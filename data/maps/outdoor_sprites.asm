@@ -39,6 +39,7 @@ OutdoorSprites:
 	dw SixIslandGroupSprites
 	dw SevenIslandGroupSprites
 	dw SilentHillsGroupSprites
+	dw OldCityGroupSprites
 	dw BlueForestGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
@@ -717,3 +718,31 @@ SilentHillsGroupSprites:
 	; 2 non-walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+
+OldCityGroupSprites:
+	; 12 non-walking filler sprites
+	db SPRITE_SUICUNE
+	db SPRITE_SILVER_TROPHY
+	db SPRITE_FAMICOM
+	db SPRITE_POKEDEX
+	db SPRITE_WILL
+	db SPRITE_ROCKER
+	db SPRITE_NURSE
+	db SPRITE_FISHER
+	db SPRITE_BIG_LAPRAS
+	db SPRITE_BIG_ONIX
+	db SPRITE_SUDOWOODO
+	db SPRITE_RIVAL
+	; 9 walking sprites
+	db SPRITE_GRAMPS
+	db SPRITE_TWIN
+	db SPRITE_BUG_CATCHER
+	db SPRITE_YOUNGSTER
+	db SPRITE_BEAUTY
+	db SPRITE_SUPER_NERD
+	db SPRITE_GRANNY
+	db SPRITE_MONSTER
+	; 2 non-walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+

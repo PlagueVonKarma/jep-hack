@@ -36,6 +36,7 @@ Marts:
 	dw MartIndigoPlateau
 	dw MartUnderground
 	dw MartLakeOfRage
+	dw MartOldCity
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -420,4 +421,17 @@ MartLakeOfRage:
 	db ICE_STONE
 	db DUSK_STONE
 	db SHINY_STONE
+	db -1 ; end
+
+MartOldCity:
+	db 9 ; # items
+	db ULTRA_BALL
+	db HYPER_POTION
+	db FULL_HEAL
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db MAX_REPEL
+	db PORTRAITMAIL
 	db -1 ; end
