@@ -26,25 +26,64 @@ HoneyGrandmaSignText:
 	line "house"
 	done
 
+OldCityBillsHouseSignScript:
+	jumptext OldCityBillsHouseSignText
+
+OldCityBillsHouseSignText:
+	text "BILL'S house"
+	done
+
+OldCityTrainerSchoolSignScript:
+	jumptext OldCityTrainerSchoolSignText
+
+OldCityTrainerSchoolSignText:
+	text "SEPIA SCHOOL FOR"
+	line "ADVANCED TRAINERS"
+	done
+
+OldCityGymSignScript:
+	jumptext OldCityGymSignText
+
+OldCityGymSignText:
+	text "OLD CITY"
+	line "#MON GYM"
+	para "LEADER: WALKER"
+	
+	para "The Cunning" ; Man I snapped here
+	line "Corvid of the"
+	cont "Skies!"
+	done
+
+OldCitySouthSignScript:
+	jumptext OldCitySouthSignText
+
+OldCitySouthSignText:
+	text "SOUTH: ROUTE 50"
+	done
+
+; Gets its name from sepia often being used to show the romantic old days, while doubling as an orangey, autumny colour.
 OldCitySignScript:
 	jumptext OldCitySignText
 
 OldCitySignText:
-	text "OLD CITY"
+	text "SEPIA CITY"
 	para "The city of gold-"
 	line "en leaves." ; doubles as a HGSS ref. maybe have a gold/silver leaf maniac somewhere idfk they're in the game and totally useless
 	done
 
-GrowlitheTowerSignScript:
-	jumptext GrowlitheTowerSignText
-
 ; TODO: What are they doing in the tower? Probably something to do with Shi-Shi, but what?
-GrowlitheTowerSignText:
-	text "GROWLITHE TOWER"
+; the five-story pagoda has different statues on each floor; growlithe, pikachu, tentacruel, ho-oh(fearow?), and abra. the pikachu floor specifically has mediums, otherwise sages. it's mainly a battle place, like sprout tower.
+; perhaps it's a test, link w/ the museum on having shi-shi's ball? how to integrate?
+PokemonPagodaSignScript:
+	jumptext PokemonPagodaSignText
+
+PokemonPagodaSignText:
+	text "#MON PAGODA"
 	line "Comment to be"
 	cont "written."
 	done
 
+; museum could possibly be a collector trying to get certain objects. change when you give him certain things?
 OldCityMuseumSignScript:
 	jumptext OldCityMuseumSignText
 
@@ -67,7 +106,7 @@ OldCityOldManScript:
 	jumptextfaceplayer OldCityOldManText
 
 OldCityOldManText:
-	text "GROWLITHE TOWER"
+	text "The #MON PAGODA"
 	line "is only open to"
 	cont "citizens."
 	
@@ -78,8 +117,13 @@ OldCityTwinScript:
 	jumptextfaceplayer OldCityTwinText
 
 OldCityTwinText:
-	text "Comment to be"
-	line "written."
+	text "EARL is the best"
+	line "teacher ever!"
+	
+	para "WALKER had his"
+	line "kid study under"
+	cont "him!"
+	
 	done
 
 OldCityBugCatcherScript:
@@ -154,30 +198,32 @@ OldCity_MapEvents:
 	def_warp_events
 	warp_event 18, 31, ROUTE_49_OLD_CITY_GATE_1F, 3
 	warp_event 19, 31, ROUTE_49_OLD_CITY_GATE_1F, 4
-	warp_event 22, 26, DEBUG_ROOM, 1 ; Right-down house
+	warp_event 21, 26, SEPIA_SCHOOL, 1
 	warp_event  3, 26, OLD_MART, 1 ; Mart
 	warp_event 27, 12, DEBUG_ROOM, 1 ; gym right
 	warp_event 26, 12, DEBUG_ROOM, 1 ; gym left
 	warp_event  5, 12, DEBUG_ROOM, 1 ; Museum(?) right
 	warp_event  4, 12, DEBUG_ROOM, 1 ; Museum(?) left
-	warp_event 12, 16, DEBUG_ROOM, 1 ; Growlithe Tower right
-	warp_event 11, 16, DEBUG_ROOM, 1 ; Growlithe Tower left
-	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1 ; southwest house (Honey Grandma)
-	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1 ; pokecenter
-	warp_event 30, 20, DEBUG_ROOM, 1 ; right-up house
-	warp_event 10, 26, DEBUG_ROOM, 1 ; house by mart
+	warp_event 12, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda right
+	warp_event 11, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda left
+	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1
+	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1
+	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 1
+	warp_event 10, 26, OLD_CITY_FAMILY_HOUSE, 1
 ; considering a tearoom where the waiters are passive-aggressive. classic kyoto.
 	def_coord_events
 
 	def_bg_events
 	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
 	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
-	bg_event  8, 14, BGEVENT_READ, GrowlitheTowerSignScript
-	bg_event 26, 20, BGEVENT_READ, OldCityMuseumSignScript
-	bg_event 28, 14, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event  8, 14, BGEVENT_READ, PokemonPagodaSignScript
+	bg_event 26, 20, BGEVENT_READ, OldCityBillsHouseSignScript
+	bg_event 28, 14, BGEVENT_READ, OldCityGymSignScript
 	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
 	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign
 	bg_event  4, 26, BGEVENT_READ, OldCityMartSign
+	bg_event 20, 30, BGEVENT_READ, OldCitySouthSignScript
+	bg_event 23, 27, BGEVENT_READ, OldCityTrainerSchoolSignScript
 
 	def_object_events
 	object_event 24,  3, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityFruitTree, -1

@@ -31,8 +31,8 @@ Route49OldCityGateYoungsterScript:
 	jumptextfaceplayer Route49OldCityYoungsterText
 
 Route49OldCityYoungsterText:
-	text "OLD CITY is just"
-	line "on the other side"
+	text "SEPIA CITY is on"
+	line "the other side"
 	cont "of this gate!"
 	done
 
@@ -40,10 +40,9 @@ Route49OldCityGateCooltrainerFScript:
 	jumptextfaceplayer Route49OldCityCooltrainerFText
 
 Route49OldCityCooltrainerFText:
-	text "OLD CITY has a"
+	text "SEPIA CITY has a"
 	line "famous 5-STORY"
-	cont "PAGODA! We call it"
-	cont "GROWLITHE TOWER!"
+	cont "PAGODA!"
 	
 	para "Have you ever"
 	line "been there? You"

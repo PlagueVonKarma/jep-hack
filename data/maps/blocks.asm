@@ -415,6 +415,8 @@ EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
 VioletNicknameSpeechHouse_Blocks:
 VioletKylesHouse_Blocks:
+OldCityEarlsHouse_Blocks:
+OldCityFamilyHouse_Blocks:
 	INCBIN "maps/House2.ablk"
 
 UnionCaveB1F_Blocks:
@@ -1230,3 +1232,6 @@ OldCity_Blocks:
 
 HoneyGrandmasHouse_Blocks:
 	INCBIN "maps/HoneyGrandmasHouse.ablk"
+
+SepiaSchool_Blocks:
+	INCBIN "maps/SepiaSchool.ablk"

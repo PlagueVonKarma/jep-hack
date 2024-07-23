@@ -87,6 +87,7 @@ SoldierGroup:
 	end_list_items
 
 SportsmanGroup:
+	; one should be called Jet, using Dodrio, Electrode, Rapidash, Tauros, and Bellosom. Manga character.
 	next_list_item ; SPORTSMAN (1)
 	db "JACQUES@", TRAINERTYPE_NORMAL
 	db 23

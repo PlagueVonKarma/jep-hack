@@ -249,5 +249,6 @@ UnknownName:         db "?????@"
 Route66Name:         db "ROUTE 66@"
 Route49Name:         db "ROUTE 49@"
 QuietCaveName:       db "QUIET¯CAVE@"
-OldCityName:		 db "OLD CITY@" ; I've considered the name "Archaic City", whereas "High Tech" will be "Vogue City". Thoughts? Archaic is considered a little snarly in modern day, so I haven't put it in yet.
+OldCityName:		 db "SEPIA¯CITY@"
+; High Tech will be called "Vogue City"
 BlueForestName:      db "BLUE¯FOREST@"

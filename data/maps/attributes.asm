@@ -829,6 +829,9 @@ ENDM
 	map_attributes OldCityPokecenter1F, OLD_CITY_POKECENTER_1F, $00, 0
 	map_attributes OldMart, OLD_MART, $00, 0
 	map_attributes HoneyGrandmasHouse, HONEY_GRANDMAS_HOUSE, $00, 0
+	map_attributes OldCityEarlsHouse, OLD_CITY_EARLS_HOUSE, $00, 0
+	map_attributes OldCityFamilyHouse, OLD_CITY_FAMILY_HOUSE, $00, 0
+	map_attributes SepiaSchool, SEPIA_SCHOOL, $00, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
