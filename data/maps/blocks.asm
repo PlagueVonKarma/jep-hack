@@ -1232,3 +1232,6 @@ OldCity_Blocks:
 
 HoneyGrandmasHouse_Blocks:
 	INCBIN "maps/HoneyGrandmasHouse.ablk"
+
+SepiaSchool_Blocks:
+	INCBIN "maps/SepiaSchool.ablk"
