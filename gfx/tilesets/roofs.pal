@@ -136,8 +136,8 @@
 	RGB 03,15,17, 02,10,15 ; nite
 
 ; group 28 (Old City)
-	RGB 31,19,00, 27,10,05 ; morn/day
-	RGB 15,07,02, 11,04,02 ; nite
+	RGB 25,13,07, 20,06,00 ; morn/day
+	RGB 12,07,02, 09,04,02 ; nite
 
 ; group 29 (Blue Forest)
 	RGB 24,22,31, 18,14,31 ; morn/day
