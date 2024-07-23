@@ -640,6 +640,8 @@ ENDM
 	map_const OLD_CITY_POKECENTER_1F,						10,  4 ; 2
 	map_const OLD_MART,								 		 8,  4 ; 3
 	map_const HONEY_GRANDMAS_HOUSE,							 5,  5 ; 4
+	map_const OLD_CITY_EARLS_HOUSE,                  		 4,  4 ; 5
+	map_const OLD_CITY_FAMILY_HOUSE,                  		 4,  4 ; 6
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 36

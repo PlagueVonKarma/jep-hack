@@ -33,7 +33,7 @@ Route49OldCityGate2FTwinText:
 	text "You're a tourist?"
 	line "That's too bad."
 	
-	para "GROWLITHE TOWER"
+	para "GROWLITHE PAGODA"
 	line "isn't open to just"
 	cont "anyone."
 	done

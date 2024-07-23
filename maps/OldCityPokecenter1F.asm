@@ -1,8 +1,8 @@
 	object_const_def
 	const OLDCITYPOKECENTER1F_NURSE
 	const OLDCITYPOKECENTER1F_FISHER
-	const OLDCITYPOKECENTER1F_COOLTRAINER_M
 	const OLDCITYPOKECENTER1F_COOLTRAINER_F
+	const OLDCITYPOKECENTER1F_ROCKET
 
 OldCityPokecenter1F_MapScripts:
 	def_scene_scripts
@@ -12,17 +12,17 @@ OldCityPokecenter1F_MapScripts:
 OldCityPokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
-OldCityPokecenter1FCoolTrainerMScript:
-	jumptextfaceplayer OldCityPokecenter1FCoolTrainerMText
+; Seen in the SW97 demo. Purpose? No clue.
+; Possibly like the RBY one.
+OldCityPokecenter1FRocketGruntScript:
+	jumptextfaceplayer OldCityPokecenter1FRocketGruntText
 
-OldCityPokecenter1FCoolTrainerMText:
-	text "There's a strange"
-	line "house full of odd"
-	cont "geeks on ROUTE 50."
+OldCityPokecenter1FRocketGruntText:
+	text "Kekeke! BOSS, this"
+	line "is so great!"
 	
-	para "I wonder why? Is"
-	line "something going"
-	cont "on?"
+	para "Hm? I'm on the"
+	line "phone, here! Shoo!"
 	done
 
 OldCityPokecenter1FCoolTrainerFScript:
@@ -63,4 +63,4 @@ OldCityPokecenter1F_MapEvents:
 	object_event  5,  1, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityPokecenter1FNurseScript, -1
 	object_event 13,  3, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityPokecenter1FFisherScript, -1
 	object_event  1,  4, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityPokecenter1FCoolTrainerFScript, -1
-	object_event  7,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityPokecenter1FCoolTrainerMScript, -1
+	object_event  7,  5, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityPokecenter1FRocketGruntScript, -1

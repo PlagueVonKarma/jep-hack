@@ -582,6 +582,8 @@ INCLUDE "maps/OldCity.asm"
 INCLUDE "maps/OldCityPokecenter1F.asm"
 INCLUDE "maps/OldMart.asm"
 INCLUDE "maps/HoneyGrandmasHouse.asm"
+INCLUDE "maps/OldCityEarlsHouse.asm"
+INCLUDE "maps/OldCityFamilyHouse.asm"
 
 SECTION "Map Scripts 30", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"

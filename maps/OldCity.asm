@@ -26,25 +26,56 @@ HoneyGrandmaSignText:
 	line "house"
 	done
 
+OldCityEarlsHouseSignScript:
+	jumptext OldCityEarlsHouseSignText
+
+OldCityEarlsHouseSignText:
+	text "EARL's house"
+	done
+
+OldCityGymSignScript:
+	jumptext OldCityGymSignText
+
+OldCityGymSignText:
+	text "OLD CITY"
+	line "#MON GYM"
+	para "LEADER: WALKER"
+	
+	para "The Cunning" ; Man I snapped here
+	line "Corvid of the"
+	cont "Skies!"
+	done
+
+OldCitySouthSignScript:
+	jumptext OldCitySouthSignText
+
+OldCitySouthSignText:
+	text "SOUTH: ROUTE 50"
+	done
+
+; Gets its name from sepia often being used to show the romantic old days, while doubling as an orangey, autumny colour.
 OldCitySignScript:
 	jumptext OldCitySignText
 
 OldCitySignText:
-	text "OLD CITY"
+	text "SEPIA CITY"
 	para "The city of gold-"
 	line "en leaves." ; doubles as a HGSS ref. maybe have a gold/silver leaf maniac somewhere idfk they're in the game and totally useless
 	done
 
+; TODO: What are they doing in the tower? Probably something to do with Shi-Shi, but what?
+; the five-story pagoda has different statues on each floor; growlithe, pikachu, tentacruel, ho-oh(fearow?), and abra. the pikachu floor specifically has mediums, otherwise sages. it's mainly a battle place, like sprout tower.
+; perhaps it's a test, link w/ the museum on having shi-shi's ball? how to integrate?
 GrowlitheTowerSignScript:
 	jumptext GrowlitheTowerSignText
 
-; TODO: What are they doing in the tower? Probably something to do with Shi-Shi, but what?
 GrowlitheTowerSignText:
-	text "GROWLITHE TOWER"
+	text "GROWLITHE PAGODA"
 	line "Comment to be"
 	cont "written."
 	done
 
+; museum could possibly be a collector trying to get certain objects. change when you give him certain things?
 OldCityMuseumSignScript:
 	jumptext OldCityMuseumSignText
 
@@ -67,7 +98,7 @@ OldCityOldManScript:
 	jumptextfaceplayer OldCityOldManText
 
 OldCityOldManText:
-	text "GROWLITHE TOWER"
+	text "GROWLITHE PAGODA"
 	line "is only open to"
 	cont "citizens."
 	
@@ -154,7 +185,7 @@ OldCity_MapEvents:
 	def_warp_events
 	warp_event 18, 31, ROUTE_49_OLD_CITY_GATE_1F, 3
 	warp_event 19, 31, ROUTE_49_OLD_CITY_GATE_1F, 4
-	warp_event 22, 26, DEBUG_ROOM, 1 ; Right-down house
+	warp_event 22, 26, DEBUG_ROOM, 1 ; Right-down house (Trainer School)
 	warp_event  3, 26, OLD_MART, 1 ; Mart
 	warp_event 27, 12, DEBUG_ROOM, 1 ; gym right
 	warp_event 26, 12, DEBUG_ROOM, 1 ; gym left
@@ -164,8 +195,8 @@ OldCity_MapEvents:
 	warp_event 11, 16, DEBUG_ROOM, 1 ; Growlithe Tower left
 	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1 ; southwest house (Honey Grandma)
 	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1 ; pokecenter
-	warp_event 30, 20, DEBUG_ROOM, 1 ; right-up house
-	warp_event 10, 26, DEBUG_ROOM, 1 ; house by mart
+	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 2 ; right-up house (Earl's House)
+	warp_event 10, 26, OLD_CITY_FAMILY_HOUSE, 2 ; house by mart (Man with a daughter and son)
 ; considering a tearoom where the waiters are passive-aggressive. classic kyoto.
 	def_coord_events
 
@@ -173,11 +204,12 @@ OldCity_MapEvents:
 	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
 	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
 	bg_event  8, 14, BGEVENT_READ, GrowlitheTowerSignScript
-	bg_event 26, 20, BGEVENT_READ, OldCityMuseumSignScript
-	bg_event 28, 14, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event 26, 20, BGEVENT_READ, OldCityEarlsHouseSignScript ; Bill's House
+	bg_event 28, 14, BGEVENT_READ, OldCityGymSignScript ; Gym Sign
 	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
 	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign
 	bg_event  4, 26, BGEVENT_READ, OldCityMartSign
+	bg_event 20, 30, BGEVENT_READ, OldCitySouthSignScript
 
 	def_object_events
 	object_event 24,  3, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityFruitTree, -1

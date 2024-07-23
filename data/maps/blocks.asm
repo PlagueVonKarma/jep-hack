@@ -415,6 +415,8 @@ EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
 VioletNicknameSpeechHouse_Blocks:
 VioletKylesHouse_Blocks:
+OldCityEarlsHouse_Blocks:
+OldCityFamilyHouse_Blocks:
 	INCBIN "maps/House2.ablk"
 
 UnionCaveB1F_Blocks:
