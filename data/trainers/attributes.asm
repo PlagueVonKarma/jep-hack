@@ -476,4 +476,53 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_RARELY
 
+; Nihon Bosses get AI_OPPORTUNIST and AI_TYPES to encourage actually killing the opponent. If they're still not hard enough, consider adding AI_CAUTIOUS to discourage status moves further. 
+; Walker
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Lorelei
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; South Guy
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Impostor Oak
+	db HYPER_POTION, AWAKENING ; items - he's less competent, so he has worse items.
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_TYPES
+	dw CONTEXT_USE | SWITCH_RARELY ; same here.
+
+; Agatha
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Giovanni 3
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Green
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; Kurt can be smart too.
+	db FULL_RESTORE, FULL_HEAL ; items
+	db 25 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY | AI_OPPORTUNIST | AI_TYPES
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+
 	assert_table_length NUM_TRAINER_CLASSES

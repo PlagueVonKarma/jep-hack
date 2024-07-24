@@ -80,4 +80,12 @@ TrainerClassNames::
 	li "SPORTSMAN"
 	li "???"
 	li "???"
+	li "LEADER"
+	li "LEADER"
+	li "LEADER"
+	li "LEADER?" ; Impostor Oak
+	li "LEADER"
+	li "LEADER"
+	li "LEADER"
+	li "BALLSMITH"
 	assert_list_length NUM_TRAINER_CLASSES

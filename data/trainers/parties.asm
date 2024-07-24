@@ -1304,7 +1304,56 @@ BirdKeeperGroup:
 	dw PIDGEOT
 	dw SWIFT, DETECT, STEEL_WING, FLY
 	db -1 ; end
-
+	
+	next_list_item ; BIRD_KEEPER (19)
+	db "MATT@", TRAINERTYPE_MOVES ; Reference to the Birdkeeper in Falkner's Stadium 2 Gym.
+	db 50
+	dw NOCTOWL
+	dw HYPNOSIS, DREAM_EATER, STEEL_WING, TAKE_DOWN
+	db 50
+	dw CACAWPHONY
+	dw MEGAPHONE, DRILL_PECK, DOUBLE_EDGE, SCREECH
+	db 50
+	dw XATU
+	dw HYPNOSIS, PSYCHIC_M, NIGHT_SHADE, DRILL_PECK
+	db -1 ; end
+	
+	next_list_item ; BIRD_KEEPER (19)
+	db "SHAW@", TRAINERTYPE_MOVES ; Reference to the Shaw Monument in Scotland, an 18th-century falconry observation tower that is fully intact!
+	db 50
+	dw TREBIR
+	dw PERISH_SONG, ENCORE, SING, WING_ATTACK
+	db 50
+	dw FEAROW
+	dw MIRROR_MOVE, DOUBLE_EDGE, STEEL_WING, DRILL_PECK
+	db 50
+	dw HONCHKROW
+	dw PURSUIT, DRILL_PECK, NIGHT_SHADE, QUICK_ATTACK
+	db -1 ; end
+	
+	next_list_item ; BIRD_KEEPER (19)
+	db "FREDERICK@", TRAINERTYPE_MOVES ; Reference to the Frederick II of Hohenstaufen, one of the earliest knowledgable Falconers in history
+	db 50
+	dw TREBIR
+	dw PERISH_SONG, ENCORE, SING, WING_ATTACK
+	db 50
+	dw FEAROW
+	dw MIRROR_MOVE, DOUBLE_EDGE, STEEL_WING, DRILL_PECK
+	db 50
+	dw HONCHKROW
+	dw PURSUIT, DRILL_PECK, NIGHT_SHADE, QUICK_ATTACK
+	db -1 ; end
+	
+	next_list_item ; BIRD_KEEPER (19)
+	db "NORIKAGE@", TRAINERTYPE_MOVES ; Asakura Norikage 朝倉 教景 (1476 - 1555), brought Goshawk breeding to Asakura Clan in the 16th Century.
+	db 50
+	dw DELIBIRD
+	dw PRESENT, ICY_WIND, QUICK_ATTACK, THIEF
+	db 50
+	dw PIDGEOT
+	dw WING_ATTACK, QUICK_ATTACK, MIRROR_MOVE, WHIRLWIND
+	db -1 ; end
+	
 	end_list_items
 
 JanineGroup:

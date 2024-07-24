@@ -109,10 +109,44 @@
 	const SPRITE_CHRIS_RUN ; 67
  	const SPRITE_KRIS_RUN ; 68
 	const SPRITE_TOPAZ_RUN ; 69 nice
+	
+	; Plague's overworld sprite beautification funhouse!
+	const SPRITE_TSUKUSHI ; Prototype Bugsy. May use for something else?
+	const SPRITE_MIKAN ; Prototype Jasmine, could use for something.
+	const SPRITE_MEDIUM
+	const SPRITE_AGATHA
+	const SPRITE_HELMETBIKER ; Helmeted Biker, Kamen Rider-esque. Could use for alternative biker class.
+	const SPRITE_WALKER ; Prototype Falkner, now Walker.
+	const SPRITE_SPACEWORLD_GIRL ; Seen a lot in the demo, can distribute across the world.
+	const SPRITE_BANCHOMAN ; Bancho student with a pompadour.
+	const SPRITE_ENOKI ; Prototype Morty, may use somewhere.
+	const SPRITE_IMPOSTER_OAK
+	const GOLD_SKATEBOARD
+	const SILVERS_SISTER
+	
+	; KEP imports proceeding...
+	const SPRITE_OWVOLTORB
+	const SPRITE_SMALL_BIRD
+	const SPRITE_OFFICER_JENNY
+	const SPRITE_OWKOFFING
+	const SPRITE_JESSIE
+	const SPRITE_JAMES
+	const SPRITE_OWGENGAR
+	const SPRITE_GREEN
+	const SPRITE_OWDIGLETT
+	const SPRITE_CAT
+	const SPRITE_PWARBOK
+	const SPRITE_BAOBA
+	const SPRITE_SILPH_PRESIDENT
+	const SPRITE_SAFARI_ZONE_WORKER
+	const SPRITE_LORELEI
+	const SPRITE_GIOVANNI
+	const SPRITE_CHANNELER
+	const SPRITE_BALDING_GUY
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
-	const_next $80
+	const_next $8A
 DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_UNOWN ; 80
 	const SPRITE_GEODUDE ; 81

@@ -174,6 +174,9 @@ DEF KRIS EQU __trainer_class__
 	const JOSE3
 	const VANCE2
 	const VANCE3
+	const MATT
+	const SHAW
+	const FREDERICK
 
 	trainerclass LASS ; 19
 	const CARRIE
@@ -750,6 +753,31 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass KABUFOSSIL ; 55
 	const FOSSIL2
+	
+	; Nihon Bosses
+	trainerclass WALKER ; 56
+	const WALKER1
+	
+	trainerclass LORELEI ; 57
+	const LORELEI1
+	
+	trainerclass XXX ; 58 South guy
+	const XXX1
+	
+	trainerclass IMPOSTEROAK ; 56
+	const OAK
+	
+	trainerclass AGATHA ; 56
+	const AGATHA1
+	
+	trainerclass LEADERGIOVANNI ; 56
+	const GIOVANNI3
+	
+	trainerclass GREEN ; 56
+	const GREEN1
+	
+	trainerclass KURT ; 56
+	const KURT1
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
