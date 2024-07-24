@@ -39,11 +39,11 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry DOKUROAR
+	cry LICKILORD
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
-	loadwildmon DOKUROAR, 60
+	loadwildmon LICKILORD, 60
 	startbattle
 	reloadmapafterbattle
 	end
@@ -57,11 +57,11 @@ DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry NIDORAN_M
+	cry LICKILORD
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SAFARI
-	loadwildmon BIPULLA, 60
+	loadwildmon LICKILORD, 60
 	startbattle
 	reloadmapafterbattle
 	end
