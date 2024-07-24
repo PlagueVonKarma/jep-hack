@@ -85,8 +85,9 @@ TrainerGroups:
 	dba WalkerGroup
 	dba LoreleiGroup
 	dba XXXGroup
+	dba ImposterOakGroup
 	dba AgathaGroup
-	dba Giovanni3Group
+	dba LeaderGiovanniGroup
 	dba GreenGroup
 	dba KurtGroup
 	assert_table_length NUM_TRAINER_CLASSES
