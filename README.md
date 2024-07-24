@@ -82,6 +82,11 @@ Additionally, there have been many wild encounter tweaks. View this document for
 	- Additionally, old lore relating to the area has now been restored, including something about the Unown!
 
 # Credits
+As the open source nature of this project implies, people are free to reuse what's here for their own ends, **so long as credit is given to this hack and those who worked on what you reuse.** Additionally, we strongly urge you to make any projects using JEP's content open source. JEP strongly supports the [free software movement](https://www.fsf.org/about/) and its four essential freedoms. If you have any questions on the topic of content reuse, contact @ plague_von_karma on Discord.
+
+If you use our implementations of anything at all, it is encouraged to submit Pull Requests for bug fixes if you find any issues! We very much appreciate them!
+
+## Development Credits
 - Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
 - Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer)
 - Zeta_Null (Repository Owner, Spriter, Programming)
@@ -89,26 +94,35 @@ Additionally, there have been many wild encounter tweaks. View this document for
 - thornAvery (Programming)
 - pret et al (LOTS of [Tutorials](https://github.com/pret/pokecrystal/wiki) that we used to get this off the ground!)
 - Wiz (Nihon Pokemon names)
-- Nob Ogasawara (Many prototype Pokemon names)
-- Rezzo (GSC-specific advice)
-- Old Dance Jacket (GSC-specific advice)
-- Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
-- ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
-- ausma (KEP Developer, legacy)
+- Rezzo (GSC-specific advice, Showdown Mod assistance)
+- Old Dance Jacket (GSC-specific advice, Showdown Mod assistance)
+- ausma (KEP Developer, Showdown Mod assistance, legacy)
 
-# Sprite Credits
+## Sprite Credits
+
+### JEP Developers
+JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix
-- nuuk: (WIP) Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
-- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly - Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
-- SoupPotato et al - Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
-- SCMidna: Munchlax
+- Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
+
+### Unaffiliated
+- nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
+- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
+	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
+- SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
+- SCMidna: Munchlax
 - SageDeoxys: (TBA)
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Ferropexola/aforward9600: Time of day-based tileset palette code
+
+## Other Sources
+- Nob Ogasawara (Many prototype Pokemon names)
+- Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
+- ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal
