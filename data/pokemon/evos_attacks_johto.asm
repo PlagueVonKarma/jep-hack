@@ -1418,6 +1418,7 @@ QwilfishEvosAttacks:
 KazappelinEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_STING
+	dbw 1, SELFDESTRUCT
 	dbw 7, TAIL_WHIP
 	dbw 14, WATER_GUN
 	dbw 22, MINIMIZE
@@ -1425,6 +1426,7 @@ KazappelinEvosAttacks:
 	dbw 41, PIN_MISSILE
 	dbw 52, TAKE_DOWN
 	dbw 64, HYDRO_PUMP
+	dbw 72, EXPLOSION
 	db 0 ; no more level-up moves
 	
 QwilfatherEvosAttacks:
@@ -1438,6 +1440,7 @@ QwilfatherEvosAttacks:
 	dbw 28, PIN_MISSILE
 	dbw 37, TAKE_DOWN
 	dbw 46, HYDRO_PUMP
+	dbw 52, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 ScizorEvosAttacks:

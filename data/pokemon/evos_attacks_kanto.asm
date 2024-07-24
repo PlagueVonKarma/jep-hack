@@ -2216,13 +2216,21 @@ LickilickyEvosAttacks:
 	dbw 49, SCREECH
 	db 0 ; no more level-up moves
 	
-LickilordEvosAttacks:
+LickilordEvosAttacks: ; SW97 learnset + some poison stuff
 	db 0 ; no more evolutions
 	dbw 1, ACID
 	dbw 1, LICK
 	dbw 1, WRAP
 	dbw 1, SLAM
+	dbw 7, SUPERSONIC
+	dbw 14, DISABLE
+	dbw 22, STOMP
 	dbw 30, TOXIC
+	dbw 33, WRAP
+	dbw 41, DEFENSE_CURL
+	dbw 52, SLAM
+	dbw 64, AMNESIA
+	dbw 77, SCREECH
 	db 0 ; no more level-up moves
 
 KoffingEvosAttacks:
@@ -2355,13 +2363,21 @@ TangrowthEvosAttacks:
 	dbw 51, GROWTH
 	db 0 ; no more level-up moves
 	
-JungelaEvosAttacks:
+JungelaEvosAttacks: ; SW97 learnset + Giga Drain
 	db 0 ; no more evolutions
 	dbw 1, VINE_WHIP
-	dbw 1, BIND
+	dbw 1, CONSTRICT
 	dbw 1, FAINT_ATTACK
 	dbw 1, NIGHT_SHADE
+	dbw 7, ABSORB
+	dbw 14, BIND
+	dbw 22, GROWTH
 	dbw 30, GIGA_DRAIN
+	dbw 36, SLEEP_POWDER
+	dbw 41, STUN_SPORE
+	dbw 46, POISONPOWDER
+	dbw 52, NIGHT_SHADE
+	dbw 64, SLAM
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:
