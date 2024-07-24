@@ -82,4 +82,12 @@ TrainerPicPointers::
 	dba SportsmanPic
 	dba AerodactylFossilPic
 	dba KabutopsFossilPic
+	dba WalkerPic
+	dba LoreleiPic
+	dba SouthGuyPic
+	dba ImposterOakPic
+	dba AgathaPic
+	dba Giovanni3Pic
+	dba GreenPic
+	dba KurtPic
 	assert_table_length NUM_TRAINER_CLASSES

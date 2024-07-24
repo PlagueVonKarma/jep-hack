@@ -80,4 +80,12 @@ BTTrainerClassSprites:
 	db SPRITE_SAILOR	; Sportsman uhhh
 	db SPRITE_RED		; Fossil Placeholder
 	db SPRITE_RED		; Fossil Placeholder
+	db SPRITE_RED		; Walker Placeholder
+	db SPRITE_RED		; Lorelei Placeholder
+	db SPRITE_RED		; South Guy Placeholder
+	db SPRITE_RED		; Imposter Oak Placeholder
+	db SPRITE_RED		; Agatha Placeholder
+	db SPRITE_RED		; Giovanni3 Placeholder
+	db SPRITE_RED		; Green Placeholder
+	db SPRITE_RED		; Kurt Placeholder
 	assert_table_length NUM_TRAINER_CLASSES

@@ -107,6 +107,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
+- Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
 
 ### Unaffiliated
 - nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
@@ -117,12 +118,13 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - SageDeoxys: (TBA)
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
-- Ferropexola/aforward9600: Time of day-based tileset palette code
+- Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites.
 
 ## Other Sources
 - Nob Ogasawara (Many prototype Pokemon names)
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
 - ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
+- Ferropexola/aforward9600: Time of day-based tileset palette code
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal

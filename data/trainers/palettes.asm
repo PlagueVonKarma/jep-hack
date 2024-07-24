@@ -89,6 +89,14 @@ INCBIN "gfx/trainers/soldier.gbcpal", middle_colors
 INCBIN "gfx/trainers/sportsman.gbcpal", middle_colors
 INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; duplicate for fossils
 INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; duplicate for fossils
+INCBIN "gfx/trainers/walker.gbcpal", middle_colors
+INCBIN "gfx/trainers/lorelei.gbcpal", middle_colors
+INCBIN "gfx/trainers/southguy.gbcpal", middle_colors
+INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; dupe for imposter oak
+INCBIN "gfx/trainers/agatha.gbcpal", middle_colors
+INCBIN "gfx/trainers/giovanni3.gbcpal", middle_colors
+INCBIN "gfx/trainers/green.gbcpal", middle_colors
+INCBIN "gfx/trainers/kurt.gbcpal", middle_colors
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"

@@ -81,4 +81,12 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; SPORTSMAN
 	dn 15, 15, 15, 15 ; FOSSIL1
 	dn 15, 15, 15, 15 ; FOSSIL2
+	dn 14, 13, 15, 15 ; WALKER (HP Water 70)
+	dn 14, 15, 15, 15 ; LORELEI (HP Electric 70)
+	dn 13, 12, 13, 13 ; South guy
+	dn 13, 12, 13, 13 ; IMPOSTEROAK
+	dn 12, 12, 15, 15 ; AGATHA (HP Fighting 70)
+	dn 13, 12, 13, 13 ; GIOVANNI3
+	dn 13, 12, 13, 13 ; GREEN
+	dn 13, 12, 13, 13 ; KURT
 	assert_table_length NUM_TRAINER_CLASSES

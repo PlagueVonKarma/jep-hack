@@ -82,4 +82,11 @@ TrainerGroups:
 	dba SportsmanGroup
 	dba AerofossilGroup
 	dba KabufossilGroup
+	dba WalkerGroup
+	dba LoreleiGroup
+	dba XXXGroup
+	dba AgathaGroup
+	dba Giovanni3Group
+	dba GreenGroup
+	dba KurtGroup
 	assert_table_length NUM_TRAINER_CLASSES
