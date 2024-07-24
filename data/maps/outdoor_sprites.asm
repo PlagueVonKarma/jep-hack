@@ -41,6 +41,7 @@ OutdoorSprites:
 	dw SilentHillsGroupSprites
 	dw OldCityGroupSprites
 	dw BlueForestGroupSprites
+	dw WhiteCityGroupSprites
 	assert_table_length NUM_MAP_GROUPS
 
 ; Since these areas aren't done yet, their outdoor sprites will just use Pallet's.
@@ -329,6 +330,7 @@ IndigoGroupSprites:
 	db SPRITE_BOULDER
 
 BlueForestGroupSprites: ; Will have its own thing eventually
+WhiteCityGroupSprites:  ; Ditto
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

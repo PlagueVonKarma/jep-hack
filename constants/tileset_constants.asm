@@ -50,6 +50,7 @@
 	const TILESET_BLUE_LAB			   ; 30
 	const TILESET_NIHON_GATE		   ; 31
 	const TILESET_NIHON_MART		   ; 32
+	const TILESET_NIHON_WHITECITY	   ; 33
 DEF NUM_TILESETS EQU const_value - 1
 
 ; wTileset struct size

@@ -643,11 +643,14 @@ ENDM
 	map_const OLD_CITY_EARLS_HOUSE,                  		 4,  4 ; 5
 	map_const OLD_CITY_FAMILY_HOUSE,                  		 4,  4 ; 6
 	map_const SEPIA_SCHOOL,                  			     4,  8 ; 7
-	
 	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 36
+	newgroup BLUE_FOREST                                          ; 37
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-DEF NUM_MAP_GROUPS EQU const_value ; 36
+	newgroup WHITE_CITY                                           ; 38
+	map_const WHITE_CITY,                           	   30, 27 ; 1
+	endgroup
+	
+DEF NUM_MAP_GROUPS EQU const_value ; 38

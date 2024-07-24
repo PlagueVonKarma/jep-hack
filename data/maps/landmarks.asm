@@ -138,6 +138,7 @@ Landmarks:
 	landmark 76, 100, OldCityName
 	landmark 140, 60, BlueForestName
 	landmark 108, 108, Route66Name
+	landmark 124, 108, WhiteCityName
 	assert_table_length NUM_LANDMARKS
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -252,3 +253,4 @@ QuietCaveName:       db "QUIET¯CAVE@"
 OldCityName:		 db "SEPIA¯CITY@"
 ; High Tech will be called "Vogue City"
 BlueForestName:      db "BLUE¯FOREST@"
+WhiteCityName:       db "WHITE¯CITY@"

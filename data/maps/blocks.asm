@@ -1235,3 +1235,8 @@ HoneyGrandmasHouse_Blocks:
 
 SepiaSchool_Blocks:
 	INCBIN "maps/SepiaSchool.ablk"
+
+SECTION "Map Blocks 4", ROMX
+	
+WhiteCity_Blocks:
+	INCBIN "maps/WhiteCity.ablk"

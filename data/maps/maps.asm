@@ -54,6 +54,7 @@ MapGroupPointers::
 	dw MapGroup_SilentHills ; 35
 	dw MapGroup_OldCity		; 36
 	dw MapGroup_BlueForest  ; 37
+	dw MapGroup_WhiteCity   ; 38
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -708,3 +709,9 @@ MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest
 	map BlueForest, TILESET_NIHON_SNOWY, TOWN, LANDMARK_BLUE_FOREST, MUSIC_SINJOH_RUINS, TRUE, PALETTE_AUTO, FISHGROUP_SHORE
 	assert_table_length NUM_BLUE_FOREST_MAPS
+
+MapGroup_WhiteCity:
+	table_width MAP_LENGTH, MapGroup_WhiteCity
+	map WhiteCity, TILESET_NIHON_WHITECITY, TOWN, LANDMARK_WHITE_CITY, MUSIC_VIRIDIAN_CITY, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_WHITE_CITY_MAPS
+	

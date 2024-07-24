@@ -624,3 +624,17 @@ INCBIN "data/tilesets/nihonmart_metatiles.bin"
 
 TilesetNihonMartColl::
 INCLUDE "data/tilesets/nihonmart_collision.asm"
+
+SECTION "Tileset Data 15", ROMX
+
+TilesetNihonWhiteCityAttr::
+INCBIN "data/tilesets/nihon_whitecity_attributes.bin"
+
+TilesetNihonWhiteCityGFX::
+INCBIN "gfx/tilesets/nihon_whitecity.2bpp.lz"
+
+TilesetNihonWhiteCityMeta::
+INCBIN "data/tilesets/nihon_whitecity_metatiles.bin"
+
+TilesetNihonWhiteCityColl::
+INCLUDE "data/tilesets/nihon_whitecity_collision.asm"

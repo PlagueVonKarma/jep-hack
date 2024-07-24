@@ -585,6 +585,8 @@ INCLUDE "maps/HoneyGrandmasHouse.asm"
 INCLUDE "maps/OldCityEarlsHouse.asm"
 INCLUDE "maps/OldCityFamilyHouse.asm"
 INCLUDE "maps/SepiaSchool.asm"
+INCLUDE "maps/WhiteCity.asm"
+
 
 SECTION "Map Scripts 30", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"
