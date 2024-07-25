@@ -3113,7 +3113,8 @@ wCeruleanCave1FSceneID::                          db
 wPewterMuseum1FSceneID::						  db
 wSilentHillsSceneID::							  db
 wBlueLabSceneID::								  db
-	ds 46
+wRoute66WhiteCityGateID:: db
+	ds 45
 
 ; fight counts
 wJackFightCount::    db

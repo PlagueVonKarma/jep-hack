@@ -451,25 +451,52 @@ WillGroup:
 
 PKMNTrainerGroup:
 	next_list_item ; CAL (1)
-	db "CAL@", TRAINERTYPE_NORMAL
-	db 10
-	dw CHIKORITA
-	db 10
-	dw CYNDAQUIL
-	db 10
-	dw TOTODILE
+	; A "story team" of Pokemon using lots of field moves. Cal gets around using this one.
+	db "CAL@", TRAINERTYPE_MOVES
+	db 50
+	dw FURRET
+	dw STRENGTH, HEADBUTT, SURF, CUT
+	db 50
+	dw TOGEKISS
+	dw FLY, THUNDERBOLT, FIRE_BLAST, FLASH
+	db 50
+	dw JOLTEON
+	dw THUNDERBOLT, DIG, THUNDER_WAVE, DOUBLE_KICK
+	db 50
+	dw MEGANIUM
+	dw RAZOR_LEAF, SYNTHESIS, BODY_SLAM, SWEET_SCENT
+	db 50
+	dw TYPHLOSION
+	dw ROCK_SMASH, FIRE_BLAST, THUNDERPUNCH, SUBMISSION
+	db 50
+	dw FERALIGATR
+	dw WHIRLPOOL, WATERFALL, ICE_PUNCH, CRUNCH
 	db -1 ; end
-
+	
+	; This is more like, Cal's "real" team.
 	next_list_item ; CAL (2)
-	db "CAL@", TRAINERTYPE_NORMAL
-	db 30
-	dw BAYLEEF
-	db 30
-	dw QUILAVA
-	db 30
-	dw CROCONAW
+	db "CAL@", TRAINERTYPE_MOVES
+	db 60
+	dw KLEAVOR
+	dw SWORDS_DANCE, ROCK_SLASH, AGILITY, BATON_PASS
+	db 60
+	dw PIDGEOT
+	dw DOUBLE_EDGE, WING_ATTACK, MIRROR_MOVE, PURSUIT
+	db 60
+	db PILOSWINE ; MAMOSWINE
+	dw EARTHQUAKE, BODY_SLAM, ROAR, ANCIENTPOWER
+	db 60
+	dw SLOWKING
+	dw PSYCHIC_M, SURF, FUTURE_SIGHT, ICE_BEAM
+	db 60
+	dw GOROCHU
+	dw BELLY_DRUM, BODY_SLAM, SURF, SUBMISSION
+	db 60
+	dw BRUINOUS
+	dw FIRE_BLAST, CRUNCH, SUNNY_DAY, SOLARBEAM
 	db -1 ; end
-
+	
+	; This is replaced when using Mystery Gift or something, so don't get too attached.
 	next_list_item ; CAL (3)
 	db "CAL@", TRAINERTYPE_NORMAL
 	db 50

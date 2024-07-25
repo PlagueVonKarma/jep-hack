@@ -88,4 +88,5 @@ MapScenes::
 	scene_var PEWTER_MUSEUM_OF_SCIENCE_1F,				   wPewterMuseum1FSceneID
 	scene_var SILENT_HILLS,					   		       wSilentHillsSceneID
 	scene_var BLUE_LAB,									   wBlueLabSceneID
+	scene_var ROUTE_66_WHITE_CITY_GATE, wRoute66WhiteCityGateID
 	db -1 ; end

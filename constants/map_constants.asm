@@ -617,8 +617,8 @@ ENDM
 	
 	newgroup SILENT_HILLS                                         ; 35
 	map_const WINNERS_PATH,								   10, 26 ; 1
-	map_const WINNERS_PATH_OUTSIDE,							9, 30 ; 2
-	map_const ROUTE_66,                                    31,  9 ; 3
+	map_const WINNERS_PATH_OUTSIDE,							10, 30 ; 2
+	map_const ROUTE_66,                                    32,  9 ; 3
 	map_const SILENT_HILLS,                                10, 10 ; 4
 	map_const DEBUG_ROOM,                                  20, 20 ; 5
 	map_const ROUTE_49,                                    15,  9 ; 6

@@ -2,10 +2,13 @@
 ; https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku
 
 ; Because there's no player here, we're taking the opportunity to expand on Cal.
-; While usually a Trainer House stand-in in Viridian, he is characterised in some ways.
-; For example, he says he's a traveling trainer in GSC.
-; In Stadium 2, he is further characterised and even given a unique design.
+; In base GSC, he's a trainer who travels to Viridian City to challenge the player, acting as a stand-in if you haven't used Mystery Gift before.
+; In Stadium 2, he is given a unique design and uses largely random Pokemon.
 ; Everything just kind of falls into place, no?
+
+; So here, we're having Cal be a trainer who enjoys using rental Pokemon. He loves to battle, but doesn't want to spend too much time training or catching his own. He gets more excitement out of quick-thinking and wit!
+
+; He'll still have his Trainer House role, but we're changing that up a bit too!
 
 	object_const_def
 	const CALSHOUSE_KEN
