@@ -87,7 +87,11 @@ TrainerGroups:
 	dba XXXGroup
 	dba ImposterOakGroup
 	dba AgathaGroup
+	dba Giovanni1Group
 	dba LeaderGiovanniGroup
 	dba GreenGroup
 	dba KurtGroup
+	dba ArianaGroup
+	dba ArcherGroup
+	dba ProfBlueGroup
 	assert_table_length NUM_TRAINER_CLASSES

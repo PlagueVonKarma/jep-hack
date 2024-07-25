@@ -116,36 +116,36 @@ OverworldSprites:
 	overworld_sprite TopazRunSpriteGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
 	
 	; SW97 Imports
-	overworld_sprite TsukushiGFX, 4, STILL_SPRITE, PAL_OW_PURPLE
+	overworld_sprite TsukushiGFX, 12, STANDING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite MikanGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite MediumSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite AgathaGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite HelmetBikerGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite WalkerGFX, 4, STILL_SPRITE, PAL_OW_BLUE
+	overworld_sprite WalkerGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SpaceworldGirlGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BanchomanGFX, 12, WALKING_SPRITE, PAL_OW_PURPLE
-	overworld_sprite EnokiGFX, 4, STILL_SPRITE, PAL_OW_PURPLE
+	overworld_sprite EnokiGFX, 12, STANDING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite ImposterOakGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GoldSkateboardGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite SilverSisterGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	
 	; KEP Imports
-	overworld_sprite VoltorbGFX, 4, STILL_SPRITE, PAL_OW_RED
+	overworld_sprite VoltorbGFX, 12, STANDING_SPRITE, PAL_OW_RED
 	overworld_sprite SmallBirdGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite OfficerJennyGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite KoffingGFX, 4, STILL_SPRITE, PAL_OW_PURPLE
+	overworld_sprite KoffingGFX, 12, STANDING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite JessieGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite JamesGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite GengarGFX, 4, STILL_SPRITE, PAL_OW_PURPLE
+	overworld_sprite GengarGFX, 12, STANDING_SPRITE, PAL_OW_PURPLE
 	overworld_sprite GreenGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
-	overworld_sprite DiglettGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+	overworld_sprite DiglettGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite CatGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite ArbokGFX, 4, STILL_SPRITE, PAL_OW_PURPLE
-	overworld_sprite BaobaGFX, 4, STILL_SPRITE, PAL_OW_BROWN
-	overworld_sprite SilphChiefGFX, 4, STILL_SPRITE, PAL_OW_BROWN
-	overworld_sprite SafariZoneWorkerGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+	overworld_sprite ArbokGFX, 12, STANDING_SPRITE, PAL_OW_PURPLE
+	overworld_sprite BaobaGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite SilphChiefGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite SafariZoneWorkerGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	overworld_sprite LoreleiGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite GiovanniGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ChannelerGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite BaldingGuyGFX, 4, STILL_SPRITE, PAL_OW_BROWN
+	overworld_sprite BaldingGuyGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
 	assert_table_length NUM_OVERWORLD_SPRITES

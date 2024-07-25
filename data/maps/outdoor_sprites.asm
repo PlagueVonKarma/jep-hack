@@ -697,8 +697,8 @@ CableClubGroupSprites:
 SilentHillsGroupSprites:
 	; 12 non-walking filler sprites
 	db SPRITE_SUICUNE
-	db SPRITE_SILVER_TROPHY
-	db SPRITE_FAMICOM
+	db SPRITE_SILVERS_SISTER
+	db SPRITE_SAFARI_ZONE_WORKER
 	db SPRITE_POKEDEX
 	db SPRITE_WILL
 	db SPRITE_ROCKER

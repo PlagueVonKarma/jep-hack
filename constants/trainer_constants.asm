@@ -743,10 +743,12 @@ DEF KRIS EQU __trainer_class__
 	const DALI
 	
 	trainerclass SOLDIER ; 52
-	const PEPPINO ; unused, may change
+	const WIART ; unused, named after Adrian Carton de Wiart, a famous Irish-Belgian soldier who was shot in most parts of the body and fought in so many wars, just because he thought it was fun.
+	; Flynn
 	
 	trainerclass SPORTSMAN ; 53
 	const JACQUES ; unused
+	; Pele?
 	
 	trainerclass AEROFOSSIL ; 54
 	const FOSSIL1
@@ -770,6 +772,9 @@ DEF KRIS EQU __trainer_class__
 	trainerclass AGATHA ; 56
 	const AGATHA1
 	
+	trainerclass COATGIOVANNI ; 56
+	const GIOVANNI1
+	
 	trainerclass LEADERGIOVANNI ; 56
 	const GIOVANNI3
 	
@@ -778,6 +783,15 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass KURT ; 56
 	const KURT1
+	
+	trainerclass ARIANA
+	const ARIANA1
+	
+	trainerclass ARCHER
+	const ARCHER1
+	
+	trainerclass PROFBLUE
+	const PROFBLUE1
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

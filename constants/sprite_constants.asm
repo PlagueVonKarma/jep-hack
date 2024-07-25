@@ -121,8 +121,8 @@
 	const SPRITE_BANCHOMAN ; Bancho student with a pompadour.
 	const SPRITE_ENOKI ; Prototype Morty, may use somewhere.
 	const SPRITE_IMPOSTER_OAK
-	const GOLD_SKATEBOARD
-	const SILVERS_SISTER
+	const SPRITE_GOLD_SKATEBOARD
+	const SPRITE_SILVERS_SISTER
 	
 	; KEP imports proceeding...
 	const SPRITE_OWVOLTORB
@@ -135,7 +135,7 @@
 	const SPRITE_GREEN
 	const SPRITE_OWDIGLETT
 	const SPRITE_CAT
-	const SPRITE_PWARBOK
+	const SPRITE_OWARBOK
 	const SPRITE_BAOBA
 	const SPRITE_SILPH_PRESIDENT
 	const SPRITE_SAFARI_ZONE_WORKER

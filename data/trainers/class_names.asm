@@ -12,7 +12,7 @@ TrainerClassNames::
 	li "RIVAL"
 	li "#MON PROF."
 	li "ELITE FOUR"
-	li "<PKMN> TRAINER"
+	li "<PKMN>TRAINER"
 	li "ELITE FOUR"
 	li "ELITE FOUR"
 	li "ELITE FOUR"
@@ -63,7 +63,7 @@ TrainerClassNames::
 	li "KIMONO GIRL"
 	li "TWINS"
 	li "#FAN"
-	li "<PKMN> TRAINER"
+	li "<PKMN>TRAINER"
 	li "LEADER"
 	li "OFFICER"
 	li "ROCKET"
@@ -83,9 +83,13 @@ TrainerClassNames::
 	li "LEADER"
 	li "LEADER"
 	li "LEADER"
-	li "LEADER?" ; Impostor Oak
+	li "LEADER?" ; Imposter Oak
 	li "LEADER"
+	li "<PKMN>TRAINER"
 	li "LEADER"
 	li "LEADER"
 	li "BALLSMITH"
+	li "EXECUTIVE"
+	li "EXECUTIVE"
+	li "PROFESSOR"
 	assert_list_length NUM_TRAINER_CLASSES

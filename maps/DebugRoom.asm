@@ -198,6 +198,29 @@ DebugTextE:
 	line "many items!"
 	done
 
+TrainerTestScript:
+	faceplayer
+	opentext
+	writetext TrainerTestAsk
+	yesorno
+	iffalse .end
+	winlosstext TrainerTestScript_BeatenText, 0
+	loadtrainer ARCHER, ARCHER1
+	startbattle
+	reloadmapafterbattle
+.end
+	closetext
+	end
+
+TrainerTestAsk:
+	text "Would you like to"
+	line "test the TRAINER?"
+	done
+
+TrainerTestScript_BeatenText:
+	text "Test complete!"
+	done
+
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
 
@@ -228,4 +251,4 @@ DebugRoom_MapEvents:
 	object_event 17, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
 	object_event 16, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
 	object_event 19, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugItemScript, -1
-	object_event 18, 13, SPRITE_NURSE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, HoneyGrannyScript, -1
+	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
