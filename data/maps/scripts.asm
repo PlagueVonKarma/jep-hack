@@ -588,8 +588,10 @@ INCLUDE "maps/SepiaSchool.asm"
 INCLUDE "maps/WhiteCity.asm"
 INCLUDE "maps/Route66WhiteCityGate.asm"
 
+SECTION "Map Scripts 30", ROMX
+INCLUDE "maps/OldCityGym.asm"
 
-SECTION "Map Scripts 30", ROMX ; spillover
+SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"
 INCLUDE "maps/TanobyChambers.asm"
 INCLUDE "maps/NavalRockExterior.asm"

@@ -89,15 +89,6 @@ INCLUDE "data/tilesets/cave_collision.asm"
 
 SECTION "Tileset Data 3", ROMX
 
-TilesetTowerGFX::
-INCBIN "gfx/tilesets/tower.2bpp.lz"
-
-TilesetTowerMeta::
-INCBIN "data/tilesets/tower_metatiles.bin"
-
-TilesetTowerColl::
-INCLUDE "data/tilesets/tower_collision.asm"
-
 TilesetLabGFX::
 INCBIN "gfx/tilesets/lab.2bpp.lz"
 
@@ -426,9 +417,6 @@ INCBIN "data/tilesets/pokecom_center_attributes.bin"
 TilesetBattleTowerInsideAttr::
 INCBIN "data/tilesets/battle_tower_inside_attributes.bin"
 
-TilesetTowerAttr::
-INCBIN "data/tilesets/tower_attributes.bin"
-
 
 SECTION "Tileset Data 11", ROMX
 
@@ -638,3 +626,16 @@ INCBIN "data/tilesets/nihon_whitecity_metatiles.bin"
 
 TilesetNihonWhiteCityColl::
 INCLUDE "data/tilesets/nihon_whitecity_collision.asm"
+
+; Inclusion of NEW things made it so I had to move it. THE DOMAIN EXPANSION, WAHOO!
+TilesetTowerGFX::
+INCBIN "gfx/tilesets/tower.2bpp.lz"
+
+TilesetTowerMeta::
+INCBIN "data/tilesets/tower_metatiles.bin"
+
+TilesetTowerColl::
+INCLUDE "data/tilesets/tower_collision.asm"
+
+TilesetTowerAttr::
+INCBIN "data/tilesets/tower_attributes.bin"

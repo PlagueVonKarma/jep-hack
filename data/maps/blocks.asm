@@ -1240,3 +1240,6 @@ WhiteCity_Blocks:
 	
 Route66WhiteCityGate_Blocks:
 	INCBIN "maps/NihonGateEastWest.ablk"
+	
+OldCityGym_Blocks:
+	INCBIN "maps/OldCityGym.ablk"

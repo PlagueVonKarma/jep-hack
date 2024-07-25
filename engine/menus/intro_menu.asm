@@ -204,6 +204,7 @@ _ResetWRAM:
 
 	ld [wJohtoBadges], a
 	ld [wKantoBadges], a
+	ld [wNihonBadges], a
 
 	ld [wCoins], a
 	ld [wCoins + 1], a
@@ -611,7 +612,7 @@ Continue_UnknownGameTime:
 Continue_DisplayBadgeCount:
 	push hl
 	ld hl, wJohtoBadges
-	ld b, 2
+	ld b, 3
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits

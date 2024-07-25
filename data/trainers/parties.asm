@@ -1359,20 +1359,17 @@ BirdKeeperGroup:
 	db -1 ; end
 	
 	next_list_item ; BIRD_KEEPER (19)
-	db "FREDERICK@", TRAINERTYPE_MOVES ; Reference to the Frederick II of Hohenstaufen, one of the earliest knowledgable Falconers in history
+	db "FRED@", TRAINERTYPE_MOVES ; Reference to the Frederick II of Hohenstaufen, one of the earliest knowledgable Falconers in history
 	db 50
-	dw TREBIR
-	dw PERISH_SONG, ENCORE, SING, WING_ATTACK
+	dw AERCROW
+	dw MEGAPHONE, WING_ATTACK, WHIRLWIND, PETAL_DANCE
 	db 50
-	dw FEAROW
-	dw MIRROR_MOVE, DOUBLE_EDGE, STEEL_WING, DRILL_PECK
-	db 50
-	dw HONCHKROW
-	dw PURSUIT, DRILL_PECK, NIGHT_SHADE, QUICK_ATTACK
+	dw CARETORKER
+	dw SOFTBOILED, WHIRLWIND, HEAL_BELL, DRILL_PECK
 	db -1 ; end
 	
 	next_list_item ; BIRD_KEEPER (19)
-	db "NORIKAGE@", TRAINERTYPE_MOVES ; Asakura Norikage 朝倉 教景 (1476 - 1555), brought Goshawk breeding to Asakura Clan in the 16th Century.
+	db "KAGE@", TRAINERTYPE_MOVES ; Asakura Norikage 朝倉 教景 (1476 - 1555), brought Goshawk breeding to Asakura Clan in the 16th Century.
 	db 50
 	dw DELIBIRD
 	dw PRESENT, ICY_WIND, QUICK_ATTACK, THIEF

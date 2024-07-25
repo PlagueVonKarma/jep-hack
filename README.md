@@ -62,6 +62,7 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 - Gen 6 Experience System!
 - Poke Balls now all have unique palettes.
 - The high friendship evolution threshold is now 170, making Friend Balls sufficient for instant evolution and hatching from Eggs takes minimal effort.
+- Items previously only obtainable via the Time Capsule are now distributed to specific Pokemon (5%: Polkadot Bow Snubbull, TwistedSpoon Kadabra, Metal Powder Ditto/Mimmeo, Light Ball Pikachu; 50%: Lucky Punch Chansey)
 
 ## Map Changes
 Numerous new maps are available, featuring new locations, the iconic Sevii Islands, and the Nihon region!
@@ -108,6 +109,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
+- LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal (original)
 
 ### Unaffiliated
 - nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)

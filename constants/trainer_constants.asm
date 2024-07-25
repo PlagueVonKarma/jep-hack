@@ -177,6 +177,7 @@ DEF KRIS EQU __trainer_class__
 	const MATT
 	const SHAW
 	const FREDERICK
+	const NORIKAGE
 
 	trainerclass LASS ; 19
 	const CARRIE

@@ -18,4 +18,15 @@ BadgeTypeBoosts:
 	db PSYCHIC_TYPE ; MARSHBADGE
 	db FIRE         ; VOLCANOBADGE
 	db GROUND       ; EARTHBADGE
+; Nihon Badges
+; Unsure what to do with these, so let's leave it for now.
+; South's will boost Fairy, though.
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
+	db CURSE_TYPE
 	db -1 ; end
