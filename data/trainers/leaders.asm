@@ -17,8 +17,16 @@ GymLeaders:
 	db BRUNO
 	db KAREN
 	db KOGA
-	db CHAMPION
-	db RED
+;	db CHAMPION
+;	db RED
+; For now Nihon bosses will be here.
+	db WALKER
+	db LORELEI
+	db XXX
+	db IMPOSTEROAK
+	db AGATHA
+	db LEADERGIOVANNI
+	db GREEN
 ; fallthrough
 KantoGymLeaders:
 	db BROCK

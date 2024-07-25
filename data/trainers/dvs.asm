@@ -86,7 +86,11 @@ TrainerClassDVs:
 	dn 13, 12, 13, 13 ; South guy
 	dn 13, 12, 13, 13 ; IMPOSTEROAK
 	dn 12, 12, 15, 15 ; AGATHA (HP Fighting 70)
+	dn 13, 12, 13, 13 ; GIOVANNI1
 	dn 13, 12, 13, 13 ; GIOVANNI3
 	dn 13, 12, 13, 13 ; GREEN
 	dn 13, 12, 13, 13 ; KURT
+	dn 13, 12, 13, 13 ; ARIANA
+	dn 13, 12, 13, 13 ; ARCHER
+	dn 13, 12, 13, 13 ; PROF.BLUE
 	assert_table_length NUM_TRAINER_CLASSES

@@ -87,7 +87,11 @@ TrainerPicPointers::
 	dba SouthGuyPic
 	dba ImposterOakPic
 	dba AgathaPic
+	dba Giovanni1Pic
 	dba Giovanni3Pic
 	dba GreenPic
 	dba KurtPic
+	dba ArianaPic
+	dba ArcherPic
+	dba ProfBluePic
 	assert_table_length NUM_TRAINER_CLASSES

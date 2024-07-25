@@ -87,7 +87,11 @@ BTTrainerClassGenders:
 	db MALE ; SOUTH GUY
 	db MALE ; IMPOSTEROAK
 	db FEMALE ; AGATHA
+	db MALE ; GIOVANNI1
 	db MALE ; GIOVANNI3
 	db FEMALE ; GREEN
 	db MALE ; KURT
+	db MALE ; ARIANA
+	db FEMALE ; ARCHER
+	db MALE ; PROF.BLUE
 	assert_table_length NUM_TRAINER_CLASSES

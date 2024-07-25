@@ -6,6 +6,7 @@
 *.2bpp
 *.lz
 *.gbcpal
+!chris.gbcpal
 *.dimensions
 *.animated.tilemap
 *.sgb.tilemap

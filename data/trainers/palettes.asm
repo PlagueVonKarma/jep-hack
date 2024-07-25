@@ -7,7 +7,7 @@ TrainerPalettes:
 	table_width PAL_COLOR_SIZE * 2, TrainerPalettes
 
 PlayerPalette:
-INCBIN "gfx/player/chris.gbcpal", middle_colors
+INCBIN "gfx/player/chris.gbcpal", middle_colors ; ignore the fact that this is an exception in the gitignore. do not research. DO NOT RESEARCH. I SAID DO NOT RESEARCH!!
 KrisPalette: ; Kris shares Falkner's palette
 INCBIN "gfx/trainers/falkner.gbcpal", middle_colors
 INCBIN "gfx/trainers/whitney.gbcpal", middle_colors
@@ -94,9 +94,13 @@ INCBIN "gfx/trainers/lorelei.gbcpal", middle_colors
 INCBIN "gfx/trainers/southguy.gbcpal", middle_colors
 INCBIN "gfx/trainers/oak.gbcpal", middle_colors ; dupe for imposter oak
 INCBIN "gfx/trainers/agatha.gbcpal", middle_colors
+INCBIN "gfx/trainers/giovanni_coat.gbcpal", middle_colors
 INCBIN "gfx/trainers/giovanni3.gbcpal", middle_colors
 INCBIN "gfx/trainers/green.gbcpal", middle_colors
 INCBIN "gfx/trainers/kurt.gbcpal", middle_colors
+INCBIN "gfx/trainers/ariana.gbcpal", middle_colors
+INCBIN "gfx/trainers/archer.gbcpal", middle_colors
+INCBIN "gfx/trainers/blue_professor.gbcpal", middle_colors
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"
