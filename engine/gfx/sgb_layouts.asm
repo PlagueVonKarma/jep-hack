@@ -548,7 +548,18 @@ endr
 	ret
 
 .route
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp NIHON_LANDMARK
 	ld a, PREDEFPAL_ROUTES
+    jr nc, .routenihon
+	ret
+	
+.routenihon 
+	ld a, PREDEFPAL_ROUTES_NIHON
 	ret
 
 .cave
@@ -560,7 +571,18 @@ endr
 	ret
 
 .gate
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp NIHON_LANDMARK
 	ld a, PREDEFPAL_PEWTER
+    jr nc, .gatenihon
+	ret
+	
+.gatenihon 
+	ld a, PREDEFPAL_GATES_NIHON
 	ret
 
 INCLUDE "data/maps/sgb_roof_pal_inds.asm"
