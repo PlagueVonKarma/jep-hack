@@ -238,7 +238,20 @@ DEF NUM_JOHTO_BADGES EQU const_value
 	const VOLCANOBADGE
 	const EARTHBADGE
 DEF NUM_KANTO_BADGES EQU const_value
-DEF NUM_BADGES       EQU NUM_JOHTO_BADGES + NUM_KANTO_BADGES
+
+; wNihonBadges::
+	const_def
+	const BADGE1
+	const BADGE2
+	const BADGE3
+	const BADGE4
+	const BADGE5
+	const BADGE6
+	const BADGE7
+	const BADGE8
+DEF NUM_NIHON_BADGES EQU const_value
+
+DEF NUM_BADGES       EQU NUM_JOHTO_BADGES + NUM_KANTO_BADGES + NUM_NIHON_BADGES
 
 ; wPokegearFlags::
 	const_def

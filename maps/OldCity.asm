@@ -200,8 +200,8 @@ OldCity_MapEvents:
 	warp_event 19, 31, ROUTE_49_OLD_CITY_GATE_1F, 4
 	warp_event 21, 26, SEPIA_SCHOOL, 1
 	warp_event  3, 26, OLD_MART, 1 ; Mart
-	warp_event 27, 12, DEBUG_ROOM, 1 ; gym right
-	warp_event 26, 12, DEBUG_ROOM, 1 ; gym left
+	warp_event 27, 12, OLD_CITY_GYM, 1 ; gym right
+	warp_event 26, 12, OLD_CITY_GYM, 1 ; gym left
 	warp_event  5, 12, DEBUG_ROOM, 1 ; Museum(?) right
 	warp_event  4, 12, DEBUG_ROOM, 1 ; Museum(?) left
 	warp_event 12, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda right

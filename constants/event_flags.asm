@@ -1109,7 +1109,8 @@
 	const EVENT_BEAT_ARCHER2
 	const EVENT_BEAT_ARCHER3
 	const EVENT_BEAT_PROFBLUE
-; Unused: next 85 events
+	const EVENT_GOT_TM47_STEEL_WING2
+; Unused: next 86 events
 
 	const_next 1600
 ; Sprite visibility flags

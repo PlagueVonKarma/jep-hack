@@ -643,6 +643,7 @@ ENDM
 	map_const OLD_CITY_EARLS_HOUSE,                  		 4,  4 ; 5
 	map_const OLD_CITY_FAMILY_HOUSE,                  		 4,  4 ; 6
 	map_const SEPIA_SCHOOL,                  			     4,  8 ; 7
+	map_const OLD_CITY_GYM,									 6, 10 ; 8
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 37

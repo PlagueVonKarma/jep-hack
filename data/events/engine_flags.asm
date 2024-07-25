@@ -61,6 +61,15 @@ EngineFlags:
 	engine_flag wKantoBadges, MARSHBADGE
 	engine_flag wKantoBadges, VOLCANOBADGE
 	engine_flag wKantoBadges, EARTHBADGE
+	
+	engine_flag wNihonBadges, BADGE1
+	engine_flag wNihonBadges, BADGE2
+	engine_flag wNihonBadges, BADGE3
+	engine_flag wNihonBadges, BADGE4
+	engine_flag wNihonBadges, BADGE5
+	engine_flag wNihonBadges, BADGE6
+	engine_flag wNihonBadges, BADGE7
+	engine_flag wNihonBadges, BADGE8
 
 	; unown sets (see data/wild/unlocked_unowns.asm)
 	engine_flag wUnlockedUnowns, UNLOCKED_UNOWNS_A_TO_K_F
