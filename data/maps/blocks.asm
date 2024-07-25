@@ -1224,9 +1224,6 @@ Route49OldCityGate1F_Blocks:
 Route49OldCityGate2F_Blocks:
 	INCBIN "maps/NihonGate2F.ablk" ; 4, 3
 
-;InsertGateNameHere_Blocks:
-;	INCBIN "maps/NihonGateWestEast.ablk"
-
 OldCity_Blocks:
 	INCBIN "maps/OldCity.ablk"
 
@@ -1240,3 +1237,6 @@ SECTION "Map Blocks 4", ROMX
 	
 WhiteCity_Blocks:
 	INCBIN "maps/WhiteCity.ablk"
+	
+Route66WhiteCityGate_Blocks:
+	INCBIN "maps/NihonGateEastWest.ablk"

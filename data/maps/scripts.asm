@@ -586,6 +586,7 @@ INCLUDE "maps/OldCityEarlsHouse.asm"
 INCLUDE "maps/OldCityFamilyHouse.asm"
 INCLUDE "maps/SepiaSchool.asm"
 INCLUDE "maps/WhiteCity.asm"
+INCLUDE "maps/Route66WhiteCityGate.asm"
 
 
 SECTION "Map Scripts 30", ROMX ; spillover

@@ -123,7 +123,7 @@ Route66_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 57,  9, WHITE_CITY, 1 ; Placeholder until route gate is set up
+	warp_event 57,  9, ROUTE_66_WHITE_CITY_GATE, 1
 
 	def_coord_events
 

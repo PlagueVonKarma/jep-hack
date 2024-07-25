@@ -651,6 +651,7 @@ ENDM
 	
 	newgroup WHITE_CITY                                           ; 38
 	map_const WHITE_CITY,                           	   30, 27 ; 1
+	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
 	endgroup
 	
 DEF NUM_MAP_GROUPS EQU const_value ; 38

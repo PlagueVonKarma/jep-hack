@@ -9,7 +9,7 @@ WhiteCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6, 27, ROUTE_66, 1
+	warp_event  6, 27, ROUTE_66_WHITE_CITY_GATE, 3
 
 	def_coord_events
 
