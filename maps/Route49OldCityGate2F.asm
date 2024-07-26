@@ -18,12 +18,6 @@ Route49OldCityGate2FLassText:
 	line "metimes to show us"
 	cont "his # BALL"
 	cont "craft."
-	
-	para "They say if you"
-	line "can get on his"
-	cont "good side, you'll"
-	cont "have made it as"
-	cont "a TRAINER!"
 	done
 
 Route49OldCityGate2FTwinScript:
@@ -33,7 +27,7 @@ Route49OldCityGate2FTwinText:
 	text "You're a tourist?"
 	line "That's too bad."
 	
-	para "GROWLITHE PAGODA"
+	para "The #MON PAGODA"
 	line "isn't open to just"
 	cont "anyone."
 	done
@@ -49,7 +43,7 @@ Route49OldCityGate2FTelescopeText1:
 	line "into a telescope!"
 	
 	para "Whoa! There's a"
-	line "tall, tall tower!"
+	line "tall, tall pagoda!"
 	done
 
 Route49OldCityGate2FTelescopeText2:
