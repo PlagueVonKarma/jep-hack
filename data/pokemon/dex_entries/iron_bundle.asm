@@ -1,10 +1,10 @@
 	db "PARADOX@" ; species name
-	dw 200, 243 ; height, weight
+	dw 200, 240 ; height, weight
 
-	db   "It carries a metal"
-	next "device that launches"
-	next "it backward. This,"
+	db   "A strange, robotic"
+	next "#MON that can"
+	next "launch itself by"
 
-	page "and its extendable"
-	next "head, have resulted"
-	next "in much speculation.@"
+	page "firing icy blasts"
+	next "from the round"
+	next "device it holds.@"

@@ -1,5 +1,5 @@
 	db "PARADOX@" ; species name
-	dw 211, 5922 ; height, weight
+	dw 211, 5920 ; height, weight
 
 	db   "A creature of the"
 	next "digital age. It"

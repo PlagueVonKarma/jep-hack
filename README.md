@@ -116,7 +116,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
 - SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
 - SCMidna: Munchlax
-- SageDeoxys: (TBA)
+- SageDeoxys: Iron Bundle, Raging Bolt, Scream Tail
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites.

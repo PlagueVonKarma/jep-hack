@@ -1,5 +1,5 @@
 	db "PARADOX@" ; species name
-	dw 703, 7055 ; height, weight
+	dw 703, 7050 ; height, weight
 
 	db   "A relic of the age"
 	next "of dinosaurs. Its"

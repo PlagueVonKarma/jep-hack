@@ -1,10 +1,10 @@
 	db "PARADOX@" ; species name
-	dw 311, 176 ; height, weight
+	dw 311, 170 ; height, weight
 
-	db   "Its eyes glow yellow"
-	next "when angered. Its"
-	next "aggression prompted"
+	db   "Its eyes glow when"
+	next "angered. Its aggr-"
+	next "essive nature has"
 
-	page "rumours of it being"
-	next "a beast from the"
+	page "sparked rumors of"
+	next "it being from the"
 	next "Cambrian period.@"
