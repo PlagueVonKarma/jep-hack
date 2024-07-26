@@ -764,7 +764,7 @@ TownMap_GetKantoLandmarkLimits:
 TownMap_GetNihonLandmarkLimits:
 	ld a, [wStatusFlags]
 	ld d, LANDMARK_SILENT_HILLS
-	ld e, LANDMARK_SILENT_HILLS ; Gonna need another map.
+	ld e, LANDMARK_WHITE_CITY ; Gonna need another map.
 	ret
 
 PokegearRadio_Init:
@@ -2375,12 +2375,12 @@ FlyMap:
 	call HasVisitedSpawn
 	and a
 	jr z, .NoKanto
-; Kanto's map is only loaded if we've visited Indigo Plateau
+; Nihon's map is only loaded if we've visited Silent Hills
 	ld a, NIHON_FLYPOINT ; first Nihon flypoint
 	ld [wStartFlypoint], a
 	ld a, NUM_FLYPOINTS - 1 ; last Nihon flypoint
 	ld [wEndFlypoint], a
-	ld [wTownMapPlayerIconLandmark], a ; last one is default (Indigo Plateau)
+	ld [wTownMapPlayerIconLandmark], a ; last one is default (Silent Hills)
 ; Fill out the map
 	call FillNihonMap
 	call .MapHud
