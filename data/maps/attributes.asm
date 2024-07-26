@@ -732,6 +732,10 @@ ENDM
 	map_attributes JohtoSafariZoneGate, JOHTO_SAFARI_ZONE_GATE, $00, 0 ; Bank 1
 	map_attributes JohtoSafariZone, JOHTO_SAFARI_ZONE, $00, 0 ; Bank 1
 	map_attributes LavenderCrypt, LAVENDER_CRYPT, $00, 0 ; Bank 1
+	map_attributes LavenderCryptSet1, LAVENDER_CRYPT_SET_1, $00, 0 ; Bank 1
+	map_attributes LavenderCryptSet2, LAVENDER_CRYPT_SET_2, $00, 0 ; Bank 1
+	map_attributes LavenderCryptSet3, LAVENDER_CRYPT_SET_3, $00, 0 ; Bank 1
+	map_attributes LavenderCryptDokuroarsRoom, LAVENDER_CRYPT_DOKUROARS_ROOM, $00, 0 ; Bank 1
 	map_attributes UnderwaterTunnel, UNDERWATER_TUNNEL, $00, 0 ; Bank 1
 	map_attributes BillsGarden, BILLS_GARDEN, $00, 0 ; Bank 1
 	map_attributes CeladonUniversityOutside, CELADON_UNIVERSITY_OUTSIDE, $00, 0 ; Bank 1

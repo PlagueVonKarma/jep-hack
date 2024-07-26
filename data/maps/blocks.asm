@@ -279,6 +279,18 @@ JohtoSafariZone_Blocks:
 LavenderCrypt_Blocks:
 	INCBIN "maps/LavenderCrypt.ablk"
 
+LavenderCryptSet1_Blocks:
+	INCBIN "maps/LavenderCryptSet1.ablk"
+
+LavenderCryptSet2_Blocks:
+	INCBIN "maps/LavenderCryptSet2.ablk"
+
+LavenderCryptSet3_Blocks:
+	INCBIN "maps/LavenderCryptSet3.ablk"
+
+LavenderCryptDokuroarsRoom_Blocks:
+	INCBIN "maps/LavenderCryptDokuroarsRoom.ablk"
+
 UnderwaterTunnel_Blocks:
 	INCBIN "maps/UnderwaterTunnel.ablk"
 

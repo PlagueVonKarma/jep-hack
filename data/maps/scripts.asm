@@ -596,6 +596,10 @@ INCLUDE "maps/PokemonPagoda2F.asm"
 INCLUDE "maps/PokemonPagoda3F.asm"
 INCLUDE "maps/PokemonPagoda4F.asm"
 INCLUDE "maps/PokemonPagoda5F.asm"
+INCLUDE "maps/LavenderCryptSet1.asm"
+INCLUDE "maps/LavenderCryptSet2.asm"
+INCLUDE "maps/LavenderCryptSet3.asm"
+INCLUDE "maps/LavenderCryptDokuroarsRoom.asm"
 
 SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"

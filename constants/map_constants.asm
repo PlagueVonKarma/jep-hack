@@ -391,6 +391,10 @@ ENDM
 	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 13
 	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 14
 	map_const LAVENDER_CRYPT,							    9, 10 ; 15
+	map_const LAVENDER_CRYPT_SET_1,						   12, 10 ; 16
+	map_const LAVENDER_CRYPT_SET_2,						   12, 10 ; 17
+	map_const LAVENDER_CRYPT_SET_3,						   12, 10 ; 18
+	map_const LAVENDER_CRYPT_DOKUROARS_ROOM,			    7,  8 ; 19
 	endgroup
 
 	newgroup SILVER                                               ; 19
