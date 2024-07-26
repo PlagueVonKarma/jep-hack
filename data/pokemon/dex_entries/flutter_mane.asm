@@ -1,10 +1,10 @@
 	db "PARADOX@" ; species name
-	dw 407, 088 ; height, weight
+	dw 407, 80 ; height, weight
 
-	db   "It floats around with"
+	db   "Believed to be the"
+	next "ghost of a ptero-"
+	next "saur. At night, it"
+
+	page "flies around with"
 	next "its writhing hair,"
-	next "scoffing at those"
-
-	page "beneath it. Said"
-	next "to be the ghost"
-	next "of a pterosaur.@"
+	next "cackling wickedly.@"

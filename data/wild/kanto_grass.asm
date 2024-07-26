@@ -929,6 +929,118 @@ KantoGrassWildMons:
 	dbw 42, WISPIRIT
 	dbw 42, GENGAR
 	end_grass_wildmons
+	
+	def_grass_wildmons LAVENDER_CRYPT_SET_1
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 33, GASTLY
+	dbw 36, GASTLY
+	dbw 32, HAUNTER
+	dbw 44, CUBONE
+	dbw 44, WISPIRIT
+	dbw 44, WISPIRIT
+	dbw 44, VULPIX
+	; day
+	dbw 32, GASTLY
+	dbw 34, GASTLY
+	dbw 38, HAUNTER
+	dbw 36, CUBONE
+	dbw 46, WISPIRIT
+	dbw 46, WISPIRIT
+	dbw 46, VULPIX
+	; nite
+	dbw 34, GASTLY
+	dbw 38, MISDREAVUS
+	dbw 36, HAUNTER
+	dbw 32, KITSEN
+	dbw 42, WISPIRIT
+	dbw 42, WISPIRIT
+	dbw 42, GENGAR
+	end_grass_wildmons
+	
+	def_grass_wildmons LAVENDER_CRYPT_SET_2
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 33, GASTLY
+	dbw 36, GASTLY
+	dbw 32, HAUNTER
+	dbw 44, CUBONE
+	dbw 44, WISPIRIT
+	dbw 44, WISPIRIT
+	dbw 44, NOCTOWL
+	; day
+	dbw 32, GASTLY
+	dbw 34, GASTLY
+	dbw 38, HAUNTER
+	dbw 36, CUBONE
+	dbw 46, WISPIRIT
+	dbw 46, WISPIRIT
+	dbw 46, NOCTOWL
+	; nite
+	dbw 34, GASTLY
+	dbw 38, MISDREAVUS
+	dbw 36, HAUNTER
+	dbw 32, KITSEN
+	dbw 42, WISPIRIT
+	dbw 42, WISPIRIT
+	dbw 42, GENGAR
+	end_grass_wildmons
+	
+	def_grass_wildmons LAVENDER_CRYPT_SET_3
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 33, GASTLY
+	dbw 36, GASTLY
+	dbw 32, HAUNTER
+	dbw 44, CUBONE
+	dbw 44, WISPIRIT
+	dbw 44, WISPIRIT
+	dbw 44, VULPIX
+	; day
+	dbw 32, GASTLY
+	dbw 34, GASTLY
+	dbw 38, HAUNTER
+	dbw 36, CUBONE
+	dbw 46, WISPIRIT
+	dbw 46, WISPIRIT
+	dbw 46, VULPIX
+	; nite
+	dbw 34, GASTLY
+	dbw 38, MISDREAVUS
+	dbw 36, HAUNTER
+	dbw 32, KITSEN
+	dbw 42, WISPIRIT
+	dbw 42, WISPIRIT
+	dbw 42, GENGAR
+	end_grass_wildmons
+	
+	def_grass_wildmons LAVENDER_CRYPT_DOKUROARS_ROOM
+	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 33, CUBONE
+	dbw 36, GASTLY
+	dbw 32, HAUNTER
+	dbw 44, CUBONE
+	dbw 44, WISPIRIT
+	dbw 44, WISPIRIT
+	dbw 44, MAROWAK
+	; day
+	dbw 32, CUBONE
+	dbw 34, GASTLY
+	dbw 38, HAUNTER
+	dbw 36, CUBONE
+	dbw 46, WISPIRIT
+	dbw 46, WISPIRIT
+	dbw 46, MAROWAK
+	; nite
+	dbw 34, CUBONE
+	dbw 38, MISDREAVUS
+	dbw 36, HAUNTER
+	dbw 32, KITSEN
+	dbw 42, WISPIRIT
+	dbw 42, WISPIRIT
+	dbw 42, GENGAR
+	end_grass_wildmons
 
 	def_grass_wildmons ALTERING_CAVE
 	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite

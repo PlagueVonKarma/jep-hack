@@ -3,8 +3,8 @@
 
 	db   "It blindly tunnels"
 	next "through the earth,"
-	next "feasting on any,"
+	next "crushing rocks in"
 
-	page "unfortunate GRAVELER"
-	next "or ONIX that it"
-	next "comes across.@"
+	page "its jaws. GRAVELER"
+	next "and ONIX are its"
+	next "favorite prey.@"

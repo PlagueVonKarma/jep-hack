@@ -1,10 +1,10 @@
 	db "PARADOX@" ; species name
-	dw 707, 1323 ; height, weight
+	dw 707, 1320 ; height, weight
 
-	db   "Its magnets are very"
-	next "dexterous, allowing"
-	next "for easy traversal"
+	db   "It travels across"
+	next "deserts by walking"
+	next "on its dexterous"
 
-	page "across deserts."
-	next "However, it leaves"
-	next "covered in iron.@"
+	page "magnets. The iron"
+	next "filings it picks"
+	next "up adorn its body.@"

@@ -21,7 +21,6 @@ With respect to Pokemon from the May 1998 Sprite Cache, creative liberties based
 Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 
 # Changes
-## New Features
 - There is now an enby character option named Topaz, purple-themed.
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
@@ -40,12 +39,12 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 	- 24% SOFT_SAND
 	- 48% PEARL
 	- 64% BRICK_PIECE
-
-# New things
-- 11 new Trainer classes, including;
+- Many new Trainer classes, including;
 	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
 	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
 	- The Painter from FRLG!
+	- The Elder from HGSS, featuring the NTSC Sage sprite.
+	- Decensor is applied to the Fisher, Beauty, Female Swimmer, Medium, and Sage sprites, to match the Japanese version. Let Tully have a puff!
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo, and the Peat Block!
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
 - The Antique Pot has been added to accomodate a Shuckle evolution!
@@ -104,7 +103,7 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 ### JEP Developers
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
-- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
+- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops, Calflac (with inspiration from KmiE_821)
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
@@ -115,9 +114,11 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
 - Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
-- SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
+- SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage), Trebir (Mallody), Folage (Silkane)
 - SCMidna: Munchlax
-- SageDeoxys: (TBA)
+- SageDeoxys: Iron Bundle, Raging Bolt, Scream Tail, Dudunsparce (both forms)
+- Pokets: Terrados
+- KmiE_821: Calflac design inspiration
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites.

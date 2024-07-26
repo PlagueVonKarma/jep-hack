@@ -141,6 +141,7 @@ DEF KANTO_FLYPOINT EQU const_value
 	const FLY_INDIGO
 DEF NIHON_FLYPOINT EQU const_value
 	const FLY_SILENT_HILLS
+	const FLY_OLD_CITY
 DEF NUM_FLYPOINTS EQU const_value
 
 DEF MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm

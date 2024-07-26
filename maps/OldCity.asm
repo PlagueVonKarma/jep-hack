@@ -26,11 +26,11 @@ HoneyGrandmaSignText:
 	line "house"
 	done
 
-OldCityBillsHouseSignScript:
-	jumptext OldCityBillsHouseSignText
+OldCityEarlsHouseSignScript:
+	jumptext OldCityEarlsHouseSignText
 
-OldCityBillsHouseSignText:
-	text "BILL'S house"
+OldCityEarlsHouseSignText:
+	text "EARL'S house"
 	done
 
 OldCityTrainerSchoolSignScript:
@@ -45,7 +45,7 @@ OldCityGymSignScript:
 	jumptext OldCityGymSignText
 
 OldCityGymSignText:
-	text "OLD CITY"
+	text "SEPIA CITY"
 	line "#MON GYM"
 	para "LEADER: WALKER"
 	
@@ -88,9 +88,7 @@ OldCityMuseumSignScript:
 	jumptext OldCityMuseumSignText
 
 OldCityMuseumSignText:
-	text "XX"
-	line "Comment to be"
-	cont "written."
+	text "SEPIA ART MUSEUM"
 	done
 
 OldCityFruitTree:
@@ -202,13 +200,13 @@ OldCity_MapEvents:
 	warp_event  3, 26, OLD_MART, 1 ; Mart
 	warp_event 27, 12, OLD_CITY_GYM, 1 ; gym right
 	warp_event 26, 12, OLD_CITY_GYM, 1 ; gym left
-	warp_event  5, 12, DEBUG_ROOM, 1 ; Museum(?) right
-	warp_event  4, 12, DEBUG_ROOM, 1 ; Museum(?) left
-	warp_event 12, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda right
-	warp_event 11, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda left
+	warp_event  5, 12, OLD_CITY_MUSEUM, 1 ; Museum(?) right
+	warp_event  4, 12, OLD_CITY_MUSEUM, 2 ; Museum(?) left
+	warp_event 12, 16, POKEMON_PAGODA_1F, 1 ; Pokemon Pagoda right
+	warp_event 11, 16, POKEMON_PAGODA_1F, 2 ; Pokemon Pagoda left
 	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1
 	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1
-	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 1
+	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 2
 	warp_event 10, 26, OLD_CITY_FAMILY_HOUSE, 1
 ; considering a tearoom where the waiters are passive-aggressive. classic kyoto.
 	def_coord_events
@@ -217,7 +215,7 @@ OldCity_MapEvents:
 	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
 	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
 	bg_event  8, 14, BGEVENT_READ, PokemonPagodaSignScript
-	bg_event 26, 20, BGEVENT_READ, OldCityBillsHouseSignScript
+	bg_event 26, 20, BGEVENT_READ, OldCityEarlsHouseSignScript
 	bg_event 28, 14, BGEVENT_READ, OldCityGymSignScript
 	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
 	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign

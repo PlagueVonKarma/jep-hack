@@ -279,6 +279,18 @@ JohtoSafariZone_Blocks:
 LavenderCrypt_Blocks:
 	INCBIN "maps/LavenderCrypt.ablk"
 
+LavenderCryptSet1_Blocks:
+	INCBIN "maps/LavenderCryptSet1.ablk"
+
+LavenderCryptSet2_Blocks:
+	INCBIN "maps/LavenderCryptSet2.ablk"
+
+LavenderCryptSet3_Blocks:
+	INCBIN "maps/LavenderCryptSet3.ablk"
+
+LavenderCryptDokuroarsRoom_Blocks:
+	INCBIN "maps/LavenderCryptDokuroarsRoom.ablk"
+
 UnderwaterTunnel_Blocks:
 	INCBIN "maps/UnderwaterTunnel.ablk"
 
@@ -1243,3 +1255,21 @@ Route66WhiteCityGate_Blocks:
 	
 OldCityGym_Blocks:
 	INCBIN "maps/OldCityGym.ablk"
+	
+OldCityMuseum_Blocks:
+	INCBIN "maps/OldCityMuseum.ablk"
+	
+PokemonPagoda1F_Blocks:
+	INCBIN "maps/PokemonPagoda1F.ablk"
+
+PokemonPagoda2F_Blocks:
+	INCBIN "maps/PokemonPagoda2F.ablk"
+
+PokemonPagoda3F_Blocks:
+	INCBIN "maps/PokemonPagoda3F.ablk"
+
+PokemonPagoda4F_Blocks:
+	INCBIN "maps/PokemonPagoda4F.ablk"
+
+PokemonPagoda5F_Blocks:
+	INCBIN "maps/PokemonPagoda5F.ablk"

@@ -742,18 +742,6 @@ TangrowthBackpic:    INCBIN "gfx/pokemon/tangrowth/back.2bpp.lz"
 JungelaFrontpic:     INCBIN "gfx/pokemon/jungela/front.animated.2bpp.lz"
 JungelaBackpic:      INCBIN "gfx/pokemon/jungela/back.2bpp.lz"
 
-; RBY/unused trainer Pics
-ChannelerPic:        INCBIN "gfx/trainers/channeler.2bpp.lz"
-CueBallPic:        INCBIN "gfx/trainers/cue_ball.2bpp.lz"
-EngineerPic:        INCBIN "gfx/trainers/engineer.2bpp.lz"
-RockerPic:        INCBIN "gfx/trainers/rocker.2bpp.lz"
-TamerPic:        INCBIN "gfx/trainers/tamer.2bpp.lz"
-FirefighterPic:        INCBIN "gfx/trainers/firefighter.2bpp.lz"
-TeacherMPic:        INCBIN "gfx/trainers/teacherm.2bpp.lz"
-PainterPic:        INCBIN "gfx/trainers/painter.2bpp.lz"
-SoldierPic:        INCBIN "gfx/trainers/soldier.2bpp.lz"
-SportsmanPic:        INCBIN "gfx/trainers/sportsman.2bpp.lz"
-
 
 SECTION "Pics 20", ROMX
 
@@ -1045,3 +1033,18 @@ KurtPic: INCBIN "gfx/trainers/kurt.2bpp.lz"
 ArianaPic: INCBIN "gfx/trainers/ariana.2bpp.lz"
 ArcherPic: INCBIN "gfx/trainers/archer.2bpp.lz"
 ProfBluePic: INCBIN "gfx/trainers/blue_professor.2bpp.lz"
+ElderPic: INCBIN "gfx/trainers/elder.2bpp.lz"
+
+SECTION "Pics 26", ROMX
+
+; RBY/unused trainer Pics
+ChannelerPic:        INCBIN "gfx/trainers/channeler.2bpp.lz"
+CueBallPic:        INCBIN "gfx/trainers/cue_ball.2bpp.lz"
+EngineerPic:        INCBIN "gfx/trainers/engineer.2bpp.lz"
+RockerPic:        INCBIN "gfx/trainers/rocker.2bpp.lz"
+TamerPic:        INCBIN "gfx/trainers/tamer.2bpp.lz"
+FirefighterPic:        INCBIN "gfx/trainers/firefighter.2bpp.lz"
+TeacherMPic:        INCBIN "gfx/trainers/teacherm.2bpp.lz"
+PainterPic:        INCBIN "gfx/trainers/painter.2bpp.lz"
+SoldierPic:        INCBIN "gfx/trainers/soldier.2bpp.lz"
+SportsmanPic:        INCBIN "gfx/trainers/sportsman.2bpp.lz"

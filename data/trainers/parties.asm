@@ -4876,6 +4876,7 @@ ExecutiveFGroup: ; Ariana
 
 	end_list_items
 
+; Often seen with Hoothoot in media, so there's a few scattered around for variety.
 SageGroup:
 	next_list_item ; SAGE (1)
 	db "CHOW@", TRAINERTYPE_NORMAL
@@ -4894,13 +4895,13 @@ SageGroup:
 	db 3
 	dw BELLSPROUT
 	db 3
-	dw BELLSPROUT
+	dw HOOTHOOT
 	db -1 ; end
 
 	next_list_item ; SAGE (3)
 	db "JIN@", TRAINERTYPE_NORMAL
 	db 6
-	dw BELLSPROUT
+	dw HOOTHOOT
 	db -1 ; end
 
 	next_list_item ; SAGE (4)
@@ -4947,16 +4948,9 @@ SageGroup:
 	dw BELLSPROUT
 	db -1 ; end
 
-	next_list_item ; SAGE (9)
-	db "LI@", TRAINERTYPE_MOVES
-	db 10
-	dw BELLIGNAN
-	dw FLASH, VINE_WHIP, GROWTH, WRAP
-	db -1 ; end
-
 ; So these sages are in the Dragon's Den but end up being the Kimono Girls but again.
 ; Let's give them the Eeveelutions the Kimono Girls don't have!
-	next_list_item ; SAGE (10)
+	next_list_item ; SAGE (9)
 	db "GAKU@", TRAINERTYPE_NORMAL
 	db 42
 	dw NOCTOWL
@@ -4964,7 +4958,7 @@ SageGroup:
 	dw LEAFEON
 	db -1 ; end
 
-	next_list_item ; SAGE (11)
+	next_list_item ; SAGE (10)
 	db "MASA@", TRAINERTYPE_NORMAL
 	db 42
 	dw NOCTOWL
@@ -4972,14 +4966,71 @@ SageGroup:
 	dw GLACEON
 	db -1 ; end
 
-	next_list_item ; SAGE (12)
+	next_list_item ; SAGE (11)
 	db "KOJI@", TRAINERTYPE_NORMAL
 	db 42
 	dw NOCTOWL
 	db 42
 	dw SYLVEON
 	db -1 ; end
-
+	
+	; Pokemon Pagoda Sages
+	; 3F
+	next_list_item ; SAGE (12)
+	db "MING@", TRAINERTYPE_NORMAL ; double-references this one super old clam that lived since the ming dynasty and aptly received it as an epithet before dying to trawlers. Since it's the Tentacruel floor, it felt very fitting! https://en.wikipedia.org/wiki/Ming_(clam)
+	db 50
+	dw CLOYSTER
+	db 50
+	dw TENTACRUEL
+	db -1 ; end
+	
+	next_list_item ; SAGE (13)
+	db "WEI@", TRAINERTYPE_NORMAL
+	db 50
+	dw TENTACRUEL
+	db -1 ; end
+	
+	next_list_item ; SAGE (14)
+	db "LANG@", TRAINERTYPE_NORMAL
+	db 50
+	dw TENTACRUEL
+	db -1 ; end
+	
+	next_list_item ; SAGE (15)
+	db "HUANG@", TRAINERTYPE_NORMAL
+	db 50
+	dw NOCTOWL
+	db 50
+	dw TENTACRUEL
+	db -1 ; end
+	
+	; 4F
+	next_list_item ; SAGE (16)
+	db "GEN@", TRAINERTYPE_NORMAL
+	db 50
+	dw FEAROW
+	db -1 ; end
+	
+	next_list_item ; SAGE (17)
+	db "RAOH@", TRAINERTYPE_NORMAL
+	db 50
+	dw FEAROW
+	db -1 ; end
+	
+	next_list_item ; SAGE (18)
+	db "SHUU@", TRAINERTYPE_NORMAL
+	db 50
+	dw FEAROW
+	db -1 ; end
+	
+	next_list_item ; SAGE (19)
+	db "SHENG@", TRAINERTYPE_NORMAL
+	db 50
+	dw NOCTOWL
+	db 50
+	dw FEAROW
+	db -1 ; end
+	
 	end_list_items
 
 MediumGroup:
@@ -5000,21 +5051,23 @@ MediumGroup:
 	db -1 ; end
 
 	next_list_item ; MEDIUM (3)
-	db "BETHANY@", TRAINERTYPE_NORMAL ; Unused?
-	db 25
-	dw HAUNTER
+	db "BETHANY@", TRAINERTYPE_NORMAL ; unused, now Pagoda 2F Medium
+	db 50
+	dw WISPIRIT
 	db -1 ; end
 
 	next_list_item ; MEDIUM (4)
-	db "MARGRET@", TRAINERTYPE_NORMAL ; unused
-	db 25
-	dw HAUNTER
+	db "MARGRET@", TRAINERTYPE_NORMAL ; unused, now Pagoda 2F Medium
+	db 50
+	dw STROMEN
+	db 50
+	dw PHANDARIN
 	db -1 ; end
 
 	next_list_item ; MEDIUM (5)
-	db "ETHEL@", TRAINERTYPE_NORMAL ; unused
-	db 25
-	dw HAUNTER
+	db "ETHEL@", TRAINERTYPE_NORMAL ; unused, now Pagoda 2F Medium
+	db 50
+	dw KITSEN
 	db -1 ; end
 
 	next_list_item ; MEDIUM (6)
@@ -5032,7 +5085,13 @@ MediumGroup:
 	db 36
 	dw SLOWBRO
 	db -1 ; end
-
+	
+	next_list_item ; MEDIUM (8)
+	db "ELSIE@", TRAINERTYPE_NORMAL ; Pagoda 2F Medium
+	db 50
+	dw WISPIRIT
+	db -1 ; end
+	
 	end_list_items
 
 BoarderGroup: ; All in Pryce's Gym. Could expand to Ice Path and Seafoam.
@@ -5259,100 +5318,6 @@ KimonoGirlGroup:
 	db "MIKI@", TRAINERTYPE_NORMAL
 	db 17
 	dw JOLTEON
-	db -1 ; end
-
-	end_list_items
-
-; No rematches here, just a lot of unused dupes.
-; Potential alt usage? rename a few?
-; See spreadsheet for combinations.
-TwinsGroup:
-	next_list_item ; TWINS (1)
-	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 10
-	dw SPINARAK
-	db 10
-	dw LEDYBA
-	db -1 ; end
-
-	next_list_item ; TWINS (2)
-	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16
-	dw CLEFAIRY
-	dw GROWL, ENCORE, DOUBLESLAP, METRONOME
-	db 16
-	dw JIGGLYPUFF
-	dw SING, DEFENSE_CURL, POUND, DISABLE
-	db -1 ; end
-
-	next_list_item ; TWINS (3)
-	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16
-	dw JIGGLYPUFF
-	dw SING, DEFENSE_CURL, POUND, DISABLE
-	db 16
-	dw CLEFAIRY
-	dw GROWL, ENCORE, DOUBLESLAP, METRONOME
-	db -1 ; end
-
-	next_list_item ; TWINS (4)
-	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 10
-	dw LEDYBA
-	db 10
-	dw SPINARAK
-	db -1 ; end
-
-	next_list_item ; TWINS (5)
-	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35
-	dw VICTREEBEL
-	db 35
-	dw VILEPLUME
-	db -1 ; end
-
-	next_list_item ; TWINS (6)
-	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35
-	dw VILEPLUME
-	db 35
-	dw VICTREEBEL
-	db -1 ; end
-
-	next_list_item ; TWINS (7)
-	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31
-	dw TEDDIURSA
-	db 31
-	dw PHANPY
-	db -1 ; end
-
-	next_list_item ; TWINS (8)
-	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31
-	dw PHANPY
-	db 31
-	dw TEDDIURSA
-	db -1 ; end
-
-	next_list_item ; TWINS (9)
-	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 35
-	dw DRATINI
-	dw THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
-	db 35
-	dw DRATINI
-	dw THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
-	db -1 ; end
-
-	next_list_item ; TWINS (10)
-	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 38
-	dw DRATINI
-	dw THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
-	db 38
-	dw DRATINI
-	dw THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
 	db -1 ; end
 
 	end_list_items

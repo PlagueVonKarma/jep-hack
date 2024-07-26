@@ -1,5 +1,5 @@
 	db "CURSE@" ; species name
-	dw  8, 19 ; height, weight
+	dw 100, 20 ; height, weight
 
 	db   "It lives quietly"
 	next "in places no one"

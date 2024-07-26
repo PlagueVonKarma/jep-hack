@@ -672,3 +672,125 @@ ProfBlueGroup:
 	dw THUNDERBOLT, CROSS_CHOP, EARTHQUAKE, THIEF
 	db -1 ; end
 	end_list_items
+
+ElderGroup:
+	next_list_item ; originally SAGE (9), now adapted from HGSS
+	db "LI@", TRAINERTYPE_MOVES
+	db 10
+	dw BELLIGNAN
+	dw FLASH, VINE_WHIP, GROWTH, WRAP
+	db -1 ; end
+	
+	; Intended to be just before you fight Shi-Shi (potentially)
+	db "ROEN@", TRAINERTYPE_MOVES ; from Roen, an esteemed priest from The Five-Storied Pagoda by Koda Rohan.
+	db 65
+	dw FEAROW
+	dw DOUBLE_EDGE, DRILL_PECK, MIRROR_MOVE, AGILITY
+	db 65
+	dw TENTACRUEL
+	dw SURF, DOUBLE_EDGE, SLUDGE_BOMB, SWORDS_DANCE
+	db 65
+	dw ALAKAZAM
+	dw PSYCHIC_M, THUNDERPUNCH, FIRE_PUNCH, RECOVER
+	db 65
+	dw ARCANINE
+	dw FIRE_BLAST, BODY_SLAM, DIG, HIDDEN_POWER
+	db 65
+	dw GOROCHU
+	dw BELLY_DRUM, THUNDERBOLT, BODY_SLAM, SUBMISSION
+	db -1 ; end
+	end_list_items
+
+; No rematches here, just a lot of unused dupes.
+; Potential alt usage? rename a few?
+; See spreadsheet for combinations.
+TwinsGroup:
+	next_list_item ; TWINS (1)
+	db "AMY & MAY@", TRAINERTYPE_NORMAL
+	db 10
+	dw SPINARAK
+	db 10
+	dw LEDYBA
+	db -1 ; end
+
+	next_list_item ; TWINS (2)
+	db "ANN & ANNE@", TRAINERTYPE_MOVES
+	db 16
+	dw CLEFAIRY
+	dw GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 16
+	dw JIGGLYPUFF
+	dw SING, DEFENSE_CURL, POUND, DISABLE
+	db -1 ; end
+
+	next_list_item ; TWINS (3)
+	db "ANN & ANNE@", TRAINERTYPE_MOVES
+	db 16
+	dw JIGGLYPUFF
+	dw SING, DEFENSE_CURL, POUND, DISABLE
+	db 16
+	dw CLEFAIRY
+	dw GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db -1 ; end
+
+	next_list_item ; TWINS (4)
+	db "AMY & MAY@", TRAINERTYPE_NORMAL
+	db 10
+	dw LEDYBA
+	db 10
+	dw SPINARAK
+	db -1 ; end
+
+	next_list_item ; TWINS (5)
+	db "JO & ZOE@", TRAINERTYPE_NORMAL
+	db 35
+	dw VICTREEBEL
+	db 35
+	dw VILEPLUME
+	db -1 ; end
+
+	next_list_item ; TWINS (6)
+	db "JO & ZOE@", TRAINERTYPE_NORMAL
+	db 35
+	dw VILEPLUME
+	db 35
+	dw VICTREEBEL
+	db -1 ; end
+
+	next_list_item ; TWINS (7)
+	db "MEG & PEG@", TRAINERTYPE_NORMAL
+	db 31
+	dw TEDDIURSA
+	db 31
+	dw PHANPY
+	db -1 ; end
+
+	next_list_item ; TWINS (8)
+	db "MEG & PEG@", TRAINERTYPE_NORMAL
+	db 31
+	dw PHANPY
+	db 31
+	dw TEDDIURSA
+	db -1 ; end
+
+	next_list_item ; TWINS (9)
+	db "LEA & PIA@", TRAINERTYPE_MOVES
+	db 35
+	dw DRATINI
+	dw THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
+	db 35
+	dw DRATINI
+	dw THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
+	db -1 ; end
+
+	next_list_item ; TWINS (10)
+	db "LEA & PIA@", TRAINERTYPE_MOVES
+	db 38
+	dw DRATINI
+	dw THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
+	db 38
+	dw DRATINI
+	dw THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
+	db -1 ; end
+
+	end_list_items

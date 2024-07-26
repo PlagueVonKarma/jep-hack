@@ -391,6 +391,10 @@ ENDM
 	map_const ROUTE_8_SAFFRON_GATE,                         5,  4 ; 13
 	map_const ROUTE_12_SUPER_ROD_HOUSE,                     4,  4 ; 14
 	map_const LAVENDER_CRYPT,							    9, 10 ; 15
+	map_const LAVENDER_CRYPT_SET_1,						   12, 10 ; 16
+	map_const LAVENDER_CRYPT_SET_2,						   12, 10 ; 17
+	map_const LAVENDER_CRYPT_SET_3,						   12, 10 ; 18
+	map_const LAVENDER_CRYPT_DOKUROARS_ROOM,			    7,  8 ; 19
 	endgroup
 
 	newgroup SILVER                                               ; 19
@@ -644,6 +648,12 @@ ENDM
 	map_const OLD_CITY_FAMILY_HOUSE,                  		 4,  4 ; 6
 	map_const SEPIA_SCHOOL,                  			     4,  8 ; 7
 	map_const OLD_CITY_GYM,									 6, 10 ; 8
+	map_const OLD_CITY_MUSEUM,								 8,  3 ; 9
+	map_const POKEMON_PAGODA_1F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_2F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_3F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_4F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_5F,							 3,  3 ; 10
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 37
