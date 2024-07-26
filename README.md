@@ -103,7 +103,7 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 ### JEP Developers
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
-- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
+- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops, Calflac (with inspiration from KmiE_821)
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
@@ -116,7 +116,9 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
 - SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage)
 - SCMidna: Munchlax
-- SageDeoxys: Iron Bundle, Raging Bolt, Scream Tail
+- SageDeoxys: Iron Bundle, Raging Bolt, Scream Tail, Dudunsparce (both forms)
+- Pokets: Terrados
+- KmiE_821: Calflac design inspiration
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FemC sprites.
