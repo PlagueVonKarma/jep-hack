@@ -88,9 +88,7 @@ OldCityMuseumSignScript:
 	jumptext OldCityMuseumSignText
 
 OldCityMuseumSignText:
-	text "XX"
-	line "Comment to be"
-	cont "written."
+	text "SEPIA ART MUSEUM"
 	done
 
 OldCityFruitTree:
@@ -202,8 +200,8 @@ OldCity_MapEvents:
 	warp_event  3, 26, OLD_MART, 1 ; Mart
 	warp_event 27, 12, OLD_CITY_GYM, 1 ; gym right
 	warp_event 26, 12, OLD_CITY_GYM, 1 ; gym left
-	warp_event  5, 12, DEBUG_ROOM, 1 ; Museum(?) right
-	warp_event  4, 12, DEBUG_ROOM, 1 ; Museum(?) left
+	warp_event  5, 12, OLD_CITY_MUSEUM, 1 ; Museum(?) right
+	warp_event  4, 12, OLD_CITY_MUSEUM, 1 ; Museum(?) left
 	warp_event 12, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda right
 	warp_event 11, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda left
 	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1

@@ -1243,3 +1243,6 @@ Route66WhiteCityGate_Blocks:
 	
 OldCityGym_Blocks:
 	INCBIN "maps/OldCityGym.ablk"
+	
+OldCityMuseum_Blocks:
+	INCBIN "maps/OldCityMuseum.ablk"

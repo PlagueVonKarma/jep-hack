@@ -60,6 +60,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 3b
 	tilecoll WALL, WALL, WALL, WALL ; 3c
 	tilecoll WALL, DOOR, FLOOR, FLOOR ; 3d
-	tilecoll DOOR, WALL, WALL, WALL ; 3e
+	tilecoll DOOR, WALL, FLOOR, WALL ; 3e
 	tilecoll WALL, WALL, WALL, WALL ; 3f
 	tilecoll WALL, WALL, FLOOR, WALL ; 40
+	tilecoll HEADBUTT_TREE, FLOOR, FLOOR, FLOOR ; 41

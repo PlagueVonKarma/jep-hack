@@ -833,6 +833,7 @@ ENDM
 	map_attributes OldCityFamilyHouse, OLD_CITY_FAMILY_HOUSE, $00, 0
 	map_attributes SepiaSchool, SEPIA_SCHOOL, $00, 0
 	map_attributes OldCityGym, OLD_CITY_GYM, $00, 0
+	map_attributes OldCityMuseum, OLD_CITY_MUSEUM, $00, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	

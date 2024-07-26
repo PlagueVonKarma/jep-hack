@@ -590,6 +590,7 @@ INCLUDE "maps/Route66WhiteCityGate.asm"
 
 SECTION "Map Scripts 30", ROMX
 INCLUDE "maps/OldCityGym.asm"
+INCLUDE "maps/OldCityMuseum.asm"
 
 SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"
