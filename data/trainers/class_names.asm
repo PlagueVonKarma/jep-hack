@@ -92,4 +92,5 @@ TrainerClassNames::
 	li "EXECUTIVE"
 	li "EXECUTIVE"
 	li "PROFESSOR"
+	li "ELDER"
 	assert_list_length NUM_TRAINER_CLASSES

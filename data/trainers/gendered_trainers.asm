@@ -36,6 +36,7 @@ MaleTrainers:
 	db SOLDIER
 	db SPORTSMAN
 	db AEROFOSSIL
+	db ELDER
 .End
 
 FemaleTrainers:

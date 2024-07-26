@@ -645,6 +645,11 @@ ENDM
 	map_const SEPIA_SCHOOL,                  			     4,  8 ; 7
 	map_const OLD_CITY_GYM,									 6, 10 ; 8
 	map_const OLD_CITY_MUSEUM,								 8,  3 ; 9
+	map_const POKEMON_PAGODA_1F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_2F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_3F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_4F,							 5,  5 ; 10
+	map_const POKEMON_PAGODA_5F,							 3,  3 ; 10
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 37

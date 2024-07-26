@@ -635,19 +635,31 @@ DEF KRIS EQU __trainer_class__
 	const PING
 	const EDMOND
 	const NEAL
-	const LI
 	const GAKU
 	const MASA
 	const KOJI
+	
+	; New Sages for the Pokemon Pagoda.
+	; Given Li, Chow, Jin, and Ping are Chinese names, I decided to adapt it here.
+	; I also added the French Crystal Wise Trio's names; Raoh, and Shuu, which were Fist of the North Star references. Because it's just kind of cool. Ken already exists, so I instead went with Gen, the name of a Chinese Street Fighter character.
+	const MING
+	const WEI
+	const LANG
+	const HUANG
+	const GEN
+	const RAOH
+	const SHUU
+	const SHENG
 
 	trainerclass MEDIUM ; 39
 	const MARTHA
 	const GRACE
-	const BETHANY ; unused
-	const MARGRET ; unused
-	const ETHEL ; unused
+	const BETHANY ; unused, now Pagoda 2F Medium
+	const MARGRET ; unused, now Pagoda 2F Medium
+	const ETHEL ; unused, now Pagoda 2F Medium
 	const REBECCA
 	const DORIS
+	const ELSIE ; Pagoda 2F Mediums
 
 	trainerclass BOARDER ; 3a
 	const RONALD
@@ -793,6 +805,10 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass PROFBLUE
 	const PROFBLUE1
+	
+	trainerclass ELDER
+	const LI
+	const KONG
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

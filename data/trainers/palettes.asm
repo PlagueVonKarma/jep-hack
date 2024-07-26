@@ -101,6 +101,7 @@ INCBIN "gfx/trainers/kurt.gbcpal", middle_colors
 INCBIN "gfx/trainers/ariana.gbcpal", middle_colors
 INCBIN "gfx/trainers/archer.gbcpal", middle_colors
 INCBIN "gfx/trainers/blue_professor.gbcpal", middle_colors
+INCBIN "gfx/trainers/sage.gbcpal", middle_colors ; elder
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"

@@ -201,12 +201,12 @@ OldCity_MapEvents:
 	warp_event 27, 12, OLD_CITY_GYM, 1 ; gym right
 	warp_event 26, 12, OLD_CITY_GYM, 1 ; gym left
 	warp_event  5, 12, OLD_CITY_MUSEUM, 1 ; Museum(?) right
-	warp_event  4, 12, OLD_CITY_MUSEUM, 1 ; Museum(?) left
-	warp_event 12, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda right
-	warp_event 11, 16, DEBUG_ROOM, 1 ; Pokemon Pagoda left
+	warp_event  4, 12, OLD_CITY_MUSEUM, 2 ; Museum(?) left
+	warp_event 12, 16, POKEMON_PAGODA_1F, 1 ; Pokemon Pagoda right
+	warp_event 11, 16, POKEMON_PAGODA_1F, 2 ; Pokemon Pagoda left
 	warp_event  3, 31, HONEY_GRANDMAS_HOUSE, 1
 	warp_event 27, 28, OLD_CITY_POKECENTER_1F, 1
-	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 1
+	warp_event 30, 20, OLD_CITY_EARLS_HOUSE, 2
 	warp_event 10, 26, OLD_CITY_FAMILY_HOUSE, 1
 ; considering a tearoom where the waiters are passive-aggressive. classic kyoto.
 	def_coord_events

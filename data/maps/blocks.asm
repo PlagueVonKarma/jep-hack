@@ -1246,3 +1246,18 @@ OldCityGym_Blocks:
 	
 OldCityMuseum_Blocks:
 	INCBIN "maps/OldCityMuseum.ablk"
+	
+PokemonPagoda1F_Blocks:
+	INCBIN "maps/PokemonPagoda1F.ablk"
+
+PokemonPagoda2F_Blocks:
+	INCBIN "maps/PokemonPagoda2F.ablk"
+
+PokemonPagoda3F_Blocks:
+	INCBIN "maps/PokemonPagoda3F.ablk"
+
+PokemonPagoda4F_Blocks:
+	INCBIN "maps/PokemonPagoda4F.ablk"
+
+PokemonPagoda5F_Blocks:
+	INCBIN "maps/PokemonPagoda5F.ablk"
