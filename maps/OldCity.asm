@@ -26,11 +26,11 @@ HoneyGrandmaSignText:
 	line "house"
 	done
 
-OldCityBillsHouseSignScript:
-	jumptext OldCityBillsHouseSignText
+OldCityEarlsHouseSignScript:
+	jumptext OldCityEarlsHouseSignText
 
-OldCityBillsHouseSignText:
-	text "BILL'S house"
+OldCityEarlsHouseSignText:
+	text "EARL'S house"
 	done
 
 OldCityTrainerSchoolSignScript:
@@ -45,7 +45,7 @@ OldCityGymSignScript:
 	jumptext OldCityGymSignText
 
 OldCityGymSignText:
-	text "OLD CITY"
+	text "SEPIA CITY"
 	line "#MON GYM"
 	para "LEADER: WALKER"
 	
@@ -215,7 +215,7 @@ OldCity_MapEvents:
 	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
 	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
 	bg_event  8, 14, BGEVENT_READ, PokemonPagodaSignScript
-	bg_event 26, 20, BGEVENT_READ, OldCityBillsHouseSignScript
+	bg_event 26, 20, BGEVENT_READ, OldCityEarlsHouseSignScript
 	bg_event 28, 14, BGEVENT_READ, OldCityGymSignScript
 	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
 	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign
