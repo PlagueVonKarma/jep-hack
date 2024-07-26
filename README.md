@@ -21,7 +21,6 @@ With respect to Pokemon from the May 1998 Sprite Cache, creative liberties based
 Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 
 # Changes
-## New Features
 - There is now an enby character option named Topaz, purple-themed.
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
@@ -40,12 +39,12 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 	- 24% SOFT_SAND
 	- 48% PEARL
 	- 64% BRICK_PIECE
-
-# New things
-- 11 new Trainer classes, including;
+- Many new Trainer classes, including;
 	- RBY classes not in GSC, such as the Rocker, Channeler, and even the beta Firefighter
 	- Prototype GSC classes such as the Male Teacher, Sportsman, and Soldier
 	- The Painter from FRLG!
+	- The Elder from HGSS, featuring the NTSC Sage sprite.
+	- Decensor is applied to the Fisher, Beauty, Female Swimmer, Medium, and Sage sprites, to match the Japanese version. Let Tully have a puff!
 - Many evolution stones have been added to accomodate the Pokemon featured here, including the Heart and Poison Stones from the SpaceWorld demo, and the Peat Block!
 - The Fairy Feather from Scarlet and Violet has been added to accomodate the Fairy type.
 - The Antique Pot has been added to accomodate a Shuckle evolution!
