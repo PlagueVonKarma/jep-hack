@@ -23,14 +23,14 @@ HoneyGrandmaSignScript:
 
 HoneyGrandmaSignText:
 	text "HONEY GRANDMA's"
-	line "house"
+	line "HOUSE"
 	done
 
 OldCityEarlsHouseSignScript:
 	jumptext OldCityEarlsHouseSignText
 
 OldCityEarlsHouseSignText:
-	text "EARL'S house"
+	text "EARL'S HOUSE"
 	done
 
 OldCityTrainerSchoolSignScript:
@@ -58,7 +58,7 @@ OldCitySouthSignScript:
 	jumptext OldCitySouthSignText
 
 OldCitySouthSignText:
-	text "SOUTH: ROUTE 50"
+	text "SOUTH: ROUTE 49"
 	done
 
 ; Gets its name from sepia often being used to show the romantic old days, while doubling as an orangey, autumny colour.

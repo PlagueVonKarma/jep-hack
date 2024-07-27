@@ -93,4 +93,5 @@ BTTrainerClassSprites:
 	db SPRITE_RED		; Archer
 	db SPRITE_RED		; Prof.Blue
 	db SPRITE_SAGE		; ELDER
+	db SPRITE_ROCKER	; JACK
 	assert_table_length NUM_TRAINER_CLASSES

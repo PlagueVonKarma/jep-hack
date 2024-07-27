@@ -110,7 +110,7 @@ SilentHillsSign1:
 	jumptext SilentHillsSign1Text
 
 SilentHillsSign1Text:
-	text "CAL's House"
+	text "CAL's HOUSE"
 	done
 
 SilentHillsSign2:
@@ -118,7 +118,7 @@ SilentHillsSign2:
 
 SilentHillsSign2Text:
 	text "SILENT HILLS"
-	line "Ever peaceful..."
+	line "Ever peaceful…"
 	done
 
 SilentHillsSign3:
@@ -133,14 +133,14 @@ SilentHillsSign4:
 
 SilentHillsSign4Text:
 	text "Huh? The door is"
-	line "closed..."
+	line "closed…"
 	done
 
 SilentHillsSign5:
 	jumptext SilentHillsSign5Text
 
 SilentHillsSign5Text:
-	text "<RIVAL>'s House"
+	text "<RIVAL>'s HOUSE"
 	done
 
 SilentHillsPokecenterSign:

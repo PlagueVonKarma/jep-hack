@@ -95,4 +95,5 @@ TrainerGroups:
 	dba ArcherGroup
 	dba ProfBlueGroup
 	dba ElderGroup
+	dba JackGroup
 	assert_table_length NUM_TRAINER_CLASSES

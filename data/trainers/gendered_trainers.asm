@@ -37,6 +37,7 @@ MaleTrainers:
 	db SPORTSMAN
 	db AEROFOSSIL
 	db ELDER
+	db JACK
 .End
 
 FemaleTrainers:

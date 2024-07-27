@@ -600,6 +600,8 @@ INCLUDE "maps/LavenderCryptSet1.asm"
 INCLUDE "maps/LavenderCryptSet2.asm"
 INCLUDE "maps/LavenderCryptSet3.asm"
 INCLUDE "maps/LavenderCryptDokuroarsRoom.asm"
+INCLUDE "maps/Route50.asm"
+INCLUDE "maps/JackysHouse.asm"
 
 SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"

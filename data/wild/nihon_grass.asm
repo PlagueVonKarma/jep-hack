@@ -171,5 +171,33 @@ NihonGrassWildMons:
 	dbw 32, MARILL
 	dbw 35, SKARMORY
 	end_grass_wildmons
-
+	
+	def_grass_wildmons ROUTE_50
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, CATERPIE
+	dbw 31, METAPOD
+	dbw 30, CATERPIE
+	dbw 31, METAPOD
+	dbw 32, PIDGEY
+	dbw 32, CATERPIE
+	dbw 35, SUNFLORA
+	; day
+	dbw 30, CATERPIE
+	dbw 31, PIDGEY
+	dbw 30, RATTATA
+	dbw 31, RATTATA
+	dbw 32, RATTATA
+	dbw 32, CATERPIE
+	dbw 35, GIRAFARIG
+	; nite
+	dbw 30, RATTATA
+	dbw 31, HOOTHOOT
+	dbw 30, ODDISH
+	dbw 31, HOOTHOOT
+	dbw 32, ODDISH
+	dbw 32, ODDISH
+	dbw 35, SKARMORY
+	end_grass_wildmons
+	
 	db -1 ; end

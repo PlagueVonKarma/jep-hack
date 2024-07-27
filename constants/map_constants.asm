@@ -650,10 +650,12 @@ ENDM
 	map_const OLD_CITY_GYM,									 6, 10 ; 8
 	map_const OLD_CITY_MUSEUM,								 8,  3 ; 9
 	map_const POKEMON_PAGODA_1F,							 5,  5 ; 10
-	map_const POKEMON_PAGODA_2F,							 5,  5 ; 10
-	map_const POKEMON_PAGODA_3F,							 5,  5 ; 10
-	map_const POKEMON_PAGODA_4F,							 5,  5 ; 10
-	map_const POKEMON_PAGODA_5F,							 3,  3 ; 10
+	map_const POKEMON_PAGODA_2F,							 5,  5 ; 11
+	map_const POKEMON_PAGODA_3F,							 5,  5 ; 12
+	map_const POKEMON_PAGODA_4F,							 5,  5 ; 13
+	map_const POKEMON_PAGODA_5F,							 3,  3 ; 14
+	map_const ROUTE_50,							 			15,  9 ; 15
+	map_const JACKYS_HOUSE,									 4,  4 ; 16
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 37

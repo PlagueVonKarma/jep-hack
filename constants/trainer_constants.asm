@@ -126,6 +126,8 @@ DEF KRIS EQU __trainer_class__
 	const JASON
 	const JOEY4
 	const JOEY5
+	const LUC
+	const HUW
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -192,7 +194,7 @@ DEF KRIS EQU __trainer_class__
 	const DANA1
 	const ELLEN
 	const CONNIE2 ; unused
-	const CONNIE3 ; unused
+	const LOWRI ; previously CONNIE3
 	const DANA2
 	const DANA3
 	const DANA4
@@ -259,8 +261,8 @@ DEF KRIS EQU __trainer_class__
 	const JESSICA ; unused
 	const RACHAEL ; unused
 	const ANGELICA ; unused
-	const KENDRA ; unused
-	const VERONICA ; unused
+;	const KENDRA ; unused
+;	const VERONICA ; unused
 	const JULIA
 	const THERESA
 	const VALERIE
@@ -809,6 +811,9 @@ DEF KRIS EQU __trainer_class__
 	trainerclass ELDER
 	const LI
 	const KONG
+	
+	trainerclass JACK
+	const JACKY
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

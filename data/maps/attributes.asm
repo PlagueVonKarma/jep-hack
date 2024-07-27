@@ -374,17 +374,6 @@ ENDM
 	map_attributes Route10South, ROUTE_10_SOUTH, $2c, NORTH | SOUTH
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
-	
-	map_attributes SilentHills, SILENT_HILLS, $05, EAST | WEST ; Add Prince connections later
-	connection west, Route49, ROUTE_49, 0
-	connection east, Route66, ROUTE_66, 0
-	
-	map_attributes Route49, ROUTE_49, $05, EAST | WEST
-	connection east, SilentHills, SILENT_HILLS, $00, 0
-	connection west, Route49_2, ROUTE_49_2, $05, 0
-	
-	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST
-	connection east, Route49, ROUTE_49, $05, 0
 
 	map_attributes Route23, ROUTE_23, $0f, 0
 	map_attributes SproutTower1F, SPROUT_TOWER_1F, $00, 0
@@ -815,10 +804,21 @@ ENDM
 	map_attributes WinnersPathOutside, WINNERS_PATH_OUTSIDE, $05, NORTH
 	connection north, Route66, ROUTE_66, 0
 	
+	map_attributes SilentHills, SILENT_HILLS, $05, EAST | WEST ; Add Prince connections later
+	connection west, Route49, ROUTE_49, 0
+	connection east, Route66, ROUTE_66, 0
+	
+	map_attributes Route49, ROUTE_49, $05, EAST | WEST
+	connection east, SilentHills, SILENT_HILLS, $00, 0
+	connection west, Route49_2, ROUTE_49_2, $05, 0
+	
+	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST
+	connection east, Route49, ROUTE_49, $05, 0
+	
 	map_attributes Route66, ROUTE_66, $05, WEST | SOUTH
 	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
-	
 	connection west, SilentHills, SILENT_HILLS, 0
+	
 	map_attributes QuietCave, QUIET_CAVE, $76, 0
 	map_attributes BlueLab, BLUE_LAB, $00, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
@@ -826,7 +826,11 @@ ENDM
 	map_attributes CalsHouse1F, CALS_HOUSE_1F, $00, 0
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
 	
-	map_attributes OldCity, OLD_CITY, $00, 0 ; will have a west exit.
+	map_attributes OldCity, OLD_CITY, $00, WEST
+	connection west, Route50, ROUTE_50, 4
+	
+	map_attributes Route50, ROUTE_50, $00, EAST
+	connection east, OldCity, OLD_CITY, -4
 	
 	map_attributes Route49OldCityGate1F, ROUTE_49_OLD_CITY_GATE_1F, $00, 0
 	map_attributes Route49OldCityGate2F, ROUTE_49_OLD_CITY_GATE_2F, $00, 0
@@ -843,6 +847,7 @@ ENDM
 	map_attributes PokemonPagoda3F, POKEMON_PAGODA_3F, $00, 0
 	map_attributes PokemonPagoda4F, POKEMON_PAGODA_4F, $00, 0
 	map_attributes PokemonPagoda5F, POKEMON_PAGODA_5F, $00, 0
+	map_attributes JackysHouse, JACKYS_HOUSE, $00, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	

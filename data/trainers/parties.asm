@@ -935,6 +935,26 @@ YoungsterGroup:
 	dw RATICATE
 	dw HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
 	db -1 ; end
+	
+	next_list_item ; YOUNGSTER (14)
+	db "LUC@", TRAINERTYPE_MOVES
+	db 45
+	dw ARIADOS
+	dw SLUDGE_BOMB, PSYCHIC_M, PURSUIT, AGILITY
+	db 45
+	dw RATICATE
+	dw HYPER_FANG, QUICK_ATTACK, SUPER_FANG, SHADOW_BALL
+	db -1 ; end
+	
+	next_list_item ; YOUNGSTER (14)
+	db "HUW@", TRAINERTYPE_MOVES
+	db 45
+	dw SANDSLASH
+	dw SWORDS_DANCE, EARTHQUAKE, ROCK_SLIDE, METAL_CLAW
+	db 45
+	dw QUAGSIRE
+	dw EARTHQUAKE, SURF, HEADBUTT, AMNESIA
+	db -1 ; end
 
 	end_list_items
 
@@ -1903,17 +1923,17 @@ BeautyGroup:
 	dw SENTRET
 	db -1 ; end
 
-	next_list_item ; BEAUTY (12)
-	db "KENDRA@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
-	db -1 ; end
+;	next_list_item ; BEAUTY (12)
+;	db "KENDRA@", TRAINERTYPE_NORMAL
+;	db 15
+;	dw SENTRET
+;	db -1 ; end
 
-	next_list_item ; BEAUTY (13)
-	db "VERONICA@", TRAINERTYPE_NORMAL
-	db 15
-	dw SENTRET
-	db -1 ; end
+;	next_list_item ; BEAUTY (13)
+;	db "VERONICA@", TRAINERTYPE_NORMAL
+;	db 15
+;	dw SENTRET
+;	db -1 ; end
 
 	next_list_item ; BEAUTY (14)
 	db "JULIA@", TRAINERTYPE_NORMAL
