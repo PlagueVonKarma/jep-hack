@@ -809,11 +809,11 @@ ENDM
 	connection east, Route66, ROUTE_66, 0
 	
 	map_attributes Route49, ROUTE_49, $05, EAST | WEST
-	connection east, SilentHills, SILENT_HILLS, $00, 0
-	connection west, Route49_2, ROUTE_49_2, $05, 0
+	connection west, Route49_2, ROUTE_49_2, -10
+	connection east, SilentHills, SILENT_HILLS, 0
 	
-	map_attributes Route49_2, ROUTE_49_2, $05, 0, EAST
-	connection east, Route49, ROUTE_49, $05, 0
+	map_attributes Route49_2, ROUTE_49_2, $05, EAST
+	connection east, Route49, ROUTE_49, 10
 	
 	map_attributes Route66, ROUTE_66, $05, WEST | SOUTH
 	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
