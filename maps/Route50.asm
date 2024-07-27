@@ -118,7 +118,7 @@ Route50_MapEvents:
 
 	def_warp_events
 	warp_event  6,  5, DEBUG_ROOM, 1 ; West Gate
-	warp_event 15,  4, DEBUG_ROOM, 1 ; Game House
+	warp_event 15,  4, JACKYS_HOUSE, 1 ; Game House
 
 	def_coord_events
 

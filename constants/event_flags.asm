@@ -1121,7 +1121,7 @@
 	const EVENT_BEAT_ARCHER2
 	const EVENT_BEAT_ARCHER3
 	const EVENT_BEAT_PROFBLUE
-	const EVENT_BEAT_JACKY
+	const EVENT_BEAT_SHINJUKU_JACKY_ONCE
 ; Unused: next 76 events
 
 	const_next 1600

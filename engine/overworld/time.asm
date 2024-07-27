@@ -7,6 +7,7 @@ ClearDailyTimers:
 	ld [wLuckyNumberDayTimer], a
 	ld [wSweetHoneyTimer], a
 	ld [wDailyResetTimer], a
+	ld [wJackyTimer], a ; This could use an engine flag I think but mehhhhhhhh
 	ret
 
 InitCallReceiveDelay::

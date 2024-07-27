@@ -133,6 +133,8 @@ EngineFlags:
 	engine_flag wDailyFlags2, DAILYFLAGS2_INDIGO_PLATEAU_RIVAL_FIGHT_F
 	engine_flag wDailyFlags2, DAILYFLAGS2_MOVE_TUTOR_F
 	engine_flag wDailyFlags2, DAILYFLAGS2_BUENAS_PASSWORD_F
+	
+	engine_flag wJackyTimer, DAILYFLAG_JACKY_TIMER
 
 	engine_flag wSwarmFlags, SWARMFLAGS_BUENAS_PASSWORD_F
 	engine_flag wSwarmFlags, SWARMFLAGS_GOLDENROD_DEPT_STORE_SALE_F

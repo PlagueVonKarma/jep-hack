@@ -1276,3 +1276,6 @@ PokemonPagoda5F_Blocks:
 
 Route50_Blocks:
 	INCBIN "maps/Route50.ablk"
+
+JackysHouse_Blocks:
+	INCBIN "maps/JackysHouse.ablk"

@@ -118,7 +118,7 @@ SilentHillsSign2:
 
 SilentHillsSign2Text:
 	text "SILENT HILLS"
-	line "Ever peaceful..."
+	line "Ever peaceful…"
 	done
 
 SilentHillsSign3:
@@ -133,7 +133,7 @@ SilentHillsSign4:
 
 SilentHillsSign4Text:
 	text "Huh? The door is"
-	line "closed..."
+	line "closed…"
 	done
 
 SilentHillsSign5:

@@ -305,6 +305,9 @@ DEF CELEBIEVENT_FOREST_IS_RESTLESS_F EQU 2
 	const DAILYFLAGS2_MOVE_TUTOR_F                        ; 6
 	const DAILYFLAGS2_BUENAS_PASSWORD_F                   ; 7
 
+; wJackyTimer::
+	const DAILYFLAG_JACKY_TIMER
+
 ; wSwarmFlags::
 	const_def
 	const SWARMFLAGS_BUENAS_PASSWORD_F           ; 0

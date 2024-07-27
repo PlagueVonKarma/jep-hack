@@ -50,15 +50,16 @@
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 31
 	tilecoll WALL, WINDOW, WALL, WALL ; 32
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 33
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 34
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 35
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 36
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 37
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 38
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 39
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3a
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3b
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3c
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3d
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3e
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3f
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 34
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 35
+	tilecoll WALL, WALL, WALL, WALL ; 36
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 37
+	tilecoll WINDOW, WALL, FLOOR, FLOOR ; 38
+	tilecoll WALL, WINDOW, FLOOR, FLOOR ; 39
+	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 3a
+	tilecoll WALL, WALL, TV, FLOOR ; 3b
+	tilecoll WALL, WALL, FLOOR, RADIO ; 3c
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 3d
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 3e
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 3f
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 40
