@@ -95,4 +95,5 @@ BTTrainerClassGenders:
 	db FEMALE ; ARCHER
 	db MALE ; PROF.BLUE
 	db MALE ; ELDER
+	db MALE ; JACK
 	assert_table_length NUM_TRAINER_CLASSES

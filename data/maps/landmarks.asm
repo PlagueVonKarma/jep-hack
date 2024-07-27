@@ -137,6 +137,7 @@ Landmarks:
 	landmark 76, 108, QuietCaveName
 	landmark 76, 100, OldCityName
 	landmark 76, 100, PokemonPagodaName
+	landmark 60, 100, Route50Name
 	landmark 140, 60, BlueForestName
 	landmark 108, 108, Route66Name
 	landmark 124, 108, WhiteCityName
@@ -250,6 +251,7 @@ SilentHillsName:     db "SILENT¯HILLS@"
 UnknownName:         db "?????@"
 Route66Name:         db "ROUTE 66@"
 Route49Name:         db "ROUTE 49@"
+Route50Name:		 db "ROUTE 50@"
 QuietCaveName:       db "QUIET¯CAVE@"
 OldCityName:		 db "SEPIA¯CITY@"
 PokemonPagodaName:	 db "#MON¯PAGODA@"

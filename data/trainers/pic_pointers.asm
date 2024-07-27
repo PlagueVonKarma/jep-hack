@@ -95,4 +95,5 @@ TrainerPicPointers::
 	dba ArcherPic
 	dba ProfBluePic
 	dba ElderPic
+	dba JackPic
 	assert_table_length NUM_TRAINER_CLASSES

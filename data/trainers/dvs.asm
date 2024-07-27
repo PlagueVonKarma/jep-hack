@@ -94,4 +94,5 @@ TrainerClassDVs:
 	dn 13, 12, 13, 13 ; ARCHER
 	dn 13, 12, 13, 13 ; PROF.BLUE
 	dn 12, 15, 13, 13 ; ELDER (HP Ground)
+	dn 12, 15, 13, 13 ; JACK (HP Ground)
 	assert_table_length NUM_TRAINER_CLASSES

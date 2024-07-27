@@ -654,6 +654,7 @@ ENDM
 	map_const POKEMON_PAGODA_3F,							 5,  5 ; 10
 	map_const POKEMON_PAGODA_4F,							 5,  5 ; 10
 	map_const POKEMON_PAGODA_5F,							 3,  3 ; 10
+	map_const ROUTE_50,							 			15,  9 ; 10
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 37

@@ -1273,3 +1273,6 @@ PokemonPagoda4F_Blocks:
 
 PokemonPagoda5F_Blocks:
 	INCBIN "maps/PokemonPagoda5F.ablk"
+
+Route50_Blocks:
+	INCBIN "maps/Route50.ablk"

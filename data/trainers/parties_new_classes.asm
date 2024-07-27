@@ -216,10 +216,12 @@ LassGroup:
 	dw MARILL
 	db -1 ; end
 
-	next_list_item ; LASS (13)
-	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21
-	dw MARILL
+	next_list_item ; LASS (13) - originally Connie 3
+	db "LOWRI@", TRAINERTYPE_NORMAL
+	db 45
+	dw BELLEDAM
+	db 45
+	dw RAITORA
 	db -1 ; end
 
 	next_list_item ; LASS (14)
@@ -698,6 +700,24 @@ ElderGroup:
 	db 65
 	dw GOROCHU
 	dw BELLY_DRUM, THUNDERBOLT, BODY_SLAM, SUBMISSION
+	db -1 ; end
+	end_list_items
+
+JackGroup:
+	next_list_item
+	db "JACKY@", TRAINERTYPE_MOVES
+	db 50
+	dw AMANOBI ; Kage-Maru
+	dw METAL_CLAW, SPIKES, FIRE_SPIN, PETAL_DANCE
+	db 50
+	dw ANNIHILAPE
+	dw CROSS_CHOP, ROCK_HEAD, MEDITATE, HEADBUTT
+	db 50
+	dw PORYGON_Z
+	dw LOCK_ON, ZAP_CANNON, RECOVER, TRI_ATTACK
+	db 50
+	dw HITMONCHAN
+	dw MACH_PUNCH, COUNTER, DETECT, HI_JUMP_KICK
 	db -1 ; end
 	end_list_items
 

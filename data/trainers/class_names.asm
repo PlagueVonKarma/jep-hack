@@ -93,4 +93,5 @@ TrainerClassNames::
 	li "EXECUTIVE"
 	li "PROFESSOR"
 	li "ELDER"
+	li "SHINJUKU" ; JACK
 	assert_list_length NUM_TRAINER_CLASSES
