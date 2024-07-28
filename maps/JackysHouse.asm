@@ -33,11 +33,11 @@ JackysHouseJackyScript:
 	closetext
 	; fallthrough
 .firstFight
+	opentext
 	yesorno
 	iffalse .No
 	sjump .Yes
 .No
-	opentext
 	writetext JackyNo
 	waitbutton
 	closetext
@@ -180,7 +180,7 @@ JackySNESText:
 	done
 
 JackyVirtualBoy:
-	jumptext JackyVirtualBoy
+	jumptext JackyVirtualBoyText
 
 JackyVirtualBoyText:
 	text "It's a VIRTUAL"
@@ -197,7 +197,7 @@ JackyVirtualBoyText:
 	done
 
 JackyTVFightersDestiny:
-	jumptext JackyTVFightersDestiny
+	jumptext JackyTVFightersDestinyText
 
 ; Virtua Fighter 3 never made it to the N64, but Fighters Destiny is basically the same thing.
 JackyTVFightersDestinyText:
@@ -210,7 +210,7 @@ JackyTVFightersDestinyText:
 	done
 
 JackyTVStreetFighterII:
-	jumptext JackyTVStreetFighterII
+	jumptext JackyTVStreetFighterIIText
 
 ; Jacky was a big Virtua Fighter nerd, so I imagine he'd have two fighting games running at once.
 JackyTVStreetFighterIIText:

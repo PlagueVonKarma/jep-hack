@@ -49,6 +49,7 @@ CutTreeBlockPointers:
 ; facing block, replacement block, animation
 	db $03, $02, 1 ; grass
 	db $6d, $88, 0 ; tree
+	db $11, $10, 0 ; tree
 	db -1 ; end
 
 .oldCity:
