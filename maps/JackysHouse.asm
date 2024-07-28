@@ -244,7 +244,7 @@ JackyDDRPosterText:
 	done
 
 JackyPCStarcraft:
-	jumptext JackyPCStarcraft
+	jumptext JackyPCStarcraftText
 
 JackyPCStarcraftText: ; Brood War hadn't long come out, and was really popular in Korea at least. They made the Zerg rush!
 	text "There's an Eng-"
