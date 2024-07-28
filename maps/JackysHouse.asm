@@ -21,19 +21,14 @@ JackysHouseJackyScript:
 	opentext
 	iftrue .beatOnce
 	writetext JackyWelcomeText
-	waitbutton
-	closetext
 	sjump .firstFight
 .beatOnce
 	checkflag ENGINE_JACKY_TIMER
 	iftrue .tuckeredOut
 	opentext
 	writetext JackyPostBeat
-	waitbutton
-	closetext
 	; fallthrough
 .firstFight
-	opentext
 	yesorno
 	iffalse .No
 	sjump .Yes
