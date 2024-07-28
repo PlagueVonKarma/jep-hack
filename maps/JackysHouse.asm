@@ -59,7 +59,6 @@ JackysHouseJackyScript:
 	closetext
 	sjump .end
 .tuckeredOut
-	opentext
 	writetext JackyTiredText
 	waitbutton
 	closetext
