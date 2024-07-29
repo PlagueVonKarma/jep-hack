@@ -38,6 +38,18 @@ TreeMonMaps:
 	treemon_map BLACKTHORN_CITY,           TREEMON_SET_CITY
 	treemon_map SILVER_CAVE_OUTSIDE,       TREEMON_SET_CITY
 	treemon_map ILEX_FOREST,               TREEMON_SET_FOREST
+	treemon_map WINNERS_PATH_OUTSIDE,	   TREEMON_SET_ROUTE
+	treemon_map ROUTE_15,                  TREEMON_SET_KANTO
+	treemon_map ROUTE_14,                  TREEMON_SET_KANTO
+	treemon_map ROUTE_13,                  TREEMON_SET_KANTO
+	treemon_map ROUTE_12,                  TREEMON_SET_KANTO
+	treemon_map ROUTE_11,                  TREEMON_SET_KANTO
+	treemon_map ROUTE_4,                   TREEMON_SET_KANTO
+	treemon_map VIRIDIAN_FOREST,           TREEMON_SET_FOREST
+	treemon_map BATTLE_TOWER_OUTSIDE,      TREEMON_SET_CITY
+	treemon_map PEWTER_CITY,      		   TREEMON_SET_CITY
+	treemon_map VIRIDIAN_CITY,             TREEMON_SET_CITY
+	treemon_map ROUTE_1,                   TREEMON_SET_KANTO
 	db -1
 
 RockMonMaps:
