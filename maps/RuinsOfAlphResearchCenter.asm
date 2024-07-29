@@ -106,8 +106,7 @@ RuinsOfAlphResearchCenterScientist1Script:
 	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
 	
 	; This will be replaced with something in Sinjoh Ruins (eventually)
-	ld c, DECOFLAG_UNOWN_DOLL
-	farcall SetSpecificDecorationFlag
+	setevent EVENT_DECO_UNOWN_DOLL
 	opentext
 	writetext RoAGotUnownDoll
 	waitbutton

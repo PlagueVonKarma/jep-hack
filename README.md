@@ -62,6 +62,7 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 - Poke Balls now all have unique palettes.
 - The high friendship evolution threshold is now 170, making Friend Balls sufficient for instant evolution and hatching from Eggs takes minimal effort.
 - Items previously only obtainable via the Time Capsule are now distributed to specific Pokemon (5%: Polkadot Bow Snubbull, TwistedSpoon Kadabra, Metal Powder Ditto/Mimmeo, Light Ball Pikachu; 50%: Lucky Punch Chansey)
+- During the intro, when knowing the PokeGear instructions, you now immediately skip some of the text relating to it, making starting the game slightly less agonising.
 
 ## Map Changes
 Numerous new maps are available, featuring new locations, the iconic Sevii Islands, and the Nihon region!
@@ -128,6 +129,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
 - ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
 - Ferropexola/aforward9600: Time of day-based tileset palette code
+- Rangi42/polishedcrystal: [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal

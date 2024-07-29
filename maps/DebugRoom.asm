@@ -226,6 +226,144 @@ TrainerTestScript_BeatenText:
 	text "Test complete!"
 	done
 
+; Decoration shop scripts from Polished Crystal, tweaked and adapted.
+; https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm
+DebugDollShopScript:
+	faceplayer
+	opentext
+	writetext DebugDollShopDollVendorText
+.Start:
+	special PlaceMoneyTopRight
+	loadmenu .MenuData
+	verticalmenu
+	closewindow
+	ifequal $1, .MagikarpDoll
+	ifequal $2, .TentacoolDoll
+	ifequal $3, .UnownDoll
+	sjump DebugDollShop_CancelPurchaseScript ; We don't have "endtext" like polishedcrystal, so we use this.
+
+.MagikarpDoll:
+	checkmoney $0, 1400
+	ifequal $2, .NotEnoughMoney
+	checkevent EVENT_DECO_MAGIKARP_DOLL
+	iftrue .AlreadyBought
+	takemoney $0, 1400
+	setevent EVENT_DECO_MAGIKARP_DOLL
+	writetext DebugDollShopMagikarpDollText
+	playsound SFX_TRANSACTION
+	waitbutton
+	writetext DebugDollShopMagikarpDollSentText
+	waitbutton
+	sjump .Start
+
+.TentacoolDoll:
+	checkmoney $0, 5600
+	ifequal $2, .NotEnoughMoney
+	checkevent EVENT_DECO_TENTACOOL_DOLL
+	iftrue .AlreadyBought
+	takemoney $0, 5600
+	setevent EVENT_DECO_TENTACOOL_DOLL
+	playsound SFX_TRANSACTION
+	waitbutton
+	writetext DebugDollShopTentacoolDollSentText
+	waitbutton
+	sjump .Start
+
+.UnownDoll:
+	checkmoney $0, 11200
+	ifequal $2, .NotEnoughMoney
+	checkevent EVENT_DECO_UNOWN_DOLL
+	iftrue .AlreadyBought
+	takemoney $0, 11200
+	setevent EVENT_DECO_UNOWN_DOLL
+	writetext DebugDollShopUnownDollText
+	playsound SFX_TRANSACTION
+	waitbutton
+	writetext DebugDollShopUnownDollSentText
+	waitbutton
+	sjump .Start
+
+.NotEnoughMoney:
+	writetext DebugDollShopNoMoneyText
+	waitbutton
+	sjump .Start
+
+.AlreadyBought:
+	writetext DebugDollShopAlreadyBoughtText
+	waitbutton
+	sjump .Start
+
+.MenuData:
+	db $40 ; flags
+	db 02, 00 ; start coords
+	db 11, 19 ; end coords
+	dw .MenuData2
+	db 1 ; default option
+
+.MenuData2:
+	db $80 ; flags
+	db 4 ; items
+	db "MAGIKARP    ¥1400@"
+	db "TENTACOOL   ¥5600@"
+	db "UNOWN      ¥11200@"
+	db "CANCEL@"
+
+DebugDollShop_CancelPurchaseScript:
+	writetext DebugDollShopQuitText
+	waitbutton
+	closetext
+	end
+
+DebugDollShopQuitText:
+	text "Come again!"
+	done
+
+DebugDollShopDollVendorText:
+	text "Welcome! I have"
+	line "adorable dolls for"
+	cont "sale."
+	done
+
+DebugDollShopMagikarpDollText:
+	text "<PLAYER> bought"
+	line "MAGIKARP DOLL."
+	done
+
+DebugDollShopMagikarpDollSentText:
+	text "MAGIKARP DOLL"
+	line "was sent home."
+	done
+
+DebugDollShopTentacoolDollText:
+	text "<PLAYER> bought"
+	line "TENTACOOL DOLL."
+	done
+
+DebugDollShopTentacoolDollSentText:
+	text "TENTACOOL DOLL"
+	line "was sent home."
+	done
+
+DebugDollShopUnownDollText:
+	text "<PLAYER> bought"
+	line "UNOWN DOLL."
+	done
+
+DebugDollShopUnownDollSentText:
+	text "UNOWN DOLL"
+	line "was sent home."
+	done
+
+DebugDollShopNoMoneyText:
+	text "You can't afford"
+	line "that!"
+	done
+
+DebugDollShopAlreadyBoughtText:
+	text "You already have"
+	line "that!"
+	done
+
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
 
@@ -256,4 +394,5 @@ DebugRoom_MapEvents:
 	object_event 17, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugFlyScript, -1
 	object_event 16, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugDexScript, -1
 	object_event 19, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugItemScript, -1
-	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
+	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
+	object_event 20, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugDollShopScript, -1

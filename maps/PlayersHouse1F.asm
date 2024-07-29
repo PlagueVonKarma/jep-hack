@@ -64,11 +64,6 @@ MeetMomScript:
 	writetext ComeHomeForDSTText
 	yesorno
 	iffalse .ExplainPhone
-	sjump .KnowPhone
-
-.KnowPhone:
-	writetext KnowTheInstructionsText
-	promptbutton
 	sjump .FinishPhone
 
 .ExplainPhone:
@@ -262,14 +257,7 @@ ComeHomeForDSTText:
 	cont "the PHONE?"
 	done
 
-KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the #GEAR"
-
-	para "on and select the"
-	line "PHONE icon?"
-	done
-
+; Shifted these around so the initial tutorial isn't so agonising and...kind of weird.
 DontKnowTheInstructionsText:
 	text "I'll read the"
 	line "instructions."
@@ -277,17 +265,20 @@ DontKnowTheInstructionsText:
 	para "Turn the #GEAR"
 	line "on and select the"
 	cont "PHONE icon."
-	done
-
-InstructionsNextText:
-	text "Phone numbers are"
+	
+	para "Phone numbers are"
 	line "stored in memory."
 
 	para "Just choose a name"
 	line "you want to call."
+	
+	done
 
-	para "Gee, isn't that"
+InstructionsNextText:
+	text "Gee, aren't these"
 	line "convenient?"
+	
+	para "Have fun, sweetie!"
 	done
 
 HurryUpElmIsWaitingText:
