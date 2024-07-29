@@ -289,8 +289,9 @@ HurryUpElmIsWaitingText:
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "<MOM>: So, what"
+	line "was PROF.ELM's"
+	cont "errand?"
 
 	para "…"
 
@@ -303,7 +304,8 @@ SoWhatWasProfElmsErrandText:
 	done
 
 ImBehindYouText:
-	text "<PLAYER>, do it!"
+	text "<MOM>: <PLAYER>,"
+	line "do it!"
 
 	para "I'm behind you all"
 	line "the way!"
@@ -343,7 +345,8 @@ NeighborText:
 	done
 
 PlayersHouse1FStoveText:
-	text "Mom's specialty!"
+	text "<MOM>'s special-"
+	line "ty!"
 
 	para "CINNABAR VOLCANO"
 	line "BURGER!"
@@ -351,8 +354,8 @@ PlayersHouse1FStoveText:
 
 PlayersHouse1FSinkText:
 	text "The sink is spot-"
-	line "less. Mom likes it"
-	cont "clean."
+	line "less. <MOM>"
+	cont "likes it clean."
 	done
 
 PlayersHouse1FFridgeText:

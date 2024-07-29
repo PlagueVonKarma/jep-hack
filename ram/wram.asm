@@ -2882,6 +2882,7 @@ wMomsName::   ds NAME_LENGTH
 wRivalName::  ds NAME_LENGTH
 wRedsName::   ds NAME_LENGTH
 wGreensName:: ds NAME_LENGTH
+wSubstituteName:: ds NAME_LENGTH
 
 wSavedAtLeastOnce:: db
 wSpawnAfterChampion:: db
@@ -2894,8 +2895,6 @@ wStartSecond:: db
 
 wRTC:: ds 4
 
-	ds 4
-
 wDST::
 ; bit 7: dst
 	db
@@ -2907,11 +2906,7 @@ wGameTimeMinutes:: db
 wGameTimeSeconds:: db
 wGameTimeFrames::  db
 
-	ds 2
-
 wCurDay:: db
-
-	ds 1
 
 wObjectFollow_Leader:: db
 wObjectFollow_Follower:: db
@@ -2928,7 +2923,7 @@ endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
-	ds 6
+	ds 3
 
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0

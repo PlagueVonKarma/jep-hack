@@ -198,15 +198,18 @@ SentSomeToMomText:
 	text_decimal wBattleReward, 3, 6
 	text_start
 	line "for winning!"
-	cont "Sent some to MOM!"
+	cont "Sent some to"
+	cont "<MOM>!"
 	prompt
 
 SentHalfToMomText:
-	text "Sent half to MOM!"
+	text "Sent half to"
+	line "<MOM>!"
 	prompt
 
 SentAllToMomText:
-	text "Sent all to MOM!"
+	text "Sent all to"
+	line "<MOM>!"
 	prompt
 
 UnusedRivalLossText: ; unreferenced

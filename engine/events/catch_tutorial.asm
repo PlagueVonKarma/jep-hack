@@ -17,9 +17,9 @@ CatchTutorial::
 	dw .DudeTutorial
 
 .DudeTutorial:
-; Back up your name to your Mom's name.
+; Back up your name to a substitute slot, preserving the mother's name.
 	ld hl, wPlayerName
-	ld de, wMomsName
+	ld de, wSubstituteName
 	ld bc, NAME_LENGTH
 	call CopyBytes
 ; Copy Dude's name to your name
@@ -46,7 +46,7 @@ CatchTutorial::
 	pop af
 
 	ld [wOptions], a
-	ld hl, wMomsName
+	ld hl, wSubstituteName
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH
 	call CopyBytes

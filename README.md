@@ -22,6 +22,7 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 
 # Changes
 - There is now an enby character option named Topaz, purple-themed.
+- You can now name your mother, just as it was in Gold and Silver's prototype stages!
 - There is a new Nihon region, based on the 1998 version before it got scrapped for Johto. 
 - The Fairy-type is now available, though Pokemon are not retroactively changed, per the Kanto Expansion Pak philosophy (you wouldn't want a Fairy-type Granbull pre-split, would you?)
 - Fossil revival is back in town! Get fossils using Rock Smash and revive them at Ruins of Alph or the newly-added Pewter Museum of Science!

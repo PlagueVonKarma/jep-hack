@@ -113,6 +113,15 @@ CherrygroveRivalSceneNorth:
 	writetext CherrygroveRivalText_Seen
 	waitbutton
 	closetext
+	
+	; Restoring the mother naming scheme from SW97.
+	; Largely achieves the same thing as the original, down to being mocked.
+	special NameMom
+	opentext
+	writetext CherrygroveNameMom2
+	waitbutton
+	closetext
+	
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM
 	iftrue .Totodile
 	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
@@ -305,11 +314,11 @@ GuideGentMovement6:
 	step_end
 
 CherrygroveCity_RivalWalksToYou:
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
 	step_end
 
 CherrygroveCity_RivalPushesYouOutOfTheWay:
@@ -439,11 +448,28 @@ CherrygroveRivalText_Seen:
 	para "Don't you get what"
 	line "I'm saying?"
 
-	para "Well, I too, have"
-	line "a good #MON."
+	para "<……> <……> <……>"
+	
+	para "Hey. What do you"
+	line "call your MOM?"
+	done
 
-	para "I'll show you"
-	line "what I mean!"
+CherrygroveNameMom2:
+	text "Hahaha!"
+	
+	para "<MOM>?!"
+	
+	para "You really call"
+	line "her that?"
+	
+	para "Grow up! Pah!"
+	
+	para "<……> <……> <……>"
+	
+	para "Seems I struck"
+	line "a nerve."
+	
+	para "Come on, then!"
 	done
 
 RivalCherrygroveWinText:

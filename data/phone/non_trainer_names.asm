@@ -11,7 +11,7 @@ NonTrainerCallerNames:
 	assert_table_length NUM_NONTRAINER_PHONECONTACTS + 1
 
 .none:     db "----------@"
-.mom:      db "MOM:@"
+.mom:      db "<MOM>:@" ; Now uses the name you give your mom when talking to Silver.
 .bill:     db "BILL:@"
 .elm:      db "PROF.ELM:@"
 .bikeshop: db "BIKE SHOP:@"

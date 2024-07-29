@@ -1569,8 +1569,9 @@ _NPCTradeAfterText5:: ; Should not happen.
 	done
 
 _MomLeavingText1::
-	text "Wow, that's a cute"
-	line "#MON."
+	text "<MOM>: Wow, you"
+	line "got such a cute"
+	cont "#MON!"
 
 	para "Where did you get"
 	line "it?"
@@ -1614,9 +1615,9 @@ _MomLeavingText3::
 	done
 
 _MomIsThisAboutYourMoneyText::
-	text "Hi! Welcome home!"
-	line "You're trying very"
-	cont "hard, I see."
+	text "<MOM>: Hi! Welcome"
+	line "home! You're trying"
+	cont "very hard, I see."
 
 	para "I've kept your"
 	line "room tidy."
