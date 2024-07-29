@@ -9,6 +9,7 @@ TrainerClassNames::
 	li "LEADER"
 	li "LEADER"
 	li "LEADER"
+	li "PASSERBY" ; HGSS implementation
 	li "RIVAL"
 	li "#MON PROF."
 	li "ELITE FOUR"

@@ -11,6 +11,7 @@ TrainerPicPointers::
 	dba JasminePic
 	dba ChuckPic
 	dba ClairPic
+	dba PasserbyPic
 	dba Rival1Pic
 	dba PokemonProfPic
 	dba WillPic

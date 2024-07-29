@@ -128,7 +128,7 @@ CherrygroveRivalSceneNorth:
 	iftrue .Chikorita
 	winlosstext RivalCherrygroveWinText, RivalCherrygroveLossText
 	setlasttalked CHERRYGROVECITY_RIVAL
-	loadtrainer RIVAL1, RIVAL1_1_TOTODILE
+	loadtrainer PASSERBY, RIVAL1_1_TOTODILE
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
@@ -139,7 +139,7 @@ CherrygroveRivalSceneNorth:
 .Totodile:
 	winlosstext RivalCherrygroveWinText, RivalCherrygroveLossText
 	setlasttalked CHERRYGROVECITY_RIVAL
-	loadtrainer RIVAL1, RIVAL1_1_CHIKORITA
+	loadtrainer PASSERBY, RIVAL1_1_CHIKORITA
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
@@ -150,7 +150,7 @@ CherrygroveRivalSceneNorth:
 .Chikorita:
 	winlosstext RivalCherrygroveWinText, RivalCherrygroveLossText
 	setlasttalked CHERRYGROVECITY_RIVAL
-	loadtrainer RIVAL1, RIVAL1_1_CYNDAQUIL
+	loadtrainer PASSERBY, RIVAL1_1_CYNDAQUIL
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
@@ -161,7 +161,7 @@ CherrygroveRivalSceneNorth:
 .AfterVictorious:
 	playmusic MUSIC_RIVAL_AFTER
 	opentext
-	writetext CherrygroveRivalText_YouWon
+	writetext CherrygroveRivalText_AfterBattle
 	waitbutton
 	closetext
 	sjump .FinishRival
@@ -169,14 +169,35 @@ CherrygroveRivalSceneNorth:
 .AfterYourDefeat:
 	playmusic MUSIC_RIVAL_AFTER
 	opentext
-	writetext CherrygroveRivalText_YouLost
+	writetext CherrygroveRivalText_AfterBattle
 	waitbutton
 	closetext
 .FinishRival:
 	playsound SFX_TACKLE
 	applymovement PLAYER, CherrygroveCity_RivalPushesYouOutOfTheWay
 	turnobject PLAYER, LEFT
+	
+	; New HGSS-styled scene
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageOops
+	showemote EMOTE_SHOCK, CHERRYGROVECITY_RIVAL, 15
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageSearchForCard1
+	pause 10
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageSearchForCard2
+	pause 10
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageSearchForCard3
+	pause 10
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageSearchForCard4
+	pause 10
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageSearchForCard5
+	pause 10
+	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageCollectCard
+	turnobject PLAYER, UP
+	opentext
+	writetext RivalThatsMyCardText
+	waitbutton
+	closetext
 	applymovement CHERRYGROVECITY_RIVAL, CherrygroveCity_RivalExitsStageLeft
+	
 	disappear CHERRYGROVECITY_RIVAL
 	setscene SCENE_CHERRYGROVECITY_NOOP
 	special HealParty
@@ -325,6 +346,49 @@ CherrygroveCity_RivalPushesYouOutOfTheWay:
 	big_step DOWN
 	turn_head UP
 	step_end
+
+CherrygroveCity_RivalExitsStageOops:
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	step_end
+
+CherrygroveCity_RivalExitsStageSearchForCard1:
+	turn_head DOWN
+	step_end
+
+CherrygroveCity_RivalExitsStageSearchForCard2:
+	turn_head UP
+	step_end
+
+CherrygroveCity_RivalExitsStageSearchForCard3:
+	turn_head DOWN
+	step_end
+
+CherrygroveCity_RivalExitsStageSearchForCard4:
+	turn_head LEFT
+	step_end
+
+CherrygroveCity_RivalExitsStageSearchForCard5:
+	turn_head RIGHT
+	step_end
+
+CherrygroveCity_RivalExitsStageCollectCard:
+	big_step RIGHT
+	big_step RIGHT
+	big_step RIGHT
+	turn_head DOWN
+	step_end
+
+RivalThatsMyCardText:
+	text "Give that back!"
+	line "That's my TRAINER"
+	cont "CARD!"
+	
+	para "Gah! You saw my"
+	line "name<……>"
+	done
 
 CherrygroveCity_RivalExitsStageLeft:
 	big_step LEFT
@@ -477,10 +541,14 @@ RivalCherrygroveWinText:
 	line "happy you won?"
 	done
 
-CherrygroveRivalText_YouLost:
+; merged into one due to redundancy
+CherrygroveRivalText_AfterBattle:
 	text "<……> <……> <……>"
 
-	para "My name's ???."
+	para "Want to know who"
+	line "I am?"
+	
+	para "<……>"
 
 	para "I'm going to be"
 	line "the world's great-"
@@ -491,17 +559,6 @@ CherrygroveRivalText_YouLost:
 RivalCherrygroveLossText:
 	text "Humph. That was a"
 	line "waste of time."
-	done
-
-CherrygroveRivalText_YouWon:
-	text "<……> <……> <……>"
-
-	para "My name's ???."
-
-	para "I'm going to be"
-	line "the world's great-"
-	cont "est #MON"
-	cont "trainer."
 	done
 
 CherrygroveTeacherText_NoMapCard:

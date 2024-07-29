@@ -11,6 +11,7 @@ TrainerGroups:
 	dba JasmineGroup
 	dba ChuckGroup
 	dba ClairGroup
+	dba PasserbyGroup
 	dba Rival1Group
 	dba PokemonProfGroup
 	dba WillGroup

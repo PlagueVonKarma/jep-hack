@@ -158,25 +158,27 @@ ClairGroup:
 
 	end_list_items
 
-Rival1Group:
+PasserbyGroup:
 	next_list_item ; RIVAL1 (1)
-	db "?@", TRAINERTYPE_NORMAL
+	db "BOY@", TRAINERTYPE_NORMAL
 	db 5
 	dw CHIKORITA
 	db -1 ; end
 
 	next_list_item ; RIVAL1 (2)
-	db "?@", TRAINERTYPE_NORMAL
+	db "BOY@", TRAINERTYPE_NORMAL
 	db 5
 	dw CYNDAQUIL
 	db -1 ; end
 
 	next_list_item ; RIVAL1 (3)
-	db "?@", TRAINERTYPE_NORMAL
+	db "BOY@", TRAINERTYPE_NORMAL
 	db 5
 	dw TOTODILE
 	db -1 ; end
+	end_list_items
 
+Rival1Group:
 	next_list_item ; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL
 	db 12
