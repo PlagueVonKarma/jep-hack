@@ -189,3 +189,5 @@ SpecialsPointers::
 
 ; Restoring naming the mother.
 	add_special NameMom
+	add_special ShoveSafariBallsDownKrissThroat
+	add_special GiveKrisSneakers

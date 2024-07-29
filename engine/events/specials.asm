@@ -439,6 +439,16 @@ TradebackNPC:
 	farcall TradebackGuy
 	ret
 
-;FossilScientist:
-;	farcall FossilScientistGuy
-;	ret
+ShoveSafariBallsDownKrissThroat:
+	ld a, 20
+	ld [wSafariBallsRemaining], a
+	ret
+
+GiveKrisSneakers:
+	; Give the player 500 steps...I think.
+	;ld a, 250
+	ld a, 10 ; just to test the PA.
+	ld [wSafariZoneStepCount], a
+	ld [wSafariZoneStepCount+1], a
+	xor a
+	ret

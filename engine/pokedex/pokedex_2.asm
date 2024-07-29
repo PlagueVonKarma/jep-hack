@@ -223,9 +223,6 @@ DisplayDexEntry:
 	call PlaceFarString
 	ret
 
-POKeString: ; unreferenced
-	db "#@"
-
 GetDexEntryPointer:
 ; return dex entry pointer b:de
 	push hl

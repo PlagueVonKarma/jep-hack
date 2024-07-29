@@ -577,10 +577,6 @@ DetermineMoveOrder:
 	ret
 
 CheckSafariBattleOver:
-IF DEF(_DEBUG) ; Use to test the Safari Game in the Debug Room.
-	ld a, 20
-	ld [wSafariBallsRemaining], a
-ENDC
 	ld a, [wSafariBallsRemaining]
 	and a
 	ret nz
@@ -5060,7 +5056,7 @@ BattleMenu_SafariBall:
 	ld a, [wInBattleTowerBattle]
 	and a
 	jp nz, .ItemsCantBeUsed
-
+	
 	call LoadStandardMenuHeader
 
 	ld a, [wBattleType]
@@ -5120,10 +5116,12 @@ BattleMenu_SafariBall:
 	ld a, [wWildMon]
 	and a
 	jr nz, .run
+	
 	callfar CheckItemPocket
 	ld a, [wItemAttributeValue]
 	cp BALL
 	jr z, .ball
+	
 	call ClearBGPalettes
 	call ClearTilemap
 

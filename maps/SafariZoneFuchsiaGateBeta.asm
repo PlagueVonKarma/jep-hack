@@ -24,7 +24,11 @@ SafariZoneEntry:
 	waitbutton
 	closetext
 	opentext
-	verbosegiveitem SAFARI_BALL, 30
+	
+	; please shut up
+	special GiveKrisSneakers
+	special ShoveSafariBallsDownKrissThroat
+	
 	opentext 
 	writetext SafariZoneEntranceText3
 	waitbutton
@@ -34,13 +38,6 @@ SafariZoneEntry:
 	playsound SFX_ENTER_DOOR
 	warpfacing UP, SAFARI_ZONE_BETA, 9,  23
 	setevent EVENT_IN_SAFARI_ZONE
-	
-	; Give the player 500 steps...I think.
-	;ld a, 250
-	;ld a, 10 ; just to test the PA.
-	;ld [wSafariZoneStepCount], a
-	;ld [wSafariZoneStepCount+1], a
-	;xor a
 	
 	sjump .done
 .cantafford
