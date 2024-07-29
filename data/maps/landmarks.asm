@@ -100,7 +100,7 @@ Landmarks:
 	landmark  68,  92, Route17Name
 	landmark  80, 116, Route18Name
 	landmark  92, 116, FuchsiaCityName
-	landmark   0,   0, UnknownName ; Kanto Safari Zone
+	landmark  92, 108, SafariZoneName ; Kanto Safari Zone
 	landmark  92, 128, Route19Name
 	landmark  76, 132, Route20Name
 	landmark  68, 132, SeafoamIslandsName
@@ -187,7 +187,7 @@ MtMoonName:          db "MT.MOON@"
 RockTunnelName:      db "ROCK TUNNEL@"
 LavRadioTowerName:   db "LAV¯RADIO TOWER@"
 SilphCoName:         db "SILPH CO.@" ; unreferenced
-SafariZoneName:      db "SAFARI ZONE@" ; unreferenced
+SafariZoneName:      db "KANTO¯SAFARI ZONE@"
 SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
 PokemonMansionName:  db "#MON¯MANSION@" ; unreferenced
 CeruleanCaveName:    db "CERULEAN¯CAVE@"

@@ -370,6 +370,22 @@ ChooseWildEncounter:
 	ld [wTempWildMonSpecies], a
 
 .startwildbattle
+	; Check if the player is in a Safari Zone; if we're in there, let's get the type sorted now.
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp LANDMARK_KANTO_SAFARI_ZONE ; I am 99.9% sure this can be done better but oh give it a REST
+	jr nz, .skip
+;	cp LANDMARK_JOHTO_SAFARI_ZONE enable these when they're up pls
+;	jr nz, .skip
+;	cp LANDMARK_NIHON_SAFARI_ZONE
+;	jr nz, .skip
+	ld a, BATTLETYPE_SAFARI
+	ld [wBattleType], a
+.skip
+
 	xor a
 	ret
 
