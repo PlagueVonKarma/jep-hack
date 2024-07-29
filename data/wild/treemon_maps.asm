@@ -53,4 +53,5 @@ RockMonMaps:
 	treemon_map MOUNT_MOON_SQUARE,			    TREEMON_SET_ROCK_SQUARE
 	treemon_map BURNED_TOWER_1F,		        TREEMON_SET_ROCK_TOWER
 	treemon_map CLIFF_CAVE,						TREEMON_SET_ROCK_DARK_CAVE
+	treemon_map WINNERS_PATH,					TREEMON_SET_ROCK_VICTORY
 	db -1

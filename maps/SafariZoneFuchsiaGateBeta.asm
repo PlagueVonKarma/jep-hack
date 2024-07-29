@@ -31,8 +31,8 @@ SafariZoneEntry:
 	closetext
 	
 	applymovement PLAYER, SafariZoneEntryMovement
-	warpfacing UP, SAFARI_ZONE_BETA, 9,  23
 	playsound SFX_ENTER_DOOR
+	warpfacing UP, SAFARI_ZONE_BETA, 9,  23
 	setevent EVENT_IN_SAFARI_ZONE
 	
 	; Give the player 500 steps...I think.

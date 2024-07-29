@@ -15,6 +15,7 @@ TreeMons:
 	dw TreeMonSet_Rock_Square
 	dw TreeMonSet_Rock_Well
 	dw TreeMonSet_Sweet_Honey
+	dw TreeMonSet_Rock_Victory
 	assert_table_length NUM_TREEMON_SETS
 
 ; Two tables each (common, rare).
@@ -186,4 +187,9 @@ TreeMonSet_Sweet_Honey:
 	dbbw 25, 60, URSARING
 	dbbw 25, 60, BEEDRILL
 	dbbw 25, 60, MUNCHLAX
+	db -1
+	
+TreeMonSet_Rock_Victory:
+	dbbw 70, 43, MAGCARGO
+	dbbw 30, 45, PUPITAR
 	db -1
