@@ -104,6 +104,14 @@ RuinsOfAlphResearchCenterScientist1Script:
 	waitbutton
 	closetext
 	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	
+	; This will be replaced with something in Sinjoh Ruins (eventually)
+	ld c, DECOFLAG_UNOWN_DOLL
+	farcall SetSpecificDecorationFlag
+	opentext
+	writetext RoAGotUnownDoll
+	waitbutton
+	closetext
 	end
 
 RuinsOfAlphResearchCenterScientist2Script:
@@ -275,6 +283,15 @@ RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
 
 	para "as a habitat for"
 	line "#MON."
+	
+	para "As my way of say-"
+	line "ing thanks, take"
+	cont "this!"
+	done
+
+RoAGotUnownDoll:
+	text "<PLAYER> received"
+	line "UNOWN DOLL!"
 	done
 
 RuinsOfAlphResearchCenterScientist2Text:

@@ -34,6 +34,6 @@ MysteryGiftItems:
 	db HP_UP
 	db PP_UP
 	db RARE_CANDY
-	db BLUESKY_MAIL
-	db MIRAGE_MAIL
+	db BLUESKY_MAIL ; Unobtainable
+	db MIRAGE_MAIL ; Unobtainable
 .End
