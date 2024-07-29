@@ -107,7 +107,7 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops, Calflac (with inspiration from KmiE_821)
-- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix
+- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
