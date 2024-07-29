@@ -586,7 +586,6 @@ SECTION "Pics 17", ROMX
 ParasBackpic:        INCBIN "gfx/pokemon/paras/back.2bpp.lz"
 VaporeonBackpic:     INCBIN "gfx/pokemon/vaporeon/back.2bpp.lz"
 TentacoolBackpic:    INCBIN "gfx/pokemon/tentacool/back.2bpp.lz"
-ExecutivefPic:       INCBIN "gfx/trainers/executive_f.2bpp.lz"
 BulbasaurBackpic:    INCBIN "gfx/pokemon/bulbasaur/back.2bpp.lz"
 SmoochumBackpic:     INCBIN "gfx/pokemon/smoochum/back.2bpp.lz"
 PichuBackpic:        INCBIN "gfx/pokemon/pichu/back.2bpp.lz"

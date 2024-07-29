@@ -626,10 +626,6 @@ DEF KRIS EQU __trainer_class__
 	const TODD5
 	const QUENTIN
 
-	trainerclass EXECUTIVEF ; 37
-	const EXECUTIVEF_1
-	const EXECUTIVEF_2
-
 	trainerclass SAGE ; 38
 	const CHOW
 	const NICO
@@ -803,6 +799,8 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass ARIANA
 	const ARIANA1
+	const ARIANA2
+	const ARIANA3
 	
 	trainerclass ARCHER
 	const ARCHER1

@@ -4264,19 +4264,6 @@ BlackbeltGroup:
 	end_list_items
 
 ExecutiveMGroup: ; Unsure which is which. Little help?
-	next_list_item ; EXECUTIVEM (1)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES
-	db 33
-	dw HOUNDOUR
-	dw EMBER, ROAR, BITE, FAINT_ATTACK
-	db 33
-	dw KOFFING
-	dw TACKLE, SLUDGE, SMOKESCREEN, HAZE
-	db 35
-	dw HOUNDOOM
-	dw EMBER, SMOG, BITE, FAINT_ATTACK
-	db -1 ; end
-
 	next_list_item ; EXECUTIVEM (2)
 	db "EXECUTIVE@", TRAINERTYPE_MOVES
 	db 36
@@ -4862,7 +4849,7 @@ CamperGroup:
 
 	end_list_items
 
-ExecutiveFGroup: ; Ariana
+ArianaGroup: ; Ariana
 	next_list_item ; EXECUTIVEF (1)
 	db "EXECUTIVE@", TRAINERTYPE_MOVES ; Radio Tower
 	db 30
@@ -4878,7 +4865,7 @@ ExecutiveFGroup: ; Ariana
 	dw VILEPLUME
 	dw ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
 	db 32
-	dw MURKROW ; HONCHKROW?
+	dw MURKROW
 	dw PECK, PURSUIT, HAZE, NIGHT_SHADE
 	db -1 ; end
 
@@ -4891,11 +4878,30 @@ ExecutiveFGroup: ; Ariana
 	dw VILEPLUME
 	dw ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
 	db 32
-	dw MURKROW ; HONCHKROW?
+	dw HONCHKROW
 	dw PECK, PURSUIT, HAZE, NIGHT_SHADE
 	; Sneasler
+	db 35
+	dw JUNGELA
+	dw GIGA_DRAIN, NO_MOVE, NO_MOVE, NO_MOVE ; needs sorting
 	db -1 ; end
-
+	
+	next_list_item ; EXECUTIVEF (3)
+	db "ARIANA@", TRAINERTYPE_NORMAL
+	db 30
+	dw BELLEDAM
+	db 30
+	dw ARBOK
+	db 30
+	dw VILEPLUME
+	db 30
+	dw MUK
+	db 30
+	dw HONCHKROW
+	db 30
+	dw SNEASEL
+	db 30
+	dw JUNGELA
 	end_list_items
 
 ; Often seen with Hoothoot in media, so there's a few scattered around for variety.

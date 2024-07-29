@@ -544,75 +544,16 @@ KurtGroup:
 	db -1 ; end
 	end_list_items
 
-ArianaGroup:
-	next_list_item
-	db "ARIANA@", TRAINERTYPE_NORMAL
-	db 30
-	dw BELLEDAM
-	db 30
-	dw VILEPLUME
-	db 30
-	dw MUK
-	db 30
-	dw ARBOK
-	db 30
-	dw HONCHKROW
-	db -1 ; end
-	
-	db "ARIANA@", TRAINERTYPE_NORMAL
-	db 30
-	dw ARBOK
-	db 30
-	dw VILEPLUME
-	db 30
-	dw MUK
-	db 30
-	dw HONCHKROW
-	db 30
-	dw SNEASEL
-	db -1 ; end
-	
-	db "ARIANA@", TRAINERTYPE_NORMAL
-	db 30
-	dw BELLEDAM
-	db 30
-	dw ARBOK
-	db 30
-	dw VILEPLUME
-	db 30
-	dw MUK
-	db 30
-	dw HONCHKROW
-	db 30
-	dw SNEASEL
-	db -1 ; end
-	
-	db "ARIANA@", TRAINERTYPE_NORMAL
-	db 30
-	dw BELLEDAM
-	db 30
-	dw ARBOK
-	db 30
-	dw VILEPLUME
-	db 30
-	dw HONCHKROW
-	db 30
-	dw SNEASEL
-	db 30
-	dw JUNGELA
-	db -1 ; end
-	end_list_items
-
 ArcherGroup:
 	next_list_item
 	db "ARCHER@", TRAINERTYPE_NORMAL
-	db 30
+	db 33
 	dw ELECTRODE
-	db 30
+	db 33
 	dw MAGMAR
-	db 30
+	db 33
 	dw GOLBAT
-	db 30
+	db 35
 	dw HOUNDOOM
 	db -1 ; end
 	

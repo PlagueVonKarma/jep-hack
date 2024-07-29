@@ -56,7 +56,6 @@ TrainerClassNames::
 	li "PSYCHIC"
 	li "PICNICKER"
 	li "CAMPER"
-	li "ROCKET"
 	li "SAGE"
 	li "MEDIUM"
 	li "BOARDER"

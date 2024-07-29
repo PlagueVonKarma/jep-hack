@@ -66,7 +66,7 @@ Director:
 	end
 
 TrainerExecutivef1:
-	trainer EXECUTIVEF, EXECUTIVEF_1, EVENT_BEAT_ROCKET_EXECUTIVEF_1, Executivef1SeenText, Executivef1BeatenText, 0, .Script
+	trainer ARIANA, ARIANA1, EVENT_BEAT_ROCKET_EXECUTIVEF_1, Executivef1SeenText, Executivef1BeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -86,7 +86,7 @@ RadioTower5FRocketBossScript:
 	closetext
 	winlosstext RadioTower5FRocketBossWinText, 0
 	setlasttalked RADIOTOWER5F_ROCKET
-	loadtrainer EXECUTIVEM, EXECUTIVEM_1
+	loadtrainer ARCHER, ARCHER1
 	startbattle
 	reloadmapafterbattle
 	opentext
