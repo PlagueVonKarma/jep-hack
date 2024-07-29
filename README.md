@@ -94,6 +94,7 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 - Zeta_Null (Repository Owner, Spriter, Programming)
 - LadyMisticus (Documentation, Programming, Mapping)
 - thornAvery (Programming)
+- LuciShrimp (Music, TBA)
 - pret et al (LOTS of [Tutorials](https://github.com/pret/pokecrystal/wiki) that we used to get this off the ground!)
 - Wiz (Nihon Pokemon names)
 - Rezzo (GSC-specific advice, Showdown Mod assistance)

@@ -89,4 +89,5 @@ MapScenes::
 	scene_var SILENT_HILLS,					   		       wSilentHillsSceneID
 	scene_var BLUE_LAB,									   wBlueLabSceneID
 	scene_var ROUTE_66_WHITE_CITY_GATE, wRoute66WhiteCityGateID
+	scene_var SAFARI_ZONE_FUCHSIA_GATE_BETA, wFuchsiaSafariZoneGateID
 	db -1 ; end

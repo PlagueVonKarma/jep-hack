@@ -880,6 +880,8 @@ CountStep:
 	; If Repel wore off, don't count the step.
 	call DoRepelStep
 	jr c, .doscript
+	
+	call DoSafariStep
 
 	; Count the step for poison and total steps
 	ld hl, wPoisonStepCount
@@ -952,6 +954,33 @@ DoRepelStep:
 	call CallScript
 	scf
 	ret
+
+; It's basically the same as the Repel, so we can do that.
+DoSafariStep:
+	; Firstly, check the player is within the landmark.
+	; Even the gates of the Safari Zone do not have the landmark. This is to ensure the steps and wild encounters are always part of the game.
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp LANDMARK_KANTO_SAFARI_ZONE ; I am 99.9% sure this can be done better
+	jr nz, .skip
+;	cp LANDMARK_JOHTO_SAFARI_ZONE enable these when they're up pls
+;	jr nz, .skip
+;	cp LANDMARK_NIHON_SAFARI_ZONE
+;	jr nz, .skip
+
+	ld a, [wSafariZoneStepCount]
+	and a
+	ret z
+
+	dec a
+	ld [wSafariZoneStepCount], a
+	ret nz
+	
+.skip
+	ret ; juuuuust to make sure, but also part of the safari step check.
 
 DoPlayerEvent:
 	ld a, [wScriptRunning]

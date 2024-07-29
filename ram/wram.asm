@@ -3110,7 +3110,8 @@ wPewterMuseum1FSceneID::						  db
 wSilentHillsSceneID::							  db
 wBlueLabSceneID::								  db
 wRoute66WhiteCityGateID:: db
-	ds 45
+wFuchsiaSafariZoneGateID:: db
+	ds 44
 
 ; fight counts
 wJackFightCount::    db
@@ -3251,7 +3252,7 @@ wStepCount:: db
 wPoisonStepCount:: db
 	ds 2
 wHappinessStepCount:: db
-	ds 1
+wSafariZoneStepCount:: dw ; Will contain 500 steps
 
 wParkBallsRemaining::
 wSafariBallsRemaining:: db
@@ -3259,7 +3260,7 @@ wSafariTimeRemaining:: dw
 
 wPhoneList:: ds CONTACT_LIST_SIZE + 1
 
-	ds 22
+	ds 21
 
 wLuckyNumberShowFlag:: db
 	ds 1

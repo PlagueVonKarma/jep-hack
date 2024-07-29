@@ -3,6 +3,31 @@ SafariZoneBeta_MapScripts:
 
 	def_callbacks
 
+SafariZoneCheckSteps:
+	ld a, [wSafariZoneStepCount] ; check if you have more than 0 steps.
+	jr nz, .skip ; if not zero, ignore. easy enough.
+	
+	checkitem SAFARI_BALL ; check if the player has any safari balls left
+	iftrue .skip ; this checks if there's any at all, so same principle.
+	
+	playsound SFX_ELEVATOR_END
+	opentext
+	writetext SafariZoneTimesUpText
+	waitbutton
+	closetext
+	warpfacing UP, SAFARI_ZONE_FUCHSIA_GATE_BETA, 4,  0
+.skip
+	ret
+
+SafariZoneTimesUpText:
+	text "PA: Ding-dong!"
+
+	para "Time's up!"
+	
+	para "Your SAFARI GAME"
+	line "is over!"
+	done
+
 SafariZoneBeta_MapEvents:
 	db 0, 0 ; filler
 

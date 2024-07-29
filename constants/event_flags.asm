@@ -1548,7 +1548,8 @@
 	const EVENT_GONE_THROUGH_STARTER_DOOR
 	const EVENT_BRIEFED_BY_BLUE
 	const EVENT_GOT_TM47_STEEL_WING2
-; Unused: next 39 events
+	const EVENT_IN_SAFARI_ZONE
+; Unused: next 37 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800
