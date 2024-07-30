@@ -1,4 +1,21 @@
+; MemoryMinigame.Jumptable indices
+	const_def
+	const MEMORYGAME_RESTART_GAME
+	const MEMORYGAME_RESTART_BOARD
+	const MEMORYGAME_INIT_BOARD_AND_CURSOR
+	const MEMORYGAME_CHECK_TRIES_REMAINING
+	const MEMORYGAME_PICK_CARD_1
+	const MEMORYGAME_PICK_CARD_2
+	const MEMORYGAME_DELAY_PICK_AGAIN
+	const MEMORYGAME_REVEAL_ALL
+	const MEMORYGAME_ASK_PLAY_AGAIN
+DEF MEMORYGAME_END_LOOP_F EQU 7
+
 _MemoryGame:
+; Always start off with 256 coins
+;IF DEF(_DEBUG)
+;	givecoins 256
+;endc
 	call .LoadGFXAndPals
 	call DelayFrame
 .loop
@@ -11,28 +28,38 @@ _MemoryGame:
 	ld b, SCGB_DIPLOMA
 	call GetSGBLayout
 	callfar ClearSpriteAnims
-	ld hl, MemoryGameLZ
+	ld hl, MemoryGameTiles
 	ld de, vTiles2 tile $00
 	call Decompress
+
 	ld hl, MemoryGameGFX
 	ld de, vTiles0 tile $00
 	ld bc, 4 tiles
 	ld a, BANK(MemoryGameGFX)
 	call FarCopyBytes
-	ld a, SPRITE_ANIM_DICT_ARROW_CURSOR
+	
+	ld a, SPRITE_ANIM_INDEX_MEMORY_GAME_CURSOR
+	ld hl, MemoryGameGloveGFX
+	ld de, vTiles0
+	ld bc, $4 tiles
+	ld a, BANK(MemoryGameGloveGFX)
+	call FarCopyBytes
+
 	ld hl, wSpriteAnimDict
 	ld [hli], a
-	ld [hl], $00
+	ld [hl], 0
+
 	hlcoord 0, 0
-	ld bc, SCREEN_HEIGHT * SCREEN_WIDTH
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
 	xor a
 	call ByteFill
+
 	xor a
 	ldh [hSCY], a
 	ldh [hSCX], a
 	ldh [rWY], a
 	ld [wJumptableIndex], a
-	ld a, $1
+	ld a, 1
 	ldh [hBGMapMode], a
 	ld a, LCDC_DEFAULT
 	ldh [rLCDC], a
@@ -44,7 +71,7 @@ _MemoryGame:
 
 .JumptableLoop:
 	ld a, [wJumptableIndex]
-	bit 7, a
+	bit MEMORYGAME_END_LOOP_F, a
 	jr nz, .quit
 	call .ExecuteJumptable
 	callfar PlaySpriteAnimations
@@ -80,7 +107,7 @@ _MemoryGame:
 	call UnusedCursor_InterpretJoypad_AnimateCursor
 	jr nc, .proceed
 	ld hl, wJumptableIndex
-	set 7, [hl]
+	set MEMORYGAME_END_LOOP_F, [hl]
 	ret
 
 .proceed
@@ -95,6 +122,7 @@ rept 4
 endr
 	ld [hl], a
 	ld [wMemoryGameNumCardsMatched], a
+
 .InitBoardTilemapAndCursorObject:
 	ld hl, wMemoryGameCounter
 	ld a, [hl]
@@ -126,7 +154,7 @@ endr
 	ld a, [hl]
 	and a
 	jr nz, .next_try
-	ld a, $7
+	ld a, MEMORYGAME_REVEAL_ALL
 	ld [wJumptableIndex], a
 	ret
 
@@ -136,6 +164,7 @@ endr
 	ld [wMemoryGameCardChoice], a
 	ld hl, wJumptableIndex
 	inc [hl]
+
 .PickCard1:
 	ld a, [wMemoryGameCardChoice]
 	and a
@@ -185,6 +214,7 @@ endr
 	ld [wMemoryGameCounter], a
 	ld hl, wJumptableIndex
 	inc [hl]
+
 .DelayPickAgain:
 	ld hl, wMemoryGameCounter
 	ld a, [hl]
@@ -195,7 +225,7 @@ endr
 
 .PickAgain:
 	call MemoryGame_CheckMatch
-	ld a, $3
+	ld a, MEMORYGAME_CHECK_TRIES_REMAINING
 	ld [wJumptableIndex], a
 	ret
 
@@ -205,6 +235,7 @@ endr
 	ret z
 	xor a
 	ld [wMemoryGameCounter], a
+
 .RevelationLoop:
 	ld hl, wMemoryGameCounter
 	ld a, [hl]
@@ -231,11 +262,12 @@ endr
 	call WaitPressAorB_BlinkCursor
 	ld hl, wJumptableIndex
 	inc [hl]
+
 .AskPlayAgain:
 	call UnusedCursor_InterpretJoypad_AnimateCursor
 	jr nc, .restart
 	ld hl, wJumptableIndex
-	set 7, [hl]
+	set MEMORYGAME_END_LOOP_F, [hl]
 	ret
 
 .restart
@@ -304,29 +336,29 @@ MemoryGame_CheckMatch:
 	call MemoryGame_Card2Coord
 	call MemoryGame_PlaceCard
 
-	ld hl, MemoryGameDarnText
+	ld hl, .DarnText
 	call PrintText
 	ret
 
 .VictoryText:
-	text_asm
+	start_asm
 	push bc
 	hlcoord 2, 13
 	call MemoryGame_PlaceCard
-	ld hl, MemoryGameYeahText
+	ld hl, .YeahText
 	pop bc
 	inc bc
 	inc bc
 	inc bc
 	ret
 
-MemoryGameYeahText:
-	text_far _MemoryGameYeahText
-	text_end
+.YeahText:
+	text "Yeah!"
+	done
 
-MemoryGameDarnText:
-	text_far _MemoryGameDarnText
-	text_end
+.DarnText:
+	text "Darn<...>"
+	done
 
 MemoryGame_InitBoard:
 	ld hl, wMemoryGameCards
@@ -376,6 +408,7 @@ MemoryGame_InitBoard:
 	dec b
 	jr nz, .loop
 	ret
+
 
 MemoryGame_SampleTilePlacement:
 	push hl
@@ -434,7 +467,7 @@ MemoryGame_PlaceCard:
 	ret
 
 MemoryGame_DeleteCard:
-	ld a, $1
+	ld a, 1
 	ld [hli], a
 	ld [hld], a
 	ld bc, SCREEN_WIDTH
@@ -448,13 +481,13 @@ MemoryGame_DeleteCard:
 MemoryGame_InitStrings:
 	hlcoord 0, 0
 	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
-	ld a, $1
+	ld a, 1
 	call ByteFill
 	hlcoord 0, 0
-	ld de, .japstr1
+	ld de, .str1
 	call PlaceString
 	hlcoord 15, 0
-	ld de, .japstr2
+	ld de, .str2
 	call PlaceString
 	ld hl, .dummy_text
 	call PrintText
@@ -462,10 +495,10 @@ MemoryGame_InitStrings:
 
 .dummy_text
 	db "@"
-.japstr1
-	db "とったもの@"
-.japstr2
-	db "あと　かい@"
+.str1
+	db "SCORE@"
+.str2
+	db "TURNS@"
 
 MemoryGame_Card2Coord:
 	ld d, 0
@@ -493,9 +526,9 @@ MemoryGame_Card2Coord:
 	add hl, de
 	ret
 
-MemoryGame_InterpretJoypad_AnimateCursor:
+MemoryGame_InterpretJoypad_AnimateCursor:		; Called from sprite animation routine?
 	ld a, [wJumptableIndex]
-	cp $7
+	cp MEMORYGAME_REVEAL_ALL
 	jr nc, .quit
 	call JoyTextDelay
 	ld hl, hJoypadPressed
@@ -519,7 +552,7 @@ MemoryGame_InterpretJoypad_AnimateCursor:
 .quit
 	ld hl, SPRITEANIMSTRUCT_INDEX
 	add hl, bc
-	ld [hl], $0
+	ld [hl], 0
 	ret
 
 .pressed_a
@@ -582,9 +615,14 @@ MemoryGame_InterpretJoypad_AnimateCursor:
 	ld hl, SPRITEANIMSTRUCT_VAR1
 	add hl, bc
 	ld a, [hl]
-	add 9
+	add a, 9
 	ld [hl], a
 	ret
 
-MemoryGameLZ:
-INCBIN "gfx/memory_game/memory_game.2bpp.lz"
+MemoryGameTiles: INCBIN "gfx/memory_game/memory_game.2bpp.lz"
+
+MemoryGameGloveGFX:: INCBIN "gfx/memory_game/glove.2bpp"
+
+MemoryWantToPlayText:
+	text "Want to play?"
+	done

@@ -1,5 +1,7 @@
 SECTION "HRAM", HRAM
 
+hScriptVar:: db ; Used in the finished Shinkai port from Pokeprism.
+
 hROMBankBackup:: db
 hFarByte::
 hTempBank:: db
@@ -11,7 +13,7 @@ hRTCHours::   db
 hRTCMinutes:: db
 hRTCSeconds:: db
 
-	ds 2
+	ds 1
 
 hHours:: db
 	ds 1

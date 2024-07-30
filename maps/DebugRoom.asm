@@ -195,6 +195,8 @@ DebugItemScript:
 	giveitem DOME_FOSSIL, 2
 	giveitem HELIX_FOSSIL, 2
 	giveitem OLD_AMBER, 2
+	giveitem COIN_CASE
+	givecoins 2500
 	closetext
 	end
 
@@ -364,6 +366,12 @@ DebugDollShopAlreadyBoughtText:
 	line "that!"
 	done
 
+MemoryGameScript:
+	refreshscreen
+	special UnusedMemoryGame
+	closetext
+	end
+
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
 
@@ -396,3 +404,4 @@ DebugRoom_MapEvents:
 	object_event 19, 13, SPRITE_NURSE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_OW_PURPLE, OBJECTTYPE_SCRIPT, 0, DebugItemScript, -1
 	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
 	object_event 20, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugDollShopScript, -1
+	object_event 25, 15, SPRITE_WILL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MemoryGameScript, -1
