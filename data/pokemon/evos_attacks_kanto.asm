@@ -1064,12 +1064,12 @@ CoinpurEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, GROWL
+	dbw 5, PAY_DAY
 	dbw 11, BITE
-	dbw 19, PAY_DAY ; I remember having it learn this way earlier in later KEP versions...
-	dbw 25, FAINT_ATTACK
-	dbw 30, SCREECH
-	dbw 34, FURY_SWIPES
-	dbw 37, SLASH ; Seems a bit late, but Meowth gets it at L46, so...
+	dbw 18, FAINT_ATTACK
+	dbw 25, SCREECH
+	dbw 31, FURY_SWIPES
+	dbw 37, SLASH
 	db 0 ; no more level-up moves
 
 MeowthEvosAttacks:
