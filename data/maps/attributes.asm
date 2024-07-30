@@ -751,8 +751,10 @@ ENDM
 	; Sevii Island Sizzle Reel
 	map_attributes FarawayIslandOutside, FARAWAY_ISLAND_OUTSIDE, $00, 0 ; Bank 2
 	map_attributes FarawayIslandInside, FARAWAY_ISLAND_INSIDE, $00, 0 ; Bank 2
-	map_attributes OneIsland, ONE_ISLAND, $00, 0 ; Bank 2
-	map_attributes TreasureBeach, TREASURE_BEACH, $00, 0 ; Bank 2
+	map_attributes OneIsland, ONE_ISLAND, $02, SOUTH ; Bank 2
+	connection south, TreasureBeach, TREASURE_BEACH, 1
+	map_attributes TreasureBeach, TREASURE_BEACH, $02, NORTH ; Bank 2
+	connection north, OneIsland, ONE_ISLAND, -1
 	map_attributes KindleRoad, KINDLE_ROAD, $00, 0 ; Bank 2
 	map_attributes MtEmberExterior, MT_EMBER_EXTERIOR, $00, 0 ; Bank 2
 	map_attributes MtEmberInterior, MT_EMBER_INTERIOR, $00, 0 ; Bank 2
