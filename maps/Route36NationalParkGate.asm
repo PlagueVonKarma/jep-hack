@@ -231,7 +231,7 @@ Route36OfficerScriptContest:
 	end
 
 Route36Officer_ContestHasConcluded:
-	checkevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
+	checkevent EVENT_CONTEST_OFFICER_HAS_GLIGAR
 	iftrue .Sunstone
 	checkevent EVENT_CONTEST_OFFICER_HAS_EVERSTONE
 	iftrue .Everstone
@@ -247,16 +247,19 @@ Route36Officer_ContestHasConcluded:
 .Sunstone:
 	writetext Route36NationalParkGateOfficer1HeresThePrizeText
 	promptbutton
-	verbosegiveitem BLK_AUGURITE
-	iffalse .BagFull
-	clearevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .BagFull
+	
+	givepoke GLIGAR, 5
+	special DebugGiveMonSpecialMove ; give it the Stadium 2 moveset
+	clearevent EVENT_CONTEST_OFFICER_HAS_GLIGAR
 	closetext
 	end
 
 .Everstone:
 	writetext Route36NationalParkGateOfficer1HeresThePrizeText
 	promptbutton
-	verbosegiveitem EVERSTONE
+	verbosegiveitem BLK_AUGURITE
 	iffalse .BagFull
 	clearevent EVENT_CONTEST_OFFICER_HAS_EVERSTONE
 	closetext

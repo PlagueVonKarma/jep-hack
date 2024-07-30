@@ -355,7 +355,7 @@ BugContestResultsWarpScript:
 BugContestResultsScript:
 	clearflag ENGINE_BUG_CONTEST_TIMER
 	clearevent EVENT_WARPED_FROM_ROUTE_35_NATIONAL_PARK_GATE
-	clearevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
+	clearevent EVENT_CONTEST_OFFICER_HAS_GLIGAR
 	clearevent EVENT_CONTEST_OFFICER_HAS_EVERSTONE
 	clearevent EVENT_CONTEST_OFFICER_HAS_GOLD_BERRY
 	clearevent EVENT_CONTEST_OFFICER_HAS_BERRY
@@ -425,18 +425,21 @@ BugContestResults_CleanUp:
 
 BugContestResults_FirstPlace:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	farwritetext ContestResults_PlayerWonAPrizeText
+	waitbutton
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .BugContestResults_NoRoomForGligar
+	
+	givepoke GLIGAR, 5
+	special DebugGiveMonSpecialMove ; give it the Stadium 2 moveset
+
+	sjump BugContestResults_ReturnAfterWinnersPrize
+
+BugContestResults_SecondPlace:
 	getitemname STRING_BUFFER_4, BLK_AUGURITE
 	farwritetext ContestResults_PlayerWonAPrizeText
 	waitbutton
 	verbosegiveitem BLK_AUGURITE
-	iffalse BugContestResults_NoRoomForSunStone
-	sjump BugContestResults_ReturnAfterWinnersPrize
-
-BugContestResults_SecondPlace:
-	getitemname STRING_BUFFER_4, EVERSTONE
-	farwritetext ContestResults_PlayerWonAPrizeText
-	waitbutton
-	verbosegiveitem EVERSTONE
 	iffalse BugContestResults_NoRoomForEverstone
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
@@ -448,10 +451,10 @@ BugContestResults_ThirdPlace:
 	iffalse BugContestResults_NoRoomForGoldBerry
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
-BugContestResults_NoRoomForSunStone:
+BugContestResults_NoRoomForGligar:
 	farwritetext BugContestPrizeNoRoomText
 	promptbutton
-	setevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
+	setevent EVENT_CONTEST_OFFICER_HAS_GLIGAR
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
 BugContestResults_NoRoomForEverstone:

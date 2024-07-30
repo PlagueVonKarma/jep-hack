@@ -15,6 +15,137 @@ Special::
 
 INCLUDE "data/events/special_pointers.asm"
 
+DebugGiveMonSpecialMove:
+; TODO: Make this good :3
+; I could implement Rangi's special givepoke but i am too stupid
+; also this code is bugged and never works for farfetch'd partly because i am a dumb stupid idiot
+; it works for gligar tho so it's good FOR NOW
+; ScriptVar 1 - Gligar
+; ScriptVar 2 - Farfetch'd
+	ld bc, wPartyCount
+	ld a, [bc]
+	ld hl, MON_SPECIES
+	call .GetNthPartyMon
+	ld a, [bc]
+	ld c, a
+	push hl
+	
+	;call .GetNthPartyMon
+	ld hl, GLIGAR
+	call GetPokemonIDFromIndex
+	
+	pop hl
+	ld b, a
+	ld de, PARTYMON_STRUCT_LENGTH
+.CheckForNthPokemon:
+; start at the end of the party and search backwards for the last Pokemon in the party.
+	ld a, [hl]
+	cp b
+	jr z, .GiveMoveset
+	ld a, l
+	sub e
+	ld l, a
+	ld a, h
+	sbc d
+	ld h, a
+	dec c
+	jr nz, .CheckForNthPokemon
+	ret
+
+.GiveMoveset:
+	push hl
+	
+	;call .GetNthPartyMon
+	ld hl, GLIGAR
+	call GetPokemonIDFromIndex
+;	cp FARFETCH_D
+;	jr z, .skip
+	ld a, 1
+	ld [wScriptVar], a
+;.skip
+	
+	ld a, [wScriptVar]
+	ld hl, .Movesets
+	ld bc, .Moveset1 - .Moveset0
+	call AddNTimes
+
+	; get address of mon's first move
+	pop de
+	inc de
+	inc de
+
+.GiveMoves:
+	ld a, [hli]
+	or [hl] ; is the move 00?
+	ret z ; if so, we're done here
+
+	push hl
+	push de
+	ld a, [hld]
+	ld l, [hl]
+	ld h, a
+	call GetMoveIDFromIndex
+	ld [de], a ; give the Pokémon the new move
+
+	; get the PP of the new move
+	ld l, a
+	ld a, MOVE_PP
+	call GetMoveAttribute
+
+	; get the address of the move's PP and update the PP
+	ld hl, MON_PP - MON_MOVES
+	add hl, de
+	ld [hl], a
+
+	pop de
+	pop hl
+	inc de
+	inc hl
+	jr .GiveMoves
+
+.Movesets:
+.Moveset0:
+; Gligar
+	dw BATON_PASS
+	dw SWORDS_DANCE
+	dw AGILITY
+	dw SLASH
+	dw 0
+.Moveset1:
+; Farfetch'd
+	dw EARTHQUAKE
+	dw POISON_STING
+	dw COUNTER
+	dw WING_ATTACK
+	dw 0
+
+.GetNthPartyMon:
+; inputs:
+; hl must be set to 0 before calling this function.
+; a must be set to the number of Pokémon in the party.
+
+; outputs:
+; returns the address of the last Pokémon in the party in hl.
+; sets carry if a is 0.
+
+	ld de, wPartyMon1
+	add hl, de
+	and a
+	jr z, .EmptyParty
+	dec a
+	ret z
+	ld de, PARTYMON_STRUCT_LENGTH
+.loop
+	add hl, de
+	dec a
+	jr nz, .loop
+	ret
+
+.EmptyParty:
+	scf
+	ret
+	ret
+
 UnusedDummySpecial:
 	ret
 

@@ -357,7 +357,7 @@ MemoryGame_CheckMatch:
 	done
 
 .DarnText:
-	text "Darn<...>"
+	text "Darn!"
 	done
 
 MemoryGame_InitBoard:
