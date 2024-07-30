@@ -105,14 +105,14 @@ DebugGiveMonSpecialMove:
 
 .Movesets:
 .Moveset0:
-; Gligar
+; Farfetch'd
 	dw BATON_PASS
 	dw SWORDS_DANCE
 	dw AGILITY
 	dw SLASH
 	dw 0
 .Moveset1:
-; Farfetch'd
+; Gligar
 	dw EARTHQUAKE
 	dw POISON_STING
 	dw COUNTER
