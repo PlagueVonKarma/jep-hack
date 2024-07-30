@@ -90,9 +90,9 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 
 ## Development Credits
 - Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
-- Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer)
-- Zeta_Null (Repository Owner, Spriter, Programming)
-- LadyMisticus (Documentation, Programming, Mapping)
+- Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer, Spriter)
+- Zeta_Null (Repository Creator, Spriter, Programming, Music)
+- LadyMisticus (Documentation, Programming, Mapping, Spriter)
 - thornAvery (Programming)
 - LuciShrimp (Music, TBA)
 - pret et al (LOTS of [Tutorials](https://github.com/pret/pokecrystal/wiki) that we used to get this off the ground!)
@@ -100,6 +100,9 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 - Rezzo (GSC-specific advice, Showdown Mod assistance)
 - Old Dance Jacket (GSC-specific advice, Showdown Mod assistance)
 - ausma (KEP Developer, Showdown Mod assistance, legacy)
+- Shellnuts (Optimizing the Footprints code)
+- Shawesome (Spriter)
+- zuperZACH (Spriter)
 
 ## Sprite Credits
 
