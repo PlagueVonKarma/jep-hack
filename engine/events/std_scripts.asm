@@ -428,7 +428,7 @@ BugContestResults_FirstPlace:
 	farwritetext ContestResults_PlayerWonAPrizeText
 	waitbutton
 	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, .BugContestResults_NoRoomForGligar
+	ifequal PARTY_LENGTH, BugContestResults_NoRoomForGligar
 	
 	givepoke GLIGAR, 5
 	special DebugGiveMonSpecialMove ; give it the Stadium 2 moveset
