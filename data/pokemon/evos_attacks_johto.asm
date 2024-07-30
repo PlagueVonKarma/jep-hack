@@ -697,8 +697,9 @@ MoibelleEvoAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, GROWL
-	dbw 7, TAIL_WHIP
-	dbw 13, HEAL_BELL
+	dbw 6, TAIL_WHIP
+	dbw 10, BITE
+	dbw 14, HEAL_BELL
 	dbw 19, FAINT_ATTACK
 	dbw 25, LOVELY_KISS
 	dbw 25, SWEET_KISS

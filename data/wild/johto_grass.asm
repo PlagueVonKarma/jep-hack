@@ -31,9 +31,9 @@ JohtoGrassWildMons:
 	; nite
 	dbw 6, GASTLY
 	dbw 5, MOIBELLE
-	dbw 5, STROMEN
+	dbw 5, BIPULLA
 	dbw 7, GASTLY
-	dbw 6, STROMEN
+	dbw 6, BIPULLA
 	dbw 6, MOIBELLE
 	dbw 7, BIPULLA
 	end_grass_wildmons
@@ -59,9 +59,9 @@ JohtoGrassWildMons:
 	; nite
 	dbw 6, GASTLY
 	dbw 5, MOIBELLE
-	dbw 5, STROMEN
+	dbw 5, BIPULLA
 	dbw 7, GASTLY
-	dbw 6, STROMEN
+	dbw 6, BIPULLA
 	dbw 6, MOIBELLE
 	dbw 7, BIPULLA
 	end_grass_wildmons
@@ -302,7 +302,7 @@ JohtoGrassWildMons:
 	dbw 17, KOFFING
 	dbw 17, VULPIII
 	dbw 16, ZUBAT
-	dbw 18, KOFFING
+	dbw 18, STROMEN
 	dbw 18, KOLTA
 	dbw 16, KOLTA
 	; day
@@ -310,7 +310,7 @@ JohtoGrassWildMons:
 	dbw 17, KOFFING
 	dbw 17, VULPIII
 	dbw 16, ZUBAT
-	dbw 18, KOFFING
+	dbw 18, STROMEN
 	dbw 18, KOLTA
 	dbw 16, KOLTA
 	; nite
@@ -318,7 +318,7 @@ JohtoGrassWildMons:
 	dbw 17, KOFFING
 	dbw 16, VULPIII
 	dbw 16, ZUBAT
-	dbw 18, KOFFING
+	dbw 18, STROMEN
 	dbw 17, HOUNDOUR
 	dbw 18, HOUNDOUR
 	end_grass_wildmons
@@ -328,7 +328,7 @@ JohtoGrassWildMons:
 	; morn
 	dbw 16, PUPPERON
 	dbw 17, SLUGMA
-	dbw 18, SLUGMA
+	dbw 18, STROMEN
 	dbw 15, PUPPERON
 	dbw 18, ZUBAT
 	dbw 18, MAGBY
@@ -336,7 +336,7 @@ JohtoGrassWildMons:
 	; day
 	dbw 16, PUPPERON
 	dbw 17, SLUGMA
-	dbw 18, SLUGMA
+	dbw 18, STROMEN
 	dbw 15, PUPPERON
 	dbw 18, ZUBAT
 	dbw 18, MAGBY
@@ -344,7 +344,7 @@ JohtoGrassWildMons:
 	; nite
 	dbw 17, HOUNDOUR
 	dbw 16, SLUGMA
-	dbw 17, SLUGMA
+	dbw 17, STROMEN
 	dbw 18, HOUNDOUR
 	dbw 16, ZUBAT
 	dbw 18, MAGMAR
