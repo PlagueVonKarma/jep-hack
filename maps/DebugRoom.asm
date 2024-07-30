@@ -372,6 +372,21 @@ MemoryGameScript:
 	closetext
 	end
 
+DebugGligarScript:
+	opentext
+	writetext DebugGligarText
+	
+	givepoke GLIGAR, 5
+	special DebugGiveMonSpecialMove
+
+	waitbutton
+	closetext
+	end
+
+DebugGligarText:
+	text "Hi"
+	done
+
 DebugRoom_MapEvents:
 	db 0, 0 ; filler
 
@@ -405,3 +420,4 @@ DebugRoom_MapEvents:
 	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
 	object_event 20, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugDollShopScript, -1
 	object_event 25, 15, SPRITE_WILL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MemoryGameScript, -1
+	object_event 27, 16, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugGligarScript, -1

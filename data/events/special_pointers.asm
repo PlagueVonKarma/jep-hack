@@ -191,3 +191,4 @@ SpecialsPointers::
 	add_special NameMom
 	add_special ShoveSafariBallsDownKrissThroat
 	add_special GiveKrisSneakers
+	add_special DebugGiveMonSpecialMove
