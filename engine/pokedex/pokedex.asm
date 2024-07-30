@@ -2741,22 +2741,44 @@ Pokedex_LoadCurrentFootprint:
 	call Pokedex_GetSelectedMon
 
 Pokedex_LoadAnyFootprint:
-	ld a, [wTempSpecies]
-	call GetPokemonIndexFromID
-	dec hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	add hl, hl
-	ld de, Footprints
-	add hl, de
+    ld a, [wTempSpecies]
+    call GetPokemonIndexFromID
 
-	ld e, l
-	ld d, h
-	ld hl, vTiles2 tile $62
-	lb bc, BANK(Footprints), 4
-	jp Request1bpp
+
+    ld bc, -JOHTO_POKEMON
+    add hl, bc
+    jr nc, .kanto_footprints
+
+.johto_footprints
+    inc hl
+    lb bc, BANK(JohtoFootprints), 4
+    ld de, JohtoFootprints
+
+    jr .skip
+
+.kanto_footprints
+    ld bc, JOHTO_POKEMON
+    add hl, bc
+
+    lb bc, BANK(KantoFootprints), 4
+    ld de, KantoFootprints
+
+.skip
+    dec hl
+
+    add hl, hl
+    add hl, hl
+    add hl, hl
+    add hl, hl
+    add hl, hl
+
+    add hl, de
+
+    ld e, l
+    ld d, h
+
+    ld hl, vTiles2 tile $62
+    jp Request1bpp
 
 Pokedex_LoadGFX:
 	call DisableLCD
