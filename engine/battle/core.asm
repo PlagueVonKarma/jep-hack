@@ -53,10 +53,10 @@ DoBattle:
 	jp z, LostBattle
 	call SafeLoadTempTilemapToTilemap
 	ld a, [wBattleType]
-	cp BATTLETYPE_SAFARI
-	jp z, SafariBattle
 	cp BATTLETYPE_TUTORIAL
 	jp z, .tutorial_debug
+	cp BATTLETYPE_SAFARI
+	jp z, SafariBattle
 	xor a
 	ld [wCurPartyMon], a
 .loop2
@@ -4937,6 +4937,7 @@ BattleMenu_Bait:
 	call StdBattleTextbox
 	ld hl, wEnemyMonCatchRate
 	srl [hl] ; halve catch rate
+	; need an animation
 	ld hl, wSafariMonEating
 	ld de, wSafariMonAngerCount
 	jr BattleMenu_BaitRock_Common
@@ -4946,6 +4947,7 @@ BattleMenu_Rock:
 	call StdBattleTextbox
 	ld hl, wEnemyMonCatchRate
 	ld a, [hl]
+	; wants an animation here
 	add a ; double catch rate
 	jr nc, .noCarry
 	ld a, $ff
@@ -5052,6 +5054,7 @@ BattleMenu_Pack:
 	ld a, [wLinkMode]
 	and a
 	jp nz, BattleMenu_SafariBall.ItemsCantBeUsed
+	; fallthrough
 BattleMenu_SafariBall:
 	ld a, [wInBattleTowerBattle]
 	and a
@@ -5134,7 +5137,7 @@ BattleMenu_SafariBall:
 	cp BATTLETYPE_TUTORIAL
 	jr z, .tutorial2
 	cp BATTLETYPE_SAFARI
-	call nz, GetMonBackpic
+	call nz, GetBattleMonBackpic
 
 .tutorial2
 	call GetEnemyMonFrontpic
