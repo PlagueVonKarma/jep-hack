@@ -558,7 +558,7 @@ ENDM
 	newgroup ONE_ISLAND ; 28
 	map_const FARAWAY_ISLAND_OUTSIDE,				10, 10 ; 1
 	map_const FARAWAY_ISLAND_INSIDE,				10, 10 ; 2
-	map_const ONE_ISLAND,							10, 10 ; 3
+	map_const ONE_ISLAND,							12, 12 ; 3
 	map_const TREASURE_BEACH,						10, 10 ; 4
 	map_const KINDLE_ROAD,							10, 10 ; 5
 	map_const MT_EMBER_EXTERIOR,					10, 10 ; 6
