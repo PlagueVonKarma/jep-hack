@@ -1,10 +1,10 @@
 	db "FLAME@" ; species name
 	dw 507, 2000 ; height, weight
 
-	db   "It uses its wings"
-	next "to fly high. The"
-	next "temperature of its"
+	db   "Extremely proud of"
+	next "its power, it only"
+	next "obeys strong TRAI-"
 
-	page "fire increases as"
-	next "it gains exper-"
-	next "ience in battle.@"
+	page "NERs. If angered,"
+	next "its tail burns"
+	next "blue.@" ; anime

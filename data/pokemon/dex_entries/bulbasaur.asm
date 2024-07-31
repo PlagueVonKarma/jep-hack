@@ -1,10 +1,10 @@
 	db "SEED@" ; species name
 	dw 204, 150 ; height, weight
 
-	db   "While it is young,"
-	next "it uses the"
-	next "nutrients that are"
+	db   "It has been seen"
+	next "climbing trees us-" ; Pokemon card art life https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_card_art_life
+	next "ing its vines. If"
 
-	page "stored in the"
-	next "seeds on its back"
-	next "in order to grow.@"
+	page "weak, it will sow"
+	next "LEECH SEEDs, rej-"
+	next "uvenating itself.@" ; Carddass artwork https://archives.bulbagarden.net/media/upload/f/ff/Bandai_Bulbasaur_card.jpg
