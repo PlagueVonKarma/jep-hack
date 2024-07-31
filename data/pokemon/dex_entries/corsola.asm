@@ -1,10 +1,10 @@
 	db "CORAL@" ; species name
 	dw 200, 110 ; height, weight
 
-	db   "The points on its"
-	next "head absorb"
-	next "nutrients from"
+	db   "Lives in large"
+	next "social groups,"
+	next "which HORSEA and"
 
-	page "clean water. They"
-	next "cannot survive in"
-	next "polluted water.@"
+	page "MOLAMBINO use for"
+	next "shelter. However,"
+	next "it's overhunted.@" ; reference to branches but it's a bit vague, consider revising.

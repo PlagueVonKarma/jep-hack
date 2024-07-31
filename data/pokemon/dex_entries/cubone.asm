@@ -1,10 +1,10 @@
 	db "LONELY@" ; species name
 	dw 104, 140 ; height, weight
 
-	db   "It lost its mother"
-	next "after its birth."
-	next "It wears its"
+	db   "It cries day and"
+	next "night. GUARDIA" ; omit kangaskhan as it's shown to only raise its own children
+	next "and CARETORKER" ; consider rewording tho
 
-	page "mother's skull,"
-	next "never revealing"
-	next "its true face.@"
+	page "take them in and"
+	next "raise it like it"
+	next "were their own.@"

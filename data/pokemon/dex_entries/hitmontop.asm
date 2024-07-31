@@ -1,10 +1,10 @@
 	db "HANDSTAND@" ; species name
 	dw 407, 1060 ; height, weight
 
-	db   "After doing a"
-	next "handstand to"
-	next "throw off the"
+	db   "It has a special"
+	next "ability that pre-"
+	next "vents its eyes"
 
-	page "opponent's timing,"
-	next "it presents its"
-	next "fancy kick moves.@"
+	page "from rolling ar-"
+	next "ound when spinni-"
+	next "ng quickly.@" ; prototype dex entry

@@ -1,10 +1,10 @@
 	db "BIVALVE@" ; species name
 	dw 411, 2920 ; height, weight
 
-	db   "Even a missile"
-	next "can't break the"
-	next "spikes it uses to"
+	db   "Its shell is as"
+	next "hard as diamonds."
+	next "Its SPIKE CANNON"
 
-	page "stab opponents."
-	next "They're even hard-"
-	next "er than its shell.@"
+	page "ensures nothing"
+	next "can get close e-"
+	next "nough to open it.@"

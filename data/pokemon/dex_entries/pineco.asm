@@ -1,10 +1,10 @@
 	db "BAGWORM@" ; species name
 	dw 200, 160 ; height, weight
 
-	db   "It spits out a"
-	next "fluid that it uses"
-	next "to glue tree bark"
+	db   "It will consume"
+	next "any kind of tree" ; this detail is from a prototype dex entry!
+	next "bark. Leftovers"
 
-	page "to its body. The"
-	next "fluid hardens when"
-	next "it touches air.@"
+	page "are plastered on"
+	next "using a fluid to"
+	next "make it stronger.@"

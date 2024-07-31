@@ -1,10 +1,10 @@
 	db "FLYSCORPIO@" ; species name
 	dw 307, 1430 ; height, weight
 
-	db   "It builds its nest"
-	next "on a steep cliff."
-	next "When it is done"
+	db   "Since it tends to"
+	next "spend time at the"
+	next "waterside, it is"
 
-	page "gliding, it hops"
-	next "along the ground"
-	next "back to its nest.@"
+	page "conceivable this"
+	next "#MON may be re-"
+	next "lated to KRABBY.@" ; prototype dex entry that was attached to scizor

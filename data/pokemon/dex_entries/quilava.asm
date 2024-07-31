@@ -1,10 +1,10 @@
 	db "VOLCANO@" ; species name
 	dw 211, 420 ; height, weight
 
-	db   "Before battle, it"
-	next "turns its back on"
-	next "its opponent to"
+	db   "Lives in grasslands"
+	next "and volcanoes. Its"
+	next "non-flammable fur"
 
-	page "demonstrate how"
-	next "ferociously its"
-	next "fire blazes.@"
+	page "is really strong:"
+	next "It can even stay"
+	next "cool in lava!@" ; prototype element combined with habitat data. could be revised. just make sure it can survive in lava!

@@ -1,10 +1,11 @@
 	db "FROG@" ; species name
 	dw 307, 750 ; height, weight
 
-	db   "When it expands"
-	next "its throat to"
-	next "croak out a tune,"
+	db   "It sends signals"
+	next "to POLIWAG and"
+	next "POLIWHIRL with a"
 
-	page "nearby POLIWAG and"
-	next "POLIWHIRL gather"
-	next "immediately.@"
+	page "cry forced out"
+	next "from the depths"
+	next "of its belly.@"
+; prototype dex entry that details *how* Politoed croaks.

@@ -1,10 +1,10 @@
 	db "SUN@" ; species name
 	dw 211, 580 ; height, weight
 
-	db   "The tip of its"
-	next "forked tail"
-	next "quivers when it is"
+	db   "It has developed"
+	next "super-senses. It"
+	next "appears to use"
 
-	page "predicting its"
-	next "opponent's next"
-	next "move.@"
+	page "its body to per-"
+	next "ceieve things"
+	next "others cannot.@" ; abbreviated version of a prototype dex entry - the perceptive power is usually only implied in the vaguest sense

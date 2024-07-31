@@ -1,10 +1,10 @@
 	db "COTTONWEED@" ; species name
 	dw 200, 20 ; height, weight
 
-	db   "As soon as it"
-	next "rains, it closes"
-	next "its flower and"
+	db   "When the wind bl-"
+	next "ows it around, a"
+	next "seed-like substa-"
 
-	page "hides in the shade"
-	next "of a tree to avoid"
-	next "getting wet.@"
+	page "nce is dispersed"
+	next "from the top of"
+	next "its head.@" ; prototype dex entry - never seen in any other pokemon media! skiploom lore!

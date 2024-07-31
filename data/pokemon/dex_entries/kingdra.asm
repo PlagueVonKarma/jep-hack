@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 511, 3350 ; height, weight
 
-	db   "It stores energy"
-	next "by sleeping at"
-	next "underwater depths"
+	db   "It lives deep in"
+	next "the ocean. By co-"
+	next "vering itself in"
 
-	page "at which no other"
-	next "life forms can"
-	next "survive.@"
+	page "ink, it becomes"
+	next "almost impossible"
+	next "to identify.@" ; prototype dex entry

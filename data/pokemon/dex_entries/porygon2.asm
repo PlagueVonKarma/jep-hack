@@ -1,10 +1,10 @@
 	db "VIRTUAL@" ; species name
 	dw 200, 720 ; height, weight
 
-	db   "This manmade"
-	next "#MON evolved"
-	next "from the latest"
+	db   "Its programming"
+	next "allows it to per-"
+	next "form many simult-"
 
-	page "technology. It"
-	next "may have unprog-"
-	next "rammed reactions.@"
+	page "aneous computati-" ; prototype dex entry, could be revised to flow better.
+	next "ons. However, it"
+	next "still can't fly.@"

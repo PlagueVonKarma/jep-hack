@@ -1,10 +1,10 @@
 	db "BIG JAW@" ; species name
 	dw 307, 550 ; height, weight
 
-	db   "The tips of its"
-	next "fangs are slanted"
-	next "backward. Once"
+	db   "It spends most of"
+	next "its day underwat-"
+	next "er, with only its"
 
-	page "those fangs clamp"
-	next "down, the prey has"
-	next "no hope of escape.@"
+	page "eyes and nose"
+	next "above the water's."
+	next "surface.@" ; Prototype dex entry. I wanted to include it sleeping with one eye open, but there's no space.

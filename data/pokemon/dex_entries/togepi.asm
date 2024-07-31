@@ -1,10 +1,12 @@
 	db "SPIKE BALL@" ; species name
 	dw 100, 30 ; height, weight
 
-	db   "It is considered"
-	next "to be a symbol of"
-	next "good luck. Its"
+	db   "It's just a baby,"
+	next "but if in danger,"
+	next "it can repel foes"
 
-	page "shell is said to"
-	next "be filled with"
-	next "happiness.@"
+	page "by releasing a"
+	next "poison from its"
+	next "head spikes.@" ; prototype entry
+; used in a tcg promo in corocoro
+; https://bulbapedia.bulbagarden.net/wiki/Togepi_(Wizards_Promo_30)

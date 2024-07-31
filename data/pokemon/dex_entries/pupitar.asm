@@ -1,10 +1,10 @@
 	db "HARD SHELL@" ; species name
 	dw 311, 3350 ; height, weight
 
-	db   "It will not stay"
-	next "still, even while"
-	next "it's a pupa. It"
+	db   "Even in a pupal"
+	next "state, it can move"
+	next "around freely. If"
 
-	page "already has arms"
-	next "and legs under its"
-	next "solid shell.@"
+	page "under attack, it"
+	next "rushes at the foe"
+	next "with its shell.@" ; prototype dex entry

@@ -1,10 +1,10 @@
 	db "CLEAR WING@" ; species name
 	dw 311, 840 ; height, weight
 
-	db   "It can see in all"
-	next "directions without"
-	next "moving its big"
+	db   "Its wings flap at"
+	next "30 times per se-"
+	next "cond. When it sees"
 
-	page "eyes, helping it"
-	next "spot attackers and"
-	next "food right away.@"
+	page "prey, it swoops"
+	next "not knowing what"
+	next "its prey even is!@" ; amalgamation of two prototype dex entries! we never know how fast the wings flap!

@@ -1,10 +1,10 @@
 	db "DARK@" ; species name
 	dw 407, 770 ; height, weight
 
-	db   "The pungent-"
-	next "smelling flame"
-	next "that shoots from"
+	db   "The embodiment of"
+	next "aggressive inst-"
+	next "incts, it refuses"
 
-	page "its mouth results"
-	next "from toxins burn-"
-	next "ing in its body.@"
+	page "to stop fighting" ; prototype dex entry - it's long and hard to fit, so I had to cut out the "living embodiment" part.
+	next "even after a foe"
+	next "ripped apart.@"

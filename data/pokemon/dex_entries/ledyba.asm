@@ -1,10 +1,12 @@
 	db "FIVE STAR@" ; species name
 	dw 303, 240 ; height, weight
 
-	db   "It is timid and"
-	next "clusters together"
-	next "with others. The"
+	db   "If someone gets"
+	next "close enough to"
+	next "capture it, its"
 
-	page "fluid secreted by"
-	next "its feet indicates"
-	next "its location.@"
+	page "legs expel an"
+	next "orange fluid and"
+	next "it runs away.@"
+; prototype entry, used in the southern islands tcg set
+; https://bulbapedia.bulbagarden.net/wiki/Ledyba_(Southern_Islands_7)

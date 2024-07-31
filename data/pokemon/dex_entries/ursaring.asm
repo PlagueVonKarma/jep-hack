@@ -1,10 +1,10 @@
 	db "HIBERNANT@" ; species name
 	dw 511, 2770 ; height, weight
 
-	db   "Although it has a"
-	next "large body, it is"
-	next "quite skilled at"
+	db   "When it gets cold,"
+	next "it hibernates. To"
+	next "do that, it will"
 
-	page "climbing trees. It"
-	next "eats and sleeps in"
-	next "the treetops.@"
+	page "eat more and more"
+	next "food to store up"
+	next "energy.@" ; prototype dex entry

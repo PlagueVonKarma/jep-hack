@@ -1,10 +1,10 @@
 	db "JET@" ; species name
 	dw 200, 260 ; height, weight
 
-	db   "To escape from an"
-	next "attacker, it may"
-	next "shoot water out of"
+	db   "It can store up"
+	next "to 10 litres of"
+	next "water to shoot" ; prototype dex entry detail that transferred to qwilfish before completely disappearing.
 
-	page "its mouth, then"
-	next "use that force to"
-	next "swim backward.@"
+	page "at prey. It does"
+	next "so with great"
+	next "precision.@"

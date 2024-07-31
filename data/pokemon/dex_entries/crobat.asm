@@ -1,10 +1,10 @@
 	db "BAT@" ; species name
 	dw 511, 1650 ; height, weight
-
-	db   "As a result of its"
-	next "pursuit of faster,"
-	next "yet more silent"
-
-	page "flight, a new set"
-	next "of wings grew on"
-	next "its hind legs.@"
+	
+	db 	 "Nocturnal #MON."
+	next "Its legs have bec-"
+	next "come atrophied, so"
+	
+	page "it can only rest"
+	next "upside-down in"
+	next "forests and caves."

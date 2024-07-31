@@ -1,10 +1,10 @@
 	db "PATIENT@" ; species name
 	dw 403, 630 ; height, weight
 
-	db   "In order to con-"
-	next "ceal its black"
-	next "tail, it lives in"
+	db   "Lives in dark pl-"
+	next "aces. It will not"
+	next "attack directly,"
 
-	page "a dark cave and"
-	next "only moves about"
-	next "at night.@"
+	page "but if attacked,"
+	next "it returns the"
+	next "blow twofold.@" ; prototype dex entry alluding to Counter and Mirror Coat.
