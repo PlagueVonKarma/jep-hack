@@ -756,9 +756,11 @@ ENDM
 	connection east, KindleRoad, KINDLE_ROAD, -34
 	map_attributes TreasureBeach, TREASURE_BEACH, $02, NORTH ; Bank 2
 	connection north, OneIsland, ONE_ISLAND, -1
-	map_attributes KindleRoad, KINDLE_ROAD, $02, WEST ; Bank 2
+	map_attributes KindleRoad, KINDLE_ROAD, $02, NORTH | WEST; Bank 2
+	connection north, MtEmberExterior, MT_EMBER_EXTERIOR, -10
 	connection west, OneIsland, ONE_ISLAND, 34
-	map_attributes MtEmberExterior, MT_EMBER_EXTERIOR, $00, 0 ; Bank 2
+	map_attributes MtEmberExterior, MT_EMBER_EXTERIOR, $08, SOUTH ; Bank 2
+	connection south, KindleRoad, KINDLE_ROAD, 10
 	map_attributes MtEmberInterior, MT_EMBER_INTERIOR, $00, 0 ; Bank 2
 	map_attributes MtEmberSummit, MT_EMBER_SUMMIT, $00, 0 ; Bank 2
 	map_attributes MtEmberHiddenPath, MT_EMBER_HIDDEN_PATH, $00, 0 ; Bank 2

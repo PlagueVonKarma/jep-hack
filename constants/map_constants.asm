@@ -561,7 +561,7 @@ ENDM
 	map_const ONE_ISLAND,							14, 13 ; 3
 	map_const TREASURE_BEACH,						10, 18 ; 4
 	map_const KINDLE_ROAD,							10, 45 ; 5
-	map_const MT_EMBER_EXTERIOR,					10, 10 ; 6
+	map_const MT_EMBER_EXTERIOR,					30, 27 ; 6
 	map_const MT_EMBER_INTERIOR,					10, 10 ; 7
 	map_const MT_EMBER_SUMMIT,						10, 10 ; 8
 	map_const MT_EMBER_HIDDEN_PATH,					10, 10 ; 9
