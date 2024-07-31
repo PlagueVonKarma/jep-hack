@@ -1,10 +1,10 @@
 	db "LONG TAIL@" ; species name
 	dw 207, 250 ; height, weight
 
-	db   "It uses its tail"
-	next "to hang on to tree"
-	next "branches. It uses"
+	db   "While it loves ba-"
+	next "nanas, AIPOM has"
+	next "been seen preying"
 
-	page "its momentum to"
-	next "swing from one"
-	next "branch to another.@"
+	page "on SUNKERN. It" ; This references the Ultra Moon dex entry where Bounsweet is said to be its favourite.
+	next "hunts them by pou-"
+	next "ncing wildly.@"

@@ -7,4 +7,4 @@
 
 	page "allergic reactions"
 	next "in attackers. It"
-	next "loves nectar.@"
+	next "loves nectar.@" ; could be made honey, and then integrated into other honey tree encounters

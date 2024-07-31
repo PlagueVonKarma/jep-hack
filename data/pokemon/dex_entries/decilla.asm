@@ -1,10 +1,10 @@
 	db "SHRIEKING@" ; species name
 	dw 37, 1400 ; height, weight
 
-	db   "It once fed on"
-	next "weaker mammals."
-	next "When hungry,"
+	db   "It's weak, so its" ; this needs rewriting
+	next "mother has to"
+	next "feed it. When it's"
 
-	page "it lets out an"
-	next "ear-piercing"
-	next "shriek.@"
+	page "hungry, it lets"
+	next "out an ear-pier-"
+	next "cing shriek.@"

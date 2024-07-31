@@ -1,10 +1,10 @@
 	db "LIGHT@" ; species name
 	dw 407, 1360 ; height, weight
 
-	db   "When it gets dark,"
-	next "the light from its"
-	next "bright, shiny tail"
+	db   "Thought to be a"
+	next "spacefaring drag-"
+	next "on, remnants of"
 
-	page "can be seen from"
-	next "far away on the"
-	next "ocean's surface.@"
+	page "draconic genes"
+	next "were found in"
+	next "its DNA.@" ; Referencing the Official Pokemon Fanbook, which brought in the rumours of Ampharos once being dragon-type, as well as Mega Ampharos's Pokedex entries.
