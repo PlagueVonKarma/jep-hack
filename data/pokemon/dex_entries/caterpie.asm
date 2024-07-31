@@ -1,10 +1,10 @@
 	db "WORM@" ; species name
 	dw 100, 60 ; height, weight
 
-	db   "It crawls into"
-	next "foliage where it"
-	next "camouflages itself"
+	db   "When attacked, it"
+	next "emits a foul ste-"
+	next "nch from its ant-" ; anime and characteristic for the species
 
-	page "among leaves that"
-	next "are the same color"
-	next "as its body.@"
+	page "enna before spra-"
+	next "ying strings of"
+	next "silk everywhere.@" ; Carddass artwork https://archives.bulbagarden.net/media/upload/7/7a/Bandai_Caterpie_card.jpg

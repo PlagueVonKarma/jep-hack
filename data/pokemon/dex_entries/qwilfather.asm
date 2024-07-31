@@ -5,6 +5,6 @@
 	next "enemy. They vie"
 	next "for supremacy for"
 
-	page "the beaches by"
+	page "the beaches by" ; do u think he is winston churchill
 	next "commanding their"
 	next "underlings.@"

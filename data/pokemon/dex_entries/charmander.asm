@@ -1,10 +1,10 @@
 	db "LIZARD@" ; species name
 	dw 200, 190 ; height, weight
 
-	db   "If it's healthy,"
-	next "the flame on the"
-	next "tip of its tail"
+	db   "Lives in packs"
+	next "within secluded"
+	next "mountains. If it"
 
-	page "will burn vigor-"
-	next "ously, even if it"
-	next "gets a bit wet.@"
+	page "sees food, it"
+	next "calls for its"
+	next "friends to share.@" ; Pokemon Snap

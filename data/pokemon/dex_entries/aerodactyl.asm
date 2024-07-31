@@ -1,10 +1,10 @@
 	db "FOSSIL@" ; species name
 	dw 511, 1300 ; height, weight
 
-	db   "In prehistoric"
-	next "times, this"
-	next "#MON flew"
+	db   "Its wings were ma-"
+	next "de of a rocky mat-"
+	next "erial, strengthen-"
 
-	page "freely and"
-	next "fearlessly through"
-	next "the skies.@"
+	page "ing WING ATTACK."
+	next "Loves to eat GOLD"
+	next "BERRIES.@" ; Referencing Carddass artwork https://archives.bulbagarden.net/media/upload/b/bd/Bandai_Aerodactyl_card.jpg and that one anime episode

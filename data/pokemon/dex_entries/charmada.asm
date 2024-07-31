@@ -5,6 +5,6 @@
 	next "augmented by"
 	next "SILPH CO. to"
 
-	page "battle TYRANITAR." ; Like a sequel to Omegadge vs Gawarhed!
+	page "battle GAWARHED."
 	next "The three heads"
 	next "work in unison.@"

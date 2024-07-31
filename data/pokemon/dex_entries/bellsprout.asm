@@ -1,10 +1,10 @@
 	db "FLOWER@" ; species name
 	dw 204, 90 ; height, weight
 
-	db   "If it notices"
-	next "anything that"
-	next "moves, it"
+	db   "To catch prey, it"
+	next "extends its roots"
+	next "to constrict them." ; Referencing Carddass artwork https://archives.bulbagarden.net/media/upload/0/02/Bandai_Bellsprout_card.jpg
 
-	page "immediately flings"
-	next "its vine at the"
-	next "object.@"
+	page "It follows this"
+	next "up with ACID and"
+	next "VINE WHIP.@"

@@ -1,10 +1,10 @@
 	db "BUTTERFLY@" ; species name
 	dw 307, 710 ; height, weight
 
-	db   "It flits from"
-	next "flower to flower,"
-	next "collecting honey."
+	db   "When asleep, it"
+	next "continues to flap"
+	next "its wings. However,"
 
-	page "It can even"
-	next "identify distant"
-	next "flowers in bloom.@"
+	page "it often spreads"
+	next "POISON POWDER by"
+	next "accident.@" ; Pokemon Sleep

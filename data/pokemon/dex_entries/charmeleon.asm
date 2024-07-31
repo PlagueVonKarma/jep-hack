@@ -1,10 +1,10 @@
 	db "FLAME@" ; species name
 	dw 307, 420 ; height, weight
 
-	db   "If it becomes"
-	next "agitated during"
-	next "battle, it spouts"
+	db   "Has a hotheaded,"
+	next "combative dispos-"
+	next "ision. However,"
 
-	page "intense flames,"
-	next "incinerating its"
-	next "surroundings.@"
+	page "if it wins a ba-"
+	next "ttle, it sleeps"
+	next "head-in-hand.@" ; Pokemon Sleep

@@ -2,7 +2,7 @@
 	dw 311, 191 ; height, weight - temp
 
 	db   "Popular amongst"
-	next "ringmaster for its"
+	next "ringmasters for its"
 	next "skillful juggling."
 
 	page "Training one is"

@@ -5,6 +5,6 @@
 	next "computers, but"
 	next "its corrupted"
 
-	page "data can often"
-	next "cause severe errors"
-	next "or glitches.@"
+	page "data causes severe"
+	next "errors, glitches,"
+	next "and data loss.@"

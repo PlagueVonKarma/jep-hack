@@ -1,10 +1,12 @@
 	db "LONG LEG@" ; species name
 	dw 307, 740 ; height, weight
 
-	db   "Rather than mak-"
-	next "ing a nest in one"
-	next "specific spot, it"
+	db   "Its silk is extre-"
+	next "mely strong. To"
+	next "avoid capture,"
 
-	page "wanders in search"
-	next "of food after"
-	next "darkness falls.@"
+	page "it spits from the"
+	next "front or rear to"
+	next "seal # BALLs.@"
+; The way Ariados hunts is contradicted like, all the time, it's kind of ridiculous. 
+; So to avoid the issue entirely, I put together the lore about the silk it spits, among other things, to make this.

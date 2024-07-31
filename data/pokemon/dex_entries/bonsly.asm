@@ -5,6 +5,6 @@
 	next "must be bottle-fed"
 	next "before eating"
 
-	page "solid food."
-	next "It cries to expel"
+	page "solid food. it"
+	next "cries to expel"
 	next "excess moisture.@"

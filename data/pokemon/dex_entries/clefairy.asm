@@ -1,10 +1,10 @@
 	db "FAIRY@" ; species name
 	dw 200, 170 ; height, weight
 
-	db   "Though rarely"
-	next "seen, it becomes"
-	next "easier to spot,"
+	db   "Seeing its METRO-"
+	next "NOME is considered"
+	next "to be auspicious." ; obscure as fuck word that means "oh yeah it means good fortune"
 
-	page "for some reason,"
-	next "on the night of a "
-	next "full moon.@"
+	page "Its wings can sto-"
+	next "re the power of"
+	next "moonlight to fly.@"

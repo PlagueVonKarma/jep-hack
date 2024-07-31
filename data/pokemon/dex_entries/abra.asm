@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 211, 430 ; height, weight
 
-	db   "It hypnotizes"
-	next "itself so that it"
-	next "can teleport away"
+	db   "Lives in urban" ; taken from a lot of other media, not much about this pokemon.
+	next "areas. Even when"
+	next "sleeping, it can"
 
-	page "when it senses"
-	next "danger, even"
-	next "if it is asleep.@"
+	page "control its PSI"
+	next "powers, letting it"
+	next "easily flee foes.@"

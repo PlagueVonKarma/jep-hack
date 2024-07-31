@@ -7,4 +7,4 @@
 
 	page "of explorers, much"
 	next "to their horror"
-	next "and disgust.@"
+	next "and disgust.@" ; it's secretly a solifuge,,,

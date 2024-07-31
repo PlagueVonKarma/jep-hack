@@ -1,10 +1,10 @@
 	db "ELECTRIC@" ; species name
 	dw 503, 1160 ; height, weight
 
-	db   "Legendary bird"
-	next "#MON. They say"
-	next "lightning caused"
+	db   "To catch prey, it"
+	next "electrifies its"
+	next "talons before str-"
 
-	page "by the flapping of"
-	next "its wings causes"
-	next "summer storms.@"
+	page "iking from the he-"
+	next "avens. Nothing"
+	next "survives.@" ; Referencing Carddass artwork https://archives.bulbagarden.net/media/upload/c/cd/Bandai_Zapdos_card.jpg

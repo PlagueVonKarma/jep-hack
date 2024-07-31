@@ -1,10 +1,10 @@
 	db "LEAF@" ; species name
 	dw 211, 140 ; height, weight
 
-	db   "It loves to bask"
-	next "in the sunlight."
-	next "It uses the leaf"
+	db   "Its leaf can de-"
+	next "tect warmth and"
+	next "humidity. When"
 
-	page "on its head to"
-	next "seek out warm"
-	next "places.@"
+	page "it finds a su-"
+	next "table spot, it"; smash bros brawl & pokemon sleep
+	next "rests on it.@" ; shoddily written tbh

@@ -1,10 +1,10 @@
 	db "LEGENDARY@" ; species name
 	dw 603, 3420 ; height, weight
 
-	db   "An ancient picture"
-	next "scroll shows that"
-	next "people were"
+	db   "While rarely seen"
+	next "in praries, it is"
+	next "easier to find in"
 
-	page "attracted to its"
-	next "movement as it ran"
-	next "through prairies.@"
+	page "volcanoes, where"
+	next "it sleeps in lava" ; Referencing Pokemon Snap.
+	next "pits.@"

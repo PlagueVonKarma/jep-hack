@@ -1,10 +1,10 @@
 	db "LEAF@" ; species name
 	dw 311, 350 ; height, weight
 
-	db   "The scent that"
-	next "wafts from the"
-	next "leaves on its neck"
+	db   "Its RAZOR LEAF can"
+	next "demolish metal fe-" ; Pokemon Ranger Browser entry
+	next "nces. The aroma"
 
-	page "causes anyone who"
-	next "smells it to"
-	next "become energetic.@"
+	page "it gives off will"
+	next "energise even sl-" ; Pokemon Sleep reference
+	next "eeping #MON.@"
