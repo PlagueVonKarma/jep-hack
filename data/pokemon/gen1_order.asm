@@ -247,6 +247,7 @@ Pokered_MonIndices:
 	db SUNFLORA
 	db AERCROW
 	db YANMA
+	db PENDING03
 	db WOOPER
 	db QUAGSIRE
 	db ESPEON
@@ -261,9 +262,9 @@ Pokered_MonIndices:
 	db WYNAUT
 	db WOBBUFFET
 	db BIPULLA
-	db CALFLAC
 	db GIRAFARIG
 	db FARIGIRAF
+	db EMORDROME
 	db PINECO
 	db FORRETRESS
 	db DUNSPARCE
@@ -393,4 +394,6 @@ Pokered_MonIndices:
 	db FERADACTYL
 	db DECILLA
 	db GAWARHED
+	db MAMOSWINE
+	db HIRSUSWINE
 	assert_table_length NUM_POKEMON - 1

@@ -275,6 +275,7 @@ AnimationIdlePointers:
 	dw FoxfireAnimationIdle
 	dw YanmaAnimationIdle
 	dw YanmegaAnimationIdle
+	dw Pending03AnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle
 	dw EspeonAnimationIdle
@@ -293,9 +294,9 @@ AnimationIdlePointers:
 	dw WynautAnimationIdle
 	dw WobbuffetAnimationIdle
 	dw BipullaAnimationIdle
-	dw CalflacAnimationIdle
 	dw GirafarigAnimationIdle
 	dw FarigirafAnimationIdle
+	dw EmordromeAnimationIdle
 	dw PinecoAnimationIdle
 	dw ForretressAnimationIdle
 	dw DunsparceAnimationIdle
@@ -320,6 +321,8 @@ AnimationIdlePointers:
 	dw MagcargoAnimationIdle
 	dw SwinubAnimationIdle
 	dw PiloswineAnimationIdle
+	dw MamoswineAnimationIdle
+	dw HirsuswineAnimationIdle
 	dw CorsolaAnimationIdle
 	dw RemoraidAnimationIdle
 	dw OctilleryAnimationIdle

@@ -64,6 +64,7 @@ EvosAttacksPointers2::
 	dw FoxfireEvosAttacks
 	dw YanmaEvosAttacks
 	dw YanmegaEvosAttacks
+	dw Pending03EvosAttacks
 	dw WooperEvosAttacks
 	dw QuagsireEvosAttacks
 	dw EspeonEvosAttacks
@@ -82,9 +83,9 @@ EvosAttacksPointers2::
 	dw WynautEvosAttacks
 	dw WobbuffetEvosAttacks
 	dw BipullaEvosAttacks
-	dw CalflacEvosAttacks
 	dw GirafarigEvosAttacks
 	dw FarigirafEvosAttacks
+	dw EmordromeEvosAttacks
 	dw PinecoEvosAttacks
 	dw ForretressEvosAttacks
 	dw DunsparceEvosAttacks
@@ -109,6 +110,8 @@ EvosAttacksPointers2::
 	dw MagcargoEvosAttacks
 	dw SwinubEvosAttacks
 	dw PiloswineEvosAttacks
+	dw MamoswineEvosAttacks
+	dw HirsuswineEvosAttacks
 	dw CorsolaEvosAttacks
 	dw RemoraidEvosAttacks
 	dw OctilleryEvosAttacks
@@ -990,7 +993,8 @@ FoxfireEvosAttacks:
 	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 34, YANMEGA ; to be changed
+	dbbw EVOLVE_LEVEL, 33, YANMEGA ; to be changed
+	dbbw EVOLVE_LEVEL, 10, PENDING03 ; to be changed
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, FORESIGHT
@@ -1015,6 +1019,25 @@ YanmegaEvosAttacks:
 	dbw 25, DETECT
 	dbw 29, SUPERSONIC
 	dbw 33, ANCIENTPOWER
+	dbw 37, SLASH
+	dbw 37, WING_ATTACK
+	dbw 43, SCREECH
+	db 0 ; no more level-up moves
+	
+Pending03EvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, FORESIGHT
+	dbw 1, CONFUSION
+	dbw 1, FLAIL
+	dbw 7, QUICK_ATTACK
+	dbw 13, DOUBLE_TEAM
+	dbw 19, SONICBOOM
+	dbw 25, DETECT
+	dbw 29, SUPERSONIC
+	dbw 33, POISONPOWDER
+	dbw 33, SLEEP_POWDER
+	dbw 33, STUN_SPORE
 	dbw 37, SLASH
 	dbw 37, WING_ATTACK
 	dbw 43, SCREECH
@@ -1127,7 +1150,6 @@ MurkrowEvosAttacks:
 	db 0 ; no more level-up moves
 	
 HonchkrowEvosAttacks:
-	dbbw EVOLVE_ITEM, DUSK_STONE, HONCHKROW
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, PURSUIT
@@ -1225,7 +1247,7 @@ WobbuffetEvosAttacks:
 	db 0 ; no more level-up moves
 
 BipullaEvosAttacks:
-	dbbw EVOLVE_LEVEL, 17, CALFLAC
+	dbbw EVOLVE_LEVEL, 24, GIRAFARIG
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -1238,23 +1260,9 @@ BipullaEvosAttacks:
 	dbw 45, PSYCHIC_M
 	db 0 ; no more level-up moves
 
-CalflacEvosAttacks:
-	dbbw EVOLVE_LEVEL, 29, GIRAFARIG
-	db 0 ; no more Evolutions
-	dbw 1, TACKLE
-	dbw 1, GROWL
-	dbw 7, CONFUSION
-	dbw 13, LICK
-	dbw 17, STOMP
-	dbw 22, AGILITY
-	dbw 31, BATON_PASS
-	dbw 41, PSYBEAM
-	dbw 50, CRUNCH
-	dbw 55, PSYCHIC_M
-	db 0 ; no more level-up moves
-
 GirafarigEvosAttacks:
 	dbbw EVOLVE_LEVEL, 44, FARIGIRAF
+	dbbw EVOLVE_ITEM, DUSK_STONE, EMORDROME ; to be changed maybe?
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -1280,6 +1288,21 @@ FarigirafEvosAttacks:
 	dbw 44, PSYBEAM
 	dbw 56, CRUNCH
 	dbw 65, PSYCHIC_M
+	db 0 ; no more level-up moves
+	
+EmordromeEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, GROWL
+	dbw 1, SPITE
+	dbw 7, CONFUSION
+	dbw 13, LICK
+	dbw 17, STOMP
+	dbw 22, AGILITY
+	dbw 32, BATON_PASS
+	dbw 44, SHADOW_BALL
+	dbw 56, CRUNCH
+	dbw 65, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 PinecoEvosAttacks:
@@ -1594,17 +1617,49 @@ SwinubEvosAttacks:
 	db 0 ; no more level-up moves
 
 PiloswineEvosAttacks:
+	dbbw EVOLVE_LEVEL, 43, MAMOSWINE ; to be changed
+	dbbw EVOLVE_LEVEL, 42, HIRSUSWINE
 	db 0 ; no more evolutions
+	dbw 1, TACKLE
 	dbw 1, HORN_ATTACK
-	dbw 1, POWDER_SNOW
-	dbw 1, ENDURE
 	dbw 10, POWDER_SNOW
 	dbw 19, ENDURE
 	dbw 28, TAKE_DOWN
 	dbw 33, FURY_ATTACK
-	dbw 42, MIST
+	dbw 42, ANCIENTPOWER
+	dbw 47, MIST
 	dbw 56, BLIZZARD
 	dbw 70, AMNESIA
+	db 0 ; no more level-up moves
+	
+MamoswineEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, HORN_ATTACK
+	dbw 10, POWDER_SNOW
+	dbw 19, ENDURE
+	dbw 28, TAKE_DOWN
+	dbw 33, FURY_ATTACK
+	dbw 42, ANCIENTPOWER
+	dbw 49, MIST
+	dbw 53, EARTHQUAKE
+	dbw 58, BLIZZARD
+	dbw 65, SCARY_FACE
+	dbw 73, AMNESIA
+	db 0 ; no more level-up moves
+	
+HirsuswineEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, TACKLE
+	dbw 1, HORN_ATTACK
+	dbw 10, POWDER_SNOW
+	dbw 19, ENDURE
+	dbw 28, TAKE_DOWN
+	dbw 33, FURY_ATTACK
+	dbw 42, HORN_DRILL
+	dbw 49, MIST
+	dbw 58, BLIZZARD
+	dbw 73, AMNESIA
 	db 0 ; no more level-up moves
 
 CorsolaEvosAttacks:

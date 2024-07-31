@@ -277,6 +277,7 @@ MonMenuIcons:
 	db ICON_FOX         ; FOXFIRE
 	db ICON_BUG         ; YANMA
 	db ICON_BUG         ; YANMEGA
+	db ICON_BUG         ; PENDING03
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE
 	db ICON_FOX         ; ESPEON
@@ -295,9 +296,9 @@ MonMenuIcons:
 	db ICON_GHOST       ; WYNAUT
 	db ICON_GHOST       ; WOBBUFFET
 	db ICON_GHOST       ; BIPULLA
-	db ICON_EQUINE      ; CALFLAC
 	db ICON_EQUINE      ; GIRAFARIG
 	db ICON_EQUINE      ; FARIGIRAF
+	db ICON_EQUINE      ; EMORDROME
 	db ICON_BUG         ; PINECO
 	db ICON_BUG         ; FORRETRESS
 	db ICON_SERPENT     ; DUNSPARCE
@@ -322,6 +323,8 @@ MonMenuIcons:
 	db ICON_BLOB        ; MAGCARGO
 	db ICON_EQUINE      ; SWINUB
 	db ICON_EQUINE      ; PILOSWINE
+	db ICON_EQUINE      ; MAMOSWINE
+	db ICON_EQUINE      ; HIRSUSWINE
 	db ICON_SHELL       ; CORSOLA
 	db ICON_FISH        ; REMORAID
 	db ICON_FISH        ; OCTILLERY

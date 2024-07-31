@@ -1,5 +1,5 @@
 	db "LONG NECK@" ; species name
-	dw  1006, 3527 ; height, weight
+	dw 1006, 3520 ; height, weight
 
 	db   "The tail having"
 	next "consumed the head,"

@@ -275,6 +275,7 @@ AnimationPointers:
 	dw FoxfireAnimation
 	dw YanmaAnimation
 	dw YanmegaAnimation
+	dw Pending03Animation
 	dw WooperAnimation
 	dw QuagsireAnimation
 	dw EspeonAnimation
@@ -293,9 +294,9 @@ AnimationPointers:
 	dw WynautAnimation
 	dw WobbuffetAnimation
 	dw BipullaAnimation
-	dw CalflacAnimation
 	dw GirafarigAnimation
 	dw FarigirafAnimation
+	dw EmordromeAnimation
 	dw PinecoAnimation
 	dw ForretressAnimation
 	dw DunsparceAnimation
@@ -320,6 +321,8 @@ AnimationPointers:
 	dw MagcargoAnimation
 	dw SwinubAnimation
 	dw PiloswineAnimation
+	dw MamoswineAnimation
+	dw HirsuswineAnimation
 	dw CorsolaAnimation
 	dw RemoraidAnimation
 	dw OctilleryAnimation

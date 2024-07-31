@@ -563,6 +563,8 @@ PokemonPicPointers::
 	dba YanmaBackpic
 	dba YanmegaFrontpic
 	dba YanmegaBackpic
+	dba Pending03Frontpic
+	dba Pending03Backpic
 	dba WooperFrontpic
 	dba WooperBackpic
 	dba QuagsireFrontpic
@@ -602,12 +604,12 @@ PokemonPicPointers::
 	dba WobbuffetBackpic
 	dba BipullaFrontpic
 	dba BipullaBackpic
-	dba CalflacFrontpic
-	dba CalflacBackpic
 	dba GirafarigFrontpic
 	dba GirafarigBackpic
 	dba FarigirafFrontpic
 	dba FarigirafBackpic
+	dba EmordromeFrontpic
+	dba EmordromeBackpic
 	dba PinecoFrontpic
 	dba PinecoBackpic
 	dba ForretressFrontpic
@@ -656,6 +658,10 @@ PokemonPicPointers::
 	dba SwinubBackpic
 	dba PiloswineFrontpic
 	dba PiloswineBackpic
+	dba MamoswineFrontpic
+	dba MamoswineBackpic
+	dba HirsuswineFrontpic
+	dba HirsuswineBackpic
 	dba CorsolaFrontpic
 	dba CorsolaBackpic
 	dba RemoraidFrontpic

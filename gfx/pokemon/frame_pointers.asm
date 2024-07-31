@@ -275,6 +275,7 @@ FramesPointers:
 	dba FoxfireFrames
 	dba YanmaFrames
 	dba YanmegaFrames
+	dba Pending03Frames
 	dba WooperFrames
 	dba QuagsireFrames
 	dba EspeonFrames
@@ -293,9 +294,9 @@ FramesPointers:
 	dba WynautFrames
 	dba WobbuffetFrames
 	dba BipullaFrames
-	dba CalflacFrames
 	dba GirafarigFrames
 	dba FarigirafFrames
+	dba EmordromeFrames
 	dba PinecoFrames
 	dba ForretressFrames
 	dba DunsparceFrames
@@ -320,6 +321,8 @@ FramesPointers:
 	dba MagcargoFrames
 	dba SwinubFrames
 	dba PiloswineFrames
+	dba MamoswineFrames
+	dba HirsuswineFrames
 	dba CorsolaFrames
 	dba RemoraidFrames
 	dba OctilleryFrames

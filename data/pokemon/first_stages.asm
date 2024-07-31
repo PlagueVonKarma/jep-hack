@@ -276,6 +276,7 @@ FirstEvoStages::
 	dw FOXFIRE
 	dw YANMA
 	dw YANMA
+	dw YANMA
 	dw WOOPER
 	dw WOOPER
 	dw EEVEE
@@ -319,6 +320,8 @@ FirstEvoStages::
 	dw TEDDIURSA
 	dw SLUGMA
 	dw SLUGMA
+	dw SWINUB
+	dw SWINUB
 	dw SWINUB
 	dw SWINUB
 	dw CORSOLA

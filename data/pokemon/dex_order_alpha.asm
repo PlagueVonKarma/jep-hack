@@ -39,7 +39,6 @@ AlphabeticalPokedexOrder:
 	dw BUTTERFREE
 	dw BUU
 	dw CACAWPHONY
-	dw CALFLAC
 	dw CARAPTHOR
 	dw CARETORKER
 	dw CATERPIE
@@ -91,6 +90,7 @@ AlphabeticalPokedexOrder:
 	dw ELECTIVIRE
 	dw ELECTRODE
 	dw ELEKID
+	dw EMORDROME
 	dw ENTEI
 	dw ESPEON
 	dw EUCALA
@@ -140,6 +140,7 @@ AlphabeticalPokedexOrder:
 	dw HAUNTER
 	dw HERACROSS
 	dw HIPPUNK
+	dw HIRSUSWINE
 	dw HITMONCHAN
 	dw HITMONLEE
 	dw HITMONTOP
@@ -206,6 +207,7 @@ AlphabeticalPokedexOrder:
 	dw MAGNETON
 	dw MAGNETITE
 	dw MAGNEZONE
+	dw MAMOSWINE
 	dw MANKEY
 	dw MANTINE
 	dw MANTYKE
@@ -393,6 +395,7 @@ AlphabeticalPokedexOrder:
 	dw XYLODON
 	dw XYLOFIN
 	dw YANMA
+	dw PENDING03 ; this thing's gonna start with Yan, surely, so I'm putting it here.
 	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT

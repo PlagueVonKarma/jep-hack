@@ -384,19 +384,19 @@ JohtoGrassWildMons:
 	; morn
 	dbw 24, SMEARGLE
 	dbw 26, QATU
-	dbw 24, CALFLAC
+	dbw 24, QATU
 	dbw 27, QATU
 	dbw 25, SMEARGLE
-	dbw 25, CALFLAC
-	dbw 26, CALFLAC
+	dbw 25, GIRAFARIG
+	dbw 26, GIRAFARIG
 	; day
 	dbw 24, SMEARGLE
 	dbw 26, QATU
-	dbw 24, CALFLAC
+	dbw 24, QATU
 	dbw 27, QATU
 	dbw 25, SMEARGLE
-	dbw 25, CALFLAC
-	dbw 26, CALFLAC
+	dbw 25, GIRAFARIG
+	dbw 26, GIRAFARIG
 	; nite
 	dbw 24, QUAGSIRE
 	dbw 26, QATU

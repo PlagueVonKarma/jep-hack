@@ -64,6 +64,7 @@ EggMovePointers2::
 	dw FoxfireEggMoves
 	dw YanmaEggMoves
 	dw NoEggMoves2 ; Yanmega
+	dw NoEggMoves2 ; Pending03
 	dw WooperEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -82,9 +83,9 @@ EggMovePointers2::
 	dw NoEggMoves2 ; Wynaut
 	dw NoEggMoves2
 	dw BipullaEggMoves
-	dw NoEggMoves2 ; Calflac
 	dw NoEggMoves2 ; Girafarig
 	dw NoEggMoves2 ; Farigiraf
+	dw NoEggMoves2 ; Emordrome
 	dw PinecoEggMoves
 	dw NoEggMoves2
 	dw DunsparceEggMoves
@@ -109,6 +110,8 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw SwinubEggMoves
 	dw NoEggMoves2
+	dw NoEggMoves2 ; Mamoswine
+	dw NoEggMoves2 ; Hirsuswine
 	dw CorsolaEggMoves
 	dw RemoraidEggMoves
 	dw NoEggMoves2

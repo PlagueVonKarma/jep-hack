@@ -276,6 +276,7 @@ PokedexDataPointerTable:
 	dba FoxfirePokedexEntry
 	dba YanmaPokedexEntry
 	dba YanmegaPokedexEntry
+	dba Pending03PokedexEntry
 	dba WooperPokedexEntry
 	dba QuagsirePokedexEntry
 	dba EspeonPokedexEntry
@@ -294,9 +295,9 @@ PokedexDataPointerTable:
 	dba WynautPokedexEntry
 	dba WobbuffetPokedexEntry
 	dba BipullaPokedexEntry
-	dba CalflacPokedexEntry
 	dba GirafarigPokedexEntry
 	dba FarigirafPokedexEntry
+	dba EmordromePokedexEntry
 	dba PinecoPokedexEntry
 	dba ForretressPokedexEntry
 	dba DunsparcePokedexEntry
@@ -321,6 +322,8 @@ PokedexDataPointerTable:
 	dba MagcargoPokedexEntry
 	dba SwinubPokedexEntry
 	dba PiloswinePokedexEntry
+	dba MamoswinePokedexEntry
+	dba HirsuswinePokedexEntry
 	dba CorsolaPokedexEntry
 	dba RemoraidPokedexEntry
 	dba OctilleryPokedexEntry

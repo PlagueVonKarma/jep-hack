@@ -275,6 +275,7 @@ BitmasksPointers:
 	dw FoxfireBitmasks
 	dw YanmaBitmasks
 	dw YanmegaBitmasks
+	dw Pending03Bitmasks
 	dw WooperBitmasks
 	dw QuagsireBitmasks
 	dw EspeonBitmasks
@@ -293,9 +294,9 @@ BitmasksPointers:
 	dw WynautBitmasks
 	dw WobbuffetBitmasks
 	dw BipullaBitmasks
-	dw CalflacBitmasks
 	dw GirafarigBitmasks
 	dw FarigirafBitmasks
+	dw EmordromeBitmasks
 	dw PinecoBitmasks
 	dw ForretressBitmasks
 	dw DunsparceBitmasks
@@ -320,6 +321,8 @@ BitmasksPointers:
 	dw MagcargoBitmasks
 	dw SwinubBitmasks
 	dw PiloswineBitmasks
+	dw MamoswineBitmasks
+	dw HirsuswineBitmasks
 	dw CorsolaBitmasks
 	dw RemoraidBitmasks
 	dw OctilleryBitmasks

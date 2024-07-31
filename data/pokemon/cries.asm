@@ -227,9 +227,9 @@ PokemonCries::
 	mon_cry CRY_TOTODILE,   1132,  232 ; TOTODILE
 	mon_cry CRY_TOTODILE,   1088,  272 ; CROCONAW
 	mon_cry CRY_TOTODILE,   1020,  384 ; FERALIGATR
-	mon_cry CRY_NIDORAN_M,     0,    0 ; CUBBURN	(incomplete)
-	mon_cry CRY_NIDORAN_M,     0,    0 ; FLAMBEAR	(incomplete)
-	mon_cry CRY_NIDORAN_M,     0,    0 ; BRUINOUS	(incomplete)
+	mon_cry CRY_MARILL,      160,  128 ; CUBBURN
+	mon_cry CRY_TOTODILE,    752,  160 ; FLAMBEAR
+	mon_cry CRY_TOTODILE,   3558,  496 ; BRUINOUS
 	mon_cry CRY_NIDORAN_M,     0,    0 ; PALSSIO	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; PRESSIO	(incomplete)
 	mon_cry CRY_NIDORAN_M,     0,    0 ; DONMARIN	(incomplete)
@@ -281,6 +281,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; FOXFIRE	(incomplete)
 	mon_cry CRY_TOTODILE,     49,  200 ; YANMA
 	mon_cry CRY_NIDORAN_M,     0,    0 ; YANMEGA	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; PENDING03	(incomplete)
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER
 	mon_cry CRY_WOOPER,     -198,  320 ; QUAGSIRE
 	mon_cry CRY_AIPOM,       162,  320 ; ESPEON
@@ -298,10 +299,10 @@ PokemonCries::
 	mon_cry CRY_HOOTHOOT,    354,  256 ; UNOWN
 	mon_cry CRY_NIDORAN_M,     0,    0 ; WYNAUT 	(incomplete)
 	mon_cry CRY_AMPHAROS,    635,  324 ; WOBBUFFET
-	mon_cry CRY_NIDORAN_M,     0,    0 ; BIPULLA	(incomplete)
-	mon_cry CRY_NIDORAN_M,     0,    0 ; CALFLAC	(incomplete)
+	mon_cry CRY_GIRAFARIG,    48,  256 ; BIPULLA
 	mon_cry CRY_GIRAFARIG,    65,  512 ; GIRAFARIG
 	mon_cry CRY_NIDORAN_M,     0,    0 ; FARIGIRAF	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; EMORDROME	(incomplete)
 	mon_cry CRY_SLOWKING,    128,  256 ; PINECO
 	mon_cry CRY_SLOWKING,      0,  384 ; FORRETRESS
 	mon_cry CRY_DUNSPARCE,   452,  256 ; DUNSPARCE
@@ -326,6 +327,8 @@ PokemonCries::
 	mon_cry CRY_MAGCARGO,   -525,  448 ; MAGCARGO
 	mon_cry CRY_CYNDAQUIL,   510,  320 ; SWINUB
 	mon_cry CRY_MAGCARGO,   -265,  256 ; PILOSWINE
+	mon_cry CRY_NIDORAN_M,     0,    0 ; MAMOSWINE	(incomplete)
+	mon_cry CRY_MAGCARGO,   -781,  512 ; HIRSUSWINE
 	mon_cry CRY_MAGCARGO,    161,  232 ; CORSOLA
 	mon_cry CRY_SUNFLORA,     13,  256 ; REMORAID
 	mon_cry CRY_TOTODILE,      0,  384 ; OCTILLERY

@@ -1,10 +1,10 @@
 	db "OGRE DARNER@" ; species name
-	dw 603, 1135 ; height, weight
+	dw 603, 1130 ; height, weight
 
-	db   "Filled with"
-	next "primeval power,"
-	next "the sound of its"
+	db   "Filled with prim-"
+	next "eval power, the"
+	next "sound of its wings"
 
-	page "wings is often"
+	page "beating is often"
 	next "mistaken for that"
 	next "of a helicopter.@"

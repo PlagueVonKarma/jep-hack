@@ -295,6 +295,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const FOXFIRE
 	const YANMA      ; c1
 	const YANMEGA
+	const PENDING03
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
@@ -313,9 +314,9 @@ DEF JOHTO_POKEMON EQU const_value
 	const WYNAUT
 	const WOBBUFFET  ; ca
 	const BIPULLA
-	const CALFLAC
 	const GIRAFARIG  ; cb
 	const FARIGIRAF
+	const EMORDROME
 	const PINECO     ; cc
 	const FORRETRESS ; cd
 	const DUNSPARCE  ; ce
@@ -340,6 +341,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const MAGCARGO   ; db
 	const SWINUB     ; dc
 	const PILOSWINE  ; dd
+	const MAMOSWINE
+	const HIRSUSWINE
 	const CORSOLA    ; de
 	const REMORAID   ; df
 	const OCTILLERY  ; e0
