@@ -1,10 +1,10 @@
 	db "PIG MONKEY@" ; species name
 	dw 108, 620 ; height, weight
 
-	db   "It lives in groups"
-	next "in the treetops."
-	next "If it loses sight"
+	db   "It stands up to"
+	next "opponents stronger"
+	next "than it by throwi-"
 
-	page "of its group, it"
-	next "becomes infuriated"
-	next "by its loneliness.@"
+	page "ng various items"
+	next "down at them from"
+	next "the treetops.@" ; prototype dex entry

@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 703, 4630 ; height, weight
 
-	db   "It is said that"
-	next "somewhere in the"
-	next "ocean lies an"
+	db   "There is many a"
+	next "tale of DRAGONITE"
+	next "coming to rescue"
 
-	page "island where these"
-	next "gather. Only they"
-	next "live there.@"
+	page "drowning SAILORs."
+	next "Thus, it's deemed"
+	next "a God of the Sea.@" ; retconned info + prototype dex entry

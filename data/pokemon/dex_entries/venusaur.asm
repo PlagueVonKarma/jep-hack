@@ -1,10 +1,10 @@
 	db "SEED@" ; species name
 	dw 607, 2210 ; height, weight
 
-	db   "As it warms it-"
-	next "self and absorbs"
-	next "the sunlight, its"
+	db   "The mysterious"
+	next "aroma wafting out"
+	next "from VENUSAUR can"
 
-	page "flower petals"
-	next "release a pleasant"
-	next "fragrance.@"
+	page "instantly revive"
+	next "wilting flowers"
+	next "and vegetation.@" ; prototype dex entry details

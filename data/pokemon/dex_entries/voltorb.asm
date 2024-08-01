@@ -1,10 +1,10 @@
 	db "BALL@" ; species name
 	dw 108, 230 ; height, weight
 
-	db   "During the study"
-	next "of this #MON,"
-	next "it was discovered"
+	db   "The friction from"
+	next "rolling causes it"
+	next "to generate elec-"
 
-	page "that its compo-"
-	next "nents are not"
-	next "found in nature.@"
+	page "tricity. Too much"
+	next "can cause it to"
+	next "explode.@" ; prototype dex entry that's very funny

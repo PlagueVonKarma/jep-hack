@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 211, 430 ; height, weight
 
-	db   "Lives in urban" ; taken from a lot of other media, not much about this pokemon.
-	next "areas. Even when"
-	next "sleeping, it can"
+	db   "The location of" ; prototype dex entry that links in with indigo plateau featuring.
+	next "its home is imp-"
+	next "rinted in its"
 
-	page "control its PSI"
-	next "powers, letting it"
-	next "easily flee foes.@"
+	page "brain, so it can"
+	next "TELEPORT home any"
+	next "time.@"

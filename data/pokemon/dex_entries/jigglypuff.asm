@@ -1,10 +1,10 @@
 	db "BALLOON@" ; species name
 	dw 108, 120 ; height, weight
 
-	db   "It rolls its cute"
-	next "eyes as it sings a"
-	next "soothing lullaby."
+	db   "It puffs up when"
+	next "in a good mood."
+	next "It puffs up when"
 
-	page "Its gentle song"
-	next "puts anyone who"
-	next "hears it to sleep.@"
+	page "in a bad mood."
+	next "It's hard to tell"
+	next "at a distance.@" ; prototype dex entry that feels like a joke about women. huh.

@@ -1,10 +1,10 @@
 	db "BALLOON@" ; species name
 	dw 303, 260 ; height, weight
 
-	db   "The rich, fluffy"
-	next "fur that covers"
-	next "its body feels so"
+	db   "It's so soft and"
+	next "flexible that it"
+	next "can turn itself" ; carddass artwork detail (not on the card itself, but on other bits)
 
-	page "good that anyone"
-	next "who feels it can't"
-	next "stop touching it.@"
+	page "into a ball. If"
+	next "attacked, it uses"
+	next "DISABLE first.@" ; also from carddass

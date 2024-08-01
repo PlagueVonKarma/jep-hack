@@ -1,10 +1,10 @@
 	db "WILD DUCK@" ; species name
 	dw 207, 330 ; height, weight
 
-	db   "In order to pre-"
-	next "vent their"
-	next "extinction, more"
+	db   "A FARFETCH'D that"
+	next "has lost its leek"
+	next "will enter a state"
 
-	page "people have made"
-	next "an effort to breed"
-	next "these #MON.@"
+	page "of panic, so appr-"
+	next "oaching it becomes"
+	next "very dangerous.@" ; prototype dex entry

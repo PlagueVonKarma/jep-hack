@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 1301, 360 ; height, weight
 
-	db   "It is called the"
-	next "divine #MON."
-	next "When its entire"
+	db   "Because it can"
+	next "summon rain, it"
+	next "is revered as a"
 
-	page "body brightens"
-	next "slightly, the"
-	next "weather changes.@"
+	page "protector deity"
+	next "for farm workers" ; retconned information AND a prototype dex entry detail!
+	next "in some regions.@"

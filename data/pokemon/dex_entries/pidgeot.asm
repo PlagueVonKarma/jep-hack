@@ -1,10 +1,10 @@
 	db "BIRD@" ; species name
 	dw 411, 870 ; height, weight
 
-	db   "Its outstanding"
-	next "vision allows it"
-	next "to spot splashing"
+	db   "Its whole body is"
+	next "muscular, especi-"
+	next "ally its pectorals." ; prototype dex entry detail
 
-	page "MAGIKARP, even"
-	next "while flying at"
-	next "3300 feet.@"
+	page "It's particularly"
+	next "prideful about"
+	next "its appearance.@" ; just a vibe idk

@@ -1,10 +1,10 @@
 	db "JELLYFISH@" ; species name
 	dw 211, 1000 ; height, weight
 
-	db   "As it floats along"
-	next "on the waves, it"
-	next "uses its toxic"
+	db   "Any body part hit"
+	next "by its toxic sti-"
+	next "ngers will become"
 
-	page "feelers to stab"
-	next "anything it"
-	next "touches.@"
+	page "red, swollen, and"
+	next "itchy, the pain" ; prototype dex entry
+	next "lasting forever.@"

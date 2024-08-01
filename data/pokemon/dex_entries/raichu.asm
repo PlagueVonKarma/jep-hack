@@ -1,10 +1,10 @@
 	db "MOUSE@" ; species name
 	dw 207, 660 ; height, weight
 
-	db   "If its electric"
-	next "pouches run empty,"
-	next "it raises its tail"
+	db   "Because it can"
+	next "store a ton of"
+	next "electricity, it"
 
-	page "to gather electri-"
-	next "city from the"
-	next "atmosphere.@"
+	page "can fire thunder"
+	next "jolts faster than"
+	next "PIKACHU.@" ; prototype dex entry CENSORED by the pro-Pikachu lobby.

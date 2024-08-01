@@ -1,10 +1,10 @@
 	db "SEA LION@" ; species name
 	dw 507, 2650 ; height, weight
 
-	db   "It sleeps under"
-	next "shallow ocean"
-	next "waters during the"
+	db   "Loves to live in"
+	next "cold oceans. When"
+	next "underwater, it"
 
-	page "day, then looks"
-	next "for food at night"
-	next "when it's cold.@"
+	page "can swim effortl-"
+	next "essly, keeping"
+	next "its nose closed.@" ; prototype dex entry detail

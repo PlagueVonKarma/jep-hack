@@ -1,10 +1,10 @@
 	db "TINYTURTLE@" ; species name
 	dw 108, 200 ; height, weight
 
-	db   "When it feels"
-	next "threatened, it"
-	next "draws its legs"
+	db   "It can stay in"
+	next "its shell for"
+	next "days without" ; prototype dex entry detail
 
-	page "inside its shell"
-	next "and sprays water"
-	next "from its mouth.@"
+	page "eating a morsel."
+	next "It can even sli-"
+	next "de around!@" ; brawl squirtle detail

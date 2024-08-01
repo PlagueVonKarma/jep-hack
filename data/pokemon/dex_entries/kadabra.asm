@@ -1,10 +1,10 @@
 	db "PSI@" ; species name
 	dw 403, 1250 ; height, weight
 
-	db   "When it closes its"
-	next "eyes, twice as"
-	next "many alpha parti-"
+	db   "It understands"
+	next "the true extent"
+	next "of its PSI abi-"
 
-	page "cles come out of"
-	next "the surface of its"
-	next "body.@"
+	page "lities, so it"
+	next "rarely shows up"
+	next "in public.@" ; prototype dex entry

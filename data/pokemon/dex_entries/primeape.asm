@@ -1,10 +1,10 @@
 	db "PIG MONKEY@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "It will beat up"
-	next "anyone who makes"
-	next "it mad, even if it"
+	db   "It's prone to pro-"
+	next "ducing adrenaline"
+	next "and stays angry."
 
-	page "has to chase them"
-	next "until the end of"
-	next "the world.@"
+	page "If anyone makes"
+	next "eye contact, it"
+	next "gives chase.@" ; prototype dex entry that features adrenaline production.

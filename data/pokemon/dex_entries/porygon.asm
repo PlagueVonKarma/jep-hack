@@ -1,10 +1,10 @@
 	db "VIRTUAL@" ; species name
 	dw 207, 800 ; height, weight
 
-	db   "An artificial"
-	next "#MON created"
-	next "due to extensive"
+	db   "Its code-based"
+	next "body can travel"
+	next "through electri-"
 
-	page "research, it can"
-	next "perform only what"
-	next "is in its program.@"
+	page "cal wires and"
+	next "travel wherever"
+	next "it pleases.@" ; prototype dex entry, possibly a pulseman reference

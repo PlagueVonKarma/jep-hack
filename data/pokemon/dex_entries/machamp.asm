@@ -1,10 +1,10 @@
 	db "SUPERPOWER@" ; species name
 	dw 503, 2870 ; height, weight
 
-	db   "With four arms"
-	next "that react more"
-	next "quickly than it"
+	db   "It can throw 500"
+	next "punches a second,"
+	next "and thanks to its"
 
-	page "can think, it can"
-	next "execute many"
-	next "punches at once.@"
+	page "sturdy loewer"
+	next "body, it keeps"
+	next "its balance.@" ; prototype dex entry detail

@@ -1,10 +1,10 @@
 	db "CLASSY CAT@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "Behind its lithe,"
-	next "elegant appearance"
-	next "lies a barbaric"
+	db   "Its sadistic side"
+	next "is popular with" ; alluding to Giovanni
+	next "mob bosses. It's"
 
-	page "side. It will tear"
-	next "apart its prey on"
-	next "a mere whim.@"
+	page "also great at"
+	next "climbing and"
+	next "swimming.@" ; prototype dex entry detail - never again is its climbing ability (like some big cats) mentioned!

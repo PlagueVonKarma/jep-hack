@@ -1,10 +1,10 @@
 	db "INSECT@" ; species name
 	dw 303, 660 ; height, weight
 
-	db   "The small bugs it"
-	next "eats appear only"
-	next "at night, so it"
+	db   "Its large eyes"
+	next "are sensitive to"
+	next "light, which can"
 
-	page "sleeps in a hole"
-	next "in a tree until"
-	next "night falls.@"
+	page "cause it to head"
+	next "towards brightly-"
+	next "lit suburbs.@" ; prototype dex entry slightly altered.

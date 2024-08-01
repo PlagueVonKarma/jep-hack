@@ -8,3 +8,8 @@
 	page "volcanoes, where"
 	next "it sleeps in lava" ; Referencing Pokemon Snap.
 	next "pits.@"
+
+; prototype dex entry that could be used
+; Its majestic appearance had led many
+; people to believe that this Pokémon is
+; a messenger of God.

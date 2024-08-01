@@ -1,10 +1,10 @@
 	db "VINE@" ; species name
 	dw 303, 770 ; height, weight
 
-	db   "During battle, it"
-	next "constantly moves"
-	next "the vines that"
+	db   "The more it basks"
+	next "in the sun's rays,"
+	next "the more the vines"
 
-	page "cover its body in"
-	next "order to annoy its"
-	next "opponent.@"
+	page "on its body conti-"
+	next "nue to grow. Its"
+	next "face is obscured.@" ; last bit is filler; rest is prototype dex entry. feel free to enhance.

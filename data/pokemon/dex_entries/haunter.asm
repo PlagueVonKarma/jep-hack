@@ -1,10 +1,10 @@
 	db "GAS@" ; species name
 	dw 503, 2 ; height, weight
 
-	db   "It hides in the"
-	next "dark, planning to"
-	next "take the life of"
+	db   "Is it possible a"
+	next "HAUNTER that has"
+	next "been to the spi-"
 
-	page "the next living"
-	next "thing that wanders"
-	next "close by.@"
+	page "rit world could"
+	next "become a GENGAR?"
+	next "It's possible.@" ; prototype dex entry with incredibly interesting implications.
