@@ -568,7 +568,7 @@ ENDM
 	endgroup
 	
 	newgroup TWO_ISLAND ; 29
-	map_const TWO_ISLAND,							10, 10 ; 1
+	map_const TWO_ISLAND,							20, 9  ; 1
 	map_const CAPE_BRINK,							10, 10 ; 2
 	endgroup
 	

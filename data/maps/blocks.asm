@@ -746,12 +746,6 @@ MtEmberSummit_Blocks:
 MtEmberHiddenPath_Blocks:
 	INCBIN "maps/MtEmberHiddenPath.ablk"
 
-TwoIsland_Blocks:
-	INCBIN "maps/TwoIsland.ablk"
-
-CapeBrink_Blocks:
-	INCBIN "maps/CapeBrink.ablk"
-
 SECTION "Map Blocks 3", ROMX
 
 SlowpokeWellB1F_Blocks:
@@ -1279,3 +1273,10 @@ Route50_Blocks:
 
 JackysHouse_Blocks:
 	INCBIN "maps/JackysHouse.ablk"
+	
+TwoIsland_Blocks:
+	INCBIN "maps/TwoIsland.ablk"
+
+CapeBrink_Blocks:
+	INCBIN "maps/CapeBrink.ablk"
+
