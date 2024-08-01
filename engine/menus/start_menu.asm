@@ -363,15 +363,15 @@ endr
 	jp ._DrawMenuAccount
 
 .PrintMenuAccount:
-	call .IsMenuAccountOn
-	ret z
+;	call .IsMenuAccountOn
+;	ret z
 	call ._DrawMenuAccount
 	decoord 0, 14
 	jp .MenuDesc
 
 ._DrawMenuAccount:
-	call .IsMenuAccountOn
-	ret z
+;	call .IsMenuAccountOn
+;	ret z
 	hlcoord 0, 13
 	lb bc, 5, 10
 	call ClearBox
@@ -380,10 +380,10 @@ endr
 	ld c, 8
 	jp TextboxPalette
 
-.IsMenuAccountOn:
+;.IsMenuAccountOn:
 ;	ld a, [wOptions2]
 ;	and 1 << MENU_ACCOUNT
-	ret
+;	ret
 
 .DrawBugContestStatusBox:
 	ld hl, wStatusFlags2

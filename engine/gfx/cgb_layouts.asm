@@ -570,12 +570,17 @@ _CGB_MapPals:
 	ret
 	
 .LoadHLBGPaletteIntoDE:
-; morn/day: shades 0, 1, 2, 3 -> 0, 1, 2, 3
-; nite: shades 0, 1, 2, 3 -> 1, 2, 2, 3
+; morn:     shades 0, 1, 2, 3 -> 0, 1, 2, 3
+; day:      shades 0, 1, 2, 3 -> 0, 2, 2, 3
+; nite:     shades 0, 1, 2, 3 -> 1, 2, 2, 3
+; darkness: shades 0, 1, 2, 3 -> 1, 3, 3, 3
 	push hl
 	ld a, [wTimeOfDayPal]
 	cp NITE_F
 	jr c, .bg_morn_day
+	ld a, [wTimeOfDayPal]
+	cp DARKNESS_F
+	jr nc, .bg_darkness
 	inc hl
 	inc hl
 	call .LoadHLColorIntoDE
@@ -588,7 +593,34 @@ _CGB_MapPals:
 	pop hl
 	ret
 
+.bg_darkness
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	jr .bg_done
 .bg_morn_day
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .bg_day
+	call .LoadHLColorIntoDE
+	inc hl
+	inc hl
+	call .LoadHLColorIntoDE
+	dec hl
+	dec hl
+	call .LoadHLColorIntoDE
+	call .LoadHLColorIntoDE
+	jr .bg_done
+.bg_day
 	call LoadHLPaletteIntoDE
 	jr .bg_done
 

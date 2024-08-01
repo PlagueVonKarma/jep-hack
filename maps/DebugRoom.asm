@@ -181,6 +181,7 @@ DebugItemScript:
 	giveitem HM_CUT, 1
 	giveitem HM_FLY, 1
 	giveitem HM_SURF, 1
+	giveitem HM_FLASH, 1
 	giveitem HM_STRENGTH, 1
 	giveitem HM_WHIRLPOOL, 1
 	giveitem HM_WATERFALL, 1
