@@ -143,10 +143,10 @@
 	const SPRITE_GIOVANNI
 	const SPRITE_CHANNELER
 	const SPRITE_BALDING_GUY
+	const SPRITE_GAMEBOY_GIRL
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
-	const_next $8A
 DEF SPRITE_POKEMON EQU const_value
 	const SPRITE_UNOWN ; 80
 	const SPRITE_GEODUDE ; 81

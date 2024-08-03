@@ -148,4 +148,5 @@ OverworldSprites:
 	overworld_sprite GiovanniGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite ChannelerGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite BaldingGuyGFX, 12, STANDING_SPRITE, PAL_OW_BROWN
+	overworld_sprite GameboyGirlGFX, 12, STANDING_SPRITE, PAL_OW_RED
 	assert_table_length NUM_OVERWORLD_SPRITES
