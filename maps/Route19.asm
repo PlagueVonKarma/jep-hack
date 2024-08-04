@@ -232,17 +232,27 @@ CarefulSwimmingSignText:
 	para "FUCHSIA POLICE"
 	done
 
+BeachHouseSignScript:
+	jumptext BeachHouseSignText
+
+BeachHouseSignText:
+	text "SUMMER BEACH HOUSE"
+	line "#MON welcome!"
+	done
+
 Route19_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
 	warp_event  7,  3, ROUTE_19_FUCHSIA_GATE, 3
+	warp_event  5,  9, SUMMER_BEACH_HOUSE, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 11, 13, BGEVENT_READ, Route19Sign
 	bg_event 11,  1, BGEVENT_READ, CarefulSwimmingSign
+	bg_event  7, 11, BGEVENT_READ, BeachHouseSignScript
 
 	def_object_events
 	object_event  9, 23, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 0, TrainerSwimmerfDawn, -1

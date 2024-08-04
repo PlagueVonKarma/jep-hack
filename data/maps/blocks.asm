@@ -1279,4 +1279,7 @@ TwoIsland_Blocks:
 
 CapeBrink_Blocks:
 	INCBIN "maps/CapeBrink.ablk"
+	
+SummerBeachHouse_Blocks:
+	INCBIN "maps/SummerBeachHouse.ablk"
 

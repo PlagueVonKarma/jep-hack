@@ -192,3 +192,5 @@ SpecialsPointers::
 	add_special ShoveSafariBallsDownKrissThroat
 	add_special GiveKrisSneakers
 	add_special DebugGiveMonSpecialMove
+	add_special CheckPikachu
+	add_special TeachPikachuSurf

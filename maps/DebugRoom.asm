@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, LUXWAN
+	getmonname STRING_BUFFER_3, PIKACHU
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke LUXWAN, 24, POISON_STONE
+	givepoke PIKACHU, 24, POISON_STONE
 	closetext
 	end
 
@@ -397,7 +397,7 @@ DebugRoom_MapEvents:
 	warp_event 11, 15, LAKE_OF_RAGE, 3
 	warp_event 27,  5, PEWTER_CITY, 2
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
-	warp_event  4,  9, PALLET_TOWN, 1 ; left lab/league warp
+	warp_event  4,  9, SUMMER_BEACH_HOUSE, 1 ; left lab/league warp
 	warp_event  5,  9, PALLET_TOWN, 1 ; right lab/league warp
 	warp_event 35, 17, OLD_CITY, 1 ; east warp
 	warp_event  5, 35, LAVENDER_TOWN, 1 ; southwest warp
@@ -421,4 +421,4 @@ DebugRoom_MapEvents:
 	object_event 18, 13, SPRITE_SAFARI_ZONE_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerTestScript, -1
 	object_event 20, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugDollShopScript, -1
 	object_event 25, 15, SPRITE_WILL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MemoryGameScript, -1
-	object_event 27, 16, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugGligarScript, -1
+	object_event  8, 16, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DebugGligarScript, -1

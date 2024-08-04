@@ -15,6 +15,78 @@ Special::
 
 INCLUDE "data/events/special_pointers.asm"
 
+TeachPikachuSurf:
+	; Use Dratini code to find Pikachu
+	ld bc, wPartyCount
+	ld a, [bc]
+	ld hl, MON_SPECIES
+	call DebugGiveMonSpecialMove.GetNthPartyMon
+	ld a, [bc]
+	ld c, a
+	push hl
+	
+	ld hl, PIKACHU
+	call GetPokemonIDFromIndex
+	
+	pop hl
+	ld b, a
+	ld de, PARTYMON_STRUCT_LENGTH
+	call DebugGiveMonSpecialMove.CheckForNthPokemon
+.GiveMove
+	; BUG: Doesn't seem to find Surf properly.
+	; The move DOES reach Pikachu's moveset!!!!!! However, what it learns just isn't correct.
+	; Similar issue to when I tried to add evo moves ~ PvK
+	ld a, SURF
+	call GetMoveIDFromIndex
+	ld [wPutativeTMHMMove], a
+	
+	; Find Pikachu again
+	ld bc, wPartyCount
+	ld a, [bc]
+	ld hl, MON_SPECIES
+	call DebugGiveMonSpecialMove.GetNthPartyMon
+	ld [wCurPartyMon], a
+	
+	; BUG: Doesn't load the tiles correctly because I'm stupid
+	; Is it just in the wrong place? lmao
+	ld hl, .MenuHeader
+	call LoadMenuHeader
+	
+	; Learn the move
+	predef LearnMove
+	ret
+
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+
+; Currently only works for Pikachu but could possibly be reworked for other things in the future. 90% sure there's a better way to do this.
+; TODO: Check the DVs to see if it's strong enough. I'm feeling Shiny DV total or above.
+CheckPikachu:
+	ld a, [wCurPartySpecies]
+	call GetPokemonIndexFromID
+	ld a, l
+	sub LOW(PIKACHU)
+	if HIGH(PIKACHU) == 0
+		or h
+	else
+		jr nz, .notMon
+		if HIGH(PIKACHU) == 1
+			dec h
+		else
+			ld a, h
+			cp HIGH(PIKACHU)
+		endc
+	endc
+	jr nz, .notMon
+	ld a, 1
+	jr .done
+.notMon
+	xor a ; return 0 if not it
+	ld [wScriptVar], a
+.done
+	ret
+
 DebugGiveMonSpecialMove:
 ; TODO: Make this good :3
 ; I could implement Rangi's special givepoke but i am too stupid

@@ -854,6 +854,7 @@ ENDM
 	map_attributes PokemonPagoda4F, POKEMON_PAGODA_4F, $00, 0
 	map_attributes PokemonPagoda5F, POKEMON_PAGODA_5F, $00, 0
 	map_attributes JackysHouse, JACKYS_HOUSE, $00, 0
+	map_attributes SummerBeachHouse, SUMMER_BEACH_HOUSE, $00, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
