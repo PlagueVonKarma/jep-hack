@@ -19,12 +19,12 @@ DebugPokemon1Script:
 
 DebugPokemon2Script:
 	opentext
-	getmonname STRING_BUFFER_3, MACHAMP
+	getmonname STRING_BUFFER_3, FOLAGE
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MACHAMP, 31, TM_ROCK_SMASH
+	givepoke FOLAGE, 31, RARE_CANDY
 	closetext
 	end
 
