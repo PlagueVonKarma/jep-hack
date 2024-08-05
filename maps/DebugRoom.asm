@@ -39,11 +39,11 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry LICKILORD
+	cry STROMEN
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
-	loadwildmon LICKILORD, 60
+	loadwildmon STROMEN, 60
 	startbattle
 	reloadmapafterbattle
 	end
@@ -57,11 +57,11 @@ DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry LICKILORD
+	cry STROMEN
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SAFARI
-	loadwildmon LICKILORD, 60
+	loadwildmon STROMEN, 60
 	startbattle
 	reloadmapafterbattle
 	end
