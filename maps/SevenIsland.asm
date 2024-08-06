@@ -4,6 +4,11 @@ SevenIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, SevenIslandFlypointCallback
+
+SevenIslandFlypointCallback:
+	setflag ENGINE_FLYPOINT_SEVEN_ISLAND
+	endcallback
 
 SevenIsland_MapEvents:
 	db 0, 0 ; filler

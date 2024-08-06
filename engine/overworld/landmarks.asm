@@ -68,7 +68,7 @@ RegionCheck:
 
 .checkagain
 	cp NIHON_LANDMARK
-	jr z, .nihon
+	jr nc, .nihon
 	cp KANTO_LANDMARK
 	jr c, .johto
 

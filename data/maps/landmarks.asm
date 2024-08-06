@@ -122,13 +122,15 @@ Landmarks:
 	landmark  20,  68, Route28Name
 	landmark 140, 116, FastShipName
 	; Sevii stuff 
-	landmark   0,   0, UnknownName ; One Island
-	landmark   0,   0, UnknownName ; Two Island
-	landmark   0,   0, UnknownName ; Three Island
-	landmark   0,   0, UnknownName ; Four Island
-	landmark   0,   0, UnknownName ; Five Island
-	landmark   0,   0, UnknownName ; Six Island
-	landmark   0,   0, UnknownName ; Seven Island
+	assert_table_length SEVII_LANDMARK_1
+	landmark  28,  52, OneIslandName ; One Island
+	landmark  60,  44, TwoIslandName ; Two Island
+	landmark 132,  52, ThreeIslandName ; Three Island
+	landmark  28, 108, FourIslandName ; Four Island
+	landmark 116, 100, FiveIslandName ; Five Island
+	assert_table_length SEVII_LANDMARK_2
+	landmark  44,  76, SixIslandName ; Six Island
+	landmark 116,  76, SevenIslandName ; Seven Island
 	assert_table_length NIHON_LANDMARK
 	landmark 108, 116, WinnersPathName
 	landmark  92, 108, SilentHillsName
@@ -246,6 +248,16 @@ TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE¯TOWER@"
 SpecialMapName:      db "SPECIAL@"
+; Sevii
+OneIslandName:      db "ONE¯ISLAND@"
+TwoIslandName:      db "TWO¯ISLAND@"
+ThreeIslandName:      db "THREE¯ISLAND@"
+FourIslandName:      db "FOUR¯ISLAND@"
+FiveIslandName:      db "FIVE¯ISLAND@"
+; these would be in cat 2
+SixIslandName:      db "SIX¯ISLAND@"
+SevenIslandName:      db "SEVEN¯ISLAND@"
+; Nihon
 WinnersPathName:	 db "WINNER'S¯PATH@"
 SilentHillsName:     db "SILENT¯HILLS@"
 UnknownName:         db "?????@"

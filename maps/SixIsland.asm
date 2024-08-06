@@ -4,6 +4,11 @@ SixIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, SixIslandFlypointCallback
+
+SixIslandFlypointCallback:
+	setflag ENGINE_FLYPOINT_SIX_ISLAND
+	endcallback
 
 SixIsland_MapEvents:
 	db 0, 0 ; filler

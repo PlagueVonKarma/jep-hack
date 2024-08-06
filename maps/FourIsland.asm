@@ -4,6 +4,11 @@ FourIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, FourIslandFlypointCallback
+
+FourIslandFlypointCallback:
+	setflag ENGINE_FLYPOINT_FOUR_ISLAND
+	endcallback
 
 FourIsland_MapEvents:
 	db 0, 0 ; filler

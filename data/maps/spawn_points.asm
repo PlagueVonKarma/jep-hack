@@ -39,6 +39,14 @@ SpawnPoints:
 	spawn SILVER_CAVE_OUTSIDE,        23, 20
 	spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
 	
+	spawn ONE_ISLAND,  17,  7
+	spawn TWO_ISLAND,  17,  7 ; these are placeholders and hopefully zeta will make them all good and proper them before testing
+	spawn THREE_ISLAND,  17,  7
+	spawn FOUR_ISLAND,  17,  7
+	spawn FIVE_ISLAND,  17,  7
+	spawn SIX_ISLAND,  17,  7
+	spawn SEVEN_ISLAND,  17,  7
+	
 	spawn SILENT_HILLS,				  13,  5
 	spawn OLD_CITY,				  	  27, 29
 	

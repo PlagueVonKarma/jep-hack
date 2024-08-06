@@ -38,8 +38,12 @@ FindNest:
 	ld b, h
 	ld c, l
 	ld a, e
-	cp 2
+	cp NIHON_REGION
 	jr z, .nihon
+	cp SEVII_REGION_2
+	jr z, .sevii ; these areas are small enough to that we shouldn't need two separate tables for these regions.
+	cp SEVII_REGION_1
+	jr z, .sevii
 	and a
 	jr nz, .kanto
 	decoord 0, 0
@@ -56,6 +60,13 @@ FindNest:
 	ld hl, KantoGrassWildMons
 	call .FindGrass
 	ld hl, KantoWaterWildMons
+	jp .FindWater
+
+.sevii
+	decoord 0, 0
+	ld hl, SeviiGrassWildMons
+	call .FindGrass
+	ld hl, SeviiWaterWildMons
 	jp .FindWater
 
 .nihon
@@ -439,7 +450,7 @@ _GrassWildmonLookup:
 	ld hl, JohtoGrassWildMons
 	
 ; Old Nihon Check from 2023.
-; Testing new method.
+; it's painfully broken and bad, don't use it unless you have brighter ideas for the below
 	; Nihon Check
 	; Basically, conditionally load Nihon or Kanto into de, depending on region check.
 	; IsInJohto returns 1 if Kanto, 2 if Nihon.
@@ -463,9 +474,16 @@ _GrassWildmonLookup:
 	ld c, a
 	call GetWorldMapLocation
 	cp NIHON_LANDMARK
-	jr nc, .skip2
+	jr nc, .johto
+	
+	; account for sevii
+	ld de, SeviiGrassWildMons
+	cp SEVII_LANDMARK_2 ; I am 90% sure this check is unnecessary when in tandem with landmark 1.
+	jr nc, .johto
+	cp SEVII_LANDMARK_1
+	jr nc, .johto
 	ld de, KantoGrassWildMons
-.skip2
+.johto
 
 	call _JohtoWildmonCheck ; So run this check. More commentary there.
 	ld bc, GRASS_WILDDATA_LENGTH
@@ -486,9 +504,17 @@ _WaterWildmonLookup:
 	ld c, a
 	call GetWorldMapLocation
 	cp NIHON_LANDMARK
-	jr nc, .skip2
+	jr nc, .johto
+	
+	; account for sevii
+	ld de, SeviiWaterWildMons
+	cp SEVII_LANDMARK_2
+	jr nc, .johto
+	cp SEVII_LANDMARK_1
+	jr nc, .johto
+	
 	ld de, KantoWaterWildMons
-.skip2
+.johto
 
 	call _JohtoWildmonCheck
 	ld bc, WATER_WILDDATA_LENGTH
@@ -1074,6 +1100,8 @@ INCLUDE "data/wild/johto_grass.asm"
 INCLUDE "data/wild/johto_water.asm"
 INCLUDE "data/wild/kanto_grass.asm"
 INCLUDE "data/wild/kanto_water.asm"
+INCLUDE "data/wild/sevii_grass.asm"
+INCLUDE "data/wild/sevii_water.asm"
 INCLUDE "data/wild/nihon_grass.asm"
 INCLUDE "data/wild/nihon_water.asm"
 INCLUDE "data/wild/swarm_grass.asm"
