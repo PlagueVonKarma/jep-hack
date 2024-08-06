@@ -19,12 +19,16 @@ DEF PHONE_DISPLAY_HEIGHT EQU 4
 	const POKEGEARSTATE_KANTOMAPJOYPAD  ; 6
 	const POKEGEARSTATE_NIHONMAPINIT    ; 5
 	const POKEGEARSTATE_NIHONMAPJOYPAD  ; 6
-	const POKEGEARSTATE_PHONEINIT       ; 7
-	const POKEGEARSTATE_PHONEJOYPAD     ; 8
-	const POKEGEARSTATE_MAKEPHONECALL   ; 9
-	const POKEGEARSTATE_FINISHPHONECALL ; a
-	const POKEGEARSTATE_RADIOINIT       ; b
-	const POKEGEARSTATE_RADIOJOYPAD     ; c
+	const POKEGEARSTATE_SEVII1MAPINIT    ; 7
+	const POKEGEARSTATE_SEVII1MAPJOYPAD  ; 8
+	const POKEGEARSTATE_SEVII2MAPINIT    ; 9
+	const POKEGEARSTATE_SEVII2MAPJOYPAD  ; 0A
+	const POKEGEARSTATE_PHONEINIT       ; 0B
+	const POKEGEARSTATE_PHONEJOYPAD     ; 0C
+	const POKEGEARSTATE_MAKEPHONECALL   ; 0D
+	const POKEGEARSTATE_FINISHPHONECALL ; 0E
+	const POKEGEARSTATE_RADIOINIT       ; 0F
+	const POKEGEARSTATE_RADIOJOYPAD     ; 10
 
 PokeGear:
 	ld hl, wOptions
@@ -330,6 +334,10 @@ InitPokegearTilemap:
 	jr z, .johto
 	cp NIHON_LANDMARK
 	jr nc, .nihon
+	cp SEVII_LANDMARK_1
+	jr nc, .sevii1
+	cp SEVII_LANDMARK_2
+	jr nc, .sevii2
 	cp KANTO_LANDMARK
 	jr nc, .kanto
 .johto
@@ -339,9 +347,14 @@ InitPokegearTilemap:
 .kanto
 	ld e, 1
 	jr .ok
-
-.nihon
+.sevii1
 	ld e, 2
+	jr .ok
+.sevii2
+	ld e, 3
+	jr .ok
+.nihon
+	ld e, 4
 .ok
 	farcall PokegearMap
 	ld a, $07
@@ -452,6 +465,10 @@ PokegearJumptable:
 	dw PokegearMap_Init
 	dw PokegearMap_KantoMap
 	dw PokegearMap_Init
+	dw PokegearMap_Sevii1Map
+	dw PokegearMap_Init
+	dw PokegearMap_Sevii2Map
+	dw PokegearMap_Init
 	dw PokegearMap_NihonMap
 	dw PokegearPhone_Init
 	dw PokegearPhone_Joypad
@@ -540,12 +557,18 @@ Pokegear_UpdateClock:
 
 PokegearMap_CheckRegion:
 	ld a, [wPokegearMapPlayerIconLandmark]
+	; let's check sevii first - checking the highest ones first simplifies architecture a bit.
+	cp LANDMARK_SEVEN_ISLAND+1
+	jr c, .nihon
+	cp LANDMARK_FAST_SHIP+1
+	jr c, .sevii1
+	cp LANDMARK_FIVE_ISLAND+1
+	jr c, .sevii2
 	cp LANDMARK_SILVER_CAVE+1
 	jr c, .johto
 	cp LANDMARK_FAST_SHIP+1
 	jr c, .kanto
-	;cp NIHON_LANDMARK
-	jp .nihon
+	jp .nihon ; if all else fails
 .johto
 	ld a, POKEGEARSTATE_JOHTOMAPINIT
 	jr .done
@@ -555,7 +578,14 @@ PokegearMap_CheckRegion:
 	ld a, POKEGEARSTATE_KANTOMAPINIT
 	jr .done
 	ret
-
+.sevii1
+	ld a, POKEGEARSTATE_SEVII1MAPINIT
+	jr .done
+	ret
+.sevii2
+	ld a, POKEGEARSTATE_SEVII2MAPINIT
+	jr .done
+	ret
 .nihon
 	ld a, POKEGEARSTATE_NIHONMAPINIT
 .done
@@ -579,6 +609,14 @@ PokegearMap_Init:
 
 PokegearMap_KantoMap:
 	call TownMap_GetKantoLandmarkLimits
+	jr PokegearMap_ContinueMap
+
+PokegearMap_Sevii1Map:
+	call TownMap_GetSevii1LandmarkLimits
+	jr PokegearMap_ContinueMap
+
+PokegearMap_Sevii2Map:
+	call TownMap_GetSevii2LandmarkLimits
 	jr PokegearMap_ContinueMap
 
 PokegearMap_NihonMap:
@@ -761,10 +799,24 @@ TownMap_GetKantoLandmarkLimits:
 	ld e, LANDMARK_PALLET_TOWN
 	ret
 
+; BUG: For some reason, backward scrolling on the new regions is infinite!
+; You end up having Red call the player's name with 9999s and stuff it's really cool actually
+TownMap_GetSevii1LandmarkLimits:
+	ld a, [wStatusFlags]
+	ld d, LANDMARK_ONE_ISLAND
+	ld e, LANDMARK_FIVE_ISLAND ; This will need to be changed as Five Island's stuff is added.
+	ret
+
+TownMap_GetSevii2LandmarkLimits:
+	ld a, [wStatusFlags]
+	ld d, LANDMARK_SIX_ISLAND
+	ld e, LANDMARK_SEVEN_ISLAND ; Likewise. Veeery likewise.
+	ret
+
 TownMap_GetNihonLandmarkLimits:
 	ld a, [wStatusFlags]
 	ld d, LANDMARK_SILENT_HILLS
-	ld e, LANDMARK_WHITE_CITY ; Gonna need another map.
+	ld e, LANDMARK_WHITE_CITY
 	ret
 
 PokegearRadio_Init:
@@ -1574,7 +1626,7 @@ RadioChannels:
 	jr z, .johto
 	cp LANDMARK_SILVER_CAVE+1
 	jr c, .johto
-; kanto or nihon
+; kanto or nihon (and sevii too i take it)
 	and a
 	ret
 
@@ -1838,6 +1890,10 @@ _TownMap:
 	ld a, [wTownMapPlayerIconLandmark]
 	cp NIHON_LANDMARK
 	jr nc, .nihon
+	cp SEVII_LANDMARK_1
+	jr nc, .sevii1
+	cp SEVII_LANDMARK_2
+	jr nc, .sevii2
 	cp KANTO_LANDMARK
 	jr nc, .kanto
 	ld d, KANTO_LANDMARK - 1
@@ -1847,6 +1903,14 @@ _TownMap:
 
 .kanto
 	call TownMap_GetKantoLandmarkLimits
+	call .loop
+
+.sevii1
+	call TownMap_GetSevii1LandmarkLimits
+	call .loop
+
+.sevii2
+	call TownMap_GetSevii2LandmarkLimits
 	call .loop
 
 .nihon
@@ -1925,18 +1989,28 @@ _TownMap:
 
 .InitTilemap:
 	ld a, [wTownMapPlayerIconLandmark]
+	cp LANDMARK_FAST_SHIP+1
+	jr c, .sevii1
+	cp LANDMARK_FIVE_ISLAND+1
+	jr c, .sevii2
+	cp LANDMARK_SEVEN_ISLAND+1
+	jr c, .nihon
 	cp LANDMARK_SILVER_CAVE + 1 ; last johto landmark + 1
 	jr c, .johto2
 	cp LANDMARK_FAST_SHIP + 1 ; last kanto landmark + 1
 	jr c, .kanto2
-	jp .nihon2
-
+	jp .nihon2 ; error handler
 .johto2
 	ld e, JOHTO_REGION
 	jr .okay_tilemap
-
 .kanto2
 	ld e, KANTO_REGION
+	jr .okay_tilemap
+.sevii12
+	ld e, SEVII_REGION_1
+	jr .okay_tilemap
+.sevii22
+	ld e, SEVII_REGION_2
 	jr .okay_tilemap
 .nihon2
 	ld e, NIHON_REGION
@@ -2063,9 +2137,23 @@ PokegearMap:
 
 .kanto
 	cp KANTO_REGION
-	jr nz, .nihon
+	jr nz, .sevii1
 	call LoadTownMapGFX
 	call FillKantoMap
+	ret
+
+.sevii1
+	cp SEVII_REGION_1
+	jr nz, .sevii2
+	call LoadTownMapGFX
+	call FillSevii1Map
+	ret
+
+.sevii2
+	cp SEVII_REGION_2
+	jr nz, .nihon
+	call LoadTownMapGFX
+	call FillSevii2Map
 	ret
 
 .nihon
@@ -2317,8 +2405,12 @@ FlyMap:
 ; The first 46 locations are part of Johto. The rest are in Kanto.
 	cp NIHON_LANDMARK
 	jr nc, .NihonFlyMap
+	cp SEVII_LANDMARK_1
+	jr nc, .Sevii1FlyMap
+	cp SEVII_LANDMARK_2
+	jp nc, .Sevii2FlyMap
 	cp KANTO_LANDMARK
-	jr nc, .KantoFlyMap
+	jp nc, .KantoFlyMap
 ; Johto fly map
 ; Note that .NoKanto should be modified in tandem with this branch
 	push af
@@ -2343,6 +2435,7 @@ FlyMap:
 ; To prevent both of these things from happening when the player
 ; enters Kanto, fly access is restricted until Indigo Plateau is
 ; visited and its flypoint enabled.
+; the nihon and sevii areas inherit this which is probably quite iffy given winner's path exists but hey
 	push af
 	ld c, SPAWN_INDIGO
 	call HasVisitedSpawn
@@ -2362,14 +2455,6 @@ FlyMap:
 	ret
 
 .NihonFlyMap:
-; The event that there are no flypoints enabled in a map is not
-; accounted for. As a result, if you attempt to select a flypoint
-; when there are none enabled, the game will crash. Additionally,
-; the flypoint selection has a default starting point that
-; can be flown to even if none are enabled.
-; To prevent both of these things from happening when the player
-; enters Kanto, fly access is restricted until Indigo Plateau is
-; visited and its flypoint enabled.
 	push af
 	ld c, SPAWN_SILENT_HILLS
 	call HasVisitedSpawn
@@ -2383,6 +2468,44 @@ FlyMap:
 	ld [wTownMapPlayerIconLandmark], a ; last one is default (Silent Hills)
 ; Fill out the map
 	call FillNihonMap
+	call .MapHud
+	pop af
+	call TownMapPlayerIcon
+	ret
+
+.Sevii1FlyMap:
+	push af
+	ld c, SPAWN_ONE_ISLAND
+	call HasVisitedSpawn
+	and a
+	jr z, .NoKanto
+; Nihon's map is only loaded if we've visited Silent Hills
+	ld a, SEVII_FLYPOINT_1 ; first sevii1 flypoint
+	ld [wStartFlypoint], a
+	ld a, SEVII_FLYPOINT_2 - 1 ; last sevii1 flypoint
+	ld [wEndFlypoint], a
+	ld [wTownMapPlayerIconLandmark], a ; last one is default (Silent Hills)
+; Fill out the map
+	call FillSevii1Map
+	call .MapHud
+	pop af
+	call TownMapPlayerIcon
+	ret
+
+.Sevii2FlyMap:
+	push af
+	ld c, SPAWN_FIVE_ISLAND
+	call HasVisitedSpawn
+	and a
+	jr z, .NoKanto
+; Nihon's map is only loaded if we've visited Silent Hills
+	ld a, SEVII_FLYPOINT_2 ; first sevii1 flypoint
+	ld [wStartFlypoint], a
+	ld a, NIHON_FLYPOINT - 1 ; last sevii1 flypoint
+	ld [wEndFlypoint], a
+	ld [wTownMapPlayerIconLandmark], a ; last one is default (Silent Hills)
+; Fill out the map
+	call FillSevii2Map
 	call .MapHud
 	pop af
 	call TownMapPlayerIcon
@@ -2409,6 +2532,8 @@ FlyMap:
 	ld [wTownMapCursorCoordinates + 1], a
 	ret
 
+; If you have trouble seeing areas for wildmons it's probably because of this
+; it doesn't account for nihon or the sevii isles right now
 Pokedex_GetArea:
 ; e: Current landmark
 	ld a, [wTownMapPlayerIconLandmark]
@@ -2644,6 +2769,9 @@ Pokedex_GetArea:
 	db  0 * 8,  0 * 8, 3 ; bottom right
 	db $80 ; terminator
 
+; does not account for nihon or the two seviis
+; it shouldn't come up given the fast ship isn't being used for anything like this
+; if an error comes up you'll need to sort it out
 .CheckPlayerLocation:
 ; Don't show the player's sprite if you're
 ; not in the same region as what's currently
@@ -2721,6 +2849,14 @@ FillJohtoMap:
 
 FillKantoMap:
 	ld de, KantoMap
+	jr FillTownMap
+
+FillSevii1Map:
+	ld de, Sevii1Map
+	jr FillTownMap
+
+FillSevii2Map:
+	ld de, Sevii2Map
 	jr FillTownMap
 
 FillNihonMap:
@@ -2874,6 +3010,12 @@ INCBIN "gfx/pokegear/johto.bin"
 
 KantoMap:
 INCBIN "gfx/pokegear/kanto.bin"
+
+Sevii1Map:
+INCBIN "gfx/pokegear/sevii1.bin"
+
+Sevii2Map:
+INCBIN "gfx/pokegear/sevii2.bin"
 
 NihonMap:
 INCBIN "gfx/pokegear/nihon.bin"

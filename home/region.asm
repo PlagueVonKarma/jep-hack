@@ -21,7 +21,11 @@ IsInJohto::
 
 .CheckRegion:
 	cp NIHON_LANDMARK
-	jr z, .Nihon
+	jr c, .Nihon
+	cp SEVII_LANDMARK_1
+	jr c, .sevii1
+	cp SEVII_LANDMARK_2
+	jr c, .sevii2
 	cp KANTO_LANDMARK
 	jr nc, .Kanto
 
@@ -31,6 +35,14 @@ IsInJohto::
 
 .Kanto:
 	ld a, KANTO_REGION
+	ret
+
+.sevii1:
+	ld a, SEVII_REGION_1
+	ret
+
+.sevii2:
+	ld a, SEVII_REGION_2
 	ret
 
 .Nihon:

@@ -4,6 +4,11 @@ TwoIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, TwoIslandFlypointCallback
+
+TwoIslandFlypointCallback:
+	setflag ENGINE_FLYPOINT_TWO_ISLAND
+	endcallback
 
 TwoIsland_MapEvents:
 	db 0, 0 ; filler

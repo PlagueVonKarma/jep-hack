@@ -31,34 +31,42 @@ TeachPikachuSurf:
 	pop hl
 	ld b, a
 	ld de, PARTYMON_STRUCT_LENGTH
-	call DebugGiveMonSpecialMove.CheckForNthPokemon
+.CheckForNthPokemon:
+; start at the end of the party and search backwards for the last Pokemon in the party.
+	ld a, [hl]
+	cp b
+	jr z, .GiveMove
+	ld a, l
+	sub e
+	ld l, a
+	ld a, h
+	sbc d
+	ld h, a
+	dec c
+	jr nz, .CheckForNthPokemon
+	ret
 .GiveMove
-	; BUG: Doesn't seem to find Surf properly.
-	; The move DOES reach Pikachu's moveset!!!!!! However, what it learns just isn't correct.
-	; Similar issue to when I tried to add evo moves ~ PvK
-	ld a, SURF
+	; Teach Pikachu Surf
+	ld hl, SURF
 	call GetMoveIDFromIndex
+	ld [wNamedObjectIndex], a
 	ld [wPutativeTMHMMove], a
+	call GetMoveName
+	call CopyName1
 	
-	; Find Pikachu again
+	; Find Pikachu again to slap em in wCurPartyMon.
 	ld bc, wPartyCount
 	ld a, [bc]
 	ld hl, MON_SPECIES
 	call DebugGiveMonSpecialMove.GetNthPartyMon
 	ld [wCurPartyMon], a
 	
-	; BUG: Doesn't load the tiles correctly because I'm stupid
-	; Is it just in the wrong place? lmao
-	ld hl, .MenuHeader
-	call LoadMenuHeader
-	
-	; Learn the move
+	; Learn the move.
 	predef LearnMove
+	; BUG: Doesn't load the tiles for forgetting moves correctly because I'm stupid
+	; 99.9% sure it's a bankswitch issue - ForgetMove is in a different script.
+	; Needs more research.
 	ret
-
-.MenuHeader:
-	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 
 ; Currently only works for Pikachu but could possibly be reworked for other things in the future. 90% sure there's a better way to do this.
 ; TODO: Check the DVs to see if it's strong enough. I'm feeling Shiny DV total or above.
@@ -79,10 +87,10 @@ CheckPikachu:
 		endc
 	endc
 	jr nz, .notMon
-	ld a, 1
+	ld a, 1 ; return 1 if Pikachu
 	jr .done
 .notMon
-	xor a ; return 0 if not it
+	xor a ; return 0 if not Pikachu
 	ld [wScriptVar], a
 .done
 	ret

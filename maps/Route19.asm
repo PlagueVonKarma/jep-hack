@@ -19,7 +19,7 @@ Route19ClearRocksCallback:
 	changeblock  8,  6, $7a ; rock
 	changeblock 10,  6, $7a ; rock
 	changeblock 12,  8, $7a ; rock
-	changeblock  4,  8, $7a ; rock
+	changeblock  4,  6, $7a ; rock - changed to account for the surfin' dude's house
 	changeblock 10, 10, $7a ; rock
 .Done:
 	endcallback

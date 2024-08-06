@@ -4,6 +4,11 @@ ThreeIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, ThreeIslandFlypointCallback
+
+ThreeIslandFlypointCallback:
+	setflag ENGINE_FLYPOINT_THREE_ISLAND
+	endcallback
 
 ThreeIsland_MapEvents:
 	db 0, 0 ; filler

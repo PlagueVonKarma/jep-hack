@@ -108,6 +108,13 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_LAKE_OF_RAGE
 	engine_flag wVisitedSpawns, SPAWN_BLACKTHORN
 	engine_flag wVisitedSpawns, SPAWN_MT_SILVER
+	engine_flag wVisitedSpawns, SPAWN_ONE_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_TWO_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_THREE_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_FOUR_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_FIVE_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_SIX_ISLAND
+	engine_flag wVisitedSpawns, SPAWN_SEVEN_ISLAND
 	engine_flag wVisitedSpawns, SPAWN_SILENT_HILLS
 	engine_flag wVisitedSpawns, SPAWN_OLD_CITY
 	engine_flag wVisitedSpawns, NUM_SPAWNS ; unused

@@ -315,8 +315,10 @@ INCLUDE "engine/phone/phone.asm"
 INCLUDE "engine/rtc/timeset.asm"
 INCLUDE "engine/pokegear/pokegear.asm"
 INCLUDE "engine/events/fish.asm"
-INCLUDE "engine/games/slot_machine.asm"
 INCLUDE "data/pokemon/first_stages.asm"
+
+SECTION "bank24 spillover", ROMX
+INCLUDE "engine/games/slot_machine.asm"
 
 SECTION "Phone Scripts 1", ROMX
 

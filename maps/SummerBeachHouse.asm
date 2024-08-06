@@ -34,12 +34,17 @@ SummerBeachHouseSurfinDudeScript:
 	cry PIKACHU
 	waitbutton
 	applymovement SUMMERBEACHHOUSE_PUKA, PukaMovement1
+	writetext SummerBeachHouseSurfinDudeTextICanDoIt2
+	waitbutton
+
 	special TeachPikachuSurf
+;	iffalse .StoppedLearning ; doesn't work because I'm stupid and thought simply teaching the electric rat to use a surfboard would work like yesorno. the ceiling is the floor.
+	
 	writetext SummerBeachHouseSurfinDudeTextDone
 	applymovement SUMMERBEACHHOUSE_PUKA, PukaMovement2
 	waitbutton
 	closetext
-;	setevent EVENT_TAUGHT_PIKACHU_SURF
+;	setevent EVENT_TAUGHT_PIKACHU_SURF ; not yet in for testing purposes.
 	end
 
 .NotPikachu:
@@ -50,6 +55,12 @@ SummerBeachHouseSurfinDudeScript:
 
 .TaughtPikachu:
 	writetext SummerBeachHouseSurfinDudeText4
+	waitbutton
+	closetext
+	end
+
+.StoppedLearning:
+	writetext SummerBeachHouseSurfinDudeStoppedLearning
 	waitbutton
 	closetext
 	end
@@ -92,12 +103,28 @@ SummerBeachHouseSurfinDudeTextNoHave:
 	line "one? Aww…"
 	done
 
+SummerBeachHouseSurfinDudeStoppedLearning:
+	text "Not the right"
+	line "time? Alright."
+	
+	para "Come back, though,"
+	line "ya hear?"
+	done
+
 SummerBeachHouseSurfinDudeTextICanDoIt:
 	text "Yeah! This PIKACHU"
 	line "yearns for the"
 	cont "waves!"
 	
 	para "PUKA, come here!"
+	done
+
+SummerBeachHouseSurfinDudeTextICanDoIt2:
+	text "This PIKACHU is"
+	line "as strong as you!"
+	
+	para "Let's teach it to"
+	line "SURF!"
 	done
 
 SummerBeachHouseSurfinDudeTextDone:
@@ -130,7 +157,7 @@ SummerBeachHousePoster2Text:
 	done
 
 SummerBeachHousePoster3Script:
-	jumptext SummerBeachHousePoster1Text
+	jumptext SummerBeachHousePoster3Text
 
 SummerBeachHousePoster3Text:
 	text "It's an old pos-"

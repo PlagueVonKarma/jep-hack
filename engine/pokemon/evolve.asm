@@ -291,6 +291,7 @@ EvolveAfterBattle_MasterLoop:
 	ld [wTempSpecies], a
 	xor a
 	ld [wMonType], a
+	call LearnEvolutionMove
 	call LearnLevelMoves
 	ld a, [wTempSpecies]
 	call SetSeenAndCaughtMon
@@ -354,6 +355,51 @@ EvolveAfterBattle_MasterLoop:
 	call nz, RestartMapMusic
 	ret
 
+; BUG: Does not take in the designated move correctly, resulting in strange behaviour usually seen when GetMoveIDFromIndex takes an 8-bit index. 
+; Comments proceeding
+LearnEvolutionMove:
+	ld a, [wTempSpecies]
+	ld [wCurPartySpecies], a
+	call GetPokemonIndexFromID
+	ld b, h
+	ld c, l
+	ld hl, EvolutionMoves
+	add hl, bc
+	add hl, bc
+	dec hl
+	dec hl
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a ; Moves through the table by going up according to the Pokemon's ID, storing the equivalent move in hl. This is fine.
+	or h ; hl == 0?
+	ret z
+
+	call GetMoveIDFromIndex ; grabs what's in hl (the move) and converts it to 8-bit...or something like that. anyway, it should return in register a.
+	push hl ; I don't actually know why it does this. Removing it produces manmade horrors beyond my comprehension, so it isn't part of the current problem.
+	ld d, a ; preserve a
+	ld hl, wPartyMon1Moves
+	ld a, [wCurPartyMon]
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	ld b, NUM_MOVES
+.check_move
+	ld a, [hli]
+	cp d ; use preserved a to check if a move is there
+	jr z, .has_move
+	dec b
+	jr nz, .check_move
+	ld a, d ; take the preserved a and reload
+	ld [wPutativeTMHMMove], a ; proceed to learn the move with adequate preprep
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	call CopyName1
+	predef LearnMove
+	ld a, [wCurPartySpecies]
+	ld [wTempSpecies], a
+.has_move
+	pop hl
+	ret
+; so wtf is going on
 UpdateSpeciesNameIfNotNicknamed:
 	ld a, [wCurSpecies]
 	push af
