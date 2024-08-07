@@ -11,7 +11,7 @@ LavenderCryptDokuroarsRoom_MapEvents:
 	def_warp_events
 	warp_event  7, 15, LAVENDER_CRYPT_SET_3, 2
 	warp_event  6, 15, LAVENDER_CRYPT_SET_3, 2
-	warp_event  7,  2, LAVENDER_CRYPT, 4
+	warp_event  7,  2, LAVENDER_CRYPT, 5
 
 	def_coord_events
 
