@@ -9,7 +9,7 @@ LavenderCryptSet3_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  8, LAVENDER_CRYPT, 4
+	warp_event  3,  8, LAVENDER_CRYPT, 4 ; Entrance
 	warp_event  7, 13, LAVENDER_CRYPT_DOKUROARS_ROOM, 1 ; To Dokuroar
 	; Within-Map Warps
 	warp_event  8,  4, LAVENDER_CRYPT_SET_3, 4

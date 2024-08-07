@@ -9,7 +9,7 @@ LavenderCryptSet2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  2, LAVENDER_CRYPT, 3
+	warp_event  3,  2, LAVENDER_CRYPT, 3 ; Entrance
 	; Within-Map Warps
 	warp_event  2,  9, LAVENDER_CRYPT_SET_2, 3
 	warp_event 22,  5, LAVENDER_CRYPT_SET_2, 2
@@ -24,7 +24,7 @@ LavenderCryptSet2_MapEvents:
 	warp_event 22,  9, LAVENDER_CRYPT_SET_2, 10
 	warp_event 22, 10, LAVENDER_CRYPT_SET_2, 11
 	; Outside of Map Warps
-	warp_event 20, 16, LAVENDER_CRYPT, 5 ; HEHE
+	warp_event 20, 16, LAVENDER_CRYPT, 5 ; Takes you back to the start. Tee hee.
 	warp_event 21,  1, LAVENDER_CRYPT_SET_1, 20
 	warp_event 17,  9, LAVENDER_CRYPT_SET_1, 21
 	warp_event 17, 10, LAVENDER_CRYPT_SET_1, 22
@@ -32,7 +32,7 @@ LavenderCryptSet2_MapEvents:
 	warp_event 17,  2, LAVENDER_CRYPT_SET_3, 11
 	warp_event 16,  4, LAVENDER_CRYPT_SET_3, 12
 	warp_event  8, 16, LAVENDER_CRYPT_SET_3, 13
-	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 14
+	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 14 ; THIS pit is your target.
 	warp_event 20,  7, LAVENDER_CRYPT_SET_3, 15
 	warp_event 12, 18, LAVENDER_CRYPT_SET_3, 16
 	warp_event  1,  5, LAVENDER_CRYPT_SET_3, 17

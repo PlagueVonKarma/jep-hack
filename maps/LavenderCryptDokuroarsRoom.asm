@@ -9,9 +9,9 @@ LavenderCryptDokuroarsRoom_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  7, 15, LAVENDER_CRYPT_SET_3, 2
-	warp_event  6, 15, LAVENDER_CRYPT_SET_3, 2
-	warp_event  7,  2, LAVENDER_CRYPT, 5
+	warp_event  7, 15, LAVENDER_CRYPT_SET_3, 2 ; Entrance
+	warp_event  6, 15, LAVENDER_CRYPT_SET_3, 2 ; Entrance
+	warp_event  7,  2, LAVENDER_CRYPT, 5 ; Exit
 
 	def_coord_events
 

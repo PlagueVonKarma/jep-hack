@@ -9,7 +9,7 @@ LavenderCryptSet1_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  6, LAVENDER_CRYPT, 2
+	warp_event  3,  6, LAVENDER_CRYPT, 2 ; Entrance
 	; Within-Map Warps
 	warp_event  4,  3, LAVENDER_CRYPT_SET_1, 3
 	warp_event  6, 13, LAVENDER_CRYPT_SET_1, 2
