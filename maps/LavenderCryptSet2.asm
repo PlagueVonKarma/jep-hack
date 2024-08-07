@@ -9,35 +9,35 @@ LavenderCryptSet2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  2, LAVENDER_CRYPT, 3
-	warp_event  8, 16, LAVENDER_CRYPT_SET_1, 1
-	warp_event 16,  4, LAVENDER_CRYPT_SET_1, 1
-	warp_event 18,  3, LAVENDER_CRYPT_SET_1, 1
-	warp_event 17,  2, LAVENDER_CRYPT_SET_1, 1
-	warp_event 21,  1, LAVENDER_CRYPT_SET_1, 1
-	warp_event  8, 10, LAVENDER_CRYPT_SET_1, 1
-	warp_event  2,  9, LAVENDER_CRYPT_SET_1, 1
-	warp_event 22, 18, LAVENDER_CRYPT_SET_1, 1
-	warp_event 20, 16, LAVENDER_CRYPT_SET_1, 1
-	warp_event  4, 17, LAVENDER_CRYPT_SET_1, 1
-	warp_event 17, 17, LAVENDER_CRYPT_SET_1, 1 ; linked at bottom
-	warp_event 17, 18, LAVENDER_CRYPT_SET_1, 1 ; linked at bottom
-	warp_event 17,  9, LAVENDER_CRYPT_SET_1, 1 ; linked in top-right
-	warp_event 17, 10, LAVENDER_CRYPT_SET_1, 1 ; linked in top-right
-	warp_event 19,  5, LAVENDER_CRYPT_SET_1, 1
+	warp_event  3,  2, LAVENDER_CRYPT, 3 ; Entrance
+	; Within-Map Warps
+	warp_event  2,  9, LAVENDER_CRYPT_SET_2, 3
+	warp_event 22,  5, LAVENDER_CRYPT_SET_2, 2
+	warp_event 18,  3, LAVENDER_CRYPT_SET_2, 5
+	warp_event  8,  6, LAVENDER_CRYPT_SET_2, 4
+	warp_event 19,  5, LAVENDER_CRYPT_SET_2, 7
+	warp_event 10, 16, LAVENDER_CRYPT_SET_2, 6
+	warp_event  4, 17, LAVENDER_CRYPT_SET_2, 9
+	warp_event  3,  9, LAVENDER_CRYPT_SET_2, 8
+	warp_event 17, 17, LAVENDER_CRYPT_SET_2, 12
+	warp_event 17, 18, LAVENDER_CRYPT_SET_2, 13
+	warp_event 22,  9, LAVENDER_CRYPT_SET_2, 10
+	warp_event 22, 10, LAVENDER_CRYPT_SET_2, 11
+	; Outside of Map Warps
+	warp_event 20, 16, LAVENDER_CRYPT, 5 ; Takes you back to the start. Tee hee.
+	warp_event 21,  1, LAVENDER_CRYPT_SET_1, 20
+	warp_event 17,  9, LAVENDER_CRYPT_SET_1, 21
+	warp_event 17, 10, LAVENDER_CRYPT_SET_1, 22
+	warp_event  8, 10, LAVENDER_CRYPT_SET_3, 10
+	warp_event 17,  2, LAVENDER_CRYPT_SET_3, 11
+	warp_event 16,  4, LAVENDER_CRYPT_SET_3, 12
+	warp_event  8, 16, LAVENDER_CRYPT_SET_3, 13
+	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 14 ; THIS pit is your target.
+	warp_event 20,  7, LAVENDER_CRYPT_SET_3, 15
+	warp_event 12, 18, LAVENDER_CRYPT_SET_3, 16
+	warp_event  1,  5, LAVENDER_CRYPT_SET_3, 17
+	warp_event 14, 16, LAVENDER_CRYPT_SET_1, 27
 	
-	warp_event  1, 16, LAVENDER_CRYPT_SET_1, 1 ; bottom entry 1
-	warp_event 10, 16, LAVENDER_CRYPT_SET_1, 1 ; bottom entry 2
-	warp_event 18, 16, LAVENDER_CRYPT_SET_1, 1 ; bottom entry 3
-	warp_event 22, 16, LAVENDER_CRYPT_SET_1, 1 ; bottom entry 4
-	
-	warp_event 16,  2, LAVENDER_CRYPT_SET_1, 1 ; top-right entry warp 1
-	warp_event 22,  5, LAVENDER_CRYPT_SET_1, 1 ; top-right entry warp 2
-	warp_event 22, 10, LAVENDER_CRYPT_SET_1, 1 ; top-right entry warp 3
-	
-	warp_event  1,  2, LAVENDER_CRYPT_SET_1, 1 ; top-left entry 1
-	warp_event  8,  6, LAVENDER_CRYPT_SET_1, 1 ; top-left entry warp 2
-	warp_event  3,  9, LAVENDER_CRYPT_SET_1, 1 ; top-left entry warp 3
 
 	def_coord_events
 
