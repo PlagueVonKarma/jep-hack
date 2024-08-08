@@ -1,11 +1,96 @@
 SECTION "Enemy Trainer Parties 4", ROMX
 
 ; RBY / unused trainer types. Mostly placeholders.
+
+; Channelers are possessed by the spirits they are using.
+; Thus, we will keep to the 1-2 Pokemon limit seen in RBY/FRLG/LGPE.
+; Also because Lavender Crypt is ridiculous, but that's another story.
+; However, with more ghosts and general associations, they're a bit more varied this time.
 ChannelerGroup:
 	next_list_item ; CHANNELER (1)
 	db "SHANNA@", TRAINERTYPE_NORMAL
-	db 23
-	dw GASTLY
+	db 40
+	dw HAUNTER
+	db -1 ; end
+	
+	; These next three will be stronger than usual.
+	next_list_item ; CHANNELER (2)
+	db "GENMEI@", TRAINERTYPE_ITEM
+	db 45
+	dw MAROWAK ; references the Cubone's mother from RBY.
+	db THICK_CLUB ; jumpscare
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (3)
+	db "HIMIKO@", TRAINERTYPE_NORMAL
+	db 45
+	dw NINETALES ; Inari, the vixen kitsune rice goddess.
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (4)
+	db "ARE@", TRAINERTYPE_NORMAL
+	db 45
+	dw MISMAGIUS
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (5)
+	db "AMANDA@", TRAINERTYPE_NORMAL
+	db 40
+	dw GASTLY ; keep in mind this Pokemon isn't exactly weak
+	db 40
+	dw HAUNTER
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (6)
+	db "KARINA@", TRAINERTYPE_NORMAL
+	db 40
+	dw BIPULLA
+	db 40
+	dw HAUNTER
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (7)
+	db "LAUREL@", TRAINERTYPE_NORMAL
+	db 40
+	dw WISPIRIT
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (8)
+	db "JANAE@", TRAINERTYPE_NORMAL
+	db 40
+	dw WISPIRIT
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (9)
+	db "TAMMY@", TRAINERTYPE_NORMAL
+	db 40
+	dw HAUNTER
+	db 40
+	dw HAUNTER
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (10)
+	db "TASHA@", TRAINERTYPE_NORMAL
+	db 40
+	dw STROMEN
+	db -1 ; end
+	
+	; These two aren't possessed, they're Shinto priestesses trying to seal the boss of the Lavender Crypt. 
+	; They're also Touhou references.
+	next_list_item ; CHANNELER (11)
+	db "REIMU@", TRAINERTYPE_NORMAL
+	db 40
+	dw GOROTORA
+	db 40
+	dw GAVILLAIN
+	db -1 ; end
+	
+	next_list_item ; CHANNELER (12)
+	db "SANAE@", TRAINERTYPE_NORMAL
+	db 40
+	dw ARBOK
+	db 40
+	dw POLITOED
 	db -1 ; end
 	end_list_items
 

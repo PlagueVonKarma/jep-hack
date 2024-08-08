@@ -5,6 +5,60 @@ LavenderCrypt_MapScripts:
 
 	def_callbacks
 
+TrainerChannelerReimu:
+	trainer CHANNELER, REIMU, EVENT_BEAT_CHANNELER_REIMU, ChannelerReimuSeenText, ChannelerReimuBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext ChannelerReimuAfterBattleText
+	waitbutton
+	closetext
+	end
+
+ChannelerReimuSeenText:
+	text "Halt! This place"
+	line "is full of GHOSTs!"
+	done
+
+ChannelerReimuBeatenText:
+	text "What the--"
+	done
+
+ChannelerReimuAfterBattleText:
+	text "To be honest, I"
+	line "didn't want to"
+	cont "work today!"
+	
+	para "Thank you!"
+	done
+
+TrainerChannelerSanae:
+	trainer CHANNELER, SANAE, EVENT_BEAT_CHANNELER_SANAE, ChannelerSanaeSeenText, ChannelerReimuBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext ChannelerSanaeAfterBattleText
+	waitbutton
+	closetext
+	end
+
+ChannelerSanaeSeenText:
+	text "Hey! That monster"
+	line "is mine!"
+	done
+
+ChannelerSanaeBeatenText:
+	text "Grr…"
+	done
+
+ChannelerSanaeAfterBattleText:
+	text "Tch! I wanted"
+	line "to seal that"
+	cont "beast myself!"
+	done
+
 LavenderCrypt_MapEvents:
 	db 0, 0 ; filler
 
@@ -21,3 +75,5 @@ LavenderCrypt_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  6,  6, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerReimu, -1
+	object_event  3,  6, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerSanae, -1

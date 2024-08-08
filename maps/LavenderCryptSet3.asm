@@ -5,6 +5,123 @@ LavenderCryptSet3_MapScripts:
 
 	def_callbacks
 
+TrainerChannelerAre: ; top left
+	trainer CHANNELER, ARE, EVENT_BEAT_CHANNELER_ARE, ChannelerAreSeenText, ChannelerAreBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext ChannelerAreAfterBattleText
+	waitbutton
+	closetext
+	end
+
+ChannelerAreSeenText:
+	text "Ku… ku… ku…"
+	done
+
+ChannelerAreBeatenText:
+	text "Ah!"
+	done
+
+ChannelerAreAfterBattleText:
+	text "Keeeheheheh!"
+	line "Be cursed,"
+	cont "mortal!"
+	
+	para "Just kidding."
+	line "That GHOST"
+	cont "went right."
+	done
+
+TrainerChannelerJanae: ; right
+	trainer CHANNELER, JANAE, EVENT_BEAT_CHANNELER_JANAE, ChannelerJanaeSeenText, ChannelerAmandaBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext ChannelerJanaeAfterBattleText
+	waitbutton
+	closetext
+	end
+
+ChannelerJanaeSeenText:
+	text "Ngh…"
+	
+	para "Come with me!"
+	done
+
+ChannelerJanaeBeatenText:
+	text "Come! Now!"
+	
+	para "…huh?"
+	done
+
+ChannelerJanaeAfterBattleText:
+	text "What was that?"
+	
+	para "Um…I don't know"
+	line "where it went…"
+	done
+
+; spare, previous revision
+;ChannelerTashaSeenText:
+;	text "Kyaah! Be cursed"
+;	line "with me, child!"
+;	done
+
+;ChannelerTashaBeatenText:
+;	text "Something fell"
+;	line "out!" ; RBY reference
+;	done
+
+;ChannelerTashaAfterBattleText:
+;	text "Eek! Eeeeek!"
+	
+;	para "I don't know!"
+	
+;	para "I looked over"
+;	line "some big hole"
+;	cont "and--"
+	
+;	para "Aghhh! I don't"
+;	line "want to remember!"
+;	done
+
+TrainerChannelerTammy: ; right
+	trainer CHANNELER, TAMMY, EVENT_BEAT_CHANNELER_TAMMY, ChannelerTammySeenText, ChannelerTammyBeatenText, 0, .AfterScript
+
+.AfterScript:
+	endifjustbattled
+	opentext
+	writetext ChannelerTammyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+ChannelerTammySeenText:
+	text "Kyaah! Be cursed"
+	line "with me, child!"
+	done
+
+ChannelerTammyBeatenText:
+	text "Something fell"
+	line "out!" ; RBY reference
+	done
+
+ChannelerTammyAfterBattleText:
+	text "Eek! Eeeeek!"
+	
+	para "I don't know!"
+	
+	para "I looked over"
+	line "some big hole"
+	cont "and--"
+	
+	para "Aghhh! I don't"
+	line "want to remember!"
+	done
+
 LavenderCryptSet3_MapEvents:
 	db 0, 0 ; filler
 
@@ -37,3 +154,6 @@ LavenderCryptSet3_MapEvents:
 	def_bg_events
 
 	def_object_events
+	object_event  4,  4, SPRITE_CHANNELER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_TRAINER, 2, TrainerChannelerAre, -1
+	object_event 18, 12, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_TRAINER, 3, TrainerChannelerJanae, -1
+	object_event 22, 18, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_TRAINER, 4, TrainerChannelerTammy, -1

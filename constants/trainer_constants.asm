@@ -730,8 +730,20 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
 	
+	; Some names are often taken from historical women in Shinto faith, given the appearance of the Channeler. Others are taken from FRLG/LGPE, which use consistent trainer names.
 	trainerclass CHANNELER ; 44
-	const SHANNA ; unused
+	const SHANNA ; a random name i came up with when adding the classes that stuck, any fire emblem fans?
+	const GENMEI ; 43rd monarch of japan associated with shintoism
+	const HIMIKO ; shaman queen of japan from yamatai, japan, in c.180-247 AD
+	const ARE ; a Shinto shrine maiden said to have assisted in the creation of Kojiki, a famous Japanese text.
+	const AMANDA ; FRLG/LGPE
+	const KARINA ; FRLG/LGPE
+	const LAUREL ; FRLG/LGPE
+	const JANAE ; FRLG/LGPE
+	const TAMMY ; FRLG/LGPE
+	const TASHA ; FRLG/LGPE
+	const REIMU ; Touhou character known to carry a Gohei, which Channelers carry.
+	const SANAE ; Likewise.
 	
 	trainerclass CUE_BALL ; 45
 	const KIRBY ; unused, that one Cleffa trainer.
