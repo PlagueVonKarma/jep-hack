@@ -95,4 +95,8 @@ TrainerClassDVs:
 	dn 13, 12, 13, 13 ; PROF.BLUE
 	dn 12, 15, 13, 13 ; ELDER (HP Ground)
 	dn 12, 15, 13, 13 ; JACK (HP Ground)
+	dn 13, 12, 13, 13 ; SIGAL (HP TBA)
+	dn 13, 12, 13, 13 ; KUYE (HP TBA)
+	dn 13, 12, 13, 13 ; SHAM
+	dn 13, 12, 13, 13 ; CARL
 	assert_table_length NUM_TRAINER_CLASSES

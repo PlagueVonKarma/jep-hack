@@ -80,18 +80,22 @@ TrainerClassNames::
 	li "SPORTSMAN"
 	li "???"
 	li "???"
-	li "LEADER"
-	li "LEADER"
-	li "LEADER"
+	li "LEADER" ; WALKER
+	li "<PKMN>TRAINER" ; LORELEI
+	li "LEADER" ; UTHER
 	li "LEADER?" ; Imposter Oak
-	li "LEADER"
-	li "<PKMN>TRAINER"
-	li "LEADER"
-	li "LEADER"
+	li "LEADER" ; AGATHA
+	li "<PKMN>TRAINER" ; GIOVANNI (coat)
+	li "LEADER" ; GIOVANNI (boss?)
+	li "LEADER" ; GREEN
 	li "BALLSMITH"
-	li "EXECUTIVE"
-	li "EXECUTIVE"
-	li "PROFESSOR"
+	li "EXECUTIVE" ; ARIANA
+	li "EXECUTIVE" ; ARCHER
+	li "PROFESSOR" ; BLUE
 	li "ELDER"
 	li "SHINJUKU" ; JACK
+	li "LEADER" ; SIGAL
+	li "LEADER" ; KUYE
+	li "EXECUTIVE" ; SHAM
+	li "EXECUTIVE" ; CARL
 	assert_list_length NUM_TRAINER_CLASSES

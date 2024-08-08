@@ -776,8 +776,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass LORELEI ; 57
 	const LORELEI1
 	
-	trainerclass XXX ; 58 South guy
-	const XXX1
+	trainerclass UTHER ; 58 South guy
+	const UTHER1
 	
 	trainerclass IMPOSTEROAK ; 56
 	const OAK
@@ -814,6 +814,18 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass JACK
 	const JACKY
+	
+	trainerclass SIGAL
+	const SIGAL1
+	
+	trainerclass KUYE
+	const KUYE1
+	
+	trainerclass SHAM
+	const SHAM1
+	
+	trainerclass CARL
+	const CARL1
 
 DEF TOPAZ EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

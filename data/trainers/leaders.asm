@@ -21,11 +21,11 @@ GymLeaders:
 ;	db RED
 ; For now Nihon bosses will be here.
 	db WALKER
-	db LORELEI
-	db XXX
+	db KUYE
+	db UTHER
 	db IMPOSTEROAK
 	db AGATHA
-	db LEADERGIOVANNI
+	db SIGAL
 	db GREEN
 ; fallthrough
 KantoGymLeaders:

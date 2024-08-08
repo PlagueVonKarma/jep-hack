@@ -96,4 +96,8 @@ BTTrainerClassGenders:
 	db MALE ; PROF.BLUE
 	db MALE ; ELDER
 	db MALE ; JACK
+	db MALE ; SIGAL
+	db FEMALE ; KUYE
+	db FEMALE ; SHAM
+	db MALE ; CARL
 	assert_table_length NUM_TRAINER_CLASSES

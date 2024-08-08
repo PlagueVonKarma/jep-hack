@@ -103,6 +103,10 @@ INCBIN "gfx/trainers/archer.gbcpal", middle_colors
 INCBIN "gfx/trainers/blue_professor.gbcpal", middle_colors
 INCBIN "gfx/trainers/elder.gbcpal", middle_colors
 INCBIN "gfx/trainers/jack.gbcpal", middle_colors
+INCBIN "gfx/trainers/sigal.gbcpal", middle_colors
+INCBIN "gfx/trainers/kuye.gbcpal", middle_colors
+INCBIN "gfx/trainers/executive_f.gbcpal", middle_colors
+INCBIN "gfx/trainers/executive_m.gbcpal", middle_colors
 
 EnbyPalette:
 INCLUDE "gfx/player/topaz.pal"

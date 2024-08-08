@@ -96,4 +96,8 @@ TrainerGroups:
 	dba ProfBlueGroup
 	dba ElderGroup
 	dba JackGroup
+	dba SigalGroup
+	dba KuyeGroup
+	dba ShamGroup
+	dba CarlGroup
 	assert_table_length NUM_TRAINER_CLASSES

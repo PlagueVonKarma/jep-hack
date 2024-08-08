@@ -38,6 +38,8 @@ MaleTrainers:
 	db AEROFOSSIL
 	db ELDER
 	db JACK
+	db SIGAL
+	db CARL
 .End
 
 FemaleTrainers:
@@ -54,4 +56,6 @@ FemaleTrainers:
 	db CHANNELER
 	db PAINTER
 	db KABUFOSSIL
+	db KUYE
+	db SHAM
 .End
