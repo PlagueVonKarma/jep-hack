@@ -213,7 +213,7 @@ TrainerTestScript:
 	yesorno
 	iffalse .end
 	winlosstext TrainerTestScript_BeatenText, 0
-	loadtrainer KAREN, KAREN1
+	loadtrainer BLAINE, BLAINE1
 	startbattle
 	reloadmapafterbattle
 .end

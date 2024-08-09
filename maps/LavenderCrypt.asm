@@ -34,7 +34,7 @@ ChannelerReimuAfterBattleText:
 	done
 
 TrainerChannelerSanae:
-	trainer CHANNELER, SANAE, EVENT_BEAT_CHANNELER_SANAE, ChannelerSanaeSeenText, ChannelerReimuBeatenText, 0, .AfterScript
+	trainer CHANNELER, SANAE, EVENT_BEAT_CHANNELER_SANAE, ChannelerSanaeSeenText, ChannelerSanaeBeatenText, 0, .AfterScript
 
 .AfterScript:
 	endifjustbattled
@@ -50,11 +50,11 @@ ChannelerSanaeSeenText:
 	done
 
 ChannelerSanaeBeatenText:
-	text "Grr…"
+	text "Weh!"
 	done
 
 ChannelerSanaeAfterBattleText:
-	text "Tch! I wanted"
+	text "Aww! I wanted"
 	line "to seal that"
 	cont "beast myself!"
 	done
@@ -75,5 +75,5 @@ LavenderCrypt_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  6,  6, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerReimu, -1
-	object_event  3,  6, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerSanae, -1
+	object_event 13, 11, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerReimu, -1
+	object_event  4, 11, SPRITE_CHANNELER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerChannelerSanae, -1
