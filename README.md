@@ -112,7 +112,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine
 - Shawesome: Alolan Geodude
-- EyeDonutz: Walking Wake
+- EyeDonutz: Walking Wake (front/back, title)
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
 - LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal (original)
 

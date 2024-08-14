@@ -98,34 +98,37 @@ LavenderCryptSet2_MapEvents:
 
 	def_warp_events
 	warp_event  3,  2, LAVENDER_CRYPT, 3 ; Entrance
-	; Within-Map Warps
-	warp_event  2,  9, LAVENDER_CRYPT_SET_2, 3
-	warp_event 22,  5, LAVENDER_CRYPT_SET_2, 2
-	warp_event 18,  3, LAVENDER_CRYPT_SET_2, 5
-	warp_event  8,  6, LAVENDER_CRYPT_SET_2, 4
-	warp_event 19,  5, LAVENDER_CRYPT_SET_2, 7
-	warp_event 10, 16, LAVENDER_CRYPT_SET_2, 6
-	warp_event  4, 17, LAVENDER_CRYPT_SET_2, 9
-	warp_event  3,  9, LAVENDER_CRYPT_SET_2, 8
-	warp_event 17, 17, LAVENDER_CRYPT_SET_2, 12
-	warp_event 17, 18, LAVENDER_CRYPT_SET_2, 13
-	warp_event 22,  9, LAVENDER_CRYPT_SET_2, 10
-	warp_event 22, 10, LAVENDER_CRYPT_SET_2, 11
-	; Outside of Map Warps
-	warp_event 20, 16, LAVENDER_CRYPT, 5 ; Takes you back to the start. Tee hee.
-	warp_event 21,  1, LAVENDER_CRYPT_SET_1, 20
-	warp_event 17,  9, LAVENDER_CRYPT_SET_1, 21
-	warp_event 17, 10, LAVENDER_CRYPT_SET_1, 22
-	warp_event  8, 10, LAVENDER_CRYPT_SET_3, 10
-	warp_event 17,  2, LAVENDER_CRYPT_SET_3, 11
-	warp_event 16,  4, LAVENDER_CRYPT_SET_3, 12
-	warp_event  8, 16, LAVENDER_CRYPT_SET_3, 13
-	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 14 ; THIS pit is your target.
-	warp_event 20,  7, LAVENDER_CRYPT_SET_3, 15
-	warp_event 12, 18, LAVENDER_CRYPT_SET_3, 16
-	warp_event  1,  5, LAVENDER_CRYPT_SET_3, 17
-	warp_event 14, 16, LAVENDER_CRYPT_SET_1, 27
+	; Correct Path
+	warp_event 22,  5, LAVENDER_CRYPT_SET_1, 2 ; Right Route
+	warp_event 21,  1, LAVENDER_CRYPT_SET_3, 3 ; Right Route
+	warp_event 18, 18, LAVENDER_CRYPT_SET_3, 4 ; Right Route
+	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 5 ; END
+	warp_event  2,  9, LAVENDER_CRYPT_SET_1, 3 ; Middle Route
+	warp_event 14, 16, LAVENDER_CRYPT_SET_1, 6 ; Middle Route
+	warp_event 14, 17, LAVENDER_CRYPT_SET_1, 7 ; Middle Route
+	warp_event 10, 18, LAVENDER_CRYPT_SET_3, 6 ; Left Route
+	warp_event  4, 17, LAVENDER_CRYPT_SET_1, 8 ; Left Route
+	warp_event 20, 18, LAVENDER_CRYPT_SET_1, 9 ; Left Route
 	
+	; Incorrect Path
+	warp_event 20, 16, LAVENDER_CRYPT, 5 ; Takes you back to the start. Tee hee.
+	warp_event  6,  5, LAVENDER_CRYPT_SET_3, 8
+	warp_event  8, 10, LAVENDER_CRYPT_SET_1, 11
+	warp_event 22,  3, LAVENDER_CRYPT_SET_1, 12
+	warp_event 17,  9, LAVENDER_CRYPT_SET_2, 18
+	warp_event 17, 10, LAVENDER_CRYPT_SET_2, 19
+	warp_event  1,  5, LAVENDER_CRYPT_SET_2, 16
+	warp_event  1,  6, LAVENDER_CRYPT_SET_2, 17
+	warp_event 18,  3, LAVENDER_CRYPT_SET_2, 21
+	warp_event  1, 16, LAVENDER_CRYPT_SET_2, 20
+	warp_event 16,  4, LAVENDER_CRYPT_SET_1, 14
+	warp_event 19,  5, LAVENDER_CRYPT_SET_2, 16
+	warp_event 17,  2, LAVENDER_CRYPT_SET_3, 11
+	warp_event  8, 16, LAVENDER_CRYPT_SET_2, 26
+	warp_event 22, 10, LAVENDER_CRYPT_SET_2, 25
+	warp_event  2, 18, LAVENDER_CRYPT_SET_3, 15
+	warp_event 17, 17, LAVENDER_CRYPT_SET_3, 21
+	warp_event 17, 18, LAVENDER_CRYPT_SET_3, 22
 
 	def_coord_events
 

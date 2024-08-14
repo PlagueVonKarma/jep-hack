@@ -6,7 +6,7 @@ LavenderCryptSet1_MapScripts:
 	def_callbacks
 
 TrainerChannelerGenmei: ; top left
-	trainer CHANNELER, GENMEI, EVENT_BEAT_CHANNELER_GENMEI, ChannelerGenmeiSeenText, ChannelerReimuBeatenText, 0, .AfterScript
+	trainer CHANNELER, GENMEI, EVENT_BEAT_CHANNELER_GENMEI, ChannelerGenmeiSeenText, ChannelerGenmeiBeatenText, 0, .AfterScript
 
 .AfterScript:
 	endifjustbattled
@@ -130,36 +130,32 @@ LavenderCryptSet1_MapEvents:
 
 	def_warp_events
 	warp_event  3,  6, LAVENDER_CRYPT, 2 ; Entrance
-	; Within-Map Warps
-	warp_event  4,  3, LAVENDER_CRYPT_SET_1, 3
-	warp_event  6, 13, LAVENDER_CRYPT_SET_1, 2
-	warp_event  7,  4, LAVENDER_CRYPT_SET_1, 5
-	warp_event 22,  4, LAVENDER_CRYPT_SET_1, 4
-	warp_event 20,  2, LAVENDER_CRYPT_SET_1, 7
-	warp_event  1,  5, LAVENDER_CRYPT_SET_1, 6
-	warp_event 17,  4, LAVENDER_CRYPT_SET_1, 10
-	warp_event 17,  5, LAVENDER_CRYPT_SET_1, 11
-	warp_event  1, 12, LAVENDER_CRYPT_SET_1, 8
-	warp_event  1, 13, LAVENDER_CRYPT_SET_1, 9
-	warp_event 19,  6, LAVENDER_CRYPT_SET_1, 13
-	warp_event 17, 14, LAVENDER_CRYPT_SET_1, 12
-	warp_event  3, 14, LAVENDER_CRYPT_SET_1, 15
-	warp_event 16,  1, LAVENDER_CRYPT_SET_1, 14
-	warp_event  4, 17, LAVENDER_CRYPT_SET_1, 17
-	warp_event 22, 16, LAVENDER_CRYPT_SET_1, 16
+	; Correct Path
+	warp_event  4,  3, LAVENDER_CRYPT_SET_2, 2 ; Right Route
+	warp_event 18,  2, LAVENDER_CRYPT_SET_2, 6 ; Middle Route
+	warp_event 19,  6, LAVENDER_CRYPT_SET_1, 5 ; Middle Route
+	warp_event 22, 14, LAVENDER_CRYPT_SET_1, 4 ; Middle Route
+	warp_event 16, 16, LAVENDER_CRYPT_SET_2, 7 ; Middle Route
+	warp_event 16, 17, LAVENDER_CRYPT_SET_2, 8 ; Middle Route
+	warp_event  8, 15, LAVENDER_CRYPT_SET_2, 10 ; Left Route
+	warp_event  4, 17, LAVENDER_CRYPT_SET_2, 11 ; Left Route
+	
+	; Incorrect Path
+	warp_event  7,  4, LAVENDER_CRYPT_SET_3, 7
+	warp_event  1,  3, LAVENDER_CRYPT_SET_2, 14
+	warp_event 20,  2, LAVENDER_CRYPT_SET_2, 15
+	warp_event 17,  4, LAVENDER_CRYPT_SET_3, 9
+	warp_event 17,  5, LAVENDER_CRYPT_SET_3, 10
+	warp_event 22,  6, LAVENDER_CRYPT_SET_2, 22
+	warp_event  8,  1, LAVENDER_CRYPT_SET_2, 23
+	warp_event 16, 12, LAVENDER_CRYPT_SET_3, 12
 	warp_event 20, 13, LAVENDER_CRYPT_SET_1, 19
-	warp_event  8, 16, LAVENDER_CRYPT_SET_1, 18
-	;Outside of Map Warps
-	warp_event  8,  1, LAVENDER_CRYPT_SET_2, 15
-	warp_event  5, 15, LAVENDER_CRYPT_SET_2, 16
-	warp_event  5, 16, LAVENDER_CRYPT_SET_2, 17
-	warp_event 19, 15, LAVENDER_CRYPT_SET_3, 7
-	warp_event 21,  5, LAVENDER_CRYPT_SET_3, 8
-	warp_event 21,  6, LAVENDER_CRYPT_SET_3, 9
-	warp_event 18, 18, LAVENDER_CRYPT_SET_3, 18
-	warp_event 16, 12, LAVENDER_CRYPT_SET_2, 26
-	warp_event 16, 16, LAVENDER_CRYPT_SET_3, 19
-	warp_event 16, 17, LAVENDER_CRYPT_SET_3, 20
+	warp_event  1, 12, LAVENDER_CRYPT_SET_1, 18
+	warp_event  3, 14, LAVENDER_CRYPT_SET_3, 13
+	warp_event  1, 18, LAVENDER_CRYPT_SET_3, 14
+	warp_event 22, 17, LAVENDER_CRYPT_SET_3, 18
+	warp_event 22, 18, LAVENDER_CRYPT_SET_3, 19
+	warp_event  8, 18, LAVENDER_CRYPT_SET_3, 20
 	
 	def_coord_events
 
