@@ -1808,5 +1808,89 @@ JohtoGrassWildMons:
 	dbw 23, NOCTOWL
 	dbw 25, MURKROW
 	end_grass_wildmons
-
+	
+	def_grass_wildmons HAUNTED_HOUSE_FOYER
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; day
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; nite
+	dbw 36, MISDREAVUS
+	dbw 35, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 37, BELLEDAM
+	dbw 37, WISPIRIT
+	dbw 38, HAUNTER
+	dbw 40, GENGAR
+	end_grass_wildmons
+	
+	def_grass_wildmons HAUNTED_HOUSE_1F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; day
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; nite
+	dbw 36, MISDREAVUS
+	dbw 35, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 37, BELLEDAM
+	dbw 37, WISPIRIT
+	dbw 38, HAUNTER
+	dbw 40, GENGAR
+	end_grass_wildmons
+	
+	def_grass_wildmons HAUNTED_HOUSE_2F
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; day
+	dbw 36, MISDREAVUS
+	dbw 37, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 35, VULPIX
+	dbw 37, WISPIRIT
+	dbw 37, HAUNTER
+	dbw 38, HAUNTER
+	; nite
+	dbw 36, MISDREAVUS
+	dbw 35, MISDREAVUS
+	dbw 36, GASTLY
+	dbw 37, BELLEDAM
+	dbw 37, WISPIRIT
+	dbw 38, HAUNTER
+	dbw 40, GENGAR
+	end_grass_wildmons
+	
 	db -1 ; end

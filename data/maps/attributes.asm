@@ -736,6 +736,9 @@ ENDM
 	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $00, 0 ; Bank 1
 	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $00, 0 ; Bank 1
 	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $00, 0 ; Bank 1
+	map_attributes HauntedHouseFoyer, HAUNTED_HOUSE_FOYER, $00, 0
+	map_attributes HauntedHouse1F, HAUNTED_HOUSE_1F, $00, 0
+	map_attributes HauntedHouse2F, HAUNTED_HOUSE_2F, $00, 0
 	
 	; Citrine City Maps
 	map_attributes CitrineCity, CITRINE_CITY, $00, 0 ; Bank 2

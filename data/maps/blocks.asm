@@ -1282,4 +1282,13 @@ CapeBrink_Blocks:
 	
 SummerBeachHouse_Blocks:
 	INCBIN "maps/SummerBeachHouse.ablk"
+	
+HauntedHouseFoyer_Blocks:
+	INCBIN "maps/HauntedHouseFoyer.ablk"
+
+HauntedHouse1F_Blocks:
+	INCBIN "maps/HauntedHouse1F.ablk"
+
+HauntedHouse2F_Blocks:
+	INCBIN "maps/HauntedHouse2F.ablk"
 

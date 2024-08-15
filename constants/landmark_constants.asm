@@ -49,6 +49,7 @@
 	const LANDMARK_BLACKTHORN_CITY   ; 29
 	const LANDMARK_DRAGONS_DEN       ; 2a
 	const LANDMARK_ROUTE_45          ; 2b
+	const LANDMARK_HAUNTED_HOUSE
 	const LANDMARK_DARK_CAVE         ; 2c
 	const LANDMARK_ROUTE_46          ; 2d
 	const LANDMARK_SILVER_CAVE       ; 2e

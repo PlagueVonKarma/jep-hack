@@ -65,6 +65,8 @@ StdScripts::
 	add_stdscript GenericStoveScript
 	add_stdscript GenericFridgeScript
 	add_stdscript Nintendo64Script
+	add_stdscript OldMagazinesScript ; Used for the Haunted House, keeping here for potential other uses.
+	add_stdscript OldBooksScript
 
 PokecenterNurseScript:
 ; EVENT_WELCOMED_TO_POKECOM_CENTER is never set
@@ -174,6 +176,12 @@ PokecenterNurseScript:
 	setflag ENGINE_CAUGHT_POKERUS
 	specialphonecall SPECIALCALL_POKERUS
 	end
+
+OldMagazinesScript:
+	farjumptext OldMagazinesText
+
+OldBooksScript:
+	farjumptext OldBooksText
 
 DifficultBookshelfScript:
 	farjumptext DifficultBookshelfText

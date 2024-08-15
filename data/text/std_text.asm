@@ -260,10 +260,9 @@ TeamRocketOathText:
 	done
 
 IncenseBurnerText:
-	text "What is this?"
+	text "What is this? Ah!"
 
-	para "Oh, it's an"
-	line "incense burner!"
+	para "It's a butsudan!" ; restored detail, see RG JP script, etc.
 	done
 
 MerchandiseShelfText:
@@ -497,4 +496,19 @@ RegisteredNumber2Text:
 	line "@"
 	text_ram wStringBuffer3
 	text "'s number."
+	done
+
+OldMagazinesText:
+	text "It's full of old"
+	line "magazines…"
+	done
+
+OldBooksText:
+	text "Stuffed full of"
+	line "old #MON books!"
+	
+	para "The techniques"
+	line "described…" ; This is softly alluding to the trainers with whips and how Pokemon swiftly steered away with this after RG. Tamers should keep this sort of thing going, as should Rockets.
+	
+	para "Never mind!"
 	done

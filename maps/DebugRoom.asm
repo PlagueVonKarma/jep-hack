@@ -403,7 +403,7 @@ DebugRoom_MapEvents:
 	warp_event  5, 35, LAVENDER_TOWN, 1 ; southwest warp
 	warp_event 19, 34, SAFARI_ZONE_FUCHSIA_GATE_BETA, 3 ; southern warp
 	warp_event 33, 33, TWO_ISLAND, 1 ; southeast warp
-	warp_event  5,  3, AZALEA_TOWN, 1
+	warp_event  5,  3, HAUNTED_HOUSE_FOYER, 1
 	warp_event 34, 11, WINNERS_PATH, 3
 
 	def_coord_events

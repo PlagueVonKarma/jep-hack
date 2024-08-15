@@ -55,6 +55,7 @@ Landmarks:
 	landmark 132,  44, BlackthornCityName
 	landmark 132,  36, DragonsDenName
 	landmark 132,  64, Route45Name
+	landmark 124,  68, HauntedHouseName
 	landmark 112,  72, DarkCaveName
 	landmark 124,  88, Route46Name
 	landmark 148,  68, SilverCaveName

@@ -603,6 +603,9 @@ INCLUDE "maps/LavenderCryptDokuroarsRoom.asm"
 INCLUDE "maps/Route50.asm"
 INCLUDE "maps/JackysHouse.asm"
 INCLUDE "maps/SummerBeachHouse.asm"
+INCLUDE "maps/HauntedHouseFoyer.asm"
+INCLUDE "maps/HauntedHouse1F.asm"
+INCLUDE "maps/HauntedHouse2F.asm"
 
 SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"

@@ -396,6 +396,9 @@ ENDM
 	map_const LAVENDER_CRYPT_SET_2,						   12, 10 ; 17
 	map_const LAVENDER_CRYPT_SET_3,						   12, 10 ; 18
 	map_const LAVENDER_CRYPT_DOKUROARS_ROOM,			    7,  8 ; 19
+	map_const HAUNTED_HOUSE_FOYER,			    		    6,  5 ; 20 - it's here so we can use the purple palette. As far as I know, this doesn't cause any gameplay issues.
+	map_const HAUNTED_HOUSE_1F,			    		   	   18, 10 ; 21
+	map_const HAUNTED_HOUSE_2F,			    		  	   11,  4 ; 22
 	endgroup
 
 	newgroup SILVER                                               ; 19
