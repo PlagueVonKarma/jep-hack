@@ -1,5 +1,12 @@
-Music_NihonTime:					; Nihon Time theme
-	channel_count 4					; Composed by LuciShrimp
+; Nihon Route theme
+; 4/4 rhythm, composed in C# Mixolydian.
+; An upbeat generic route theme, loosely inspired by the intro theme song of the Johto Journeys anime.
+; The relatively high BPM(read: low Tempo value) along with the fast drums gives the theme an adventurous feel.
+; The drums are quite fast in the latter half of the track to give it more of a forward push.
+; Composed by LuciShrimp
+
+Music_NihonTime:
+	channel_count 4
 	channel 1, Music_NihonTime_Ch1
 	channel 2, Music_NihonTime_Ch2
 	channel 3, Music_NihonTime_Ch3

@@ -1,5 +1,12 @@
-Music_SouthCity:							; South City theme
-	channel_count 4							; Composed by LuciShrimp
+; South City theme
+; An upbeat city theme with relatively simple chord progression.
+; 4/4 rhythm, G Major scale. Briefly borrows a note from the Lydian scale in the chorus part.
+; The relatively fast drums give the theme some forwards momentum, I tried to keep them realistic... to the point that the Game Boy allows, of course!
+; The note parameters are kept close to the original GSC soundtrack for coherence in a GSC rom hack.
+; Composed by LuciShrimp
+
+Music_SouthCity:
+	channel_count 4
 	channel 1, Music_SouthCity_Ch1
 	channel 2, Music_SouthCity_Ch2
 	channel 3, Music_SouthCity_Ch3

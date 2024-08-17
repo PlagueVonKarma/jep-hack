@@ -1,5 +1,11 @@
-Music_PeacefulTheme:					; Peaceful theme
-	channel_count 4						; Composed by LuciShrimp
+; Peaceful route theme
+; 11/4 rhythm, composed in G Lydian.
+; This theme started out as a melody I often play on my guitar. It is very calm and peaceful, and could probably even work as a lullaby.
+; With the slow tempo, mellow instruments and simple drum pattern, this theme works well for quiet areas. (I personally picture it playing on a beach in the evening, but I digress)
+; Composed by LuciShrimp.
+
+Music_PeacefulTheme:
+	channel_count 4
 	channel 1, Music_PeacefulTheme_Ch1
 	channel 2, Music_PeacefulTheme_Ch2
 	channel 3, Music_PeacefulTheme_Ch3

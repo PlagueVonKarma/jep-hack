@@ -1,5 +1,12 @@
-Music_CoastTown: 					; Coast Town theme
-	channel_count 4					; Composed by LuciShrimp
+; Birdon theme
+; 11/4 rhythm, composed in D Dorian
+; An upbeat city theme, using staccato backing notes on Channel 2. The drum pattern is very simple and mainly here for stability of the soundscape.
+; Channel 1 uses a quick staircase note pattern in some places as to emulate hammer-ons. 
+; The intro part is identical to the last section of the loop, except for the more intricate drum pattern.
+; Composed by LuciShrimp
+
+Music_CoastTown:
+	channel_count 4
 	channel 1, Music_CoastTown_Ch1
 	channel 2, Music_CoastTown_Ch2
 	channel 3, Music_CoastTown_Ch3
