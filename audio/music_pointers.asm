@@ -112,6 +112,6 @@ Music:
 	dba Music_LavenderCrypt
 	dba Music_SouthCity
 	dba Music_NihonTime
-	dba Music_Peaceful
+	dba Music_PeacefulTheme
 	dba Music_CoastTown
 	assert_table_length NUM_MUSIC_SONGS
