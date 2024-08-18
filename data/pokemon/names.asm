@@ -361,7 +361,7 @@ PokemonNames::
 	db "CACAWPHONY"
 	db "TREBIR@@@@"
 	db "SAKURAZE@@"
-	db "TANOBI@@@"
+	db "TANOBI@@@@"
 	db "TRUSTAN@@@"
 	db "KUWAGUARD@"
 	db "TONQUITO@@"
@@ -399,6 +399,6 @@ PokemonNames::
 	db "TYRANITAR@"
 	db "LUGIA@@@@@"
 	db "HO-OH@@@@@"
-	db "SHI-SHI@@@"
+	db "KOMAINU@@@"
 	db "CELEBI@@@@"
 	assert_table_length NUM_POKEMON

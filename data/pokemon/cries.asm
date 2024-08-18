@@ -400,6 +400,6 @@ PokemonCries::
 	mon_cry CRY_RAIKOU,     -256,  384 ; TYRANITAR
 	mon_cry CRY_TYPHLOSION,    0,  256 ; LUGIA
 	mon_cry CRY_AIPOM,         0,  384 ; HO_OH
-	mon_cry CRY_NIDORAN_M,     0,  128 ; SHI_SHI (placeholder) 
+	mon_cry CRY_NIDORAN_M,     0,  128 ; KOMAINU (placeholder) 
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
 	assert_table_length NUM_POKEMON

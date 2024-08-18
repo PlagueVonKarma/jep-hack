@@ -312,7 +312,7 @@ AlphabeticalPokedexOrder:
 	dw SEEL
 	dw SENTRET
 	dw SHELLDER
-	dw SHI_SHI
+	dw KOMAINU
 	dw SHUCKLE
 	dw SKARMORY
 	dw SKIPLOOM

@@ -126,7 +126,7 @@ DebugFlyScript:
 	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
-	givepoke SHI_SHI, 70
+	givepoke PIDGEOT, 70
 	closetext
 	end
 	

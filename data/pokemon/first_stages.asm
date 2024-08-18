@@ -395,6 +395,6 @@ FirstEvoStages::
 	dw LARVITAR   ;f8
 	dw LUGIA
 	dw HO_OH
-	dw SHI_SHI
+	dw KOMAINU
 	dw CELEBI
 	assert_table_length NUM_POKEMON

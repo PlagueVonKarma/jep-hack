@@ -393,7 +393,7 @@ EvolutionMoves::
 	dw NO_MOVE ;TYRANITAR  ; f8
 	dw NO_MOVE ;LUGIA      ; f9
 	dw NO_MOVE ;HO_OH      ; fa
-	dw NO_MOVE ;SHI_SHI
+	dw NO_MOVE ;KOMAINU
 	dw NO_MOVE ;CELEBI     ; fb
 	
 ;---

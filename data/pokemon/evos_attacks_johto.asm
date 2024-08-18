@@ -183,7 +183,7 @@ EvosAttacksPointers2::
 	dw TyranitarEvosAttacks
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
-	dw ShiShiEvosAttacks
+	dw KomainuEvosAttacks
 	dw CelebiEvosAttacks
 .IndirectEnd::
 
@@ -2719,19 +2719,24 @@ HoOhEvosAttacks:
 	dbw 99, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
-ShiShiEvosAttacks:
+KomainuEvosAttacks:
 	db 0 ; no more evolutions
-	dbw 1, WIND_RIDE
-	dbw 11, SAFEGUARD
-	dbw 22, GUST
-	dbw 33, RECOVER
-	dbw 44, BLIZZARD
-	dbw 55, CRUNCH
-	dbw 66, EXTREMESPEED
-	dbw 70, WIND_RIDE ; (allows it to have its signature move when caught)
-	dbw 77, WHIRLWIND
-	dbw 88, ANCIENTPOWER
-	dbw 99, FUTURE_SIGHT
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 1, SCARY_FACE
+	dbw 8, WHIRLWIND
+	dbw 16, POWDER_SNOW
+	dbw 24, SAFEGUARD
+	dbw 32, RECOVER ; Fairy Wind
+	dbw 40, RECOVER
+	dbw 48, MIST
+	dbw 54, ICE_BEAM
+	dbw 60, WIND_RIDE ; Signature move
+	dbw 68, RECOVER ; Dazzling Gleam
+	dbw 74, SWIFT
+	dbw 80, ANCIENTPOWER
+	dbw 88, FUTURE_SIGHT
+	dbw 96, BLIZZARD
 	db 0 ; no more level-up moves
 
 CelebiEvosAttacks:
