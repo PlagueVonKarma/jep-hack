@@ -146,7 +146,7 @@ EggMovePointers2::
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw SakurazeEggMoves
-	dw AmanobiEggMoves
+	dw TanobiEggMoves
 	dw TrustanEggMoves
 	dw KuwaguardEggMoves
 	dw TonquitoEggMoves
@@ -652,7 +652,7 @@ SakurazeEggMoves:
 	dw MORNING_SUN
 	dw -1 ;end 
 
-AmanobiEggMoves:
+TanobiEggMoves:
 	dw EXTREMESPEED
 	dw FAINT_ATTACK
 	dw FURY_SWIPES

@@ -361,7 +361,7 @@ PokemonNames::
 	db "CACAWPHONY"
 	db "TREBIR@@@@"
 	db "SAKURAZE@@"
-	db "AMANOBI@@@"
+	db "TANOBI@@@"
 	db "TRUSTAN@@@"
 	db "KUWAGUARD@"
 	db "TONQUITO@@"

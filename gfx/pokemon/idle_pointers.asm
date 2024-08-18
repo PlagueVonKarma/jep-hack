@@ -357,7 +357,7 @@ AnimationIdlePointers:
 	dw CacawphonyAnimationIdle
 	dw TrebirAnimationIdle
 	dw SakurazeAnimationIdle
-	dw AmanobiAnimationIdle
+	dw TanobiAnimationIdle
 	dw TrustanAnimationIdle
 	dw KuwaguardAnimationIdle
 	dw TonquitoAnimationIdle

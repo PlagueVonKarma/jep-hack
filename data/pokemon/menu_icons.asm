@@ -358,7 +358,7 @@ MonMenuIcons:
 	db ICON_BIRD		; CACAWPHONY
 	db ICON_BIRD		; TREBIR
 	db ICON_ODDISH		; SAKURAZE - Want this to be the old Flower icon
-	db ICON_FOX			; AMANOBI
+	db ICON_FOX			; TANOBI
 	db ICON_FOX			; TRUSTAN
 	db ICON_BUG			; KUWAGUARD
 	db ICON_BUG			; TONQUITO

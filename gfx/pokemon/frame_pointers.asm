@@ -357,7 +357,7 @@ FramesPointers:
 	dba CacawphonyFrames
 	dba TrebirFrames
 	dba SakurazeFrames
-	dba AmanobiFrames
+	dba TanobiFrames
 	dba TrustanFrames
 	dba KuwaguardFrames
 	dba TonquitoFrames

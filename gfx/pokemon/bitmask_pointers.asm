@@ -357,7 +357,7 @@ BitmasksPointers:
 	dw CacawphonyBitmasks
 	dw TrebirBitmasks
 	dw SakurazeBitmasks
-	dw AmanobiBitmasks
+	dw TanobiBitmasks
 	dw TrustanBitmasks
 	dw KuwaguardBitmasks
 	dw TonquitoBitmasks

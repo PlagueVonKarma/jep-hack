@@ -357,7 +357,7 @@ FirstEvoStages::
 	dw SONEGG
 	dw SONEGG
 	dw SAKURAZE
-	dw AMANOBI
+	dw TANOBI
 	dw TRUSTAN
 	dw KUWAGUARD
 	dw TONQUITO

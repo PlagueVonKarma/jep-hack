@@ -733,7 +733,7 @@ JackGroup:
 	next_list_item
 	db "JACKY@", TRAINERTYPE_MOVES
 	db 50
-	dw AMANOBI ; Kage-Maru
+	dw TANOBI ; Kage-Maru
 	dw METAL_CLAW, SPIKES, FIRE_SPIN, PETAL_DANCE
 	db 50
 	dw ANNIHILAPE

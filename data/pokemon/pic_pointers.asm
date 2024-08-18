@@ -728,8 +728,8 @@ PokemonPicPointers::
 	dba TrebirBackpic
 	dba SakurazeFrontpic
 	dba SakurazeBackpic
-	dba AmanobiFrontpic
-	dba AmanobiBackpic
+	dba TanobiFrontpic
+	dba TanobiBackpic
 	dba TrustanFrontpic
 	dba TrustanBackpic
 	dba KuwaguardFrontpic

@@ -362,7 +362,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,  128 ; CACAWPHONY
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TREBIR
 	mon_cry CRY_NIDORAN_M,     0,  128 ; SAKURAZE
-	mon_cry CRY_NIDORAN_M,     0,  128 ; AMANOBI
+	mon_cry CRY_NIDORAN_M,     0,  128 ; TANOBI
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TRUSTAN
 	mon_cry CRY_NIDORAN_M,     0,  128 ; KUWAGUARD
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TONQUITO

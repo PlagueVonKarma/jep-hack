@@ -7,7 +7,7 @@ AlphabeticalPokedexOrder:
 	dw AERODACTYL
 	dw AIPOM
 	dw ALAKAZAM
-	dw AMANOBI
+	dw TANOBI
 	dw AMBIPOM
 	dw AMPHAROS
 	dw ANGORE

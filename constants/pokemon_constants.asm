@@ -378,7 +378,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const CACAWPHONY
 	const TREBIR
 	const SAKURAZE
-	const AMANOBI
+	const TANOBI
 	const TRUSTAN
 	const KUWAGUARD
 	const TONQUITO

@@ -357,7 +357,7 @@ AnimationPointers:
 	dw CacawphonyAnimation
 	dw TrebirAnimation
 	dw SakurazeAnimation
-	dw AmanobiAnimation
+	dw TanobiAnimation
 	dw TrustanAnimation
 	dw KuwaguardAnimation
 	dw TonquitoAnimation

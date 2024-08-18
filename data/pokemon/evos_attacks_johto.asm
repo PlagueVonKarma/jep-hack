@@ -145,7 +145,7 @@ EvosAttacksPointers2::
 	dw CacawphonyEvosAttacks
 	dw TrebirEvosAttacks
 	dw SakurazeEvosAttacks
-	dw AmanobiEvosAttacks
+	dw TanobiEvosAttacks
 	dw TrustanEvosAttacks
 	dw KuwaguardEvosAttacks
 	dw TonquitoEvosAttacks
@@ -2171,7 +2171,7 @@ SakurazeEvosAttacks:
 	dbw 44, SOLARBEAM
 	db 0 ; no more level-up moves
 
-AmanobiEvosAttacks: ; TODO: review moveset, it's fighting/steel
+TanobiEvosAttacks: ; TODO: review moveset, it's fighting/steel
 	db 0 ; no more evolutions
 	dbw 1, EMBER
 	dbw 1, LEER

@@ -1,6 +1,6 @@
 	db 0 ; species ID placeholder
 
-	db  50,  90,  65, 105,  75,  50
+	db  80,  90,  85, 105,  75,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIGHTING, STEEL ; type
@@ -11,7 +11,7 @@
 	db 100 ; unknown 1
 	db 120 ; step cycles to hatch
 	db 5 ; unknown 2
-	INCBIN "gfx/pokemon/amanobi/front.dimensions"
+	INCBIN "gfx/pokemon/tanobi/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_SLOW ; growth rate				; PLACEHOLDER
 	dn EGG_NONE, EGG_NONE ; egg groups

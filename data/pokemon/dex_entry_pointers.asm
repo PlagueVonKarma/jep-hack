@@ -357,7 +357,7 @@ PokedexDataPointerTable:
 	dba CacawphonyPokedexEntry
 	dba TrebirPokedexEntry
 	dba SakurazePokedexEntry
-	dba AmanobiPokedexEntry
+	dba TanobiPokedexEntry
 	dba TrustanPokedexEntry
 	dba KuwaguardPokedexEntry
 	dba TonquitoPokedexEntry
