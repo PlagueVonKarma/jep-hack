@@ -154,6 +154,11 @@ SECTION "New Songs", ROMX
 
 INCLUDE "audio/music/nihontest.asm"
 INCLUDE "audio/music/sinjohsample.asm"
+INCLUDE "audio/music/lavendercrypt.asm"
+INCLUDE "audio/music/nihontime.asm"
+INCLUDE "audio/music/southcity.asm"
+INCLUDE "audio/music/peaceful.asm"
+INCLUDE "audio/music/coasttown.asm"
 
 
 SECTION "Sound Effects", ROMX
