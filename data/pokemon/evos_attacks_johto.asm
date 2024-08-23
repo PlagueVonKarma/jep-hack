@@ -183,7 +183,8 @@ EvosAttacksPointers2::
 	dw TyranitarEvosAttacks
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
-	dw KomainuEvosAttacks
+	dw HyoshuYangEvosAttacks
+	dw HyoshuYinEvosAttacks
 	dw CelebiEvosAttacks
 .IndirectEnd::
 
@@ -2719,7 +2720,7 @@ HoOhEvosAttacks:
 	dbw 99, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
-KomainuEvosAttacks:
+HyoshuYangEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -2733,6 +2734,26 @@ KomainuEvosAttacks:
 	dbw 54, ICE_BEAM
 	dbw 60, WIND_RIDE ; Signature move
 	dbw 68, RECOVER ; Dazzling Gleam
+	dbw 74, SWIFT
+	dbw 80, ANCIENTPOWER
+	dbw 88, FUTURE_SIGHT
+	dbw 96, BLIZZARD
+	db 0 ; no more level-up moves
+	
+HyoshuYinEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, SCRATCH
+	dbw 1, LEER
+	dbw 1, SCARY_FACE
+	dbw 8, WHIRLWIND
+	dbw 16, POWDER_SNOW
+	dbw 24, BEAT_UP
+	dbw 32, BITE
+	dbw 40, RECOVER
+	dbw 48, HAZE
+	dbw 54, ICE_BEAM
+	dbw 60, WIND_RIDE ; Signature move
+	dbw 68, CRUNCH
 	dbw 74, SWIFT
 	dbw 80, ANCIENTPOWER
 	dbw 88, FUTURE_SIGHT

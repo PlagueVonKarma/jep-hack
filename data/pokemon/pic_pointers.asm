@@ -804,8 +804,10 @@ PokemonPicPointers::
 	dba LugiaBackpic
 	dba HoOhFrontpic
 	dba HoOhBackpic
-	dba KomainuFrontpic
-	dba KomainuBackpic
+	dba HyoshuYangFrontpic
+	dba HyoshuYangBackpic
+	dba HyoshuYinFrontpic
+	dba HyoshuYinBackpic
 	dba CelebiFrontpic
 	dba CelebiBackpic
 	assert_table_length NUM_POKEMON + 1

@@ -396,6 +396,7 @@ MonMenuIcons:
 	db ICON_MONSTER     ; TYRANITAR
 	db ICON_LUGIA       ; LUGIA
 	db ICON_HO_OH       ; HO_OH
-	db ICON_FOX         ; KOMAINU
+	db ICON_FOX         ; HYOSHU_YANG
+	db ICON_FOX         ; HYOSHU_YIN
 	db ICON_HUMANSHAPE  ; CELEBI
 	assert_table_length NUM_POKEMON

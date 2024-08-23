@@ -421,6 +421,7 @@ INCLUDE "data/pokemon/base_stats/pupitar.asm"
 INCLUDE "data/pokemon/base_stats/tyranitar.asm"
 INCLUDE "data/pokemon/base_stats/lugia.asm"
 INCLUDE "data/pokemon/base_stats/ho_oh.asm"
-INCLUDE "data/pokemon/base_stats/komainu.asm"
+INCLUDE "data/pokemon/base_stats/hyoshu_yang.asm"
+INCLUDE "data/pokemon/base_stats/hyoshu_yin.asm"
 INCLUDE "data/pokemon/base_stats/celebi.asm"
 .IndirectEnd::

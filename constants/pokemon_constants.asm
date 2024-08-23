@@ -416,7 +416,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const TYRANITAR  ; f8
 	const LUGIA      ; f9
 	const HO_OH      ; fa
-	const KOMAINU
+	const HYOSHU_YANG
+	const HYOSHU_YIN
 	const CELEBI     ; fb
 DEF NUM_POKEMON EQU const_value - 1
 

@@ -399,6 +399,7 @@ PokemonNames::
 	db "TYRANITAR@"
 	db "LUGIA@@@@@"
 	db "HO-OH@@@@@"
-	db "KOMAINU@@@"
+	db "HYOSHU@@@@"
+	db "HYOSHU@@@@"
 	db "CELEBI@@@@"
 	assert_table_length NUM_POKEMON

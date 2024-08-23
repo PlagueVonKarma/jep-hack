@@ -395,6 +395,7 @@ PokedexDataPointerTable:
 	dba TyranitarPokedexEntry
 	dba LugiaPokedexEntry
 	dba HoOhPokedexEntry
-	dba KomainuPokedexEntry
+	dba HyoshuYangPokedexEntry
+	dba HyoshuYinPokedexEntry
 	dba CelebiPokedexEntry
 	assert_table_length NUM_POKEMON

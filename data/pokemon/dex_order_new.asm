@@ -394,7 +394,8 @@ NewPokedexOrder:
 	dw TYRANITAR
 	dw LUGIA
 	dw HO_OH
-	dw KOMAINU
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw MEWTWO
 	dw MEW
 	dw CELEBI

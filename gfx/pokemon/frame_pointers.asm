@@ -396,6 +396,7 @@ FramesPointers:
 	dba TyranitarFrames
 	dba LugiaFrames
 	dba HoOhFrames
-	dba KomainuFrames
+	dba HyoshuYangFrames
+	dba HyoshuYinFrames
 	dba CelebiFrames
 	assert_table_length NUM_POKEMON

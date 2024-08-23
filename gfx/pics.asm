@@ -713,16 +713,14 @@ SECTION "Pics 19", ROMX
 
 ; Seems to be an accidental copy of the previous bank
 
-TotartleFrontpic:    INCBIN "gfx/pokemon/totartle/front.animated.2bpp.lz"
-TotartleBackpic:     INCBIN "gfx/pokemon/totartle/back.2bpp.lz"
-BlastykeFrontpic:    INCBIN "gfx/pokemon/blastyke/front.animated.2bpp.lz"
-BlastykeBackpic:     INCBIN "gfx/pokemon/blastyke/back.2bpp.lz"
 BellignanFrontpic:	 INCBIN "gfx/pokemon/bellignan/front.animated.2bpp.lz"
 BellignanBackpic:	 INCBIN "gfx/pokemon/bellignan/back.2bpp.lz"
 WalkingWakeFrontpic: INCBIN "gfx/pokemon/walking_wake/front.animated.2bpp.lz"
 WalkingWakeBackpic:	 INCBIN "gfx/pokemon/walking_wake/back.2bpp.lz"
-KomainuFrontpic:	 INCBIN "gfx/pokemon/komainu/front.animated.2bpp.lz"
-KomainuBackpic:	     INCBIN "gfx/pokemon/komainu/back.2bpp.lz"
+HyoshuYangFrontpic:	 INCBIN "gfx/pokemon/hyoshu_yang/front.animated.2bpp.lz"
+HyoshuYangBackpic:   INCBIN "gfx/pokemon/hyoshu_yang/back.2bpp.lz"
+HyoshuYinFrontpic:	 INCBIN "gfx/pokemon/hyoshu_yin/front.animated.2bpp.lz"
+HyoshuYinBackpic:    INCBIN "gfx/pokemon/hyoshu_yin/back.2bpp.lz"
 MunchlaxFrontpic:	 INCBIN "gfx/pokemon/munchlax/front.animated.2bpp.lz"
 MunchlaxBackpic:	 INCBIN "gfx/pokemon/munchlax/back.2bpp.lz"
 NidoreignFrontpic:   INCBIN "gfx/pokemon/nidoreign/front.animated.2bpp.lz"
@@ -822,6 +820,10 @@ KiwookedFrontpic:	 INCBIN "gfx/pokemon/kiwooked/front.animated.2bpp.lz"
 KiwookedBackpic::	 INCBIN "gfx/pokemon/kiwooked/back.2bpp.lz"
 CyclorpFrontpic:	 INCBIN "gfx/pokemon/cyclorp/front.animated.2bpp.lz"
 CyclorpBackpic:	 INCBIN "gfx/pokemon/cyclorp/back.2bpp.lz"
+TotartleFrontpic:    INCBIN "gfx/pokemon/totartle/front.animated.2bpp.lz"
+TotartleBackpic:     INCBIN "gfx/pokemon/totartle/back.2bpp.lz"
+BlastykeFrontpic:    INCBIN "gfx/pokemon/blastyke/front.animated.2bpp.lz"
+BlastykeBackpic:     INCBIN "gfx/pokemon/blastyke/back.2bpp.lz"
 
 SECTION "Pics 22", ROMX
 CheepFrontpic:	     INCBIN "gfx/pokemon/cheep/front.animated.2bpp.lz"

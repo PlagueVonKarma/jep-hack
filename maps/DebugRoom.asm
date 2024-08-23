@@ -42,15 +42,14 @@ DebugPokemon3Script:
 	cry STROMEN
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
-	loadwildmon STROMEN, 60
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon HYOSHU_YIN, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextA:
-	text "Sparkle..."
-	line "Sparkle..."
+	text "Komaiiii!"
 	done
 	
 DebugPokemon4Script:
@@ -60,14 +59,14 @@ DebugPokemon4Script:
 	cry STROMEN
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SAFARI
-	loadwildmon STROMEN, 60
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon HYOSHU_YANG, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextB:
-	text "Do-ku-raaagh!"
+	text "Komaiiii!"
 	done
 
 DebugFlyScript:

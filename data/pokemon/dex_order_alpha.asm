@@ -151,6 +151,8 @@ AlphabeticalPokedexOrder:
 	dw HORSEA
 	dw HOUNDOOM
 	dw HOUNDOUR
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw HYPNO
 	dw IGGLYBUFF
 	dw IGUANARCH
@@ -312,7 +314,6 @@ AlphabeticalPokedexOrder:
 	dw SEEL
 	dw SENTRET
 	dw SHELLDER
-	dw KOMAINU
 	dw SHUCKLE
 	dw SKARMORY
 	dw SKIPLOOM
