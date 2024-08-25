@@ -261,7 +261,7 @@
 	const ROCK_SLASH
 	const CROSS_CUTTER
 	const MEGAPHONE
-	const WIND_RIDE
+	const MYSTIC_ICE
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff

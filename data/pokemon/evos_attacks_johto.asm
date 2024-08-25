@@ -2732,7 +2732,7 @@ HyoshuYangEvosAttacks:
 	dbw 40, RECOVER
 	dbw 48, MIST
 	dbw 54, ICE_BEAM
-	dbw 60, WIND_RIDE ; Signature move
+	dbw 60, MYSTIC_ICE ; Signature move
 	dbw 68, RECOVER ; Dazzling Gleam
 	dbw 74, SWIFT
 	dbw 80, ANCIENTPOWER
@@ -2752,7 +2752,7 @@ HyoshuYinEvosAttacks:
 	dbw 40, RECOVER
 	dbw 48, HAZE
 	dbw 54, ICE_BEAM
-	dbw 60, WIND_RIDE ; Signature move
+	dbw 60, MYSTIC_ICE ; Signature move
 	dbw 68, CRUNCH
 	dbw 74, SWIFT
 	dbw 80, ANCIENTPOWER

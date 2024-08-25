@@ -260,7 +260,7 @@ MoveDescriptions1:
 	dw RockSlashDescription
 	dw CrossCutterDescription
 	dw MegaphoneDescription
-	dw WindRideDescription
+	dw MysticIceDescription
 
 .IndirectEnd::
 
@@ -1287,6 +1287,6 @@ MegaphoneDescription:
 	db   "Reduces the foe's"
 	next "SPCL.ATK.@"
 	
-WindRideDescription:
+MysticIceDescription:
 	db   "Summons the north"
 	next "wind. May freeze.@"
