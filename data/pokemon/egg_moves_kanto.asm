@@ -408,6 +408,7 @@ MachopEggMoves:
 	dw MEDITATE
 	dw ROLLING_KICK
 	dw ENCORE
+	dw BARRIER
 	dw -1 ; end
 
 BellsproutEggMoves:
