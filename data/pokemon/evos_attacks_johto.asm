@@ -2440,7 +2440,7 @@ TrebirEvosAttacks:
 	dbw 11, GUST
 	dbw 16, METRONOME
 	dbw 21, WING_ATTACK
-	dbw 23, PERISH SONG
+	dbw 23, PERISH_SONG
 	dbw 29, SUPERSONIC
 	dbw 34, ENCORE
 	dbw 40, MIRROR_MOVE
