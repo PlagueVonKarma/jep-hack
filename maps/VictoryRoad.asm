@@ -161,6 +161,8 @@ VictoryRoadRivalBattleExitMovement2:
 	step DOWN
 	step_end
 
+; HGSS-like text to preserve the lore that Silver beat everyone on Victory Road.
+; I've altered the text to be less formal too. For some reason, he's kind of...awkward...in the original.
 VictoryRoadRivalBeforeText:
 	text "Hold it."
 
@@ -169,22 +171,25 @@ VictoryRoadRivalBeforeText:
 	cont "LEAGUE challenge?"
 
 	para "…Don't make me"
-	line "laugh."
+	line "laugh. Didn't"
+	cont "you notice?"
+	
+	para "… … …"
+	
+	para "You still don't"
+	line "get it."
 
-	para "You're so much"
-	line "weaker than I am."
+	para "You didn't see"
+	cont "any TRAINERs on"
+	cont "the way, did you?"
+	
+	para "Haha! They were"
+	line "all spineless!"
+	cont "I crushed them"
+	cont "all!"
 
-	para "I'm not like I was"
-	line "before."
-
-	para "I now have the"
-	line "best and strongest"
-
-	para "#MON with me."
-	line "I'm invincible!"
-
-	para "<PLAYER>!"
-	line "I challenge you!"
+	para "Just like I'll do"
+	line "to you, <PLAYER>!"
 	done
 
 VictoryRoadRivalDefeatText:

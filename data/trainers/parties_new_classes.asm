@@ -349,7 +349,7 @@ LassGroup:
 	dw DISABLE, SURF, PSYCHIC_M, SCREECH
 	db -1 ; end
 	
-	next_list_item ; LASS (2)
+	next_list_item ; LASS (18)
 	db "IKUE@", TRAINERTYPE_ITEM_MOVES
 	db 43
 	dw NIDOQUEEN ; From the Yellow Lass
@@ -363,6 +363,33 @@ LassGroup:
 	dw PIKACHU ; And a pipe bomb.
 	db LIGHT_BALL
 	dw THUNDERBOLT, QUICK_ATTACK, DOUBLE_EDGE, AGILITY ; Moves from Johto anime
+	db -1 ; end
+	
+	next_list_item ; LASS (19)
+	db "CASEY@", TRAINERTYPE_MOVES ; anime reference
+	db 45 ; She's from New Bark Town, and is last seen when going to Cerulean City to watch a baseball game.
+	dw RATICATE ; So she's on Route 4, here.
+	dw SUPER_FANG, HYPER_FANG, BUBBLEBEAM, TAIL_WHIP ; BubbleBeam is a soft-reference to Misty's old TM, also BubbleRat is cool
+	db 45
+	dw PIDGEOT
+	dw WING_ATTACK, DOUBLE_EDGE, MIRROR_MOVE, SING
+	db 45
+	dw BEEDRILL
+	dw TWINEEDLE, SLUDGE_BOMB, SWORDS_DANCE, AGILITY
+	db 45
+	dw ELECTIVIRE
+	dw MEDITATE, CROSS_CHOP, THUNDERBOLT, ICE_PUNCH
+	db 45
+	dw MEGANIUM
+	dw SWORDS_DANCE, EARTHQUAKE, RAZOR_LEAF, BODY_SLAM
+	db -1
+	
+	next_list_item ; COOLTRAINERM (11)
+	db "DUPLICA@", TRAINERTYPE_NORMAL ; anime reference
+	db 40
+	dw DITTO ; Mini-Dit!
+	db 43
+	dw MIMMEO
 	db -1 ; end
 
 	end_list_items

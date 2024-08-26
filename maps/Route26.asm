@@ -7,6 +7,7 @@
 	const ROUTE26_FISHER
 	const ROUTE26_FRUIT_TREE
 	const ROUTE26_POKE_BALL
+	const ROUTE26_RITCHIE
 
 Route26_MapScripts:
 	def_scene_scripts
@@ -23,6 +24,42 @@ TrainerCooltrainermJake:
 	waitbutton
 	closetext
 	end
+
+; Anime reference - that one trainer Ash lost to because his Charizard decided to be funny.
+; He isn't on Victory Road as this would mean Silver missed someone.
+; This also means you have a pretty hefty challenge after the Heal House. For a challenge, try fighting him without using it!
+TrainerCoolTrainerRitchie:
+	trainer COOLTRAINERM, RITCHIE, EVENT_BEAT_COOLTRAINERM_RITCHIE, CoolTrainerRitchieSeenText, CoolTrainerRitchieBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CoolTrainerRitchieAfterBattleText
+	waitbutton
+	closetext
+	end
+
+CoolTrainerRitchieSeenText: ; if you can improve this go ahead
+	text "I want to be a"
+	line "#MON MASTER!"
+	
+	para "That's why you're"
+	line "here too, right?"
+	done
+
+CoolTrainerRitchieBeatenText:
+	text "Tough match!"
+	done
+
+CoolTrainerRitchieAfterBattleText: ; A reference to Zippo being unusually obedient compared to Ash and Trevor's Charizard.
+	text "They say CHARIZARD"
+	line "are hard to train."
+	
+	para "I think they just"
+	line "need to fight"
+	cont "stronger foes"
+	cont "regularly, though!"
+	done
 
 TrainerCooltrainermGaven3:
 	trainer COOLTRAINERM, GAVEN3, EVENT_BEAT_COOLTRAINERM_GAVEN, CooltrainermGaven3SeenText, CooltrainermGaven3BeatenText, 0, .Script
@@ -432,3 +469,4 @@ Route26_MapEvents:
 	object_event 10, 92, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerFisherScott, -1
 	object_event 14, 54, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route26FruitTree, -1
 	object_event  9, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route26MaxElixer, EVENT_ROUTE_26_MAX_ELIXER
+	object_event 11,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 1, TrainerCoolTrainerRitchie, -1
