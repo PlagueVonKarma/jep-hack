@@ -2687,12 +2687,10 @@ BugCatcherGroup:
 FisherGroup:
 	next_list_item ; FISHER (1)
 	db "JUSTIN@", TRAINERTYPE_NORMAL ; There are multiple "Karp Spam" Fishers, so Justin is being completely changed.
+	db 9
+	dw ORFRY
 	db 15 ; Essentially, he is the player's introduction to Old Rod fishing in GSC.
 	dw MAGIKARP
-	db 15
-	dw ORFRY
-	db 17
-	dw TENTACOOL 
 	db -1 ; end
 
 	next_list_item ; FISHER (2)
@@ -3679,7 +3677,7 @@ HikerGroup:
 
 	next_list_item ; HIKER (2)
 	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db 4
+	db 5
 	dw PHANPY
 	db 6
 	dw WOOPER
@@ -3831,7 +3829,7 @@ HikerGroup:
 	db "DANIEL@", TRAINERTYPE_NORMAL
 	db 10
 	dw WOOPER
-	db 12
+	db 11
 	dw ONIX
 	db -1 ; end
 
