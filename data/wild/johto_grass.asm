@@ -3,10 +3,14 @@
 ; General philosophies:
 ; - Johto encounter bias at every opportunity.
 ; - However, Kanto Pokemon should still be present.
-; - If there is an equivalent, it should switch (eg. Sentret vs Rattata)
+; - If there is an equivalent, it should switch (eg. Sentret vs Rattata, Gastly vs Misdreavus)
 ; - Making some Kanto Pokemon exclusive to Kanto is acceptable given the region's changes.
 ; - Johto can't always stand on its own, so it's ok to have Kanto plurality.
 ; - In general: Increase Johto *frequency*. Don't make an ethnostate (see: BW and its consequences).
+
+; FAQ
+; "Isn't Misdreavus too strong?"
+; It's worse than Gastly. It starts with Psywave and is stuck with it until L26, and gets less TMs. Thus, it "nerfs" Gastly more than anything - which has better moves, higher offensive stats, and a Poison resistance for the early-game - improved Johto accessibility is always a priority.
 
 JohtoGrassWildMons:
 
