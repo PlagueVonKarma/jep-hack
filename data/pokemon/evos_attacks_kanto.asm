@@ -1205,7 +1205,7 @@ PersianEvosAttacks:
 	dbw 43, SLASH
 	dbw 50, DOUBLE_TEAM ; KEP
 	dbw 56, BODY_SLAM ; RBY TM
-	; dbw 61, COIN_HURL
+	dbw 61, COIN_HURL
 	db 0 ; no more level-up moves
 
 PerrserkerEvosAttacks:

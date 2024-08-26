@@ -276,7 +276,7 @@ Moves1:
 	move EFFECT_FREEZE_HIT,        100, ICE,         	95,  5,  30      ;MYSTIC_ICE
 	move EFFECT_FLY,                85, WATER,         85,  5,   0     ; BOUNCE - went back and forth on type (making it modern or keeping it spaceworldy), chose spaceworld to diversify the "fly" move category
 	move EFFECT_ACCURACY_UP,        85, GRASS,         	 0, 20,   0     ; BRIGHT_MOSS
-	move EFFECT_RETURN,              1, NORMAL,        100, 20,   0     ; COIN_HURL - effect not implemented
+	move EFFECT_COIN_HURL,           1, NORMAL,        100, 20,   0     ; COIN_HURL
 	move EFFECT_NORMAL_HIT,         85, GROUND,        100, 10,   0     ; UPROOT
 	move EFFECT_MIRROR_COAT,         1, PSYCHIC_TYPE,  100, 10,   0     ; SYNCHRONIZE - effect not implemented
 	move EFFECT_ATTACK_UP_HIT,      70, STEEL,         	90, 10,  10     ; STRONG_ARM

@@ -2077,3 +2077,23 @@ DefenseCurl:
 	statupmessage
 	statupfailtext
 	endmove
+
+CoinHurl: ; Identical to Return, except it calculates damage differently, and does not trigger King's Rock, as contact isn't being made.
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	coinhurlpower
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	endmove

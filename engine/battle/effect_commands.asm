@@ -6450,6 +6450,8 @@ INCLUDE "engine/battle/move_effects/attract.asm"
 
 INCLUDE "engine/battle/move_effects/return.asm"
 
+INCLUDE "engine/battle/move_effects/coin_hurl.asm"
+
 INCLUDE "engine/battle/move_effects/present.asm"
 
 INCLUDE "engine/battle/move_effects/frustration.asm"
