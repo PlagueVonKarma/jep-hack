@@ -108,17 +108,17 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 
 ### JEP Developers
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
-- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
-- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
+- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord 
+- Martha's Against Humanity: Flutter Mane, Hyoshu-Yang, Hyoshu-Yin, Fossil Aerodactyl, Fossil Kabutops
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake (front/back, title)
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
-- LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal (original)
+- LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal, Blaine (original)
 
 ### Unaffiliated
 - nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Mamoswine, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
-- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
+- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Pockle (Shuqlour, edited by Martha), Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
 - SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage), Trebir (Mallody), Folage (Silkane)
 - SCMidna: Munchlax
