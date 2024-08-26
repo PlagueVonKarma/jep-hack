@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, PIKACHU
+	getmonname STRING_BUFFER_3, PERSIAN
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke PIKACHU, 24, POISON_STONE
+	givepoke PERSIAN, 90, TM_ROCK_SMASH
 	closetext
 	end
 
