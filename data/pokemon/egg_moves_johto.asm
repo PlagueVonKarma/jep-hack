@@ -261,6 +261,7 @@ SpinarakEggMoves:
 	dw SONICBOOM
 	dw BATON_PASS
 	dw PURSUIT
+	dw PIN_MISSILE
 	dw -1 ; end
 
 ChinchouEggMoves:
@@ -394,6 +395,8 @@ YanmaEggMoves:
 	dw WHIRLWIND
 	dw REVERSAL
 	dw LEECH_LIFE
+	dw CONFUSION
+	dw FLAIL
 	dw -1 ; end
 
 WooperEggMoves:
@@ -481,6 +484,10 @@ QwilfishEggMoves:
 
 ShuckleEggMoves:
 	dw SWEET_SCENT
+	dw MIST
+	dw MUD_SLAP
+	dw STRING_SHOT
+	dw ANCIENTPOWER
 	dw -1 ; end
 
 HeracrossEggMoves:
