@@ -492,6 +492,7 @@ HoothootEvosAttacks:
 	dbw 42, REFLECT
 	dbw 48, MOONLIGHT ; SW97
 	dbw 54, DREAM_EATER
+	dbw 60, MOONBLAST ; SM
 	db 0 ; no more level-up moves
 
 NoctowlEvosAttacks:
@@ -508,6 +509,7 @@ NoctowlEvosAttacks:
 	dbw 46, REFLECT
 	dbw 52, MOONLIGHT ; SW97
 	dbw 58, DREAM_EATER
+	dbw 60, MOONBLAST ; SM
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
@@ -685,6 +687,7 @@ CleffaEvosAttacks:
 	dbw 4, ENCORE
 	dbw 8, SING
 	dbw 13, SWEET_KISS
+	dbw 20, FAIRY_WIND ; PLA
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
@@ -695,6 +698,7 @@ IgglybuffEvosAttacks:
 	dbw 4, DEFENSE_CURL
 	dbw 9, POUND
 	dbw 14, SWEET_KISS
+	dbw 20, DISARMING_VOICE
 	db 0 ; no more level-up moves
 
 TogepiEvosAttacks:
@@ -706,6 +710,7 @@ TogepiEvosAttacks:
 	dbw 7, METRONOME
 	dbw 13, SWEET_KISS
 	dbw 19, ENCORE
+	dbw 19, FAIRY_WIND ; XY
 	dbw 25, SPIKE_CANNON ; SW97
 	dbw 31, ANCIENTPOWER ; FRLG
 	dbw 37, SAFEGUARD
@@ -713,6 +718,7 @@ TogepiEvosAttacks:
 	dbw 49, SKULL_BASH ; SW97
 	dbw 55, DOUBLE_EDGE
 	dbw 61, BATON_PASS ; FRLG
+	dbw 66, MOONBLAST ; PLA
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -724,6 +730,7 @@ TogeticEvosAttacks:
 	dbw 7, METRONOME
 	dbw 13, SWEET_KISS
 	dbw 19, ENCORE
+	dbw 19, FAIRY_WIND ; XY
 	dbw 25, SPIKE_CANNON ; SW97
 	dbw 31, ANCIENTPOWER ; FRLG
 	dbw 37, SAFEGUARD
@@ -731,6 +738,7 @@ TogeticEvosAttacks:
 	dbw 49, SKULL_BASH ; SW97
 	dbw 55, DOUBLE_EDGE
 	dbw 61, BATON_PASS ; FRLG
+	dbw 66, MOONBLAST ; PLA
 	db 0 ; no more level-up moves
 	
 TogekissEvosAttacks:
@@ -838,6 +846,7 @@ MareepEvosAttacks:
 	dbw 22, COTTON_SPORE
 	dbw 28, SWIFT ; SW97
 	dbw 34, LIGHT_SCREEN
+	dbw 34, DAZZLING_GLEAM ; SV
 	dbw 40, THUNDERBOLT ; SW97
 	dbw 46, HYPNOSIS ; SW97
 	dbw 52, THUNDER
@@ -854,6 +863,7 @@ FlaaffyEvosAttacks:
 	dbw 24, COTTON_SPORE
 	dbw 30, SWIFT ; SW97
 	dbw 38, LIGHT_SCREEN
+	dbw 34, DAZZLING_GLEAM ; SV
 	dbw 44, THUNDERBOLT ; SW97
 	dbw 50, HYPNOSIS ; SW97
 	dbw 58, THUNDER
@@ -869,6 +879,7 @@ AmpharosEvosAttacks:
 	dbw 24, COTTON_SPORE
 	dbw 30, SWIFT ; SW97
 	dbw 40, LIGHT_SCREEN
+	dbw 34, DAZZLING_GLEAM ; SV
 	dbw 46, THUNDERBOLT ; SW97
 	dbw 54, HYPNOSIS ; SW97
 	dbw 62, THUNDER
@@ -971,6 +982,7 @@ HoppipEvosAttacks:
 	dbw 5, TAIL_WHIP
 	dbw 8, ABSORB ; SW97
 	dbw 12, TACKLE
+	dbw 12, FAIRY_WIND ; XY
 	dbw 16, POISONPOWDER
 	dbw 17, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1308,15 +1320,17 @@ SylveonEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, TAIL_WHIP
+	dbw 1, FAIRY_WIND ; XY
 	dbw 8, SAND_ATTACK
-	dbw 16, POUND ; DISARMING_VOICE
+	dbw 16, DISARMING_VOICE
 	dbw 20, CHARM
 	dbw 25, QUICK_ATTACK
-	dbw 30, POUND ; DRAINING_KISS
-	dbw 36, POUND ; DAZZLING_GLEAM
+	dbw 30, DRAINING_KISS
+	dbw 36, DAZZLING_GLEAM
 	dbw 42, SWIFT
 	dbw 47, PSYCH_UP ; XY
 	dbw 52, LIGHT_SCREEN
+	dbw 60, MOONBLAST ; ? feels wrong
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
@@ -1660,11 +1674,12 @@ CaretorkerEvosAttacks:
 	dbw 13, WING_ATTACK
 	dbw 19, FLAIL
 	dbw 23, SAFEGUARD
-	; dbw 29, DISARMING_VOICE
+	dbw 29, DISARMING_VOICE
 	dbw 35, WHIRLWIND
 	dbw 41, PROTECT
-	; dbw 47, DAZZLING_GLEAM
+	dbw 47, DAZZLING_GLEAM
 	dbw 53, SOFTBOILED
+	dbw 53, MOONBLAST ; Yoshi's Island opening reference!
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
@@ -2679,17 +2694,17 @@ CoatlEvosAttacks:
 
 MimearEvosAttacks:
 	db 0 ; no more evolutions
-	; dbw 1, DISARMING_VOICE ; move not yet implemented
+	dbw 1, DISARMING_VOICE
 	dbw 1, GROWL
-	; dbw 8, FAIRY_WIND ; move not yet implemented
+	dbw 8, FAIRY_WIND
 	dbw 13, CHARM
 	dbw 19, QUICK_ATTACK
 	dbw 25, FORESIGHT
-	; dbw 31, DRAINING_KISS ; move not yet implemented
+	dbw 31, DRAINING_KISS
 	dbw 37, AMNESIA
 	dbw 43, MIRROR_COAT
 	dbw 49, SAFEGUARD
-	; dbw 55, DAZZLING_GLEAM ; move not yet implemented
+	dbw 55, DAZZLING_GLEAM
 	db 0 ; no more level-up moves
 
 InoshikaEvosAttacks:
@@ -2830,11 +2845,11 @@ FlutterManeEvosAttacks:
 	dbw 7, SUNNY_DAY
 	dbw 14, PSYBEAM
 	dbw 21, MEAN_LOOK
-	; dbw 28, FAIRY_WIND ; move not yet implemented
+	dbw 28, FAIRY_WIND
 	dbw 35, PSYCH_UP
-	; dbw 42, DAZZLING_GLEAM ; move not yet implemented
+	dbw 42, DAZZLING_GLEAM
 	dbw 49, SHADOW_BALL
-	dbw 56, PSYCHIC_M
+	dbw 56, MOONBLAST
 	dbw 63, PAIN_SPLIT
 	dbw 70, PERISH_SONG
 	db 0 ; no more level-up moves

@@ -877,12 +877,14 @@ ClefairyEvosAttacks:
 	dbw 8, SING
 	dbw 13, DOUBLESLAP
 	dbw 19, MINIMIZE
+	dbw 19, FAIRY_WIND ; PLA
 	dbw 24, DEFENSE_CURL
 	dbw 28, TAKE_DOWN ; RG proto
 	dbw 33, METRONOME
 	dbw 39, BODY_SLAM ; KEP
 	dbw 45, MOONLIGHT
 	dbw 51, LIGHT_SCREEN
+	dbw 55, MOONBLAST ; XY
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
@@ -942,6 +944,7 @@ JigglypuffEvosAttacks:
 	dbw 4, DEFENSE_CURL
 	dbw 9, POUND
 	dbw 14, DISABLE
+	dbw 14, DISARMING_VOICE ; Chose to give Clefairy Fairy Wind and Jigglypuff Disarming Voice for a dichotomy
 	dbw 19, ROLLOUT
 	dbw 24, DOUBLESLAP
 	dbw 29, REST
@@ -1016,6 +1019,7 @@ OddishEvosAttacks:
 	dbw 32, MOONLIGHT
 	dbw 36, GROWTH ; SW97
 	dbw 40, PETAL_DANCE
+	dbw 44, MOONBLAST ; XY
 	dbw 46, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
@@ -1033,6 +1037,7 @@ GloomEvosAttacks:
 	dbw 34, MOONLIGHT
 	dbw 40, GROWTH ; SW97
 	dbw 44, PETAL_DANCE
+	dbw 44, MOONBLAST ; XY
 	dbw 50, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
@@ -1625,11 +1630,11 @@ BlottleEvosAttacks:
 	dbw 1, SMOKESCREEN
 	dbw 6, BUBBLE
 	dbw 12, WRAP
-	; dbw 15, FAIRY_WIND
+	dbw 15, FAIRY_WIND
 	dbw 19, HYPNOSIS
 	dbw 24, OCTAZOOKA
 	dbw 30, SUPERSONIC
-	;dbw 36, DAZZLE_GLEAM
+	dbw 36, DAZZLING_GLEAM
 	dbw 43, HAZE
 	dbw 49, HYDRO_PUMP
 	db 0
@@ -1640,11 +1645,11 @@ PendrakenEvosAttacks:
 	dbw 1, SMOKESCREEN
 	dbw 6, BUBBLE
 	dbw 12, WRAP
-	; dbw 15, FAIRY_WIND
+	dbw 15, FAIRY_WIND
 	dbw 19, HYPNOSIS
 	dbw 24, OCTAZOOKA
 	dbw 32, SUPERSONIC
-	;dbw 38, DAZZLE_GLEAM
+	dbw 38, DAZZLING_GLEAM
 	dbw 47, HAZE
 	dbw 53, HYDRO_PUMP
 	db 0
@@ -1749,17 +1754,17 @@ RapidashEvosAttacks:
 
 BalumbaEvosAttacks:
 	db 0
-	; dbw 1, FAIRY_WIND
+	dbw 1, FAIRY_WIND
 	dbw 1, GROWL
-	; dbw 6, DRAIN_KISS
-	; dbw 12, DISARM_VOICE
+	dbw 6, DRAINING_KISS
+	dbw 12, DISARMING_VOICE
 	dbw 18, GUST
 	dbw 24, SWEET_KISS
 	dbw 30, CONFUSE_RAY
 	dbw 36, CHARM
 	dbw 42, WHIRLWIND
-	; dbw 48, DAZZLE_GLEAM
-	; dbw 54, WIND_RIDE
+	dbw 48, DAZZLING_GLEAM
+	dbw 54, WIND_RIDE
 	db 0
 
 SlowpokeEvosAttacks:
@@ -2072,6 +2077,7 @@ MukEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POISON_GAS
 	dbw 1, POUND
+	dbw 1, MOONBLAST ; relearn move from LGPE
 	dbw 5, HARDEN
 	dbw 10, DISABLE
 	dbw 16, ACID ; SW97
@@ -2783,6 +2789,7 @@ MimeJrEvosAttacks:
 	dbw 31, ENCORE
 	dbw 36, PSYBEAM
 	dbw 41, BATON_PASS
+	dbw 41, DAZZLING_GLEAM ; XY
 	dbw 46, SAFEGUARD
 	dbw 52, PSYCHIC_M ; FRLG
 	db 0 ; no more level-up moves
@@ -2800,6 +2807,7 @@ MrMimeEvosAttacks:
 	dbw 33, ENCORE
 	dbw 40, PSYBEAM
 	dbw 45, BATON_PASS
+	dbw 41, DAZZLING_GLEAM ; XY
 	dbw 51, SAFEGUARD
 	dbw 58, PSYCHIC_M ; FRLG
 	db 0 ; no more level-up moves
@@ -2843,6 +2851,7 @@ JynxEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, LICK
+	dbw 1, DRAINING_KISS ; XY
 	dbw 7, SWEET_KISS ; from Smoochum
 	dbw 12, POWDER_SNOW
 	dbw 17, CONFUSION

@@ -283,7 +283,23 @@ BattleAnimations::
 	dw BattleAnim_RockSlash
 	dw BattleAnim_CrossCutter
 	dw BattleAnim_Megaphone
-	dw BattleAnim_Wind_Ride
+	dw BattleAnim_Wind_Ride ; Mystic Ice - to be changed, all new anims here are temp
+	dw BattleAnim_Splash ; Bounce
+	dw BattleAnim_Flash ; Bright Moss
+	dw BattleAnim_PayDay ; Coin Hurl
+	dw BattleAnim_RockSmash ; Uproot
+	dw BattleAnim_Psybeam ; Synchronize
+	dw BattleAnim_Rollout ; Strong Arm (I want it to look like Arm Thrust in ADV!)
+	dw BattleAnim_MegaPunch ; Uppercut (replicate the KEP one!!)
+	dw BattleAnim_WaterGun ; uhhh
+	dw BattleAnim_Wind_Ride ; Wind Ride but real
+	dw BattleAnim_Flash ; Dazzling Gleam
+	dw BattleAnim_Sing ; Disarming Voice
+	dw BattleAnim_SweetKiss ; Draining Kiss
+	dw BattleAnim_SweetScent ; Fairy Wind
+	dw BattleAnim_Psywave ; Moonblast
+	dw BattleAnim_Rollout ; Play Rough
+	dw BattleAnim_ConfuseRay ; Strange Steam
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 

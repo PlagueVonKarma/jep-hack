@@ -257,11 +257,27 @@
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
-	const ROCK_HEAD
-	const ROCK_SLASH
-	const CROSS_CUTTER
-	const MEGAPHONE
-	const MYSTIC_ICE
+	const ROCK_HEAD ; FC
+	const ROCK_SLASH ; FD
+	const CROSS_CUTTER ; FE
+	const MEGAPHONE ; FF
+	const MYSTIC_ICE ; G0
+	const BOUNCE
+	const BRIGHT_MOSS
+	const COIN_HURL
+	const UPROOT
+	const SYNCHRONIZE
+	const STRONG_ARM
+	const UPPERCUT
+	const WATER_SPORT
+	const WIND_RIDE
+	const DAZZLING_GLEAM
+	const DISARMING_VOICE
+	const DRAINING_KISS
+	const FAIRY_WIND
+	const MOONBLAST
+	const PLAY_ROUGH
+	const STRANGE_STEAM ; BONG WEEZING RIIIIIIISE UP
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff
