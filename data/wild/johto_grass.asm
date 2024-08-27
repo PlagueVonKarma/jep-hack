@@ -1468,29 +1468,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 14, LEDYBA
-	dbw 16, FARFETCH_D
-	dbw 15, AERCROW
-	dbw 15, KOTORA
-	dbw 17, KOTORA
-	dbw 14, NATU
-	dbw 16, NATU
+	dbw 5, LEDYBA
+	dbw 6, BELLSPROUT
+	dbw 6, PUPPERON
+	dbw 6, KOTORA
+	dbw 7, KOTORA
+	dbw 5, NATU
+	dbw 7, FARFETCH_D
 	; day
-	dbw 15, FARFETCH_D
-	dbw 14, KOTORA
-	dbw 15, BELLSPROUT
-	dbw 16, AERCROW
-	dbw 17, AERCROW
-	dbw 15, NATU
-	dbw 16, NATU
+	dbw 6, BELLSPROUT
+	dbw 5, KOTORA
+	dbw 5, BELLSPROUT
+	dbw 5, PUPPERON
+	dbw 6, PUPPERON
+	dbw 6, NATU
+	dbw 7, FARFETCH_D
 	; nite
-	dbw 15, SPINARAK
-	dbw 14, HOOTHOOT
-	dbw 16, BELLSPROUT
-	dbw 14, VULPIII ; Silver data, but specifically at night
-	dbw 15, HOOTHOOT
-	dbw 16, MISDREAVUS
-	dbw 17, MISDREAVUS
+	dbw 5, SPINARAK
+	dbw 6, HOOTHOOT
+	dbw 6, ODDISH
+	dbw 5, VULPIII ; Silver data, but specifically at night
+	dbw 5, HOOTHOOT
+	dbw 6, MISDREAVUS
+	dbw 7, MISDREAVUS
 	end_grass_wildmons
 
 ; Restored the 30% Stantler from GS.

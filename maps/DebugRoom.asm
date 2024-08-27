@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, MACHAMP
+	getmonname STRING_BUFFER_3, OCTILLERY
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MACHAMP, 90, TM_ROCK_SMASH
+	givepoke OCTILLERY, 90, TM_ROCK_SMASH
 	closetext
 	end
 

@@ -466,8 +466,8 @@ PupalEvosAttacks:
 
 CarapthorEvosAttacks:
 	db 0 ; no more evolutions
-	dbw  1, COMET_PUNCH ; dbw 1, UPPERCUT
-	; dbw 10, UPPERCUT
+	dbw 1, UPPERCUT
+	dbw 10, UPPERCUT
 	dbw 12, COMET_PUNCH
 	dbw 15, PIN_MISSILE
 	dbw 20, DEFENSE_CURL
@@ -877,12 +877,12 @@ ClefairyEvosAttacks:
 	dbw 8, SING
 	dbw 13, DOUBLESLAP
 	dbw 19, MINIMIZE
-	dbw 19, FAIRY_WIND ; PLA
-	dbw 24, DEFENSE_CURL
-	dbw 28, TAKE_DOWN ; RG proto
-	dbw 33, METRONOME
-	dbw 39, BODY_SLAM ; KEP
-	dbw 45, MOONLIGHT
+	dbw 24, FAIRY_WIND ; PLA
+	dbw 28, DEFENSE_CURL
+	dbw 32, TAKE_DOWN ; RG proto
+	dbw 37, METRONOME
+	dbw 41, BODY_SLAM ; KEP
+	dbw 46, MOONLIGHT
 	dbw 51, LIGHT_SCREEN
 	dbw 55, MOONBLAST ; XY
 	db 0 ; no more level-up moves
@@ -893,6 +893,7 @@ ClefableEvosAttacks:
 	dbw 1, DOUBLESLAP
 	dbw 1, METRONOME
 	dbw 1, MOONLIGHT
+	dbw 55, MOONBLAST ; XY
 	db 0 ; no more level-up moves
 
 VulpiiiEvosAttacks:
@@ -944,14 +945,15 @@ JigglypuffEvosAttacks:
 	dbw 4, DEFENSE_CURL
 	dbw 9, POUND
 	dbw 14, DISABLE
-	dbw 14, DISARMING_VOICE ; Chose to give Clefairy Fairy Wind and Jigglypuff Disarming Voice for a dichotomy
-	dbw 19, ROLLOUT
-	dbw 24, DOUBLESLAP
-	dbw 29, REST
-	dbw 34, COUNTER ; RG proto
-	dbw 39, BODY_SLAM
-	dbw 44, DOUBLE_EDGE
-	dbw 49, PAIN_SPLIT ; SW97
+	dbw 19, DISARMING_VOICE ; Chose to give Clefairy Fairy Wind and Jigglypuff Disarming Voice for a dichotomy
+	dbw 24, ROLLOUT
+	dbw 29, DOUBLESLAP
+	dbw 34, REST
+	dbw 39, COUNTER ; RG proto
+	dbw 44, BODY_SLAM
+	dbw 49, PLAY_ROUGH ; XY, from Wigglytuff
+	dbw 54, DOUBLE_EDGE
+	dbw 59, PAIN_SPLIT ; SW97
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
@@ -960,6 +962,7 @@ WigglytuffEvosAttacks:
 	dbw 1, DISABLE
 	dbw 1, DEFENSE_CURL
 	dbw 1, DOUBLESLAP
+	dbw 50, PLAY_ROUGH ; XY
 	db 0 ; no more level-up moves
 
 BittybatEvosAttacks:
@@ -1020,7 +1023,7 @@ OddishEvosAttacks:
 	dbw 36, GROWTH ; SW97
 	dbw 40, PETAL_DANCE
 	dbw 44, MOONBLAST ; XY
-	dbw 46, GIGA_DRAIN ; HGSS
+	dbw 49, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
 GloomEvosAttacks:
@@ -1037,8 +1040,8 @@ GloomEvosAttacks:
 	dbw 34, MOONLIGHT
 	dbw 40, GROWTH ; SW97
 	dbw 44, PETAL_DANCE
-	dbw 44, MOONBLAST ; XY
-	dbw 50, GIGA_DRAIN ; HGSS
+	dbw 48, MOONBLAST ; XY
+	dbw 55, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
 VileplumeEvosAttacks:
@@ -1221,7 +1224,7 @@ PerrserkerEvosAttacks:
 	dbw 43, SLASH
 	dbw 50, DOUBLE_TEAM
 	dbw 56, THRASH
-	; dbw 61, COIN_HURL
+	dbw 61, COIN_HURL
 	db 0 ; no more level-up moves
 
 PsyduckEvosAttacks:
@@ -1284,7 +1287,7 @@ MankeyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, FURY_SWIPES
@@ -1302,7 +1305,7 @@ PrimeapeEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, FURY_SWIPES
@@ -1321,7 +1324,7 @@ AnnihilapeEvosAttacks:
 	dbw 1, SCRATCH
 	dbw 1, LEER
 	dbw 1, SPITE
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 9, LOW_KICK
 	dbw 15, KARATE_CHOP
 	dbw 21, FURY_SWIPES
@@ -1349,6 +1352,7 @@ PupperonEvosAttacks:
 	dbw 28, FLAME_WHEEL
 	dbw 34, AGILITY
 	dbw 40, FLAMETHROWER
+	dbw 45, PLAY_ROUGH
 	db 0 ; no more level-up moves
 
 GrowlitheEvosAttacks:
@@ -1363,6 +1367,7 @@ GrowlitheEvosAttacks:
 	dbw 32, FLAME_WHEEL
 	dbw 38, AGILITY
 	dbw 46, FLAMETHROWER
+	dbw 52, PLAY_ROUGH ; Later gen level-up
 	db 0 ; no more level-up moves
 
 ArcanineEvosAttacks:
@@ -1436,7 +1441,7 @@ KadabraEvosAttacks:
 	dbw 32, MEDITATE ; RG proto
 	dbw 37, RECOVER
 	dbw 42, FUTURE_SIGHT
-	; dbw 46, SYNCHRONIZE 
+	dbw 46, SYNCHRONIZE 
 	dbw 50, PSYCHIC_M
 	dbw 56, REFLECT
 	db 0 ; no more level-up moves
@@ -1452,7 +1457,7 @@ AlakazamEvosAttacks:
 	dbw 32, MEDITATE ; RG proto
 	dbw 37, RECOVER
 	dbw 42, FUTURE_SIGHT
-	; dbw 46, SYNCHRONIZE 
+	dbw 46, SYNCHRONIZE 
 	dbw 50, PSYCHIC_M
 	dbw 56, REFLECT
 	db 0 ; no more level-up moves
@@ -1462,7 +1467,7 @@ MachopEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, LOW_KICK
 	dbw 1, LEER
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 7, FOCUS_ENERGY
 	dbw 13, KARATE_CHOP
 	dbw 19, SEISMIC_TOSS
@@ -1480,7 +1485,7 @@ MachokeEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, LOW_KICK
 	dbw 1, LEER
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 7, FOCUS_ENERGY
 	dbw 13, KARATE_CHOP
 	dbw 19, SEISMIC_TOSS
@@ -1497,7 +1502,7 @@ MachampEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, LOW_KICK
 	dbw 1, LEER
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 7, FOCUS_ENERGY
 	dbw 13, KARATE_CHOP
 	dbw 19, SEISMIC_TOSS
@@ -2397,7 +2402,7 @@ HitmonchanEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, COMET_PUNCH
 	dbw 6, AGILITY
-	; dbw 11, UPPERCUT
+	dbw 11, UPPERCUT
 	dbw 16, SONICBOOM ; Street Fighter II
 	dbw 20, MACH_PUNCH
 	dbw 26, THUNDERPUNCH
@@ -2760,7 +2765,7 @@ StaryuEvosAttacks:
 	dbw 30, BUBBLEBEAM
 	dbw 35, AURORA_BEAM ; Unused Egg move
 	dbw 40, MINIMIZE
-	; dbw 45, SYNCHRONIZE
+	dbw 45, SYNCHRONIZE
 	dbw 50, LIGHT_SCREEN
 	dbw 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -2789,9 +2794,9 @@ MimeJrEvosAttacks:
 	dbw 31, ENCORE
 	dbw 36, PSYBEAM
 	dbw 41, BATON_PASS
-	dbw 41, DAZZLING_GLEAM ; XY
-	dbw 46, SAFEGUARD
-	dbw 52, PSYCHIC_M ; FRLG
+	dbw 46, DAZZLING_GLEAM ; XY
+	dbw 52, SAFEGUARD
+	dbw 58, PSYCHIC_M ; FRLG
 	db 0 ; no more level-up moves
 
 MrMimeEvosAttacks:
@@ -2807,9 +2812,9 @@ MrMimeEvosAttacks:
 	dbw 33, ENCORE
 	dbw 40, PSYBEAM
 	dbw 45, BATON_PASS
-	dbw 41, DAZZLING_GLEAM ; XY
-	dbw 51, SAFEGUARD
-	dbw 58, PSYCHIC_M ; FRLG
+	dbw 50, DAZZLING_GLEAM ; XY
+	dbw 58, SAFEGUARD
+	dbw 64, PSYCHIC_M ; FRLG
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
@@ -2851,12 +2856,12 @@ JynxEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, POUND
 	dbw 1, LICK
-	dbw 1, DRAINING_KISS ; XY
 	dbw 7, SWEET_KISS ; from Smoochum
 	dbw 12, POWDER_SNOW
 	dbw 17, CONFUSION
 	dbw 22, SING
 	dbw 26, PSYWAVE ; 99 proto
+	dbw 30, DRAINING_KISS ; XY
 	dbw 33, MEAN_LOOK
 	dbw 38, LOVELY_KISS
 	dbw 42, PSYCHIC_M

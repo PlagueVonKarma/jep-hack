@@ -295,8 +295,8 @@ BattleAnimations::
 	dw BattleAnim_Wind_Ride ; Wind Ride but real
 	dw BattleAnim_Flash ; Dazzling Gleam
 	dw BattleAnim_Sing ; Disarming Voice
-	dw BattleAnim_SweetKiss ; Draining Kiss
-	dw BattleAnim_SweetScent ; Fairy Wind
+	dw BattleAnim_DrainingKiss ; From Sour Crystal
+	dw BattleAnim_FairyWind ; From Sour Crystal
 	dw BattleAnim_Psywave ; Moonblast
 	dw BattleAnim_Rollout ; Play Rough
 	dw BattleAnim_ConfuseRay ; Strange Steam
@@ -4962,6 +4962,58 @@ BattleAnim_CoinHurl:
 	anim_wait 2
 	anim_obj ANIM_OBJ_PAY_DAY, 130, 86, $1
 	anim_wait 64
+	anim_ret
+	
+BattleAnim_FairyWind: ; from Sour Crystal
+	anim_2gfx ANIM_GFX_SPEED, ANIM_GFX_HAZE
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_sound 0, 1, SFX_GAME_FREAK_LOGO_GS
+.loop
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 80, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 88, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 96, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 80, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 88, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 96, $4
+	anim_wait 4
+	anim_loop 2, .loop
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, $0, $40
+	anim_wait 64
+	anim_ret
+	
+BattleAnim_DrainingKiss: ; from Sour Crystal
+	anim_3gfx ANIM_GFX_OBJECTS, ANIM_GFX_CHARGE, ANIM_GFX_SHINE
+	anim_sound 0, 1, SFX_SWEET_KISS
+	anim_obj ANIM_OBJ_HEART, 120, 40, $0
+	anim_wait 8
+.loop
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 128, 48, $2
+	anim_wait 5
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 136, 64, $3
+	anim_wait 5
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 136, 32, $4
+	anim_wait 5
+	anim_loop 5, .loop
+	anim_wait 32
+	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
+	anim_jump BattleAnim_Glimmer_branch3
+	
+BattleAnim_Glimmer_branch3:
+	anim_sound 0, 0, SFX_METRONOME
+	anim_obj ANIM_OBJ_GLIMMER, 44, 64, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 24, 96, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 56, 104, $0
+	anim_wait 21
 	anim_ret
 
 BattleAnim_TargetObj_1Row:
