@@ -509,7 +509,7 @@ NoctowlEvosAttacks:
 	dbw 46, REFLECT
 	dbw 52, MOONLIGHT ; SW97
 	dbw 58, DREAM_EATER
-	dbw 60, MOONBLAST ; SM
+	dbw 66, MOONBLAST ; SM
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
@@ -710,9 +710,9 @@ TogepiEvosAttacks:
 	dbw 7, METRONOME
 	dbw 13, SWEET_KISS
 	dbw 19, ENCORE
-	dbw 19, FAIRY_WIND ; XY
-	dbw 25, SPIKE_CANNON ; SW97
-	dbw 31, ANCIENTPOWER ; FRLG
+	dbw 23, FAIRY_WIND ; XY
+	dbw 28, SPIKE_CANNON ; SW97
+	dbw 32, ANCIENTPOWER ; FRLG
 	dbw 37, SAFEGUARD
 	dbw 43, PROTECT ; SW97
 	dbw 49, SKULL_BASH ; SW97
@@ -730,9 +730,9 @@ TogeticEvosAttacks:
 	dbw 7, METRONOME
 	dbw 13, SWEET_KISS
 	dbw 19, ENCORE
-	dbw 19, FAIRY_WIND ; XY
-	dbw 25, SPIKE_CANNON ; SW97
-	dbw 31, ANCIENTPOWER ; FRLG
+	dbw 23, FAIRY_WIND ; XY
+	dbw 28, SPIKE_CANNON ; SW97
+	dbw 32, ANCIENTPOWER ; FRLG
 	dbw 37, SAFEGUARD
 	dbw 43, PROTECT ; SW97
 	dbw 49, SKULL_BASH ; SW97
@@ -760,7 +760,7 @@ NatuEvosAttacks:
 	dbw 15, MEAN_LOOK ; SW97
 	dbw 20, TELEPORT
 	dbw 25, PSYBEAM ; SW97
-	; dbw 30, SYNCHRONIZE
+	dbw 30, SYNCHRONIZE
 	dbw 35, PURSUIT ; SW97
 	dbw 40, CONFUSE_RAY
 	dbw 45, SPITE ; SW97
@@ -778,7 +778,7 @@ QatuEvosAttacks:
 	dbw 20, TELEPORT
 	dbw 20, FUTURE_SIGHT
 	dbw 27, PSYBEAM ; SW97
-	; dbw 32, SYNCHRONIZE
+	dbw 32, SYNCHRONIZE
 	dbw 39, PURSUIT ; SW97
 	dbw 44, CONFUSE_RAY
 	dbw 51, SPITE ; SW97
@@ -795,7 +795,7 @@ XatuEvosAttacks:
 	dbw 20, TELEPORT
 	dbw 20, FUTURE_SIGHT
 	dbw 27, PSYBEAM ; SW97
-	; dbw 32, SYNCHRONIZE
+	dbw 32, SYNCHRONIZE
 	dbw 39, PURSUIT ; SW97
 	dbw 44, CONFUSE_RAY
 	dbw 51, SPITE ; SW97
@@ -816,7 +816,7 @@ MoibelleEvoAttacks:
 	dbw 35, FURY_SWIPES
 	dbw 40, ATTRACT
 	dbw 46, THIEF
-	;dbw 52, COIN_HURL
+	dbw 52, COIN_HURL
 	db 0 ; no more level-up moves
 
 BelledamEvoAttacks:
@@ -832,7 +832,7 @@ BelledamEvoAttacks:
 	dbw 39, FURY_SWIPES
 	dbw 44, ATTRACT
 	dbw 52, THIEF
-	;dbw 58, COIN_HURL
+	dbw 58, COIN_HURL
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
@@ -846,8 +846,8 @@ MareepEvosAttacks:
 	dbw 22, COTTON_SPORE
 	dbw 28, SWIFT ; SW97
 	dbw 34, LIGHT_SCREEN
-	dbw 34, DAZZLING_GLEAM ; SV
-	dbw 40, THUNDERBOLT ; SW97
+	dbw 38, DAZZLING_GLEAM ; SV
+	dbw 42, THUNDERBOLT ; SW97
 	dbw 46, HYPNOSIS ; SW97
 	dbw 52, THUNDER
 	db 0 ; no more level-up moves
@@ -863,9 +863,9 @@ FlaaffyEvosAttacks:
 	dbw 24, COTTON_SPORE
 	dbw 30, SWIFT ; SW97
 	dbw 38, LIGHT_SCREEN
-	dbw 34, DAZZLING_GLEAM ; SV
-	dbw 44, THUNDERBOLT ; SW97
-	dbw 50, HYPNOSIS ; SW97
+	dbw 42, DAZZLING_GLEAM ; SV
+	dbw 46, THUNDERBOLT ; SW97
+	dbw 52, HYPNOSIS ; SW97
 	dbw 58, THUNDER
 	db 0 ; no more level-up moves
 
@@ -879,9 +879,9 @@ AmpharosEvosAttacks:
 	dbw 24, COTTON_SPORE
 	dbw 30, SWIFT ; SW97
 	dbw 40, LIGHT_SCREEN
-	dbw 34, DAZZLING_GLEAM ; SV
-	dbw 46, THUNDERBOLT ; SW97
-	dbw 54, HYPNOSIS ; SW97
+	dbw 44, DAZZLING_GLEAM ; SV
+	dbw 48, THUNDERBOLT ; SW97
+	dbw 58, HYPNOSIS ; SW97
 	dbw 62, THUNDER
 	db 0 ; no more level-up moves
 
@@ -918,7 +918,8 @@ MarillEvosAttacks:
 	dbw 30, BUBBLEBEAM
 	dbw 36, DOUBLE_EDGE
 	dbw 42, RAIN_DANCE
-	dbw 48, HYDRO_PUMP ; FRLG
+	dbw 48, PLAY_ROUGH ; XY
+	dbw 54, HYDRO_PUMP ; FRLG
 	db 0 ; no more level-up moves
 
 AzumarillEvosAttacks:
@@ -929,10 +930,11 @@ AzumarillEvosAttacks:
 	dbw 13, WATER_GUN
 	dbw 21, ROLLOUT
 	dbw 27, SLAM ; from Azurill
-	dbw 34, BUBBLEBEAM
+	dbw 32, BUBBLEBEAM
 	dbw 40, DOUBLE_EDGE
-	dbw 48, RAIN_DANCE
-	dbw 54, HYDRO_PUMP ; FRLG
+	dbw 46, RAIN_DANCE
+	dbw 52, PLAY_ROUGH ; XY
+	dbw 60, HYDRO_PUMP ; FRLG
 	db 0 ; no more level-up moves
 
 BonslyEvosAttacks:
@@ -982,7 +984,7 @@ HoppipEvosAttacks:
 	dbw 5, TAIL_WHIP
 	dbw 8, ABSORB ; SW97
 	dbw 12, TACKLE
-	dbw 12, FAIRY_WIND ; XY
+	dbw 14, FAIRY_WIND ; XY
 	dbw 16, POISONPOWDER
 	dbw 17, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1002,6 +1004,7 @@ SkiploomEvosAttacks:
 	dbw 5, TAIL_WHIP
 	dbw 8, ABSORB ; SW97
 	dbw 12, TACKLE
+	dbw 14, FAIRY_WIND ; XY
 	dbw 16, POISONPOWDER
 	dbw 17, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1020,6 +1023,7 @@ JumpluffEvosAttacks:
 	dbw 5, TAIL_WHIP
 	dbw 8, ABSORB ; SW97
 	dbw 12, TACKLE
+	dbw 14, FAIRY_WIND ; XY
 	dbw 16, POISONPOWDER
 	dbw 17, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1328,9 +1332,8 @@ SylveonEvosAttacks:
 	dbw 30, DRAINING_KISS
 	dbw 36, DAZZLING_GLEAM
 	dbw 42, SWIFT
-	dbw 47, PSYCH_UP ; XY
+	dbw 47, MOONBLAST ; XY
 	dbw 52, LIGHT_SCREEN
-	dbw 60, MOONBLAST ; ? feels wrong
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
@@ -1427,10 +1430,10 @@ PhandarinEvosAttacks:
 	dbw 14, SPLASH
 	dbw 19, SPITE
 	dbw 25, CONFUSION
-	dbw 30, POUND ; DRAINING_KISS
+	dbw 30, DRAINING_KISS
 	dbw 36, NIGHT_SHADE
 	dbw 40, SUBSTITUTE
-	dbw 44, POUND ; DAZZLING_GLEAM
+	dbw 44, MOONBLAST
 	dbw 50, PSYCHIC_M
 	dbw 54, PAIN_SPLIT
 	dbw 60, SHADOW_BALL
@@ -1642,10 +1645,11 @@ SnubbullEvosAttacks:
 	dbw 26, SWEET_KISS ; SW97
 	dbw 30, ROAR
 	dbw 34, RAGE
-	dbw 40, TAKE_DOWN
-	dbw 44, THRASH ; 99 proto
-	dbw 49, CRUNCH ; FRLG
-	dbw 54, DOUBLE_EDGE ; SW97
+	dbw 38, TAKE_DOWN
+	dbw 43, PLAY_ROUGH ; XY
+	dbw 48, THRASH ; 99 proto
+	dbw 52, CRUNCH ; FRLG
+	dbw 57, DOUBLE_EDGE ; SW97
 	db 0 ; no more level-up moves
 
 GranbullEvosAttacks:
@@ -1660,10 +1664,11 @@ GranbullEvosAttacks:
 	dbw 28, SWEET_KISS ; SW97
 	dbw 32, ROAR
 	dbw 36, RAGE
-	dbw 44, TAKE_DOWN
-	dbw 48, THRASH ; 99 proto
-	dbw 53, CRUNCH ; FRLG
-	dbw 60, DOUBLE_EDGE ; SW97
+	dbw 42, TAKE_DOWN
+	dbw 47, PLAY_ROUGH ; XY
+	dbw 52, THRASH ; 99 proto
+	dbw 58, CRUNCH ; FRLG
+	dbw 63, DOUBLE_EDGE ; SW97
 	db 0 ; no more level-up moves
 	
 CaretorkerEvosAttacks:
@@ -1679,7 +1684,7 @@ CaretorkerEvosAttacks:
 	dbw 41, PROTECT
 	dbw 47, DAZZLING_GLEAM
 	dbw 53, SOFTBOILED
-	dbw 53, MOONBLAST ; Yoshi's Island opening reference!
+	dbw 59, MOONBLAST ; Yoshi's Island opening reference!
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
@@ -1819,7 +1824,8 @@ TeddiursaEvosAttacks:
 	dbw 31, SLASH
 	dbw 37, MOONLIGHT ; from BM Ursaluna
 	dbw 43, SNORE
-	dbw 48, THRASH
+	dbw 47, THRASH
+	dbw 51, PLAY_ROUGH ; PLA
 	dbw 54, DOUBLE_EDGE ; PLA
 	db 0 ; no more level-up moves
 
@@ -1835,8 +1841,9 @@ UrsaringEvosAttacks:
 	dbw 33, SLASH
 	dbw 39, MOONLIGHT ; from BM Ursaluna
 	dbw 45, SNORE
-	dbw 52, THRASH
-	dbw 58, DOUBLE_EDGE ; PLA
+	dbw 51, THRASH
+	dbw 55, PLAY_ROUGH ; PLA
+	dbw 60, DOUBLE_EDGE ; PLA
 	db 0 ; no more level-up moves
 	
 UrsalunaEvosAttacks:
@@ -1850,9 +1857,10 @@ UrsalunaEvosAttacks:
 	dbw 33, SLASH
 	dbw 39, MOONLIGHT ; from BM Ursaluna
 	dbw 45, SNORE
-	dbw 52, THRASH
-	dbw 58, DOUBLE_EDGE
-	dbw 64, EARTHQUAKE
+	dbw 51, THRASH
+	dbw 55, PLAY_ROUGH
+	dbw 60, DOUBLE_EDGE
+	dbw 65, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 SlugmaEvosAttacks:
@@ -2382,6 +2390,7 @@ MiltankEvosAttacks:
 	dbw 45, BODY_SLAM
 	dbw 51, HEAL_BELL
 	dbw 57, TAKE_DOWN ; SW97
+	dbw 61, PLAY_ROUGH ; Later gen level-up
 	db 0 ; no more level-up moves
 
 BlisseyEvosAttacks:
@@ -2479,7 +2488,7 @@ SakurazeEvosAttacks:
 
 TanobiEvosAttacks:
 	db 0 ; no more evolutions
-	; dbw 1, UPPERCUT
+	dbw 1, UPPERCUT
 	dbw 1, LEER
 	dbw 7, QUICK_ATTACK
 	dbw 12, ROLLING_KICK
@@ -2542,7 +2551,7 @@ MolambinoEvosAttacks:
 	dbbw EVOLVE_LEVEL, 20, LUANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	; dbw 7, DRAINING_KISS ; move not yet implemented
+	dbw 7, DRAINING_KISS
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 24, MORNING_SUN
@@ -2550,14 +2559,14 @@ MolambinoEvosAttacks:
 	dbw 35, DOUBLE_TEAM
 	dbw 41, THRASH
 	dbw 47, HYDRO_PUMP
-	; dbw 53, DAZZLING_GLEAM ; move not yet implemented
+	dbw 53, DAZZLING_GLEAM
 	db 0 ; no more level-up moves
 
 LuanboEvosAttacks:
 	dbbw EVOLVE_LEVEL, 35, GRANBO
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	; dbw 7, DRAINING_KISS ; move not yet implemented
+	dbw 7, DRAINING_KISS
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 26, MORNING_SUN
@@ -2565,14 +2574,14 @@ LuanboEvosAttacks:
 	dbw 37, DOUBLE_TEAM
 	dbw 45, THRASH
 	dbw 51, HYDRO_PUMP
-	; dbw 57, DAZZLING_GLEAM ; move not yet implemented
+	dbw 57, DAZZLING_GLEAM
 	db 0 ; no more level-up moves
 
 GranboEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, SUPERSONIC
-	; dbw 7, DRAINING_KISS ; move not yet implemented
+	dbw 7, DRAINING_KISS
 	dbw 13, FLAIL
 	dbw 19, WATER_GUN
 	dbw 26, MORNING_SUN
@@ -2580,7 +2589,7 @@ GranboEvosAttacks:
 	dbw 39, DOUBLE_TEAM
 	dbw 47, THRASH
 	dbw 55, HYDRO_PUMP
-	; dbw 61, DAZZLING_GLEAM ; move not yet implemented
+	dbw 61, DAZZLING_GLEAM
 	db 0 ; no more level-up moves
 
 AngoreEvosAttacks:
@@ -2705,6 +2714,7 @@ MimearEvosAttacks:
 	dbw 43, MIRROR_COAT
 	dbw 49, SAFEGUARD
 	dbw 55, DAZZLING_GLEAM
+	dbw 60, MOONBLAST
 	db 0 ; no more level-up moves
 
 InoshikaEvosAttacks:
@@ -2799,10 +2809,10 @@ ScreamTailEvosAttacks:
 	dbw 21, BITE
 	dbw 28, BODY_SLAM
 	dbw 35, REST
-	; dbw 42, DRAINING_KISS ; move not yet implemented
+	dbw 42, PLAY_ROUGH
 	dbw 49, PSYCHIC_M
 	dbw 56, CRUNCH
-	; dbw 63, DAZZLING_GLEAM ; move not yet implemented
+	dbw 63, DAZZLING_GLEAM
 	dbw 70, PERISH_SONG
 	db 0 ; no more level-up moves
 
@@ -3096,12 +3106,12 @@ HyoshuYangEvosAttacks:
 	dbw 8, WHIRLWIND
 	dbw 16, POWDER_SNOW
 	dbw 24, SAFEGUARD
-	dbw 32, RECOVER ; Fairy Wind
+	dbw 32, FAIRY_WIND
 	dbw 40, RECOVER
 	dbw 48, MIST
 	dbw 54, ICE_BEAM
 	dbw 60, MYSTIC_ICE ; Signature move
-	dbw 68, RECOVER ; Dazzling Gleam
+	dbw 68, DAZZLING_GLEAM
 	dbw 74, SWIFT
 	dbw 80, ANCIENTPOWER
 	dbw 88, FUTURE_SIGHT
