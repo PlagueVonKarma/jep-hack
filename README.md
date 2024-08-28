@@ -89,7 +89,7 @@ As the open source nature of this project implies, people are free to reuse what
 If you use our implementations of anything at all, it is encouraged to submit Pull Requests for bug fixes if you find any issues! We very much appreciate them!
 
 ## Development Credits
-- Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
+- Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps, Stat Exp. Display code)
 - Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer, Spriter)
 - Zeta_Null (Repository Creator, Spriter, Programming, Music)
 - LadyMisticus (Documentation, Programming, Mapping, Spriter)
@@ -134,6 +134,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
 - Ferropexola/aforward9600: Time of day-based tileset palette code
 - Rangi42/polishedcrystal: [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
+- cRz-Shadows & Crystal Legacy Devs - [DVs & Hidden Power display code](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy/blob/main/engine/pokemon/stats_screen.asm)
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal
