@@ -1,10 +1,10 @@
-	db "BLAST@" ; species name
-	dw 211, 420 ; height, weight
+	db "FIRE BEAR@" ; species name
+	dw 303, 720 ; height, weight
 
-	db   "If it thinks its"
-	next "TRAINER in danger,"
-	next "it'll bark loudly."
+	db   "Fiercely loyal to"
+	next "its TRAINER. If"
+	next "given the order,"
 
-	page "Reining this in"
-	next "is a true test"
-	next "of skill.@"
+	page "FLAMBEAR will"
+	next "attack with an"
+	next "explosive bite.@"
