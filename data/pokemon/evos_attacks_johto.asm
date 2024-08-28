@@ -881,7 +881,7 @@ AmpharosEvosAttacks:
 	dbw 40, LIGHT_SCREEN
 	dbw 44, DAZZLING_GLEAM ; SV
 	dbw 48, THUNDERBOLT ; SW97
-	dbw 58, HYPNOSIS ; SW97
+	dbw 56, HYPNOSIS ; SW97
 	dbw 62, THUNDER
 	db 0 ; no more level-up moves
 
