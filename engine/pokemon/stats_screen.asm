@@ -1,12 +1,12 @@
 ; BUG: The icons up top don't match your scrolling.
 ; I probably missed something.
 ; Review: https://github.com/pret/pokecrystal/wiki/Add-a-fourth-stats-page
-	const_def 1
+	const_def
 	const PINK_PAGE  ; 1
 	const GREEN_PAGE ; 2
 	const BLUE_PAGE  ; 3
 	const ORANGE_PAGE ; 4
-DEF NUM_STAT_PAGES EQU const_value - 1
+DEF NUM_STAT_PAGES EQU const_value
 
 DEF STAT_PAGE_MASK EQU %00000011
 
