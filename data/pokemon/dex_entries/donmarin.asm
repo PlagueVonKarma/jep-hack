@@ -1,4 +1,4 @@
-	db "POWERFUL@" ; species name
+	db "LOCHKEEPER@" ; species name
 	dw 802, 4850 ; height, weight
 
 	db   "Every PALSSIO pod"

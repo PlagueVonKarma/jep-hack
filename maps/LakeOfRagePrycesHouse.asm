@@ -3,6 +3,22 @@
 
 LakeOfRagePrycesHouse_MapScripts:
 	def_scene_scripts
+	
+	def_callbacks
+	callback MAPCALLBACK_OBJECTS, LakeOfRagePrycesHousePryce
+
+LakeOfRagePrycesHousePryce:
+	checkevent EVENT_LAKE_OF_RAGE_RED_GYARADOS
+	iffalse .NoAppear
+	sjump .Appear
+
+.Appear:
+	appear LAKEOFRAGEPRYCESHOUSE_PRYCE
+	endcallback
+
+.NoAppear:
+	disappear LAKEOFRAGEPRYCESHOUSE_PRYCE
+	endcallback
 
 ; For some reason these crash the game. Ok.
 ;PrycesHouseBookshelf1:
@@ -12,9 +28,7 @@ LakeOfRagePrycesHouse_MapScripts:
 ;	jumpstd MagazineBookshelfScript
 
 PrycesHousePryce:
-	faceplayer
-	opentext
-	writetext PrycesHousePryceText
+	jumptextfaceplayer PrycesHousePryceText
 	waitbutton
 	closetext
 	end
@@ -22,7 +36,7 @@ PrycesHousePryce:
 PrycesHousePryceText:
 	text "Thank you for"
 	line "saving my"
-	cont "beloved town."
+	cont "beloved home."
 	
 	para "My middle name"
 	line "is WILLOW."
@@ -80,22 +94,6 @@ LakeOfRagePrycesHouseSwinubText:
 ;LakeOfRagePrycesHouseSeelText:
 ;	text "Seel! Seel!"
 ;	done
-
-	def_callbacks
-	callback MAPCALLBACK_OBJECTS, LakeOfRagePrycesHousePryce
-
-LakeOfRagePrycesHousePryce:
-	checkevent EVENT_LAKE_OF_RAGE_RED_GYARADOS
-	iffalse .NoAppear
-	sjump .Appear
-
-.Appear:
-	appear LAKEOFRAGEPRYCESHOUSE_PRYCE
-	endcallback
-
-.NoAppear:
-	disappear LAKEOFRAGEPRYCESHOUSE_PRYCE
-	endcallback
 
 LakeOfRagePrycesHouse_MapEvents:
 	db 0, 0 ; filler
