@@ -274,7 +274,7 @@ EvolutionMoves::
 	dw NO_MOVE ;FOXFIRE
 	dw NO_MOVE ;YANMA      ; c1
 	dw NO_MOVE ;YANMEGA
-	dw NO_MOVE ;PENDING03
+	dw NO_MOVE ;ONIYANMA
 	dw NO_MOVE ;WOOPER     ; c2
 	dw NO_MOVE ;QUAGSIRE   ; c3
 	dw NO_MOVE ;ESPEON     ; c4

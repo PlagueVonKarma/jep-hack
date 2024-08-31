@@ -180,7 +180,7 @@ EggMovePointers1:
 	dw PinsirEggMoves
 	dw NoEggMoves1 ; Tricules
 	dw NoEggMoves1
-	dw NoEggMoves1
+	dw MagikarpEggMoves
 	dw NoEggMoves1
 	dw NoEggMoves1 ; Magiprey
 	dw NoEggMoves1 ; Terrados
@@ -221,6 +221,7 @@ BulbasaurEggMoves:
 	dw SAFEGUARD
 	dw RAZOR_WIND
 	dw PETAL_DANCE
+	dw UPROOT
 	dw -1 ; end
 
 CharmanderEggMoves:
@@ -268,6 +269,7 @@ SpearowEggMoves:
 	dw SCARY_FACE
 	dw QUICK_ATTACK
 	dw TRI_ATTACK
+	dw WIND_RIDE
 	dw -1 ; end
 
 EkansEggMoves:
@@ -304,6 +306,7 @@ NidoranMEggMoves:
 	dw AMNESIA
 	dw COUNTER
 	dw BEAT_UP
+	dw ROCK_HEAD
 	dw -1 ; end
 
 VulpiiiEggMoves:
@@ -395,6 +398,7 @@ PoliwagEggMoves:
 	dw BUBBLEBEAM
 	dw HAZE
 	dw MIND_READER
+	dw WATER_SPORT
 	dw -1 ; end
 
 AbraEggMoves:
@@ -506,6 +510,7 @@ DoduoEggMoves:
 	dw HAZE
 	dw FAINT_ATTACK
 	dw FLAIL
+	dw MEGAPHONE
 	dw -1 ; end
 
 SeelEggMoves:
@@ -554,6 +559,7 @@ KrabbyEggMoves:
 	dw FLAIL
 	dw SLAM
 	dw ROCK_SLASH
+	dw CROSS_CUTTER
 	dw -1 ; end
 
 ExeggcuteEggMoves:
@@ -619,6 +625,7 @@ KangaskhanEggMoves:
 	dw FOCUS_ENERGY
 	dw SAFEGUARD
 	dw DISABLE
+	dw MEGAPHONE
 	dw -1 ; end
 
 HorseaEggMoves:
@@ -674,6 +681,10 @@ PinsirEggMoves:
 	dw ROCK_SLASH
 	dw -1 ; end
 
+MagikarpEggMoves:
+	dw BOUNCE
+	dw -1 ; end
+
 LaprasEggMoves:
 	dw AURORA_BEAM
 	dw FORESIGHT
@@ -682,6 +693,7 @@ LaprasEggMoves:
 EeveeEggMoves:
 	dw FLAIL
 	dw CHARM
+	dw BRIGHT_MOSS
 	dw -1 ; end
 
 OmanyteEggMoves:
@@ -690,6 +702,7 @@ OmanyteEggMoves:
 	dw SLAM
 	dw SUPERSONIC
 	dw HAZE
+	dw BRIGHT_MOSS
 	dw -1 ; end
 
 KabutoEggMoves:
@@ -698,6 +711,7 @@ KabutoEggMoves:
 	dw RAPID_SPIN
 	dw DIG
 	dw FLAIL
+	dw CROSS_CUTTER
 	dw -1 ; end
 
 FeradactylEggMoves:

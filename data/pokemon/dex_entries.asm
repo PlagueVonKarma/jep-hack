@@ -275,7 +275,7 @@ SECTION "Pokedex Entries 193-251", ROMX
 
 YanmaPokedexEntry::      INCLUDE "data/pokemon/dex_entries/yanma.asm"
 YanmegaPokedexEntry::    INCLUDE "data/pokemon/dex_entries/yanmega.asm"
-Pending03PokedexEntry::  INCLUDE "data/pokemon/dex_entries/pending03.asm"
+OniyanmaPokedexEntry::   INCLUDE "data/pokemon/dex_entries/oniyanma.asm"
 WooperPokedexEntry::     INCLUDE "data/pokemon/dex_entries/wooper.asm"
 QuagsirePokedexEntry::   INCLUDE "data/pokemon/dex_entries/quagsire.asm"
 EspeonPokedexEntry::     INCLUDE "data/pokemon/dex_entries/espeon.asm"

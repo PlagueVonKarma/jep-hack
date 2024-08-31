@@ -64,7 +64,7 @@ EggMovePointers2::
 	dw FoxfireEggMoves
 	dw YanmaEggMoves
 	dw NoEggMoves2 ; Yanmega
-	dw NoEggMoves2 ; Pending03
+	dw NoEggMoves2 ; Oniyanma
 	dw WooperEggMoves
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -214,6 +214,7 @@ TotodileEggMoves:
 	dw ANCIENTPOWER
 	dw RAZOR_WIND
 	dw ROCK_SLIDE
+	dw WATER_SPORT
 	dw -1 ; end
 
 CubburnEggMoves:
@@ -253,6 +254,8 @@ LedybaEggMoves:
 	dw PSYBEAM
 	dw BIDE
 	dw LIGHT_SCREEN
+	dw STRONG_ARM
+	dw UPPERCUT
 	dw -1 ; end
 
 SpinarakEggMoves:
@@ -298,6 +301,7 @@ IgglybuffEggMoves:
 	dw PERISH_SONG
 	dw PRESENT
 	dw FAINT_ATTACK
+	dw BOUNCE
 	dw -1 ; end
 
 TogepiEggMoves:
@@ -340,6 +344,7 @@ AzurillEggMoves:
 	dw PERISH_SONG
 	dw SUPERSONIC
 	dw FORESIGHT
+	dw WATER_SPORT
 	dw -1 ; end
 
 BonslyEggMoves:
@@ -403,6 +408,7 @@ WooperEggMoves:
 	dw BODY_SLAM
 	dw ANCIENTPOWER
 	dw SAFEGUARD
+	dw UPROOT
 	dw -1 ; end
 
 MurkrowEggMoves:
@@ -523,6 +529,7 @@ SwinubEggMoves:
 	dw BODY_SLAM
 	dw ROCK_SLIDE
 	dw ANCIENTPOWER
+	dw UPROOT
 	dw -1 ; end
 
 CorsolaEggMoves:
@@ -568,6 +575,7 @@ SkarmoryEggMoves:
 	dw PURSUIT
 	dw WHIRLWIND
 	dw SKY_ATTACK
+	dw WIND_RIDE
 	dw -1 ; end
 
 HoundourEggMoves:
@@ -585,6 +593,7 @@ PhanpyEggMoves:
 	dw BODY_SLAM
 	dw ANCIENTPOWER
 	dw WATER_GUN
+	dw ROCK_HEAD
 	dw -1 ; end
 
 StantlerEggMoves:
@@ -609,6 +618,8 @@ TyrogueEggMoves:
 	dw HI_JUMP_KICK
 	dw MACH_PUNCH
 	dw MIND_READER
+	dw STRONG_ARM
+	dw UPPERCUT
 	dw -1 ; end
 
 SmoochumEggMoves:

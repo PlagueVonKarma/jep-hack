@@ -275,7 +275,7 @@ FramesPointers:
 	dba FoxfireFrames
 	dba YanmaFrames
 	dba YanmegaFrames
-	dba Pending03Frames
+	dba OniyanmaFrames
 	dba WooperFrames
 	dba QuagsireFrames
 	dba EspeonFrames

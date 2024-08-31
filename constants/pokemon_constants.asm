@@ -295,7 +295,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const FOXFIRE
 	const YANMA      ; c1
 	const YANMEGA
-	const PENDING03
+	const ONIYANMA
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4

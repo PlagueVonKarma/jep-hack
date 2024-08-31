@@ -275,7 +275,7 @@ AnimationPointers:
 	dw FoxfireAnimation
 	dw YanmaAnimation
 	dw YanmegaAnimation
-	dw Pending03Animation
+	dw OniyanmaAnimation
 	dw WooperAnimation
 	dw QuagsireAnimation
 	dw EspeonAnimation

@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, OCTILLERY
+	getmonname STRING_BUFFER_3, ONIYANMA
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke OCTILLERY, 90, TM_ROCK_SMASH
+	givepoke ONIYANMA, 65, TM_ROCK_SMASH
 	closetext
 	end
 

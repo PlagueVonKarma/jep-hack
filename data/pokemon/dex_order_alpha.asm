@@ -250,6 +250,7 @@ AlphabeticalPokedexOrder:
 	dw OMANYTE
 	dw OMASTAR
 	dw ONIX
+	dw ONIYANMA
 	dw ORFRY
 	dw PALSSIO
 	dw PARAS
@@ -396,7 +397,6 @@ AlphabeticalPokedexOrder:
 	dw XYLODON
 	dw XYLOFIN
 	dw YANMA
-	dw PENDING03 ; this thing's gonna start with Yan, surely, so I'm putting it here.
 	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT

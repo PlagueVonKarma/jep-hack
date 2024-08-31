@@ -132,7 +132,7 @@ NewPokedexOrder:
 	dw NIDOREIGN
 	dw YANMA
 	dw YANMEGA
-	dw PENDING03
+	dw ONIYANMA
 	dw SUNKERN
 	dw SUNBUD
 	dw SUNFLORA

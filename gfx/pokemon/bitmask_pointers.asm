@@ -275,7 +275,7 @@ BitmasksPointers:
 	dw FoxfireBitmasks
 	dw YanmaBitmasks
 	dw YanmegaBitmasks
-	dw Pending03Bitmasks
+	dw OniyanmaBitmasks
 	dw WooperBitmasks
 	dw QuagsireBitmasks
 	dw EspeonBitmasks

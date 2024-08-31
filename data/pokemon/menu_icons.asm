@@ -277,7 +277,7 @@ MonMenuIcons:
 	db ICON_FOX         ; FOXFIRE
 	db ICON_BUG         ; YANMA
 	db ICON_BUG         ; YANMEGA
-	db ICON_BUG         ; PENDING03
+	db ICON_BUG         ; ONIYANMA
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE
 	db ICON_FOX         ; ESPEON
