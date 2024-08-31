@@ -276,7 +276,7 @@ PokedexDataPointerTable:
 	dba FoxfirePokedexEntry
 	dba YanmaPokedexEntry
 	dba YanmegaPokedexEntry
-	dba Pending03PokedexEntry
+	dba OniyanmaPokedexEntry
 	dba WooperPokedexEntry
 	dba QuagsirePokedexEntry
 	dba EspeonPokedexEntry

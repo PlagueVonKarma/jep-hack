@@ -279,7 +279,7 @@ PokemonNames::
 	db "FOXFIRE@@@"
 	db "YANMA@@@@@"
 	db "YANMEGA@@@"
-	db "PENDING03@"
+	db "ONIYANMA@@"
 	db "WOOPER@@@@"
 	db "QUAGSIRE@@"
 	db "ESPEON@@@@"

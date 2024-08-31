@@ -281,7 +281,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; FOXFIRE	(incomplete)
 	mon_cry CRY_TOTODILE,     49,  200 ; YANMA
 	mon_cry CRY_NIDORAN_M,     0,    0 ; YANMEGA	(incomplete)
-	mon_cry CRY_NIDORAN_M,     0,    0 ; PENDING03	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; ONIYANMA	(incomplete)
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER
 	mon_cry CRY_WOOPER,     -198,  320 ; QUAGSIRE
 	mon_cry CRY_AIPOM,       162,  320 ; ESPEON

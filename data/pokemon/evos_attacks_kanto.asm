@@ -351,8 +351,9 @@ SquirtleEvosAttacks:
 	dbw 7, ABSORB ; New!
 	dbw 11, WITHDRAW
 	dbw 14, BUBBLEBEAM ; RG proto
-	dbw 17, COMET_PUNCH ; RG proto
-	dbw 22, RAPID_SPIN
+	dbw 17, BRIGHT_MOSS
+	dbw 20, COMET_PUNCH ; RG proto
+	dbw 23, RAPID_SPIN
 	dbw 26, MEGA_DRAIN ; New!
 	dbw 31, STOMP ; RG proto
 	dbw 36, SYNTHESIS ; New!
@@ -368,12 +369,13 @@ WartortleEvosAttacks:
 	dbw 7, ABSORB ; New!
 	dbw 11, WITHDRAW
 	dbw 14, BUBBLEBEAM ; RG proto
-	dbw 19, COMET_PUNCH ; RG proto
-	dbw 24, RAPID_SPIN
-	dbw 28, MEGA_DRAIN ; New!
+	dbw 19, BRIGHT_MOSS
+	dbw 22, COMET_PUNCH ; RG proto
+	dbw 27, RAPID_SPIN
+	dbw 30, MEGA_DRAIN ; New!
 	dbw 35, STOMP ; RG proto
 	dbw 40, SYNTHESIS ; New!
-	dbw 45, PETAL_DANCE ; New!
+	dbw 47, PETAL_DANCE ; New!
 	dbw 53, WATERFALL ; New!
 	db 0 ; no more level-up moves
 
@@ -384,14 +386,15 @@ TotartleEvosAttacks:
 	dbw 7, ABSORB ; New!
 	dbw 11, WITHDRAW
 	dbw 14, BUBBLEBEAM ; RG proto
-	dbw 19, COMET_PUNCH ; RG proto
-	dbw 24, RAPID_SPIN
-	dbw 28, MEGA_DRAIN ; New!
+	dbw 19, BRIGHT_MOSS
+	dbw 22, COMET_PUNCH ; RG proto
+	dbw 27, RAPID_SPIN
+	dbw 30, MEGA_DRAIN ; New!
 	dbw 35, STOMP ; RG proto
 	dbw 36, MEGA_PUNCH ; RG proto
 	dbw 42, SYNTHESIS ; New!
-	dbw 47, PETAL_DANCE ; New!
-	dbw 55, WATERFALL ; New!
+	dbw 49, PETAL_DANCE ; New!
+	dbw 57, WATERFALL ; New!
 	dbw 65, BLIZZARD ; RG proto
 	db 0 ; no more level-up moves
 
@@ -976,7 +979,8 @@ BittybatEvosAttacks:
 	dbw 26, THRASH ; RG proto
 	dbw 31, CONFUSION ; RG proto
 	dbw 35, MEAN_LOOK
-	dbw 41, HAZE
+	dbw 41, WIND_RIDE
+	dbw 46, HAZE
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -990,7 +994,8 @@ ZubatEvosAttacks:
 	dbw 28, THRASH ; RG proto
 	dbw 35, CONFUSION ; RG proto
 	dbw 39, MEAN_LOOK
-	dbw 45, HAZE
+	dbw 45, WIND_RIDE
+	dbw 52, HAZE
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
@@ -1006,7 +1011,8 @@ GolbatEvosAttacks:
 	dbw 31, THRASH ; RG proto
 	dbw 37, CONFUSION ; RG proto
 	dbw 41, MEAN_LOOK
-	dbw 47, HAZE
+	dbw 49, WIND_RIDE
+	dbw 56, HAZE
 	db 0 ; no more level-up moves
 
 OddishEvosAttacks:
@@ -1014,6 +1020,7 @@ OddishEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 7, SWEET_SCENT
+	dbw 11, BRIGHT_MOSS
 	dbw 14, POISONPOWDER
 	dbw 16, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1032,6 +1039,7 @@ GloomEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 7, SWEET_SCENT
+	dbw 11, BRIGHT_MOSS
 	dbw 14, POISONPOWDER
 	dbw 16, STUN_SPORE
 	dbw 18, SLEEP_POWDER
@@ -1058,8 +1066,9 @@ ParasporEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 1, SCRATCH
-	dbw 7, STUN_SPORE
-	dbw 13, POISONPOWDER
+	dbw 7, BRIGHT_MOSS
+	dbw 11, STUN_SPORE
+	dbw 14, POISONPOWDER
 	dbw 17, LEECH_LIFE
 	dbw 21, SPORE
 	dbw 25, FURY_SWIPES ; SW97
@@ -1074,8 +1083,9 @@ ParasEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ABSORB ; RG proto
 	dbw 1, SCRATCH
-	dbw 7, STUN_SPORE
-	dbw 13, POISONPOWDER
+	dbw 7, BRIGHT_MOSS
+	dbw 11, STUN_SPORE
+	dbw 14, POISONPOWDER
 	dbw 19, LEECH_LIFE
 	dbw 23, SPORE
 	dbw 27, FURY_SWIPES ; SW97
@@ -1089,8 +1099,9 @@ ParasectEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, ABSORB ; RG proto
 	dbw 1, SCRATCH
-	dbw 7, STUN_SPORE
-	dbw 13, POISONPOWDER
+	dbw 7, BRIGHT_MOSS
+	dbw 11, STUN_SPORE
+	dbw 14, POISONPOWDER
 	dbw 19, LEECH_LIFE
 	dbw 23, SPORE
 	dbw 29, FURY_SWIPES ; SW97
@@ -1231,6 +1242,7 @@ PsyduckEvosAttacks:
 	dbbw EVOLVE_LEVEL, 22, WEIRDUCK
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
+	dbw 1, WATER_SPORT
 	dbw 5, TAIL_WHIP
 	dbw 10, DISABLE
 	dbw 14, WATER_GUN ; SW97
@@ -1249,6 +1261,7 @@ WeirduckEvosAttacks:
 	dbbw EVOLVE_LEVEL, 35, GOLDUCK
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
+	dbw 1, WATER_SPORT
 	dbw 5, TAIL_WHIP
 	dbw 10, DISABLE
 	dbw 14, WATER_GUN ; SW97
@@ -1267,6 +1280,7 @@ WeirduckEvosAttacks:
 GolduckEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
+	dbw 1, WATER_SPORT
 	dbw 5, TAIL_WHIP
 	dbw 10, DISABLE
 	dbw 14, WATER_GUN ; SW97
@@ -1384,6 +1398,7 @@ PoliwagEvosAttacks:
 	dbbw EVOLVE_LEVEL, 25, POLIWHIRL
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
+	dbw 1, WATER_SPORT
 	dbw 7, HYPNOSIS
 	dbw 13, WATER_GUN
 	dbw 19, DOUBLESLAP
@@ -1401,6 +1416,7 @@ PoliwhirlEvosAttacks:
 	dbbw EVOLVE_ITEM, HEART_STONE, POLITOED
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
+	dbw 1, WATER_SPORT
 	dbw 7, HYPNOSIS
 	dbw 13, WATER_GUN
 	dbw 19, DOUBLESLAP
@@ -1420,6 +1436,7 @@ PoliwrathEvosAttacks:
 	dbw 1, DOUBLESLAP
 	dbw 1, LOW_KICK ; SW97
 	dbw 35, SUBMISSION
+	dbw 43, STRONG_ARM
 	dbw 51, MIND_READER
 	db 0 ; no more level-up moves
 
@@ -1477,7 +1494,8 @@ MachopEvosAttacks:
 	dbw 37, CROSS_CHOP
 	dbw 43, SCARY_FACE
 	dbw 49, SUBMISSION
-	dbw 54, DYNAMICPUNCH ; FRLG
+	dbw 54, STRONG_ARM
+	dbw 59, DYNAMICPUNCH ; FRLG
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
@@ -1495,7 +1513,8 @@ MachokeEvosAttacks:
 	dbw 39, CROSS_CHOP
 	dbw 45, SCARY_FACE
 	dbw 53, SUBMISSION
-	dbw 58, DYNAMICPUNCH ; FRLG
+	dbw 58, STRONG_ARM
+	dbw 63, DYNAMICPUNCH ; FRLG
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
@@ -1512,7 +1531,8 @@ MachampEvosAttacks:
 	dbw 39, CROSS_CHOP
 	dbw 45, SCARY_FACE
 	dbw 53, SUBMISSION
-	dbw 58, DYNAMICPUNCH ; FRLG
+	dbw 58, STRONG_ARM
+	dbw 63, DYNAMICPUNCH ; FRLG
 	db 0 ; no more level-up moves
 
 BellsproutEvosAttacks:
@@ -1528,7 +1548,8 @@ BellsproutEvosAttacks:
 	dbw 27, FALSE_SWIPE ; SW97
 	dbw 33, SWEET_SCENT
 	dbw 37, RAZOR_LEAF
-	dbw 42, SLAM
+	dbw 42, UPROOT
+	dbw 48, SLAM
 	db 0 ; no more level-up moves
 
 WeepinbellEvosAttacks:
@@ -1545,7 +1566,8 @@ WeepinbellEvosAttacks:
 	dbw 29, FALSE_SWIPE ; SW97
 	dbw 35, SWEET_SCENT
 	dbw 41, RAZOR_LEAF
-	dbw 46, SLAM
+	dbw 46, UPROOT
+	dbw 52, SLAM
 	db 0 ; no more level-up moves
 
 VictreebelEvosAttacks:
@@ -1673,7 +1695,8 @@ GeodudeEvosAttacks:
 	dbw 37, EARTHQUAKE
 	dbw 41, EXPLOSION
 	dbw 46, ROCK_HEAD
-	dbw 52, FISSURE ; RG proto
+	dbw 52, STRONG_ARM
+	dbw 58, FISSURE ; RG proto
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
@@ -1690,7 +1713,8 @@ GravelerEvosAttacks:
 	dbw 41, EARTHQUAKE
 	dbw 45, EXPLOSION
 	dbw 50, ROCK_HEAD
-	dbw 58, FISSURE ; RG proto
+	dbw 58, STRONG_ARM
+	dbw 64, FISSURE ; RG proto
 	db 0 ; no more level-up moves
 
 GolemEvosAttacks:
@@ -1706,7 +1730,8 @@ GolemEvosAttacks:
 	dbw 41, EARTHQUAKE
 	dbw 45, EXPLOSION
 	dbw 50, ROCK_HEAD
-	dbw 58, FISSURE ; RG proto
+	dbw 58, STRONG_ARM
+	dbw 64, FISSURE ; RG proto
 	db 0 ; no more level-up moves
 
 KoltaEvosAttacks:
@@ -1896,6 +1921,7 @@ CheepEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, PECK
+	dbw 1, WATER_SPORT
 	dbw 5, DOUBLE_KICK
 	dbw 11, COUNTER
 	dbw 16, BUBBLEBEAM
@@ -1912,6 +1938,7 @@ JabettaEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, BUBBLE
 	dbw 1, PECK
+	dbw 1, WATER_SPORT
 	dbw 5, DOUBLE_KICK
 	dbw 11, COUNTER
 	dbw 16, BUBBLEBEAM
@@ -1934,9 +1961,10 @@ RibbitoEvosAttacks:
 	dbw 19, WATER_GUN
 	dbw 24, FAINT_ATTACK
 	dbw 30, SUBSTITUTE
-	dbw 36, VITAL_THROW
-	dbw 42, BELLY_DRUM
-	dbw 48, HYDRO_PUMP
+	dbw 36, BOUNCE
+	dbw 42, VITAL_THROW
+	dbw 48, BELLY_DRUM
+	dbw 54, HYDRO_PUMP
 	db 0 ; no more level-up moves
 	
 CroakozunaEvosAttacks:
@@ -1948,9 +1976,10 @@ CroakozunaEvosAttacks:
 	dbw 19, WATER_GUN
 	dbw 24, FAINT_ATTACK
 	dbw 32, SUBSTITUTE
-	dbw 38, VITAL_THROW
-	dbw 46, BELLY_DRUM
-	dbw 52, HYDRO_PUMP
+	dbw 38, BOUNCE
+	dbw 46, VITAL_THROW
+	dbw 52, BELLY_DRUM
+	dbw 60, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -2020,7 +2049,8 @@ SeelEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, HEADBUTT
 	dbw 1, GROWL
-	dbw 10, POWDER_SNOW ; SW97
+	dbw 7, WATER_SPORT
+	dbw 12, POWDER_SNOW ; SW97
 	dbw 16, ICY_WIND ; FRLG
 	dbw 21, REST
 	dbw 27, AURORA_BEAM
@@ -2035,7 +2065,8 @@ DewgongEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, HEADBUTT
 	dbw 1, GROWL
-	dbw 10, POWDER_SNOW ; SW97
+	dbw 7, WATER_SPORT
+	dbw 12, POWDER_SNOW ; SW97
 	dbw 16, ICY_WIND ; FRLG
 	dbw 21, REST
 	dbw 27, AURORA_BEAM
@@ -2421,6 +2452,7 @@ LickitungEvosAttacks:
 	dbbw EVOLVE_TRADE, KINGS_ROCK, LICKILORD
 	db 0 ; no more evolutions
 	dbw 1, LICK
+	dbw 1, MEGAPHONE
 	dbw 7, SUPERSONIC
 	dbw 13, DEFENSE_CURL
 	dbw 19, STOMP
@@ -2434,6 +2466,7 @@ LickitungEvosAttacks:
 LickilickyEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, LICK
+	dbw 1, MEGAPHONE
 	dbw 7, SUPERSONIC
 	dbw 13, DEFENSE_CURL
 	dbw 19, STOMP
@@ -2450,6 +2483,7 @@ LickilordEvosAttacks: ; SW97 learnset + some poison stuff
 	dbw 1, ACID
 	dbw 1, LICK
 	dbw 1, TOXIC
+	dbw 1, MEGAPHONE
 	dbw 7, SUPERSONIC
 	dbw 13, DEFENSE_CURL
 	dbw 19, STOMP
@@ -2499,9 +2533,10 @@ RhyhornEvosAttacks:
 	dbw 7, MUD_SLAP ; SW97
 	dbw 13, STOMP
 	dbw 19, FURY_ATTACK
-	dbw 25, ENDURE ; SW97
-	dbw 31, SCARY_FACE
-	dbw 37, TAKE_DOWN
+	dbw 24, ENDURE ; SW97
+	dbw 28, SCARY_FACE
+	dbw 32, TAKE_DOWN
+	dbw 37, UPROOT
 	dbw 43, ROCK_HEAD
 	dbw 49, HORN_DRILL
 	dbw 55, EARTHQUAKE
@@ -2515,9 +2550,10 @@ RhydonEvosAttacks:
 	dbw 7, MUD_SLAP ; SW97
 	dbw 13, STOMP
 	dbw 19, FURY_ATTACK
-	dbw 25, ENDURE ; SW97
-	dbw 31, SCARY_FACE
-	dbw 37, TAKE_DOWN
+	dbw 24, ENDURE ; SW97
+	dbw 28, SCARY_FACE
+	dbw 32, TAKE_DOWN
+	dbw 37, UPROOT
 	dbw 43, ROCK_HEAD
 	dbw 49, HORN_DRILL
 	dbw 55, EARTHQUAKE
@@ -2561,10 +2597,11 @@ BurgelaEvosAttacks:
 	dbw 19, VINE_WHIP
 	dbw 24, BIND
 	dbw 28, MEGA_DRAIN
-	dbw 33, STUN_SPORE
-	dbw 38, SLAM
-	dbw 43, GROWTH
-	dbw 48, GIGA_DRAIN 
+	dbw 33, UPROOT
+	dbw 38, STUN_SPORE
+	dbw 42, SLAM
+	dbw 46, GROWTH
+	dbw 50, GIGA_DRAIN 
 	db 0 ; no more level-up moves
 
 TangelaEvosAttacks:
@@ -2578,10 +2615,11 @@ TangelaEvosAttacks:
 	dbw 19, VINE_WHIP
 	dbw 26, BIND
 	dbw 30, MEGA_DRAIN
-	dbw 35, STUN_SPORE
-	dbw 42, SLAM
-	dbw 47, GROWTH
-	dbw 52, GIGA_DRAIN ; Later gen level-up & TM
+	dbw 35, UPROOT
+	dbw 42, STUN_SPORE
+	dbw 46, SLAM
+	dbw 50, GROWTH
+	dbw 56, GIGA_DRAIN ; Later gen level-up & TM
 	db 0 ; no more level-up moves
 	
 TangrowthEvosAttacks:
@@ -2593,29 +2631,30 @@ TangrowthEvosAttacks:
 	dbw 19, VINE_WHIP
 	dbw 26, BIND
 	dbw 30, MEGA_DRAIN
-	dbw 35, STUN_SPORE
-	dbw 42, SLAM
+	dbw 35, UPROOT
+	dbw 42, STUN_SPORE
 	dbw 44, ANCIENTPOWER
-	dbw 49, GROWTH
-	dbw 56, GIGA_DRAIN ; Later gen level-up & TM
+	dbw 48, SLAM
+	dbw 52, GROWTH
+	dbw 60, GIGA_DRAIN ; Later gen level-up & TM
 	db 0 ; no more level-up moves
 	
 JungelaEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, CONSTRICT
-	dbw 1, BITE
 	dbw 5, SLEEP_POWDER
 	dbw 10, ABSORB
 	dbw 15, POISONPOWDER
 	dbw 19, VINE_WHIP
 	dbw 26, BIND
 	dbw 30, MEGA_DRAIN
-	dbw 35, STUN_SPORE
-	dbw 42, SLAM
+	dbw 35, BITE
+	dbw 42, STUN_SPORE
 	dbw 44, PURSUIT
-	dbw 49, GROWTH
-	dbw 56, GIGA_DRAIN ; Later gen level-up & TM
-	dbw 62, CRUNCH
+	dbw 48, SLAM
+	dbw 52, GROWTH
+	dbw 60, GIGA_DRAIN ; Later gen level-up & TM
+	dbw 65, CRUNCH
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:
@@ -2624,12 +2663,13 @@ KangaskhanEvosAttacks:
 	dbw 7, LEER
 	dbw 13, BITE
 	dbw 19, TAIL_WHIP
-	dbw 25, MEGA_PUNCH
+	dbw 25, RAGE
 	dbw 31, PROTECT ; SW97
-	dbw 37, RAGE
+	dbw 37, DIZZY_PUNCH
 	dbw 43, ENDURE
-	dbw 49, DIZZY_PUNCH
-	dbw 55, REVERSAL
+	dbw 49, MEGA_PUNCH
+	dbw 55, STRONG_ARM
+	dbw 61, REVERSAL
 	db 0 ; no more level-up moves
 
 HorseaEvosAttacks:
@@ -2708,6 +2748,7 @@ OrfryEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, TAIL_WHIP
+	dbw 5, WATER_SPORT
 	dbw 10, SUPERSONIC
 	dbw 15, HORN_ATTACK
 	dbw 22, FLAIL
@@ -2724,6 +2765,7 @@ GoldeenEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, TAIL_WHIP
+	dbw 5, WATER_SPORT
 	dbw 10, SUPERSONIC
 	dbw 15, HORN_ATTACK
 	dbw 24, FLAIL
@@ -2740,6 +2782,7 @@ SeakingEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, TAIL_WHIP
+	dbw 5, WATER_SPORT
 	dbw 10, SUPERSONIC
 	dbw 15, HORN_ATTACK
 	dbw 24, FLAIL
@@ -2968,6 +3011,7 @@ PinsirEvosAttacks:
 	dbw 43, SWORDS_DANCE
 	dbw 49, GUILLOTINE
 	dbw 55, SLASH ; SW97, RBY
+	dbw 60, STRONG_ARM
 	db 0 ; no more level-up moves
 
 TriculesEvosAttacks:
@@ -2983,7 +3027,8 @@ TriculesEvosAttacks:
 	dbw 43, SWORDS_DANCE
 	dbw 49, GUILLOTINE
 	dbw 55, SLASH ; SW97, RBY
-	dbw 60, MEGAHORN ; due to its connection to Heracross (and giant horn)
+	dbw 60, STRONG_ARM
+	dbw 65, MEGAHORN ; due to its connection to Heracross (and giant horn)
 	db 0 ; no more level-up moves
 
 TaurosEvosAttacks:
@@ -3266,6 +3311,7 @@ DecillaEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
+	dbw 1, MEGAPHONE
 	dbw 8, SUBSTITUTE
 	dbw 15, SCREECH
 	dbw 22, ROCK_THROW
@@ -3281,6 +3327,7 @@ GawarhedEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
+	dbw 1, MEGAPHONE
 	dbw 8, SUBSTITUTE
 	dbw 15, SCREECH
 	dbw 22, ROCK_THROW

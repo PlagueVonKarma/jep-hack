@@ -563,8 +563,8 @@ PokemonPicPointers::
 	dba YanmaBackpic
 	dba YanmegaFrontpic
 	dba YanmegaBackpic
-	dba Pending03Frontpic
-	dba Pending03Backpic
+	dba OniyanmaFrontpic
+	dba OniyanmaBackpic
 	dba WooperFrontpic
 	dba WooperBackpic
 	dba QuagsireFrontpic

@@ -275,7 +275,7 @@ AnimationIdlePointers:
 	dw FoxfireAnimationIdle
 	dw YanmaAnimationIdle
 	dw YanmegaAnimationIdle
-	dw Pending03AnimationIdle
+	dw OniyanmaAnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle
 	dw EspeonAnimationIdle
