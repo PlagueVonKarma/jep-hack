@@ -19,22 +19,20 @@ EcruteakTinTowerEntranceNoop2Scene:
 	end
 
 EcruteakTinTowerEntranceInitializeSagesCallback:
-	checkevent EVENT_FOUGHT_SUICUNE
-	iftrue .DontBlockTower
 	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
 	iftrue .DontBlockTower
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_BEAT_ELITE_FOUR ; Temporary. This should be changed to something relating to Navel Rock. We don't need it to be the Radio Tower, anyway, as Suicune is no longer here.
 	iftrue .BlockTower
 	endcallback
 
 .BlockTower:
-	clearevent EVENT_RANG_CLEAR_BELL_1
-	setevent EVENT_RANG_CLEAR_BELL_2
+	clearevent EVENT_SAW_RAINBOW_WING_1
+	setevent EVENT_SAW_RAINBOW_WING_2
 	setevent EVENT_ECRUTEAK_TIN_TOWER_ENTRANCE_WANDERING_SAGE
-	checkitem CLEAR_BELL
-	iftrue .NoClearBell
+	checkitem RAINBOW_WING
+	iftrue .NoRainbowWing
 	setscene SCENE_ECRUTEAKTINTOWERENTRANCE_SAGE_BLOCKS
-.NoClearBell:
+.NoRainbowWing:
 	endcallback
 
 .DontBlockTower:
@@ -42,7 +40,7 @@ EcruteakTinTowerEntranceInitializeSagesCallback:
 	endcallback
 
 EcruteakTinTowerEntranceSageBlocksLeft:
-	checkevent EVENT_RANG_CLEAR_BELL_2
+	checkevent EVENT_SAW_RAINBOW_WING_2
 	iftrue EcruteakTinTowerEntranceAlreadyBlocked
 	applymovement ECRUTEAKTINTOWERENTRANCE_SAGE2, EcruteakTinTowerEntranceSageBlocksLeftMovement
 	moveobject ECRUTEAKTINTOWERENTRANCE_SAGE1, 4, 6
@@ -52,7 +50,7 @@ EcruteakTinTowerEntranceSageBlocksLeft:
 	end
 
 EcruteakTinTowerEntranceSageBlocksRight:
-	checkevent EVENT_RANG_CLEAR_BELL_1
+	checkevent EVENT_SAW_RAINBOW_WING_1 ; check what this is for
 	iftrue EcruteakTinTowerEntranceAlreadyBlocked
 	applymovement ECRUTEAKTINTOWERENTRANCE_SAGE1, EcruteakTinTowerEntranceSageBlocksRightMovement
 	moveobject ECRUTEAKTINTOWERENTRANCE_SAGE2, 5, 6
@@ -68,7 +66,7 @@ EcruteakTinTowerEntranceSageScript:
 	faceplayer
 	opentext
 	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .CheckForClearBell
+	iftrue .CheckForRainbowWing
 	checkflag ENGINE_FOGBADGE
 	iftrue .BlockPassage_GotFogBadge
 	writetext EcruteakTinTowerEntranceSageText
@@ -82,25 +80,25 @@ EcruteakTinTowerEntranceSageScript:
 	closetext
 	end
 
-.CheckForClearBell:
+.CheckForRainbowWing:
 	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
 	iftrue .AllowedThrough
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .RangClearBell
-	checkitem CLEAR_BELL
-	iftrue .GotClearBell
-	writetext EcruteakTinTowerEntranceSageText_NoClearBell
+	iftrue .SawRainbowWing
+	checkitem RAINBOW_WING
+	iftrue .GotRainbowWing
+	writetext EcruteakTinTowerEntranceSageText_NoRainbowWing
 	waitbutton
 	closetext
 	end
 
-.GotClearBell:
-	writetext EcruteakTinTowerEntranceSageText_HearsClearBell
+.RainbowWing:
+	writetext EcruteakTinTowerEntranceSageText_SeesRainbowWing
 	waitbutton
 	closetext
 	setscene SCENE_ECRUTEAKTINTOWERENTRANCE_NOOP
-	setevent EVENT_RANG_CLEAR_BELL_2
-	clearevent EVENT_RANG_CLEAR_BELL_1
+	setevent EVENT_SAW_RAINBOW_WING_2
+	clearevent EVENT_SAW_RAINBOW_WING_1
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	end
 
@@ -110,8 +108,8 @@ EcruteakTinTowerEntranceSageScript:
 	closetext
 	end
 
-.RangClearBell:
-	writetext EcruteakTinTowerEntranceSageText_HeardClearBell
+.SawRainbowWing:
+	writetext EcruteakTinTowerEntranceSageText_SawRainbowWing
 	waitbutton
 	closetext
 	end
@@ -119,15 +117,15 @@ EcruteakTinTowerEntranceSageScript:
 EcruteakTinTowerEntranceWanderingSageScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_CLEAR_BELL
-	iftrue .GotClearBell
+	checkevent EVENT_GOT_MASTER_BALL
+	iftrue .GotRainbowWing
 	writetext EcruteakTinTowerEntranceWanderingSageText
 	waitbutton
 	closetext
 	end
 
-.GotClearBell:
-	writetext EcruteakTinTowerEntranceWanderingSageText_GotClearBell
+.GotRainbowWing:
+	writetext EcruteakTinTowerEntranceWanderingSageText_GotRainbowWing
 	waitbutton
 	closetext
 	end
@@ -174,7 +172,7 @@ EcruteakTinTowerEntranceSageText_GotFogBadge:
 	cont "right through."
 	done
 
-EcruteakTinTowerEntranceSageText_NoClearBell:
+EcruteakTinTowerEntranceSageText_NoRainbowWing:
 	text "A momentous event"
 	line "has occurred."
 
@@ -182,8 +180,8 @@ EcruteakTinTowerEntranceSageText_NoClearBell:
 	line "but I must ask you"
 	cont "to leave."
 
-	para "…What soothes the"
-	line "soul…"
+	para "…What symbolises"
+	line "the heart…"
 
 	para "The WISE TRIO say"
 	line "things that are so"
@@ -192,7 +190,7 @@ EcruteakTinTowerEntranceSageText_NoClearBell:
 	line "understand…"
 	done
 
-EcruteakTinTowerEntranceSageText_HearsClearBell:
+EcruteakTinTowerEntranceSageText_SeesRainbowWing:
 	text "A momentous event"
 	line "has occurred."
 
@@ -204,18 +202,14 @@ EcruteakTinTowerEntranceSageText_HearsClearBell:
 
 	para "Ah!"
 
-	para "The sound of that"
-	line "CLEAR BELL!"
+	para "That's a RAINBOW"
+	line "WING!"
 
 	para "It… It's sublime!"
 
-	para "I've never heard"
-	line "so beautiful a"
-	cont "sound before!"
-
-	para "That bell's chime"
-	line "is indicative of"
-	cont "the bearer's soul."
+	para "I've never seen"
+	line "something so"
+	cont "beautiful!"
 
 	para "You…"
 
@@ -230,10 +224,10 @@ EcruteakTinTowerEntranceSageText_PleaseDoGoOn:
 	text "Please, do go on."
 	done
 
-EcruteakTinTowerEntranceSageText_HeardClearBell:
-	text "That bell's chime"
+EcruteakTinTowerEntranceSageText_SawRainbowWing:
+	text "The RAINBOW WING"
 	line "is indicative of"
-	cont "the bearer's soul."
+	cont "one's heart."
 
 	para "You…"
 
@@ -256,7 +250,7 @@ EcruteakTinTowerEntranceWanderingSageText:
 	cont "see it."
 	done
 
-EcruteakTinTowerEntranceWanderingSageText_GotClearBell:
+EcruteakTinTowerEntranceWanderingSageText_GotRainbowWing:
 	text "The TIN TOWER"
 	line "shook! A #MON"
 
@@ -292,7 +286,7 @@ EcruteakTinTowerEntrance_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  4,  6, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceSageScript, EVENT_RANG_CLEAR_BELL_1
-	object_event  5,  6, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceSageScript, EVENT_RANG_CLEAR_BELL_2
+	object_event  4,  6, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceSageScript, EVENT_SAW_RAINBOW_WING_1
+	object_event  5,  6, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceSageScript, EVENT_SAW_RAINBOW_WING_2
 	object_event  6,  9, SPRITE_SAGE, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceWanderingSageScript, EVENT_ECRUTEAK_TIN_TOWER_ENTRANCE_WANDERING_SAGE
 	object_event  3, 11, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakTinTowerEntranceGrampsScript, EVENT_ECRUTEAK_TIN_TOWER_ENTRANCE_WANDERING_SAGE

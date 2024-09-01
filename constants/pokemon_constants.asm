@@ -468,4 +468,4 @@ endc
 	const UNOWN_Z ; 26
 	const UNOWN_EXCLAMATION ; 27
 	const UNOWN_QUESTION ; 28
-DEF NUM_UNOWN EQU const_value - 1 ; 26
+DEF NUM_UNOWN EQU const_value - 1 ; 28
