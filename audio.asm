@@ -159,6 +159,8 @@ INCLUDE "audio/music/NihonTime.asm"
 INCLUDE "audio/music/SouthCity.asm"
 INCLUDE "audio/music/Peaceful.asm"
 INCLUDE "audio/music/CoastTown.asm"
+INCLUDE "audio/music/ColdWinter.asm"
+INCLUDE "audio/music/CoolCave.asm"
 
 
 SECTION "Sound Effects", ROMX

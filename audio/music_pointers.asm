@@ -114,4 +114,6 @@ Music:
 	dba Music_NihonTime
 	dba Music_PeacefulTheme
 	dba Music_CoastTown
+	dba Music_ColdWinter
+	dba Music_CoolCave
 	assert_table_length NUM_MUSIC_SONGS
