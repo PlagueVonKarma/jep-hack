@@ -711,7 +711,10 @@ UnownRBackpic:       INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
 
 SECTION "Pics 19", ROMX
 
-; Seems to be an accidental copy of the previous bank
+UnownExclamationFrontpic: INCBIN "gfx/pokemon/unown_exclamation/front.animated.2bpp.lz"
+UnownExclamationBackpic:  INCBIN "gfx/pokemon/unown_exclamation/back.2bpp.lz"
+UnownQuestionFrontpic: INCBIN "gfx/pokemon/unown_question/front.animated.2bpp.lz"
+UnownQuestionBackpic:  INCBIN "gfx/pokemon/unown_question/back.2bpp.lz"
 
 BellignanFrontpic:	 INCBIN "gfx/pokemon/bellignan/front.animated.2bpp.lz"
 BellignanBackpic:	 INCBIN "gfx/pokemon/bellignan/back.2bpp.lz"

@@ -26,4 +26,6 @@ UnownBitmasksPointers:
 	dw UnownXBitmasks
 	dw UnownYBitmasks
 	dw UnownZBitmasks
+	dw UnownExclamationBitmasks
+	dw UnownQuestionBitmasks
 	assert_table_length NUM_UNOWN

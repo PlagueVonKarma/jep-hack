@@ -26,4 +26,6 @@ UnownFramesPointers:
 	dw UnownXFrames
 	dw UnownYFrames
 	dw UnownZFrames
+	dw UnownExclamationFrames
+	dw UnownQuestionFrames
 	assert_table_length NUM_UNOWN
