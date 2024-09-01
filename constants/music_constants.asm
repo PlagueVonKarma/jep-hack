@@ -112,6 +112,8 @@
 	const MUSIC_NIHONTIME					 ; 6b
 	const MUSIC_PEACEFULTHEME				 ; 6c
 	const MUSIC_COASTTOWN					 ; 6d
+	const MUSIC_COLDWINTER					 ; 6e
+	const MUSIC_COOLCAVE					 ; 6f
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)
