@@ -28,10 +28,15 @@ Route25Noop1Scene:
 Route25Noop2Scene:
 	end
 
+; BUG: Movement is fucky, eusine is a little weird. I'm just incompetent.
+; also it messes with the misty script
+
+; the way things are, the game expects you to have beaten misty.
+; set to change with a new location and hilly area, set up in a way where you cannot mess things up
 Route25SuicuneCallback:
 	checkevent EVENT_BEAT_MISTY
 	iffalse .NoAppear
-	checkevent EVENT_SAW_SUICUNE_ON_ROUTE14
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE_14
 	iffalse .NoAppear
 	checkevent EVENT_FOUGHT_SUICUNE
 	iffalse .Appear
@@ -43,22 +48,27 @@ Route25SuicuneCallback:
 
 .NoAppear:
 	disappear ROUTE25_SUICUNE
+	disappear ROUTE25_EUSINE ; just making sure, also skips using any events for this matter
 	endcallback
 
 Route25SuicuneEventScript:
 	showemote EMOTE_SHOCK, PLAYER, 15
 	pause 15
-	applymovement PLAYER, Route25PlayerMovement
+	;applymovement PLAYER, Route25PlayerMovement
+	
+	appear ROUTE25_EUSINE
+	playmusic MUSIC_MYSTICALMAN_ENCOUNTER
 	applymovement ROUTE25_EUSINE, Route25EusineMovement1
-	open_text
+	opentext
 	writetext Route25EusineText1
 	waitbutton
 	closetext
 	applymovement ROUTE25_EUSINE, Route25EusineMovement2
-	open_text
+	opentext
 	writetext Route25EusineText2
 	waitbutton
 	closetext
+	special RestartMapMusic
 	end
 
 Route25EusineText1:
@@ -107,7 +117,7 @@ Route25EusineText3:
 	
 	para "Farewell, <PLAYER>!"
 	
-	para "…"
+	para "…sob…"
 	
 	para "Farewell, SUICUNE!"
 	
@@ -123,7 +133,7 @@ Route25EusineMovement2:
 	step RIGHT
 	step_end
 
-Route25EusineMovement3
+Route25EusineMovement3:
 	big_step LEFT
 	big_step LEFT
 	big_step LEFT
@@ -144,12 +154,12 @@ Route25Suicune:
 	startbattle
 	disappear ROUTE25_SUICUNE
 	reloadmapafterbattle
-	open_text
+	opentext
 	writetext Route25EusineText3
 	waitbutton
 	closetext
 	applymovement ROUTE25_EUSINE, Route25EusineMovement3
-	disappear ROUTE_25_EUSINE
+	disappear ROUTE25_EUSINE
 	end
 
 Route25MistyDate1Script:
@@ -549,10 +559,6 @@ CooltrainermKevinAfterBattleText:
 BillsHouseSignText:
 	text "SEA COTTAGE"
 	line "BILL'S HOUSE"
-	done
-
-UnusedBillsHouseSignText: ; unreferenced
-	text "BILL'S HOUSE"
 	done
 
 Route25_MapEvents:

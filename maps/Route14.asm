@@ -20,30 +20,67 @@ Route14Noop1Scene:
 Route14Noop2Scene:
 	end
 
-Route42SuicuneCallback:
+Route14SuicuneCallback:
 	checkevent EVENT_SAW_SUICUNE_IN_VERMILION_CITY
 	iffalse .NoAppear
-	checkevent EVENT_SAW_SUICUNE_ON_ROUTE14
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE_14
 	iffalse .NoAppear
-	appear ROUTE42_SUICUNE
+	appear ROUTE14_SUICUNE
 	endcallback
 
 .NoAppear:
-	disappear ROUTE42_SUICUNE
+	disappear ROUTE14_SUICUNE
+	disappear ROUTE14_EUSINE ; just making sure, also skips using any events for this matter
 	endcallback
 
+; BUG: Movement is fucky, eusine is a little weird. I'm just incompetent.
+
+Route14EusineHandler:
+	moveobject ROUTE14_EUSINE, 12, 11
+	; fallthrough
 Route14SuicuneScript:
+	playmusic MUSIC_NONE
 	showemote EMOTE_SHOCK, PLAYER, 15
+	turnobject PLAYER, RIGHT
 	pause 15
+	cry SUICUNE
 	playsound SFX_WARP_FROM
 	applymovement ROUTE14_SUICUNE, Route14SuicuneMovement
 	disappear ROUTE14_SUICUNE
 	pause 10
+	
+	appear ROUTE14_EUSINE
+	playmusic MUSIC_MYSTICALMAN_ENCOUNTER
+	applymovement ROUTE14_EUSINE, Route14EusineMovement1
+	opentext
+	writetext Route14EusineSawSuicune
+	waitbutton
+	closetext
+	applymovement ROUTE14_EUSINE, Route14EusineMovement2
+	
 	setscene SCENE_ROUTE14_NOOP
-	clearevent EVENT_FOUGHT_SUICUNE
+	setevent EVENT_SAW_SUICUNE_ON_ROUTE_14
 	setmapscene ROUTE_25, SCENE_ROUTE25_FINAL_SUICUNE
 	disappear ROUTE14_EUSINE
+	special RestartMapMusic
 	end
+
+Route14EusineMovement1:
+	big_step UP
+	big_step UP
+	big_step UP
+	big_step UP
+	step UP
+	step UP
+	step_end
+
+Route14EusineMovement2:
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step_end
 
 Route14SuicuneMovement:
 	set_sliding
@@ -204,10 +241,10 @@ Route14_MapEvents:
 	def_warp_events
 
 	def_coord_events
-	coord_event 11,  8, SCENE_ROUTE_14_SUICUNE, Route14SuicuneScript
-	coord_event 12,  8, SCENE_ROUTE_14_SUICUNE, Route14SuicuneScript
-	coord_event 13,  8, SCENE_ROUTE_14_SUICUNE, Route14SuicuneScript
-	coord_event 14,  8, SCENE_ROUTE_14_SUICUNE, Route14SuicuneScript
+	coord_event 11,  8, SCENE_ROUTE14_SUICUNE, Route14SuicuneScript
+	coord_event 12,  8, SCENE_ROUTE14_SUICUNE, Route14SuicuneScript
+	coord_event 13,  8, SCENE_ROUTE14_SUICUNE, Route14EusineHandler
+	coord_event 14,  8, SCENE_ROUTE14_SUICUNE, Route14SuicuneScript
 
 	def_bg_events
 

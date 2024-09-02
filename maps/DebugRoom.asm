@@ -123,6 +123,9 @@ DebugFlyScript:
 	
 	setevent EVENT_BEAT_ELITE_FOUR
 	
+	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42 ; for testing the suicune events
+	setmapscene VERMILION_CITY, SCENE_VERMILIONCITY_SUICUNE ; this ensures that the scene is correctly set too. 
+	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
 	givepoke PIDGEOT, 70

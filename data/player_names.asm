@@ -10,10 +10,10 @@ ChrisNameMenuHeader:
 	db 5 ; items
 	db "NEW NAME@"
 MalePlayerNameArray:
-	db "ETHAN@"
-	db "GOLD@"
-	db "CHRIS@"
-	db "JIMMY@"
+	db "ETHAN@" ; games
+	db "GOLD@" ; manga
+	db "JIMMY@" ; legend of thunder
+	db "CHRIS@" ; vanilla
 	db 2 ; title indent
 	db " NAME @" ; title
 
@@ -29,10 +29,10 @@ KrisNameMenuHeader:
 	db 5 ; items
 	db "NEW NAME@"
 FemalePlayerNameArray:
-	db "KRIS@"
-	db "MARINA@"
-	db "AMANDA@"
-	db "JODI@"
+	db "KRIS@" ; game
+	db "MARINA@" ; legend of thunder
+	db "CRYSTAL@" ; manga
+	db "CHRIS@" ; golden boys - plays with the male player version as well, showing it's a unisex name
 	db 2 ; title indent
 	db " NAME @" ; title
 

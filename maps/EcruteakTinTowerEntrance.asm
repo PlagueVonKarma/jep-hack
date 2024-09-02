@@ -92,7 +92,7 @@ EcruteakTinTowerEntranceSageScript:
 	closetext
 	end
 
-.RainbowWing:
+.GotRainbowWing:
 	writetext EcruteakTinTowerEntranceSageText_SeesRainbowWing
 	waitbutton
 	closetext

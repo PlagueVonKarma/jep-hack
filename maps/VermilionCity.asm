@@ -32,29 +32,94 @@ VermilionCitySuicuneCallback:
 
 .NoAppear:
 	disappear VERMILIONCITY_SUICUNE
+	disappear VERMILIONCITY_EUSINE ; just making sure, also skips using any events for this matter
 	endcallback
 
-VermilionCitySuicuneScript:
+; BUG: Movement is fucky, eusine is a little weird. I'm just incompetent.
+
+; Two different startup scripts given the position.
+; I am 99.9% sure there's a way to simply modify this by the player's position on the map, like in RBY.
+; However, I can't seem to find any examples...
+
+; If you're smarter than me, you should know what to do.
+VermilionCitySuicuneScriptStartupLeft:
+	playmusic MUSIC_NONE
 	showemote EMOTE_SHOCK, PLAYER, 15
 	pause 15
+	; jank zone begins here.
+	applymovement PLAYER, VermilionCityPlayerToTheLeftMovement
+	sjump VermilionCitySuicuneScript
+
+VermilionCitySuicuneScriptStartupRight:
+	playmusic MUSIC_NONE
+	showemote EMOTE_SHOCK, PLAYER, 15
+	pause 15
+	; jank zone ends here.
+	turnobject PLAYER, RIGHT ; basically if you can use the player's x/y position you should use this and the left movement in an if this then that statement.
+	; fallthrough
+VermilionCitySuicuneScript:
 	playsound SFX_WARP_FROM
-	applymovement VERMILIONCITY_SUICUNE, VermilionCitySuicuneMovement
+	applymovement VERMILIONCITY_SUICUNE, VermilionCitySuicuneMovement1
+	cry SUICUNE 
+	applymovement VERMILIONCITY_SUICUNE, VermilionCitySuicuneMovement2
 	disappear VERMILIONCITY_SUICUNE
 	pause 10
+	
+	playmusic MUSIC_MYSTICALMAN_ENCOUNTER
+	appear VERMILIONCITY_EUSINE
+	applymovement VERMILIONCITY_EUSINE, VermilionCityEusineMovement1
+	opentext
+	writetext VermilionCityEusineSawSuicune
+	waitbutton
+	closetext
+	turnobject PLAYER, UP
+	applymovement VERMILIONCITY_EUSINE, VermilionCityEusineMovement2
+	
 	setscene SCENE_VERMILIONCITY_NOOP
-	clearevent EVENT_SAW_SUICUNE_IN_VERMILION_CITY
-	setmapscene ROUTE_14, SCENE_ROUTE_14_SUICUNE
+	setevent EVENT_SAW_SUICUNE_IN_VERMILION_CITY
+	setmapscene ROUTE_14, SCENE_ROUTE14_SUICUNE
 	disappear VERMILIONCITY_EUSINE
+	special RestartMapMusic
 	end
 
-VermilionCitySuicuneMovement:
+VermilionCityPlayerToTheLeftMovement:
+	step RIGHT
+	step_end
+
+VermilionCityEusineMovement1:
+	big_step RIGHT
+	big_step RIGHT
+	big_step RIGHT
+	big_step UP
+	step UP
+	step_end
+
+VermilionCityEusineMovement2:
+	big_step UP
+	big_step UP
+	big_step UP
+	big_step UP
+	big_step UP
+	big_step UP
+	step_end
+
+VermilionCitySuicuneMovement1:
 	set_sliding
 	fast_jump_step RIGHT
-	fast_jump_step RIGHT
-	fast_jump_step RIGHT
-	fast_jump_step RIGHT
-	fast_jump_step RIGHT
-	fast_jump_step RIGHT
+	fast_jump_step DOWN
+	fast_jump_step UP
+	fast_jump_step LEFT
+	remove_sliding
+	step_end
+
+VermilionCitySuicuneMovement2:
+	set_sliding
+	fast_jump_step UP
+	fast_jump_step UP
+	fast_jump_step UP
+	fast_jump_step UP
+	fast_jump_step UP
+	fast_jump_step UP
 	remove_sliding
 	step_end
 
@@ -348,8 +413,8 @@ VermilionCity_MapEvents:
 	warp_event 34,  7, DIGLETTS_CAVE, 1
 
 	def_coord_events
-	coord_event 28, 18, SCENE_VERMILION_CITY_SUICUNE, VermilionCitySuicuneScript
-	coord_event 29, 28, SCENE_VERMILION_CITY_SUICUNE, VermilionCitySuicuneScript
+	coord_event 28, 21, SCENE_VERMILIONCITY_SUICUNE, VermilionCitySuicuneScriptStartupLeft
+	coord_event 29, 21, SCENE_VERMILIONCITY_SUICUNE, VermilionCitySuicuneScriptStartupRight
 
 	def_bg_events
 	bg_event 25,  3, BGEVENT_READ, VermilionCitySign
@@ -368,5 +433,5 @@ VermilionCity_MapEvents:
 	object_event 14, 16, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VermilionCitySuperNerdScript, -1
 	object_event 34,  8, SPRITE_BIG_SNORLAX, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionSnorlax, EVENT_VERMILION_CITY_SNORLAX
 	object_event 31, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VermilionGymBadgeGuy, -1
-	object_event 28, 15, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
-	object_event 31, 19, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
+	object_event 25, 24, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
+	object_event 31, 21, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
