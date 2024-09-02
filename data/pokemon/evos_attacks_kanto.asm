@@ -558,12 +558,14 @@ PidgeyEvosAttacks:
 	dbw 9, GUST
 	dbw 15, QUICK_ATTACK
 	dbw 19, MUD_SLAP ; SW97
-	dbw 23, WHIRLWIND
-	dbw 27, SING ; RG proto
-	dbw 32, WING_ATTACK
-	dbw 37, AGILITY
+	dbw 23, WING_ATTACK 
+	dbw 27, WHIRLWIND
+	dbw 31, SING ; RG proto
+	dbw 34, WIND_RIDE
+	dbw 38, AGILITY
 	dbw 43, MIRROR_MOVE
-	dbw 49, SKY_ATTACK ; LGPE
+	dbw 49, DOUBLE_EDGE
+	dbw 55, SKY_ATTACK ; LGPE
 	db 0 ; no more level-up moves
 
 PidgeottoEvosAttacks:
@@ -574,12 +576,14 @@ PidgeottoEvosAttacks:
 	dbw 9, GUST
 	dbw 15, QUICK_ATTACK
 	dbw 21, MUD_SLAP ; SW97
-	dbw 25, WHIRLWIND
-	dbw 29, SING ; RG proto
-	dbw 36, WING_ATTACK
-	dbw 41, AGILITY
-	dbw 47, MIRROR_MOVE
-	dbw 55, SKY_ATTACK ; LGPE
+	dbw 25, WING_ATTACK 
+	dbw 29, WHIRLWIND
+	dbw 35, SING ; RG proto
+	dbw 38, WIND_RIDE
+	dbw 42, AGILITY
+	dbw 49, MIRROR_MOVE
+	dbw 55, DOUBLE_EDGE
+	dbw 61, SKY_ATTACK ; LGPE
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
@@ -589,12 +593,14 @@ PidgeotEvosAttacks:
 	dbw 9, GUST
 	dbw 15, QUICK_ATTACK
 	dbw 21, MUD_SLAP ; SW97
-	dbw 25, WHIRLWIND
-	dbw 29, SING ; RG proto
-	dbw 36, WING_ATTACK
-	dbw 43, AGILITY
-	dbw 49, MIRROR_MOVE
-	dbw 57, SKY_ATTACK ; LGPE
+	dbw 25, WING_ATTACK 
+	dbw 29, WHIRLWIND
+	dbw 35, SING ; RG proto
+	dbw 40, WIND_RIDE
+	dbw 44, AGILITY
+	dbw 51, MIRROR_MOVE
+	dbw 59, DOUBLE_EDGE
+	dbw 65, SKY_ATTACK ; LGPE
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
