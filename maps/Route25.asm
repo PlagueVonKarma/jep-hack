@@ -10,18 +10,146 @@
 	const ROUTE25_SUPER_NERD
 	const ROUTE25_COOLTRAINER_M2
 	const ROUTE25_POKE_BALL
+	const ROUTE25_EUSINE
+	const ROUTE25_SUICUNE
 
 Route25_MapScripts:
 	def_scene_scripts
 	scene_script Route25Noop1Scene, SCENE_ROUTE25_NOOP
 	scene_script Route25Noop2Scene, SCENE_ROUTE25_MISTYS_DATE
+	scene_script Route25Noop2Scene, SCENE_ROUTE25_FINAL_SUICUNE
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, Route25SuicuneCallback
 
 Route25Noop1Scene:
 	end
 
 Route25Noop2Scene:
+	end
+
+Route25SuicuneCallback:
+	checkevent EVENT_BEAT_MISTY
+	iffalse .NoAppear
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE14
+	iffalse .NoAppear
+	checkevent EVENT_FOUGHT_SUICUNE
+	iffalse .Appear
+	sjump .NoAppear
+
+.Appear:
+	appear ROUTE25_SUICUNE
+	endcallback
+
+.NoAppear:
+	disappear ROUTE25_SUICUNE
+	endcallback
+
+Route25SuicuneEventScript:
+	showemote EMOTE_SHOCK, PLAYER, 15
+	pause 15
+	applymovement PLAYER, Route25PlayerMovement
+	applymovement ROUTE25_EUSINE, Route25EusineMovement1
+	open_text
+	writetext Route25EusineText1
+	waitbutton
+	closetext
+	applymovement ROUTE25_EUSINE, Route25EusineMovement2
+	open_text
+	writetext Route25EusineText2
+	waitbutton
+	closetext
+	end
+
+Route25EusineText1:
+	text "EUSINE: Huff…puff…"
+	line "I am…no match for"
+	cont "you."
+	
+	para "…"
+	
+	para "Go ahead."
+	
+	para "Ever since I met"
+	line "you in the BURN-"
+	cont "ED TOWER, I knew"
+	cont "SUICUNE would"
+	cont "choose you."
+	
+	done
+
+Route25EusineText2:
+	text "EUSINE: Look!"
+	
+	para "SUICUNE is wait-"
+	line "ing for you!"
+	
+	para "It's been waiting"
+	line "for a TRAINER it"
+	cont "can trust itself"
+	cont "with!"
+	
+	done
+
+Route25EusineText3:
+	text "EUSINE: <PLAYER>…"
+	line "You two are truly"
+	cont "amazing."
+	
+	para "Never have I seen"
+	line "a battle that in-"
+	cont "tense…"
+	
+	para "I guess this is"
+	line "goodbye."
+	
+	para "…"
+	
+	para "Farewell, <PLAYER>!"
+	
+	para "…"
+	
+	para "Farewell, SUICUNE!"
+	
+	done
+
+Route25EusineMovement1:
+	big_step RIGHT
+	big_step RIGHT
+	step RIGHT
+	step_end
+
+Route25EusineMovement2:
+	step RIGHT
+	step_end
+
+Route25EusineMovement3
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
+	step_end
+
+Route25Suicune:
+	faceplayer
+	opentext
+	cry SUICUNE ; Traditionally, Suicune doesn't have text when fought
+	pause 15
+	closetext
+	setevent EVENT_FOUGHT_SUICUNE
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadwildmon SUICUNE, 55
+	startbattle
+	disappear ROUTE25_SUICUNE
+	reloadmapafterbattle
+	open_text
+	writetext Route25EusineText3
+	waitbutton
+	closetext
+	applymovement ROUTE25_EUSINE, Route25EusineMovement3
+	disappear ROUTE_25_EUSINE
 	end
 
 Route25MistyDate1Script:
@@ -436,6 +564,8 @@ Route25_MapEvents:
 	def_coord_events
 	coord_event 42,  6, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate1Script
 	coord_event 42,  7, SCENE_ROUTE25_MISTYS_DATE, Route25MistyDate2Script
+	coord_event 42,  6, SCENE_ROUTE25_FINAL_SUICUNE, Route25SuicuneEventScript
+	coord_event 42,  7, SCENE_ROUTE25_FINAL_SUICUNE, Route25SuicuneEventScript
 
 	def_bg_events
 	bg_event 45,  5, BGEVENT_READ, BillsHouseSign
@@ -453,3 +583,5 @@ Route25_MapEvents:
 	object_event 31,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 1, TrainerSupernerdPat, -1
 	object_event 37,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TrainerCooltrainermKevin, -1
 	object_event 32,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route25Protein, EVENT_ROUTE_25_PROTEIN
+	object_event 40,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_FOUGHT_SUICUNE
+	object_event 50,  6, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route25Suicune, EVENT_FOUGHT_SUICUNE

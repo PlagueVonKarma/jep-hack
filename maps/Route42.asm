@@ -15,12 +15,25 @@ Route42_MapScripts:
 	scene_script Route42Noop2Scene, SCENE_ROUTE42_SUICUNE
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, RouteSuicuneCallback
 
 Route42Noop1Scene:
 	end
 
 Route42Noop2Scene:
 	end
+
+Route42SuicuneCallback:
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE14
+	iffalse .NoAppear
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE42
+	iffalse .NoAppear
+	appear ROUTE42_SUICUNE
+	endcallback
+
+.NoAppear:
+	disappear ROUTE42_SUICUNE
+	endcallback
 
 Route42SuicuneScript:
 	showemote EMOTE_SHOCK, PLAYER, 15
