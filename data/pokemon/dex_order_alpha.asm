@@ -7,7 +7,7 @@ AlphabeticalPokedexOrder:
 	dw AERODACTYL
 	dw AIPOM
 	dw ALAKAZAM
-	dw AMANOBI
+	dw TANOBI
 	dw AMBIPOM
 	dw AMPHAROS
 	dw ANGORE
@@ -151,6 +151,8 @@ AlphabeticalPokedexOrder:
 	dw HORSEA
 	dw HOUNDOOM
 	dw HOUNDOUR
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw HYPNO
 	dw IGGLYBUFF
 	dw IGUANARCH
@@ -248,6 +250,7 @@ AlphabeticalPokedexOrder:
 	dw OMANYTE
 	dw OMASTAR
 	dw ONIX
+	dw ONIYANMA
 	dw ORFRY
 	dw PALSSIO
 	dw PARAS
@@ -312,7 +315,6 @@ AlphabeticalPokedexOrder:
 	dw SEEL
 	dw SENTRET
 	dw SHELLDER
-	dw SHI_SHI
 	dw SHUCKLE
 	dw SKARMORY
 	dw SKIPLOOM
@@ -395,7 +397,6 @@ AlphabeticalPokedexOrder:
 	dw XYLODON
 	dw XYLOFIN
 	dw YANMA
-	dw PENDING03 ; this thing's gonna start with Yan, surely, so I'm putting it here.
 	dw YANMEGA
 	dw ZAPDOS
 	dw ZUBAT

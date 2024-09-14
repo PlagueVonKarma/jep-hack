@@ -283,7 +283,23 @@ BattleAnimations::
 	dw BattleAnim_RockSlash
 	dw BattleAnim_CrossCutter
 	dw BattleAnim_Megaphone
-	dw BattleAnim_Wind_Ride
+	dw BattleAnim_Wind_Ride ; Mystic Ice - to be changed, all new anims here are temp. Wind Ride's animation fits Mystic Ice but may want some touch-ups. It's buggy.
+	dw BattleAnim_Splash ; Bounce
+	dw BattleAnim_Flash ; Bright Moss
+	dw BattleAnim_CoinHurl ; Coin Hurl
+	dw BattleAnim_RockSmash ; Uproot
+	dw BattleAnim_Psybeam ; Synchronize
+	dw BattleAnim_StrongArm
+	dw BattleAnim_Uppercut
+	dw BattleAnim_WaterGun ; uhhh
+	dw BattleAnim_Wind_Ride ; Wind Ride but real
+	dw BattleAnim_Flash ; Dazzling Gleam
+	dw BattleAnim_Sing ; Disarming Voice
+	dw BattleAnim_DrainingKiss ; From Sour Crystal
+	dw BattleAnim_FairyWind ; From Sour Crystal
+	dw BattleAnim_Psywave ; Moonblast
+	dw BattleAnim_Rollout ; Play Rough
+	dw BattleAnim_ConfuseRay ; Strange Steam
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -1318,7 +1334,7 @@ BattleAnim_RazorWind:
 	anim_wait 24
 	anim_ret
 
-BattleAnim_Sonicboom_JP: ; unreferenced
+BattleAnim_Sonicboom:
 	anim_2gfx ANIM_GFX_WHIP, ANIM_GFX_HIT
 .loop
 	anim_sound 3, 0, SFX_RAZOR_WIND
@@ -1343,7 +1359,6 @@ BattleAnim_Sonicboom_JP: ; unreferenced
 	anim_ret
 
 BattleAnim_Gust:
-BattleAnim_Sonicboom:
 	anim_2gfx ANIM_GFX_WIND, ANIM_GFX_HIT
 .loop
 	anim_sound 0, 1, SFX_RAZOR_WIND
@@ -4689,7 +4704,7 @@ BattleAnim_Wind_Ride:
 	anim_sound 0, 1, SFX_MEGA_KICK
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, 136, 56, $0
 	anim_bgeffect ANIM_BG_SHOW_MON, $0, BG_EFFECT_USER, $0
-	anim_wait 32
+	anim_wait 32 ; something causes the tip of the back sprite to disappear
 	anim_ret
 
 
@@ -4880,6 +4895,125 @@ BattleAnimSub_Glimmer2:
 	anim_wait 5
 	anim_loop 2, .loop
 	anim_wait 16
+	anim_ret
+
+; Splices the "metal" animation, Tackle, and DynamicPunch, using the Spark SFX from Rollout.
+BattleAnim_StrongArm:
+	anim_1gfx ANIM_GFX_REFLECT
+	anim_obp0 $0
+	anim_sound 0, 0, SFX_RAGE
+	anim_call BattleAnim_TargetObj_1Row
+	anim_call BattleAnimSub_Metallic
+	anim_call BattleAnim_ShowMon_0
+	anim_1gfx ANIM_GFX_HIT
+	anim_resetobp0
+	anim_sound 0, 0, SFX_SPARK
+	anim_call BattleAnim_TargetObj_1Row
+	anim_bgeffect ANIM_BG_TACKLE, $0, BG_EFFECT_USER, $0
+	anim_wait 4
+	anim_sound 0, 1, SFX_MEGA_PUNCH
+	anim_obj ANIM_OBJ_HIT_BIG, 136, 40, $0
+	anim_wait 8
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_EXPLOSION
+	anim_resetobp0
+	anim_obj ANIM_OBJ_PUNCH_SHAKE, 136, 56, $43
+	anim_wait 16
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $e, $4, $0
+	anim_call BattleAnim_ShowMon_0
+	anim_ret
+
+; Made in virtually the same way to KEP, reversing Karate Chop's animation.
+; Difference here is using Comet Punch's SFX, not repeating it, having the Punch icon, and having a lower low and higher high in its arc. Karate Chop changed lots in GSC!
+BattleAnim_Uppercut:
+	anim_1gfx ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_COMET_PUNCH
+	anim_obj ANIM_OBJ_PUNCH, 136, 52, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 52, $0
+	anim_wait 3
+	anim_obj ANIM_OBJ_PUNCH, 136, 48, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 48, $0
+	anim_wait 3
+	anim_obj ANIM_OBJ_PUNCH, 136, 44, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 44, $0
+	anim_wait 3
+	anim_obj ANIM_OBJ_PUNCH, 136, 40, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 40, $0
+	anim_wait 3
+	anim_obj ANIM_OBJ_PUNCH, 136, 36, $0
+	anim_obj ANIM_OBJ_HIT_YFIX, 136, 36, $0
+	anim_wait 16
+	anim_ret
+
+; Takes the Poke Ball throw code, applies it to the Pay Day coins, then spits out coins on hit.
+BattleAnim_CoinHurl:
+	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_STATUS
+	anim_sound 6, 2, SFX_PAY_DAY
+	anim_obj ANIM_OBJ_COIN_HURL, 68, 92, $40
+	anim_wait 4
+	anim_sound 6, 2, SFX_PAY_DAY
+	anim_obj ANIM_OBJ_COIN_HURL, 68, 92, $40
+	anim_wait 4
+	anim_sound 6, 2, SFX_PAY_DAY
+	anim_obj ANIM_OBJ_COIN_HURL, 68, 92, $40
+	anim_wait 28
+	anim_obj ANIM_OBJ_PAY_DAY, 110, 76, $1
+	anim_wait 2
+	anim_obj ANIM_OBJ_PAY_DAY, 120, 66, $1
+	anim_wait 2
+	anim_obj ANIM_OBJ_PAY_DAY, 130, 86, $1
+	anim_wait 64
+	anim_ret
+	
+BattleAnim_FairyWind: ; from Sour Crystal
+	anim_2gfx ANIM_GFX_SPEED, ANIM_GFX_HAZE
+	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
+	anim_sound 0, 1, SFX_GAME_FREAK_LOGO_GS
+.loop
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 80, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 88, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 96, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 80, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_MIST, 64, 88, $4
+	anim_wait 4
+	anim_obj ANIM_OBJ_SHOOTING_SPARKLE, 64, 96, $4
+	anim_wait 4
+	anim_loop 2, .loop
+	anim_bgeffect ANIM_BG_FADE_MON_TO_BLACK_REPEATING, $0, $0, $40
+	anim_wait 64
+	anim_ret
+	
+BattleAnim_DrainingKiss: ; from Sour Crystal
+	anim_3gfx ANIM_GFX_OBJECTS, ANIM_GFX_CHARGE, ANIM_GFX_SHINE
+	anim_sound 0, 1, SFX_SWEET_KISS
+	anim_obj ANIM_OBJ_HEART, 120, 40, $0
+	anim_wait 8
+.loop
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 128, 48, $2
+	anim_wait 5
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 136, 64, $3
+	anim_wait 5
+	anim_sound 0, 1, SFX_SWEET_KISS_2
+	anim_obj ANIM_OBJ_ABSORB, 136, 32, $4
+	anim_wait 5
+	anim_loop 5, .loop
+	anim_wait 32
+	anim_bgeffect ANIM_BG_CYCLE_MID_OBPALS_GRAY_AND_YELLOW, $0, $0, $0
+	anim_jump BattleAnim_Glimmer_branch3
+	
+BattleAnim_Glimmer_branch3:
+	anim_sound 0, 0, SFX_METRONOME
+	anim_obj ANIM_OBJ_GLIMMER, 44, 64, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 24, 96, $0
+	anim_wait 5
+	anim_obj ANIM_OBJ_GLIMMER, 56, 104, $0
+	anim_wait 21
 	anim_ret
 
 BattleAnim_TargetObj_1Row:

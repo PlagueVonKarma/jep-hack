@@ -109,4 +109,11 @@ Music:
 	dba Music_MobileCenter
 	dba Music_NihonTown01
 	dba Music_SinjohRuins
+	dba Music_LavenderCrypt
+	dba Music_SouthCity
+	dba Music_NihonTime
+	dba Music_PeacefulTheme
+	dba Music_CoastTown
+	dba Music_ColdWinter
+	dba Music_CoolCave
 	assert_table_length NUM_MUSIC_SONGS

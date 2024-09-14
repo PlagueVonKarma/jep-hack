@@ -22,6 +22,7 @@ CeladonPokecenter1FCooltrainerFScript:
 CeladonPokecenter1FPharmacistScript:
 	jumptextfaceplayer CeladonPokecenter1FPharmacistText
 
+; To be reworked into a Naval Rock event
 CeladonEusine:
 	faceplayer
 	opentext
@@ -109,17 +110,19 @@ EusineLeavesCeladonText:
 
 	para "rainbow-colored"
 	line "#MON appearing"
-	cont "at TIN TOWER."
+	cont "at NAVEL ROCK."
 
 	para "I've just had my"
 	line "party healed, so"
 
-	para "now I'm headed to"
-	line "ECRUTEAK."
+	para "now I'm headed"
+	line "there."
 
 	para "I'll be seeing"
 	line "you, <PLAYER>!"
 	done
+
+; follow up by giving the ticket and so on.
 
 NoBeastsText:
 	text "Oh, by the way,"

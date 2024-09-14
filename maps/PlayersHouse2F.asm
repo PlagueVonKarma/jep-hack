@@ -113,11 +113,11 @@ PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-IF DEF(_DEBUG)
+;IF DEF(_DEBUG)
 	warp_event  7,  0, DEBUG_ROOM, 1
-else
-	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
-endc
+;else
+;	warp_event  7,  0, PLAYERS_HOUSE_1F, 3
+;endc
 
 	def_coord_events
 

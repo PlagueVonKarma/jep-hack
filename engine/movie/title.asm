@@ -47,29 +47,35 @@ _TitleScreen:
 ; Apply logo gradient:
 
 ; lines 3-4
-	hlbgcoord 0, 3
+	hlbgcoord 0, 2
 	ld bc, 2 * BG_MAP_WIDTH
 	ld a, 2
 	call ByteFill
 ; line 5
-	hlbgcoord 0, 5
+	hlbgcoord 0, 4
 	ld bc, BG_MAP_WIDTH
 	ld a, 3
 	call ByteFill
 ; line 6
-	hlbgcoord 0, 6
+	hlbgcoord 0, 5
 	ld bc, BG_MAP_WIDTH
 	ld a, 4
 	call ByteFill
 ; line 7
-	hlbgcoord 0, 7
+	hlbgcoord 0, 6
 	ld bc, BG_MAP_WIDTH
 	ld a, 5
 	call ByteFill
 ; lines 8-9
-	hlbgcoord 0, 8
+	hlbgcoord 0, 7
 	ld bc, 2 * BG_MAP_WIDTH
 	ld a, 6
+	call ByteFill
+
+; 'CRYSTAL VERSION'
+	hlbgcoord 5, 8
+	ld bc, 11 ; length of version text
+	ld a, 1
 	call ByteFill
 
 ; 'CRYSTAL VERSION'
@@ -105,16 +111,16 @@ _TitleScreen:
 	call ByteFill
 
 ; Draw Pokemon logo
-	hlcoord 0, 3
-	lb bc, 7, 20
+	hlcoord 0, 2
+	lb bc, 8, 20
 	ld d, $80
 	ld e, 20
 	call DrawTitleGraphic
 
 ; Draw copyright text
 	hlbgcoord 3, 0, vBGMap1
-	lb bc, 1, 13
-	ld d, $c
+	lb bc, 2, 13
+	ld d, $20
 	ld e, 16
 	call DrawTitleGraphic
 

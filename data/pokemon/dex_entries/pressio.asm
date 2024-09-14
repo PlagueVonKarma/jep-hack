@@ -1,10 +1,10 @@
-	db "PROUD@" ; species name
-	dw 509, 70 ; height, weight
+	db "PRIDEFUL@" ; species name
+	dw 411, 910 ; height, weight
 
-	db   "Prideful in its"
-	next "growing intellect,"
-	next "PRESSIO often"
+	db   "Arrogant and proud"
+	next "in nature, PRESSIO"
+	next "picks on weaker"
 
-	page "picks fights with"
-	next "#MON it sees"
-	next "as inferior.@"
+	page "#MON. Its skin"
+	next "is smooth and cold"
+	next "to touch.@"

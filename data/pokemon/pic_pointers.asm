@@ -563,8 +563,8 @@ PokemonPicPointers::
 	dba YanmaBackpic
 	dba YanmegaFrontpic
 	dba YanmegaBackpic
-	dba Pending03Frontpic
-	dba Pending03Backpic
+	dba OniyanmaFrontpic
+	dba OniyanmaBackpic
 	dba WooperFrontpic
 	dba WooperBackpic
 	dba QuagsireFrontpic
@@ -728,8 +728,8 @@ PokemonPicPointers::
 	dba TrebirBackpic
 	dba SakurazeFrontpic
 	dba SakurazeBackpic
-	dba AmanobiFrontpic
-	dba AmanobiBackpic
+	dba TanobiFrontpic
+	dba TanobiBackpic
 	dba TrustanFrontpic
 	dba TrustanBackpic
 	dba KuwaguardFrontpic
@@ -804,8 +804,10 @@ PokemonPicPointers::
 	dba LugiaBackpic
 	dba HoOhFrontpic
 	dba HoOhBackpic
-	dba ShiShiFrontpic
-	dba ShiShiBackpic
+	dba HyoshuYangFrontpic
+	dba HyoshuYangBackpic
+	dba HyoshuYinFrontpic
+	dba HyoshuYinBackpic
 	dba CelebiFrontpic
 	dba CelebiBackpic
 	assert_table_length NUM_POKEMON + 1

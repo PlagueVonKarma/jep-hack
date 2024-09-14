@@ -120,17 +120,14 @@ RadioTower5FRocketBossScript:
 	opentext
 	writetext RadioTower5FDirectorThankYouText
 	promptbutton
-	verbosegiveitem CLEAR_BELL
-	writetext RadioTower5FDirectorDescribeClearBellText
+	verbosegiveitem MASTER_BALL ; was CLEAR_BELL, being changed for new progression.
+	writetext RadioTower5FDirectorDescribeMasterBallText
 	waitbutton
 	closetext
 	setscene SCENE_RADIOTOWER5F_NOOP
 	setmapscene ECRUTEAK_TIN_TOWER_ENTRANCE, SCENE_ECRUTEAKTINTOWERENTRANCE_SAGE_BLOCKS
-	setevent EVENT_GOT_CLEAR_BELL
+	setevent EVENT_GOT_MASTER_BALL
 	setevent EVENT_TEAM_ROCKET_DISBANDED
-	sjump .UselessJump
-
-.UselessJump:
 	applymovement RADIOTOWER5F_DIRECTOR, RadioTower5FDirectorWalksOut
 	playsound SFX_EXIT_BUILDING
 	disappear RADIOTOWER5F_DIRECTOR
@@ -335,56 +332,76 @@ RadioTower5FDirectorThankYouText:
 	cont "take this."
 	done
 
-RadioTower5FDirectorDescribeClearBellText:
-	text "There used to be a"
-	line "tower right here"
-	cont "in GOLDENROD CITY."
-
-	para "But it was old and"
-	line "creaky."
-
-	para "So we replaced it"
-	line "with our RADIO"
-	cont "TOWER."
-
-	para "We dug up that"
-	line "bell during"
-	cont "construction."
-
-	para "I heard that all"
-	line "sorts of #MON"
-
-	para "lived in GOLDENROD"
-	line "in the past."
-
-	para "Perhaps…"
-
-	para "That bell has some"
-	line "connection to the"
-
-	para "TIN TOWER in"
-	line "ECRUTEAK CITY…"
-
-	para "Ah!"
-
-	para "That reminds me…"
-
-	para "I overheard TEAM"
-	line "ROCKET whispering."
-
-	para "Apparently, some-"
-	line "thing is going on"
-	cont "at the TIN TOWER."
-
-	para "I have no idea"
-	line "what is happening,"
-
-	para "but you might look"
-	line "into it."
-
-	para "OK, I better go to"
-	line "my OFFICE."
+RadioTower5FDirectorDescribeMasterBallText:
+	text "We've been working"
+	line "a promotion with"
+	cont "SILPH CO.!"
+	
+	para "If you win our"
+	line "lottery, you can"
+	cont "win this super-"
+	cont "rare MASTER BALL!"
+	
+	para "A few years ago,"
+	line "TEAM ROCKET rea-"
+	cont "lly wanted these."
+	
+	para "I wonder how the"
+	line "CHIEF is doing?"
 	done
+
+; this text was removed in favour of new progression methods.
+; the text is also just kind of ass yknow
+;RadioTower5FDirectorDescribeClearBellText:
+;	text "There used to be a"
+;	line "tower right here"
+;	cont "in GOLDENROD CITY."
+
+;	para "But it was old and"
+;	line "creaky."
+
+;	para "So we replaced it"
+;	line "with our RADIO"
+;	cont "TOWER."
+
+;	para "We dug up that"
+;	line "bell during"
+;	cont "construction."
+
+;	para "I heard that all"
+;	line "sorts of #MON"
+
+;	para "lived in GOLDENROD"
+;	line "in the past."
+
+;	para "Perhaps…"
+
+;	para "That bell has some"
+;	line "connection to the"
+
+;	para "TIN TOWER in"
+;	line "ECRUTEAK CITY…"
+
+;	para "Ah!"
+
+;	para "That reminds me…"
+
+;	para "I overheard TEAM"
+;	line "ROCKET whispering."
+
+;	para "Apparently, some-"
+;	line "thing is going on"
+;	cont "at the TIN TOWER."
+
+;	para "I have no idea"
+;	line "what is happening,"
+
+;	para "but you might look"
+;	line "into it."
+
+;	para "OK, I better go to"
+;	line "my OFFICE."
+;	done
 
 RadioTower5FDirectorText:
 	text "DIRECTOR: Hello,"

@@ -275,7 +275,7 @@ BitmasksPointers:
 	dw FoxfireBitmasks
 	dw YanmaBitmasks
 	dw YanmegaBitmasks
-	dw Pending03Bitmasks
+	dw OniyanmaBitmasks
 	dw WooperBitmasks
 	dw QuagsireBitmasks
 	dw EspeonBitmasks
@@ -357,7 +357,7 @@ BitmasksPointers:
 	dw CacawphonyBitmasks
 	dw TrebirBitmasks
 	dw SakurazeBitmasks
-	dw AmanobiBitmasks
+	dw TanobiBitmasks
 	dw TrustanBitmasks
 	dw KuwaguardBitmasks
 	dw TonquitoBitmasks
@@ -396,6 +396,7 @@ BitmasksPointers:
 	dw TyranitarBitmasks
 	dw LugiaBitmasks
 	dw HoOhBitmasks
-	dw ShiShiBitmasks
+	dw HyoshuYangBitmasks
+	dw HyoshuYinBitmasks
 	dw CelebiBitmasks
 	assert_table_length NUM_POKEMON

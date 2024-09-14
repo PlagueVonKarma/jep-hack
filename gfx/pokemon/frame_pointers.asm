@@ -275,7 +275,7 @@ FramesPointers:
 	dba FoxfireFrames
 	dba YanmaFrames
 	dba YanmegaFrames
-	dba Pending03Frames
+	dba OniyanmaFrames
 	dba WooperFrames
 	dba QuagsireFrames
 	dba EspeonFrames
@@ -357,7 +357,7 @@ FramesPointers:
 	dba CacawphonyFrames
 	dba TrebirFrames
 	dba SakurazeFrames
-	dba AmanobiFrames
+	dba TanobiFrames
 	dba TrustanFrames
 	dba KuwaguardFrames
 	dba TonquitoFrames
@@ -396,6 +396,7 @@ FramesPointers:
 	dba TyranitarFrames
 	dba LugiaFrames
 	dba HoOhFrames
-	dba ShiShiFrames
+	dba HyoshuYangFrames
+	dba HyoshuYinFrames
 	dba CelebiFrames
 	assert_table_length NUM_POKEMON

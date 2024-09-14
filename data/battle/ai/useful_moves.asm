@@ -20,4 +20,5 @@ UsefulMoves:
 	dw FIRE_BLAST
 	dw SOFTBOILED
 	dw SUPER_FANG
+	dw COIN_HURL
 	dw -1 ; end

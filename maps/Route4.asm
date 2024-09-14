@@ -3,6 +3,7 @@
 	const ROUTE4_LASS1
 	const ROUTE4_LASS2
 	const ROUTE4_POKE_BALL
+	const ROUTE4_CASEY
 
 Route4_MapScripts:
 	def_scene_scripts
@@ -41,6 +42,38 @@ TrainerPicnickerSharon:
 	waitbutton
 	closetext
 	end
+
+; A reference to "Those Darn Electabuzz!", a popular episode of the Johto anime.
+; She's actually a super in-depth character, being based on Mighty Casey and such. 
+; Not much lore added, just something nice.
+TrainerLassCasey:
+	trainer LASS, CASEY, EVENT_BEAT_LASS_CASEY, LassCaseySeenText, LassCaseyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassCaseyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+LassCaseySeenText:
+	text "I'm goin' ta watch" ; In the Japanese version, she speaks with the Kansai dialect, like Bill. Let's make her more casual.
+	line "a baseball game!"
+	done
+
+LassCaseyBeatenText:
+	text "ELECTIVIRE! Bahhh!"
+	done
+
+LassCaseyAfterBattleText:
+	text "METRONOME safe at"
+	line "home, HYPER BEAM"
+	cont "too!"
+	
+	para "Huh? It's my"
+	line "favourite song!"
+	done
 
 MtMoonSquareSign:
 	jumptext MtMoonSquareSignText
@@ -135,3 +168,4 @@ Route4_MapEvents:
 	object_event  9,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerHope, -1
 	object_event 21,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerSharon, -1
 	object_event 26,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4HPUp, EVENT_ROUTE_4_HP_UP
+	object_event 23, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerLassCasey, -1

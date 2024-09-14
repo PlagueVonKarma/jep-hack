@@ -89,7 +89,7 @@ As the open source nature of this project implies, people are free to reuse what
 If you use our implementations of anything at all, it is encouraged to submit Pull Requests for bug fixes if you find any issues! We very much appreciate them!
 
 ## Development Credits
-- Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps)
+- Plague von Karma (Director, Kanto Expansion Pak Founder, Programming, Maps, Stat Exp. Display code)
 - Martha's Against Humanity (Kanto Expansion Pak ROM Hack Creator, Programmer, Spriter)
 - Zeta_Null (Repository Creator, Spriter, Programming, Music)
 - LadyMisticus (Documentation, Programming, Mapping, Spriter)
@@ -108,17 +108,17 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 
 ### JEP Developers
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
-- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, 
-- Martha's Against Humanity: Shi-Shi, Fossil Aerodactyl, Fossil Kabutops
+- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord 
+- Martha's Against Humanity: Flutter Mane, Hyoshu-Yang, Hyoshu-Yin, Fossil Aerodactyl, Fossil Kabutops
 - zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake (front/back, title)
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
-- LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal (original)
+- LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal, Blaine (original)
 
 ### Unaffiliated
 - nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Mamoswine, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
-- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
+- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Pockle (Shuqlour, edited by Martha), Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
 - SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage), Trebir (Mallody), Folage (Silkane)
 - SCMidna: Munchlax
@@ -134,6 +134,8 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
 - Ferropexola/aforward9600: Time of day-based tileset palette code
 - Rangi42/polishedcrystal: [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
+- Nayru62 (Crystal Legacy) - [DVs & Hidden Power display code](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy/blob/main/engine/pokemon/stats_screen.asm)
+- SoupPotato - Move Animations and Pallettes [here](https://github.com/PiaCarrot/mae-pokeorange/commit/9e148c8a28bbe6850f3df11605b4f7b4068a4652) and [here](https://github.com/PiaCarrot/mae-pokeorange/commit/52f8f8e77189b01453590c5496bbc7a9332b6237).
 
 Original readme proceeding...
 # 16-bit index expansion for Crystal

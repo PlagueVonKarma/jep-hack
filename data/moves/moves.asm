@@ -273,5 +273,21 @@ Moves1:
 	move EFFECT_NORMAL_HIT,        140, ROCK,           70,  5,   0      ;ROCK_SLASH
 	move EFFECT_NORMAL_HIT,         50, BUG,           100, 15,   0      ;CROSS_CUTTER
 	move EFFECT_SP_ATK_DOWN,         0, NORMAL,        100, 40,   0      ;MEGAPHONE
-	move EFFECT_FREEZE_HIT,        100, FLYING,         95,  5,  30      ;WIND RIDE
+	move EFFECT_FREEZE_HIT,        100, ICE,         	95,  5,  30      ;MYSTIC_ICE
+	move EFFECT_FLY,                85, WATER,         85,  5,   0     ; BOUNCE - went back and forth on type (making it modern or keeping it spaceworldy), chose spaceworld to diversify the "fly" move category
+	move EFFECT_ACCURACY_UP,        85, GRASS,         	 0, 20,   0     ; BRIGHT_MOSS
+	move EFFECT_COIN_HURL,           1, NORMAL,        100, 20,   0     ; COIN_HURL
+	move EFFECT_NORMAL_HIT,         85, GROUND,        100, 10,   0     ; UPROOT
+	move EFFECT_MIRROR_COAT,         1, PSYCHIC_TYPE,  100, 10,   0     ; SYNCHRONIZE - effect not implemented
+	move EFFECT_ATTACK_UP_HIT,      70, STEEL,         	90, 10,  10     ; STRONG_ARM
+	move EFFECT_FLINCH_HIT,         55, FIGHTING,       80, 15,   30    ; UPPERCUT
+	move EFFECT_NORMAL_HIT,          1, WATER,         	 1, 15,   0     ; WATER_SPORT  - effect not implemented
+	move EFFECT_NORMAL_HIT,         55, FLYING,         95, 10,   0     ; WIND_RIDE
+	move EFFECT_NORMAL_HIT,         80, FAIRY,         100, 10,   0     ; DAZZLING_GLEAM
+	move EFFECT_ALWAYS_HIT,         40, FAIRY,         100, 15,   0     ; DISARMING_VOICE
+	move EFFECT_LEECH_HIT,          50, FAIRY,         100, 10,   0     ; DRAINING_KISS
+	move EFFECT_NORMAL_HIT,         40, FAIRY,         100, 30,   0     ; FAIRY_WIND
+	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,  	   100, 15,  30      ; MOONBLAST
+	move EFFECT_ATTACK_DOWN_HIT,    90, FAIRY,          90, 10,  10      ; PLAY_ROUGH
+	move EFFECT_CONFUSE_HIT,        90, FAIRY,  	    95, 10,  20      ; STRANGE_STEAM
 .IndirectEnd::

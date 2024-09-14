@@ -23,8 +23,6 @@ INCLUDE "audio/music/goldenrodcity.asm"
 INCLUDE "audio/music/vermilioncity.asm"
 INCLUDE "audio/music/titlescreen.asm"
 INCLUDE "audio/music/ruinsofalphinterior.asm"
-INCLUDE "audio/music/lookpokemaniac.asm"
-INCLUDE "audio/music/trainervictory.asm"
 
 
 SECTION "Songs 2", ROMX
@@ -72,6 +70,8 @@ INCLUDE "audio/music/healpokemon.asm"
 INCLUDE "audio/music/evolution.asm"
 INCLUDE "audio/music/printer.asm"
 
+INCLUDE "audio/music/lookpokemaniac.asm" ; had to be moved because of the changes to the music pointers, for some reason we had free space here.
+INCLUDE "audio/music/trainervictory.asm"
 
 SECTION "Songs 4", ROMX
 
@@ -154,6 +154,13 @@ SECTION "New Songs", ROMX
 
 INCLUDE "audio/music/nihontest.asm"
 INCLUDE "audio/music/sinjohsample.asm"
+INCLUDE "audio/music/lavendercrypt.asm"
+INCLUDE "audio/music/NihonTime.asm"
+INCLUDE "audio/music/SouthCity.asm"
+INCLUDE "audio/music/Peaceful.asm"
+INCLUDE "audio/music/CoastTown.asm"
+INCLUDE "audio/music/ColdWinter.asm"
+INCLUDE "audio/music/CoolCave.asm"
 
 
 SECTION "Sound Effects", ROMX

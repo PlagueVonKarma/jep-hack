@@ -281,7 +281,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,    0 ; FOXFIRE	(incomplete)
 	mon_cry CRY_TOTODILE,     49,  200 ; YANMA
 	mon_cry CRY_NIDORAN_M,     0,    0 ; YANMEGA	(incomplete)
-	mon_cry CRY_NIDORAN_M,     0,    0 ; PENDING03	(incomplete)
+	mon_cry CRY_NIDORAN_M,     0,    0 ; ONIYANMA	(incomplete)
 	mon_cry CRY_WOOPER,      147,  175 ; WOOPER
 	mon_cry CRY_WOOPER,     -198,  320 ; QUAGSIRE
 	mon_cry CRY_AIPOM,       162,  320 ; ESPEON
@@ -362,7 +362,7 @@ PokemonCries::
 	mon_cry CRY_NIDORAN_M,     0,  128 ; CACAWPHONY
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TREBIR
 	mon_cry CRY_NIDORAN_M,     0,  128 ; SAKURAZE
-	mon_cry CRY_NIDORAN_M,     0,  128 ; AMANOBI
+	mon_cry CRY_NIDORAN_M,     0,  128 ; TANOBI
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TRUSTAN
 	mon_cry CRY_NIDORAN_M,     0,  128 ; KUWAGUARD
 	mon_cry CRY_NIDORAN_M,     0,  128 ; TONQUITO
@@ -400,6 +400,7 @@ PokemonCries::
 	mon_cry CRY_RAIKOU,     -256,  384 ; TYRANITAR
 	mon_cry CRY_TYPHLOSION,    0,  256 ; LUGIA
 	mon_cry CRY_AIPOM,         0,  384 ; HO_OH
-	mon_cry CRY_NIDORAN_M,     0,  128 ; SHI_SHI (placeholder) 
+	mon_cry CRY_NIDORAN_M,     0,  128 ; HYOSHU_YANG (placeholder)
+	mon_cry CRY_NIDORAN_M,     0,  128 ; HYOSHU_YIN  (placeholder)
 	mon_cry CRY_ENTEI,       330,  273 ; CELEBI
 	assert_table_length NUM_POKEMON

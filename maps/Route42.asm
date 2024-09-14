@@ -15,12 +15,25 @@ Route42_MapScripts:
 	scene_script Route42Noop2Scene, SCENE_ROUTE42_SUICUNE
 
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, Route14SuicuneCallback
 
 Route42Noop1Scene:
 	end
 
 Route42Noop2Scene:
 	end
+
+Route42SuicuneCallback:
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE_14
+	iffalse .NoAppear
+	checkevent EVENT_SAW_SUICUNE_ON_ROUTE_42
+	iffalse .NoAppear
+	appear ROUTE42_SUICUNE
+	endcallback
+
+.NoAppear:
+	disappear ROUTE42_SUICUNE
+	endcallback
 
 Route42SuicuneScript:
 	showemote EMOTE_SHOCK, PLAYER, 15
@@ -30,8 +43,8 @@ Route42SuicuneScript:
 	disappear ROUTE42_SUICUNE
 	pause 10
 	setscene SCENE_ROUTE42_NOOP
-	clearevent EVENT_SAW_SUICUNE_ON_ROUTE_36
-	setmapscene ROUTE_36, SCENE_ROUTE36_SUICUNE
+	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42
+	setmapscene VERMILION_CITY, SCENE_ROUTE36_SUICUNE
 	end
 
 TrainerFisherTully:

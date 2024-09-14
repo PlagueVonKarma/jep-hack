@@ -277,7 +277,7 @@ MonMenuIcons:
 	db ICON_FOX         ; FOXFIRE
 	db ICON_BUG         ; YANMA
 	db ICON_BUG         ; YANMEGA
-	db ICON_BUG         ; PENDING03
+	db ICON_BUG         ; ONIYANMA
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE
 	db ICON_FOX         ; ESPEON
@@ -358,7 +358,7 @@ MonMenuIcons:
 	db ICON_BIRD		; CACAWPHONY
 	db ICON_BIRD		; TREBIR
 	db ICON_ODDISH		; SAKURAZE - Want this to be the old Flower icon
-	db ICON_FOX			; AMANOBI
+	db ICON_FOX			; TANOBI
 	db ICON_FOX			; TRUSTAN
 	db ICON_BUG			; KUWAGUARD
 	db ICON_BUG			; TONQUITO
@@ -396,6 +396,7 @@ MonMenuIcons:
 	db ICON_MONSTER     ; TYRANITAR
 	db ICON_LUGIA       ; LUGIA
 	db ICON_HO_OH       ; HO_OH
-	db ICON_FOX         ; SHI_SHI
+	db ICON_FOX         ; HYOSHU_YANG
+	db ICON_FOX         ; HYOSHU_YIN
 	db ICON_HUMANSHAPE  ; CELEBI
 	assert_table_length NUM_POKEMON

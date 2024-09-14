@@ -94,6 +94,7 @@ DoBattleAnimFrame:
 	dw BattleAnimFunction_AncientPower
 	dw BattleAnimFunction_RockSmash
 	dw BattleAnimFunction_Cotton
+	dw BattleAnimFunction_CoinHurl
 	assert_table_length NUM_BATTLEANIMFUNCS
 
 BattleAnimFunction_Null:
@@ -270,6 +271,23 @@ BattleAnimFunction_MoveFromUserToTargetAndDisappear:
 	ret
 
 .done
+	call DeinitBattleAnimation
+	ret
+
+; Poke Ball animation function without the jumptable and palchoice
+; managed to finish this by freak accident tbh it's nice tho
+BattleAnimFunction_CoinHurl:
+	call BattleAnimFunction_ThrowFromUserToTarget
+	ret c
+	ld hl, BATTLEANIMSTRUCT_YOFFSET
+	add hl, bc
+	ld a, [hl]
+	ld hl, BATTLEANIMSTRUCT_YCOORD
+	add hl, bc
+	add [hl]
+	ld [hl], a
+	ld a, BATTLEANIMFRAMESET_75
+	call ReinitBattleAnimFrameset
 	call DeinitBattleAnimation
 	ret
 

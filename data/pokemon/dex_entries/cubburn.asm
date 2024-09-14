@@ -1,5 +1,5 @@
-	db "PYRO@" ; species name
-	dw 108, 170 ; height, weight
+	db "FIRE BEAR@" ; species name
+	dw 200, 220 ; height, weight
 
 	db   "If its TRAINER is"
 	next "cold, CUBBURN will"

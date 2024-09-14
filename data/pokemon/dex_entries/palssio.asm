@@ -1,10 +1,10 @@
 	db "PLAYFUL@" ; species name
-	dw 311, 70 ; height, weight
+	dw 207, 310 ; height, weight
 
-	db   "Calm and collected,"
-	next "PALSSIO's presence"
-	next "soothes all around"
+	db   "A smart and level-"
+	next "headed #MON, it"
+	next "has a soothing"
 
-	page "it. Popular with"
-	next "newer and more"
-	next "anxious TRAINERS.@"
+	page "presence. Popular"
+	next "with new, inexpe-"
+	next "rienced TRAINERS.@"

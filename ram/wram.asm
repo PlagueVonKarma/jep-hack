@@ -3111,7 +3111,9 @@ wSilentHillsSceneID::							  db
 wBlueLabSceneID::								  db
 wRoute66WhiteCityGateID:: db
 wFuchsiaSafariZoneGateID:: db
-	ds 44
+wVermilionCityID:: db
+wRoute14ID:: db
+	ds 42
 
 ; fight counts
 wJackFightCount::    db
@@ -3328,7 +3330,7 @@ wPartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
 endr
 wPartyMonNicknamesEnd::
 
-	ds 22
+	ds 20 ; modified to fit the new unown
 
 wPokedexCaught:: flag_array NUM_POKEMON
 wEndPokedexCaught::

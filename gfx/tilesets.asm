@@ -565,18 +565,6 @@ INCBIN "data/tilesets/pokecenter_metatiles.bin"
 TilesetPokecenterColl::
 INCLUDE "data/tilesets/pokecenter_collision.asm"
 
-TilesetLavenderCryptAttr::
-INCBIN "data/tilesets/lavendercrypt_attributes.bin"
-
-TilesetLavenderCryptGFX::
-INCBIN "gfx/tilesets/lavendercrypt.2bpp.lz"
-
-TilesetLavenderCryptMeta::
-INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
-
-TilesetLavenderCryptColl::
-INCLUDE "data/tilesets/lavendercrypt_collision.asm"
-
 TilesetBlueLabAttr::
 INCBIN "data/tilesets/bluelab_attributes.bin"
 
@@ -613,8 +601,6 @@ INCBIN "data/tilesets/nihonmart_metatiles.bin"
 TilesetNihonMartColl::
 INCLUDE "data/tilesets/nihonmart_collision.asm"
 
-SECTION "Tileset Data 15", ROMX
-
 TilesetNihonWhiteCityAttr::
 INCBIN "data/tilesets/nihon_whitecity_attributes.bin"
 
@@ -627,7 +613,8 @@ INCBIN "data/tilesets/nihon_whitecity_metatiles.bin"
 TilesetNihonWhiteCityColl::
 INCLUDE "data/tilesets/nihon_whitecity_collision.asm"
 
-; Inclusion of NEW things made it so I had to move it. THE DOMAIN EXPANSION, WAHOO!
+SECTION "Tileset Data 15", ROMX
+
 TilesetTowerGFX::
 INCBIN "gfx/tilesets/tower.2bpp.lz"
 
@@ -651,3 +638,19 @@ INCLUDE "data/tilesets/sevii_collision.asm"
 
 TilesetSeviiAttr::
 INCBIN "data/tilesets/sevii_attributes.bin"
+
+; there should be space here, lavender crypt's set is just big
+
+SECTION "Tileset Data 16", ROMX
+; This tileset is very big and detailed.
+TilesetLavenderCryptAttr::
+INCBIN "data/tilesets/lavendercrypt_attributes.bin"
+
+TilesetLavenderCryptGFX::
+INCBIN "gfx/tilesets/lavendercrypt.2bpp.lz"
+
+TilesetLavenderCryptMeta::
+INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
+
+TilesetLavenderCryptColl::
+INCLUDE "data/tilesets/lavendercrypt_collision.asm"

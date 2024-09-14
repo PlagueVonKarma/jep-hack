@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, PIKACHU
+	getmonname STRING_BUFFER_3, ONIYANMA
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke PIKACHU, 24, POISON_STONE
+	givepoke ONIYANMA, 65, TM_ROCK_SMASH
 	closetext
 	end
 
@@ -42,15 +42,14 @@ DebugPokemon3Script:
 	cry STROMEN
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
-	loadwildmon STROMEN, 60
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon HYOSHU_YIN, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextA:
-	text "Sparkle..."
-	line "Sparkle..."
+	text "Komaiiii!"
 	done
 	
 DebugPokemon4Script:
@@ -60,14 +59,14 @@ DebugPokemon4Script:
 	cry STROMEN
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SAFARI
-	loadwildmon STROMEN, 60
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
+	loadwildmon HYOSHU_YANG, 75
 	startbattle
 	reloadmapafterbattle
 	end
 
 DebugTextB:
-	text "Do-ku-raaagh!"
+	text "Komaiiii!"
 	done
 
 DebugFlyScript:
@@ -124,9 +123,12 @@ DebugFlyScript:
 	
 	setevent EVENT_BEAT_ELITE_FOUR
 	
+	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42 ; for testing the suicune events
+	setmapscene VERMILION_CITY, SCENE_VERMILIONCITY_SUICUNE ; this ensures that the scene is correctly set too. 
+	
 	addcellnum PHONE_MOM
 	readvar VAR_BADGES
-	givepoke SHI_SHI, 70
+	givepoke PIDGEOT, 70
 	closetext
 	end
 	

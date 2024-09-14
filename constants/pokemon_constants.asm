@@ -295,7 +295,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const FOXFIRE
 	const YANMA      ; c1
 	const YANMEGA
-	const PENDING03
+	const ONIYANMA
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
@@ -378,7 +378,7 @@ DEF JOHTO_POKEMON EQU const_value
 	const CACAWPHONY
 	const TREBIR
 	const SAKURAZE
-	const AMANOBI
+	const TANOBI
 	const TRUSTAN
 	const KUWAGUARD
 	const TONQUITO
@@ -416,7 +416,8 @@ DEF JOHTO_POKEMON EQU const_value
 	const TYRANITAR  ; f8
 	const LUGIA      ; f9
 	const HO_OH      ; fa
-	const SHI_SHI
+	const HYOSHU_YANG
+	const HYOSHU_YIN
 	const CELEBI     ; fb
 DEF NUM_POKEMON EQU const_value - 1
 
@@ -465,4 +466,6 @@ endc
 	const UNOWN_X ; 24
 	const UNOWN_Y ; 25
 	const UNOWN_Z ; 26
-DEF NUM_UNOWN EQU const_value - 1 ; 26
+	const UNOWN_EXCLAMATION ; 27
+	const UNOWN_QUESTION ; 28
+DEF NUM_UNOWN EQU const_value - 1 ; 28

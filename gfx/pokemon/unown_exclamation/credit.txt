@@ -1,0 +1,1 @@
+Taken from Rangi's Tutorial: https://github.com/pret/pokecrystal/wiki/Add-a-new-Unown-form

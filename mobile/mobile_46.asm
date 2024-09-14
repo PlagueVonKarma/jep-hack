@@ -3987,7 +3987,8 @@ BattleTower_UbersCheck:
 	dw LUGIA
 	dw HO_OH
 	dw CELEBI
-	dw SHI_SHI
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw -1
 
 .uber_under_70

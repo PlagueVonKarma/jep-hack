@@ -13,6 +13,7 @@ UnlockedUnownLetterSets:
 	dw .Set_L_R ; UNLOCKED_UNOWNS_L_TO_R_F
 	dw .Set_S_W ; UNLOCKED_UNOWNS_S_TO_W_F
 	dw .Set_X_Z ; UNLOCKED_UNOWNS_X_TO_Z_F
+	dw .Set_Exclamation_Question ; UNLOCKED_UNOWNS_EXCLAMATION_QUESTION
 	assert_table_length NUM_UNLOCKED_UNOWN_SETS
 
 .Set_A_K:
@@ -23,3 +24,5 @@ UnlockedUnownLetterSets:
 	unown_set S, T, U, V, W
 .Set_X_Z:
 	unown_set X, Y, Z
+.Set_Exclamation_Question ; I'm not the biggest fan of this - could easily just put them with XYZ, but it seems in HGSS it was made more awkward, so let's do it this way. Could also be used to place them somewhere else - Tanoby Ruins?
+	unown_set EXCLAMATION, QUESTION

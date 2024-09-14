@@ -35,6 +35,8 @@ SplashScreen:
 
 ; Play GameFreak logo animation
 	call GameFreakPresentsInit
+	ld de, SFX_GAME_FREAK_LOGO_GS
+	call PlaySFX
 .joy_loop
 	call JoyTextDelay
 	ldh a, [hJoyLast]
@@ -267,8 +269,6 @@ GameFreakLogo_Bounce:
 	ld a, [hl]
 	sub 48
 	ld [hl], a
-	ld de, SFX_DITTO_BOUNCE
-	call PlaySFX
 	ret
 
 .done
@@ -287,7 +287,7 @@ GameFreakLogo_Ditto:
 	ld hl, SPRITEANIMSTRUCT_VAR2 ; frame count
 	add hl, bc
 	ld a, [hl]
-	cp 32
+	cp 40
 	jr nc, .start_transform
 	inc [hl]
 	ret

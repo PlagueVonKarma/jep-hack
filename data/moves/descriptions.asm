@@ -260,7 +260,23 @@ MoveDescriptions1:
 	dw RockSlashDescription
 	dw CrossCutterDescription
 	dw MegaphoneDescription
+	dw MysticIceDescription
+	dw BounceDescription
+	dw BrightMossDescription
+	dw CoinHurlDescription
+	dw UprootDescription
+	dw SynchroniseDescription
+	dw StrongArmDescription
+	dw UppercutDescription
+	dw WaterSportDescription
 	dw WindRideDescription
+	dw DazzlingGleamDescription
+	dw DisarmingVoiceDescription
+	dw DrainingKissDescription
+	dw FairyWindDescription
+	dw MoonblastDescription
+	dw PlayRoughDescription
+	dw StrangeSteamDescription
 
 .IndirectEnd::
 
@@ -271,7 +287,15 @@ PoundDescription:
 	db   "Pounds with fore-"
 	next "legs or tail.@"
 
+; optimised
+WindRideDescription:
+CrossCutterDescription:
+RazorLeafDescription:
 KarateChopDescription:
+CrabhammerDescription:
+SlashDescription:
+AeroblastDescription:
+CrossChopDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
 
@@ -503,6 +527,7 @@ BlizzardDescription:
 	db   "An attack that may"
 	next "freeze the foe.@"
 
+StrangeSteamDescription:
 PsybeamDescription:
 	db   "An attack that may"
 	next "confuse the foe.@"
@@ -511,6 +536,7 @@ BubblebeamDescription:
 	db   "An attack that may"
 	next "lower SPEED.@"
 
+PlayRoughDescription:
 AuroraBeamDescription:
 	db   "An attack that may"
 	next "lower ATTACK.@"
@@ -551,6 +577,7 @@ AbsorbDescription:
 	db   "Steals 1/2 of the"
 	next "damage inflicted.@"
 
+DrainingKissDescription:
 MegaDrainDescription:
 	db   "Steals 1/2 of the"
 	next "damage inflicted.@"
@@ -562,10 +589,6 @@ LeechSeedDescription:
 GrowthDescription:
 	db   "Raises the SPCL."
 	next "ATK rating.@"
-
-RazorLeafDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
 
 SolarbeamDescription:
 	db   "1st turn: Prepare"
@@ -779,6 +802,7 @@ ClampDescription:
 	db   "Traps the foe for"
 	next "2-5 turns.@"
 
+DisarmingVoiceDescription:
 SwiftDescription:
 	db   "An attack that"
 	next "never misses.@"
@@ -871,10 +895,6 @@ AcidArmorDescription:
 	db   "Sharply raises the"
 	next "user's DEFENSE.@"
 
-CrabhammerDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
-
 ExplosionDescription:
 	db   "Very powerful but"
 	next "makes user faint.@"
@@ -914,10 +934,6 @@ TriAttackDescription:
 SuperFangDescription:
 	db   "Cuts the foe's HP"
 	next "by 1/2.@"
-
-SlashDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
 
 SubstituteDescription:
 	db   "Makes a decoy with"
@@ -970,10 +986,6 @@ FlailDescription:
 Conversion2Description:
 	db   "The user's type is"
 	next "made resistant.@"
-
-AeroblastDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
 
 CottonSporeDescription:
 	db   "Sharply reduces"
@@ -1215,10 +1227,6 @@ HiddenPowerDescription:
 	db   "The power varies"
 	next "with the #MON.@"
 
-CrossChopDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
-
 TwisterDescription:
 	db   "Whips up a tornado"
 	next "to attack.@"
@@ -1279,14 +1287,55 @@ RockSlashDescription:
 	db   "A strong imprecise"
 	next "ROCK-type attack.@" ;the original description was too long I think
 	
-CrossCutterDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
-	
 MegaphoneDescription:
 	db   "Reduces the foe's"
 	next "SPCL.ATK.@"
 	
-WindRideDescription:
+MysticIceDescription:
 	db   "Summons the north"
 	next "wind. May freeze.@"
+
+BounceDescription:
+	db "Bounces up, then"
+	next "down next turn.@"
+
+BrightMossDescription:
+	db "Lights up area to"
+	next "boost accuracy.@"
+
+CoinHurlDescription:
+	db "Power raises with"
+	next "wealth.@"
+
+UprootDescription:
+	db "Flings foe for"
+	next "massive damage.@"
+
+SynchroniseDescription:
+	db "Enemy takes same"
+	next "damage as user.@"
+
+StrongArmDescription:
+	db "May raise the"
+	next "user's ATTACK.@"
+
+UppercutDescription:
+	db "An attack that may"
+	next "cause flinching.@"
+
+WaterSportDescription:
+	db "Lowers FIRE move" ; I really want to change this tbh
+	next "power.@" 
+
+DazzlingGleamDescription:
+	db "Flashes a bright"
+	next "light to attack.@"
+
+FairyWindDescription:
+	db "Blows a pleasant"
+	next "wind to attack.@"
+
+MoonblastDescription:
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+

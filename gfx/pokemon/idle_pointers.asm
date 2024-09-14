@@ -275,7 +275,7 @@ AnimationIdlePointers:
 	dw FoxfireAnimationIdle
 	dw YanmaAnimationIdle
 	dw YanmegaAnimationIdle
-	dw Pending03AnimationIdle
+	dw OniyanmaAnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle
 	dw EspeonAnimationIdle
@@ -357,7 +357,7 @@ AnimationIdlePointers:
 	dw CacawphonyAnimationIdle
 	dw TrebirAnimationIdle
 	dw SakurazeAnimationIdle
-	dw AmanobiAnimationIdle
+	dw TanobiAnimationIdle
 	dw TrustanAnimationIdle
 	dw KuwaguardAnimationIdle
 	dw TonquitoAnimationIdle
@@ -395,6 +395,7 @@ AnimationIdlePointers:
 	dw TyranitarAnimationIdle
 	dw LugiaAnimationIdle
 	dw HoOhAnimationIdle
-	dw ShiShiAnimationIdle
+	dw HyoshuYangAnimationIdle
+	dw HyoshuYinAnimationIdle
 	dw CelebiAnimationIdle
 	assert_table_length NUM_POKEMON

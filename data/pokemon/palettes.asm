@@ -583,8 +583,8 @@ INCBIN "gfx/pokemon/yanma/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/yanma/shiny.pal"
 INCBIN "gfx/pokemon/yanmega/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/yanmega/shiny.pal"
-INCBIN "gfx/pokemon/pending03/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/pending03/shiny.pal"
+INCBIN "gfx/pokemon/oniyanma/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/oniyanma/shiny.pal"
 INCBIN "gfx/pokemon/wooper/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/wooper/shiny.pal"
 INCBIN "gfx/pokemon/quagsire/front.gbcpal", middle_colors
@@ -746,8 +746,8 @@ INCBIN "gfx/pokemon/trebir/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/trebir/shiny.pal"
 INCBIN "gfx/pokemon/sakuraze/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/sakuraze/shiny.pal"
-INCBIN "gfx/pokemon/amanobi/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/amanobi/shiny.pal"
+INCBIN "gfx/pokemon/tanobi/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/tanobi/shiny.pal"
 INCBIN "gfx/pokemon/trustan/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/trustan/shiny.pal"
 INCBIN "gfx/pokemon/kuwaguard/front.gbcpal", middle_colors
@@ -824,8 +824,10 @@ INCBIN "gfx/pokemon/lugia/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/lugia/shiny.pal"
 INCBIN "gfx/pokemon/ho_oh/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/ho_oh/shiny.pal"
-INCBIN "gfx/pokemon/shi_shi/front.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/shi_shi/shiny.pal"
+INCBIN "gfx/pokemon/hyoshu_yang/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hyoshu_yang/shiny.pal"
+INCBIN "gfx/pokemon/hyoshu_yin/front.gbcpal", middle_colors
+INCLUDE "gfx/pokemon/hyoshu_yin/shiny.pal"
 INCBIN "gfx/pokemon/celebi/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/celebi/shiny.pal"
 

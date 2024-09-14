@@ -276,7 +276,7 @@ PokedexDataPointerTable:
 	dba FoxfirePokedexEntry
 	dba YanmaPokedexEntry
 	dba YanmegaPokedexEntry
-	dba Pending03PokedexEntry
+	dba OniyanmaPokedexEntry
 	dba WooperPokedexEntry
 	dba QuagsirePokedexEntry
 	dba EspeonPokedexEntry
@@ -357,7 +357,7 @@ PokedexDataPointerTable:
 	dba CacawphonyPokedexEntry
 	dba TrebirPokedexEntry
 	dba SakurazePokedexEntry
-	dba AmanobiPokedexEntry
+	dba TanobiPokedexEntry
 	dba TrustanPokedexEntry
 	dba KuwaguardPokedexEntry
 	dba TonquitoPokedexEntry
@@ -395,6 +395,7 @@ PokedexDataPointerTable:
 	dba TyranitarPokedexEntry
 	dba LugiaPokedexEntry
 	dba HoOhPokedexEntry
-	dba ShiShiPokedexEntry
+	dba HyoshuYangPokedexEntry
+	dba HyoshuYinPokedexEntry
 	dba CelebiPokedexEntry
 	assert_table_length NUM_POKEMON

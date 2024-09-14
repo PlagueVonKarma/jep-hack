@@ -2,19 +2,19 @@
 ; Fade from pink to orange.
 ; One color per step.
 
-	RGB 23, 12, 28
-	RGB 23, 12, 27
-	RGB 23, 13, 26
-	RGB 23, 13, 24
-	RGB 24, 14, 22
-	RGB 24, 14, 20
-	RGB 24, 15, 18
-	RGB 24, 15, 16
-	RGB 25, 16, 14
-	RGB 25, 16, 12
-	RGB 25, 17, 10
-	RGB 25, 17, 08
-	RGB 26, 18, 06
-	RGB 26, 18, 04
+	RGB 17, 22, 28
+	RGB 17, 22, 27
+	RGB 18, 22, 26
+	RGB 19, 22, 24
+	RGB 19, 21, 22
+	RGB 20, 21, 20
+	RGB 21, 21, 18
+	RGB 21, 21, 16
+	RGB 22, 20, 14
+	RGB 23, 20, 12
+	RGB 23, 20, 10
+	RGB 24, 20, 08
+	RGB 25, 19, 06
+	RGB 25, 19, 04
 	RGB 26, 19, 02
 	RGB 26, 19, 00

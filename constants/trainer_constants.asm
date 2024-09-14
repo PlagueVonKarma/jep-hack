@@ -6,6 +6,61 @@ MACRO trainerclass
 	const_def 1
 ENDM
 
+; If you're looking for names, here's a bunch. General aim is to improve etymological diversity. Largely taken from "popular name" charts. I will now get ads for childcare products. - PvK
+; Mandarin names use the notoriously horrid *toneless* Hanyu Pinyin, consistent with Sages. Wades-Giles will NOT invade my ROM Hack.
+; Korean names use Revised Romanisation for "localisation" and time-aptness.
+; If you want Japanese names, Bulbapedia tends to note them, so you can nick em from there.
+
+; SEREN - Welsh girl's name meaning "star"
+; ADERYN - Welsh girl's name meaning "bird"
+; FFION - Welsh girl's name
+; CERYS - Welsh girl's name
+; ALUN - Welsh boy's name
+; ARWYN - Welsh boy's name
+; BRYN - Welsh boy's name
+; RIONA - Irish girl's name
+; TADHG - Irish boy's name
+; RIAN - Irish unisex name
+; FIADH - Irish girl's name
+; AINE - Irish unisex(?) name
+; CORMAC - Irish boy's name
+; DIARMUID - Irish boy's name
+; LUCA - Scottish boy's name
+; THEO - Scottish boy's name
+; EWAN - Scottish boy's name
+; ORLA - Scottish girl's name
+; AVA - Scottish girl's name
+; DOVID - Yiddish version of David
+; FEIVEL - Yiddish girl's name (like Eyvel)
+; HERSHEL - Yiddish boy's name
+; MOISHE - Yiddish name derived from Moses
+; ALTAIR - Hebrew boy's name (means Falcon - could use somewhere...)
+; SHEM - Hebrew name
+; ZARA - Arab-Hebrew girl's name
+; SOLOMON - Hebrew boy's name
+; LILA - Sanskrit girl's name
+; XAVIER - Basque boy's name
+; NYLA - Arab girl's name, means winner which is really good here
+; VEGA - Latin-Arab name meaning "swooping eagle", doubles as a Street Fighter reference
+; SALAM - Arab boy's name (I think it's male, anyway?)
+; JAMAL - Yemeni boy's name (I also want to reference a friend who got me into ROM Hacking as a whole)
+; ABDULLAH - Arab boy's name
+; KHALID - Arab boy's name
+; OSAMA - Arab boy's name
+; ABDUL - Arab boy's name. On its own this can mean a large number of things, but it's also a JoJo reference!
+; YANG - 杨 Mandarin name
+; ZHAO - 赵 Mandarin name
+; ZHOU - 周 Mandarin name
+; WU - 吴 Mandarin name
+; WANG - 王 Mandarin name
+; MEI - 美 Mandarin name
+; IJUN - Korean boy's name
+; SIU - Koran boy's name
+; YEJUN - Korean boy's name
+; HAYUN - Korean girl's name
+; ISEO - Korean girl's name
+; JIA - Mandarin/Korean girl's name
+
 ; trainer class ids
 ; `trainerclass` indexes are for:
 ; - TrainerClassNames (see data/trainers/class_names.asm)
@@ -202,6 +257,8 @@ DEF KRIS EQU __trainer_class__
 	const DANA4
 	const DANA5
 	const IKUE ; Name taken from LGPE, referencing Pikachu's voice actor, Ikue Otani. Technically exists in Picnicker Brooke, but it's more convenient to put her in Viridian Forest, so...
+	const CASEY ; anime reference
+	const DUPLICA ; anime reference
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -227,6 +284,7 @@ DEF KRIS EQU __trainer_class__
 	const STEVE
 	const ALLEN
 	const DARIN
+	const RITCHIE ; anime reference
 
 	trainerclass COOLTRAINERF ; 1c
 	const GWEN

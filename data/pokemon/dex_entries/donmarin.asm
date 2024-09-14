@@ -1,10 +1,10 @@
-	db "LOCH BOSS@" ; species name
+	db "LOCHKEEPER@" ; species name
 	dw 802, 4850 ; height, weight
 
-	db   "Tempered and even-"
-	next "handed, DONMARIN"
-	next "carefully raises"
+	db   "Every PALSSIO pod"
+	next "is raised by one"
+	next "DONMARIN leader."
 
-	page "its pod. Its"
-	next "punishments are"
-	next "always fair.@"
+	page "The punishments it"
+	next "deals are harsh,"
+	next "but always fair.@"

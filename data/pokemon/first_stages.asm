@@ -357,7 +357,7 @@ FirstEvoStages::
 	dw SONEGG
 	dw SONEGG
 	dw SAKURAZE
-	dw AMANOBI
+	dw TANOBI
 	dw TRUSTAN
 	dw KUWAGUARD
 	dw TONQUITO
@@ -395,6 +395,7 @@ FirstEvoStages::
 	dw LARVITAR   ;f8
 	dw LUGIA
 	dw HO_OH
-	dw SHI_SHI
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw CELEBI
 	assert_table_length NUM_POKEMON

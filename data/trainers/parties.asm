@@ -1634,6 +1634,22 @@ CooltrainerMGroup:
 	dw DRAGONAIR
 	dw WRAP, SURF, DRAGON_RAGE, SLAM
 	db -1 ; end
+	
+	next_list_item ; COOLTRAINERM (11)
+	db "RITCHIE@", TRAINERTYPE_MOVES ; anime reference
+	db 43
+	dw BUTTERFREE
+	dw SLEEP_POWDER, PSYCHIC_M, WHIRLWIND, STUN_SPORE
+	db 41
+	dw PUPITAR
+	dw HEADBUTT, SANDSTORM, ROCK_SLIDE, EARTHQUAKE
+	db 41
+	dw CHARIZARD
+	dw FLAMETHROWER, WING_ATTACK, SLASH, EARTHQUAKE
+	db 45
+	dw GOROCHU
+	dw THUNDERBOLT, SUBMISSION, BODY_SLAM, THUNDER_WAVE
+	db -1 ; end
 
 	end_list_items
 
@@ -2687,12 +2703,10 @@ BugCatcherGroup:
 FisherGroup:
 	next_list_item ; FISHER (1)
 	db "JUSTIN@", TRAINERTYPE_NORMAL ; There are multiple "Karp Spam" Fishers, so Justin is being completely changed.
+	db 9
+	dw ORFRY
 	db 15 ; Essentially, he is the player's introduction to Old Rod fishing in GSC.
 	dw MAGIKARP
-	db 15
-	dw ORFRY
-	db 17
-	dw TENTACOOL 
 	db -1 ; end
 
 	next_list_item ; FISHER (2)
@@ -3679,7 +3693,7 @@ HikerGroup:
 
 	next_list_item ; HIKER (2)
 	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db 4
+	db 5
 	dw PHANPY
 	db 6
 	dw WOOPER
@@ -3831,7 +3845,7 @@ HikerGroup:
 	db "DANIEL@", TRAINERTYPE_NORMAL
 	db 10
 	dw WOOPER
-	db 12
+	db 11
 	dw ONIX
 	db -1 ; end
 

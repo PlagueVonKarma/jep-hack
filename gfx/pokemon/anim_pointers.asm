@@ -275,7 +275,7 @@ AnimationPointers:
 	dw FoxfireAnimation
 	dw YanmaAnimation
 	dw YanmegaAnimation
-	dw Pending03Animation
+	dw OniyanmaAnimation
 	dw WooperAnimation
 	dw QuagsireAnimation
 	dw EspeonAnimation
@@ -357,7 +357,7 @@ AnimationPointers:
 	dw CacawphonyAnimation
 	dw TrebirAnimation
 	dw SakurazeAnimation
-	dw AmanobiAnimation
+	dw TanobiAnimation
 	dw TrustanAnimation
 	dw KuwaguardAnimation
 	dw TonquitoAnimation
@@ -395,6 +395,7 @@ AnimationPointers:
 	dw TyranitarAnimation
 	dw LugiaAnimation
 	dw HoOhAnimation
-	dw ShiShiAnimation
+	dw HyoshuYangAnimation
+	dw HyoshuYinAnimation
 	dw CelebiAnimation
 	assert_table_length NUM_POKEMON

@@ -107,6 +107,13 @@
 	const MUSIC_MOBILE_CENTER                ; 66
 	const MUSIC_NIHON_TOWN_01                ; 67
 	const MUSIC_SINJOH_RUINS                 ; 68
+	const MUSIC_LAVENDERCRYPT				 ; 69
+	const MUSIC_SOUTHCITY					 ; 6a
+	const MUSIC_NIHONTIME					 ; 6b
+	const MUSIC_PEACEFULTHEME				 ; 6c
+	const MUSIC_COASTTOWN					 ; 6d
+	const MUSIC_COLDWINTER					 ; 6e
+	const MUSIC_COOLCAVE					 ; 6f
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

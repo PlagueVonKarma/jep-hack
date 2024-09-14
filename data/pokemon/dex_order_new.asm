@@ -132,7 +132,7 @@ NewPokedexOrder:
 	dw NIDOREIGN
 	dw YANMA
 	dw YANMEGA
-	dw PENDING03
+	dw ONIYANMA
 	dw SUNKERN
 	dw SUNBUD
 	dw SUNFLORA
@@ -326,7 +326,7 @@ NewPokedexOrder:
 	dw CACAWPHONY
 	dw TREBIR
 	dw SAKURAZE
-	dw AMANOBI
+	dw TANOBI
 	dw TRUSTAN
 	dw KUWAGUARD
 	dw TONQUITO
@@ -394,7 +394,8 @@ NewPokedexOrder:
 	dw TYRANITAR
 	dw LUGIA
 	dw HO_OH
-	dw SHI_SHI
+	dw HYOSHU_YANG
+	dw HYOSHU_YIN
 	dw MEWTWO
 	dw MEW
 	dw CELEBI

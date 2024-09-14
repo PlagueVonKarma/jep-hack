@@ -218,6 +218,8 @@ DEF BATTLEANIM_BASE_TILE EQU 7 * 7  ; Maximum size of a pokemon picture
 	const ANIM_OBJ_PLAYERHEAD_1ROW
 	const ANIM_OBJ_ENEMYFEET_2ROW
 	const ANIM_OBJ_PLAYERHEAD_2ROW
+	const ANIM_OBJ_COIN_HURL
+	const ANIM_OBJ_SHOOTING_MIST
 DEF NUM_ANIM_OBJS EQU const_value
 
 ; DoBattleAnimFrame arguments (see engine/battle_anims/functions.asm)
@@ -302,6 +304,7 @@ DEF NUM_ANIM_OBJS EQU const_value
 	const BATTLEANIMFUNC_ANCIENT_POWER
 	const BATTLEANIMFUNC_ROCK_SMASH
 	const BATTLEANIMFUNC_COTTON
+	const BATTLEANIMFUNC_COINHURL
 DEF NUM_BATTLEANIMFUNCS EQU const_value
 
 ; BattleAnimFrameData indexes (see data/battle_anims/framesets.asm)
@@ -491,6 +494,7 @@ DEF NUM_BATTLEANIMFUNCS EQU const_value
 	const BATTLEANIMFRAMESET_B6
 	const BATTLEANIMFRAMESET_B7
 	const BATTLEANIMFRAMESET_B8
+	const BATTLEANIMFRAMESET_MIST
 DEF NUM_BATTLEANIMFRAMESETS EQU const_value
 
 ; BattleAnimOAMData indexes (see data/battle_anims/oam.asm)
@@ -851,3 +855,67 @@ DEF NUM_BG_EFFECTS EQU 5 ; see wActiveBGEffects
 	const PAL_BATTLE_OB_GREEN  ; 5
 	const PAL_BATTLE_OB_BLUE   ; 6
 	const PAL_BATTLE_OB_BROWN  ; 7
+
+; custom palettes (from Sour Crystal)
+	const_def
+	const PAL_BTLCUSTOM_GRAY             ; 0
+	const PAL_BTLCUSTOM_YELLOW           ; 1
+	const PAL_BTLCUSTOM_RED              ; 2
+	const PAL_BTLCUSTOM_GREEN            ; 3
+	const PAL_BTLCUSTOM_BLUE             ; 4
+	const PAL_BTLCUSTOM_BROWN            ; 5
+	const PAL_BTLCUSTOM_PURPLE           ; 6
+	const PAL_BTLCUSTOM_ICE              ; 7
+	const PAL_BTLCUSTOM_FIRE             ; 8
+	const PAL_BTLCUSTOM_GLOBE            ; 9
+	const PAL_BTLCUSTOM_WATER            ; a
+	const PAL_BTLCUSTOM_BUBBLE           ; b
+	const PAL_BTLCUSTOM_DRAGONBREATH     ; c
+	const PAL_BTLCUSTOM_DRAGON_RAGE      ; d
+	const PAL_BTLCUSTOM_AURORA           ; e
+	const PAL_BTLCUSTOM_SPORE            ; f
+	const PAL_BTLCUSTOM_PEACH            ; 10
+	const PAL_BTLCUSTOM_LIGHT_SCREEN     ; 11
+	const PAL_BTLCUSTOM_MIRROR_COAT      ; 12
+	const PAL_BTLCUSTOM_RECYCLE          ; 13
+	const PAL_BTLCUSTOM_LAVA_ROCKS       ; 14
+	const PAL_BTLCUSTOM_SKILL_SWAP       ; 15
+	const PAL_BTLCUSTOM_WILL_O_WISP      ; 16
+	const PAL_BTLCUSTOM_GLOW_YELLOW      ; 17
+	const PAL_BTLCUSTOM_GLOW_LUSTER      ; 18
+	const PAL_BTLCUSTOM_BRIGHT           ; 19
+	const PAL_BTLCUSTOM_VERY_BRIGHT      ; 1a
+	const PAL_BTLCUSTOM_CHARRED          ; 1b
+	const PAL_BTLCUSTOM_COSMIC           ; 1c
+	const PAL_BTLCUSTOM_SIGNAL_BEAM_RED  ; 1d
+	const PAL_BTLCUSTOM_SIGNAL_BEAM_BLUE ; 1e
+	const PAL_BTLCUSTOM_BULK_UP          ; 1f
+	const PAL_BTLCUSTOM_GRASSWHISTLE     ; 20
+	const PAL_BTLCUSTOM_PSYCHO_BOOST_1   ; 21
+	const PAL_BTLCUSTOM_PSYCHO_BOOST_2   ; 22
+	const PAL_BTLCUSTOM_GRAVITY          ; 23
+	const PAL_BTLCUSTOM_GLOW_GREEN       ; 24
+	const PAL_BTLCUSTOM_HEAT_WAVE        ; 25
+	const PAL_BTLCUSTOM_PAYBACK          ; 26
+	const PAL_BTLCUSTOM_GASTRO_ACID      ; 27
+	const PAL_BTLCUSTOM_DARK_PULSE       ; 28
+	const PAL_BTLCUSTOM_GLOW_LIME        ; 29
+	const PAL_BTLCUSTOM_DRAGON_PULSE     ; 2a
+	const PAL_BTLCUSTOM_SNOW             ; 2b
+	const PAL_BTLCUSTOM_LAVA_PLUME       ; 2c
+	const PAL_BTLCUSTOM_INVERT_BLACK     ; 2d
+	const PAL_BTLCUSTOM_LIME             ; 2e
+	const PAL_BTLCUSTOM_BEE              ; 2f
+	const PAL_BTLCUSTOM_ROAR_OF_TIME     ; 30
+	const PAL_BTLCUSTOM_MOON             ; 31
+	const PAL_BTLCUSTOM_DARK_VOID        ; 32
+	const PAL_BTLCUSTOM_REFRESH          ; 33
+	const PAL_BTLCUSTOM_HEAT_BG          ; 34
+	const PAL_BTLCUSTOM_GOLD_BG          ; 35
+	const PAL_BTLCUSTOM_STRUGGLE_BUG     ; 36
+	const PAL_BTLCUSTOM_PINK             ; 37
+DEF NUM_CUSTOM_BATTLE_PALETTES EQU const_value
+
+DEF PAL_BTLCUSTOM_DEFAULT EQU -1
+
+	
