@@ -127,11 +127,11 @@ LavenderCryptSet3_MapEvents:
 
 	def_warp_events
 	warp_event  3,  8, LAVENDER_CRYPT, 4 ; Entrance
-	warp_event  7, 13, LAVENDER_CRYPT_DOKUROARS_ROOM, 1 ; To Dokuroar
+	warp_event  7, 14, LAVENDER_CRYPT_DOKUROARS_ROOM, 1 ; To Dokuroar
 	; Correct Path
 	warp_event 22,  3, LAVENDER_CRYPT_SET_2, 3 ; Right Route
 	warp_event 19, 10, LAVENDER_CRYPT_SET_2, 4 ; Right Route
-	warp_event  7, 17, LAVENDER_CRYPT_SET_2, 5 ; END
+	warp_event  6, 17, LAVENDER_CRYPT_SET_2, 5 ; END
 	warp_event  8,  4, LAVENDER_CRYPT_SET_2, 9 ; Left Route
 	
 	; Incorrect Path

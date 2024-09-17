@@ -3113,7 +3113,8 @@ wRoute66WhiteCityGateID:: db
 wFuchsiaSafariZoneGateID:: db
 wVermilionCityID:: db
 wRoute14ID:: db
-	ds 42
+wLavenderCryptDokuroarsRoomID:: db
+	ds 41
 
 ; fight counts
 wJackFightCount::    db

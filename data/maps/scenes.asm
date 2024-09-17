@@ -92,4 +92,5 @@ MapScenes::
 	scene_var SAFARI_ZONE_FUCHSIA_GATE_BETA, wFuchsiaSafariZoneGateID
 	scene_var VERMILION_CITY, wVermilionCityID
 	scene_var ROUTE_14, wVermilionCityID
+	scene_var LAVENDER_CRYPT_DOKUROARS_ROOM, wLavenderCryptDokuroarsRoomID
 	db -1 ; end

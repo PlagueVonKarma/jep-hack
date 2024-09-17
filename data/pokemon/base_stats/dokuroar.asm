@@ -1,19 +1,19 @@
 	db 0 ; species ID placeholder
 
-	db  87, 123, 110,  65,  65,  65
+	db  87, 125, 110,  66,  66,  66
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, ROCK ; type
-	db 45 ; catch rate								; PLACEHOLDER
-	db 64 ; base exp								; PLACEHOLDER
-	db NO_ITEM, NO_ITEM ; items
+	db 25 ; catch rate
+	db 166 ; base exp
+	db THICK_CLUB, THICK_CLUB ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
 	db 120 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/dokuroar/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)
-	db GROWTH_MEDIUM_SLOW ; growth rate				; PLACEHOLDER
+	db GROWTH_SLOW ; growth rate
 	dn EGG_NONE, EGG_NONE ; egg groups
 
 	; tm/hm learnset
