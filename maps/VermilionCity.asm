@@ -14,7 +14,7 @@ VermilionCity_MapScripts:
 	scene_script VermilionCityNoop2Scene, SCENE_VERMILIONCITY_SUICUNE
 
 	def_callbacks
-	callback MAPCALLBACK_NEWMAP, VermilionCityFlypointCallback
+	callback MAPCALLBACK_NEWMAP, VermilionCityFlypointAndSuicuneCallback
 
 VermilionCityNoop1Scene:
 	end
@@ -22,31 +22,31 @@ VermilionCityNoop1Scene:
 VermilionCityNoop2Scene:
 	end
 
-VermilionCitySuicuneCallback:
+VermilionCityFlypointAndSuicuneCallback:
+	setflag ENGINE_FLYPOINT_VERMILION
 	checkevent EVENT_SAW_SUICUNE_ON_ROUTE_42
-	iffalse .NoAppear
+	iftrue .Check2
+	sjump .NoAppear
+
+.Check2:
 	checkevent EVENT_SAW_SUICUNE_IN_VERMILION_CITY
-	iffalse .NoAppear
+	iftrue .NoAppear
+	sjump .Appear
+
+.Appear
 	appear VERMILIONCITY_SUICUNE
+	disappear VERMILIONCITY_EUSINE
 	endcallback
 
-.NoAppear:
+.NoAppear
 	disappear VERMILIONCITY_SUICUNE
-	disappear VERMILIONCITY_EUSINE ; just making sure, also skips using any events for this matter
+	disappear VERMILIONCITY_EUSINE
 	endcallback
 
-; BUG: Movement is fucky, eusine is a little weird. I'm just incompetent.
-
-; Two different startup scripts given the position.
-; I am 99.9% sure there's a way to simply modify this by the player's position on the map, like in RBY.
-; However, I can't seem to find any examples...
-
-; If you're smarter than me, you should know what to do.
 VermilionCitySuicuneScriptStartupLeft:
 	playmusic MUSIC_NONE
 	showemote EMOTE_SHOCK, PLAYER, 15
 	pause 15
-	; jank zone begins here.
 	applymovement PLAYER, VermilionCityPlayerToTheLeftMovement
 	sjump VermilionCitySuicuneScript
 
@@ -54,13 +54,15 @@ VermilionCitySuicuneScriptStartupRight:
 	playmusic MUSIC_NONE
 	showemote EMOTE_SHOCK, PLAYER, 15
 	pause 15
-	; jank zone ends here.
-	turnobject PLAYER, RIGHT ; basically if you can use the player's x/y position you should use this and the left movement in an if this then that statement.
-	; fallthrough
+	turnobject PLAYER, RIGHT
+	sjump VermilionCitySuicuneScript
+
 VermilionCitySuicuneScript:
 	playsound SFX_WARP_FROM
 	applymovement VERMILIONCITY_SUICUNE, VermilionCitySuicuneMovement1
-	cry SUICUNE 
+	pause 15
+	cry SUICUNE
+	playsound SFX_WARP_FROM
 	applymovement VERMILIONCITY_SUICUNE, VermilionCitySuicuneMovement2
 	disappear VERMILIONCITY_SUICUNE
 	pause 10
@@ -75,9 +77,9 @@ VermilionCitySuicuneScript:
 	turnobject PLAYER, UP
 	applymovement VERMILIONCITY_EUSINE, VermilionCityEusineMovement2
 	
-	setscene SCENE_VERMILIONCITY_NOOP
 	setevent EVENT_SAW_SUICUNE_IN_VERMILION_CITY
 	setmapscene ROUTE_14, SCENE_ROUTE14_SUICUNE
+	setscene SCENE_VERMILIONCITY_NOOP
 	disappear VERMILIONCITY_EUSINE
 	special RestartMapMusic
 	end
@@ -87,6 +89,7 @@ VermilionCityPlayerToTheLeftMovement:
 	step_end
 
 VermilionCityEusineMovement1:
+	big_step RIGHT
 	big_step RIGHT
 	big_step RIGHT
 	big_step RIGHT
@@ -143,10 +146,6 @@ VermilionCityEusineSawSuicune:
 	para "Sorry, <PLAYER>!"
 	line "I've got to go!"
 	done
-
-VermilionCityFlypointCallback:
-	setflag ENGINE_FLYPOINT_VERMILION
-	endcallback
 
 VermilionCityTeacherScript:
 	jumptextfaceplayer VermilionCityTeacherText
@@ -433,5 +432,5 @@ VermilionCity_MapEvents:
 	object_event 14, 16, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VermilionCitySuperNerdScript, -1
 	object_event 34,  8, SPRITE_BIG_SNORLAX, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionSnorlax, EVENT_VERMILION_CITY_SNORLAX
 	object_event 31, 12, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VermilionGymBadgeGuy, -1
-	object_event 25, 24, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
+	object_event 24, 24, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VERMILION_CITY_EUSINE
 	object_event 31, 21, SPRITE_SUICUNE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_IN_VERMILION_CITY
