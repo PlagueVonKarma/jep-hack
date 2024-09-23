@@ -58,7 +58,6 @@ INCLUDE "audio/music/magnettrain.asm"
 INCLUDE "audio/music/lavendertown.asm"
 INCLUDE "audio/music/dancinghall.asm"
 INCLUDE "audio/music/contestresults.asm"
-INCLUDE "audio/music/route30.asm"
 
 
 SECTION "Songs 3", ROMX
@@ -161,6 +160,7 @@ INCLUDE "audio/music/Peaceful.asm"
 INCLUDE "audio/music/CoastTown.asm"
 INCLUDE "audio/music/ColdWinter.asm"
 INCLUDE "audio/music/CoolCave.asm"
+INCLUDE "audio/music/route30.asm" ; u broke the bamk
 
 
 SECTION "Sound Effects", ROMX
