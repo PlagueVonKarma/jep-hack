@@ -64,13 +64,20 @@ DokuroarAttackScript:
 	pause 15
 	closetext
 	applymovement LAVENDERCRYPT_DOKUROAR2, DokuroarJumpscare
-	pause 12
-	applymovement LAVENDERCRYPT_DOKUROAR2, DokuroarJumpscare
-	pause 12
-	applymovement LAVENDERCRYPT_DOKUROAR2, DokuroarJumpscare
+	playsound SFX_PLACE_PUZZLE_PIECE_DOWN
+	earthquake 15
+	pause 5
 	turnobject PLAYER, UP
 	showemote EMOTE_SHOCK, PLAYER, 15
-	pause 15
+	pause 5
+	applymovement LAVENDERCRYPT_DOKUROAR2, DokuroarJumpscare
+	playsound SFX_PLACE_PUZZLE_PIECE_DOWN
+	earthquake 15
+	pause 5
+	applymovement LAVENDERCRYPT_DOKUROAR2, DokuroarJumpscare
+	playsound SFX_PLACE_PUZZLE_PIECE_DOWN
+	earthquake 15
+	pause 5
 	opentext
 	writetext DokuroarFightText
 	cry DOKUROAR
@@ -85,7 +92,7 @@ DokuroarAttackScript:
 	end
 
 DokuroarJumpscare:
-	big_step DOWN
+	slow_step DOWN
 	step_end
 
 LavenderCryptDokuroarTalk:
@@ -140,4 +147,4 @@ LavenderCryptDokuroarsRoom_MapEvents:
 
 	def_object_events
 	object_event  6,  7, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_SCRIPT, 0, DokuroarTalkScript, EVENT_CRYPT_DOKUROAR_1
-	object_event  6,  7, SPRITE_MONSTER, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_SCRIPT, 0, DokuroarTalkScript2, EVENT_CRYPT_DOKUROAR_2
+	object_event  6,  7, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_EMOTE, OBJECTTYPE_SCRIPT, 0, DokuroarTalkScript2, EVENT_CRYPT_DOKUROAR_2

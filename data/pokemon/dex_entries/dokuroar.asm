@@ -1,5 +1,5 @@
 	db "SKELETAL@" ; species name
-	dw 807, 4660 ; height, weight - placeholder
+	dw 902, 4960 ; height, weight - placeholder
 
 	db   "Believed to be a"
 	next "spirit inhabiting"
