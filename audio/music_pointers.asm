@@ -116,4 +116,6 @@ Music:
 	dba Music_CoastTown
 	dba Music_ColdWinter
 	dba Music_CoolCave
+	dba Music_NihonTrainerBattle
+	dba Music_NorthCity
 	assert_table_length NUM_MUSIC_SONGS

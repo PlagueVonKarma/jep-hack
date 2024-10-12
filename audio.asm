@@ -161,6 +161,8 @@ INCLUDE "audio/music/CoastTown.asm"
 INCLUDE "audio/music/ColdWinter.asm"
 INCLUDE "audio/music/CoolCave.asm"
 INCLUDE "audio/music/route30.asm" ; u broke the bamk
+INCLUDE "audio/music/NihonTrainerBattle.asm"
+INCLUDE "audio/music/NorthCity.asm"
 
 
 SECTION "Sound Effects", ROMX
