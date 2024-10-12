@@ -1206,6 +1206,8 @@ AlteringCave_Blocks:
 ThreeIslandPort_Blocks:
 	INCBIN "maps/ThreeIslandPort.ablk"
 
+SECTION "Map Blocks 4", ROMX
+
 SinjohRuinsExterior_Blocks:
 	INCBIN "maps/SinjohRuinsExterior.ablk"
 
@@ -1239,8 +1241,6 @@ HoneyGrandmasHouse_Blocks:
 SepiaSchool_Blocks:
 	INCBIN "maps/SepiaSchool.ablk"
 
-SECTION "Map Blocks 4", ROMX
-	
 WhiteCity_Blocks:
 	INCBIN "maps/WhiteCity.ablk"
 	

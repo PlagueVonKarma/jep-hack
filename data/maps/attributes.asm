@@ -771,8 +771,10 @@ ENDM
 	map_attributes TwoIsland, TWO_ISLAND, $00, 0 ; Bank 2
 	map_attributes CapeBrink, CAPE_BRINK, $00, 0 ; Bank 2
 	
-	map_attributes ThreeIslandPort, THREE_ISLAND_PORT, $00, 0 ; Bank 2
-	map_attributes ThreeIsland, THREE_ISLAND, $00, 0 ; Bank 3 
+	map_attributes ThreeIslandPort, THREE_ISLAND_PORT, $02, NORTH ; Bank 2
+	connection north, ThreeIsland, THREE_ISLAND, 0
+	map_attributes ThreeIsland, THREE_ISLAND, $03, SOUTH ; Bank 3 
+	connection south, ThreeIslandPort, THREE_ISLAND_PORT, 0
 	map_attributes BondBridge, BOND_BRIDGE, $00, 0 ; Bank 3
 	map_attributes BerryForest, BERRY_FOREST, $00, 0 ; Bank 3
 	
