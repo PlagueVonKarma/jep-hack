@@ -704,7 +704,7 @@ ENDM
     map_attributes BellchimeTrail, BELLCHIME_TRAIL, $00, 0
 	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $00, 0
 	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $00, 0
-	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
+	map_attributes ViridianForest, VIRIDIAN_FOREST, $4D, 0
 	map_attributes ViridianForestViridianGate, VIRIDIAN_FOREST_VIRIDIAN_GATE, $00, 0
 	map_attributes ViridianForestPewterGate, VIRIDIAN_FOREST_PEWTER_GATE, $00, 0
 	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $00, 0
@@ -773,10 +773,12 @@ ENDM
 	
 	map_attributes ThreeIslandPort, THREE_ISLAND_PORT, $02, NORTH ; Bank 2
 	connection north, ThreeIsland, THREE_ISLAND, 0
-	map_attributes ThreeIsland, THREE_ISLAND, $03, SOUTH ; Bank 3 
+	map_attributes ThreeIsland, THREE_ISLAND, $03, SOUTH | WEST ; Bank 3 
 	connection south, ThreeIslandPort, THREE_ISLAND_PORT, 0
-	map_attributes BondBridge, BOND_BRIDGE, $00, 0 ; Bank 3
-	map_attributes BerryForest, BERRY_FOREST, $00, 0 ; Bank 3
+	connection west, BondBridge, BOND_BRIDGE, -3
+	map_attributes BondBridge, BOND_BRIDGE, $02, EAST ; Bank 3
+	connection east, ThreeIsland, THREE_ISLAND, 3
+	map_attributes BerryForest, BERRY_FOREST, $05, 0 ; Bank 3
 	
 	map_attributes FourIsland, FOUR_ISLAND, $00, 0 ; Bank 3
 	map_attributes IcefallCaveEntrance, ICEFALL_CAVE_ENTRANCE, $00, 0 ; Bank 3

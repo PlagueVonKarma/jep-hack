@@ -579,7 +579,7 @@ ENDM
 	newgroup THREE_ISLAND ; 30
 	map_const THREE_ISLAND_PORT,					20, 9 ; 1
 	map_const THREE_ISLAND,							10, 18 ; 2
-	map_const BOND_BRIDGE,							10, 10 ; 3
+	map_const BOND_BRIDGE,							50, 16 ; 3
 	map_const BERRY_FOREST,							17, 15 ; 4
 	endgroup
 	
