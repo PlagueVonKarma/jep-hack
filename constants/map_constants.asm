@@ -573,7 +573,7 @@ ENDM
 	
 	newgroup TWO_ISLAND ; 29
 	map_const TWO_ISLAND,							20, 9  ; 1
-	map_const CAPE_BRINK,							10, 10 ; 2
+	map_const CAPE_BRINK,							10, 18 ; 2
 	endgroup
 	
 	newgroup THREE_ISLAND ; 30

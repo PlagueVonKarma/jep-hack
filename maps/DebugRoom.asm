@@ -400,11 +400,11 @@ DebugRoom_MapEvents:
 	warp_event 27,  5, PEWTER_CITY, 2
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
 	warp_event  4,  9, SUMMER_BEACH_HOUSE, 1 ; left lab/league warp
-	warp_event  5,  9, ONE_ISLAND, 1 ; right lab/league warp
+	warp_event  5,  9, BLUE_FOREST, 1 ; right lab/league warp
 	warp_event 35, 17, OLD_CITY, 1 ; east warp
 	warp_event  5, 35, LAVENDER_TOWN, 1 ; southwest warp
 	warp_event 19, 34, SAFARI_ZONE_FUCHSIA_GATE_BETA, 3 ; southern warp
-	warp_event 33, 33, THREE_ISLAND_PORT, 1 ; southeast warp
+	warp_event 33, 33, TWO_ISLAND, 1 ; southeast warp
 	warp_event  5,  3, HAUNTED_HOUSE_FOYER, 1
 	warp_event 34, 11, WINNERS_PATH, 3
 

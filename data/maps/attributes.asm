@@ -768,8 +768,10 @@ ENDM
 	map_attributes MtEmberSummit, MT_EMBER_SUMMIT, $00, 0 ; Bank 2
 	map_attributes MtEmberHiddenPath, MT_EMBER_HIDDEN_PATH, $00, 0 ; Bank 2
 	
-	map_attributes TwoIsland, TWO_ISLAND, $00, 0 ; Bank 2
-	map_attributes CapeBrink, CAPE_BRINK, $00, 0 ; Bank 2
+	map_attributes TwoIsland, TWO_ISLAND, $02, NORTH ; Bank 2
+	connection north, CapeBrink, CAPE_BRINK, 10
+	map_attributes CapeBrink, CAPE_BRINK, $0A, SOUTH ; Bank 2
+	connection south, TwoIsland, TWO_ISLAND, -10
 	
 	map_attributes ThreeIslandPort, THREE_ISLAND_PORT, $02, NORTH ; Bank 2
 	connection north, ThreeIsland, THREE_ISLAND, 0

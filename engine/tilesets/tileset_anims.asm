@@ -244,7 +244,6 @@ TilesetNihonOldAnim:
 TilesetNihonSouthAnim:
 TilesetNihonWestAnim:
 TilesetNihonWhiteCityAnim:
-TilesetSeviiAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -290,6 +289,22 @@ TilesetKantoAnim:
 	dw NULL,  AnimateFlowerTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
+	
+TilesetSeviiAnim:
+	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $53, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $53, WriteTileFromAnimBuffer
+	dw NULL,  AnimateWaterPalette
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateFlowerTile
+	dw vTiles2 tile $53, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $53, WriteTileFromAnimBuffer
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
