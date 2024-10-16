@@ -27,6 +27,7 @@ DEF MAP_LENGTH EQU _RS
 	const ENVIRONMENT_5
 	const GATE
 	const DUNGEON
+	const FOREST
 DEF NUM_ENVIRONMENTS EQU const_value - 1
 
 ; map palettes (wEnvironment)

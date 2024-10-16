@@ -1292,3 +1292,12 @@ HauntedHouse1F_Blocks:
 HauntedHouse2F_Blocks:
 	INCBIN "maps/HauntedHouse2F.ablk"
 
+KantoSafariZoneCenter_Blocks:
+	INCBIN "maps/KantoSafariZoneCenter.ablk"
+
+KantoSafariZoneArea1South_Blocks:
+	INCBIN "maps/KantoSafariZoneArea1South.ablk"
+
+KantoSafariZoneArea1North_Blocks:
+	INCBIN "maps/KantoSafariZoneArea1North.ablk"
+

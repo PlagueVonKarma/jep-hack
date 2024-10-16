@@ -230,6 +230,8 @@ StartTrainerBattle_DetermineWhichAnimation:
 	jr z, .cave
 	cp DUNGEON
 	jr z, .cave
+	cp FOREST
+	jr z, .cave
 	set TRANS_NO_CAVE_F, e
 .cave
 	ld hl, .StartingPoints

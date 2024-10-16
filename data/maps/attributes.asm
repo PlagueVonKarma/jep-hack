@@ -865,6 +865,16 @@ ENDM
 	map_attributes JackysHouse, JACKYS_HOUSE, $00, 0
 	map_attributes SummerBeachHouse, SUMMER_BEACH_HOUSE, $00, 0
 	
+	map_attributes KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, $05, EAST
+	connection east, KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, -2
+	
+	map_attributes KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, $05, NORTH | WEST
+	connection north, KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, 0
+	connection west, KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, 2
+
+	map_attributes KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, $05, SOUTH
+	connection south, KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, 0
+	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
 	map_attributes WhiteCity, WHITE_CITY, $01, 0 ; this is on its own for now. add connections later.
@@ -872,3 +882,4 @@ ENDM
 	
 	map_attributes SinjohRuinsExterior, SINJOH_RUINS_EXTERIOR, $00, 0
 	map_attributes SinjohRuinsInterior, SINJOH_RUINS_EXTERIOR, $00, 0
+	

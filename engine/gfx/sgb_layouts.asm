@@ -539,6 +539,8 @@ endr
 	jr z, .env5
 	cp GATE
 	jr z, .gate
+	;cp FOREST
+	;jr z, .route
 	ld a, [wMapGroup]
 	ld e, a
 	ld d, 0

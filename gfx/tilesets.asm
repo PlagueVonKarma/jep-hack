@@ -318,15 +318,6 @@ INCBIN "data/tilesets/nihon01_metatiles.bin"
 TilesetNihon1Coll::
 INCLUDE "data/tilesets/nihon01_collision.asm"
 
-TilesetForestKantoGFX::
-INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
-
-TilesetForestKantoMeta::
-INCBIN "data/tilesets/forest_kanto_metatiles.bin"
-
-TilesetForestKantoColl::
-INCLUDE "data/tilesets/forest_kanto_collision.asm"
-
 TilesetMuseumGFX::
 INCBIN "gfx/tilesets/museum.2bpp.lz"
 
@@ -459,9 +450,6 @@ INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
 
 TilesetNihon1Attr::
 INCBIN "data/tilesets/nihon01_attributes.bin"
-
-TilesetForestKantoAttr::
-INCBIN "data/tilesets/forest_kanto_attributes.bin"
 
 SECTION "Tileset Data 12", ROMX
 
@@ -654,3 +642,15 @@ INCBIN "data/tilesets/lavendercrypt_metatiles.bin"
 
 TilesetLavenderCryptColl::
 INCLUDE "data/tilesets/lavendercrypt_collision.asm"
+
+TilesetForestKantoGFX::
+INCBIN "gfx/tilesets/forest_kanto.2bpp.lz"
+
+TilesetForestKantoMeta::
+INCBIN "data/tilesets/forest_kanto_metatiles.bin"
+
+TilesetForestKantoColl::
+INCLUDE "data/tilesets/forest_kanto_collision.asm"
+
+TilesetForestKantoAttr::
+INCBIN "data/tilesets/forest_kanto_attributes.bin"

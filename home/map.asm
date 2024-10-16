@@ -386,6 +386,8 @@ CheckIndoorMap::
 	cp DUNGEON
 	ret z
 	cp GATE
+	ret z
+	cp FOREST
 	ret
 
 LoadMapAttributes::

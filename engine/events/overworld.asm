@@ -777,6 +777,8 @@ EscapeRopeOrDig:
 	jr z, .incave
 	cp DUNGEON
 	jr z, .incave
+	cp FOREST
+	jr z, .incave
 .fail
 	ld a, $2
 	ret
@@ -1781,6 +1783,8 @@ BikeFunction:
 	cp CAVE
 	jr z, .ok
 	cp GATE
+	jr z, .ok
+	cp FOREST
 	jr z, .ok
 	jr .nope
 
