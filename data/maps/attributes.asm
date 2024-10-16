@@ -782,7 +782,7 @@ ENDM
 	connection east, ThreeIsland, THREE_ISLAND, 3
 	map_attributes BerryForest, BERRY_FOREST, $05, 0 ; Bank 3
 	
-	map_attributes FourIsland, FOUR_ISLAND, $00, 0 ; Bank 3
+	map_attributes FourIsland, FOUR_ISLAND, $02, 0 ; Bank 3
 	map_attributes IcefallCaveEntrance, ICEFALL_CAVE_ENTRANCE, $00, 0 ; Bank 3
 	map_attributes IcefallCave1F, ICEFALL_CAVE_1F, $00, 0 ; Bank 3
 	map_attributes IcefallCaveB1F, ICEFALL_CAVE_B1F, $00, 0 ; Bank 3

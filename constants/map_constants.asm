@@ -584,7 +584,7 @@ ENDM
 	endgroup
 	
 	newgroup FOUR_ISLAND ; 31
-	map_const FOUR_ISLAND,							10, 10 ; 1
+	map_const FOUR_ISLAND,							25, 20 ; 1
 	map_const ICEFALL_CAVE_ENTRANCE,				10, 10 ; 2
 	map_const ICEFALL_CAVE_1F,						10, 10 ; 3
 	map_const ICEFALL_CAVE_B1F,						10, 10 ; 4
