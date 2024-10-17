@@ -1300,4 +1300,9 @@ KantoSafariZoneArea1South_Blocks:
 
 KantoSafariZoneArea1North_Blocks:
 	INCBIN "maps/KantoSafariZoneArea1North.ablk"
+	
+KantoSafariZoneArea2East_Blocks:
+	INCBIN "maps/KantoSafariZoneArea2East.ablk"
 
+KantoSafariZoneArea2West_Blocks:
+	INCBIN "maps/KantoSafariZoneArea2West.ablk"

@@ -376,7 +376,9 @@ ENDM
 	map_const SUMMER_BEACH_HOUSE,                           7,  4 ; 14
 	map_const KANTO_SAFARI_ZONE_CENTER,                    15, 15 ; 15
 	map_const KANTO_SAFARI_ZONE_AREA1_SOUTH,               15,  9 ; 16
-	map_const KANTO_SAFARI_ZONE_AREA1_NORTH,               15,  4 ; 16
+	map_const KANTO_SAFARI_ZONE_AREA1_NORTH,               15,  4 ; 17
+	map_const KANTO_SAFARI_ZONE_AREA2_EAST,                11, 20 ; 18
+	map_const KANTO_SAFARI_ZONE_AREA2_WEST,                 9, 18 ; 19
 	endgroup
 
 	newgroup LAVENDER                                             ; 18

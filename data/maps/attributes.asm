@@ -865,15 +865,25 @@ ENDM
 	map_attributes JackysHouse, JACKYS_HOUSE, $00, 0
 	map_attributes SummerBeachHouse, SUMMER_BEACH_HOUSE, $00, 0
 	
-	map_attributes KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, $05, EAST
+	map_attributes KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, $05, NORTH | EAST
+	connection north, KantoSafariZoneArea2East, KANTO_SAFARI_ZONE_AREA2_EAST, 4
 	connection east, KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, -2
 	
 	map_attributes KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, $05, NORTH | WEST
 	connection north, KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, 0
 	connection west, KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, 2
 
-	map_attributes KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, $05, SOUTH
+	map_attributes KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, $05, WEST | SOUTH
 	connection south, KantoSafariZoneArea1South, KANTO_SAFARI_ZONE_AREA1_SOUTH, 0
+	connection west, KantoSafariZoneArea2East, KANTO_SAFARI_ZONE_AREA2_EAST, -14
+	
+	map_attributes KantoSafariZoneArea2East, KANTO_SAFARI_ZONE_AREA2_EAST, $05, SOUTH | WEST | EAST
+	connection south, KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, -4
+	connection west, KantoSafariZoneArea2West, KANTO_SAFARI_ZONE_AREA2_WEST, 0
+	connection east, KantoSafariZoneArea1North, KANTO_SAFARI_ZONE_AREA1_NORTH, 14
+	
+	map_attributes KantoSafariZoneArea2West, KANTO_SAFARI_ZONE_AREA2_WEST, $05, EAST
+	connection east, KantoSafariZoneArea2East, KANTO_SAFARI_ZONE_AREA2_EAST, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
