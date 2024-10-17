@@ -1306,3 +1306,6 @@ KantoSafariZoneArea2East_Blocks:
 
 KantoSafariZoneArea2West_Blocks:
 	INCBIN "maps/KantoSafariZoneArea2West.ablk"
+
+KantoSafariZoneArea3_Blocks:
+	INCBIN "maps/KantoSafariZoneArea3.ablk"

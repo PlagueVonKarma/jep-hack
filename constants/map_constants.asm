@@ -379,6 +379,7 @@ ENDM
 	map_const KANTO_SAFARI_ZONE_AREA1_NORTH,               15,  4 ; 17
 	map_const KANTO_SAFARI_ZONE_AREA2_EAST,                11, 20 ; 18
 	map_const KANTO_SAFARI_ZONE_AREA2_WEST,                 9, 18 ; 19
+	map_const KANTO_SAFARI_ZONE_AREA3,           	       15, 13 ; 20
 	endgroup
 
 	newgroup LAVENDER                                             ; 18
