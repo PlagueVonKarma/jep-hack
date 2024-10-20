@@ -118,4 +118,5 @@ Music:
 	dba Music_CoolCave
 	dba Music_NihonTrainerBattle
 	dba Music_NorthCity
+	dba Music_Tanoby01
 	assert_table_length NUM_MUSIC_SONGS
