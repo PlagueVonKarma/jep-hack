@@ -627,6 +627,18 @@ INCLUDE "data/tilesets/sevii_collision.asm"
 TilesetSeviiAttr::
 INCBIN "data/tilesets/sevii_attributes.bin"
 
+TilesetLushCaveGFX::
+INCBIN "gfx/tilesets/lushcave.2bpp.lz"
+
+TilesetLushCaveMeta::
+INCBIN "data/tilesets/lushcave_metatiles.bin"
+
+TilesetLushCaveColl::
+INCLUDE "data/tilesets/lushcave_collision.asm"
+
+TilesetLushCaveAttr::
+INCBIN "data/tilesets/lushcave_attributes.bin"
+
 ; there should be space here, lavender crypt's set is just big
 
 SECTION "Tileset Data 16", ROMX

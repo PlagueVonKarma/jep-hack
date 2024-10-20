@@ -64,4 +64,5 @@ Tilesets::
 	tileset TilesetNihonMart
 	tileset TilesetNihonWhiteCity
 	tileset TilesetSevii
+	tileset TilesetLushCave
 	assert_table_length NUM_TILESETS + 1

@@ -636,7 +636,7 @@ ENDM
 	map_const SILENT_HILLS,                                10, 10 ; 4
 	map_const DEBUG_ROOM,                                  20, 20 ; 5
 	map_const ROUTE_49,                                    15,  9 ; 6
-	map_const QUIET_CAVE,                                  27, 18 ; 7
+	map_const QUIET_CAVE,                                  25, 18 ; 7
 	map_const ROUTE_49_2,                                  10, 19 ; 8
 	map_const SILENT_HILLS_POKECENTER_1F,                  10,  4 ; 9
 	map_const SILVERS_HOUSE,                                5,  5 ; 10

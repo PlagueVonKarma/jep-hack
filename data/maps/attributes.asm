@@ -834,7 +834,7 @@ ENDM
 	connection south, WinnersPathOutside, WINNERS_PATH_OUTSIDE, 0
 	connection west, SilentHills, SILENT_HILLS, 0
 	
-	map_attributes QuietCave, QUIET_CAVE, $76, 0
+	map_attributes QuietCave, QUIET_CAVE, $01, 0
 	map_attributes BlueLab, BLUE_LAB, $00, 0
 	map_attributes SilentHillsPokecenter1F, SILENT_HILLS_POKECENTER_1F, $00, 0
 	map_attributes SilversHouse, SILVERS_HOUSE, $00, 0

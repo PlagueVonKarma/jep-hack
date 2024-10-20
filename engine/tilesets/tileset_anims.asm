@@ -308,6 +308,19 @@ TilesetSeviiAnim:
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
+TilesetLushCaveAnim:
+	dw vTiles2 tile $14, ReadTileToAnimBuffer
+	dw NULL,  AnimateFlowerTile
+	dw wTileAnimBuffer, ScrollTileRightLeft
+	dw vTiles2 tile $14, WriteTileFromAnimBuffer
+	dw NULL,  AnimateWaterPalette
+	dw vTiles2 tile $40, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $40, WriteTileFromAnimBuffer
+	dw NULL,  DoneTileAnimation
+
 TilesetBattleTowerOutsideAnim:
 TilesetHouseAnim:
 TilesetPlayersHouseAnim:

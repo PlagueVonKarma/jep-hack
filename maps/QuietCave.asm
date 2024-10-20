@@ -206,21 +206,21 @@ QuietCave_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 53, 29, ROUTE_49, 1
-	warp_event 53, 30, ROUTE_49, 2
-	warp_event  8,  0, ROUTE_49_2, 1
-	warp_event  9,  0, ROUTE_49_2, 2
+	warp_event 47, 30, ROUTE_49, 1
+	warp_event 47, 31, ROUTE_49, 2
+	warp_event  7,  1, ROUTE_49_2, 1
+	warp_event  7,  1, ROUTE_49_2, 2
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 50, 28, BGEVENT_READ, Route49Sign1
-	bg_event 13,  2, BGEVENT_READ, Route49Sign2
+	bg_event 47, 28, BGEVENT_READ, Route49Sign1
+	bg_event  9,  2, BGEVENT_READ, Route49Sign2
 
 	def_object_events
-	object_event 45, 28, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, QuietCaveBoy1, -1
-	object_event 45, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherSioned, -1
-	object_event 33, 26, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyJulie, -1
-	object_event 31,  6, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherDick, -1
-	object_event 11, 27, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherElwyn, -1
-	object_event 11,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 6, TrainerSchoolboyPero, -1
+	object_event 41, 28, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, QuietCaveBoy1, -1
+	object_event 41, 19, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherSioned, -1
+	object_event 29, 26, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyJulie, -1
+	object_event 28,  6, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherDick, -1
+	object_event  9, 25, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherElwyn, -1
+	object_event  9,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 6, TrainerSchoolboyPero, -1
