@@ -164,6 +164,7 @@ INCLUDE "audio/music/route30.asm" ; u broke the bamk
 INCLUDE "audio/music/NihonTrainerBattle.asm"
 INCLUDE "audio/music/NorthCity.asm"
 INCLUDE "audio/music/Tanoby01.asm"
+INCLUDE "audio/music/silenthills.asm"
 
 
 SECTION "Sound Effects", ROMX

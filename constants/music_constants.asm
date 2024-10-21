@@ -117,6 +117,7 @@
 	const MUSIC_NIHONTRAINERBATTLE			 ; 70
 	const MUSIC_NORTHCITY					 ; 71
 	const MUSIC_TANOBY01					 ; 72
+	const MUSIC_SILENTHILLS					 ; 73
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

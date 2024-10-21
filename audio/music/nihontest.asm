@@ -14,84 +14,94 @@ Music_NihonTown01_Ch1:
 	duty_cycle 0
 	octave 3
 	transpose 0, 0
-	tempo 113
-	volume_envelope 15, 8
+	tempo 97
+	volume_envelope 14, 8
 	note E_, 4
-	rest 4
+	octave 4
+	note C_, 4
+	octave 3
 	note G_, 4
 	rest 4
 	note E_, 4
-	rest 4
+	note A_, 4
 	note D_, 4
 	rest 4
 	note E_, 4
-	rest 4
+	octave 4
+	note D_, 4
+	octave 3
 	note G_, 4
 	rest 4
 	note D_, 4
-	rest 4
+	note G_, 4
 	octave 2
 	note B_, 4
 	octave 3
 	rest 4
 	note D_, 4
-	rest 4
+	note A_, 4
 	note F#, 4
 	rest 4
 	note E_, 4
-	rest 4
+	octave 4
+	note C_, 4
+	octave 3
 	note A_, 4
 	rest 4
 	note C_, 4
-	rest 4
+	note G_, 4
 	note E_, 4
 	rest 4
 	note D_, 4
-	rest 4
+	note E_, 4
 	note C_, 4
 	octave 2
 	rest 4
 .loop1:
 	octave 2
 	note B_, 4
-	rest 4
+	octave 3
+	note G_, 4
+	note C_, 4
+	octave 2
+	note B_, 4
+	octave 3
+	note D_, 4
+	note F#, 4
+	note E_, 4
+	note D_, 4
+	note E_, 4
+	note B_, 4
+	note A_, 4
+	note G_, 4
+	note E_, 4
+	note F#, 4
+	note D_, 4
+	note C_, 4
+	note E_, 4
+	note C_, 4
+	octave 2
+	note A_, 4
 	octave 3
 	note C_, 4
-	rest 4
-	note D_, 4
-	rest 4
 	note E_, 4
-	rest 4
-	note E_, 4
-	rest 4
-	note A_, 4
-	rest 4
-	note G_, 4
-	rest 4
 	note D_, 4
-	rest 4
-	note E_, 4
-	rest 4
-	octave 2
-	note A_, 4
-	octave 3
-	rest 4
-	note D_, 4
-	rest 4
 	octave 2
 	note B_, 4
 	octave 3
-	rest 4
 	note D_, 4
-	rest 4
 	note E_, 4
-	rest 4
 	octave 2
 	note B_, 4
 	octave 3
-	rest 4
+	note E_, 4
 	note D_, 4
-	rest 4
+	octave 2
+	note B_, 4
+	octave 3
+	note E_, 4
+	note D_, 4
+	note E_, 4
 	octave 8
 	sound_loop 2, .loop1
 	sound_loop 0, .mainLoop
@@ -189,7 +199,7 @@ Music_NihonTown01_Ch2:
 Music_NihonTown01_Ch3:
 	note_type 12, 1, 0
 .mainLoop:
-	note_type 12, 1, 2
+	note_type 12, 1, 6
 	vibrato 7, 1, 9
 	octave 4
 	note A_, 2
