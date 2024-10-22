@@ -140,4 +140,5 @@
 	tilecoll WALL, WALL, WALL, DOOR ; 8b
 	tilecoll WALL, WALL, WALL, WALL ; 8c
 	tilecoll WARP_CARPET_UP, WARP_CARPET_UP, FLOOR, FLOOR ; 8d
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 8e
+	tilecoll WALL, WALL, WALL, WALL ; 8e
+	tilecoll WALL, WALL, WALL, WALL ; 8f

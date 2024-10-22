@@ -56,8 +56,8 @@ Route49_2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8, 27, QUIET_CAVE, 3
-	warp_event  9, 27, QUIET_CAVE, 4
+	warp_event  8, 25, QUIET_CAVE, 3
+	warp_event  9, 25, QUIET_CAVE, 4
 	warp_event  9,  5, ROUTE_49_OLD_CITY_GATE_1F, 2
 	warp_event  8,  5, ROUTE_49_OLD_CITY_GATE_1F, 1
 	
