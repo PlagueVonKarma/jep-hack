@@ -668,13 +668,17 @@ ENDM
 	map_const JACKYS_HOUSE,									 4,  4 ; 16
 	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 37
+	newgroup SAVOY_CITY										      ; 37
+	map_const SAVOY_CITY,								   20, 18 ; 1
+	endgroup
+	
+	newgroup BLUE_FOREST                                          ; 38
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-	newgroup WHITE_CITY                                           ; 38
+	newgroup WHITE_CITY                                           ; 39
 	map_const WHITE_CITY,                           	   30, 27 ; 1
 	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
 	endgroup
 	
-DEF NUM_MAP_GROUPS EQU const_value ; 38
+DEF NUM_MAP_GROUPS EQU const_value ; 39

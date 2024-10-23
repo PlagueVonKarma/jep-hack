@@ -1309,3 +1309,6 @@ KantoSafariZoneArea2West_Blocks:
 
 KantoSafariZoneArea3_Blocks:
 	INCBIN "maps/KantoSafariZoneArea3.ablk"
+
+SavoyCity_Blocks:
+	INCBIN "maps/SavoyCity.ablk"

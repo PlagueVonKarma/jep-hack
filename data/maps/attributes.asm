@@ -891,6 +891,8 @@ ENDM
 	connection north, KantoSafariZoneArea2West, KANTO_SAFARI_ZONE_AREA2_WEST, 10
 	connection east, KantoSafariZoneCenter, KANTO_SAFARI_ZONE_CENTER, 2
 	
+	map_attributes SavoyCity, SAVOY_CITY, $15, 0
+	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
 	map_attributes WhiteCity, WHITE_CITY, $01, 0 ; this is on its own for now. add connections later.

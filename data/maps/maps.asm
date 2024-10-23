@@ -53,8 +53,9 @@ MapGroupPointers::
 	dw MapGroup_SevenIsland	; 34
 	dw MapGroup_SilentHills ; 35
 	dw MapGroup_OldCity		; 36
-	dw MapGroup_BlueForest  ; 37
-	dw MapGroup_WhiteCity   ; 38
+	dw MapGroup_SavoyCity	; 37
+	dw MapGroup_BlueForest  ; 38
+	dw MapGroup_WhiteCity   ; 39
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -727,6 +728,11 @@ MapGroup_OldCity:
 	map Route50, TILESET_NIHON_OLD, ROUTE, LANDMARK_ROUTE_50, MUSIC_PEACEFULTHEME, TRUE, PALETTE_AUTO, FISHGROUP_NONE
 	map JackysHouse, TILESET_HOUSE, INDOOR, LANDMARK_ROUTE_50, MUSIC_VIOLET_CITY, FALSE, PALETTE_DAY, FISHGROUP_NONE
 	assert_table_length NUM_OLD_CITY_MAPS
+
+MapGroup_SavoyCity:
+	table_width MAP_LENGTH, MapGroup_SavoyCity
+	map SavoyCity, TILESET_NIHON_WEST, TOWN, LANDMARK_SAVOY_CITY, MUSIC_VERMILION_CITY, TRUE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_SAVOY_CITY_MAPS
 
 MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest

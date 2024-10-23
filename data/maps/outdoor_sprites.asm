@@ -40,6 +40,7 @@ OutdoorSprites:
 	dw SevenIslandGroupSprites
 	dw SilentHillsGroupSprites
 	dw OldCityGroupSprites
+	dw SavoyCityGroupSprites
 	dw BlueForestGroupSprites
 	dw WhiteCityGroupSprites
 	assert_table_length NUM_MAP_GROUPS
@@ -329,6 +330,7 @@ IndigoGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
 
+SavoyCityGroupSprites:	; Ditto
 BlueForestGroupSprites: ; Will have its own thing eventually
 WhiteCityGroupSprites:  ; Ditto
 NewBarkGroupSprites:
