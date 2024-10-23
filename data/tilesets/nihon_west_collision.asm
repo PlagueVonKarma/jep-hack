@@ -21,7 +21,7 @@
 	tilecoll WATER, WATER, WATER, WATER ; 14
 	tilecoll WATER, WATER, WATER, WATER ; 15
 	tilecoll WATER, WATER, WATER, WATER ; 16
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 17
+	tilecoll WALL, WALL, WALL, WALL ; 17
 	tilecoll WALL, WALL, WALL, WALL ; 18
 	tilecoll WALL, WALL, DOOR, DOOR ; 19
 	tilecoll WALL, WALL, WALL, WALL ; 1a
@@ -66,7 +66,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 41
 	tilecoll WALL, WALL, WALL, WALL ; 42
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 43
-	tilecoll WALL, WALL, WALL, WALL ; 44
+	tilecoll WALL, WALL, WALL, DOOR ; 44
 	tilecoll WALL, WALL, DOOR, WALL ; 45
 	tilecoll WALL, WALL, WALL, WALL ; 46
 	tilecoll WATER, WALL, WATER, WALL ; 47

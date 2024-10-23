@@ -670,6 +670,7 @@ ENDM
 	
 	newgroup SAVOY_CITY										      ; 37
 	map_const SAVOY_CITY,								   20, 18 ; 1
+	map_const ROUTE_50_SAVOY_CITY_GATE,					    5,  4 ; 2
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 38

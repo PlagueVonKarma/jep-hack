@@ -117,7 +117,7 @@ Route50_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6,  5, SAVOY_CITY, 1 ; West Gate
+	warp_event  6,  5, ROUTE_50_SAVOY_CITY_GATE, 3 ; West Gate
 	warp_event 15,  4, JACKYS_HOUSE, 1 ; Game House
 
 	def_coord_events

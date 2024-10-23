@@ -9,9 +9,9 @@ SavoyCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 33, 15, ROUTE_50, 1		;east gate
-	warp_event 22,  5, DEBUG_ROOM, 1	;north gate, left
-	warp_event 23,  5, DEBUG_ROOM, 1	;north gate, right
+	warp_event 33, 15, ROUTE_50_SAVOY_CITY_GATE, 1		;east gate
+	warp_event 22,  5, DEBUG_ROOM, 1					;north gate, left
+	warp_event 23,  5, DEBUG_ROOM, 1					;north gate, right
 	
 	def_coord_events
 
