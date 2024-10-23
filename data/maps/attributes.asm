@@ -842,10 +842,10 @@ ENDM
 	map_attributes CalsHouse2F, CALS_HOUSE_2F, $00, 0
 	
 	map_attributes OldCity, OLD_CITY, $00, WEST
-	connection west, Route50, ROUTE_50, 4
+	connection west, Route50, ROUTE_50, 5
 	
 	map_attributes Route50, ROUTE_50, $00, EAST
-	connection east, OldCity, OLD_CITY, -4
+	connection east, OldCity, OLD_CITY, -5
 	
 	map_attributes Route49OldCityGate1F, ROUTE_49_OLD_CITY_GATE_1F, $00, 0
 	map_attributes Route49OldCityGate2F, ROUTE_49_OLD_CITY_GATE_2F, $00, 0

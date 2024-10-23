@@ -120,4 +120,5 @@ Music:
 	dba Music_NorthCity
 	dba Music_Tanoby01
 	dba Music_SilentHills
+	dba Music_Mart
 	assert_table_length NUM_MUSIC_SONGS

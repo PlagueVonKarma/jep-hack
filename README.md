@@ -128,6 +128,16 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FeMC sprites.
 
+## Music Credits
+
+### JEP Developers
+JEP-affiliated musicians require music to be used with direct credit for non-commerical purposes. Credit the musician in any case of using them.
+- LuciShrimp: Most of the new music in JEP. If it's not by someone else it is most likely from her.
+- Zeta_Null: Sinjoh Ruins theme, Silent Hills
+
+### Unaffiliated
+- FroggestSpirit: HGSS Poke Mart Demix
+
 ## Other Sources
 - Nob Ogasawara (Many prototype Pokemon names)
 - ImportedCheese (Japanese speaker who named Hyoshu) 

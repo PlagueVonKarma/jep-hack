@@ -214,10 +214,10 @@ OldCity_MapEvents:
 	def_bg_events
 	bg_event 20, 22, BGEVENT_READ, OldCitySignScript
 	bg_event  4, 32, BGEVENT_READ, HoneyGrandmaSignScript
-	bg_event  8, 14, BGEVENT_READ, PokemonPagodaSignScript
+	bg_event  8, 16, BGEVENT_READ, PokemonPagodaSignScript
 	bg_event 26, 20, BGEVENT_READ, OldCityEarlsHouseSignScript
 	bg_event 28, 14, BGEVENT_READ, OldCityGymSignScript
-	bg_event  8, 11, BGEVENT_READ, OldCityMuseumSignScript
+	bg_event  8, 13, BGEVENT_READ, OldCityMuseumSignScript
 	bg_event 28, 28, BGEVENT_READ, OldCityPokecenterSign
 	bg_event  4, 26, BGEVENT_READ, OldCityMartSign
 	bg_event 20, 30, BGEVENT_READ, OldCitySouthSignScript
@@ -225,7 +225,7 @@ OldCity_MapEvents:
 
 	def_object_events
 	object_event 24,  3, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityFruitTree, -1
-	object_event  9, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityOldManScript, -1
+	object_event  9, 17, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityOldManScript, -1
 	object_event 26, 22, SPRITE_TWIN, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityTwinScript, -1
 	object_event 17, 16, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityBugCatcherScript, -1
 	object_event 18, 24, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OldCityYoungsterScript, -1
