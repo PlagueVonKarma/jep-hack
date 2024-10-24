@@ -54,8 +54,9 @@ MapGroupPointers::
 	dw MapGroup_SilentHills ; 35
 	dw MapGroup_OldCity		; 36
 	dw MapGroup_SavoyCity	; 37
-	dw MapGroup_BlueForest  ; 38
-	dw MapGroup_WhiteCity   ; 39
+	dw MapGroup_CoralCity	; 38
+	dw MapGroup_BlueForest  ; 39
+	dw MapGroup_WhiteCity   ; 40
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -734,6 +735,11 @@ MapGroup_SavoyCity:
 	map SavoyCity, TILESET_NIHON_WEST, TOWN, LANDMARK_SAVOY_CITY, MUSIC_VERMILION_CITY, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map Route50SavoyCityGate, TILESET_NIHON_GATE, GATE, LANDMARK_ROUTE_50, MUSIC_PEACEFULTHEME, FALSE, PALETTE_DAY, FISHGROUP_NONE
 	assert_table_length NUM_SAVOY_CITY_MAPS
+	
+MapGroup_CoralCity:
+	table_width MAP_LENGTH, MapGroup_CoralCity
+	map CoralCity, TILESET_NIHON_HIGHTECH, TOWN, LANDMARK_CORAL_CITY, MUSIC_VERMILION_CITY, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_CORAL_CITY_MAPS
 
 MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest

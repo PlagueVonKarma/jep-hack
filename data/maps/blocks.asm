@@ -1313,3 +1313,6 @@ KantoSafariZoneArea3_Blocks:
 
 SavoyCity_Blocks:
 	INCBIN "maps/SavoyCity.ablk"
+
+CoralCity_Blocks:
+	INCBIN "maps/CoralCity.ablk"

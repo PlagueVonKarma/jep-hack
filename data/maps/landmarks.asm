@@ -142,6 +142,7 @@ Landmarks:
 	landmark 76, 100, PokemonPagodaName
 	landmark 68, 100, Route50Name
 	landmark 60, 100, SavoyCityName
+	landmark  36, 92, CoralCityName
 	landmark 140, 60, BlueForestName
 	landmark 108, 108, Route66Name
 	landmark 124, 108, WhiteCityName
@@ -270,6 +271,6 @@ QuietCaveName:       db "QUIET¯CAVE@"
 OldCityName:		 db "SEPIA¯CITY@"
 PokemonPagodaName:	 db "#MON¯PAGODA@"
 SavoyCityName:		 db "SAVOY¯CITY@"
-; High Tech will be called "Vogue City"
+CoralCityName:		 db "CORAL¯CITY@"
 BlueForestName:      db "BLUE¯FOREST@"
 WhiteCityName:       db "WHITE¯CITY@"

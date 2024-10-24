@@ -142,11 +142,15 @@
 ; group 29 (Savoy City)
 	RGB 21,22,25, 13,12,31 ; morn/day
 	RGB 11,09,19, 04,03,18 ; nite
+	
+; group 30 (Coral City)
+	RGB 31,14,20, 27,05,16 ; morn/day
+	RGB 14,03,17, 09,03,12 ; nite
 
-; group 30 (Blue Forest)
+; group 31 (Blue Forest)
 	RGB 24,22,31, 18,14,31 ; morn/day
 	RGB 12,10,24, 08,03,23 ; nite
 	
-; group 31 (White City)
+; group 32 (White City)
 	RGB 27,28,31, 24,24,26 ; morn/day
 	RGB 13,12,24, 11,09,22 ; nite
