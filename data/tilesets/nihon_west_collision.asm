@@ -92,3 +92,11 @@
 	tilecoll WATER, WALL, WATER, WALL ; 5b
 	tilecoll WALL, WATER, WALL, WATER ; 5c
 	tilecoll WALL, WALL, WATER, WATER ; 5d
+	tilecoll WALL, WALL, WALL, WALL ; 5e
+	tilecoll WARP_CARPET_LEFT, FLOOR, WARP_CARPET_LEFT, FLOOR ; 5f
+	tilecoll FLOOR, FLOOR, WALL, WALL ; 60
+	tilecoll WALL, WALL, WALL, WALL ; 61
+	tilecoll WALL, WALL, WALL, WALL ; 62
+	tilecoll WALL, WALL, WALL, WALL ; 63
+	tilecoll FLOOR, FLOOR, WALL, WALL ; 64
+	tilecoll WALL, WALL, WALL, WALL ; 65
