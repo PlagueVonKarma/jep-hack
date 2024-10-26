@@ -4,6 +4,11 @@ CoralCity_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, CoralCityFlypointCallback
+
+CoralCityFlypointCallback:
+	setflag ENGINE_FLYPOINT_CORAL
+	endcallback
 
 CoralCity_MapEvents:
 	db 0, 0 ; filler

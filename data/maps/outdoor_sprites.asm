@@ -331,9 +331,7 @@ IndigoGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_BOULDER
 
-SavoyCityGroupSprites:	; Will have its own thing eventually
-CoralCityGroupSprites:	; Ditto
-BlueForestGroupSprites: ; Ditto
+BlueForestGroupSprites: ; Will have its own thing eventually
 WhiteCityGroupSprites:  ; Ditto
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
@@ -753,3 +751,56 @@ OldCityGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 
+SavoyCityGroupSprites:
+	; 12 non-walking filler sprites
+	db SPRITE_SUICUNE
+	db SPRITE_SILVER_TROPHY
+	db SPRITE_FAMICOM
+	db SPRITE_POKEDEX
+	db SPRITE_WILL
+	db SPRITE_ROCKER
+	db SPRITE_NURSE
+	db SPRITE_FISHER
+	db SPRITE_BIG_LAPRAS
+	db SPRITE_BIG_ONIX
+	db SPRITE_SUDOWOODO
+	db SPRITE_RIVAL
+	; 9 walking sprites
+	db SPRITE_LASS
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_ROCKER
+	db SPRITE_SAILOR
+	db SPRITE_GENTLEMAN
+	db SPRITE_ROCKET
+	db SPRITE_FISHER
+	db SPRITE_FAIRY
+	; 2 non-walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+
+CoralCityGroupSprites:
+	; 12 non-walking filler sprites
+	db SPRITE_SUICUNE
+	db SPRITE_SILVER_TROPHY
+	db SPRITE_FAMICOM
+	db SPRITE_POKEDEX
+	db SPRITE_WILL
+	db SPRITE_ROCKER
+	db SPRITE_NURSE
+	db SPRITE_FISHER
+	db SPRITE_BIG_LAPRAS
+	db SPRITE_BIG_ONIX
+	db SPRITE_SUDOWOODO
+	db SPRITE_RIVAL
+	; 9 walking sprites
+	db SPRITE_RIVAL
+	db SPRITE_TWIN
+	db SPRITE_SAILOR
+	db SPRITE_POKEFAN_M
+	db SPRITE_SWIMMER_GUY
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_FISHER
+	db SPRITE_MONSTER
+	; 2 non-walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE

@@ -115,6 +115,8 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 ; nihon
 	const SPAWN_SILENT_HILLS
 	const SPAWN_OLD_CITY
+	const SPAWN_SAVOY_CITY
+	const SPAWN_CORAL_CITY
 DEF NUM_SPAWNS EQU const_value
 
 DEF SPAWN_N_A EQU -1
@@ -161,6 +163,8 @@ DEF SEVII_FLYPOINT_2 EQU const_value ; 6-7
 DEF NIHON_FLYPOINT EQU const_value
 	const FLY_SILENT_HILLS
 	const FLY_OLD_CITY
+	const FLY_SAVOY_CITY
+	const FLY_CORAL_CITY
 DEF NUM_FLYPOINTS EQU const_value
 
 DEF MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm
