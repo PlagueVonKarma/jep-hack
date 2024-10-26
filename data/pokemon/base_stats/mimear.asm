@@ -3,7 +3,7 @@
 	db  65,  70,  75, 100,  95,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db FAIRY, FAIRY ; type
+	db FAIRY, GRASS ; type
 	db 45 ; catch rate								; PLACEHOLDER
 	db 64 ; base exp								; PLACEHOLDER
 	db NO_ITEM, NO_ITEM ; items

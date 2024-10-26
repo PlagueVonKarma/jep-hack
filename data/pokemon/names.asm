@@ -375,7 +375,7 @@ PokemonNames::
 	db "KITSEN@@@@"
 	db "WISPIRIT@@"
 	db "COATL@@@@@"
-	db "MIMEAR@@@@"
+	db "AVALOP@@@@"
 	db "INOSHIKA@@"
 	db "RUDDERNAUT"
 	db "XYLODON@@@"
