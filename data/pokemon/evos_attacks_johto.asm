@@ -2734,16 +2734,19 @@ MimearEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, DISARMING_VOICE
 	dbw 1, GROWL
+	dbw 1, ABSORB
 	dbw 8, FAIRY_WIND
 	dbw 13, CHARM
-	dbw 19, QUICK_ATTACK
-	dbw 25, FORESIGHT
-	dbw 31, DRAINING_KISS
-	dbw 37, AMNESIA
+	dbw 18, LEECH_SEED
+	dbw 23, RAZOR_LEAF
+	dbw 28, UPROOT
+	dbw 32, DRAINING_KISS
+	dbw 37, SUNNY_DAY
 	dbw 43, MIRROR_COAT
 	dbw 49, SAFEGUARD
 	dbw 55, DAZZLING_GLEAM
-	dbw 60, MOONBLAST
+	dbw 61, SOLARBEAM
+	dbw 65, MOONBLAST
 	db 0 ; no more level-up moves
 
 InoshikaEvosAttacks:
