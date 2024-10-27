@@ -127,9 +127,8 @@ SavoyCitySailorText:
 	text "These townies"
 	line "are so annoying!"
 	
-	para "Me? I'm from"
-	line "SUNGLOW! Can't"
-	cont "handle these"
+	para "Me? I'm from CORAL!"
+	line "Can't handle these"
 	cont "jobbers!" ; He's a hypocrite.
 	done
 

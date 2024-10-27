@@ -39,8 +39,6 @@ Route50SavoyCityGateSuperNerdText:
 	para "So MAWTLE is a"
 	line "Dark #MON…"
 	
-	para "…"
-	
 	para "Hey! Quit peeking!"
 	done
 
