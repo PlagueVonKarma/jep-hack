@@ -1316,3 +1316,6 @@ SavoyCity_Blocks:
 
 CoralCity_Blocks:
 	INCBIN "maps/CoralCity.ablk"
+	
+Route52_Blocks:
+	INCBIN "maps/Route52.ablk"

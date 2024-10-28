@@ -894,7 +894,11 @@ ENDM
 	map_attributes SavoyCity, SAVOY_CITY, $15, 0
 	map_attributes Route50SavoyCityGate, ROUTE_50_SAVOY_CITY_GATE, $00, 0	
 	
-	map_attributes CoralCity, CORAL_CITY, $04, 0
+	map_attributes CoralCity, CORAL_CITY, $04, WEST
+	connection west, Route52, ROUTE_52, 0
+	
+	map_attributes Route52, ROUTE_52, $05, EAST
+	connection east, CoralCity, CORAL_CITY, 0
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
