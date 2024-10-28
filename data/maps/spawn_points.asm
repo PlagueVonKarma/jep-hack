@@ -49,6 +49,8 @@ SpawnPoints:
 	
 	spawn SILENT_HILLS,				  13,  5
 	spawn OLD_CITY,				  	  27, 29
+	spawn SAVOY_CITY,				  25, 15
+	spawn CORAL_CITY,				  31, 11
 	
 	spawn N_A,                        -1, -1
 

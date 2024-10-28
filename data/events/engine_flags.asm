@@ -117,6 +117,8 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_SEVEN_ISLAND
 	engine_flag wVisitedSpawns, SPAWN_SILENT_HILLS
 	engine_flag wVisitedSpawns, SPAWN_OLD_CITY
+	engine_flag wVisitedSpawns, SPAWN_SAVOY_CITY
+	engine_flag wVisitedSpawns, SPAWN_CORAL_CITY
 	engine_flag wVisitedSpawns, NUM_SPAWNS ; unused
 
 	engine_flag wLuckyNumberShowFlag, LUCKYNUMBERSHOW_GAME_OVER_F

@@ -761,6 +761,7 @@ MimearEggMoves:
 	dw LOVELY_KISS
 	dw PRESENT
 	dw SWEET_KISS
+	dw BITE
 	dw -1 ;end 
 
 InoshikaEggMoves:

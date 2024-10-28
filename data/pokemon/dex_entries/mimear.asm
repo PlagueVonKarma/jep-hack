@@ -1,10 +1,10 @@
-	db "HEARING@" ; species name
+	db "APPLE@" ; species name
 	dw 311, 191 ; height, weight - placeholder
 
-	db   "Flies using its"
-	next "ears. Its hearing"
-	next "is impeccable,"
+	db   "It glides across"
+	next "fields, leaving"
+	next "apple seeds as it"
 
-	page "so it's popular"
-	next "with detectives."
-	next "Loves sweets.@"
+	page "goes. The groves"
+	next "are considered"
+	next "sacred by many.@"
