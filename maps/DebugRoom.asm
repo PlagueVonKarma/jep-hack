@@ -42,8 +42,8 @@ DebugPokemon3Script:
 	cry STROMEN
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon HYOSHU_YIN, 75
+	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
+	loadwildmon COATL, 75
 	startbattle
 	reloadmapafterbattle
 	end
@@ -60,7 +60,7 @@ DebugPokemon4Script:
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon HYOSHU_YANG, 75
+	loadwildmon COATL, 75
 	startbattle
 	reloadmapafterbattle
 	end
