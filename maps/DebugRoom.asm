@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, ONIYANMA
+	getmonname STRING_BUFFER_3, COATL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke ONIYANMA, 65, TM_ROCK_SMASH
+	givepoke COATL, 65, TM_ROCK_SMASH
 	closetext
 	end
 
