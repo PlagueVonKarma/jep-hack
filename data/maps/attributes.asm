@@ -895,7 +895,7 @@ ENDM
 	map_attributes Route50SavoyCityGate, ROUTE_50_SAVOY_CITY_GATE, $00, 0	
 	
 	map_attributes CoralCity, CORAL_CITY, $04, WEST
-	connection west, Route52, ROUTE_52, 0
+	connection west, Route51, ROUTE_51, 0
 	
 	map_attributes Route51, ROUTE_51, $05, WEST | EAST
 	connection west, Route52, ROUTE_52, -18
