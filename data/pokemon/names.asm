@@ -374,7 +374,7 @@ PokemonNames::
 	db "CYCLORP@@@"
 	db "KITSEN@@@@"
 	db "WISPIRIT@@"
-	db "COATL@@@@@"
+	db "AJAWALCAN@" ; Previously Coatl. 
 	db "AVALOP@@@@"
 	db "INOSHIKA@@"
 	db "RUDDERNAUT"

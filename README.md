@@ -148,6 +148,12 @@ JEP-affiliated musicians require music to be used with direct credit for non-com
 - Nayru62 (Crystal Legacy) - [DVs & Hidden Power display code](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy/blob/main/engine/pokemon/stats_screen.asm)
 - SoupPotato - Move Animations and Pallettes [here](https://github.com/PiaCarrot/mae-pokeorange/commit/9e148c8a28bbe6850f3df11605b4f7b4068a4652) and [here](https://github.com/PiaCarrot/mae-pokeorange/commit/52f8f8e77189b01453590c5496bbc7a9332b6237).
 
+## Academic References
+* Bolles, D. & Bolles, A. (1996). A Grammar of the Yucatecan Mayan Language. Revised ed. Lancaster, California: Labyrinthos Press. ISBN 0-911437-49-5. Available at: http://www.famsi.org/reports/96072/grammar/index.html
+* Boot, E. (2009). The Updated Preliminary Classic Maya - English, English - Classic Maya Vocabulary of Hieroglyphic Readings. Updated edition. Mesoweb Resources. Available at: https://www.mesoweb.com/resources/vocabulary/Vocabulary-2009.01.pdf 
+
+When naming Ajawalcan, we used academic sources compiling the grammar and vocabulary of Yucatan Mayan and Classical Mayan, aiming to represent indiginous Latin American cultures the best we could. The name literally translates to "Kingly serpent" or "Lordly serpent", where "Ajaw" was the name for a king or ruler, and "can" is the spelling for "serpent" used in Kukulcan, the deity worshipped by Mayans of the day.
+
 Original readme proceeding...
 # 16-bit index expansion for Crystal
 
