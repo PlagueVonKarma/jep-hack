@@ -676,6 +676,7 @@ ENDM
 	newgroup CORAL_CITY										      ; 38
 	map_const CORAL_CITY,								   20, 18 ; 1
 	map_const ROUTE_52,									   25,  9 ; 2
+	map_const ROUTE_53,									   10, 27 ; 3
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 39
