@@ -541,6 +541,18 @@ endr
 	jr z, .gate
 	;cp FOREST
 	;jr z, .route
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .only_day
+	ld a, [wMapGroup]
+	ld e, a
+	ld d, 0
+	ld hl, MapGroupRoofSGBPalIndsMorn
+	add hl, de
+	ld a, [hl]
+	ret
+	
+.only_day
 	ld a, [wMapGroup]
 	ld e, a
 	ld d, 0

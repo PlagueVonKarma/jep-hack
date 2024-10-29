@@ -613,19 +613,20 @@ _CGB_MapPals:
 	call .LoadHLColorIntoDE
 	jr .bg_done
 .bg_morn_day
-	ld a, [wTimeOfDayPal]
-	cp MORN_F
-	jr nz, .bg_day
-	call .LoadHLColorIntoDE
-	inc hl
-	inc hl
-	call .LoadHLColorIntoDE
-	dec hl
-	dec hl
-	call .LoadHLColorIntoDE
-	call .LoadHLColorIntoDE
-	jr .bg_done
-.bg_day
+;		Lot of commented out code for spaceworld-style mornings.
+;	ld a, [wTimeOfDayPal]
+;	cp MORN_F
+;	jr nz, .bg_day
+;	call .LoadHLColorIntoDE
+;	inc hl
+;	inc hl
+;	call .LoadHLColorIntoDE
+;	dec hl
+;	dec hl
+;	call .LoadHLColorIntoDE
+;	call .LoadHLColorIntoDE
+;	jr .bg_done
+;.bg_day
 	call LoadHLPaletteIntoDE
 	jr .bg_done
 
