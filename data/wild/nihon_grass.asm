@@ -200,4 +200,34 @@ NihonGrassWildMons:
 	dbw 35, SKARMORY
 	end_grass_wildmons
 	
+	def_grass_wildmons ROUTE_51
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, FEAROW
+	dbw 31, RAPIDASH
+	dbw 30, FEAROW
+	dbw 31, COATL
+	dbw 32, QATU
+	dbw 32, TAUROS
+	dbw 35, WARUCHU
+	; day
+	dbw 30, FEAROW
+	dbw 31, RAPIDASH
+	dbw 30, FEAROW
+	dbw 31, COATL
+	dbw 32, QATU
+	dbw 32, TAUROS
+	dbw 35, WARUCHU
+	; nite
+	dbw 30, MURKROW
+	dbw 31, FOXFIRE
+	dbw 30, MURKROW
+	dbw 31, SNEASEL
+	dbw 32, ARBOK
+	dbw 32, NOCTOWL
+	dbw 35, WARUCHU
+	end_grass_wildmons
+	
+	; Route 52 has no grass.
+	
 	db -1 ; end

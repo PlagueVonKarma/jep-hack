@@ -20,5 +20,14 @@ NihonWaterWildMons:
 	dbw 31, MAGIKARP
 	dbw 30, MAGIKARP
 	end_water_wildmons
-
+	
+	; Route 52 has no grass
+	
+	def_water_wildmons ROUTE_52
+	db 4 percent ; encounter rates: morn/day/nite
+	dbw 30, TENTACOOL
+	dbw 31, MANTINE
+	dbw 30, ANGORE
+	end_water_wildmons
+	
 	db -1 ; end
