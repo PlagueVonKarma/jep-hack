@@ -901,7 +901,7 @@ ENDM
 	connection west, Route53, ROUTE_53, -18
 	connection east, CoralCity, CORAL_CITY, 0
 	
-	map_attributes Route53, ROUTE_53, $04, EAST
+	map_attributes Route53, ROUTE_53, $6C, EAST
 	connection east, Route52, ROUTE_52, 18
 	
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
