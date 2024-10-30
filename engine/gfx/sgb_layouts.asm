@@ -562,6 +562,23 @@ endr
 	ret
 
 .route
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .dayroute
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp NIHON_LANDMARK
+	ld a, PREDEFPAL_ROUTES_MORN
+    jr nc, .routenihonmorn
+	ret
+.routenihonmorn 
+	ld a, PREDEFPAL_ROUTES_NIHON_MORN
+	ret
+	
+.dayroute
 	ld a, [wMapGroup]
 	ld b, a
 	ld a, [wMapNumber]
@@ -577,14 +594,46 @@ endr
 	ret
 
 .cave
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .daycave
+	ld a, PREDEFPAL_DUNGEONS_MORN
+	ret
+	
+.daycave
 	ld a, PREDEFPAL_DUNGEONS
 	ret
 
 .env5
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .dayship
+	ld a, PREDEFPAL_VERMILION_MORN
+	ret
+
+.dayship
 	ld a, PREDEFPAL_VERMILION
 	ret
 
 .gate
+	ld a, [wTimeOfDayPal]
+	cp MORN_F
+	jr nz, .daygate
+	ld a, [wMapGroup]
+	ld b, a
+	ld a, [wMapNumber]
+	ld c, a
+	call GetWorldMapLocation
+	cp NIHON_LANDMARK
+	ld a, PREDEFPAL_PEWTER_MORN
+    jr nc, .gatenihonmorn
+	ret
+	
+.gatenihonmorn 
+	ld a, PREDEFPAL_GATES_NIHON_MORN
+	ret
+	
+.daygate
 	ld a, [wMapGroup]
 	ld b, a
 	ld a, [wMapNumber]

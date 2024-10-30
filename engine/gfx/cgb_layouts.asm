@@ -1128,16 +1128,16 @@ _CGB_MysteryGift:
 .MysteryGiftPalettes:
 INCLUDE "gfx/mystery_gift/mystery_gift.pal"
 
-GS_CGB_MysteryGift: ; unreferenced
-	ld hl, .MysteryGiftPalette
-	ld de, wBGPals1
-	ld bc, 1 palettes
-	ld a, BANK(wBGPals1)
-	call FarCopyWRAM
-	call ApplyPals
-	call WipeAttrmap
-	call ApplyAttrmap
-	ret
+;GS_CGB_MysteryGift: ; unreferenced
+;	ld hl, .MysteryGiftPalette
+;	ld de, wBGPals1
+;	ld bc, 1 palettes
+;	ld a, BANK(wBGPals1)
+;	call FarCopyWRAM
+;	call ApplyPals
+;	call WipeAttrmap
+;	call ApplyAttrmap
+;	ret
 
 .MysteryGiftPalette:
 INCLUDE "gfx/mystery_gift/gs_mystery_gift.pal"
