@@ -42,6 +42,7 @@ OutdoorSprites:
 	dw OldCityGroupSprites
 	dw SavoyCityGroupSprites
 	dw CoralCityGroupSprites
+	dw RuddyTownGroupSprites
 	dw BlueForestGroupSprites
 	dw WhiteCityGroupSprites
 	assert_table_length NUM_MAP_GROUPS
@@ -333,6 +334,7 @@ IndigoGroupSprites:
 
 BlueForestGroupSprites: ; Will have its own thing eventually
 WhiteCityGroupSprites:  ; Ditto
+RuddyTownGroupSprites:  ; Ditto
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY

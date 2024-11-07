@@ -51,6 +51,7 @@ SpawnPoints:
 	spawn OLD_CITY,				  	  27, 29
 	spawn SAVOY_CITY,				  25, 15
 	spawn CORAL_CITY,				  31, 11
+	spawn RUDDY_TOWN,				  35, 15
 	
 	spawn N_A,                        -1, -1
 

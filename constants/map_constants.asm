@@ -679,13 +679,17 @@ ENDM
 	map_const ROUTE_52,									   10, 27 ; 3
 	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 39
+	newgroup RUDDY_TOWN                                          ; 39
+	map_const RUDDY_TOWN,                                 20, 18 ; 1
+	endgroup
+	
+	newgroup BLUE_FOREST                                          ; 40
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-	newgroup WHITE_CITY                                           ; 40
+	newgroup WHITE_CITY                                           ; 41
 	map_const WHITE_CITY,                           	   30, 27 ; 1
 	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
 	endgroup
 	
-DEF NUM_MAP_GROUPS EQU const_value ; 40
+DEF NUM_MAP_GROUPS EQU const_value ; 41

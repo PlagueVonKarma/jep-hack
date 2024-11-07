@@ -145,6 +145,7 @@ Landmarks:
 	landmark  36, 92, CoralCityName
 	landmark  24, 92, Route52Name
 	landmark  12, 84, Route53Name
+	landmark  12, 68, RuddyTownName
 	landmark 140, 60, BlueForestName
 	landmark 108, 108, Route66Name
 	landmark 124, 108, WhiteCityName
@@ -276,5 +277,6 @@ OldCityName:		 db "SEPIA¯CITY@"
 PokemonPagodaName:	 db "#MON¯PAGODA@"
 SavoyCityName:		 db "SAVOY¯CITY@"
 CoralCityName:		 db "CORAL¯CITY@"
+RuddyTownName:		 db "RUDDY¯TOWN@"
 BlueForestName:      db "BLUE¯FOREST@"
 WhiteCityName:       db "WHITE¯CITY@"

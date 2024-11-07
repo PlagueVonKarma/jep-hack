@@ -904,6 +904,8 @@ ENDM
 	map_attributes Route52, ROUTE_52, $6C, EAST
 	connection east, Route51, ROUTE_51, 18
 	
+	map_attributes RuddyTown, RUDDY_TOWN, $04, 0
+
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
 	map_attributes WhiteCity, WHITE_CITY, $01, 0 ; this is on its own for now. add connections later.

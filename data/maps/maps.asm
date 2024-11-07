@@ -55,8 +55,9 @@ MapGroupPointers::
 	dw MapGroup_OldCity		; 36
 	dw MapGroup_SavoyCity	; 37
 	dw MapGroup_CoralCity	; 38
-	dw MapGroup_BlueForest  ; 39
-	dw MapGroup_WhiteCity   ; 40
+	dw MapGroup_RuddyTown   ; 39
+	dw MapGroup_BlueForest  ; 40
+	dw MapGroup_WhiteCity   ; 41
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -742,6 +743,11 @@ MapGroup_CoralCity:
 	map Route51, TILESET_NIHON_HIGHTECH, ROUTE, LANDMARK_ROUTE_51, MUSIC_LAKE_OF_RAGE, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	map Route52, TILESET_NIHON_HIGHTECH, ROUTE, LANDMARK_ROUTE_52, MUSIC_LAKE_OF_RAGE, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	assert_table_length NUM_CORAL_CITY_MAPS
+
+MapGroup_RuddyTown:
+	table_width MAP_LENGTH, MapGroup_RuddyTown
+	map RuddyTown, TILESET_NIHON_SOUTH, TOWN, LANDMARK_RUDDY_TOWN, MUSIC_VERMILION_CITY, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_RUDDY_TOWN_MAPS
 
 MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest
