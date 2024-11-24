@@ -40,19 +40,20 @@ WhitneyGroup:
 
 BugsyGroup:
 	next_list_item ; BUGSY (1)
-	db "BUGSY@", TRAINERTYPE_MOVES
+	db "BUGSY@", TRAINERTYPE_MOVES ; Concerns: Does this make the Chikorita playthrough too difficult?
 	db 14
-	dw KAKUNA ; Keeps the organic "Bugsy is researching how cocoon Pokemon keep their moves" thing
-	dw POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
+	dw PUPAL ; Keeps the organic "Bugsy is researching how cocoon Pokemon keep their moves" thing
+	dw LEECH_LIFE, STRING_SHOT, HARDEN, NO_MOVE ; We use Pupal because it has Bug STAB, thus serving Bugsy better.
 	db 14
 	dw YANMA
-	dw LEECH_LIFE, FORESIGHT, QUICK_ATTACK, DOUBLE_TEAM
+	dw LEECH_LIFE, SONICBOOM, QUICK_ATTACK, DOUBLE_TEAM
+	db 14
+	dw ARIADOS ; Underlevelled Ariados. TO TEST - Is this too strong? Very low BP moves save for Bite should justify it.
+	dw POISON_STING, CONSTRICT, SCARY_FACE, BITE
 	db 16
 	dw SCYTHER
 	dw QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
 	db -1 ; end
-	; Potential revision: Underlevelled Ariados? Test further.
-	; Also - This makes the Chikorita playthrough harder. Test?
 
 	end_list_items
 
@@ -402,7 +403,7 @@ PokemonProfGroup:
 	dw EARTHQUAKE, ICE_BEAM, THUNDERBOLT, LOVELY_KISS
 	db 60
 	dw TAUROS
-	dw BODY_SLAM, HYPER_BEAM, EARTHQUAKE, BLIZZARD ; Iconic King of Gen 1 set to represent Oak's aging. 
+	dw BODY_SLAM, HYPER_BEAM, EARTHQUAKE, BLIZZARD ; Iconic King of Gen 1 set to represent Oak's aging. Timely, as it was in NC97 previously.
 	db -1 ; end
 
 	end_list_items
@@ -4856,7 +4857,7 @@ CamperGroup:
 	db 32 ; It seems the devs realised they messed up this area and fixed it real quick
 	dw FEAROW
 	db 32
-	dw PRIMEAPE ; ANNIHILAPE??
+	dw PRIMEAPE ; ANNIHILAPE?
 	db 34
 	dw TAUROS
 	db -1 ; end
