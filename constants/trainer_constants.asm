@@ -48,6 +48,7 @@ ENDM
 ; KHALID - Arab boy's name
 ; OSAMA - Arab boy's name
 ; ABDUL - Arab boy's name. On its own this can mean a large number of things, but it's also a JoJo reference!
+; OMAR - Arab boy's name.
 ; YANG - 杨 Mandarin name
 ; ZHAO - 赵 Mandarin name
 ; ZHOU - 周 Mandarin name
@@ -60,6 +61,14 @@ ENDM
 ; HAYUN - Korean girl's name
 ; ISEO - Korean girl's name
 ; JIA - Mandarin/Korean girl's name
+; TERESA - Spanish girl's name
+; AELFGAR - Old English male name.
+; BRECA - Beowulf character, Old English name
+; CHAUCER - Middle English / French surname
+; GARMUND - Beowulf character, Old English name
+; GRENDEL - Beowulf character, Old English name, major villain
+; HROTHGAR - Beowulf character, Old English name, king of Denmark
+; FRODA - Beowulf character, Old English name
 
 ; trainer class ids
 ; `trainerclass` indexes are for:
