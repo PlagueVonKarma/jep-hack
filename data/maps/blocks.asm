@@ -1325,3 +1325,6 @@ Route52_Blocks:
 	
 RuddyTown_Blocks:
 	INCBIN "maps/RuddyTown.ablk"
+	
+AventurineCity_Blocks:
+	INCBIN "maps/AventurineCity.ablk"

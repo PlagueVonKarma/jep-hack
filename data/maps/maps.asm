@@ -57,7 +57,8 @@ MapGroupPointers::
 	dw MapGroup_CoralCity	; 38
 	dw MapGroup_RuddyTown   ; 39
 	dw MapGroup_BlueForest  ; 40
-	dw MapGroup_WhiteCity   ; 41
+	dw MapGroup_Aventurine	; 41
+	dw MapGroup_WhiteCity   ; 42
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -753,6 +754,11 @@ MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest
 	map BlueForest, TILESET_NIHON_SNOWY, TOWN, LANDMARK_BLUE_FOREST, MUSIC_SINJOH_RUINS, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
 	assert_table_length NUM_BLUE_FOREST_MAPS
+
+MapGroup_Aventurine:
+	table_width MAP_LENGTH, MapGroup_Aventurine
+	map AventurineCity, TILESET_NIHON_01, TOWN, LANDMARK_AVENTURINE_CITY, MUSIC_MART, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_AVENTURINE_CITY_MAPS
 
 MapGroup_WhiteCity:
 	table_width MAP_LENGTH, MapGroup_WhiteCity

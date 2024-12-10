@@ -52,7 +52,8 @@ MapGroupRoofs:
 	db ROOF_NEW_BARK  ; 38 (Coral City)
 	db ROOF_NEW_BARK  ; 38 (Ruddy Town)
 	db ROOF_NEW_BARK  ; 40 (Blue Forest)
-	db ROOF_NEW_BARK  ; 41 (White City)
+	db ROOF_NEW_BARK  ; 41 (Aventurine City)
+	db ROOF_NEW_BARK  ; 42 (White City)
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

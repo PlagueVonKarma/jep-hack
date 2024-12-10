@@ -908,6 +908,8 @@ ENDM
 
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
+	map_attributes AventurineCity, AVENTURINE_CITY, $05, 0 ; this is on its own for now. add connections later.
+	
 	map_attributes WhiteCity, WHITE_CITY, $01, 0 ; this is on its own for now. add connections later.
 	map_attributes Route66WhiteCityGate, ROUTE_66_WHITE_CITY_GATE, $00, 0
 	

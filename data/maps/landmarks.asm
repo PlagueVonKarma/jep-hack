@@ -147,6 +147,7 @@ Landmarks:
 	landmark  12, 84, Route53Name
 	landmark  12, 68, RuddyTownName
 	landmark 140, 60, BlueForestName
+	landmark 140, 84, AventurineCityName
 	landmark 108, 108, Route66Name
 	landmark 124, 108, WhiteCityName
 	assert_table_length NUM_LANDMARKS
@@ -279,4 +280,5 @@ SavoyCityName:		 db "SAVOY¯CITY@"
 CoralCityName:		 db "CORAL¯CITY@"
 RuddyTownName:		 db "RUDDY¯TOWN@"
 BlueForestName:      db "BLUE¯FOREST@"
+AventurineCityName:  db "AVENTURINE¯CITY@"
 WhiteCityName:       db "WHITE¯CITY@"

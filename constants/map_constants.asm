@@ -687,7 +687,11 @@ ENDM
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-	newgroup WHITE_CITY                                           ; 41
+	newgroup AVENTURINE_CITY                                      ; 41
+	map_const AVENTURINE_CITY,                             20, 18 ; 1
+	endgroup
+	
+	newgroup WHITE_CITY                                           ; 42
 	map_const WHITE_CITY,                           	   30, 27 ; 1
 	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
 	endgroup

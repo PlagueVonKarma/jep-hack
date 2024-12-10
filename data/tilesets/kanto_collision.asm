@@ -182,3 +182,8 @@
 	tilecoll WATER, WATER, WATER, WATER ; b5
 	tilecoll WATER, WATER, WATER, WATER ; b6
 	tilecoll WATER, WATER, WATER, WATER ; b7
+	tilecoll WALL, WALL, DOOR, WALL ; b8
+	tilecoll WALL, WALL, WALL, WALL ; b9
+	tilecoll WALL, WALL, WALL, WATER ; ba
+	tilecoll WALL, WALL, WATER, WALL ; bb
+	tilecoll WALL, HOP_DOWN_LEFT, WALL, WALL ; bc
