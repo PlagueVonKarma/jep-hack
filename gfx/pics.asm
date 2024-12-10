@@ -1039,16 +1039,16 @@ ImposterOakPic: INCBIN "gfx/trainers/imposter_oak.2bpp.lz"
 AgathaPic: INCBIN "gfx/trainers/agatha.2bpp.lz"
 Giovanni1Pic: 	INCBIN "gfx/trainers/giovanni_coat.2bpp.lz"
 Giovanni3Pic: INCBIN "gfx/trainers/giovanni3.2bpp.lz"
+
+SECTION "Pics 26", ROMX
+
+; RBY/unused trainer Pics
 GreenPic: INCBIN "gfx/trainers/green.2bpp.lz"
 KurtPic: INCBIN "gfx/trainers/kurt.2bpp.lz"
 ArianaPic: INCBIN "gfx/trainers/ariana.2bpp.lz"
 ArcherPic: INCBIN "gfx/trainers/archer.2bpp.lz"
 ProfBluePic: INCBIN "gfx/trainers/blue_professor.2bpp.lz"
 ElderPic: INCBIN "gfx/trainers/elder.2bpp.lz"
-
-SECTION "Pics 26", ROMX
-
-; RBY/unused trainer Pics
 ChannelerPic:        INCBIN "gfx/trainers/channeler.2bpp.lz"
 CueBallPic:        INCBIN "gfx/trainers/cue_ball.2bpp.lz"
 EngineerPic:        INCBIN "gfx/trainers/engineer.2bpp.lz"
