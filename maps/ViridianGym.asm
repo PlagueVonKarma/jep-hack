@@ -13,8 +13,27 @@ ViridianGymBlueScript:
 	checkflag ENGINE_EARTHBADGE
 	iftrue .FightDone
 	writetext LeaderBlueBeforeText
+	readvar VAR_PLAYERGENDER
+	ifequal FEMALE, .PlayerIsFemale
+	ifequal ENBY, .PlayerIsEnby
+	writetext LeaderBlueJohtoBoyText
 	waitbutton
-	closetext
+	closetext	
+	sjump .cont
+
+.PlayerIsFemale:
+	writetext LeaderBlueJohtoGirlText
+	waitbutton
+	closetext	
+	sjump .cont
+	
+.PlayerIsEnby:
+	writetext LeaderBlueJohtoNBText
+	waitbutton
+	closetext	
+	sjump .cont
+	
+.cont:
 	winlosstext LeaderBlueWinText, 0
 	loadtrainer BLUE, BLUE1
 	startbattle
@@ -89,9 +108,20 @@ LeaderBlueBeforeText:
 
 	para "battling you right"
 	line "now."
-
-	para "Ready, JOHTO"
-	line "CHAMP?"
+	
+	para ""			; This is a stupid workaround because the game immediately overwrites the last bit of text after it's written with how I've coded this. 
+	done			; I /could/ just have three copies of the same script but I hate that and don't want to. It's stupid and annoying.
+	
+LeaderBlueJohtoBoyText:
+	text "Ready, JOHTO boy?"
+	done
+	
+LeaderBlueJohtoGirlText:
+	text "Ready, JOHTO girl?"
+	done
+	
+LeaderBlueJohtoNBText:
+	text "Ready, JOHTO kid?"
 	done
 
 LeaderBlueWinText:
