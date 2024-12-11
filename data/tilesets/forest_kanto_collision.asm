@@ -95,13 +95,13 @@
 	tilecoll WALL, FLOOR, WALL, WALL ; 5e
 	tilecoll FLOOR, WATER, FLOOR, WATER ; 5f
 	tilecoll WALL, FLOOR, WALL, WALL ; 60
-	tilecoll WALL, WALL, WALL, FLOOR ; 61
+	tilecoll WALL, UP_WALL, WALL, FLOOR ; 61
 	tilecoll FLOOR, WATER, FLOOR, WATER ; 62
-	tilecoll WALL, WALL, FLOOR, FLOOR ; 63
+	tilecoll UP_WALL, UP_WALL, FLOOR, FLOOR ; 63
 	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 64
 	tilecoll WALL, FLOOR, WALL, FLOOR ; 65
-	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 66
-	tilecoll WALL, WALL, FLOOR, WALL ; 67
+	tilecoll UP_WALL, FLOOR, FLOOR, FLOOR ; 66
+	tilecoll UP_WALL, WALL, FLOOR, WALL ; 67
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 68
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 69
 	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 6a
