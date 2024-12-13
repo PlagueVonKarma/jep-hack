@@ -52,6 +52,7 @@ CGBLayoutJumptable:
 	dw _CGB_MagnetTrain
 	dw _CGB_PackPals
 	dw _CGB_TrainerCard
+	dw _CGB_TrainerCardKanto
 	dw _CGB_PokedexUnownMode
 	dw _CGB_BillsPC
 	dw _CGB_UnownPuzzle
@@ -845,6 +846,126 @@ _CGB_TrainerCard:
 	hlcoord 14, 14, wAttrmap
 	lb bc, 2, 4
 	ld a, $1 ; clair
+	call FillBoxCGB
+	; top-right corner still uses the border's palette
+	ld a, [wPlayerGender]
+	and a
+	jr z, .male3
+	dec a
+	jr z, .female3
+	ld a, $6 ; dark magenta for enby
+	jr .got_gender3
+.male3
+	ld a, $1 ; blue for chris
+	jr .got_gender3
+.female3
+	ld a, $0 ; red for kris
+.got_gender3
+	hlcoord 18, 1, wAttrmap
+	ld [hl], a
+	call ApplyAttrmap
+	call ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+	ret
+
+_CGB_TrainerCardKanto:
+	ld a, [wOptions2]
+	and 1 << MENU_ACCOUNT
+	ld de, wBGPals1
+	xor a ; CHRIS & MISTY
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, FALKNER ; KRIS
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, BLAINE
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, LT_SURGE ; ERIKA
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, TOPAZ ;JANINE
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, SABRINA
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, JASMINE ; BROCK
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, BLUE
+	call GetTrainerPalettePointer
+	call LoadPalette_White_Col1_Col2_Black
+	ld a, PREDEFPAL_CGB_BADGE
+	call GetPredefPal
+	call LoadHLPaletteIntoDE
+
+	; fill screen with gender-based palette for the card border
+	hlcoord 0, 0, wAttrmap
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	ld a, [wPlayerGender]
+	and a
+	jr z, .male
+	dec a
+	jr z, .female
+	ld a, $6 ; dark magenta for enby
+	jr .got_gender
+.male
+	ld a, $1 ; blue for chris
+	jr .got_gender
+.female
+	ld a, $0 ; red for kris
+.got_gender
+	call ByteFill
+	; fill trainer sprite area with same-gender palette
+	hlcoord 14, 1, wAttrmap
+	lb bc, 7, 5
+	ld a, [wPlayerGender]
+	and a
+	jr z, .male2
+	dec a
+	jr z, .female2
+	ld a, $4 ; enby
+	jr .got_gender2
+	.male2
+	ld a, $0 ; chris
+	jr .got_gender2
+	.female2
+	ld a, $1 ; kris
+.got_gender2
+	call FillBoxCGB
+	hlcoord 2, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $6 ; brock
+	call FillBoxCGB
+	hlcoord 6, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $0 ; misty
+	call FillBoxCGB
+	hlcoord 10, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $3 ; lt.surge
+	call FillBoxCGB
+	hlcoord 14, 11, wAttrmap
+	lb bc, 2, 4
+	ld a, $3 ; erika
+	call FillBoxCGB
+	hlcoord 2, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $4 ; janine
+	call FillBoxCGB
+	hlcoord 6, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $5 ; sabrina
+	call FillBoxCGB
+	hlcoord 10, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $2 ; blaine
+	call FillBoxCGB
+	hlcoord 14, 14, wAttrmap
+	lb bc, 2, 4
+	ld a, $7 ; blue
 	call FillBoxCGB
 	; top-right corner still uses the border's palette
 	ld a, [wPlayerGender]
