@@ -82,3 +82,7 @@
 	tilecoll WATER, WATER, WATER, WATER ; 51
 	tilecoll WATER, WATER, WATER, WATER ; 52
 	tilecoll WATER, WATER, WATER, WATER ; 53
+	tilecoll WALL, WALL, WALL, WALL ; 54
+	tilecoll FLOOR, WALL, WALL, WALL ; 55
+	tilecoll WALL, FLOOR, WALL, WALL ; 56
+	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, FLOOR ; 57

@@ -3146,7 +3146,9 @@ wWiltonFightCount::  db
 wParryFightCount::   db
 wErinFightCount::    db
 
-	ds 100
+;	ds 100
+; 	ITEMFIX: Needed to free up a few bytes, and for each new pokemon this would need to be done again in theory. I've halfed this because it seems to be unused? Which should buy some time.
+	ds 50
 
 wEventFlags:: flag_array NUM_EVENTS
 
@@ -3331,12 +3333,13 @@ wPartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
 endr
 wPartyMonNicknamesEnd::
 
-	ds 20 ; modified to fit the new unown
+;	ds 20 ; modified to fit the new unown
+;	ITEMFIX: According to the unown form tutorial this is entirely unused? Commented out to make space for increasingly large num_pokemon.
 
-wPokedexCaught:: flag_array NUM_POKEMON
+wPokedexCaught:: flag_array NUM_POKEMON	;	ITEMFIX: I've not changed this but FUCK YOU FOR MAKING THINGS HARD FOR NO REASON
 wEndPokedexCaught::
 
-wPokedexSeen:: flag_array NUM_POKEMON
+wPokedexSeen:: flag_array NUM_POKEMON ;	ITEMFIX: Same as above, no actual change, just a FUCK YOU to num_pokemon lmao
 wEndPokedexSeen::
 
 wUnownDex:: ds NUM_UNOWN

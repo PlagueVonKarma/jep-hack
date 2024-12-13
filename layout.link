@@ -337,11 +337,11 @@ WRAM0
 	"16-bit WRAM home data"
 WRAMX 1
 	"WRAM 1"
+	"Miscellaneous WRAM 1"	; had to move it here to get it to build, making a note in case this breaks something
 	"More WRAM 1"
 	"Enemy Party"
 	"Party"
 WRAMX 2
-	"Miscellaneous WRAM 1"	; had to move it here to get it to build, making a note in case this breaks something
 	"Pic Animations"
 	"Surrounding Data"
 	align 8
