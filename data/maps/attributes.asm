@@ -897,6 +897,12 @@ ENDM
 	map_attributes CoralCity, CORAL_CITY, $04, WEST
 	connection west, Route51, ROUTE_51, 0
 	
+	map_attributes SavoyCityPokecenter1F, SAVOY_CITY_POKECENTER_1F, $00, 0
+	map_attributes CoralCityPokecenter1F, CORAL_CITY_POKECENTER_1F, $00, 0
+	map_attributes RuddyTownPokecenter1F, RUDDY_TOWN_POKECENTER_1F, $00, 0
+	map_attributes CoralMart, CORAL_MART, $00, 0
+	map_attributes RuddyMart, RUDDY_MART, $00, 0
+	
 	map_attributes Route51, ROUTE_51, $05, WEST | EAST
 	connection west, Route52, ROUTE_52, -18
 	connection east, CoralCity, CORAL_CITY, 0
@@ -905,6 +911,9 @@ ENDM
 	connection east, Route51, ROUTE_51, 18
 	
 	map_attributes RuddyTown, RUDDY_TOWN, $04, 0
+	map_attributes Route52RuddyTownGate, ROUTE_52_RUDDY_TOWN_GATE, $00, 0
+	map_attributes Route53RuddyTownGate, ROUTE_53_RUDDY_TOWN_GATE, $00, 0
+	map_attributes Route54RuddyTownGate, ROUTE_54_RUDDY_TOWN_GATE, $00, 0
 
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	

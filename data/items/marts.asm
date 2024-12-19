@@ -37,6 +37,8 @@ Marts:
 	dw MartUnderground
 	dw MartLakeOfRage
 	dw MartOldCity
+	dw MartCoralCity
+	dw MartRuddyTown
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -434,4 +436,30 @@ MartOldCity:
 	db AWAKENING
 	db MAX_REPEL
 	db PORTRAITMAIL
+	db -1 ; end
+
+MartCoralCity:
+	db 9 ; # items
+	db ULTRA_BALL
+	db HYPER_POTION
+	db FULL_HEAL
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db ICE_HEAL
+	db MYSTIC_WATER
+	db SURF_MAIL
+	db -1 ; end
+	
+MartRuddyTown:
+	db 9 ; # items
+	db GREAT_BALL
+	db SUPER_POTION
+	db REVIVE
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db SUPER_REPEL
+	db MUSIC_MAIL
 	db -1 ; end

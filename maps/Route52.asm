@@ -9,8 +9,8 @@ Route52_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  8, 9, RUDDY_TOWN, 1
-	warp_event  9, 9, RUDDY_TOWN, 2
+	warp_event  8, 9, ROUTE_52_RUDDY_TOWN_GATE, 1
+	warp_event  9, 9, ROUTE_52_RUDDY_TOWN_GATE, 2
 		
 	def_coord_events
 

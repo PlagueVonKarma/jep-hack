@@ -671,16 +671,24 @@ ENDM
 	newgroup SAVOY_CITY										      ; 37
 	map_const SAVOY_CITY,								   20, 18 ; 1
 	map_const ROUTE_50_SAVOY_CITY_GATE,					    5,  4 ; 2
+	map_const SAVOY_CITY_POKECENTER_1F,                    10,  4 ; 3
 	endgroup
 	
 	newgroup CORAL_CITY										      ; 38
 	map_const CORAL_CITY,								   20, 18 ; 1
-	map_const ROUTE_51,									   25,  9 ; 2
-	map_const ROUTE_52,									   10, 27 ; 3
+	map_const CORAL_CITY_POKECENTER_1F,                    10,  4 ; 2
+	map_const CORAL_MART,								 	8,  4 ; 3
+	map_const ROUTE_51,									   25,  9 ; 4
+	map_const ROUTE_52,									   10, 27 ; 5
 	endgroup
 	
 	newgroup RUDDY_TOWN                                          ; 39
 	map_const RUDDY_TOWN,                                 20, 18 ; 1
+	map_const RUDDY_TOWN_POKECENTER_1F,                   10,  4 ; 2
+	map_const RUDDY_MART,								 	8, 4 ; 3
+	map_const ROUTE_52_RUDDY_TOWN_GATE,						5, 4 ; 4
+	map_const ROUTE_53_RUDDY_TOWN_GATE,						5, 4 ; 5
+	map_const ROUTE_54_RUDDY_TOWN_GATE,						5, 4 ; 6
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 40

@@ -191,6 +191,7 @@ SavoyCity_MapEvents:
 	warp_event 23,  5, DEBUG_ROOM, 1					;north gate, right
 	warp_event 4,   8, CORAL_CITY, 1					;port north
 	warp_event 4,   9, CORAL_CITY, 2					;port south
+	warp_event 25, 14, SAVOY_CITY_POKECENTER_1F, 1		; pokecenter
 	
 	def_coord_events
 

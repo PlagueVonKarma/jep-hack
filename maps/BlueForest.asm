@@ -4,7 +4,12 @@ BlueForest_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, BlueForestFlypointCallback
 
+BlueForestFlypointCallback:
+	setflag ENGINE_FLYPOINT_BLUE_FOREST
+	endcallback
+	
 BlueForest_MapEvents:
 	db 0, 0 ; filler
 

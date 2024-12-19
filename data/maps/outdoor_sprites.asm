@@ -336,7 +336,6 @@ IndigoGroupSprites:
 BlueForestGroupSprites: 	; Will have its own thing eventually
 AventurineCityGroupSprites:	; Ditto
 WhiteCityGroupSprites:  	; Ditto
-RuddyTownGroupSprites:  	; Ditto
 NewBarkGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY
@@ -805,6 +804,33 @@ CoralCityGroupSprites:
 	db SPRITE_SWIMMER_GIRL
 	db SPRITE_FISHER
 	db SPRITE_MONSTER
+	; 2 non-walking sprites
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+
+RuddyTownGroupSprites:
+	; 12 non-walking filler sprites
+	db SPRITE_SUICUNE
+	db SPRITE_SILVER_TROPHY
+	db SPRITE_FAMICOM
+	db SPRITE_POKEDEX
+	db SPRITE_WILL
+	db SPRITE_ROCKER
+	db SPRITE_NURSE
+	db SPRITE_FISHER
+	db SPRITE_BIG_LAPRAS
+	db SPRITE_BIG_ONIX
+	db SPRITE_SUDOWOODO
+	db SPRITE_RIVAL
+	; 9 walking sprites
+	db SPRITE_TEACHER
+	db SPRITE_TWIN
+	db SPRITE_ROCKER
+	db SPRITE_FISHING_GURU
+	db SPRITE_SWIMMER_GUY
+	db SPRITE_SWIMMER_GIRL
+	db SPRITE_RIVAL
+	db SPRITE_YOUNGSTER
 	; 2 non-walking sprites
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE

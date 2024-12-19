@@ -1048,10 +1048,15 @@ Route49_2_Blocks:
 ; All Nihon Pokecenter1Fs go here.
 SilentHillsPokecenter1F_Blocks:
 OldCityPokecenter1F_Blocks:
+SavoyCityPokecenter1F_Blocks:
+CoralCityPokecenter1F_Blocks:
+RuddyTownPokecenter1F_Blocks:
 	INCBIN "maps/NihonPokecenter1F.ablk"
 
 ; All generic Nihon Pokemarts go here.
 OldMart_Blocks:
+CoralMart_Blocks:
+RuddyMart_Blocks:
 	INCBIN "maps/NihonMart.ablk"
 
 NihonPokecenter2F_Blocks:
@@ -1227,6 +1232,10 @@ BlueLab_Blocks:
 	INCBIN "maps/BlueLab.ablk"
 
 Route49OldCityGate1F_Blocks:
+	INCBIN "maps/NihonGateNorthSouthStairs.ablk" ; 5, 4
+
+Route52RuddyTownGate_Blocks:
+Route54RuddyTownGate_Blocks:
 	INCBIN "maps/NihonGateNorthSouth.ablk" ; 5, 4
 
 Route49OldCityGate2F_Blocks:
@@ -1246,8 +1255,9 @@ WhiteCity_Blocks:
 	
 Route66WhiteCityGate_Blocks:
 Route50SavoyCityGate_Blocks:
-	INCBIN "maps/NihonGateEastWest.ablk"
-	
+Route53RuddyTownGate_Blocks:
+	INCBIN "maps/NihonGateEastWest.ablk" ; 5, 4
+
 OldCityGym_Blocks:
 	INCBIN "maps/OldCityGym.ablk"
 	

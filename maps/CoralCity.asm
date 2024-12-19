@@ -168,6 +168,8 @@ CoralCity_MapEvents:
 	def_warp_events
 	warp_event 14, 32, SAVOY_CITY, 4					;south port, north
 	warp_event 14, 33, SAVOY_CITY, 5					;south port, south
+	warp_event 31, 10, CORAL_CITY_POKECENTER_1F, 1		; pokecenter
+	warp_event 31, 14, CORAL_MART, 1		; mart
 	
 	def_coord_events
 
