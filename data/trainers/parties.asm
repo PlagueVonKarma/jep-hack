@@ -4200,7 +4200,7 @@ BlackbeltGroup:
 	db "YOSHI@", TRAINERTYPE_MOVES ; cianwood gym
 	db 26
 	dw TYROGUE
-	dw TACKLE, MACH_PUNCH
+	dw TACKLE, MACH_PUNCH, NO_MOVE, NO_MOVE
 	db 30
 	dw HITMONLEE
 	dw DOUBLE_KICK, MEDITATE, JUMP_KICK, FOCUS_ENERGY
@@ -4226,10 +4226,10 @@ BlackbeltGroup:
 	db "LAO@", TRAINERTYPE_MOVES ; cianwood gym
 	db 26
 	dw TYROGUE
-	dw TACKLE, MACH_PUNCH
+	dw TACKLE, MACH_PUNCH, NO_MOVE, NO_MOVE
 	db 30
 	dw HITMONCHAN
-	dw COMET_PUNCH, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH
+	dw UPPERCUT, THUNDERPUNCH, ICE_PUNCH, FIRE_PUNCH
 	db -1 ; end
 
 	next_list_item ; BLACKBELT_T (5)
@@ -4866,7 +4866,7 @@ CamperGroup:
 
 ArianaGroup: ; Ariana
 	next_list_item ; EXECUTIVEF (1)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES ; Radio Tower
+	db "ARIANA@", TRAINERTYPE_MOVES ; Radio Tower
 	db 30
 	dw BELLEDAM
 	dw PURSUIT, HEAL_BELL, LOVELY_KISS, FAINT_ATTACK
@@ -4885,7 +4885,7 @@ ArianaGroup: ; Ariana
 	db -1 ; end
 
 	next_list_item ; EXECUTIVEF (2)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES ; Radio Tower
+	db "ARIANA@", TRAINERTYPE_MOVES ; Rocket HQ - severely overtuned. consider revising.
 	db 32
 	dw ARBOK
 	dw WRAP, POISON_STING, BITE, GLARE
@@ -4898,7 +4898,7 @@ ArianaGroup: ; Ariana
 	; Sneasler
 	db 35
 	dw JUNGELA
-	dw GIGA_DRAIN, NO_MOVE, NO_MOVE, NO_MOVE ; needs sorting
+	dw GIGA_DRAIN, NO_MOVE, NO_MOVE, NO_MOVE ; needs sorting - also, this thing is ridiculous. disrespectfully strong.
 	db -1 ; end
 	
 	next_list_item ; EXECUTIVEF (3)
