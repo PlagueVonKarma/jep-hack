@@ -282,7 +282,7 @@ BurnedTower1F_MapEvents:
 	warp_event  9, 15, ECRUTEAK_CITY, 13
 	warp_event 10, 15, ECRUTEAK_CITY, 13
 	warp_event 10,  9, BURNED_TOWER_B1F, 1
-;	warp_event  5,  5, BURNED_TOWER_B1F, 1 ; inaccessible, left over from G/S
+	warp_event  5,  5, BURNED_TOWER_B1F, 3
 ;	warp_event  5,  6, BURNED_TOWER_B1F, 1 ; inaccessible, left over from G/S
 ;	warp_event  4,  6, BURNED_TOWER_B1F, 1 ; inaccessible, left over from G/S
 ;	warp_event 15,  4, BURNED_TOWER_B1F, 2 ; inaccessible, left over from G/S

@@ -232,11 +232,11 @@ BurnedTowerB1F_MapEvents:
 
 	def_warp_events
 	warp_event 10,  9, BURNED_TOWER_1F, 3
-	warp_event 17,  7, BURNED_TOWER_1F, 7
+;	warp_event 17,  7 , BURNED_TOWER_1F, 7 gsc leftover
 	warp_event 10,  8, BURNED_TOWER_1F, 9
-	warp_event  3, 13, BURNED_TOWER_1F, 10
-	warp_event 17, 14, BURNED_TOWER_1F, 12
-	warp_event  7, 15, BURNED_TOWER_1F, 14
+;	warp_event  3, 13 , BURNED_TOWER_1F, 10 gsc leftover
+;	warp_event 17, 14 , BURNED_TOWER_1F, 12 gsc leftover
+	warp_event  7, 15, BURNED_TOWER_1F, 4
 
 	def_coord_events
 	coord_event 10,  6, SCENE_BURNEDTOWERB1F_RELEASE_THE_BEASTS, ReleaseTheBeasts
