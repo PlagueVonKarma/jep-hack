@@ -120,6 +120,7 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_SAVOY_CITY
 	engine_flag wVisitedSpawns, SPAWN_CORAL_CITY
 	engine_flag wVisitedSpawns, SPAWN_RUDDY_TOWN
+	engine_flag wVisitedSpawns, SPAWN_SUNGLOW_CITY
 	engine_flag wVisitedSpawns, SPAWN_BLUE_FOREST
 	engine_flag wVisitedSpawns, SPAWN_AVENTURINE_CITY
 	engine_flag wVisitedSpawns, NUM_SPAWNS ; unused

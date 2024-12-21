@@ -52,6 +52,7 @@ SpawnPoints:
 	spawn SAVOY_CITY,				  25, 15
 	spawn CORAL_CITY,				  31, 11
 	spawn RUDDY_TOWN,				  31, 15
+	spawn SUNGLOW_CITY,				  15, 15
 	spawn BLUE_FOREST,				  13, 19
 	spawn AVENTURINE_CITY,			  33, 21
 	

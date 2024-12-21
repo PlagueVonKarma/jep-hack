@@ -143,9 +143,11 @@ Landmarks:
 	landmark 68, 100, Route50Name
 	landmark 60, 100, SavoyCityName
 	landmark  36, 92, CoralCityName
-	landmark  24, 92, Route52Name
-	landmark  12, 84, Route53Name
+	landmark  24, 92, Route51Name
+	landmark  12, 84, Route52Name
 	landmark  12, 68, RuddyTownName
+	landmark  60, 88, Route57Name
+	landmark  60, 76, SunglowCityName
 	landmark 140, 60, BlueForestName
 	landmark 140, 84, AventurineCityName
 	landmark 108, 108, Route66Name
@@ -271,14 +273,16 @@ UnknownName:         db "?????@"
 Route66Name:         db "ROUTE 66@"
 Route49Name:         db "ROUTE 49@"
 Route50Name:		 db "ROUTE 50@"
-Route52Name:		 db "ROUTE 51@"
-Route53Name:		 db "ROUTE 52@"
+Route51Name:		 db "ROUTE 51@"
+Route52Name:		 db "ROUTE 52@"
+Route57Name:		 db "ROUTE 57@"
 QuietCaveName:       db "QUIET¯CAVE@"
 OldCityName:		 db "SEPIA¯CITY@"
 PokemonPagodaName:	 db "#MON¯PAGODA@"
 SavoyCityName:		 db "SAVOY¯CITY@"
 CoralCityName:		 db "CORAL¯CITY@"
 RuddyTownName:		 db "RUDDY¯TOWN@"
+SunglowCityName:     db "SUNGLOW¯CITY@"
 BlueForestName:      db "BLUE¯FOREST@"
 AventurineCityName:  db "AVENTURINE¯CITY@"
 WhiteCityName:       db "WHITE¯CITY@"
