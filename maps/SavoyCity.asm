@@ -187,8 +187,8 @@ SavoyCity_MapEvents:
 
 	def_warp_events
 	warp_event 33, 15, ROUTE_50_SAVOY_CITY_GATE, 1		;east gate
-	warp_event 22,  5, DEBUG_ROOM, 1					;north gate, left
-	warp_event 23,  5, DEBUG_ROOM, 1					;north gate, right
+	warp_event 22,  5, ROUTE_57, 1						;north gate, left
+	warp_event 23,  5, ROUTE_57, 2						;north gate, right
 	warp_event 4,   8, CORAL_CITY, 1					;port north
 	warp_event 4,   9, CORAL_CITY, 2					;port south
 	warp_event 25, 14, SAVOY_CITY_POKECENTER_1F, 1		; pokecenter
