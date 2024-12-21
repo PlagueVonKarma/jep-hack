@@ -2714,8 +2714,8 @@ FisherGroup:
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 10
 	dw ORFRY
-	db 16 ; Could be a little strong, but Orfry evolves here...
-	dw GOLDEEN
+	db 12 ; Could be a little strong, but Orfry evolves here...
+	dw POLIWAG
 	db -1 ; end
 
 	next_list_item ; FISHER (3)
