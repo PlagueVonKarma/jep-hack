@@ -1,4 +1,4 @@
-	db "BIG EATER@" ; species name
+	db "KITTEN@" ; species name
 	dw 102, 45 ; height, weight
 
 	db   "Due to its poor"
