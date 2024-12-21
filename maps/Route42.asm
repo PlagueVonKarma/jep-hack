@@ -15,7 +15,7 @@ Route42_MapScripts:
 	scene_script Route42Noop2Scene, SCENE_ROUTE42_SUICUNE
 
 	def_callbacks
-	callback MAPCALLBACK_OBJECTS, Route14SuicuneCallback
+	callback MAPCALLBACK_OBJECTS, Route42SuicuneCallback
 
 Route42Noop1Scene:
 	end
