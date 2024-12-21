@@ -690,16 +690,21 @@ ENDM
 	map_const ROUTE_53_RUDDY_TOWN_GATE,						5, 4 ; 5
 	map_const ROUTE_54_RUDDY_TOWN_GATE,						5, 4 ; 6
 	endgroup
+
+	newgroup SUNGLOW_CITY                                        ; 40
+	map_const ROUTE_57,                                   10, 27 ; 1
+	map_const SUNGLOW_CITY,                                10, 9 ; 2
+	endgroup
 	
-	newgroup BLUE_FOREST                                          ; 40
+	newgroup BLUE_FOREST                                          ; 41
 	map_const BLUE_FOREST,                                 20, 18 ; 1
 	endgroup
 	
-	newgroup AVENTURINE_CITY                                      ; 41
+	newgroup AVENTURINE_CITY                                      ; 42
 	map_const AVENTURINE_CITY,                             20, 18 ; 1
 	endgroup
 	
-	newgroup WHITE_CITY                                           ; 42
+	newgroup WHITE_CITY                                           ; 43
 	map_const WHITE_CITY,                           	   30, 27 ; 1
 	map_const ROUTE_66_WHITE_CITY_GATE,					    5,  4 ; 2
 	endgroup

@@ -413,7 +413,7 @@ DebugRoom_MapEvents:
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
 	warp_event  4,  9, SUMMER_BEACH_HOUSE, 1 ; left lab/league warp
 	warp_event  5,  9, BLUE_FOREST, 1 ; right lab/league warp
-	warp_event 35, 17, AVENTURINE_CITY, 1 ; east warp
+	warp_event 35, 17, SUNGLOW_CITY, 1 ; east warp
 	warp_event  5, 35, LAVENDER_TOWN, 1 ; southwest warp
 	warp_event 19, 34, KANTO_SAFARI_ZONE_CENTER, 1 ; southern warp
 	warp_event 33, 33, FOUR_ISLAND, 1 ; southeast warp

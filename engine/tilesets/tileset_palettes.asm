@@ -16,6 +16,8 @@ LoadSpecialMapPalette:
 	jr z, .snowy
 	cp TILESET_LAVENDER_CRYPT
 	jr z, .crypt
+	cp TILESET_NIHON_BIRDON
+	jr z, .desert
 	jr .do_nothing
 
 .pokecom_2f
@@ -59,6 +61,15 @@ LoadSpecialMapPalette:
 
 .crypt
 	call LoadCryptPalette
+	scf
+	ret
+	
+.desert
+	ld a, [wTimeOfDay]
+	and $7
+	cp NITE_F
+	jr z, .do_nothing
+	call LoadDesertPalette
 	scf
 	ret
 	
@@ -191,3 +202,24 @@ LoadCryptPalette:
 
 CryptPalette:
 INCLUDE "gfx/tilesets/lavendercrypt.pal"
+
+LoadDesertPalette:
+	cp DAY_F
+	jr z, .day
+	scf
+;morn
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, DesertMornPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+.day
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, DesertDayPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+	
+INCLUDE "gfx/tilesets/desert.pal"

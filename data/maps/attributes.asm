@@ -915,6 +915,12 @@ ENDM
 	map_attributes Route53RuddyTownGate, ROUTE_53_RUDDY_TOWN_GATE, $00, 0
 	map_attributes Route54RuddyTownGate, ROUTE_54_RUDDY_TOWN_GATE, $00, 0
 
+	map_attributes Route57, ROUTE_57, $03, NORTH
+	connection north, SunglowCity, SUNGLOW_CITY, 0
+
+	map_attributes SunglowCity, SUNGLOW_CITY, $03, SOUTH ; this is missing a route connection
+	connection south, Route57, ROUTE_57, 0
+
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	
 	map_attributes AventurineCity, AVENTURINE_CITY, $05, 0 ; this is on its own for now. add connections later.

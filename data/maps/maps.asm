@@ -56,9 +56,10 @@ MapGroupPointers::
 	dw MapGroup_SavoyCity	; 37
 	dw MapGroup_CoralCity	; 38
 	dw MapGroup_RuddyTown   ; 39
-	dw MapGroup_BlueForest  ; 40
-	dw MapGroup_Aventurine	; 41
-	dw MapGroup_WhiteCity   ; 42
+	dw MapGroup_SunglowCity ; 40
+	dw MapGroup_BlueForest  ; 41
+	dw MapGroup_Aventurine	; 42
+	dw MapGroup_WhiteCity   ; 43
 	assert_table_length NUM_MAP_GROUPS
 
 MapGroup_Olivine:
@@ -757,6 +758,12 @@ MapGroup_RuddyTown:
 	map Route53RuddyTownGate, TILESET_NIHON_GATE, GATE, LANDMARK_ROUTE_50, MUSIC_PEACEFULTHEME, FALSE, PALETTE_DAY, FISHGROUP_NONE ; needs new landmark when route is made
 	map Route54RuddyTownGate, TILESET_NIHON_GATE, GATE, LANDMARK_ROUTE_50, MUSIC_PEACEFULTHEME, FALSE, PALETTE_DAY, FISHGROUP_NONE ; see above
 	assert_table_length NUM_RUDDY_TOWN_MAPS
+
+MapGroup_SunglowCity:
+	table_width MAP_LENGTH, MapGroup_SunglowCity
+	map Route57, TILESET_NIHON_BIRDON, ROUTE, LANDMARK_BLUE_FOREST, MUSIC_MOBILE_ADAPTER_MENU, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	map SunglowCity, TILESET_NIHON_BIRDON, TOWN, LANDMARK_BLUE_FOREST, MUSIC_MOBILE_ADAPTER_MENU, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	assert_table_length NUM_SUNGLOW_CITY_MAPS
 
 MapGroup_BlueForest:
 	table_width MAP_LENGTH, MapGroup_BlueForest
