@@ -74,7 +74,7 @@ Moves1:
 	move EFFECT_MIST,                0, ICE,           100, 30,   0      ;MIST
 	move EFFECT_NORMAL_HIT,         40, WATER,         100, 25,   0      ;WATER_GUN
 	move EFFECT_NORMAL_HIT,        120, WATER,          80,  5,   0      ;HYDRO_PUMP
-	move EFFECT_NORMAL_HIT,         95, WATER,         100, 15,   0      ;SURF
+	move EFFECT_SURF,         		95, WATER,         100, 15,   0      ;SURF
 	move EFFECT_FREEZE_HIT,         95, ICE,           100, 10,  10      ;ICE_BEAM
 	move EFFECT_FREEZE_HIT,        120, ICE,            70,  5,  10      ;BLIZZARD
 	move EFFECT_CONFUSE_HIT,        65, PSYCHIC_TYPE,  100, 20,  10      ;PSYBEAM
@@ -267,21 +267,21 @@ Moves1:
 	move EFFECT_SP_DEF_DOWN_HIT,    80, GHOST,         100, 15,  20      ;SHADOW_BALL
 	move EFFECT_FUTURE_SIGHT,       80, PSYCHIC_TYPE,   90, 15,   0      ;FUTURE_SIGHT
 	move EFFECT_DEFENSE_DOWN_HIT,   20, FIGHTING,      100, 15,  50      ;ROCK_SMASH
-	move EFFECT_TRAP_TARGET,        15, WATER,          70, 15,   0      ;WHIRLPOOL
+	move EFFECT_WHIRLPOOL,       	15, WATER,          70, 15,   0      ;WHIRLPOOL
 	move EFFECT_BEAT_UP,            10, DARK,          100, 10,   0      ;BEAT_UP
 	move EFFECT_FLINCH_HIT,         80, ROCK,          100, 15,  30      ;ROCK_HEAD
 	move EFFECT_NORMAL_HIT,        140, ROCK,           70,  5,   0      ;ROCK_SLASH
 	move EFFECT_NORMAL_HIT,         50, BUG,           100, 15,   0      ;CROSS_CUTTER
 	move EFFECT_SP_ATK_DOWN,         0, NORMAL,        100, 40,   0      ;MEGAPHONE
 	move EFFECT_FREEZE_HIT,        100, ICE,         	95,  5,  30      ;MYSTIC_ICE
-	move EFFECT_FLY,                85, WATER,         85,  5,   0     ; BOUNCE - went back and forth on type (making it modern or keeping it spaceworldy), chose spaceworld to diversify the "fly" move category
+	move EFFECT_BOUNCE,                85, FLYING,         85,  5,   0     ; BOUNCE - with Water Sport now in the game, Bounce's SW97 Water typing is no longer necessary.
 	move EFFECT_ACCURACY_UP,        85, GRASS,         	 0, 20,   0     ; BRIGHT_MOSS
 	move EFFECT_COIN_HURL,           1, NORMAL,        100, 20,   0     ; COIN_HURL
 	move EFFECT_NORMAL_HIT,         85, GROUND,        100, 10,   0     ; UPROOT
 	move EFFECT_MIRROR_COAT,         1, PSYCHIC_TYPE,  100, 10,   0     ; SYNCHRONIZE - effect not implemented
 	move EFFECT_ATTACK_UP_HIT,      70, STEEL,         	90, 10,  10     ; STRONG_ARM
 	move EFFECT_FLINCH_HIT,         55, FIGHTING,       80, 15,   30    ; UPPERCUT
-	move EFFECT_NORMAL_HIT,          1, WATER,         	 1, 15,   0     ; WATER_SPORT  - effect not implemented
+	move EFFECT_FLY,         		80, WATER,         100, 10,   0     ; WATER_SPORT  - Now a Dive clone.
 	move EFFECT_NORMAL_HIT,         55, FLYING,         95, 10,   0     ; WIND_RIDE
 	move EFFECT_NORMAL_HIT,         80, FAIRY,         100, 10,   0     ; DAZZLING_GLEAM
 	move EFFECT_ALWAYS_HIT,         40, FAIRY,         100, 15,   0     ; DISARMING_VOICE

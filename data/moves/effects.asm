@@ -2097,3 +2097,68 @@ CoinHurl: ; Identical to Return, except it calculates damage differently, and do
 	checkfaint
 	buildopponentrage
 	endmove
+
+Surf:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	doubleunderwaterdamage
+	checkhit
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	buildopponentrage
+	kingsrock
+	endmove
+
+Whirlpool:
+	checkobedience
+	usedmovetext
+	doturn
+	checkhit
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	doubleunderwaterdamage
+	clearmissdamage
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	buildopponentrage
+	traptarget
+	endmove
+
+Bounce:
+	checkcharge
+	checkobedience
+	doturn
+	charge
+	usedmovetext
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	moveanimnosub
+	raisesub
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	paralyzetarget
+	kingsrock
+	endmove

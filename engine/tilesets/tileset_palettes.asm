@@ -1,3 +1,8 @@
+; Zeta, Rangi's Dive code sets something special here.
+; https://github.com/Rangi42/pokecrystal/commit/c21561ea717feef9b2eb3785c2ea112cd0d19ba0#diff-3f65a383d53b5b6bef93c0cf6b1078db365ec51031b8c9b8cccff1d8b81b77db
+; Test and see if you like it; do so by adding the changes from the equivalent file.
+; Requires underwater tileset to exist.
+
 LoadSpecialMapPalette:
 	ld a, [wMapTileset]
 	cp TILESET_POKECOM_CENTER

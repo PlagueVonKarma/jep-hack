@@ -291,7 +291,7 @@ BattleAnimations::
 	dw BattleAnim_Psybeam ; Synchronize
 	dw BattleAnim_StrongArm
 	dw BattleAnim_Uppercut
-	dw BattleAnim_WaterGun ; uhhh
+	dw BattleAnim_WaterSport
 	dw BattleAnim_Wind_Ride ; Wind Ride but real
 	dw BattleAnim_Flash ; Dazzling Gleam
 	dw BattleAnim_Sing ; Disarming Voice
@@ -5054,4 +5054,41 @@ BattleAnim_ShowMon_1:
 	anim_wait 4
 	anim_incobj 1
 	anim_wait 1
+	anim_ret
+
+BattleAnim_WaterSport:
+	anim_2gfx ANIM_GFX_SAND, ANIM_GFX_WATER
+	anim_if_param_equal $0, .hit
+	anim_if_param_equal $2, .fail
+	anim_call BattleAnim_FollowPlayerHead_0
+	anim_bgeffect ANIM_BG_DIG, $0, $1, $1
+	anim_obj ANIM_OBJ_DIVE_2, 72, 104, $0
+	anim_sound 0, 0, SFX_BUBBLEBEAM
+.loop
+	anim_obj ANIM_OBJ_DIVE_1, 56, 104, $0
+	anim_wait 16
+	anim_loop 6, .loop
+	anim_wait 32
+	anim_bgeffect ANIM_BG_HIDE_MON, $0, $1, $0
+	anim_wait 8
+	anim_incbgeffect ANIM_BG_DIG
+	anim_call BattleAnim_ShowMon_0
+	anim_ret
+.hit
+	anim_bgeffect ANIM_BG_30, $0, $0, $0
+	anim_sound 0, 1, SFX_HYDRO_PUMP
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 124, 72, $0
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 140, 72, $0
+	anim_bgeffect ANIM_BG_31, $30, $0, $0
+	anim_wait 12
+	anim_obj ANIM_OBJ_HYDRO_PUMP, 132, 72, $0
+	anim_bgeffect ANIM_BG_31, $1c, $0, $0
+	anim_wait 24
+	anim_bgeffect ANIM_BG_31, $8, $0, $0
+	anim_wait 24
+	anim_bgeffect ANIM_BG_32, $0, $0, $0
+	anim_wait 16
+.fail
+	anim_bgeffect ANIM_BG_ENTER_MON, $0, $1, $0
+	anim_wait 32
 	anim_ret

@@ -1502,8 +1502,6 @@ _OakText3::
 	text_promptbutton
 	text_end
 
-	text_end ; unreferenced
-
 _OakText4::
 	text "People and #MON"
 	line "live together by"
@@ -1527,4 +1525,63 @@ _OakText5::
 
 	para "That's why I study"
 	line "#MON every day."
+	prompt
+
+_AskStrongArmText::
+	text "The wall is very"
+	line "rocky…"
+
+	para "Want to use"
+	line "STRONG ARM?"
+	done
+
+_UsedStrongArmText::
+	text_ram wStringBuffer2
+	text " used"
+	line "STRONG ARM!"
+	prompt
+
+_CantStrongArmText::
+	text "The wall is very"
+	line "rocky…"
+
+	para "Can a #MON's"
+	line "move scale it?"
+	done
+
+_CantWaterSportText::
+	text "Can't use"
+	line "WATER SPORT"
+	cont "here!"
+	prompt
+
+_CanWaterSportText::
+	text "The sea is deep."
+	para "A #MON can"
+	line "dive here."
+	done
+
+_AskWaterSportDownText::
+	text "The sea is deep."
+	line "Want to use"
+	cont "WATER SPORT?"
+	done
+
+_AskWaterSportUpText::
+	text "Light is filter-"
+	line "ing from above."
+	
+	para "Want to use"
+	line "WATER SPORT?"
+	done
+
+_UsedWaterSportText::
+	text_from_ram wStringBuffer2
+	text " used"
+	line "WATER SPORT!"
+	done
+
+HidUnderwaterText::
+	text_start
+	line "hid underwater!"
 	prompt

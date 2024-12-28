@@ -1054,6 +1054,30 @@ MACRO getname
 	db \1 ; memory
 ENDM
 
+; divemap macro.
+; When adding a divemap to an area, you do it like so;
+;		callback MAPCALLBACK_NEWMAP, .DiveMap
+;.DiveMap:
+;	divemap MAPCONSTHERE
+;	return
+; Got it?
+
+	const divemap_command
+MACRO divemap
+if _NARG == 1
+	divemap \1, 0, 0
+else
+	db divemap_command
+	map_id \1 ; map
+	db \2 ; delta x
+	db \3 ; delta y
+endc
+ENDM
+	const divewarp_command
+MACRO divewarp
+	db divewarp_command
+ENDM
+
 	const wait_command ; $a8
 MACRO wait
 	db wait_command

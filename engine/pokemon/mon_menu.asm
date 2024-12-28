@@ -141,6 +141,11 @@ PokemonActionSubmenu:
 	dbw MONMENUITEM_WATERFALL,  MonMenu_Waterfall
 	dbw MONMENUITEM_ROCKSMASH,  MonMenu_RockSmash
 	dbw MONMENUITEM_SWEETSCENT, MonMenu_SweetScent
+	dbw MONMENUITEM_UPROOT, 	MonMenu_Uproot
+	dbw MONMENUITEM_WATER_SPORT,MonMenu_WaterSport
+	dbw MONMENUITEM_STRONG_ARM, MonMenu_StrongArm
+	dbw MONMENUITEM_BRIGHT_MOSS,MonMenu_BrightMoss
+	dbw MONMENUITEM_WIND_RIDE, 	MonMenu_WindRide
 	dbw MONMENUITEM_STATS,      OpenPartyStats
 	dbw MONMENUITEM_SWITCH,     SwitchPartyMons
 	dbw MONMENUITEM_ITEM,       GiveTakePartyMonItem
@@ -792,6 +797,43 @@ MonMenu_SweetScent:
 	farcall SweetScentFromMenu
 	ld b, $4
 	ld a, $2
+	ret
+
+MonMenu_Uproot:
+	ld a, $3 ; will be unused for now, so let's stay in the party menu
+	ret
+
+MonMenu_WaterSport:
+	farcall WaterSportFunction
+	ld a, [wFieldMoveSucceeded]
+	cp $1
+	jr nz, .Fail
+	ld b, $4
+	ld a, $2
+	ret
+.Fail:
+	ld a, $3
+	ret
+
+MonMenu_StrongArm: ; just rock climb...
+	farcall StrongArmFunction
+	ld a, [wFieldMoveSucceeded]
+	cp $1
+	jr nz, .Fail
+	ld b, $4
+	ld a, $2
+	ret
+
+.Fail:
+	ld a, $3
+	ret
+
+MonMenu_BrightMoss:
+	ld a, $3 ; will be unused for now, so let's stay in the party menu
+	ret
+
+MonMenu_WindRide:
+	ld a, $3 ; will be unused for now, so let's stay in the party menu
 	ret
 
 ChooseMoveToDelete:

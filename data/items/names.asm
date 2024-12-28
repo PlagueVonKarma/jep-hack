@@ -252,11 +252,12 @@ ItemNames::
 	li "HM05"
 	li "HM06"
 	li "HM07"
+	li "HM08"
+	; nihon hms
+	li "HM09"
+	li "HM10" ; BUG: HMSs over 9 display numbers incorrectly. Need to account for more than 9 HMs in bag display. The bug isn't here, it should be in the bag script.
+	li "HM11"
+	li "HM12"
 	assert_list_length NUM_ITEMS + NUM_TMS + NUM_HMS
-	li "TERU-SAMA"
-	li "TERU-SAMA"
-	li "TERU-SAMA"
-	li "TERU-SAMA"
-	li "TERU-SAMA"
 	li "?"
 	assert_list_length $100

@@ -38,7 +38,7 @@ _AnimateTileset::
 Tileset0Anim:
 TilesetJohtoModernAnim:
 	dw vTiles2 tile $14, AnimateWaterTile
-	dw NULL,  WaitTileAnimation
+	dw vTiles2 tile $5b, AnimateDeepWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  AnimateWaterPalette
@@ -357,6 +357,23 @@ TilesetNihonMartAnim:
 	dw NULL,  WaitTileAnimation
 	dw NULL,  DoneTileAnimation
 
+; Currently unused.
+; Zeta, you've made your own tileset, but check here and see what you want.
+; https://github.com/Rangi42/pokecrystal/commit/c21561ea717feef9b2eb3785c2ea112cd0d19ba0#diff-88dbff1eb3920f69b17a3d5f613643e1a41096514706bc09f449e4aa637f20e4R5647
+TilesetUnderwaterAnim:
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  UnderwaterBubbleTile
+	dw NULL,  WaitTileAnimation
+	dw NULL,  AnimateSeaweedTile1
+	dw NULL,  AnimateSeaweedTile2
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  WaitTileAnimation
+	dw NULL,  StandingTileFrame8
+	dw NULL,  DoneTileAnimation
+
 DoneTileAnimation:
 ; Reset the animation command loop.
 	xor a
@@ -550,6 +567,32 @@ AnimateWaterTile:
 
 .WaterTileFrames:
 	INCBIN "gfx/tilesets/water/water.2bpp"
+
+AnimateDeepWaterTile:
+; Draw a deep water tile for the current frame in VRAM tile at de.
+; Save sp in bc (see WriteTile).
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+; 4 tile graphics, updated every other frame.
+	and %110
+; 2 x 8 = 16 bytes per tile
+	add a
+	add a
+	add a
+	add LOW(DeepWaterTileFrames)
+	ld l, a
+	ld a, 0
+	adc HIGH(DeepWaterTileFrames)
+	ld h, a
+; The stack now points to the start of the tile for this frame.
+	ld sp, hl
+	ld l, e
+	ld h, d
+	jp WriteTile
+DeepWaterTileFrames:
+	INCBIN "gfx/tilesets/water/deep-water.2bpp"
 
 ForestTreeLeftAnimation:
 ; Save the stack pointer in bc for WriteTile to restore
@@ -1124,3 +1167,76 @@ WhirlpoolTiles1: INCBIN "gfx/tilesets/whirlpool/1.2bpp"
 WhirlpoolTiles2: INCBIN "gfx/tilesets/whirlpool/2.2bpp"
 WhirlpoolTiles3: INCBIN "gfx/tilesets/whirlpool/3.2bpp"
 WhirlpoolTiles4: INCBIN "gfx/tilesets/whirlpool/4.2bpp"
+
+UnderwaterBubbleTile:
+; No parameters.
+; Save sp in bc (see WriteTile).
+	ld hl, sp+$0
+	ld b, h
+	ld c, l
+; Alternate tile graphic every frame
+	ld a, [wTileAnimationTimer]
+	and %111 ; 8 frames
+	swap a ; * 16 bytes per tile
+	ld e, a
+	ld d, 0
+	ld hl, UnderwaterBubbleTileFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $13 ; index of bubble tile
+	jp WriteTile
+
+UnderwaterBubbleTileFrames:
+	INCBIN "gfx/tilesets/bubble/1.2bpp"
+	INCBIN "gfx/tilesets/bubble/2.2bpp"
+	INCBIN "gfx/tilesets/bubble/3.2bpp"
+	INCBIN "gfx/tilesets/bubble/4.2bpp"
+	INCBIN "gfx/tilesets/bubble/5.2bpp"
+	INCBIN "gfx/tilesets/bubble/5.2bpp"
+	INCBIN "gfx/tilesets/bubble/5.2bpp"
+	INCBIN "gfx/tilesets/bubble/5.2bpp"
+
+AnimateSeaweedTile1:
+; No parameters.
+; Save sp in bc (see WriteTile).
+	ld hl, sp+$0
+	ld b, h
+	ld c, l
+; Alternate tile graphic every eighth frame
+	ld a, [wTileAnimationTimer]
+	and %100
+	srl a
+	srl a
+	swap a ; * 16 bytes per tile
+	ld e, a
+	ld d, 0
+	ld hl, SeaweedTileFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $03 ; index of seaweed tile 1
+	jp WriteTile
+
+AnimateSeaweedTile2:
+; No parameters.
+; Save sp in bc (see WriteTile).
+	ld hl, sp+$0
+	ld b, h
+	ld c, l
+; Alternate tile graphic every eighth frame
+	ld a, [wTileAnimationTimer]
+	xor %100 ; invert tile alternation from AnimateSeaweedTile1
+	and %100
+	srl a
+	srl a
+	swap a ; * 16 bytes per tile
+	ld e, a
+	ld d, 0
+	ld hl, SeaweedTileFrames
+	add hl, de
+	ld sp, hl
+	ld hl, vTiles2 tile $04 ; index of seaweed tile 2
+	jp WriteTile
+
+SeaweedTileFrames:
+	INCBIN "gfx/tilesets/seaweed/1.2bpp"
+	INCBIN "gfx/tilesets/seaweed/2.2bpp"

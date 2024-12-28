@@ -291,6 +291,12 @@ DEF HM01 EQU const_value
 	add_hm FLASH        ; f8
 	add_hm WHIRLPOOL    ; f9
 	add_hm WATERFALL    ; fa
+	; nihon hms - Bounce is left out under the pretense of it being Waterfall. We are making it a field move, though.
+	add_hm UPROOT
+	add_hm WATER_SPORT
+	add_hm STRONG_ARM
+	add_hm BRIGHT_MOSS
+	add_hm WIND_RIDE ; ADDME: this is impossible to add until 16bit items exist. add once it's there.
 DEF NUM_HMS EQU __tmhm_value__ - NUM_TMS - 1
 
 MACRO add_mt

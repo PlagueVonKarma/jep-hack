@@ -1268,6 +1268,8 @@ LoadMapPals:
 	ld bc, 8 palettes
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
+	
+	farcall LoadSpecialMapObjectPalette
 
 	ld a, [wEnvironment]
 	cp TOWN

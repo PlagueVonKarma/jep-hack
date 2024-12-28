@@ -36,15 +36,6 @@ INCBIN "data/tilesets/ice_path_metatiles.bin"
 TilesetIcePathColl::
 INCLUDE "data/tilesets/ice_path_collision.asm"
 
-TilesetPlayersRoomGFX::
-INCBIN "gfx/tilesets/players_room.2bpp.lz"
-
-TilesetPlayersRoomMeta::
-INCBIN "data/tilesets/players_room_metatiles.bin"
-
-TilesetPlayersRoomColl::
-INCLUDE "data/tilesets/players_room_collision.asm"
-
 
 SECTION "Tileset Data 2", ROMX
 
@@ -666,3 +657,14 @@ INCLUDE "data/tilesets/forest_kanto_collision.asm"
 
 TilesetForestKantoAttr::
 INCBIN "data/tilesets/forest_kanto_attributes.bin"
+
+SECTION "Tileset Data 17", ROMX
+; moved to make room for new rocky wall colls
+TilesetPlayersRoomGFX::
+INCBIN "gfx/tilesets/players_room.2bpp.lz"
+
+TilesetPlayersRoomMeta::
+INCBIN "data/tilesets/players_room_metatiles.bin"
+
+TilesetPlayersRoomColl::
+INCLUDE "data/tilesets/players_room_collision.asm"

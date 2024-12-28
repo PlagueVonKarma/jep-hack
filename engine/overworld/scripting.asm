@@ -237,6 +237,8 @@ ScriptCommandTable:
 	dw Script_trainerpic				 ; aa
 	dw Script_loadmonindex               ; ab
 	dw Script_checkmaplockedmons         ; ac
+	dw Script_divemap
+	dw Script_divewarp
 	assert_table_length NUM_EVENT_COMMANDS
 
 StartScript:
@@ -2413,4 +2415,39 @@ LoadScriptPokemonID:
 	or l
 	jp nz, GetPokemonIDFromIndex
 	ld a, [wScriptVar]
+	ret
+
+Script_divemap:
+	call GetScriptByte
+	ld [wDiveMapGroup], a
+	call GetScriptByte
+	ld [wDiveMapNumber], a
+	call GetScriptByte
+	ld [wDiveDeltaX], a
+	call GetScriptByte
+	ld [wDiveDeltaY], a
+	ret
+
+Script_divewarp:
+	ld a, [wDiveMapGroup]
+	ld [wMapGroup], a
+	ld a, [wDiveMapNumber]
+	ld [wMapNumber], a
+	ld a, [wXCoord]
+	ld b, a
+	ld a, [wDiveDeltaX]
+	add b
+	ld [wXCoord], a
+	ld a, [wYCoord]
+	ld b, a
+	ld a, [wDiveDeltaY]
+	add b
+	ld [wYCoord], a
+	ld a, -1
+	ld [wDefaultSpawnpoint], a
+	ld a, MAPSETUP_WARP
+	ld [hMapEntryMethod], a
+	ld a, 1
+	call LoadMapStatus
+	call StopScript
 	ret

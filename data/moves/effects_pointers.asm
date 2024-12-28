@@ -159,4 +159,7 @@ MoveEffectsPointers:
 	dw Fly
 	dw DefenseCurl
 	dw CoinHurl
+	dw Surf
+	dw Whirlpool
+	dw Bounce
 	assert_table_length NUM_MOVE_EFFECTS
