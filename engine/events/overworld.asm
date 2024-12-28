@@ -564,6 +564,9 @@ FlyFunction:
 	ld de, ENGINE_STORMBADGE
 	call CheckBadge
 	jr c, .nostormbadge
+	ld a, [wMapTileset]
+	cp TILESET_UNDERWATER
+	jr z, .indoors
 	call GetMapEnvironment
 	call CheckOutdoorMap
 	jr z, .outdoors
@@ -971,12 +974,6 @@ StrengthFunction:
 	call CheckBadge
 	jr c, .Failed
 	jr .UseStrength
-
-.AlreadyUsingStrength: ; unreferenced
-	ld hl, .AlreadyUsingStrengthText
-	call MenuTextboxBackup
-	ld a, $80
-	ret
 
 .AlreadyUsingStrengthText:
 	text_far _AlreadyUsingStrengthText
@@ -1542,6 +1539,8 @@ FishFunction:
 	jr z, .fail
 	cp PLAYER_SURF_PIKA
 	jr z, .fail
+	cp PLAYER_WATER_SPORT
+	jr z, .fail
 	call GetFacingTileCoord
 	call GetTileCollision
 	cp WATER_TILE
@@ -1906,3 +1905,309 @@ CantCutScript:
 CanCutText:
 	text_far _CanCutText
 	text_end
+
+; Strong Arm is currently just Rock Climb. It's progressgated to after the Earth Badge, just as Rock Climb was in HGSS.
+; This is a fine reward for beating Kanto, so I think it's ok to be here. 
+; It implies Rock Climb will be given in Oak's Lab.
+
+; Eventually, this will also contain checks that jump to Strength and Rock Smash.
+StrongArmFunction:
+	call FieldMoveJumptableReset
+.loop
+	ld hl, .jumptable
+	call FieldMoveJumptable
+	jr nc, .loop
+	and $7f
+	ld [wFieldMoveSucceeded], a
+	ret
+
+.jumptable:
+	dw .TryStrongArm
+	dw .DoStrongArm
+	dw .FailStrongArm
+
+.TryStrongArm:
+	ld de, ENGINE_EARTHBADGE
+	farcall CheckBadge
+	jr c, .noearthbadge
+	call TryStrongArmMenu
+	jr c, .failed
+	ld a, $1
+	ret
+
+.noearthbadge
+	ld a, $80
+	ret
+
+.failed
+	ld a, $2
+	ret
+
+.DoStrongArm:
+	ld hl, StrongArmFromMenuScript
+	call QueueScript
+	ld a, $81
+	ret
+
+.FailStrongArm:
+	call FieldMoveFailed
+	ld a, $80
+	ret
+
+TryStrongArmMenu:
+	call GetFacingTileCoord
+	ld c, a
+	push de
+	call CheckRockyWallTile
+	pop de
+	jr nz, .failed
+	xor a
+	ret
+
+.failed
+	scf
+	ret
+
+; You land here when you've successfully checked a wall.
+TryStrongArmOW::
+	; First, check if you have the Earth Badge.
+	; You will, because you get the move afterwards, it just covers trading.
+	ld de, ENGINE_EARTHBADGE
+	call CheckEngineFlag
+	jr c, .cant_climb
+	
+	; Now check if Strong Arm is in the party. This takes longer, thus the above going first.
+	ld d, STRONG_ARM
+	call CheckPartyMove
+	jr c, .cant_climb
+
+	ld a, BANK(AskStrongArmScript)
+	ld hl, AskStrongArmScript
+	call CallScript
+	scf
+	ret
+
+.cant_climb
+	ld a, BANK(CantStrongArmScript)
+	ld hl, CantStrongArmScript
+	call CallScript
+	scf
+	ret
+
+AskStrongArmScript:
+	opentext
+	writetext AskStrongArmText
+	yesorno
+	iftrue UsedStrongArmScript
+	closetext
+	end
+
+CantStrongArmScript:
+	jumptext CantStrongArmText
+
+StrongArmFromMenuScript:
+	reloadmappart
+	special UpdateTimePals
+
+UsedStrongArmScript:
+	callasm GetPartyNickname ; BUG: When used in the OW, the Pokemon is picked wrong. Tested with Machamp and Furret in party, and Furret would always be picked, regardless of party position. Seems to be finding the wrong Pokemon in OW scenarios specifically. wStringBuffer2 is failing to update.
+	writetext UsedStrongArmText
+	closetext
+	loadvar VAR_MOVEMENT, PLAYER_NORMAL
+	special UpdatePlayerSprite
+	waitsfx
+	playsound SFX_STRENGTH
+	readvar VAR_FACING
+	if_equal DOWN, .Down
+.loop_up
+	applymovement PLAYER, .StrongArmUpStep
+	callasm .CheckContinueStrongArm
+	iffalse .loop_up
+	end
+
+.Down:
+	applymovement PLAYER, .StrongArmFixFacing
+.loop_down
+	applymovement PLAYER, .StrongArmDownStep
+	callasm .CheckContinueStrongArm
+	iffalse .loop_down
+	applymovement PLAYER, .StrongArmRemoveFixedFacing
+	end
+
+.CheckContinueStrongArm:
+	xor a
+	ld [wScriptVar], a
+	ld a, [wPlayerTile]
+	call CheckRockyWallTile
+	ret z
+	ld a, $1
+	ld [wScriptVar], a
+	ret
+
+.StrongArmUpStep:
+	step UP
+	step_end
+
+.StrongArmDownStep:
+	step DOWN
+	step_end
+
+.StrongArmFixFacing:
+	turn_head UP
+	fix_facing
+	step_end
+
+.StrongArmRemoveFixedFacing:
+	remove_fixed_facing
+	turn_head DOWN
+	step_end
+
+AskStrongArmText:
+	text_far _AskStrongArmText
+	text_end
+
+UsedStrongArmText:
+	text_far _UsedStrongArmText
+	text_end
+
+CantStrongArmText:
+	text_far _CantStrongArmText
+	text_end
+
+WaterSportFunction:
+	call FieldMoveJumptableReset
+.loop
+	ld hl, .Jumptable
+	call FieldMoveJumptable
+	jr nc, .loop
+	and $7f
+	ld [wFieldMoveSucceeded], a
+	ret
+
+.Jumptable:
+ 	dw .TryWaterSport
+ 	dw .DoWaterSport
+ 	dw .FailWaterSport
+
+.TryWaterSport:
+	ld de, ENGINE_CASCADEBADGE
+	call CheckBadge
+	jr c, .nocascadebadge
+	call CheckMapCanWaterSport
+	jr nz, .cannotdive
+	ld a, $1
+	ret
+
+.nocascadebadge
+	ld a, $80
+	ret
+
+.cannotdive
+	ld a, $2
+	ret
+
+.DoWaterSport:
+	call GetPartyNickname
+	ld hl, WaterSportFromMenuScript
+	call QueueScript
+	ld a, $81
+	ret
+
+.FailWaterSport:
+	ld hl, CantWaterSportText
+	call MenuTextBoxBackup
+	ld a, $80
+	ret
+
+CantWaterSportText:
+	text_jump _CantWaterSportText
+	db "@"
+
+CheckMapCanWaterSport:
+	ld a, [wWaterSportMapGroup]
+	and a
+	jr z, .failed
+	ld a, [wWaterSportMapNumber]
+	and a
+	jr z, .failed
+	ld a, [wPlayerStandingTile]
+	call CheckWaterSportTile
+	jr nz, .failed
+	xor a
+	ret
+
+.failed
+	scf
+	ret
+
+TryWaterSportOW::
+	call CheckMapCanWaterSport
+	jr c, .failed
+	ld de, ENGINE_CASCADEBADGE
+	call CheckEngineFlag
+	jr c, .cant
+	ld d, DIVE
+	call CheckPartyMove
+	jr c, .cant
+	call GetPartyNick
+	ld a, BANK(AskWaterSportScript)
+	ld hl, AskWaterSportScript
+	call CallScript
+	scf
+	ret
+
+.failed
+	xor a
+	ret
+
+.cant
+	ld a, BANK(CantWaterSportScript)
+	ld hl, CantWaterSportScript
+	call CallScript
+	scf
+	ret
+
+CantWaterSportScript:
+	jumptext CanWaterSportText
+
+CanWaterSportText:
+	text_jump _CanWaterSportText
+	db "@"
+
+AskWaterSportScript:
+	opentext
+	copybytetovar wPlayerStandingTile
+	ifequal COLL_DIVE_UP, .up
+	writetext AskWaterSportDownText
+	jump .continue
+.up
+	writetext AskWaterSportUpText
+.continue
+	yesorno
+	iftrue UsedWaterSportScript
+	closetext
+	end
+
+AskWaterSportDownText:
+	text_jump _AskWaterSportDownText
+	db "@"
+
+AskWaterSportUpText:
+	text_jump _AskWaterSportUpText
+	db "@"
+
+WaterSportFromMenuScript:
+	special UpdateTimePals
+
+UsedWaterSportScript:
+	writetext UsedWaterSportText
+	waitbutton
+	closetext
+	special FadeOutPalettes
+	waitsfx
+	divewarp
+	end
+
+UsedWaterSportText:
+	text_jump _UsedWaterSportText
+	db "@"

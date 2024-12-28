@@ -33,6 +33,8 @@ DoPlayerMovement::
 	ld a, [wPlayerState]
 	cp PLAYER_NORMAL
 	jr z, .Normal
+	cp PLAYER_WATER_SPORT
+	jr z, .Normal
 	cp PLAYER_SURF
 	jr z, .Surf
 	cp PLAYER_SURF_PIKA

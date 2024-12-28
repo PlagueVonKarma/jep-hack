@@ -2916,11 +2916,17 @@ BGEffect_CheckFlyDigStatus:
 	jr nz, .player
 	ld a, [wEnemySubStatus3] ; EnemySubStatus3
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
+	ret nz
+	ld a, [wEnemySubStatus4]
+	and 1 << SUBSTATUS_UNDERWATER
 	ret
 
 .player
 	ld a, [wPlayerSubStatus3] ; PlayerSubStatus3
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
+	ret nz
+	ld a, [wPlayerSubStatus4]
+	and 1 << SUBSTATUS_UNDERWATER
 	ret
 
 BattleBGEffects_CheckSGB:

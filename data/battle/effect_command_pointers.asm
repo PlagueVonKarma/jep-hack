@@ -181,4 +181,5 @@ BattleCommandPointers:
 	dw BattleCommand_StartLoop
 	dw BattleCommand_Curl
 	dw BattleCommand_CoinHurlPower
+	dw BattleCommand_DoubleUnderwaterDamage
 	assert_table_length NUM_EFFECT_COMMANDS

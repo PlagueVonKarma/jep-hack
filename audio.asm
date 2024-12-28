@@ -165,7 +165,8 @@ INCLUDE "audio/music/NihonTrainerBattle.asm"
 INCLUDE "audio/music/NorthCity.asm"
 INCLUDE "audio/music/Tanoby01.asm"
 INCLUDE "audio/music/mart.asm"
-
+INCLUDE "audio/music/SepiaCity.asm"
+INCLUDE "audio/music/CoralCity.asm"
 
 SECTION "Sound Effects", ROMX
 

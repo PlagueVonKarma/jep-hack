@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, COATL
+	getmonname STRING_BUFFER_3, MACHAMP
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke COATL, 65, TM_ROCK_SMASH
+	givepoke MACHAMP, 65, TM_ROCK_SMASH
 	closetext
 	end
 
@@ -211,6 +211,7 @@ DebugItemScript:
 	giveitem HELIX_FOSSIL, 2
 	giveitem OLD_AMBER, 2
 	giveitem COIN_CASE
+	giveitem HM_STRONG_ARM
 	givecoins 2500
 	closetext
 	end
@@ -409,7 +410,7 @@ DebugRoom_MapEvents:
 	warp_event 23, 14, PLAYERS_HOUSE_1F, 1
 	warp_event  3, 20, SILENT_HILLS, 1
 	warp_event 11, 15, LAKE_OF_RAGE, 3
-	warp_event 27,  5, PEWTER_CITY, 2
+	warp_event 27,  5, SILVER_CAVE_ROOM_2,  1 ; test strong arm
 	warp_event 15,  2, GOLDENROD_CITY, 1 ; city warp
 	warp_event  4,  9, SUMMER_BEACH_HOUSE, 1 ; left lab/league warp
 	warp_event  5,  9, BLUE_FOREST, 1 ; right lab/league warp

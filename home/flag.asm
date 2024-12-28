@@ -29,6 +29,12 @@ EventFlagAction::
 	call FlagAction
 	ret
 
+ResetDiveMap::
+	xor a
+	ld [wDiveMapGroup], a
+	ld [wDiveMapNumber], a
+	ret
+
 FlagAction::
 ; Perform action b on bit de in flag array hl.
 

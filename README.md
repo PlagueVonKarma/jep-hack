@@ -82,6 +82,7 @@ Additionally, there have been many wild encounter tweaks. View this document for
 	- The GS Ball event has been restored, now being obtainable after beating the Elite Four and trying to exit the building.
 	- The Egg Ticket and Eon Mail events have been restored, now being associated with Buena's Password. Redeeming the Egg Ticket gives you an Odd Egg with the usual Pokemon pool and Shiny chances; this is soft resettable if you like that sort of thing.
 	- Additionally, old lore relating to the area has now been restored, including something about the Unown!
+- Walls can be climbed using Strong Arm, functionality identical to HGSS Rock Climb.
 
 # Credits
 As the open source nature of this project implies, people are free to reuse what's here for their own ends, **so long as credit is given to this hack and those who worked on what you reuse.** Additionally, we strongly urge you to make any projects using JEP's content open source. JEP strongly supports the [free software movement](https://www.fsf.org/about/) and its four essential freedoms. If you have any questions on the topic of content reuse, contact @ plague_von_karma on Discord.
@@ -147,6 +148,7 @@ JEP-affiliated musicians require music to be used with direct credit for non-com
 - Rangi42/polishedcrystal: [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
 - Nayru62 (Crystal Legacy) - [DVs & Hidden Power display code](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy/blob/main/engine/pokemon/stats_screen.asm)
 - SoupPotato - Move Animations and Pallettes [here](https://github.com/PiaCarrot/mae-pokeorange/commit/9e148c8a28bbe6850f3df11605b4f7b4068a4652) and [here](https://github.com/PiaCarrot/mae-pokeorange/commit/52f8f8e77189b01453590c5496bbc7a9332b6237).
+- [PiaCarrot/pokeorange](https://github.com/PiaCarrot/pokeorange) - [Rock Climb functionality](https://github.com/pret/pokecrystal/wiki/Rock-Climb)
 
 ## Academic References
 * Bolles, D. & Bolles, A. (1996). A Grammar of the Yucatecan Mayan Language. Revised ed. Lancaster, California: Labyrinthos Press. ISBN 0-911437-49-5. Available at: http://www.famsi.org/reports/96072/grammar/index.html

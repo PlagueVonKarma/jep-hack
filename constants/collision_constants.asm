@@ -10,6 +10,7 @@ DEF COLL_FLOOR             EQU $00
 DEF COLL_01                EQU $01 ; garbage
 DEF COLL_03                EQU $03 ; garbage
 DEF COLL_04                EQU $04 ; garbage
+DEF COLL_ROCKY_WALL		   EQU $06 ; added using this tutorial https://github.com/pret/pokecrystal/wiki/Rock-Climb
 DEF COLL_WALL              EQU $07
 DEF COLL_CUT_08            EQU $08 ; unused
 DEF COLL_TALL_GRASS_10     EQU $10 ; unused
@@ -26,7 +27,8 @@ DEF COLL_WHIRLPOOL         EQU $24
 DEF COLL_BUOY              EQU $27
 DEF COLL_CUT_28            EQU $28 ; garbage
 DEF COLL_WATER             EQU $29
-DEF COLL_ICE_2B            EQU $2b ; unused
+DEF COLL_DIVE_DOWN		   EQU $2a
+DEF COLL_DIVE_UP           EQU $2b
 DEF COLL_WHIRLPOOL_2C      EQU $2c ; unused
 DEF COLL_WATERFALL_RIGHT   EQU $30 ; unused
 DEF COLL_WATERFALL_LEFT    EQU $31 ; unused

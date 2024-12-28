@@ -387,7 +387,7 @@ wAttackMissed::
 wPlayerSubStatus1:: db
 wPlayerSubStatus2:: db
 wPlayerSubStatus3:: db
-wPlayerSubStatus4:: db
+wPlayerSubStatus4:: db ; bit 3 is underwater now
 wPlayerSubStatus5:: db
 
 wEnemySubStatus1:: db
@@ -3291,7 +3291,10 @@ wBackupWarpNumber:: db
 wBackupMapGroup::   db
 wBackupMapNumber::  db
 
-	ds 3
+wDiveMapGroup:: db
+wDiveMapNumber:: db
+wDiveDeltaX:: db
+wDiveDeltaY:: db
 
 wLastSpawnMapGroup:: db
 wLastSpawnMapNumber:: db
