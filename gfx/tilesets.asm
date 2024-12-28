@@ -630,15 +630,6 @@ INCLUDE "data/tilesets/lushcave_collision.asm"
 TilesetLushCaveAttr::
 INCBIN "data/tilesets/lushcave_attributes.bin"
 
-TilesetPlayersRoomGFX::
-INCBIN "gfx/tilesets/players_room.2bpp.lz"
-
-TilesetPlayersRoomMeta::
-INCBIN "data/tilesets/players_room_metatiles.bin"
-
-TilesetPlayersRoomColl::
-INCLUDE "data/tilesets/players_room_collision.asm"
-
 ; there should be space here, lavender crypt's set is just big
 
 SECTION "Tileset Data 16", ROMX
