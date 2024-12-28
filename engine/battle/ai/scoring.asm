@@ -1677,7 +1677,7 @@ AI_Smart_Surf:
 AI_Smart_Whirlpool:
 ; Greatly encourage this move if the player is underwater and the enemy is faster.
 	ld a, [wLastPlayerCounterMove]
-	cp DIVE
+	cp WATER_SPORT
 	ret nz
 	ld a, [wPlayerSubStatus4]
 	bit SUBSTATUS_UNDERWATER, a

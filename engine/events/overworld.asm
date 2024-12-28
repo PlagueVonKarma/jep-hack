@@ -2124,14 +2124,14 @@ CantWaterSportText:
 	db "@"
 
 CheckMapCanWaterSport:
-	ld a, [wWaterSportMapGroup]
+	ld a, [wDiveMapGroup]
 	and a
 	jr z, .failed
-	ld a, [wWaterSportMapNumber]
+	ld a, [wDiveMapNumber]
 	and a
 	jr z, .failed
-	ld a, [wPlayerStandingTile]
-	call CheckWaterSportTile
+	ld a, [wPlayerTile]
+	call CheckDiveTile
 	jr nz, .failed
 	xor a
 	ret
@@ -2146,10 +2146,10 @@ TryWaterSportOW::
 	ld de, ENGINE_CASCADEBADGE
 	call CheckEngineFlag
 	jr c, .cant
-	ld d, DIVE
+	ld d, WATER_SPORT
 	call CheckPartyMove
 	jr c, .cant
-	call GetPartyNick
+	call GetPartyNickname
 	ld a, BANK(AskWaterSportScript)
 	ld hl, AskWaterSportScript
 	call CallScript
