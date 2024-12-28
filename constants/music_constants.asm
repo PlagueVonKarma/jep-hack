@@ -118,6 +118,8 @@
 	const MUSIC_NORTHCITY					 ; 71
 	const MUSIC_TANOBY01					 ; 72
 	const MUSIC_MART						 ; 74
+	const MUSIC_CORALCITY					 ; 75
+	const MUSIC_SEPIACITY					 ; 76
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)
