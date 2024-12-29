@@ -6121,7 +6121,13 @@ BattleCommand_DoubleUndergroundDamage:
 	call GetBattleVar
 	bit SUBSTATUS_UNDERGROUND, a
 	ret z
+	jr DoubleDamage
 
+BattleCommand_DoubleUnderwaterDamage:
+; doubleunderwaterdamage
+	ld a, BATTLE_VARS_SUBSTATUS4_OPP
+	call GetBattleVar
+	bit SUBSTATUS_UNDERWATER, a
 	; fallthrough
 
 DoubleDamage:
@@ -6135,6 +6141,10 @@ DoubleDamage:
 	ld [hli], a
 	ld [hl], a
 .quit
+	ret
+	
+BattleCommand_Unused3C:
+BattleCommand_Unused5D:	; Just stuffing these here for now because I'm unsure of if I can just axe them from the effect command pointers?? Probably can but :V
 	ret
 
 INCLUDE "engine/battle/move_effects/mimic.asm"

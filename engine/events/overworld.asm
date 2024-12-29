@@ -2115,7 +2115,7 @@ WaterSportFunction:
 
 .FailWaterSport:
 	ld hl, CantWaterSportText
-	call MenuTextBoxBackup
+	call MenuTextboxBackup
 	ld a, $80
 	ret
 
@@ -2176,7 +2176,7 @@ CanWaterSportText:
 
 AskWaterSportScript:
 	opentext
-	copybytetovar wPlayerStandingTile
+	copybytetovar wPlayerTile
 	ifequal COLL_DIVE_UP, .up
 	writetext AskWaterSportDownText
 	jump .continue
