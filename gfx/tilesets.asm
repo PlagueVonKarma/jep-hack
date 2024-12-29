@@ -668,3 +668,15 @@ INCBIN "data/tilesets/players_room_metatiles.bin"
 
 TilesetPlayersRoomColl::
 INCLUDE "data/tilesets/players_room_collision.asm"
+
+TilesetUnderwaterGFX::
+INCBIN "gfx/tilesets/underwater.2bpp.lz"
+
+TilesetUnderwaterMeta::
+INCBIN "data/tilesets/underwater_metatiles.bin"
+
+TilesetUnderwaterColl::
+INCLUDE "data/tilesets/underwater_collision.asm"
+
+TilesetUnderwaterAttr::
+INCBIN "data/tilesets/underwater_attributes.bin"

@@ -228,3 +228,26 @@ LoadDesertPalette:
 	ret
 	
 INCLUDE "gfx/tilesets/desert.pal"
+
+
+LoadSpecialMapObjectPalette:
+	ld a, [wMapTileset]
+	cp TILESET_UNDERWATER
+	jr z, .underwater
+	jr .do_nothing
+.underwater
+	call LoadUnderwaterObjectPalette
+	scf
+	ret
+.do_nothing
+	and a
+	ret
+LoadUnderwaterObjectPalette:
+	ld a, BANK(wOBPals1)
+	ld de, wOBPals1
+	ld hl, UnderwaterObjectPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	ret
+UnderwaterObjectPalette:
+INCLUDE "gfx/tilesets/underwater_sprites.pal"
