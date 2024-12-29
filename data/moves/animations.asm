@@ -5079,14 +5079,14 @@ BattleAnim_WaterSport:
 	anim_sound 0, 1, SFX_HYDRO_PUMP
 	anim_obj ANIM_OBJ_HYDRO_PUMP, 124, 72, $0
 	anim_obj ANIM_OBJ_HYDRO_PUMP, 140, 72, $0
-	anim_bgeffect ANIM_BG_31, $30, $0, $0
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $30, $0, $0
 	anim_wait 12
 	anim_obj ANIM_OBJ_HYDRO_PUMP, 132, 72, $0
-	anim_bgeffect ANIM_BG_31, $1c, $0, $0
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_Y, $1c, $0, $0
 	anim_wait 24
-	anim_bgeffect ANIM_BG_31, $8, $0, $0
+	anim_bgeffect ANIM_BG_SHAKE_SCREEN_Y, $8, $0, $0
 	anim_wait 24
-	anim_bgeffect ANIM_BG_32, $0, $0, $0
+	anim_bgeffect ANIM_BG_WITHDRAW, $0, $0, $0
 	anim_wait 16
 .fail
 	anim_bgeffect ANIM_BG_ENTER_MON, $0, $1, $0
