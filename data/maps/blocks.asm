@@ -1344,3 +1344,14 @@ SunglowCity_Blocks:
 	
 AventurineCity_Blocks:
 	INCBIN "maps/AventurineCity.ablk"
+
+; Nihon Big Houses. Dimensions 5 x 4.
+SavoyCityBigHouse1_Blocks:
+SavoyCityBigHouse2_Blocks:
+CoralCityFishingGuruHouse_Blocks:
+CoralCitySailorHouse_Blocks:
+	INCBIN "maps/NihonBigHouse.ablk"
+
+SavoyCityRocketBlockedHouse_Blocks:
+CoralCityOakHouse_Blocks:
+	INCBIN "maps/SavoyCityRocketBlockedHouse.ablk"

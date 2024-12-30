@@ -182,6 +182,13 @@ SavoyCityPixytopText:
 SavoyCityPokecenterSign:
 	jumpstd PokecenterSignScript
 
+; Dept store notes:
+; Unique tileset
+; 1F has a Rocket AND the Gym Guide.
+; Poliwhirl on 5Fish
+; Roof has the waiter guy from RBY and 2 Pokemon.
+; Seems you're meant to meet a Rocket in the dept store doing a robbery. Maybe he runs out?
+
 SavoyCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -192,6 +199,16 @@ SavoyCity_MapEvents:
 	warp_event 4,   8, CORAL_CITY, 1					;port north
 	warp_event 4,   9, CORAL_CITY, 2					;port south
 	warp_event 25, 14, SAVOY_CITY_POKECENTER_1F, 1		; pokecenter
+	warp_event 22, 25, SAVOY_CITY_BIGHOUSE_1, 1		; west-south house
+	warp_event 32, 25, SAVOY_CITY_BIGHOUSE_2, 1		; east-south house
+	warp_event 18, 12, SAVOY_CITY_ROCKET_BLOCKED_HOUSE, 1
+	warp_event 27, 20, DEBUG_ROOM, 1 ; savoy rail
+	warp_event 15, 23, DEBUG_ROOM, 1 ; savoy gym
+	warp_event 14, 23, DEBUG_ROOM, 1 ; savoy gym
+	warp_event 32,  7, DEBUG_ROOM, 1 ; JOPM
+	warp_event 31,  7, DEBUG_ROOM, 1 ; JOPM
+	warp_event 14,  5, DEBUG_ROOM, 1 ; dept store
+	warp_event 13,  5, DEBUG_ROOM, 1 ; dept store
 	
 	def_coord_events
 

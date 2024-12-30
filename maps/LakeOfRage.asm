@@ -507,8 +507,11 @@ LakeOfRageSignText2:
 	line "attack!"
 	done
 
+; This guy is called the Fishing Master つりめいじん in Japanese, unrelated to the Fishing Gurus つりおやじ.
+; This fixes a translation error on the part of the devs.
+; See Vermilion house for other bits on that.
 FishingGurusHouseSignText:
-	text "FISHING GURU'S"
+	text "FISHING MASTER'S"
 	line "HOUSE"
 	done
 

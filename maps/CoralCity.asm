@@ -56,11 +56,13 @@ CoralCityFishingGuruSignScript:
 	jumptext CoralCityFishingGuruSignText
 
 CoralCityFishingGuruSignText:
-	text "FISHING MASTER's" ; He's gonna be the best Fishing Guru ever. Just you wait!
+	text "FISHING GURU'S" ; He's gonna be the best Fishing Guru ever. Just you wait!
 	line "House" ; We want him to have a fishing rod with guaranteed encounters and repeatability, I'd say.
 	done
 
 ; This house is new in the May98 maps, so we can kind of go crazy with it.
+; They could talk about Oak, they could be a utility house (but the Guru is there...), or something else. Maybe a treasure hunter who wants Dive-related items?
+; Lots of potential.
 CoralCityUnknownHouseSignScript:
 	jumptext CoralCityUnknownHouseSignText
 
@@ -166,10 +168,13 @@ CoralCity_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 14, 32, SAVOY_CITY, 4					;south port, north
-	warp_event 14, 33, SAVOY_CITY, 5					;south port, south
+	warp_event 14, 32, SAVOY_CITY, 4					; south port, north
+	warp_event 14, 33, SAVOY_CITY, 5					; south port, south
 	warp_event 31, 10, CORAL_CITY_POKECENTER_1F, 1		; pokecenter
-	warp_event 31, 14, CORAL_MART, 1		; mart
+	warp_event 31, 14, CORAL_MART, 1					; mart
+	warp_event 33, 18, CORAL_CITY_OAK_HOUSE, 1			;
+	warp_event  7, 15, CORAL_CITY_FISHING_GURU_HOUSE, 1	; 
+	warp_event 15, 17, CORAL_CITY_SAILOR_HOUSE, 1	; 
 	
 	def_coord_events
 

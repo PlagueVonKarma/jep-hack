@@ -614,6 +614,12 @@ INCLUDE "maps/CoralCityPokecenter1F.asm"
 INCLUDE "maps/RuddyTownPokecenter1F.asm"
 INCLUDE "maps/CoralMart.asm"
 INCLUDE "maps/RuddyMart.asm"
+INCLUDE "maps/SavoyCityBigHouse1.asm"
+INCLUDE "maps/SavoyCityBigHouse2.asm"
+INCLUDE "maps/SavoyCityRocketBlockedHouse.asm"
+INCLUDE "maps/CoralCityOakHouse.asm"
+INCLUDE "maps/CoralCityFishingGuruHouse.asm"
+INCLUDE "maps/CoralCitySailorHouse.asm"
 
 SECTION "Map Scripts 31", ROMX ; spillover
 INCLUDE "maps/TanobyRuins.asm"
