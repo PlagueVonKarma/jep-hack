@@ -1,13 +1,17 @@
 ItemDescriptions:
+	indirect_table 2, 1
+	indirect_entries NUM_ITEM_POCKET, ItemDescriptions1
+	indirect_entries FIRST_KEY_ITEM - 1; sparse Table
+	indirect_entries (FIRST_KEY_ITEM - 1) + NUM_KEY_ITEM_POCKET, ItemDescriptionsKeyItems
+	indirect_entries FIRST_BALL_ITEM - 1 ; sparse Table
+	indirect_entries (FIRST_BALL_ITEM - 1) + NUM_BALL_ITEM_POCKET, ItemDescriptionsBalls
+	indirect_table_end
+
+ItemDescriptions1:
 ; entries correspond to item ids (see constants/item_constants.asm)
 	table_width 2, ItemDescriptions
-	dw MasterBallDesc
-	dw UltraBallDesc
 	dw BrightpowderDesc
-	dw GreatBallDesc
-	dw PokeBallDesc
 	dw QuestionMarkDesc
-	dw BicycleDesc
 	dw MoonStoneDesc
 	dw AntidoteDesc
 	dw BurnHealDesc
@@ -45,7 +49,6 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw QuestionMarkDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -54,24 +57,12 @@ ItemDescriptions:
 	dw XDefendDesc
 	dw XSpeedDesc
 	dw XSpecialDesc
-	dw CoinCaseDesc
-	dw ItemfinderDesc
 	dw QuestionMarkDesc
-	dw ExpShareDesc
-	dw OldRodDesc
-	dw GoodRodDesc
 	dw SilverLeafDesc
-	dw SuperRodDesc
 	dw PPUpDesc
 	dw EtherDesc
 	dw MaxEtherDesc
 	dw ElixerDesc
-	dw RedScaleDesc
-	dw SecretPotionDesc
-	dw SSTicketDesc
-	dw MysteryEggDesc
-	dw ClearBellDesc
-	dw SilverWingDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
 	dw PsnCureBerryDesc
@@ -100,7 +91,6 @@ ItemDescriptions:
 	dw WhtApricornDesc
 	dw BlackbeltDesc
 	dw BlkApricornDesc
-	dw HoneyPotDesc
 	dw PnkApricornDesc
 	dw BlackGlassesDesc
 	dw SlowpokeTailDesc
@@ -115,8 +105,6 @@ ItemDescriptions:
 	dw EverStoneDesc
 	dw SpellTagDesc
 	dw RageCandyBarDesc
-	dw GSBallDesc
-	dw BlueCardDesc
 	dw MiracleSeedDesc
 	dw ThickClubDesc
 	dw FocusBandDesc
@@ -127,14 +115,8 @@ ItemDescriptions:
 	dw RevivalHerbDesc
 	dw HardStoneDesc
 	dw LuckyEggDesc
-	dw CardKeyDesc
-	dw MachinePartDesc
-	dw EggTicketDesc
-	dw LostItemDesc
 	dw StardustDesc
 	dw StarPieceDesc
-	dw BasementKeyDesc
-	dw PassDesc
 	dw HeartStoneDesc
 	dw PoisonStoneDesc
 	dw IceStoneDesc
@@ -157,16 +139,9 @@ ItemDescriptions:
 	dw QuestionMarkDesc
 	dw QuestionMarkDesc
 	dw SacredAshDesc
-	dw HeavyBallDesc
 	dw FlowerMailDesc
-	dw LevelBallDesc
-	dw LureBallDesc
-	dw FastBallDesc
 	dw QuestionMarkDesc
 	dw LightBallDesc
-	dw FriendBallDesc
-	dw MoonBallDesc
-	dw LoveBallDesc
 	dw NormalBoxDesc
 	dw GorgeousBoxDesc
 	dw SunStoneDesc
@@ -175,10 +150,7 @@ ItemDescriptions:
 	dw UpGradeDesc
 	dw BerryDesc
 	dw GoldBerryDesc
-	dw SquirtBottleDesc
 	dw DubiousDiscDesc
-	dw ParkBallDesc
-	dw RainbowWingDesc
 	dw QuestionMarkDesc
 	dw BrickPieceDesc
 	dw SurfMailDesc
@@ -194,70 +166,50 @@ ItemDescriptions:
 	dw DomeFossilDesc
 	dw HelixFossilDesc
 	dw WingFossilDesc
-	assert_table_length NUM_ITEMS
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	dw QuestionMarkDesc
-	assert_table_length $ff
+	.IndirectEnd:
+
+ItemDescriptionsKeyItems:
+	dw BicycleDesc      ; 0100
+	dw CoinCaseDesc     ; 0101
+	dw ItemfinderDesc   ; 0102
+	dw OldRodDesc       ; 0103
+	dw GoodRodDesc      ; 0104
+	dw SuperRodDesc     ; 0105
+	dw RedScaleDesc     ; 0106
+	dw SecretPotionDesc ; 0107
+	dw SSTicketDesc     ; 0108
+	dw MysteryEggDesc   ; 0109
+	dw ClearBellDesc    ; 010A
+	dw SilverWingDesc   ; 010B
+	dw GSBallDesc       ; 010C
+	dw BlueCardDesc     ; 010D
+	dw CardKeyDesc      ; 010E
+	dw MachinePartDesc  ; 010F
+	dw EggTicketDesc    ; 0110
+	dw LostItemDesc     ; 0111
+	dw BasementKeyDesc  ; 0112
+	dw PassDesc         ; 0113
+	dw SquirtBottleDesc ; 0114
+	dw RainbowWingDesc	; 0115
+	dw ExpShareDesc		; 0116
+	dw HoneyPotDesc		; 0117
+.IndirectEnd:
+
+ItemDescriptionsBalls:
+	dw MasterBallDesc ; 0200
+	dw UltraBallDesc  ; 0201
+	dw GreatBallDesc  ; 0202
+	dw PokeBallDesc   ; 0203
+	dw HeavyBallDesc  ; 0204
+	dw LevelBallDesc  ; 0205
+	dw LureBallDesc   ; 0206
+	dw FastBallDesc   ; 0207
+	dw FriendBallDesc ; 0208
+	dw MoonBallDesc   ; 0209
+	dw LoveBallDesc   ; 020A
+	dw ParkBallDesc   ; 020B
+	dw SafariBallDesc ; 020C
+.IndirectEnd:
 
 MasterBallDesc:
 	db   "The best BALL. It"
