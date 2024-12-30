@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, MACHAMP
+	getmonname STRING_BUFFER_3, AZUMARILL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MACHAMP, 65, TM_ROCK_SMASH
+	givepoke AZUMARILL, 4, HM_WATER_SPORT
 	closetext
 	end
 
