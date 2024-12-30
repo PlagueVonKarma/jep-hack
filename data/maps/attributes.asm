@@ -920,6 +920,8 @@ ENDM
 
 	map_attributes SunglowCity, SUNGLOW_CITY, $03, SOUTH ; this is missing a route connection
 	connection south, Route57, ROUTE_57, 0
+	
+	map_attributes SunglowWell, SUNGLOW_WELL, $03, SOUTH ; this is missing a route connection
 
 	map_attributes BlueForest, BLUE_FOREST, $00, 0 ; this is on its own for now. add connections later.
 	

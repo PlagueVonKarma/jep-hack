@@ -78,6 +78,11 @@ LoadSpecialMapPalette:
 	scf
 	ret
 	
+.underwater
+	call LoadUnderwaterPalette
+	scf
+	ret
+
 .do_nothing
 	and a
 	ret
@@ -228,6 +233,38 @@ LoadDesertPalette:
 	ret
 	
 INCLUDE "gfx/tilesets/desert.pal"
+	
+LoadUnderwaterPalette:
+	ld a, [wTimeOfDay]
+	and $7
+	cp NITE_F
+	jr z, .nite
+	cp DAY_F
+	jr z, .day
+	scf
+;morn
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, UnderwaterMornPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+.day
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, UnderwaterDayPalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+.nite
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, UnderwaterNitePalette
+	ld bc, 8 palettes
+	jp FarCopyWRAM
+	ret
+	
+INCLUDE "gfx/tilesets/underwater.pal"
 
 
 LoadSpecialMapObjectPalette:

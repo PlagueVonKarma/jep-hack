@@ -694,6 +694,7 @@ ENDM
 	newgroup SUNGLOW_CITY                                        ; 40
 	map_const ROUTE_57,                                   10, 27 ; 1
 	map_const SUNGLOW_CITY,                                10, 9 ; 2
+	map_const SUNGLOW_WELL,                                10, 9 ; 2
 	endgroup
 	
 	newgroup BLUE_FOREST                                          ; 41

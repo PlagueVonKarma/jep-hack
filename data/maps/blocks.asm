@@ -1342,5 +1342,8 @@ Route57_Blocks:
 SunglowCity_Blocks:
 	INCBIN "maps/SunglowCity.ablk"
 	
+SunglowWell_Blocks:
+	INCBIN "maps/SunglowWell.ablk"
+	
 AventurineCity_Blocks:
 	INCBIN "maps/AventurineCity.ablk"
