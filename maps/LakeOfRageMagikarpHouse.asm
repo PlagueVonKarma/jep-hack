@@ -1,3 +1,4 @@
+; This guy is called the Fishing Master つりめいじん in Japanese, unrelated to the Fishing Gurus つりおやじ.
 	object_const_def
 	const LAKEOFRAGEMAGIKARPHOUSE_FISHING_GURU
 

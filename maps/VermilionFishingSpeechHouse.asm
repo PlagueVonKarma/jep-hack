@@ -15,13 +15,18 @@ FishingDudesHousePhoto:
 FishingDudesHouseBookshelf: ; unreferenced
 	jumpstd PictureBookshelfScript
 
+; Fixing translation errors.
+; In RBY, this is the Fishing Guru つりおやじ (Fishing Guy)
+; In GS, there was a Fishing Master (つりめいじん) placed at the Lake of Rage, who was mistakenly called the Fishing Guru in the localisation.
+; Instead of fixing that, the devs made the Fishing Dude you see here in Crystal.
+; Let's rectify the situation.
 FishingDudeText:
 	text "I am the FISHING"
-	line "DUDE, the elder of"
+	line "GURU, the elder of"
 	cont "the FISHING BROS."
 
 	para "Have you met the"
-	line "FISHING GURU at"
+	line "MASTER at the"
 	cont "LAKE OF RAGE?"
 
 	para "He dreams about"

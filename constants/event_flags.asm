@@ -1448,8 +1448,6 @@
 ; Unused: next 0 events
 ; (In pokegold the previous 4 event flags were not defined,
 ; but in pokecrystal the 'const_next 1900' is redundant.)
-
-	const_next 1900
 ; Kanto people
 	const EVENT_ROUTE_24_ROCKET
 	const EVENT_CERULEAN_GYM_ROCKET
@@ -1569,7 +1567,8 @@
 	const EVENT_CRYPT_DOKUROAR_1
 	const EVENT_CRYPT_DOKUROAR_2
 	const EVENT_FOUGHT_DOKUROAR
-; Unused: next 37 events
+	const EVENT_SAVOYCITYROCKET_BLOCKED_HOUSE_ITEM
+; Unused: next 36 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800

@@ -106,8 +106,8 @@ RuddyTown_MapEvents:
 	warp_event 17, 22, RUDDY_MART, 2 ; mart
 	warp_event 33, 19, ROUTE_53_RUDDY_TOWN_GATE, 1 ; east gate
 	warp_event 12,  5, DEBUG_ROOM, 2 ; volcano?
-	warp_event 24, 10, DEBUG_ROOM, 2 ; north house
-	warp_event 31, 23, DEBUG_ROOM, 2 ; south house
+	warp_event 24, 10, RUDDY_TOWN_BIG_HOUSE_1, 2 ; north house
+	warp_event 31, 23, RUDDY_TOWN_BIG_HOUSE_2, 2 ; south house
 	warp_event 29,  5, ROUTE_54_RUDDY_TOWN_GATE, 1 ; north gate
 	warp_event 28,  5, ROUTE_54_RUDDY_TOWN_GATE, 2 ; north gate
 	
