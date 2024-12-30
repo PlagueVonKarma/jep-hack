@@ -199,8 +199,8 @@ SavoyCity_MapEvents:
 	warp_event 4,   8, CORAL_CITY, 1					;port north
 	warp_event 4,   9, CORAL_CITY, 2					;port south
 	warp_event 25, 14, SAVOY_CITY_POKECENTER_1F, 1		; pokecenter
-	warp_event 22, 25, SAVOY_CITY_BIGHOUSE_1, 1		; west-south house
-	warp_event 32, 25, SAVOY_CITY_BIGHOUSE_2, 1		; east-south house
+	warp_event 22, 25, SAVOY_CITY_BIG_HOUSE_1, 1		; west-south house
+	warp_event 32, 25, SAVOY_CITY_BIG_HOUSE_2, 1		; east-south house
 	warp_event 18, 12, SAVOY_CITY_ROCKET_BLOCKED_HOUSE, 1
 	warp_event 27, 20, DEBUG_ROOM, 1 ; savoy rail
 	warp_event 15, 23, DEBUG_ROOM, 1 ; savoy gym

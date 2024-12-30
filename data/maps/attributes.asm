@@ -895,13 +895,13 @@ ENDM
 	map_attributes Route50SavoyCityGate, ROUTE_50_SAVOY_CITY_GATE, $00, 0	
 	map_attributes SavoyCityBigHouse1, SAVOY_CITY_BIG_HOUSE_1, $00, 0	
 	map_attributes SavoyCityBigHouse2, SAVOY_CITY_BIG_HOUSE_2, $00, 0	
-	map_attributes SavoyCityRockedBlockedHouse, SAVOY_CITY_ROCKET_BLOCKED_HOUSE, $00, 0	
+	map_attributes SavoyCityRocketBlockedHouse, SAVOY_CITY_ROCKET_BLOCKED_HOUSE, $00, 0	
 	
 	map_attributes CoralCity, CORAL_CITY, $04, WEST
 	connection west, Route51, ROUTE_51, 0
 	map_attributes CoralCityOakHouse, CORAL_CITY_OAK_HOUSE, $00, 0
 	map_attributes CoralCityFishingGuruHouse, CORAL_CITY_FISHING_GURU_HOUSE, $00, 0
-	map_attributes CoralCitySailorHouse, CORAL_CITY_SAILOR_HOUSE, $00, 0
+	map_attributes CoralCityBigHouse, CORAL_CITY_BIG_HOUSE, $00, 0
 	
 	map_attributes SavoyCityPokecenter1F, SAVOY_CITY_POKECENTER_1F, $00, 0
 	map_attributes CoralCityPokecenter1F, CORAL_CITY_POKECENTER_1F, $00, 0
@@ -917,6 +917,8 @@ ENDM
 	connection east, Route51, ROUTE_51, 18
 	
 	map_attributes RuddyTown, RUDDY_TOWN, $04, 0
+	map_attributes RuddyTownBigHouse1, RUDDY_TOWN_BIG_HOUSE_1, $00, 0
+	map_attributes RuddyTownBigHouse2, RUDDY_TOWN_BIG_HOUSE_2, $00, 0
 	map_attributes Route52RuddyTownGate, ROUTE_52_RUDDY_TOWN_GATE, $00, 0
 	map_attributes Route53RuddyTownGate, ROUTE_53_RUDDY_TOWN_GATE, $00, 0
 	map_attributes Route54RuddyTownGate, ROUTE_54_RUDDY_TOWN_GATE, $00, 0

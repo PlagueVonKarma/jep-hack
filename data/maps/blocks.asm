@@ -1352,9 +1352,12 @@ AventurineCity_Blocks:
 SavoyCityBigHouse1_Blocks:
 SavoyCityBigHouse2_Blocks:
 CoralCityFishingGuruHouse_Blocks:
-CoralCitySailorHouse_Blocks:
+CoralCityBigHouse_Blocks:
+RuddyTownBigHouse1_Blocks:
+RuddyTownBigHouse2_Blocks:
 	INCBIN "maps/NihonBigHouse.ablk"
 
+; an alt layout usually associated with larger and more important places
 SavoyCityRocketBlockedHouse_Blocks:
 CoralCityOakHouse_Blocks:
 	INCBIN "maps/SavoyCityRocketBlockedHouse.ablk"

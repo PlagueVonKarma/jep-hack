@@ -174,7 +174,7 @@ CoralCity_MapEvents:
 	warp_event 31, 14, CORAL_MART, 1					; mart
 	warp_event 33, 18, CORAL_CITY_OAK_HOUSE, 1			;
 	warp_event  7, 15, CORAL_CITY_FISHING_GURU_HOUSE, 1	; 
-	warp_event 15, 17, CORAL_CITY_SAILOR_HOUSE, 1	; 
+	warp_event 15, 17, CORAL_CITY_BIG_HOUSE, 1	; 
 	
 	def_coord_events
 
