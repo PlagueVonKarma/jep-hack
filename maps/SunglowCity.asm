@@ -9,11 +9,11 @@ SunglowCity_MapScripts:
 
 .Flypoint:
 	setflag ENGINE_FLYPOINT_SUNGLOW_CITY
-	return
+	endcallback
 
 .DiveMap:
-    divemap SUNGLOW_WELL
-    return
+    divemap SUNGLOW_WELL, 0, 0
+    endcallback
 
 SunglowCity_MapEvents:
 	db 0, 0 ; filler
