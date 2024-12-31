@@ -5,8 +5,8 @@ SECTION "Evolutions and Attacks Pointers", ROMX
 ; Evos+attacks data structure:
 ; - Evolution methods:
 ;    * dbbw EVOLVE_LEVEL, level, species
-;    * dbbw EVOLVE_ITEM, used item, species
-;    * dbbw EVOLVE_TRADE, held item (or -1 for none), species
+;    * dbww EVOLVE_ITEM, used item, species
+;    * dbww EVOLVE_TRADE, held item (or -1 for none), species
 ;    * dbbw EVOLVE_HAPPINESS, TR_* constant (ANYTIME, MORNDAY, NITE), species
 ;    * dbbbw EVOLVE_STAT, level, ATK_*_DEF constant (LT, GT, EQ), species
 ; - db 0 ; no more evolutions

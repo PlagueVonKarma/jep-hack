@@ -724,7 +724,7 @@ TogepiEvosAttacks:
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
-	dbbw EVOLVE_ITEM, SHINY_STONE, TOGEKISS 
+	dbww EVOLVE_ITEM, SHINY_STONE, TOGEKISS 
 	db 0; no more evolutions
 	dbw 1, GROWL
 	dbw 1, CHARM
@@ -770,7 +770,7 @@ NatuEvosAttacks:
 	db 0 ; no more level-up moves
 	
 QatuEvosAttacks:
-	dbbw EVOLVE_ITEM, HEART_STONE, XATU
+	dbww EVOLVE_ITEM, HEART_STONE, XATU
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, LEER
@@ -1098,7 +1098,7 @@ SunkernEvosAttacks:
 	db 0 ; no more level-up moves
 	
 SunbudEvosAttacks:
-	dbbw EVOLVE_ITEM, SUN_STONE, SUNFLORA
+	dbww EVOLVE_ITEM, SUN_STONE, SUNFLORA
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 1, POUND ; From Sunflora
@@ -1353,7 +1353,7 @@ SylveonEvosAttacks:
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
-	dbbw EVOLVE_ITEM, DUSK_STONE, HONCHKROW
+	dbww EVOLVE_ITEM, DUSK_STONE, HONCHKROW
 	db 0 ; no more evolutions
 	dbw 1, PECK
 	dbw 1, SAND_ATTACK ; SW97
@@ -1397,7 +1397,7 @@ SlowkingEvosAttacks:
 	db 0 ; no more level-up moves
 
 MisdreavusEvosAttacks:
-	dbbw EVOLVE_ITEM, DUSK_STONE, MISMAGIUS
+	dbww EVOLVE_ITEM, DUSK_STONE, MISMAGIUS
 	db 0 ; no more evolutions
 	dbw 1, GROWL
 	dbw 1, PSYWAVE
@@ -1500,7 +1500,7 @@ BipullaEvosAttacks:
 
 GirafarigEvosAttacks:
 	dbbw EVOLVE_LEVEL, 44, FARIGIRAF
-	dbbw EVOLVE_ITEM, DUSK_STONE, EMORDROME ; to be changed maybe?
+	dbww EVOLVE_ITEM, DUSK_STONE, EMORDROME ; to be changed maybe?
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, GROWL
@@ -1704,8 +1704,8 @@ CaretorkerEvosAttacks:
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
-	dbbw EVOLVE_ITEM, THUNDERSTONE, KAZAPPELIN
-	dbbw EVOLVE_ITEM, POISON_STONE, QWILFATHER
+	dbww EVOLVE_ITEM, THUNDERSTONE, KAZAPPELIN
+	dbww EVOLVE_ITEM, POISON_STONE, QWILFATHER
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 1, POISON_STING
@@ -1770,7 +1770,7 @@ ScizorEvosAttacks:
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
-	dbbw EVOLVE_ITEM, ANTIQUE_POT, POCKLE
+	dbww EVOLVE_ITEM, ANTIQUE_POT, POCKLE
 	db 0 ; no more evolutions
 	dbw 1, TACKLE ; from Pockle
 	dbw 1, CONSTRICT
@@ -1848,7 +1848,7 @@ TeddiursaEvosAttacks:
 	db 0 ; no more level-up moves
 
 UrsaringEvosAttacks:
-	dbbw EVOLVE_ITEM, PEAT_BLOCK, URSALUNA
+	dbww EVOLVE_ITEM, PEAT_BLOCK, URSALUNA
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
 	dbw 1, LEER
@@ -2222,7 +2222,7 @@ DonphanEvosAttacks:
 	db 0 ; no more level-up moves
 
 Porygon2EvosAttacks:
-	dbbw EVOLVE_TRADE, DUBIOUS_DISK, PORYGON_Z
+	dbww EVOLVE_TRADE, DUBIOUS_DISK, PORYGON_Z
 	db 0 ; no more evolutions
 	dbw 1, CONVERSION2
 	dbw 1, TACKLE
@@ -2253,7 +2253,7 @@ PorygonZEvosAttacks:
 	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:
-	dbbw EVOLVE_ITEM, HEART_STONE, WYRDEER
+	dbww EVOLVE_ITEM, HEART_STONE, WYRDEER
 	db 0 ; no more evolutions
 	dbw 1, TACKLE
 	dbw 8, LEER
