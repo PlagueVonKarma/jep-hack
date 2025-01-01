@@ -120,7 +120,7 @@ ChadProfOaksDreamGossipText:
 
 ChadKurtGossipText:
 	text "Do you know KURT,"
-	line "the BALL creator?"
+	line "the BALLSMITH?"
 
 	para "He and PROF.OAK go"
 	line "back a long way."

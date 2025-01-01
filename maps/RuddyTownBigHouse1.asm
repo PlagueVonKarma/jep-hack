@@ -6,14 +6,15 @@ RuddyTownBigHouse1_MapScripts:
 
 	def_callbacks
 
-; Her house is bigger than the other so she may have been intended to do something.
-; What? Iunno.
+; I decided to make her discuss Ballsmiths in general.
+; Not very notable in the final game!
 RuddyTownBigHouse1GrannyScript:
 	jumptextfaceplayer RuddyTownBigHouse1GrannyText
 
 RuddyTownBigHouse1GrannyText:
-	text "Comment to be"
-	line "written."
+	text "My grandson is"
+	line "studying to be"
+	cont "a BALLSMITH!"
 	done
 
 RuddyTownBigHouse1_MapEvents:
