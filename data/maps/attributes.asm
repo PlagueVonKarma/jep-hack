@@ -922,7 +922,9 @@ ENDM
 	map_attributes Route52RuddyTownGate, ROUTE_52_RUDDY_TOWN_GATE, $00, 0
 	map_attributes Route53RuddyTownGate, ROUTE_53_RUDDY_TOWN_GATE, $00, 0
 	map_attributes Route54RuddyTownGate, ROUTE_54_RUDDY_TOWN_GATE, $00, 0
-
+	
+	map_attributes Route53, ROUTE_53, $00, 0
+	
 	map_attributes Route57, ROUTE_57, $03, NORTH
 	connection north, SunglowCity, SUNGLOW_CITY, 0
 

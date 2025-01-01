@@ -11,8 +11,12 @@ Route53RuddyTownGateOfficerScript:
 	jumptextfaceplayer Route53RuddyTownGateOfficerText
 
 Route53RuddyTownGateOfficerText:
-	text "Comment to be"
-	line "written."
+	text "The waters here"
+	line "are hotter than"
+	cont "usual."
+	
+	para "Expect to see"
+	line "tropical fish!"
 	done
 
 Route53RuddyTownGateGrampsScript:
@@ -48,8 +52,8 @@ Route53RuddyTownGate_MapEvents:
 	def_warp_events
 	warp_event  0, 7, RUDDY_TOWN, 5
 	warp_event  1, 7, RUDDY_TOWN, 5
-	warp_event  8, 7, DEBUG_ROOM, 1 ; Route 53
-	warp_event  9, 7, DEBUG_ROOM, 1 ; Route 53
+	warp_event  8, 7, ROUTE_53, 1 ; Route 53
+	warp_event  9, 7, ROUTE_53, 1 ; Route 53
 
 	def_coord_events
 

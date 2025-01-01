@@ -203,7 +203,7 @@ NihonGrassWildMons:
 	def_grass_wildmons ROUTE_51
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	dbw 30, FEAROW
+	dbw 30, SPEAROW
 	dbw 31, RAPIDASH
 	dbw 30, FEAROW
 	dbw 31, COATL
@@ -211,7 +211,7 @@ NihonGrassWildMons:
 	dbw 32, TAUROS
 	dbw 35, WARUCHU
 	; day
-	dbw 30, FEAROW
+	dbw 30, SPEAROW
 	dbw 31, RAPIDASH
 	dbw 30, FEAROW
 	dbw 31, COATL
@@ -229,5 +229,61 @@ NihonGrassWildMons:
 	end_grass_wildmons
 	
 	; Route 52 has no grass.
+	
+	def_grass_wildmons ROUTE_53
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, SPEAROW
+	dbw 31, RAPIDASH
+	dbw 30, FEAROW
+	dbw 31, COATL
+	dbw 32, QATU
+	dbw 32, TAUROS
+	dbw 35, WARUCHU
+	; day
+	dbw 30, SPEAROW
+	dbw 31, RAPIDASH
+	dbw 30, FEAROW
+	dbw 31, COATL
+	dbw 32, QATU
+	dbw 32, TAUROS
+	dbw 35, WARUCHU
+	; nite
+	dbw 30, MURKROW
+	dbw 31, FOXFIRE
+	dbw 30, MURKROW
+	dbw 31, SNEASEL
+	dbw 32, ARBOK
+	dbw 32, NOCTOWL
+	dbw 35, WARUCHU
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_57
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	dbw 30, SPEAROW
+	dbw 31, DODUO
+	dbw 30, FEAROW
+	dbw 31, DODRIO ; CACTORMUS
+	dbw 32, KIWOOKED
+	dbw 32, DITTO
+	dbw 35, CYCLORP
+	; day
+	dbw 30, SPEAROW
+	dbw 31, DODUO
+	dbw 30, FEAROW
+	dbw 31, DODRIO ; CACTORMUS
+	dbw 32, KIWOOKED
+	dbw 32, DITTO
+	dbw 35, CYCLORP
+	; nite
+	dbw 30, CUBONE
+	dbw 31, DROWZEE
+	dbw 30, MAROWAK
+	dbw 31, DODRIO ; CACTORMUS
+	dbw 32, ARBOK
+	dbw 32, DITTO
+	dbw 35, CYCLORP
+	end_grass_wildmons
 	
 	db -1 ; end

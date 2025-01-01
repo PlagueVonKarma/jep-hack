@@ -1333,6 +1333,9 @@ Route51_Blocks:
 Route52_Blocks:
 	INCBIN "maps/Route52.ablk"
 	
+Route53_Blocks:
+	INCBIN "maps/Route53.ablk"
+	
 RuddyTown_Blocks:
 	INCBIN "maps/RuddyTown.ablk"
 	

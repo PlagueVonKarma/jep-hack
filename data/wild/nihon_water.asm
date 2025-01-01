@@ -30,4 +30,13 @@ NihonWaterWildMons:
 	dbw 30, ANGORE
 	end_water_wildmons
 	
+	def_water_wildmons ROUTE_53
+	db 4 percent ; encounter rates: morn/day/nite
+	dbw 30, MOLAMBINO
+	dbw 31, MANTINE
+	dbw 30, ANGORE
+	end_water_wildmons
+	
+	; Route 57 has no grass
+	
 	db -1 ; end

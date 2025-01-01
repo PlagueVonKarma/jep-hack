@@ -693,10 +693,11 @@ ENDM
 	map_const RUDDY_TOWN_POKECENTER_1F,                   10,  4 ; 2
 	map_const RUDDY_MART,								 	8, 4 ; 3
 	map_const RUDDY_TOWN_BIG_HOUSE_1,						5, 4 ; 4
-	map_const RUDDY_TOWN_BIG_HOUSE_2,						5, 4 ; 4
-	map_const ROUTE_52_RUDDY_TOWN_GATE,						5, 4 ; 4
-	map_const ROUTE_53_RUDDY_TOWN_GATE,						5, 4 ; 5
-	map_const ROUTE_54_RUDDY_TOWN_GATE,						5, 4 ; 6
+	map_const RUDDY_TOWN_BIG_HOUSE_2,						5, 4 ; 5
+	map_const ROUTE_52_RUDDY_TOWN_GATE,						5, 4 ; 6
+	map_const ROUTE_53_RUDDY_TOWN_GATE,						5, 4 ; 7
+	map_const ROUTE_54_RUDDY_TOWN_GATE,						5, 4 ; 8
+	map_const ROUTE_53,									  35,  9 ; 9
 	endgroup
 
 	newgroup SUNGLOW_CITY                                        ; 40
