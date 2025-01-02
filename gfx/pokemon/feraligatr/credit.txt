@@ -1,0 +1,2 @@
+Taken from Pokemon October, sprited by Scarlax, built off SW99 sprite. Edited to modern palette by Plague von Karma.
+https://github.com/pokeachromicdevs/pokeoctober/tree/demo-2/gfx/pokemon/feraligatr

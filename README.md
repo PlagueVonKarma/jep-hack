@@ -106,24 +106,25 @@ If you use our implementations of anything at all, it is encouraged to submit Pu
 - zuperZACH (Spriter)
 
 ## Sprite Credits
+Individualised prite credits can be found within the respective Pokemon's folders. These exist to ensure any sprite imports come with an adequate level of credit for JEP's (and other unaffiliated) artists.
 
 ### JEP Developers
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
-- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord 
-- Martha's Against Humanity: Flutter Mane, Hyoshu-Yang, Hyoshu-Yin, Fossil Aerodactyl, Fossil Kabutops
-- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine
+- Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, Emordrome, Gouging Fire
+- Martha's Against Humanity: Flutter Mane, Hyoshu-Yang, Hyoshu-Yin, Fossil Aerodactyl, Fossil Kabutops, Hisuian Growlithe
+- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine, Togekiss, Scream Tail, Vulpiii, Happiny
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake (front/back, title)
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).
 - LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal, Blaine (original)
 
 ### Unaffiliated
-- nuuk: Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Mamoswine, Porygon-Z, Sylveon, Togekiss, Wyrdeer, Clodsire (back)
-- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Pockle (Shuqlour, edited by Martha), Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Blossomole (Petamole), Smujj, Stricheel, SW99 Feraligatr (edited by Plague von Karma)
+- [nuuk](https://x.com/nuukiie): Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Mamoswine, Porygon-Z, Sylveon, Wyrdeer, Clodsire (back)
+- Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Pockle (Shuqlour, edited by Martha), Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Smujj, Stricheel, SW99 Feraligatr (edited by Plague von Karma), Belledam
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
-- SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage), Trebir (Mallody), Folage (Silkane)
+- SoupPotato et al: Various sprites from [Pokemon Gold & Silver '97 Reforged](https://github.com/SoupPotato/gold97); Palssio (Cruize), Pressio (Aquallo) Donmarin (Aquarius), Grenmar (Bombsheal, with edits), Jungela (Gelania), Elebebi (Elebabe), Mimmeo (Metto), Kazappelin (Numbpuff), Disturban (Turban), Angore (Anchorage), Folage (Silkane), Luxwan
 - SCMidna: Munchlax
-- SageDeoxys: Iron Bundle, Raging Bolt, Scream Tail, Dudunsparce (both forms)
+- SageDeoxys: Iron Bundle, Raging Bolt, Dudunsparce (both forms)
 - Pokets: Terrados
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
