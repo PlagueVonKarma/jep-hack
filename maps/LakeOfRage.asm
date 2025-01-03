@@ -1,3 +1,10 @@
+; The Lake of Rage has had its original layout restored and edited to work with JEP.
+; It's based on Lake Biwa, a 4 million year old lake known for its natural beauty and humongous catfish.
+; The catfish are said to know when earthquakes will occur through detecting unusual vibrations or water chemistry. In Japanese mythology, Onamazu 大鯰 (lit. giant amur catfish) is said to cause earthquakes underground.
+; What does this mean? Gyarados is a flying catfish. Also, this inspired Whiscash. In pracice? Absolutely nothing.
+; *ahem* anyway, this context is what's informing the changes made to the Lake of Rage.
+; Given the forced evolution, we've themed the new town around evolution. Evolution stones, the trader NPC, and so on, all found here. 
+
 	object_const_def
 	const LAKEOFRAGE_LANCE
 	const LAKEOFRAGE_GRAMPS
@@ -126,8 +133,53 @@ LakeOfRageSuperNerdScript:
 LakeOfRageCooltrainerFScript:
 	jumptextfaceplayer LakeOfRageCooltrainerFText
 
+; Did you know DPP canonically takes place at the same time as GSC?
+; Let's canonise that in JEP.
+
+; This will technically be two individuals. 
+; The first is the guy from the Battle Zone, who gets there first. A happy larrikin for sure.
+; The second is the exploration team from the DP intro. They got here too late, so...oops.
 LakeOfRageCameramanScript:
-	jumptextfaceplayer LakeOfRageCameramanText
+	faceplayer
+	opentext
+	checkevent EVENT_LAKE_OF_RAGE_RED_GYARADOS
+	iftrue .GyaradosDefeated
+	writetext LakeOfRageCameramanText
+	waitbutton
+	closetext
+	end
+
+.GyaradosDefeated:
+	writetext LakeOfRageCameramanText_GyaradosDefeated
+	waitbutton
+	closetext
+	end
+
+LakeOfRageCameramanText: ; Reference to the Battle Zone
+	text "Hohoho!"
+	
+	para "Am I lucky to"
+	line "have been here"
+	cont "when that MAGIKARP"
+	cont "evolved!"
+	
+	para "This film is"
+	line "gonna make me"
+	cont "rich!"
+	done
+
+; Slightly doctored for the poor innocent Game Boy screen...
+LakeOfRageCameramanText_GyaradosDefeated:
+	text "Despite the team's"
+	line "best efforts, the"
+	cont "red GYARADOS has"
+	cont "eluded detection."
+	
+	para "It has failed to"
+	line "appear, even fl-"
+	cont "eetingly, to our"
+	cont "crestfallen team!"
+	done
 
 LakeOfRageSign:
 	jumptext LakeOfRageSignText
@@ -515,24 +567,11 @@ FishingGurusHouseSignText:
 	line "HOUSE"
 	done
 
-LakeOfRageCameramanText: ; Reference to the Battle Zone
-	text "Hohoho!"
-	
-	para "Am I lucky to"
-	line "have been here"
-	cont "when that MAGIKARP"
-	cont "evolved!"
-	
-	para "This film is"
-	line "gonna make me"
-	cont "rich!"
-	done
-
 LakeOfRagePryceSign:
 	jumptext LakeOfRagePryceSignText
 
 LakeOfRagePryceSignText:
-	text "PRYCE's House"
+	text "PRYCE'S HOUSE"
 	done
 
 LakeOfRage_MapEvents:

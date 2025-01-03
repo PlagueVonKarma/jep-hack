@@ -1,4 +1,4 @@
-	db KAZAPPELIN ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  75,  95,  75,  65, 115,  85
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db REROAD ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  90,  85,  75,  70,  85,  70
 	;   hp  atk  def  spd  sat  sdf

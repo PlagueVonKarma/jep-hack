@@ -1,4 +1,4 @@
-	db BONSLY ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  50,  80,  95,  10,  10,  45
 	;   hp  atk  def  spd  sat  sdf

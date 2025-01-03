@@ -1,4 +1,4 @@
-	db GRENMAR ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  80,  80,  70,  55, 105,  80
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-Sprite taken from Pokemon October, originally uncredited but seems to have been made by Poket.
+Sprited by Poket and used in Pokemon October.
 https://github.com/pokeachromicdevs/pokeoctober/tree/demo-2/gfx%2Fpokemon%2Fgargranite
 
 https://x.com/Pokets3/status/1711804029083258977

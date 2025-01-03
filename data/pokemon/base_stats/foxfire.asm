@@ -1,4 +1,4 @@
-	db FOXFIRE ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  55,  85,  50, 115, 100,  70
 	;   hp  atk  def  spd  sat  sdf

@@ -1,4 +1,4 @@
-	db HONCHKROW ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db 100, 125,  52,  71, 105,  52
 	;   hp  atk  def  spd  sat  sdf

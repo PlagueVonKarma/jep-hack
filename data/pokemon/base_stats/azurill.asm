@@ -1,4 +1,4 @@
-	db AZURILL ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  50,  20,  40,  20,  20,  40
 	;   hp  atk  def  spd  sat  sdf

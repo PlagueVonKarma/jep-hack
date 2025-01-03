@@ -8315,7 +8315,7 @@ InitEnemyWildmon:
 	ld a, [wCurPartySpecies]
 	call GetPokemonIndexFromID
 	ld a, l
-	sub UNOWN
+	sub UNOWN ; FIXME: This flags a must be 8-bit warning. I don't think it's actually a problem, considering Unown is within the 8-bit boundary of Pokemon, but it may be worth checking out.
 	if HIGH(UNOWN) == 0
 		or h
 	else

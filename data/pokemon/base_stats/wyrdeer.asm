@@ -1,4 +1,4 @@
-	db WYRDEER ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db 103, 105,  72,  65, 105,  75
 	;   hp  atk  def  spd  sat  sdf

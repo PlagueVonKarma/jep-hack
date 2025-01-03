@@ -1,4 +1,4 @@
-	db AMBIPOM ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  75, 100,  66, 115,  60,  66
 	;   hp  atk  def  spd  sat  sdf

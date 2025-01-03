@@ -1,4 +1,4 @@
-	db SUNBUD ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  55,  45,  45,  30,  65,  65
 	;   hp  atk  def  spd  sat  sdf

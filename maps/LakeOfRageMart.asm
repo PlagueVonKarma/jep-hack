@@ -33,8 +33,8 @@ LakeOfRageMartGrampsText:
 	line "me evolve my"
 	cont "RAICHU!"
 	
-	para "...what's with"
-	line "that look?"
+	para "Huh? Sure it does!"
+	line "Try it yourself!"
 	done
 
 LakeOfRageMart_MapEvents:

@@ -1,4 +1,4 @@
-	db MANTYKE ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  45,  20,  50,  50,  60, 120
 	;   hp  atk  def  spd  sat  sdf

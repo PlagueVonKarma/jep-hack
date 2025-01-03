@@ -427,7 +427,7 @@ Function17042c:
 	; If a == 0 and b >= $fc, overwrite the current trainer's data with
 	; Unknown_17047e, and exit the inner loop.
 	ld a, b
-	cp NUM_POKEMON + 1
+	cp NUM_POKEMON + 1 ; FIXME: Flags a must be 8-bit error. Needs to be updated to match the 16-bit standard of comparing with Number of Pokemon. What is that? iunno.
 	jr nc, .copy_data
 
 .next_iteration

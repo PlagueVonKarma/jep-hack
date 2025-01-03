@@ -13,7 +13,20 @@ LakeOfRagePokecenter1FNurseScript:
 	jumpstd PokecenterNurseScript
 
 LakeOfRagePokecenter1FGentlemanScript:
-	jumptextfaceplayer LakeOfRagePokecenter1FGentlemanText
+	faceplayer
+	opentext
+	checkevent EVENT_LAKE_OF_RAGE_RED_GYARADOS
+	iftrue .GyaradosDefeated
+	writetext LakeOfRagePokecenter1FGentlemanText
+	waitbutton
+	closetext
+	end
+
+.GyaradosDefeated:
+	writetext LakeOfRagePokecenter1FGentlemanText_GyaradosDefeated
+	waitbutton
+	closetext
+	end
 
 LakeOfRagePokecenter1FScientistScript:
 	jumptextfaceplayer LakeOfRagePokecenter1FScientistText
@@ -53,6 +66,17 @@ LakeOfRagePokecenter1FGentlemanText:
 	para "First the RADIO"
 	line "TOWER, now the"
 	cont "lake..."
+	
+	done
+
+LakeOfRagePokecenter1FGentlemanText_GyaradosDefeated:
+	text "The LAKE OF RAGE"
+	line "is known for its"
+	cont "shell middens." ; Lake Biwa has a giant shell midden called the Awazu site, which dates back to the Jomon period (~10,000 years ago).
+	
+	para "They date back"
+	line "thousands of"
+	cont "years!"
 	
 	done
 

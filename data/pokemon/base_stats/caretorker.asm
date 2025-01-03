@@ -1,4 +1,4 @@
-	db CARETORKER ; species ID placeholder
+	db 0 ; species ID placeholder
 
 	db  90,  65,  65,  72,  75, 118
 	;   hp  atk  def  spd  sat  sdf

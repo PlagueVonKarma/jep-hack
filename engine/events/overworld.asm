@@ -1977,8 +1977,8 @@ TryStrongArmOW::
 	jr c, .cant_climb
 	
 	; Now check if Strong Arm is in the party. This takes longer, thus the above going first.
-	ld d, STRONG_ARM
-	call CheckPartyMove
+	ld hl, STRONG_ARM
+	call CheckPartyMoveIndex
 	jr c, .cant_climb
 
 	ld a, BANK(AskStrongArmScript)
@@ -2146,8 +2146,8 @@ TryWaterSportOW::
 	ld de, ENGINE_CASCADEBADGE
 	call CheckEngineFlag
 	jr c, .cant
-	ld d, WATER_SPORT
-	call CheckPartyMove
+	ld hl, WATER_SPORT
+	call CheckPartyMoveIndex
 	jr c, .cant
 	call GetPartyNickname
 	ld a, BANK(AskWaterSportScript)

@@ -942,8 +942,6 @@ DecillaFrontpic:     INCBIN "gfx/pokemon/decilla/front.animated.2bpp.lz"
 DecillaBackpic:      INCBIN "gfx/pokemon/decilla/back.2bpp.lz"
 GawarhedFrontpic:    INCBIN "gfx/pokemon/elebebi/front.animated.2bpp.lz"
 GawarhedBackpic:     INCBIN "gfx/pokemon/gawarhed/back.2bpp.lz"
-KabutopsFossilPic:   INCBIN "gfx/trainers/kabutops.2bpp.lz"
-AerodactylFossilPic: INCBIN "gfx/trainers/aerodactyl.2bpp.lz"
 
 SECTION "Pics 24", ROMX
 
@@ -1064,3 +1062,7 @@ SigalPic:        INCBIN "gfx/trainers/sigal.2bpp.lz"
 KuyePic:        INCBIN "gfx/trainers/kuye.2bpp.lz"
 ShamPic:        INCBIN "gfx/trainers/executive_f.2bpp.lz"
 CarlPic:        INCBIN "gfx/trainers/executive_m.2bpp.lz"
+
+; spillover
+KabutopsFossilPic:   INCBIN "gfx/trainers/kabutops.2bpp.lz"
+AerodactylFossilPic: INCBIN "gfx/trainers/aerodactyl.2bpp.lz"

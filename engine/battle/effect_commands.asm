@@ -5645,14 +5645,11 @@ BattleCommand_Charge:
 	call LoadMoveAnim
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	cp FLY
-	jr z, .got_move_type
-	cp DIG
-	jr z, .got_move_type
-	cp BOUNCE
-	jr z, .got_move_type
-	cp WATER_SPORT
-	jr z, .got_move_type
+	
+	ld hl, .fly_dig_moves ; attempt to resolve 16-bit issue with bounce and water sport - this can probably be made more efficient with a farcallable list
+	call CheckMoveInList
+	pop hl
+	jr c, .got_move_type
 	call BattleCommand_RaiseSub
 	xor a
 
@@ -5752,6 +5749,13 @@ BattleCommand_Charge:
 ; 'hid underwater!'
 	text_jump HidUnderwaterText
 	db "@"
+
+.fly_dig_moves
+	dw FLY
+	dw DIG
+	dw BOUNCE
+	dw WATER_SPORT
+	dw -1
 
 BattleCommand_TrapTarget:
 	ld a, [wAttackMissed]
