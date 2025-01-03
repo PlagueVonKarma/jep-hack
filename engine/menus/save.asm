@@ -378,6 +378,7 @@ SaveData:
 	call _SaveData
 	ret
 
+; Do not delete, it's likely to be used sometime.
 Function14d6c: ; unreferenced
 	ld a, BANK(s4_a60b) ; MBC30 bank used by JP Crystal; inaccessible by MBC3
 	call OpenSRAM
@@ -393,6 +394,7 @@ Function14d6c: ; unreferenced
 	call CloseSRAM
 	ret
 
+; Same here.
 Function14d83: ; unreferenced
 	ld a, BANK(s4_a60c) ; aka BANK(s4_a60d) ; MBC30 bank used by JP Crystal; inaccessible by MBC3
 	call OpenSRAM
@@ -402,6 +404,7 @@ Function14d83: ; unreferenced
 	call CloseSRAM
 	ret
 
+; yep
 Function14d93: ; unreferenced
 	ld a, BANK(s7_a000) ; MBC30 bank used by JP Crystal; inaccessible by MBC3
 	call OpenSRAM
@@ -706,6 +709,8 @@ TryLoadSaveData:
 	ret
 
 .corrupt
+	ld hl, wOptions
+	set STEREO, [hl]
 	ld hl, DefaultOptions
 	ld de, wOptions
 	ld bc, wOptionsEnd - wOptions

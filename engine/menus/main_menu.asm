@@ -70,7 +70,7 @@ MainMenu:
 	db "OPTION@"
 	db "MYSTERY GIFT@"
 	db "MOBILE@"
-	db "MOBILE STUDIUM@"
+	db "MOBILE STADIUM@" ; as far as I know this will never be used
 if DEF(_DEBUG)
 	db "DEBUG ROOM@"
 endc

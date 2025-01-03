@@ -9,9 +9,6 @@ Intro_MainMenu:
 	farcall MainMenu
 	jp StartTitleScreen
 
-IntroMenu_DummyFunction: ; unreferenced
-	ret
-
 PrintDayOfWeek:
 	push de
 	ld hl, .Days
@@ -1000,6 +997,16 @@ Intro_PlacePlayerSprite:
 DEF NUM_TITLESCREENOPTIONS EQU const_value
 
 IntroSequence:
+	; Stupid hacky way to make stereo the default option.
+	; There's probably a better way to do this, but data\default_options.asm seems to be used for more than simply the options, and the function itself is only called when save files corrupt (and adding an extra function above that call only worked with deliberately corrupted save files). What a bother!
+	; It *works*, it just adds a few machine cycles to the intro sequence and is thus inefficient and BAD!!! GRAAAAARGH!
+	; If you know a more intelligent way to do this, then definitely do it, but this method is technically harmless.
+	ld a, [wSaveFileExists]
+	and a
+	jr nz, .nope ; Verifying if there's a save file and some wacko is using mono.
+	ld hl, wOptions ; If there is no save file, let's make stereo the default.
+	set STEREO, [hl]
+.nope
 	callfar SplashScreen
 	jr c, StartTitleScreen
 	farcall CrystalIntro
