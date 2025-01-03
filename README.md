@@ -175,9 +175,9 @@ JEP-affiliated musicians require music to be used with direct credit for non-com
 - Nob Ogasawara (Many prototype Pokemon names)
 - ImportedCheese (Japanese speaker who named Hyoshu) 
 - Minamitoku (SW97 demo translation commentary [here](https://www.youtube.com/watch?v=Pe1vsKRl7_M&ab_channel=Minamitoku))
-- ZoomTen - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c}.
+- [ZoomTen/zumiisawhat](https://github.com/ZoomTen) - Honey Pot & Honey Grandma features from Pokemon October, commits [here](https://github.com/pokeachromicdevs/pokeoctober/commit/d00cd6fafdbe5069d2cc452a154942f82f7fceb6), [here](https://github.com/pokeachromicdevs/pokeoctober/commit/1a6f3e4f0307656018f02d4981c973efa814a248), and [here](https://github.com/pokeachromicdevs/pokeoctober/commit/8114fead91828dd6d986fe120d6c5cd5e3c6cbf6). Safari Game restoration [here](https://github.com/pokeachromicdevs/pokeoctober/commit/2ff835730b2a61a757ad67f13e50480c965d2a0c).
 - Ferropexola/aforward9600: Time of day-based tileset palette code
-- Rangi42/polishedcrystal: [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
+- [Rangi42/polishedcrystal](https://github.com/Rangi42/polishedcrystal/): [Decoration shop script](https://github.com/Rangi42/polishedcrystal/blob/master/maps/GoldenrodHarbor.asm)
 - Nayru62 (Crystal Legacy) - [DVs & Hidden Power display code](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy/blob/main/engine/pokemon/stats_screen.asm)
 - SoupPotato - Move Animations and Pallettes [here](https://github.com/PiaCarrot/mae-pokeorange/commit/9e148c8a28bbe6850f3df11605b4f7b4068a4652) and [here](https://github.com/PiaCarrot/mae-pokeorange/commit/52f8f8e77189b01453590c5496bbc7a9332b6237).
 - [PiaCarrot/pokeorange](https://github.com/PiaCarrot/pokeorange) - [Rock Climb functionality](https://github.com/pret/pokecrystal/wiki/Rock-Climb)
