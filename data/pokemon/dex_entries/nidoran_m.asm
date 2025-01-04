@@ -1,10 +1,12 @@
 	db "POISON PIN@" ; species name
 	dw 108, 200 ; height, weight
 
-	db   "It constantly"
-	next "moves its large"
-	next "ears in many"
+	db   "In breeding"
+	next "season, its horn"
+	next "glows in 7 colors"
 
-	page "directions in"
-	next "order to detect"
-	next "danger right away.@"
+	page "to woo females."
+	next "The larger the"
+	next "horn, the better.@"
+; Illustrated book reference.
+; And yes, Nidoran are size queens.

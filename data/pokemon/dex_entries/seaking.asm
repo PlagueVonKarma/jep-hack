@@ -1,10 +1,11 @@
 	db "GOLDFISH@" ; species name
 	dw 403, 860 ; height, weight
 
-	db   "When autumn comes,"
-	next "the males patrol"
-	next "the area around"
+	db   "Highly protective"
+	next "of baby ORFRY,"
+	next "it will attack"
 
-	page "their nests in"
-	next "order to protect"
-	next "their offspring.@"
+	page "any predators"
+	next "with a powerful"
+	next "HORN DRILL.@"
+; Carddass and integrating Orfry.

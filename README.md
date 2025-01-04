@@ -70,6 +70,7 @@ Mega Evolutions, Gigantamax forms, etc, are not in active consideration.
 - Lots of unnecessary, unreferenced code was removed as and when it became necessary.
 
 ## QoL Changes
+- Fast text and stereo sound are now the default options.
 - Pokemon learnsets have been given a large upheaval, now being easier to use. A conservative approach was employed to ensure the GSC feel was preserved. Move additions have been made based on prototype and future game material (eg. Sing Pidgeot using proto-RG), but odd ones (eg. Aeroblast Skarmory) were omitted.
 - A Trader NPC is available in a new Lake of Rage town area, allowing you to access trade evolutions natively.
 - DVs, Stat Exp., and Hidden Power now display on the stat screen.
@@ -143,7 +144,7 @@ Individualised Pokemon sprite credits can be found within the respective Pokemon
 JEP-affiliated spriters require sprites to be used with direct credit for non-commerical purposes. Credit the artist in any case of using them.
 - Zeta_Null: Topaz sprites, numerous tileset bits, Omegadge, Qatu, Phandarin, Stromen, Lickilord, Emordrome, Gouging Fire
 - Martha's Against Humanity: Flutter Mane, Hyoshu-Yang, Hyoshu-Yin, Fossil Aerodactyl, Fossil Kabutops, Hisuian Growlithe
-- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine, Togekiss, Scream Tail, Vulpiii, Happiny
+- zuperZACH: Clodsire (front), Mismagius, Alolan Vulpix, Alolan Ninetales, Hirsuswine, Togekiss, Scream Tail, Vulpiii, Happiny, Kotora
 - Shawesome: Alolan Geodude
 - EyeDonutz: Walking Wake (front/back, title)
 - Plague von Karma: Overworld Arbok, Koffing, Voltorb, Gengar, Diglett, and Cat sprites, adapted from the slot machine's sprites (originally made for KEP).

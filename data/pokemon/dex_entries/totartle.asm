@@ -3,8 +3,8 @@
 
 	db   "Living for up to"
 	next "10,000 years,"
-	next "TOTARTLE's"
+	next "TOTARTLE's shell"
 
-	page "shell has grown"
-	next "seaweed that"
-	next "formed a tail.@"
+	page "has grown seaweed"
+	next "that formed a"
+	next "tail.@"

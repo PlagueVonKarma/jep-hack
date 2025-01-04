@@ -1,10 +1,11 @@
 	db "DUCK@" ; species name
 	dw 207, 430 ; height, weight
 
-	db   "The only time it"
-	next "can use its psy-"
-	next "chic power is when"
+	db   "When its headache"
+	next "is too much to"
+	next "bear, it lashes"
 
-	page "its sleeping brain"
-	next "cells happen to"
-	next "wake.@"
+	page "out with SCRATCH"
+	next "before letting"
+	next "off PSI power.@"
+; Referencing the anime, learnset, and carddass cards. Writing could be better.

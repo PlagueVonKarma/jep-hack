@@ -1,10 +1,11 @@
 	db "DUCK@" ; species name
 	dw 507, 1690 ; height, weight
 
-	db   "It swims grace-"
-	next "fully along on the"
-	next "quiet, slow-moving"
+	db   "It has the power"
+	next "to use telepathy."
+	next "When doing so, it"
 
-	page "rivers and lakes"
-	next "of which it is so"
-	next "fond.@"
+	page "focuses its power"
+	next "by pointing at"
+	next "the recipient.@"
+; Reference to the manga and general psychic...ness...

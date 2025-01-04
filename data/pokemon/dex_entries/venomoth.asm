@@ -1,10 +1,11 @@
 	db "POISONMOTH@" ; species name
 	dw 411, 280 ; height, weight
 
-	db   "The scales it"
-	next "scatters will"
-	next "paralyze anyone"
+	db   "It glides through"
+	next "temperate forests"
+	next "with clear wings."
 
-	page "who touches them,"
-	next "making that person"
-	next "unable to stand.@"
+	page "Psychic power em-"
+	next "anates from its"
+	next "compound eyes.@"
+; Referencing the modern design and Cardass artwork.

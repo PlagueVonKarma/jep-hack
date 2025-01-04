@@ -1,10 +1,13 @@
 	db "POISON PIN@" ; species name
 	dw 211, 430 ; height, weight
 
-	db   "It is easily"
-	next "agitated and uses"
-	next "its horn for"
+	db   "It begins to"
+	next "prepare nests for"
+	next "NIDORINA in the"
 
-	page "offense as soon as"
-	next "it notices an"
-	next "attacker.@"
+	page "summer. Before it"
+	next "battles, it does"
+	next "deimatic displays.@" ; Focus Energy
+
+; Dual reference to the illustrated book and Carddass card.
+; Slightly choppily written.

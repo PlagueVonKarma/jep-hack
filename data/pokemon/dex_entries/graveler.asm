@@ -1,10 +1,11 @@
 	db "ROCK@" ; species name
 	dw 303, 2320 ; height, weight
 
-	db   "It travels by rol-"
-	next "ling on mountain"
-	next "paths. If it gains"
+	db   "Grips to cliffs"
+	next "in groups. If"
+	next "one hears music,"
 
-	page "too much speed, it"
-	next "stops by running"
-	next "into huge rocks.@"
+	page "they come down"
+	next "with a thud to"
+	next "dance.@"
+; Pokemon Snap reference!

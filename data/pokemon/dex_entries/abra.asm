@@ -6,5 +6,5 @@
 	next "rinted in its"
 
 	page "brain, so it can"
-	next "TELEPORT home any"
-	next "time.@"
+	next "TELEPORT home at"
+	next "any time.@"

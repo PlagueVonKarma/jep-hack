@@ -1,10 +1,11 @@
 	db "TADPOLE@" ; species name
 	dw 303, 440 ; height, weight
 
-	db   "Though it is"
-	next "skilled at walk-"
-	next "ing, it prefers to"
+	db   "Its anatomy is"
+	next "popular among am-"
+	next "ateur biologists."
 
-	page "live underwater"
-	next "where there is"
-	next "less danger.@"
+	page "All of its organs"
+	next "are visible thro-"
+	next "ugh its spiral.@"
+; Referencing Junji Ito Poliwhirl anatomical model and frogs being popular dissection subjects in schools.

@@ -1,10 +1,10 @@
 	db "FLYING FISH@" ; species name
 	dw 10, 120 ; height, weight
 
-	db   "FISHERs are often"
-	next "surprised by"
-	next "CHEEP's strength,"
+	db   "Surprises FISHERs"
+	next "with its power."
+	next "TRAINERs may"
 
-	page "sometimes losing"
-	next "bait or rods when"
-	next "one is hooked.@"
+	page "lose bait or even"
+	next "RODs if they're"
+	next "not careful!@"

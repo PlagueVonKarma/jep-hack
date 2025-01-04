@@ -1,10 +1,12 @@
 	db "RAT@" ; species name
 	dw 204, 410 ; height, weight
 
-	db   "The webs on its"
-	next "hind legs enable"
-	next "it to cross"
+	db   "Its fangs never"
+	next "stop growing, so"
+	next "its SUPER FANG is"
 
-	page "rivers. It search-"
-	next "es wide areas for"
-	next "food.@"
+	page "especially potent."
+	next "It even chews logs"
+	next "in its sleep!@"
+
+; Dual Carddass and Pokemon Sleep references.

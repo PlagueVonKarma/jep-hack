@@ -1,10 +1,10 @@
 	db "GOLDFISH@" ; species name
 	dw 200, 330 ; height, weight
 
-	db   "During spawning"
-	next "season, they swim"
-	next "gracefully in the"
+	db   "Prideful to a"
+	next "fault, they will"
+	next "fight for mates."
 
-	page "water, searching"
-	next "for their perfect"
-	next "mate.@"
+	page "Sometimes, they"
+	next "devolve into SUP-"
+	next "ERSONIC matches.@"

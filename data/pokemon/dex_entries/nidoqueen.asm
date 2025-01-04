@@ -1,10 +1,10 @@
 	db "DRILL@" ; species name
 	dw 403, 1320 ; height, weight
 
-	db   "The hard scales"
-	next "that cover its"
-	next "strong body serve"
+	db   "The spines on its"
+	next "body are filled"
+	next "with venom. If"
 
-	page "as excellent"
-	next "protection from"
-	next "any attack.@"
+	page "predators try to"
+	next "attack, it fires"
+	next "off POISON STING.@"

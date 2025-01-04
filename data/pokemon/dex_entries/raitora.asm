@@ -5,6 +5,6 @@
 	next "KOTORA becomes"
 	next "this #MON."
 	
-	page "It loves to"
-	next "play with kids"
-	next "who groom it.@"
+	page "Its chubby body"
+	next "is popular with"
+	next "kids.@"

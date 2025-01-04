@@ -5,6 +5,6 @@
 	next "its awkward phase,"
 	next "its psychic power"
 
-	page "has begun to awa-"
-	next "ken. Mainly lives"
+	page "has begun to foc-"
+	next "us. Mainly lives"
 	next "in swamps.@"

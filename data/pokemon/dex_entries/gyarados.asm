@@ -1,10 +1,12 @@
 	db "ATROCIOUS@" ; species name
 	dw 2104, 5180 ; height, weight
 
-	db   "It appears when-"
-	next "ever there is"
-	next "world conflict,"
+	db   "Its barbels allow"
+	next "it to detect ear-"
+	next "thquakes. When"
 
-	page "burning down any"
-	next "place it travels"
-	next "through.@"
+	page "one is about to"
+	next "occur, it goes"
+	next "on a rampage.@"
+
+; Referencing Namazu and Lake Biwa considering Lake of Rage context.

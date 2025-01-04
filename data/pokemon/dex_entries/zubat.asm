@@ -1,10 +1,11 @@
 	db "BAT@" ; species name
 	dw 207, 170 ; height, weight
 
-	db   "During the day, it"
-	next "gathers with"
-	next "others and hangs"
+	db   "Sunlight makes it"
+	next "sick, so it only"
+	next "leaves caves at"
 
-	page "from the ceilings"
-	next "of old buildings"
-	next "and caves.@"
+	page "night. It can be"
+	next "trained to with-"
+	next "stand it, though.@"
+; Referencing later dex entries, but also noting the discrepency.

@@ -1,10 +1,10 @@
 	db "FISH@" ; species name
 	dw 211, 220 ; height, weight
 
-	db   "This weak and"
-	next "pathetic #MON"
-	next "gets easily pushed"
+	db   "No matter the foe"
+	next "or attack, it will"
+	next "always SPLASH aro-"
 
-	page "along rivers when"
-	next "there are strong"
-	next "currents.@"
+	page "und. However, it"
+	next "has the cell make-"
+	next "up of a dragon.@" ; Illustrated book, taken from JEP.

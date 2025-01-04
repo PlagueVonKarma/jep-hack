@@ -1,10 +1,10 @@
 	db "LICKING@" ; species name
 	dw 311, 1440 ; height, weight
 
-	db   "It has a tongue"
-	next "that is over 6'6''"
-	next "long. It uses this"
+	db   "Lives in meadows."
+	next "Attacks by slamm-"
+	next "ing foes with its"
 
-	page "long tongue to"
-	next "lick its body"
-	next "clean.@"
+	page "long tongue, but"
+	next "recoils if the"
+	next "target is sour.@"

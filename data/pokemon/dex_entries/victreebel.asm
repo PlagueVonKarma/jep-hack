@@ -1,10 +1,13 @@
 	db "FLYCATCHER@" ; species name
 	dw 507, 340 ; height, weight
 
-	db   "Once ingested into"
-	next "this #MON's"
-	next "body, even the"
+	db   "Its leaves rotate"
+	next "around its body"
+	next "to attack. Greedy"
 
-	page "hardest object"
-	next "will melt into"
-	next "nothing.@"
+	page "VICTREEBEL sleep"
+	next "mouth agape to"
+	next "hoard food.@"
+
+; Crazy wording I know, the things we do for line-saving...
+; Referencing Carddass and that one Pokemon Generations episode. Also subtle Pokemon Sleep usage.

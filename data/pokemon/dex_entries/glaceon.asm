@@ -7,4 +7,4 @@
 
 	page "This makes it a"
 	next "popular #MON"
-	next "at ski resorts.@"
+	next "at ski resorts.@" ; I believe this was a PokePark reference; note written post-creation.

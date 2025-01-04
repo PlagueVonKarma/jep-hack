@@ -1,10 +1,10 @@
 	db "SHOCK CAT@" ; species name
 	dw 200, 620 ; height, weight
 
-	db   "Its rotund looks"
-	next "make it a popular"
-	next "first pet with"
+	db   "Its rotund body"
+	next "has made it a"
+	next "popular first"
 	
-	page "kids. However,"
+	page "pet. However,"
 	next "neglect quickly"
-	next "makes it feral.@"
+	next "turns it feral.@"

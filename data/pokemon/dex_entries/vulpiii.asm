@@ -3,7 +3,7 @@
 
 	db   "Small and weak,"
 	next "VULPIII prefers"
-	next "to pacify foes by"
+	next "to pacify foes"
 
 	page "by shaking its"
 	next "3 tails instead"

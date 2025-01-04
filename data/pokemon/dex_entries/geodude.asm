@@ -1,10 +1,10 @@
 	db "ROCK@" ; species name
 	dw 104, 440 ; height, weight
 
-	db   "Proud of their"
-	next "sturdy bodies,"
-	next "they bash against"
+	db   "To attack, it"
+	next "throws itself at"
+	next "the opponent. A"
 
-	page "each other in a"
-	next "contest to prove"
-	next "whose is harder.@"
+	page "clean hit is an"
+	next "instant knock-out"
+	next "for any foe.@"

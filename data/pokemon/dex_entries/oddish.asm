@@ -1,10 +1,12 @@
 	db "WEED@" ; species name
 	dw 108, 120 ; height, weight
 
-	db   "During the day, it"
-	next "stays in the cold"
-	next "underground to"
+	db   "Its leaves are"
+	next "prehensile, all-"
+	next "owing it to climb"
 
-	page "avoid the sun."
-	next "It grows by bath-"
-	next "ing in moonlight.@"
+	page "surfaces and use"
+	next "moves like PETAL"
+	next "DANCE.@"
+
+; Referencing anime episode "Foul Weather Friends" and its attack animations in the Stadium titles.

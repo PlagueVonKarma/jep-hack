@@ -1,10 +1,13 @@
 	db "FIVE STAR@" ; species name
 	dw 407, 780 ; height, weight
 
-	db   "In the daytime"
-	next "when it gets warm,"
-	next "it curls up inside"
+	db   "At night, the"
+	next "spots on its car-"
+	next "apace flash red."
 
-	page "a big leaf and"
-	next "drifts off into"
-	next "a deep slumber.@"
+	page "The display confu-"
+	next "ses predators when"
+	next "done in swarms.@"
+
+; Referencing Pokemon: Mewtwo Returns
+; I'm adding a flair with the idea of confusion here. Ledian usually uses Supersonic, not Confuse Ray, but there's no other reason it would have evolved this trait in my mind.

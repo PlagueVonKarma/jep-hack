@@ -1,10 +1,11 @@
 	db "MEGATON@" ; species name
 	dw 407, 6620 ; height, weight
 
-	db   "Its rock-like body"
-	next "is so durable,"
-	next "even high-powered"
+	db   "When using EXPLO-"
+	next "SION, it is reve-"
+	next "aled that GOLEM's"
 
-	page "dynamite blasts"
-	next "fail to scratch"
-	next "its rugged hide.@"
+	page "body is hollow."
+	next "It rolls twice as"
+	next "fast as GRAVELER.@"
+; Carddass and illustrated book reference

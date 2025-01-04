@@ -1,10 +1,11 @@
 	db "TADPOLE@" ; species name
 	dw 200, 270 ; height, weight
 
-	db   "The swirl on its"
-	next "belly is its"
-	next "insides showing"
+	db   "Feeds on plants"
+	next "at the bottoms of"
+	next "lakes. After doing"
 
-	page "through the skin."
-	next "It looks clearer"
-	next "after it eats.@"
+	page "so, the swirl on"
+	next "its belly becomes"
+	next "clearer.@"
+; Referencing The Stun Spore Detour and various dex entries. 
