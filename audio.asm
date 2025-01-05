@@ -167,6 +167,7 @@ INCLUDE "audio/music/Tanoby01.asm"
 INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/SepiaCity.asm"
 INCLUDE "audio/music/CoralCity.asm"
+INCLUDE "audio/music/CrystalCrater.asm"
 
 SECTION "Sound Effects", ROMX
 

@@ -137,9 +137,9 @@ Music_CoralCity_Ch1:
 
 Music_CoralCity_Ch2:
 	note_type 12, 12, 7
-	vibrato 7, 1, 1
 	duty_cycle 3
 	octave 4
+	vibrato 20, 2, 2
 	note D_, 1
 	rest 1
 	volume_envelope 6, 7
@@ -239,6 +239,7 @@ Music_CoralCity_Ch2:
 .mainLoop:
 	octave 4
 	volume_envelope 12, 7
+	vibrato 20, 2, 2
 	note D_, 6
 	octave 3
 	note B_, 1

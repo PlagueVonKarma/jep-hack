@@ -122,4 +122,5 @@ Music:
 	dba Music_Mart
 	dba Music_CoralCity
 	dba Music_SepiaCity
+	dba Music_CrystalCrater
 	assert_table_length NUM_MUSIC_SONGS

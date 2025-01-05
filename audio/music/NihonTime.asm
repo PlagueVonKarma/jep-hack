@@ -1,7 +1,7 @@
 ; Nihon Route theme
 ; 4/4 rhythm, composed in C# Mixolydian.
 ; An upbeat generic route theme, loosely inspired by the intro theme song of the Johto Journeys anime.
-; The relatively high BPM(read: low Tempo value) along with the fast drums gives the theme an adventurous feel.
+; The relatively high BPM(read: low Tempo value) along with the fast drums give the theme an adventurous feel.
 ; The drums are quite fast in the latter half of the track to give it more of a forward push.
 ; Composed by LuciShrimp
 
