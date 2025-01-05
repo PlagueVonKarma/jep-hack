@@ -1,10 +1,10 @@
 	db "HERMITCRAB@" ; species name
 	dw 503, 1730 ; height, weight
 
-	db   "An attached"
-	next "SHELLDER won't let"
-	next "go because of the"
+	db   "The SHELLDER that"
+	next "bit it evolved"
+	next "into DISTURBAN."
 
-	page "tasty flavor that"
-	next "oozes out of its"
-	next "tail.@"
+	page "If it falls off,"
+	next "SLOWBRO becomes a" ; Discussing the differences between the Pokemon and how their evolutions work.
+	next "SLOWPOKE again.@" ; Using RBY dex entries for the Slowbro part. 

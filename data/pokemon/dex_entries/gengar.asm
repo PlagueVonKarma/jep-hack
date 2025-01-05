@@ -1,10 +1,10 @@
 	db "SHADOW@" ; species name
 	dw 411, 890 ; height, weight
 
-	db   "Hiding in people's"
-	next "shadows at night,"
-	next "it absorbs their"
+	db   "Feeds on dreams." ; Carddass reference.
+	next "Because SNORLAX"
+	next "dreams about food,"
 
-	page "heat. The chill it"
-	next "causes makes the"
-	next "victims shake.@"
+	page "it's GENGAR's fav-"
+	next "ourite target, but"
+	next "HYPNO intervenes.@" ; Added Hypno into the mix to worldbuild.

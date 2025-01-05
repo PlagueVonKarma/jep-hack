@@ -1,10 +1,10 @@
 	db "MAGNET@" ; species name
 	dw 100, 130 ; height, weight
 
-	db   "It seems to be"
-	next "attracted to magn-"
-	next "etic forces, it's"
+	db   "Seemingly attract-"
+	next "ed to magnetic"
+	next "forces, MAGNEMITE"
 
-	page "not uncommon for"
-	next "them to appear at"
-	next "the MAGNET TRAIN.@" ; prototype dex entry contextualised into them swarming the magnet train
+	page "are known for swa-"
+	next "rming around the"
+	next "MAGNET TRAIN.@" ; prototype dex entry contextualised into them swarming the magnet train

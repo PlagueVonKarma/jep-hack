@@ -274,7 +274,7 @@ PokemonNames::
 	db "SUNKERN@@@"
 	db "SUNBUD@@@@"
 	db "SUNFLORA@@"
-	db "HIPPUNK@@@"
+	db "TORPIR@@@@"
 	db "AERCROW@@@"
 	db "FOXFIRE@@@"
 	db "YANMA@@@@@"

@@ -1,10 +1,10 @@
 	db "PINCER@" ; species name
 	dw 403, 1320 ; height, weight
 
-	db   "Its oversized claw"
-	next "is very powerful,"
-	next "but when it's not"
+	db   "Preys on CLOYSTER"
+	next "and DISTURBAN by"
+	next "prying open their" ; Re-contextualised Stadium dex entry, now including Disturban.
 
-	page "in battle, the"
-	next "claw just gets in"
-	next "the way.@"
+	page "shells with"
+	next "10,000 horsepower"
+	next "of force.@"

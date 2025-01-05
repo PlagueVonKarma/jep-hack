@@ -3,7 +3,7 @@
 
 	db   "Lives near small"
 	next "villages. Pulling"
-	next "BALUMBA's shriek"
+	next "BALUMBA's string"
 	
 	page "causes it great"
 	next "pain, making it"

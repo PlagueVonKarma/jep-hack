@@ -5,6 +5,6 @@
 	next "punches a second,"
 	next "and thanks to its"
 
-	page "sturdy loewer"
+	page "sturdy lower"
 	next "body, it keeps"
 	next "its balance.@" ; prototype dex entry detail

@@ -1,10 +1,10 @@
 	db "RIVER CRAB@" ; species name
 	dw 104, 140 ; height, weight
 
-	db   "If it is unable"
-	next "to find food, it"
-	next "will absorb"
+	db   "Hides under rocks" ; Quasi-lore reference with Krabby being a Rock Smash Pokemon.
+	next "on beaches. If"
+	next "discovered, it"
 
-	page "nutrients by"
-	next "swallowing a"
-	next "mouthful of sand.@"
+	page "will wave its" ; Illustrated book reference.
+	next "claws before re-"
+	next "treating.@"

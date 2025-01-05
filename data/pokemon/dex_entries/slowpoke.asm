@@ -1,10 +1,10 @@
 	db "DOPEY@" ; species name
 	dw 311, 790 ; height, weight
 
-	db   "It is always so"
-	next "absent-minded that"
-	next "it won't react,"
+	db   "Its TAIL is a deli-"
+	next "cacy in many diffe-"
+	next "rent countries." ; Referencing various regions that don't have anywhere near as much controversy relating to eating Slowpoketails.
 
-	page "even if its"
-	next "flavorful tail is"
-	next "bitten.@"
+	page "Depending on what"
+	next "it eats, the fla-"
+	next "vor will change.@" ; Referencing Galarian Slowpoke's entry in Pokemon Journeys. Presumably applies to both.

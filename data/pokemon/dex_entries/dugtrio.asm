@@ -1,10 +1,10 @@
 	db "MOLE@" ; species name
 	dw 204, 730 ; height, weight
 
-	db   "These DIGLETT"
-	next "triplets dig over"
-	next "60 miles below sea"
+	db   "Considered an"
+	next "asset to agricul-"
+	next "ture, DUGTRIO is"
 
-	page "level. No one"
-	next "knows what it's"
-	next "like underground.@"
+	page "loved by farmers."
+	next "It's sometimes se-"
+	next "en in tree stumps.@" ; Pikachu's Winter Adventure reference, otherwise aggregating outside data. 

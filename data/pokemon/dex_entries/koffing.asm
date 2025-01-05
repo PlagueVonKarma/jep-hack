@@ -1,10 +1,10 @@
 	db "POISON GAS@" ; species name
 	dw 200, 20 ; height, weight
 
-	db   "If one gets close"
-	next "enough to it when"
-	next "it expels poison-"
+	db   "No two KOFFING" ; Referencing early sprites where the face would be in various different places, as well as Weezing.
+	next "look alike. Its"
+	next "gas can be igni-"
 
-	page "ous gas, the gas"
-	next "swirling inside it"
-	next "can be seen.@"
+	page "ted, prompting"
+	next "risk of gas EXP-"
+	next "LOSIONs@" ; Referencing Pokemon Emergency and Carddass.

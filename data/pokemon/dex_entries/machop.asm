@@ -1,10 +1,10 @@
 	db "SUPERPOWER@" ; species name
 	dw 207, 430 ; height, weight
 
-	db   "It trains by"
-	next "lifting rocks in"
-	next "the mountains. It"
+	db   "As it grows more"
+	next "confident, it will"
+	next "challenge TYROGUE" ; recontextualising future entries about it fighting Makuhita.
 
-	page "can even pick up a"
-	next "GRAVELER with"
-	next "ease.@"
+	page "to fights. It will"
+	next "decide if it stops"
+	next "a RHYHORN charge!@" ; writing is missing a slight reference. consider revising.

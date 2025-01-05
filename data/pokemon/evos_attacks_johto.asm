@@ -1135,20 +1135,14 @@ SunfloraEvosAttacks:
 	db 0 ; no more level-up moves
 
 HippunkEvosAttacks:
+	dbbw EVOLVE_HAPPINESS, TR_NITE, DROWZEE ; I could make it anytime, but let's imagine the night making it tired enough to focus its powers. Drowzee was often placed as a nocturnal Pokemon in SW97...
 	db 0; no more evolutions
-	dbw 1, TACKLE
-	dbw 1, CONFUSION
-	dbw 6, GROWL
-	dbw 10, BITE
-	dbw 15, SUPERSONIC
-	dbw 20, STOMP
-	dbw 25, AMNESIA
-	dbw 29, ENCORE
-	dbw 34, BEAT_UP
-	dbw 39, PSYBEAM
-	dbw 43, PERISH_SONG
-	dbw 48, CRUNCH
-	dbw 54, FUTURE_SIGHT
+	dbw 1, POUND
+	dbw 1, CHARM
+	dbw 4, HYPNOSIS
+	dbw 8, CONFUSION
+	dbw 13, REST
+	dbw 20, PSYWAVE
 	db 0 ; no more level-up moves
 
 AercrowEvosAttacks:
