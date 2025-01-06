@@ -1,10 +1,10 @@
 	db "SEA LION@" ; species name
 	dw 307, 1980 ; height, weight
 
-	db   "The light blue fur"
-	next "that covers it"
-	next "keeps it protected"
+	db   "RESTs on icebergs." ; Carddass!
+	next "When it wakes up,"
+	next "it haphazardly"
 
-	page "against the cold."
-	next "It loves iceberg-"
-	next "filled oceans.@"
+	page "waddles into 14F"
+	next "oceans without a" ; -10C. 
+	next "care in the world.@"

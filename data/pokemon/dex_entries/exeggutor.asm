@@ -1,10 +1,10 @@
 	db "COCONUT@" ; species name
 	dw 607, 2650 ; height, weight
 
-	db   "Living in a good"
-	next "environment makes"
-	next "it grow lots of"
+	db   "Against smaller"
+	next "foes, EXEGGUTOR"
+	next "laughs and squashes"
 
-	page "heads. A head that"
-	next "drops off becomes"
-	next "an EXEGGCUTE.@"
+	page "them with a STOMP."
+	next "Each head has a"
+	next "different laugh.@" ; Carddass reference and generally contextualised.

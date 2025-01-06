@@ -6,5 +6,5 @@
 	next "the more the vines"
 
 	page "on its body conti-"
-	next "nue to grow. Its"
-	next "face is obscured.@" ; last bit is filler; rest is prototype dex entry. feel free to enhance.
+	next "nue to grow. This"
+	next "obscures its face.@" ; prototype dex entry.

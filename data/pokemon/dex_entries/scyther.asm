@@ -1,10 +1,10 @@
 	db "MANTIS@" ; species name
 	dw 411, 1230 ; height, weight
 
-	db   "It's very proud of"
-	next "its speed. It"
-	next "moves so fast that"
+	db   "It rarely uses its"
+	next "wings for flight." ; from the illustrated book and KEP
+	next "For some reason,"
 
-	page "its opponent does"
-	next "not even know what"
-	next "knocked it down.@"
+	page "seeing the color"
+	next "red sends it into"
+	next "a blind rage.@"	; from Showdown at Dark City!
