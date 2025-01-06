@@ -1,10 +1,10 @@
 	db "LAMPREY@" ; species name
-	dw 211, 220 ; height, weight
+	dw 303, 110 ; height, weight
 
 	db   "It hides in desert"
-	next "sands. When #MON"
-	next "come close, it"
+	next "sands. It latches"
+	next "onto #MON that"
 
-	page "latches onto"
-	next "them to suck"
+	page "wander too close,"
+	next "attempting to suck"
 	next "their blood.@" ; blood is rarely said in mons so consider revising
