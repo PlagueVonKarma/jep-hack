@@ -1,10 +1,10 @@
 	db "EGG@" ; species name
 	dw 104, 60 ; height, weight
 
-	db   "If even one is"
-	next "separated from the"
-	next "group, the energy"
+	db   "When a member goes"
+	next "missing, the group"
+	next "panics and tries"
 
-	page "bond between the"
-	next "six will make them"
-	next "rejoin instantly.@"
+	page "to replace it. TO-"
+	next "GEPI is a very co-"
+	next "mmon victim.@" ; Pikachu's Rescue Adventure reference.
