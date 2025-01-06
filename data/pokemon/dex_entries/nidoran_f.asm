@@ -3,9 +3,9 @@
 
 	db   "Baby NIDORAN"
 	next "are just 10 cm" ; I don't know the orthography for this.
-	next "long. When threat-"
+	next "long. It loses"
 
-	page "ened, they GROWL"
-	next "in hopes the pre-"
-	next "dator leaves.@"
+	page "the ability to"
+	next "breed upon ev-"
+	next "olving.@"
 ; Illustrated Book and Carddass references.
