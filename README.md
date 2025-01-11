@@ -151,6 +151,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - LadyMisticus: Sprite edits of Imposter Oak, Archer, Ariana, Prof.Blue, Giovanni (both), Green; Cal, Blaine (original)
 
 ### Unaffiliated
+Many sprites in this hack are taken from different artists and ROM Hacks, aggressively curated and sometimes even edited and worked upon by JEP developers. The grand aim was to get a consistent GSC artstyle. 
 - [nuuk](https://x.com/nuukiie): Azurill, Electivire, Farigiraf, Glaceon, Honchkrow, Leafeon, Magmortar, Magnezone, Mamoswine, Porygon-Z, Sylveon, Wyrdeer, Clodsire (back)
 - Scarlax, Pix, BloodlessNX, Kam, Poket, BimbelyGimbly: Animated sprites from [Pokemon October](https://github.com/pokeachromicdevs/pokeoctober): Bellignan, Caretorker (Adbarstork), Inoshika (Aggroswine), Bipulla, Sonegg (Clefling), Kolta (Coalta), Coinpur, Dodaerie, Bundra (Germifrost), Kiwooked (Kiwacki), Eucala (Koalyptus), Trebir, Burgela, Gorotora, Pockle (Shuqlour, edited by Martha), Moibelle, Molambino, Dokuroar (Necrorex), Orfry, Smujj, Stricheel, SW99 Feraligatr (edited by Plague von Karma), Belledam, Feradactyl (Gargranite)
 	- Gorotora is edited from RacieBeep's Yellow sprite in the Helix Chamber PokeThon ROM Hack. A full list of Helix Chamber sprites are available [here](https://cdn.discordapp.com/attachments/1014321591657709569/1015347305483878521/unknown.png). Helix Chamber spriters have a "must credit" policy.
@@ -162,6 +163,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FeMC sprites.
 - ShadowOne333: Annihilape and Ursaluna sprites used in [JohtoLegends](https://github.com/aforward9600/JohtoLegends)
+- [ShadowOne333 & Rangi/polishedcrystal](https://github.com/ShadowOne333/polishedcrystal/): Alolan Dugtrio, Kleavor, Mr. Rime, Galarian Ponyta, Hisuian Sneasel, Galarian Weezing, and Galarian Zapdos. ShadowOne333's repository contained animations for some Pokemon that the [mother branch](https://github.com/Rangi42/polishedcrystal] did not.
 
 ## Music Credits
 
