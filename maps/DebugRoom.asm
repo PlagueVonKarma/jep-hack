@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, AZUMARILL
+	getmonname STRING_BUFFER_3, BIPULLA
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke AZUMARILL, 4, HM_WATER_SPORT
+	givepoke BIPULLA, 15, HM_WATER_SPORT
 	closetext
 	end
 
@@ -39,11 +39,11 @@ DebugPokemon3Script:
 	faceplayer
 	opentext
 	writetext DebugTextA
-	cry STROMEN
+	cry BELLSPROUT
 	pause 15
 	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_SHINY
-	loadwildmon COATL, 75
+	loadvar VAR_BATTLETYPE, BATTLETYPE_INVERSE
+	loadwildmon BELLSPROUT, 10
 	startbattle
 	reloadmapafterbattle
 	end
@@ -56,11 +56,11 @@ DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry STROMEN
+	cry BELLSPROUT
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon COATL, 75
+	loadwildmon BELLSPROUT, 10
 	startbattle
 	reloadmapafterbattle
 	end
