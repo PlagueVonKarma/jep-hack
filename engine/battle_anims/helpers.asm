@@ -133,7 +133,7 @@ LoadBattleAnimGFX:
 	ld a, BANK(wCurItem)
 	ld [rSVBK], a
 	; store the current item in b
-	ld a, [wCurItem]
+	ld a, [wCurItem]	; fix this. Possibly check kurt.asm?
 	ld b, a
 	; seek for the BallColors entry matching the current item
 	ld hl, BallColors
