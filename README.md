@@ -161,6 +161,7 @@ JEP-affiliated spriters require sprites to be used with direct credit for non-co
 - Tom Wang: Gold/Chris running sprite
 - Seasick: Kris running sprite
 - Pigu-A, RevoSucks, walle303 - Contributors to Pokemon Anniversary Red's repository, where we reused the Green/FeMC sprites.
+- ShadowOne333: Annihilape and Ursaluna sprites used in [JohtoLegends](https://github.com/aforward9600/JohtoLegends)
 
 ## Music Credits
 
