@@ -2813,11 +2813,12 @@ XylofinEvosAttacks:
 DokuroarEvosAttacks:
 	db 0 ; no more evolutions
 	dbw 1, SCRATCH
-	dbw 1, LEER
+	dbw 1, SCARY_FACE
+	dbw 1, BONE_CLUB
 	dbw 7, SPITE
 	dbw 14, NIGHT_SHADE
 	dbw 21, ANCIENTPOWER
-	dbw 28, BONE_CLUB
+	dbw 28, BONEMERANG
 	dbw 35, SLASH
 	dbw 42, ROCK_HEAD
 	dbw 49, BONE_RUSH
