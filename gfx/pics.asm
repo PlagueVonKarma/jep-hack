@@ -707,14 +707,13 @@ UnownYBackpic:       INCBIN "gfx/pokemon/unown_y/back.2bpp.lz"
 UnownPBackpic:       INCBIN "gfx/pokemon/unown_p/back.2bpp.lz"
 UnownIBackpic:       INCBIN "gfx/pokemon/unown_i/back.2bpp.lz"
 UnownRBackpic:       INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
-
-
-SECTION "Pics 19", ROMX
-
 UnownExclamationFrontpic: INCBIN "gfx/pokemon/unown_exclamation/front.animated.2bpp.lz"
 UnownExclamationBackpic:  INCBIN "gfx/pokemon/unown_exclamation/back.2bpp.lz"
 UnownQuestionFrontpic: INCBIN "gfx/pokemon/unown_question/front.animated.2bpp.lz"
 UnownQuestionBackpic:  INCBIN "gfx/pokemon/unown_question/back.2bpp.lz"
+
+
+SECTION "Pics 19", ROMX
 
 BellignanFrontpic:	 INCBIN "gfx/pokemon/bellignan/front.animated.2bpp.lz"
 BellignanBackpic:	 INCBIN "gfx/pokemon/bellignan/back.2bpp.lz"
@@ -736,12 +735,6 @@ LickilickyFrontpic:  INCBIN "gfx/pokemon/lickilicky/front.animated.2bpp.lz"
 LickilickyBackpic:   INCBIN "gfx/pokemon/lickilicky/back.2bpp.lz"
 LickilordFrontpic:   INCBIN "gfx/pokemon/lickilord/front.animated.2bpp.lz"
 LickilordBackpic:    INCBIN "gfx/pokemon/lickilord/back.2bpp.lz"
-BurgelaFrontpic:     INCBIN "gfx/pokemon/burgela/front.animated.2bpp.lz"
-BurgelaBackpic:      INCBIN "gfx/pokemon/burgela/back.2bpp.lz"
-TangrowthFrontpic:   INCBIN "gfx/pokemon/tangrowth/front.animated.2bpp.lz"
-TangrowthBackpic:    INCBIN "gfx/pokemon/tangrowth/back.2bpp.lz"
-JungelaFrontpic:     INCBIN "gfx/pokemon/jungela/front.animated.2bpp.lz"
-JungelaBackpic:      INCBIN "gfx/pokemon/jungela/back.2bpp.lz"
 MamoswineFrontpic:   INCBIN "gfx/pokemon/mamoswine/front.animated.2bpp.lz"
 MamoswineBackpic:    INCBIN "gfx/pokemon/mamoswine/back.2bpp.lz"
 HirsuswineFrontpic:  INCBIN "gfx/pokemon/hirsuswine/front.animated.2bpp.lz"
@@ -827,6 +820,12 @@ TotartleFrontpic:    INCBIN "gfx/pokemon/totartle/front.animated.2bpp.lz"
 TotartleBackpic:     INCBIN "gfx/pokemon/totartle/back.2bpp.lz"
 BlastykeFrontpic:    INCBIN "gfx/pokemon/blastyke/front.animated.2bpp.lz"
 BlastykeBackpic:     INCBIN "gfx/pokemon/blastyke/back.2bpp.lz"
+BurgelaFrontpic:     INCBIN "gfx/pokemon/burgela/front.animated.2bpp.lz"
+BurgelaBackpic:      INCBIN "gfx/pokemon/burgela/back.2bpp.lz"
+TangrowthFrontpic:   INCBIN "gfx/pokemon/tangrowth/front.animated.2bpp.lz"
+TangrowthBackpic:    INCBIN "gfx/pokemon/tangrowth/back.2bpp.lz"
+JungelaFrontpic:     INCBIN "gfx/pokemon/jungela/front.animated.2bpp.lz"
+JungelaBackpic:      INCBIN "gfx/pokemon/jungela/back.2bpp.lz"
 
 SECTION "Pics 22", ROMX
 CheepFrontpic:	     INCBIN "gfx/pokemon/cheep/front.animated.2bpp.lz"

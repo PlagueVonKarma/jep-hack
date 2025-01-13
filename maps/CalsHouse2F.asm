@@ -12,6 +12,7 @@
 
 	object_const_def
 	const CALSHOUSE_KEN
+	const CALSHOUSE_BOOK
 
 CalsHouse2F_MapScripts:
 	def_scene_scripts
@@ -20,6 +21,17 @@ CalsHouse2F_MapScripts:
 
 CalsHouseKen:
 	jumptextfaceplayer CalsHouseKenText
+
+CalsHouseBook:
+	opentext
+	writetext CalsHouseBookIntro
+	yesorno
+	iffalse .Done
+	writetext CalsHouseBookText
+	waitbutton
+.Done:
+	closetext
+	end
 
 CalsHouseKenText:
 	text "CAL? He's my"
@@ -36,6 +48,46 @@ CalsHouseKenText:
 	para "Places like that!"
 	line "He's so cool!"
 	done
+
+CalsHouseBookIntro:
+	text "There's a book"
+	line "on CAL's desk…"
+
+	para "MYSTERIES OF"
+	line "THE EARTH"
+
+	para "It's written by..."
+	line "GIOVANNI?!"
+
+	para "Read it anyway?"
+	done
+
+CalsHouseBookText:
+	text "In this book, I"
+	line "will reveal the"
+	cont "highest form of"
+	cont "RHYDON."
+	
+	para "Its name is"
+	line "RHYPERIOR."
+	
+	para "We can't get it"
+	line "obtained with"
+	cont "items native to"
+	cont "KANTO. We must"
+	cont "use a PROTECTOR."
+	
+	para "Unfortunately,"
+	line "RHYPERIOR does"
+	cont "not address"
+	cont "RHYDON's poor"
+	cont "SPEED. Ergo, it"
+	cont "cannot use my"
+	cont "own technique,"
+	cont "FISSURE, to its"
+	cont "full potential."
+	done
+
 
 ; Usually, there's a thing about Skarmory here, but Silver's House details it, so let's use this unused quote instead.
 CalsHousePCText:
@@ -109,3 +161,4 @@ CalsHouse2F_MapEvents:
 
 	def_object_events
 	object_event  8,  1, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CalsHouseKen, -1
+	object_event  1,  5, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CalsHouseBook, -1
