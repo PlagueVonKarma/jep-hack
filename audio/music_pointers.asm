@@ -123,4 +123,5 @@ Music:
 	dba Music_CoralCity
 	dba Music_SepiaCity
 	dba Music_CrystalCrater
+	dba Music_SavoyCity
 	assert_table_length NUM_MUSIC_SONGS
