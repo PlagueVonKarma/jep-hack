@@ -1,10 +1,10 @@
 	db "BIVALVE@" ; species name
 	dw 411, 2920 ; height, weight
 
-	db   "Its shell is as"
-	next "hard as diamonds."
-	next "Its SPIKE CANNON"
+	db   "Only KINGLER can"
+	next "break its shell."
+	next "To defend itself,"
 
-	page "ensures nothing"
-	next "can get close e-"
-	next "nough to open it.@"
+	page "it closes up and"
+	next "fires its two"
+	next "large spikes.@" ; Carddass reference.

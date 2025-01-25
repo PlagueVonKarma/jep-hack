@@ -1,3 +1,6 @@
+; Set to become a Gym Leader rematch area like HGSS.
+; Additionally, I want there to be Dojogoers explaining Tyrogue and other bits. Tyrogue is extremely poorly explained.
+
 	object_const_def
 	const FIGHTINGDOJO_BLACK_BELT
 	const FIGHTINGDOJO_POKE_BALL

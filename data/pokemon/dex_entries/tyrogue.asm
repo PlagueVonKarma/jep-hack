@@ -1,10 +1,10 @@
 	db "SCUFFLE@" ; species name
 	dw 204, 460 ; height, weight
 
-	db   "To brush up on its"
-	next "fighting skills,"
-	next "it will challenge"
+	db   "It's still learn-"
+	next "ing to fight. The"
+	next "battles ahead will"
 
-	page "anyone. It has a"
-	next "very strong com-"
-	next "petitive spirit.@"
+	page "determine its fu-" ; Vaguely alluding to how Tyrogue evolves. You wouldn't believe it, but no game actually explains this.
+	next "ture. Hates chea-"
+	next "ters like RIBBITO.@" ; May as well add a sense of honour to it, given its appearance.

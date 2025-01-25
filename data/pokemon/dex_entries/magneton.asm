@@ -1,10 +1,10 @@
 	db "MAGNET@" ; species name
 	dw 303, 1320 ; height, weight
 
-	db   "When many"
-	next "MAGNETON gather"
-	next "together, the"
+	db   "When sleeping,"
+	next "its magnetism"
+	next "becomes unstable."
 
-	page "resulting magnetic"
-	next "storm disrupts"
-	next "radio waves.@"
+	page "Sometimes, a"
+	next "MAGNEMITE may"
+	next "unlink.@" ; Pokemon Sleep and Snap dual-reference. However, it could be more explicit. Consider revising.

@@ -1,10 +1,10 @@
 	db "DRAGON@" ; species name
 	dw 104, 180 ; height, weight
 
-	db   "When they're in a"
-	next "safe location,"
-	next "they can be seen"
+	db   "Lives in tropical" ; Seahorses usually live in these types of places.
+	next "oceans. The EGGs" ; Illustrated book, used for GSC-like flair: Breeding is rare.
+	next "it lays will be"
 
-	page "playfully tangling"
-	next "their tails"
-	next "together.@"
+	page "raised by males" ; Likewise, genders are new.
+	next "that spin the str-"
+	next "ongest WHIRLPOOLs.@" ; Shield data, contextualised into GSC given it's new and can be a sign of power.

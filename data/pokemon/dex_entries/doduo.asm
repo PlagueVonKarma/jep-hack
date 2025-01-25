@@ -1,10 +1,10 @@
 	db "TWIN BIRD@" ; species name
 	dw 407, 860 ; height, weight
 
-	db   "It lives on a"
-	next "grassy plain where"
-	next "it can see a long"
+	db   "The weakest head" ; Alluding to Dodaerie.
+	next "has merged into"
+	next "its body. The two"
 
-	page "way. If it sees an"
-	next "enemy, it runs"
-	next "away at 60 mph.@"
+	page "that remain get"
+	next "tangled up and"
+	next "panic sometimes.@" ; Carddass reference.

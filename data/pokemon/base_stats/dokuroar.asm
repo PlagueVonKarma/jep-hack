@@ -1,13 +1,13 @@
 	db 0 ; species ID placeholder
 
-	db  87, 125, 110,  66,  66,  66
+	db 101, 131, 119,  76,  69,  84
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, ROCK ; type
-	db 25 ; catch rate
-	db 166 ; base exp
+	db 3 ; catch rate
+	db 203 ; base exp
 	db THICK_CLUB, THICK_CLUB ; items
-	db GENDER_F50 ; gender ratio
+	db GENDER_UNKNOWN ; gender ratio
 	db 100 ; unknown 1
 	db 120 ; step cycles to hatch
 	db 5 ; unknown 2

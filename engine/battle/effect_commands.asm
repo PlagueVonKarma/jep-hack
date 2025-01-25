@@ -359,7 +359,7 @@ CantMove:
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
 	push hl
-	ld hl, .fly_dig_moves
+	ld hl, FlyDigMoves
 	call CheckMoveInList
 	pop hl
 	ret nc
@@ -370,13 +370,6 @@ CantMove:
 	call GetBattleVarAddr
 	res SUBSTATUS_UNDERWATER, [hl]
 	jp AppearUserRaiseSub
-
-.fly_dig_moves
-	dw FLY
-	dw DIG
-	dw BOUNCE
-	dw WATER_SPORT
-	dw -1
 
 OpponentCantMove:
 	call BattleCommand_SwitchTurn
@@ -1370,7 +1363,13 @@ BattleCommand_Stab:
 	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVar
 	ld b, a
+	ld a, [wBattleType]
+	cp BATTLETYPE_INVERSE
+	jr z, .inverse
 	ld hl, TypeMatchups
+	jr .TypesLoop
+.inverse
+	ld hl, InverseTypeMatchups
 
 .TypesLoop:
 ;	ld a, [hli]
@@ -1497,7 +1496,13 @@ CheckTypeMatchup:
 	ld c, [hl]
 	ld a, EFFECTIVE
 	ld [wTypeMatchup], a
+	ld a, [wBattleType]
+	cp BATTLETYPE_INVERSE
+	jr z, .inverse
 	ld hl, TypeMatchups
+	jr .TypesLoop
+.inverse
+	ld hl, InverseTypeMatchups
 .TypesLoop:
 ;	ld a, [hli]
 	call GetNextTypeMatchupsByte
@@ -1511,7 +1516,6 @@ CheckTypeMatchup:
 	bit SUBSTATUS_IDENTIFIED, a
 	jr nz, .End
 	jr .TypesLoop
-
 .Next:
 	cp d
 	jr nz, .Nope
@@ -1788,6 +1792,7 @@ BattleCommand_CheckHit:
 	call GetBattleVar
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
 	jr nz, .flying_or_underground
+	
 	ld a, BATTLE_VARS_SUBSTATUS4_OPP
 	call GetBattleVar
 	and 1 << SUBSTATUS_UNDERWATER
@@ -1795,12 +1800,34 @@ BattleCommand_CheckHit:
 	
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	cp SURF
+	ld hl, SURF
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(SURF)
+		cp HIGH(SURF)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(SURF)
 	ret z
-	cp WHIRLPOOL
+	ld hl, WHIRLPOOL
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(WHIRLPOOL)
+		cp HIGH(WHIRLPOOL)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(WHIRLPOOL)
 	ret
-.flying_or_underground
 
+.flying_or_underground
 	bit SUBSTATUS_FLYING, a
 	ld hl, .FlyMoves
 	jr z, .check_move_in_list
@@ -2071,17 +2098,10 @@ BattleCommand_MoveAnimNoSub:
 
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	ld hl, .fly_dig_moves
+	ld hl, FlyDigMoves
 	call CheckMoveInList
 	ret nc
 	jp AppearUserLowerSub
-
-.fly_dig_moves
-	dw FLY
-	dw DIG
-	dw BOUNCE
-	dw WATER_SPORT
-	dw -1
 
 .alternate_anim
 	ld a, [wBattleAnimParam]
@@ -2167,7 +2187,7 @@ BattleCommand_FailureText:
 	call GetBattleVarAddr
 
 	push hl
-	ld hl, .fly_dig_moves
+	ld hl, FlyDigMoves
 	call CheckMoveInList
 	pop hl
 	jr c, .fly_dig
@@ -2199,13 +2219,6 @@ BattleCommand_FailureText:
 	res SUBSTATUS_UNDERWATER, [hl]
 	call AppearUserRaiseSub
 	jp EndMoveEffect
-
-.fly_dig_moves
-	dw FLY
-	dw DIG
-	dw WATER_SPORT
-	dw BOUNCE
-	dw -1
 
 BattleCommand_ApplyDamage:
 	ld a, BATTLE_VARS_SUBSTATUS1_OPP
@@ -5645,26 +5658,134 @@ BattleCommand_Charge:
 	call LoadMoveAnim
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
-	
-	ld hl, .fly_dig_moves ; attempt to resolve 16-bit issue with bounce and water sport - this can probably be made more efficient with a farcallable list
-	call CheckMoveInList
+	ld hl, WATER_SPORT
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(WATER_SPORT)
+		cp HIGH(WATER_SPORT)
+	else
+		and a
+	endc
+	ld a, l
 	pop hl
-	jr c, .got_move_type
+	ret nz
+	cp LOW(WATER_SPORT)
+	jp z, .set_diving
+	ld hl, FLY
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(FLY)
+		cp HIGH(FLY)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(FLY)
+	jr z, .set_flying
+	ld hl, BOUNCE
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(BOUNCE)
+		cp HIGH(BOUNCE)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(BOUNCE)
+	jr z, .set_flying
+	ld hl, DIG
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(DIG)
+		cp HIGH(DIG)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(DIG)
+	jr z, .set_flying
 	call BattleCommand_RaiseSub
-	xor a
+	jr .not_flying
 
-.got_move_type
-	; a will contain the substatus 3 bit to set (1 << bit), or 0 if none (not flying/digging underground)
-	and a
-	ld l, a
-	push hl
-	call nz, DisappearUser
+.flying
+	call DisappearUser
+.not_flying
 	ld a, BATTLE_VARS_SUBSTATUS3
 	call GetBattleVarAddr
-	pop bc
-	ld a, c
-	or [hl]
-	ld [hl], a
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+	ld b, a
+	ld hl, WATER_SPORT
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(WATER_SPORT)
+		cp HIGH(WATER_SPORT)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(WATER_SPORT)
+	jr z, .set_diving
+	ld hl, FLY
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(FLY)
+		cp HIGH(FLY)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(FLY)
+	jr z, .set_flying
+	ld hl, BOUNCE
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(BOUNCE)
+		cp HIGH(BOUNCE)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(BOUNCE)
+	jr z, .set_flying
+	ld hl, DIG
+	call GetMoveIDFromIndex
+	ld a, h
+	if HIGH(DIG)
+		cp HIGH(DIG)
+	else
+		and a
+	endc
+	ld a, l
+	pop hl
+	ret nz
+	cp LOW(DIG)
+	jr z, .set_flying
+	jr nz, .dont_set_digging
+	set SUBSTATUS_UNDERGROUND, [hl]
+	jr .dont_set_digging
+
+.set_diving
+	ld a, BATTLE_VARS_SUBSTATUS4
+	call GetBattleVarAddr
+	set SUBSTATUS_UNDERWATER, [hl]
+	jr .dont_set_digging
+.set_flying
+	set SUBSTATUS_FLYING, [hl]
+
+.dont_set_digging
 	call CheckUserIsCharging
 	jr nz, .mimic
 	ld a, BATTLE_VARS_LAST_COUNTER_MOVE
@@ -5749,13 +5870,6 @@ BattleCommand_Charge:
 ; 'hid underwater!'
 	text_jump HidUnderwaterText
 	db "@"
-
-.fly_dig_moves
-	dw FLY
-	dw DIG
-	dw BOUNCE
-	dw WATER_SPORT
-	dw -1
 
 BattleCommand_TrapTarget:
 	ld a, [wAttackMissed]
@@ -6132,6 +6246,7 @@ BattleCommand_DoubleUnderwaterDamage:
 	ld a, BATTLE_VARS_SUBSTATUS4_OPP
 	call GetBattleVar
 	bit SUBSTATUS_UNDERWATER, a
+	ret z
 	; fallthrough
 
 DoubleDamage:
@@ -6952,3 +7067,10 @@ CheckMoveInList:
 	pop de
 	pop bc
 	ret
+
+FlyDigMoves:
+	dw FLY
+	dw DIG
+	dw BOUNCE
+	dw WATER_SPORT
+	dw -1

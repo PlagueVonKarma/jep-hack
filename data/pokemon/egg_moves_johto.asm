@@ -165,7 +165,7 @@ EggMovePointers2::
 	dw RuddernautEggMoves
 	dw XylodonEggMoves
 	dw NoEggMoves2
-	dw DokuroarEggMoves ; Dokuroar
+	dw NoEggMoves2 ; Dokuroar
 	dw NoEggMoves2
 	dw NoEggMoves2
 	dw NoEggMoves2
@@ -786,14 +786,6 @@ XylodonEggMoves:
 	dw LEER
 	dw SLAM
 	dw THRASH
-	dw -1 ;end 
-
-DokuroarEggMoves:
-	dw BONEMERANG
-	dw BONE_RUSH
-	dw BONE_CLUB
-	dw ROCK_SLIDE
-	dw SCARY_FACE
 	dw -1 ;end 
 
 LarvitarEggMoves:

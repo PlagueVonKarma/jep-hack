@@ -1,10 +1,10 @@
 	db "TRIPLEBIRD@" ; species name
 	dw 511, 1880 ; height, weight
 
-	db   "An enemy that"
-	next "takes its eyes off"
-	next "any of the three"
+	db   "The weakest head"
+	next "has returned."
+	next "Strong and irate,"
 
-	page "heads--even for a"
-	next "second--will get"
-	next "pecked severely.@"
+	page "it now commands"
+	next "the others with"
+	next "bravado.@"

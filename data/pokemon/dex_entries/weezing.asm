@@ -1,10 +1,11 @@
 	db "POISON GAS@" ; species name
 	dw 311, 210 ; height, weight
 
-	db   "When it inhales"
+	db   "The effects of its" 
 	next "poisonous gases"
-	next "from garbage, its"
+	next "have prompted use"
 
-	page "body expands, and"
-	next "its insides smell"
-	next "much worse.@"
+	page "of its image in"
+	next "green energy"
+	next "campaigns.@"
+; Referencing its original localised name, La, whereas Koffing was Ny. These names referenced two of the US's most polluted cities.

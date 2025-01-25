@@ -1,10 +1,10 @@
 	db "SLUDGE@" ; species name
 	dw 311, 660 ; height, weight
 
-	db   "The toxins in its"
-	next "body will mix to-"
-	next "gether to form"
+	db   "Merely touching"
+	next "MUK causes severe"
+	next "illness. When"
 
-	page "new ones. Doctors"
-	next "have trouble kee-"
-	next "ping track.@"
+	page "pursuing targets,"
+	next "it will pelt them"
+	next "with its SLUDGE.@" ; Carddass reference that is very fucking scary tbh

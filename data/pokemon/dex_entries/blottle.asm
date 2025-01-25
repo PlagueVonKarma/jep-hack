@@ -1,10 +1,10 @@
 	db "INK@" ; species name
 	dw 211, 1000 ; height, weight - temp
 
-	db   "Recent studies show"
-	next "BLOTTLE and OMANY-"
-	next "TE share a common"
+	db   "Recent studies"
+	next "show BLOTTLE and"
+	next "OMANYTE share an"
 
-	page "ancestor. BLOTTLE"
-	next "outcompeted it"
-	next "for food.@"
+	page "ancestor. It is"
+	next "thought BLOTTLE"
+	next "outcompeted it.@"

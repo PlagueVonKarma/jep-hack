@@ -6,5 +6,5 @@
 	next "makes it popular"
 
 	page "with calligraphers."
-	next "it can write kanji" ; in a localisation during this time period, I doubt it would pass.
-	next "with ease!@" ; consider revising. I imagine it would write 水 quite well!
+	next "It can write kanji" ; in a localisation during this time period, I doubt it would pass, so consider revising.
+	next "with ease!@" ; I imagine it would write 水 quite well, though!

@@ -1,10 +1,10 @@
 	db "JELLYFISH@" ; species name
 	dw 503, 1210 ; height, weight
 
-	db   "When its 80 feel-"
-	next "ers absorb water,"
-	next "it stretches to"
+	db   "The jewels on its"
+	next "forehead can glow"
+	next "and shoot beams" ; Fossil TCG Tentacool and anime references.
 
-	page "become like a net"
-	next "to entangle its"
-	next "prey.@"
+	page "of light. Some"
+	next "TENTACRUEL grow"
+	next "to unusual sizes.@" ; Anime reference

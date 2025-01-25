@@ -1,10 +1,10 @@
 	db "HYPNOSIS@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "When it twitches"
-	next "its nose, it can"
-	next "tell where someone"
+	db   "Said to be related"
+	next "to Baku, DROWZEE" ; Mentioned in illustrated book and KEP.
+	next "TRAINERs pioneered" ; Referencing anime EP027
 
-	page "is sleeping and"
-	next "what that person"
-	next "is dreaming about.@"
+	page "combination atta-"
+	next "cks with HYPNOSIS"
+	next "and DREAM EATER.@"

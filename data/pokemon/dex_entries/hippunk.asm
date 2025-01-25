@@ -1,11 +1,10 @@
-	db "PUNK@" ; species name
-	dw 304, 2117 ; height, weight
+	db "HYPNOSIS@" ; species name
+	dw 204, 2117 ; height, weight
 
-	db   "It disturbs"
-	next "SLOWPOKE from"
-	next "their slumber with"
+	db   "It is too energ-"
+	next "etic to put most"
+	next "#MON to sleep,"
 
-	page "high pitched"
-	next "squeals before"
-	next "attacking.@"
-; being reworked
+	page "but SLOWPOKE"
+	next "are easy enough"
+	next "targets.@" ; it looks like Slowpoke but CryptoDex among others gave the compelling case of it being Drowzee, so let's keep referencing Slowpoke.
