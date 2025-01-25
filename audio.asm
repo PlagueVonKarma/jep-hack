@@ -168,6 +168,7 @@ INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/SepiaCity.asm"
 INCLUDE "audio/music/CoralCity.asm"
 INCLUDE "audio/music/CrystalCrater.asm"
+INCLUDE "audio/music/SavoyCity.asm"
 
 SECTION "Sound Effects", ROMX
 
