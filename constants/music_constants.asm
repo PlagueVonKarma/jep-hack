@@ -121,6 +121,7 @@
 	const MUSIC_CORALCITY					 ; 74
 	const MUSIC_SEPIACITY					 ; 75
 	const MUSIC_CRYSTALCRATER				 ; 76
+	const MUSIC_SAVOYCITY					 ; 77
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

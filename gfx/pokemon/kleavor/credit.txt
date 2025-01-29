@@ -1,0 +1,3 @@
+Taken from ShadowOne333's fork of PolishedCrystal.
+
+https://github.com/ShadowOne333/polishedcrystal/blob/master/gfx/pokemon/zapdos_galarian/front.png

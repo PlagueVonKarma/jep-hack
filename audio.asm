@@ -166,8 +166,12 @@ INCLUDE "audio/music/NorthCity.asm"
 INCLUDE "audio/music/Tanoby01.asm"
 INCLUDE "audio/music/mart.asm"
 INCLUDE "audio/music/SepiaCity.asm"
+
+SECTION "New Songs 2", ROMX
+
 INCLUDE "audio/music/CoralCity.asm"
 INCLUDE "audio/music/CrystalCrater.asm"
+INCLUDE "audio/music/SavoyCity.asm"
 
 SECTION "Sound Effects", ROMX
 
