@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, BIPULLA
+	getmonname STRING_BUFFER_3, FERADACTYL
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke BIPULLA, 15, HM_WATER_SPORT
+	givepoke FERADACTYL, 15, HM_WATER_SPORT
 	closetext
 	end
 
