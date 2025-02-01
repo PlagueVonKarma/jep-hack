@@ -982,12 +982,6 @@ BittybatFrontpic:	 INCBIN "gfx/pokemon/bittybat/front.animated.2bpp.lz"
 BittybatBackpic:	 INCBIN "gfx/pokemon/bittybat/back.2bpp.lz"
 ParasporFrontpic:	 INCBIN "gfx/pokemon/paraspor/front.animated.2bpp.lz"
 ParasporBackpic:	 INCBIN "gfx/pokemon/paraspor/back.2bpp.lz"
-VulpiiiFrontpic:	 INCBIN "gfx/pokemon/vulpiii/front.animated.2bpp.lz"
-VulpiiiBackpic:	 INCBIN "gfx/pokemon/vulpiii/back.2bpp.lz"
-AnnihilapeFrontpic:	 INCBIN "gfx/pokemon/annihilape/front.animated.2bpp.lz"
-AnnihilapeBackpic:	 INCBIN "gfx/pokemon/annihilape/back.2bpp.lz"
-PupperonFrontpic:	 INCBIN "gfx/pokemon/pupperon/front.animated.2bpp.lz"
-PupperonBackpic:	 INCBIN "gfx/pokemon/pupperon/back.2bpp.lz"
 
 SECTION "Pics 25", ROMX
 
@@ -1061,6 +1055,15 @@ SigalPic:        INCBIN "gfx/trainers/sigal.2bpp.lz"
 KuyePic:        INCBIN "gfx/trainers/kuye.2bpp.lz"
 ShamPic:        INCBIN "gfx/trainers/executive_f.2bpp.lz"
 CarlPic:        INCBIN "gfx/trainers/executive_m.2bpp.lz"
+
+SECTION "Pics 27", ROMX
+
+VulpiiiFrontpic:	 INCBIN "gfx/pokemon/vulpiii/front.animated.2bpp.lz"
+VulpiiiBackpic:	 INCBIN "gfx/pokemon/vulpiii/back.2bpp.lz"
+AnnihilapeFrontpic:	 INCBIN "gfx/pokemon/annihilape/front.animated.2bpp.lz"
+AnnihilapeBackpic:	 INCBIN "gfx/pokemon/annihilape/back.2bpp.lz"
+PupperonFrontpic:	 INCBIN "gfx/pokemon/pupperon/front.animated.2bpp.lz"
+PupperonBackpic:	 INCBIN "gfx/pokemon/pupperon/back.2bpp.lz"
 
 ; spillover
 KabutopsFossilPic:   INCBIN "gfx/trainers/kabutops.2bpp.lz"
