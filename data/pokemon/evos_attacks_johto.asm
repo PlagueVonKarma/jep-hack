@@ -553,10 +553,11 @@ SpinarakEvosAttacks:
 	dbw 1, POISON_STING
 	dbw 1, STRING_SHOT
 	dbw 5, SCARY_FACE
-	dbw 9, CONSTRICT
+	dbw 8, CONSTRICT
+	dbw 11, LEECH_LIFE
 	dbw 14, BITE ; SW97
 	dbw 18, NIGHT_SHADE
-	dbw 22, LEECH_LIFE
+	dbw 22, FURY_CUTTER ; TM
 	dbw 28, FURY_SWIPES
 	dbw 32, CONFUSION ; SW97
 	dbw 37, SPIDER_WEB
@@ -571,10 +572,11 @@ AriadosEvosAttacks:
 	dbw 1, POISON_STING
 	dbw 1, STRING_SHOT
 	dbw 5, SCARY_FACE
-	dbw 9, CONSTRICT
+	dbw 8, CONSTRICT
+	dbw 11, LEECH_LIFE
 	dbw 14, BITE ; SW97
 	dbw 18, NIGHT_SHADE
-	dbw 22, LEECH_LIFE
+	dbw 22, FURY_CUTTER ; TM
 	dbw 30, FURY_SWIPES
 	dbw 34, CONFUSION ; SW97
 	dbw 39, SPIDER_WEB
@@ -618,7 +620,7 @@ CrobatEvosAttacks:
 	dbw 31, THRASH ; RG proto
 	dbw 37, CONFUSION ; RG proto
 	dbw 41, MEAN_LOOK
-	dbw 49, WIND_RIDE
+	dbw 49, MEGA_DRAIN ; RBY TM
 	dbw 56, HAZE
 	dbw 60, MOONLIGHT ; SW97
 	db 0 ; no more level-up moves
@@ -846,10 +848,10 @@ MareepEvosAttacks:
 	dbw 12, TAIL_WHIP ; SW97
 	dbw 16, THUNDER_WAVE
 	dbw 22, COTTON_SPORE
-	dbw 28, SWIFT ; SW97
-	dbw 34, LIGHT_SCREEN
+	dbw 28, THUNDERBOLT ; SW97
+	dbw 34, SWIFT ; SW97
 	dbw 38, DAZZLING_GLEAM ; SV
-	dbw 42, THUNDERBOLT ; SW97
+	dbw 42, LIGHT_SCREEN
 	dbw 46, HYPNOSIS ; SW97
 	dbw 52, THUNDER
 	db 0 ; no more level-up moves
@@ -863,10 +865,10 @@ FlaaffyEvosAttacks:
 	dbw 12, TAIL_WHIP ; SW97
 	dbw 18, THUNDER_WAVE
 	dbw 24, COTTON_SPORE
-	dbw 30, SWIFT ; SW97
-	dbw 38, LIGHT_SCREEN
+	dbw 30, THUNDERBOLT ; SW97
+	dbw 38, SWIFT ; SW97
 	dbw 42, DAZZLING_GLEAM ; SV
-	dbw 46, THUNDERBOLT ; SW97
+	dbw 46, LIGHT_SCREEN
 	dbw 52, HYPNOSIS ; SW97
 	dbw 58, THUNDER
 	db 0 ; no more level-up moves
@@ -879,10 +881,10 @@ AmpharosEvosAttacks:
 	dbw 12, TAIL_WHIP ; SW97
 	dbw 18, THUNDER_WAVE
 	dbw 24, COTTON_SPORE
-	dbw 30, SWIFT ; SW97
-	dbw 40, LIGHT_SCREEN
+	dbw 30, THUNDERBOLT ; SW97
+	dbw 40, SWIFT ; SW97
 	dbw 44, DAZZLING_GLEAM ; SV
-	dbw 48, THUNDERBOLT ; SW97
+	dbw 48, LIGHT_SCREEN
 	dbw 56, HYPNOSIS ; SW97
 	dbw 62, THUNDER
 	db 0 ; no more level-up moves
@@ -956,7 +958,7 @@ BonslyEvosAttacks:
 	dbw 29, ROCK_SLIDE
 	dbw 35, SLAM
 	dbw 41, DOUBLE_EDGE ; FRLG
-	dbw 47, UPROOT
+	dbw 47, SUBSTITUTE ; NYPC
 	dbw 52, COUNTER ; FRLG move tutor
 	db 0 ; no more level-up moves
 
@@ -971,7 +973,7 @@ SudowoodoEvosAttacks:
 	dbw 31, ROCK_SLIDE
 	dbw 39, SLAM
 	dbw 45, DOUBLE_EDGE ; FRLG
-	dbw 53, UPROOT
+	dbw 53, SUBSTITUTE ; NYPC
 	dbw 58, COUNTER ; FRLG move tutor
 	db 0 ; no more level-up moves
 
@@ -1004,7 +1006,7 @@ HoppipEvosAttacks:
 	dbw 35, GROWTH ; SW97
 	dbw 39, RAZOR_LEAF ; SW97
 	dbw 45, COTTON_SPORE
-	dbw 50, WIND_RIDE
+	dbw 50, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
 SkiploomEvosAttacks:
@@ -1025,7 +1027,7 @@ SkiploomEvosAttacks:
 	dbw 39, GROWTH ; SW97
 	dbw 43, RAZOR_LEAF ; SW97
 	dbw 49, COTTON_SPORE
-	dbw 56, WIND_RIDE
+	dbw 56, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
 JumpluffEvosAttacks:
@@ -1045,7 +1047,7 @@ JumpluffEvosAttacks:
 	dbw 41, GROWTH ; SW97
 	dbw 47, RAZOR_LEAF ; SW97
 	dbw 53, COTTON_SPORE
-	dbw 60, WIND_RIDE
+	dbw 60, GIGA_DRAIN ; HGSS
 	db 0 ; no more level-up moves
 
 AipomEvosAttacks:
@@ -1191,7 +1193,7 @@ YanmaEvosAttacks:
 	dbw 39, DETECT
 	dbw 43, SWIFT
 	dbw 48, PURSUIT ; HGSS
-	dbw 52, WIND_RIDE
+	dbw 52, DOUBLE_EDGE ; FRLG tutor
 	dbw 56, SCREECH
 	db 0 ; no more level-up moves
 	
@@ -1209,7 +1211,7 @@ YanmegaEvosAttacks:
 	dbw 41, DETECT
 	dbw 45, SWIFT
 	dbw 50, PURSUIT ; HGSS
-	dbw 56, WIND_RIDE
+	dbw 56, DOUBLE_EDGE ; FRLG tutor
 	dbw 60, SCREECH
 	dbw 65, SLASH
 	db 0 ; no more level-up moves
@@ -1230,7 +1232,7 @@ OniyanmaEvosAttacks:
 	dbw 41, DETECT
 	dbw 45, SWIFT
 	dbw 50, PURSUIT ; HGSS
-	dbw 56, WIND_RIDE
+	dbw 56, DOUBLE_EDGE ; FRLG tutor
 	dbw 60, SCREECH
 	dbw 65, THUNDER
 	db 0 ; no more level-up moves
@@ -1761,6 +1763,7 @@ ScizorEvosAttacks:
 	dbw 42, SWORDS_DANCE
 	dbw 48, DOUBLE_TEAM
 	dbw 54, CROSS_CUTTER
+	dbw 60, STEEL_WING
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -1835,7 +1838,7 @@ TeddiursaEvosAttacks:
 	dbw 31, SLASH
 	dbw 37, MOONLIGHT ; from BM Ursaluna
 	dbw 43, SNORE
-	dbw 47, UPROOT
+	dbw 47, BODY_SLAM ; FRLG tutor
 	dbw 51, THRASH
 	dbw 55, PLAY_ROUGH ; PLA
 	dbw 59, DOUBLE_EDGE ; PLA
@@ -1853,7 +1856,7 @@ UrsaringEvosAttacks:
 	dbw 33, SLASH
 	dbw 39, MOONLIGHT ; from BM Ursaluna
 	dbw 45, SNORE
-	dbw 51, UPROOT
+	dbw 51, BODY_SLAM ; FRLG tutor
 	dbw 55, THRASH
 	dbw 59, PLAY_ROUGH ; PLA
 	dbw 65, DOUBLE_EDGE ; PLA
@@ -1870,7 +1873,7 @@ UrsalunaEvosAttacks:
 	dbw 33, SLASH
 	dbw 39, MOONLIGHT
 	dbw 45, SNORE
-	dbw 51, UPROOT
+	dbw 51, BODY_SLAM
 	dbw 55, THRASH
 	dbw 59, PLAY_ROUGH
 	dbw 65, DOUBLE_EDGE
@@ -2189,7 +2192,7 @@ PhanpyEvosAttacks:
 	dbw 26, STOMP ; SW97
 	dbw 31, TAKE_DOWN
 	dbw 35, PROTECT ; SW97
-	dbw 40, UPROOT
+	dbw 40, BODY_SLAM ; FRLG tutor
 	dbw 44, ENDURE
 	dbw 49, RAPID_SPIN ; from Donphan
 	dbw 55, DOUBLE_EDGE
@@ -2208,7 +2211,7 @@ DonphanEvosAttacks:
 	dbw 28, STOMP ; SW97
 	dbw 33, TAKE_DOWN ; from Phanpy
 	dbw 37, PROTECT ; SW97
-	dbw 44, UPROOT
+	dbw 44, BODY_SLAM ; FRLG tutor
 	dbw 48, ENDURE ; from Phanpy
 	dbw 53, RAPID_SPIN
 	dbw 61, DOUBLE_EDGE ; from Phanpy
@@ -2455,8 +2458,8 @@ SoneggEvosAttacks:
 	dbw 32, ENCORE
 	dbw 38, MIRROR_MOVE
 	dbw 44, EGG_BOMB
-	dbw 50, WIND_RIDE
-	dbw 56, DOUBLE_EDGE
+	dbw 50, DOUBLE_EDGE
+	dbw 56, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 CacawphonyEvosAttacks:
@@ -2472,8 +2475,8 @@ CacawphonyEvosAttacks:
 	dbw 34, ENCORE
 	dbw 40, MIRROR_MOVE
 	dbw 48, EGG_BOMB
-	dbw 54, WIND_RIDE
-	dbw 60, DOUBLE_EDGE
+	dbw 54, DOUBLE_EDGE
+	dbw 60, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 TrebirEvosAttacks:
@@ -2489,8 +2492,8 @@ TrebirEvosAttacks:
 	dbw 34, ENCORE
 	dbw 40, MIRROR_MOVE
 	dbw 48, EGG_BOMB
-	dbw 54, WIND_RIDE
-	dbw 60, HEAL_BELL
+	dbw 54, HEAL_BELL
+	dbw 60, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 SakurazeEvosAttacks:
@@ -2512,15 +2515,18 @@ TanobiEvosAttacks:
 	dbw 1, UPPERCUT
 	dbw 1, LEER
 	dbw 7, QUICK_ATTACK
-	dbw 12, ROLLING_KICK
-	dbw 18, AGILITY
-	dbw 23, SWIFT
-	dbw 28, JUMP_KICK
-	dbw 32, DETECT
-	dbw 36, SPIKES
-	dbw 41, METAL_CLAW
-	dbw 47, SLASH
-	dbw 53, HI_JUMP_KICK
+	dbw 11, ROLLING_KICK
+	dbw 15, AGILITY
+	dbw 20, WING_ATTACK
+	dbw 24, SWIFT
+	dbw 29, JUMP_KICK
+	dbw 33, METAL_CLAW
+	dbw 37, SLASH
+	dbw 41, SPIKES
+	dbw 46, FURY_CUTTER
+	dbw 52, DETECT
+	dbw 56, HI_JUMP_KICK
+	dbw 61, CROSS_CHOP
 	db 0 ; no more level-up moves
 
 TrustanEvosAttacks:
@@ -2687,7 +2693,7 @@ KitsenEvosAttacks:
 	dbw 30, CURSE
 	dbw 36, HYPNOSIS
 	dbw 42, THIEF
-	dbw 48, WIND_RIDE
+	dbw 48, AGILITY
 	dbw 54, DESTINY_BOND
 	dbw 60, FUTURE_SIGHT
 	db 0 ; no more level-up moves
