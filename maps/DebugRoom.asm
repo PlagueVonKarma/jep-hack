@@ -8,12 +8,12 @@ DebugRoom_MapScripts:
 
 DebugPokemon1Script:
 	opentext
-	getmonname STRING_BUFFER_3, FERADACTYL
+	getmonname STRING_BUFFER_3, KLEAVOR
 	writetext ReceivedDebugPokemonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke FERADACTYL, 15, HM_WATER_SPORT
+	givepoke KLEAVOR, 15, HM_WATER_SPORT
 	closetext
 	end
 
@@ -56,11 +56,11 @@ DebugPokemon4Script:
 	faceplayer
 	opentext
 	writetext DebugTextB
-	cry BELLSPROUT
+	cry KLEAVOR
 	pause 15
 	closetext
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
-	loadwildmon BELLSPROUT, 10
+	loadwildmon KLEAVOR, 10
 	startbattle
 	reloadmapafterbattle
 	end
