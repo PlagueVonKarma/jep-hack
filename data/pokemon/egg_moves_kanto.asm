@@ -277,7 +277,7 @@ EkansEggMoves:
 	dw SLAM
 	dw SPITE
 	dw BEAT_UP
-	dw CRUNCH
+	dw SUBSTITUTE ; RBY TM
 	dw -1 ; end
 
 SandshrewEggMoves:
@@ -602,7 +602,6 @@ RhyhornEggMoves:
 	dw THRASH
 	dw PURSUIT
 	dw COUNTER
-	dw MAGNITUDE
 	dw -1 ; end
 
 HappinyEggMoves:

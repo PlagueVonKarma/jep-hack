@@ -590,7 +590,6 @@ HoundourEggMoves:
 
 PhanpyEggMoves:
 	dw FOCUS_ENERGY
-	dw BODY_SLAM
 	dw ANCIENTPOWER
 	dw WATER_GUN
 	dw ROCK_HEAD
