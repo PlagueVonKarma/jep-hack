@@ -3,7 +3,7 @@
 	db 101, 131, 119,  76,  69,  84
 	;   hp  atk  def  spd  sat  sdf
 
-	db GHOST, ROCK ; type
+	db GHOST, GROUND ; type
 	db 3 ; catch rate
 	db 203 ; base exp
 	db THICK_CLUB, THICK_CLUB ; items
