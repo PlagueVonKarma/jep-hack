@@ -124,4 +124,6 @@ Music:
 	dba Music_SepiaCity
 	dba Music_CrystalCrater
 	dba Music_SavoyCity
+	dba Music_FloodedShrine
+	dba Music_AlphalithBattle
 	assert_table_length NUM_MUSIC_SONGS
