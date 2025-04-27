@@ -172,6 +172,8 @@ SECTION "New Songs 2", ROMX
 INCLUDE "audio/music/CoralCity.asm"
 INCLUDE "audio/music/CrystalCrater.asm"
 INCLUDE "audio/music/SavoyCity.asm"
+INCLUDE "audio/music/FloodedShrine.asm"
+INCLUDE "audio/music/AlphalithBattle.asm"
 
 SECTION "Sound Effects", ROMX
 
