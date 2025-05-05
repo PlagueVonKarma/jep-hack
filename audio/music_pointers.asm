@@ -126,4 +126,5 @@ Music:
 	dba Music_SavoyCity
 	dba Music_FloodedShrine
 	dba Music_AlphalithBattle
+	dba Music_FortunaSF
 	assert_table_length NUM_MUSIC_SONGS

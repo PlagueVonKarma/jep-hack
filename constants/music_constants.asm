@@ -124,6 +124,7 @@
 	const MUSIC_SAVOYCITY					 ; 77
 	const MUSIC_FLOODEDSHRINE				 ; 78
 	const MUSIC_ALPHALITHBATTLE				 ; 79
+	const MUSIC_FORTUNASF					 ; 7a
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)
