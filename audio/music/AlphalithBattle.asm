@@ -1,5 +1,5 @@
 ; Alphalith battle theme
-; 5/4 and 11/4 rythms, composed in F Phrygian.
+; 5/4 and 11/4 rhythms, composed in F Phrygian.
 ; This theme uses a custom waveform. Specifically, the 12th wave from JEP's wave_samples.asm file is required for proper playback.
 ;
 ; Oh, this theme. We got a lot of concept art thanks to the Teraleak, and this is our interpretation of the creature that is hugging the pillar with Unown symbols all over it.
